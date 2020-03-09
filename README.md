@@ -24,7 +24,7 @@ and GUI with wxWidgets 3.x.x
   3. modify the config[XXX] file under Bin folder
      change the MINGW path and wxWidgets Include and Lib paths.
   
-  4. Add [BPP]/bin and [wxWidgets]/lib/gcc810_dll, [wxWidgets]/lib/gcc810_x64_dll to PATH environment.
+  4. Add [BPP]/bin and [MINGW]/bin [wxWidgets]/lib/gcc810_dll, [wxWidgets]/lib/gcc810_x64_dll to PATH environment.
   
   4. try to build samples.
 
