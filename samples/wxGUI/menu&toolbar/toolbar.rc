@@ -1,0 +1,11 @@
+#include "wx/msw/wx.rc"
+
+tnew BITMAP "bitmaps/new.bmp"
+topen BITMAP "bitmaps/open.bmp"
+tsave BITMAP "bitmaps/save.bmp"
+tcopy BITMAP "bitmaps/copy.bmp"
+tcut BITMAP "bitmaps/cut.bmp"
+tpaste BITMAP "bitmaps/paste.bmp"
+tprint BITMAP "bitmaps/print.bmp"
+thelp BITMAP "bitmaps/help.bmp"
+
