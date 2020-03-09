@@ -1,0 +1,621 @@
+//-----------------------------------------------------------------------------
+// Copyright (c) 2000-04 Mike Morearty <mike@morearty.com>
+// Original source and docs: http://www.morearty.com/code/dispatch
+//
+// CDispatchPtr helper class
+//
+// Usage of this class:
+//
+// CDispatchPtr is a wrapper for an IDispatch pointer.  It inherits from, and
+// thus shares capabilities with, the C runtime's IDispatchPtr class.
+//
+// What CDispatchPtr adds is member functions to make it very easy to get/set
+// properties and invoke methods via IDispatch.  Some examples:
+//
+//		CDispatchPtr htmlDoc; // assume this points to an IE HTML document
+//
+//		_bstr_t title = htmlDoc.Get("title");
+//		htmlDoc.Set("title", "new title");
+//		htmldoc.Get("body").Get("firstChild").Invoke(
+//						"insertAdjacentText", "afterBegin", "hello world");
+//		_bstr_t html = htmldoc.Get("body").Get("innerHTML");
+//		long height = htmldoc.Get("body").Get("clientHeight");
+//		CDispatchPtr body = htmlDoc.Get("body");
+//-----------------------------------------------------------------------------
+
+#include "comutil.h"
+#include "core.h"
+
+
+class CDispatchVariant : public _variant_t
+{
+public:
+
+	CDispatchVariant() throw() : _variant_t() { }
+
+	CDispatchVariant(const VARIANT& varSrc) : _variant_t(varSrc) { }
+	CDispatchVariant(const VARIANT* pSrc) : _variant_t(pSrc) { }
+	CDispatchVariant(const _variant_t& varSrc) : _variant_t(varSrc) { }
+
+	CDispatchVariant(VARIANT& varSrc, bool fCopy) : _variant_t(varSrc, fCopy) { }
+
+	CDispatchVariant(IDispatch* pSrc, bool fAddRef = true) throw() : _variant_t(pSrc, fAddRef) { }
+	CDispatchVariant(IUnknown* pSrc, bool fAddRef = true) throw() : _variant_t(pSrc, fAddRef) { }
+
+	_variant_t& operator=(const VARIANT& varSrc)
+		{ return _variant_t::operator=(varSrc); }
+	_variant_t& operator=(const VARIANT* pSrc)
+		{ return _variant_t::operator=(pSrc); }
+	_variant_t& operator=(const _variant_t& varSrc)
+		{ return _variant_t::operator=(varSrc); }
+
+	_variant_t& operator=(IDispatch* pSrc)
+		{ return _variant_t::operator=(pSrc); }
+	_variant_t& operator=(IUnknown* pSrc)
+		{ return _variant_t::operator=(pSrc); }
+
+	IDispatch* operator->() const
+		{ return (IDispatch*)*this; }
+
+	operator bool() const
+	{
+		if (vt == VT_DISPATCH)
+			return (pdispVal != NULL);
+		else
+			return _variant_t::operator bool();
+	}
+	
+#ifndef _UNICODE
+	void CreateObject(LPCSTR szProgId)
+	{
+		OLECHAR nameBuff[256]; // try to avoid doing an allocation
+		LPOLESTR wideName;
+
+		int cch = lstrlen(szProgId) + 1;
+		if (cch <= sizeof(nameBuff) / sizeof(OLECHAR))
+			wideName = nameBuff;
+		else
+		{
+			// dispatch item name is longer than our fixed-size buffer; allocate.
+			// Do NOT use alloca() [or ATL's A2W(), which uses alloca()], because
+			// this is function may be inlined (although that's not likely), and
+			// that could cause a stack overflow if this function is called from
+			// within a loop
+
+			wideName = new OLECHAR[cch]; // cch may be just a bit bigger than necessary
+			if (wideName == NULL)
+				_com_raise_error(E_OUTOFMEMORY);
+		}
+
+		wideName[0] = '\0';
+		MultiByteToWideChar(CP_ACP, 0, szProgId, -1, wideName, cch);
+
+		CreateObject(wideName);
+
+		if (wideName != nameBuff)
+			delete[] wideName;	
+	}
+#endif
+	
+	void CreateObject(LPCOLESTR szProgId)
+	{
+		IDispatch *ppDisp;
+		CLSID clsid;
+	
+		HRESULT hr = CLSIDFromProgID(szProgId, &clsid);
+		if (FAILED(hr)) msgerr("CLSIDFromProgID failed");
+		
+		hr = CoCreateInstance(
+		    		clsid, NULL,
+		    		CLSCTX_LOCAL_SERVER|CLSCTX_INPROC_SERVER,
+		    		IID_IDispatch, (LPVOID*)&ppDisp);
+		if (FAILED(hr)) msgerr("CoCreateInstance failed");
+				  
+		*this = ppDisp;
+		ppDisp->Release();
+	}
+	
+public:
+
+	template <class DispatchItem>
+	CDispatchVariant Get(DispatchItem property);
+
+	template <class DispatchItem>
+	CDispatchVariant Get(DispatchItem property,
+							const _variant_t& arg1);
+
+	template <class DispatchItem>
+	CDispatchVariant Get(DispatchItem property,
+							const _variant_t& arg1,
+							const _variant_t& arg2);
+
+	// Set: set a property's value
+	template <class DispatchItem>
+	void Set(DispatchItem property, const _variant_t& value);
+
+	// SetRef: set a reference to a property's value
+	template <class DispatchItem>
+	void SetRef(DispatchItem property, const _variant_t& value);
+
+	// Invoke: invoke a method
+	template <class DispatchItem>
+	CDispatchVariant Invoke(DispatchItem method);
+
+	template <class DispatchItem>
+	CDispatchVariant Invoke(DispatchItem method,
+							const _variant_t& arg1);
+
+	template <class DispatchItem>
+	CDispatchVariant Invoke(DispatchItem method,
+							const _variant_t& arg1,
+							const _variant_t& arg2);
+
+	template <class DispatchItem>
+	CDispatchVariant Invoke(DispatchItem method,
+							const _variant_t& arg1,
+							const _variant_t& arg2,
+							const _variant_t& arg3);
+
+	template <class DispatchItem>
+	CDispatchVariant Invoke(DispatchItem method,
+							const _variant_t& arg1,
+							const _variant_t& arg2,
+							const _variant_t& arg3,
+							const _variant_t& arg4);
+
+	template <class DispatchItem>
+	CDispatchVariant Invoke(DispatchItem method,
+							const _variant_t& arg1,
+							const _variant_t& arg2,
+							const _variant_t& arg3,
+							const _variant_t& arg4,
+							const _variant_t& arg5);
+
+	template <class DispatchItem>
+	CDispatchVariant Invoke(DispatchItem method,
+							const _variant_t& arg1,
+							const _variant_t& arg2,
+							const _variant_t& arg3,
+							const _variant_t& arg4,
+							const _variant_t& arg5,
+							const _variant_t& arg6);
+
+	template <class DispatchItem>
+	CDispatchVariant Invoke(DispatchItem method,
+							const _variant_t& arg1,
+							const _variant_t& arg2,
+							const _variant_t& arg3,
+							const _variant_t& arg4,
+							const _variant_t& arg5,
+							const _variant_t& arg6,
+							const _variant_t& arg7);
+
+	template <class DispatchItem>
+	CDispatchVariant Invoke(DispatchItem method,
+							const _variant_t& arg1,
+							const _variant_t& arg2,
+							const _variant_t& arg3,
+							const _variant_t& arg4,
+							const _variant_t& arg5,
+							const _variant_t& arg6,
+							const _variant_t& arg7,
+							const _variant_t& arg8);
+
+	template <class DispatchItem>
+	CDispatchVariant Invoke(DispatchItem method,
+							const _variant_t& arg1,
+							const _variant_t& arg2,
+							const _variant_t& arg3,
+							const _variant_t& arg4,
+							const _variant_t& arg5,
+							const _variant_t& arg6,
+							const _variant_t& arg7,
+							const _variant_t& arg8,
+							const _variant_t& arg9);
+
+
+protected:
+	HRESULT InvokeHelper(DISPID dispatchItem,
+					  const VARIANT* params,
+					  int cParams,
+					  WORD invokeType,
+					  VARIANT* result)
+	{
+		IDispatch* disp = (IDispatch*)(*this);
+		DISPPARAMS dispparams = { const_cast<VARIANT*>(params), 0, (UINT)cParams, 0 };
+		HRESULT hr;
+		DISPID dispidSet;
+		EXCEPINFO excepInfo;
+		SecureZeroMemory(&excepInfo, sizeof(EXCEPINFO));
+
+		if (invokeType == DISPATCH_PROPERTYPUT ||
+			invokeType == DISPATCH_PROPERTYPUTREF)
+		{
+			dispidSet = DISPID_PROPERTYPUT;
+
+			dispparams.cNamedArgs = 1;
+			dispparams.rgdispidNamedArgs = &dispidSet;
+		}
+
+		// A hard-coded assumption that "result" does NOT already
+		// contain a valid variant!
+		if (result)
+			V_VT(result) = VT_EMPTY;
+
+		hr = disp->Invoke(dispatchItem, IID_NULL, LOCALE_SYSTEM_DEFAULT,
+			invokeType, &dispparams, result, &excepInfo, NULL);
+			
+		return hr;
+	}
+
+	// dispatchItem is (wchar_t*) -- convert it to a DISPID
+	void InvokeHelper(LPCOLESTR dispatchItem,
+					  const VARIANT* params,
+					  int cParams,
+					  WORD invokeType,
+					  VARIANT* result)
+	{
+		IDispatch* disp = (IDispatch*)(*this);
+
+
+		DISPID dispid;
+		HRESULT hr = disp->GetIDsOfNames(IID_NULL, const_cast<LPOLESTR*>(&dispatchItem), 1,
+			LOCALE_SYSTEM_DEFAULT, &dispid);
+		if (FAILED(hr)) msgerr("InvokeHelper LPCOLESTR dispatchItem failed");
+
+		// call the DISPID overload of InvokeHelper()
+		hr = InvokeHelper(dispid, params, cParams, invokeType, result);
+		if (FAILED(hr))
+			MessageBoxW(NULL, dispatchItem, L"Error!", MB_ICONEXCLAMATION|MB_OK);
+	}
+
+#ifndef _UNICODE
+	// dispatchItem is an Ansi LPSTR  -- convert it to an LPOLESTR
+	void InvokeHelper(LPCSTR dispatchItem,
+					  const VARIANT* params,
+					  int cParams,
+					  WORD invokeType,
+					  VARIANT* result)
+	{
+		OLECHAR nameBuff[256]; // try to avoid doing an allocation
+		LPOLESTR wideName;
+
+		int cch = lstrlen(dispatchItem) + 1;
+		if (cch <= sizeof(nameBuff) / sizeof(OLECHAR))
+			wideName = nameBuff;
+		else
+		{
+			// dispatch item name is longer than our fixed-size buffer; allocate.
+			// Do NOT use alloca() [or ATL's A2W(), which uses alloca()], because
+			// this is function may be inlined (although that's not likely), and
+			// that could cause a stack overflow if this function is called from
+			// within a loop
+
+			wideName = new OLECHAR[cch]; // cch may be just a bit bigger than necessary
+			if (wideName == NULL)
+				_com_raise_error(E_OUTOFMEMORY);
+		}
+
+		wideName[0] = '\0';
+		MultiByteToWideChar(CP_ACP, 0, dispatchItem, -1, wideName, cch);
+
+		// call the LPOLESTR overload of InvokeHelper()
+		InvokeHelper(wideName, params, cParams, invokeType, result);
+
+		if (wideName != nameBuff)
+			delete[] wideName;
+	}
+#endif
+};
+
+
+// Get: get a property's value
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Get(DispatchItem property)
+{
+	VARIANT result;
+	InvokeHelper(property, NULL, 0, DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Get(DispatchItem property,
+						const _variant_t& arg1)
+{
+	VARIANT result;
+	InvokeHelper(property, &arg1, 1, DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Get(DispatchItem property,
+						const _variant_t& arg1,
+						const _variant_t& arg2)
+{
+	VARIANT result;
+	VARIANT args[2];
+
+	args[0] = arg2;
+	args[1] = arg1;
+	InvokeHelper(property, args, 2, DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+// Set: set a property's value
+template <class DispatchItem>
+void CDispatchVariant::Set(DispatchItem property, const _variant_t& value)
+{
+	InvokeHelper(property, &value, 1, DISPATCH_PROPERTYPUT, NULL);
+}
+
+// SetRef: set a reference to a property's value
+template <class DispatchItem>
+void CDispatchVariant::SetRef(DispatchItem property, const _variant_t& value)
+{
+	InvokeHelper(property, &value, 1, DISPATCH_PROPERTYPUTREF, NULL);
+}
+
+// Invoke: invoke a method
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Invoke(DispatchItem method)
+{
+	VARIANT result;
+	InvokeHelper(method, NULL, 0, DISPATCH_METHOD | DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
+						const _variant_t& arg1)
+{
+	VARIANT result;
+	InvokeHelper(method, &arg1, 1, DISPATCH_METHOD | DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
+						const _variant_t& arg1,
+						const _variant_t& arg2)
+{
+	VARIANT result;
+	VARIANT args[2];
+
+	args[0] = arg2;
+	args[1] = arg1;
+
+	InvokeHelper(method, args, 2, DISPATCH_METHOD | DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
+						const _variant_t& arg1,
+						const _variant_t& arg2,
+						const _variant_t& arg3)
+{
+	VARIANT result;
+	VARIANT args[3];
+
+	args[0] = arg3;
+	args[1] = arg2;
+	args[2] = arg1;
+
+	InvokeHelper(method, args, 3, DISPATCH_METHOD | DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
+						const _variant_t& arg1,
+						const _variant_t& arg2,
+						const _variant_t& arg3,
+						const _variant_t& arg4)
+{
+	VARIANT result;
+	VARIANT args[4];
+
+	args[0] = arg4;
+	args[1] = arg3;
+	args[2] = arg2;
+	args[3] = arg1;
+
+	InvokeHelper(method, args, 4, DISPATCH_METHOD | DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
+						const _variant_t& arg1,
+						const _variant_t& arg2,
+						const _variant_t& arg3,
+						const _variant_t& arg4,
+						const _variant_t& arg5)
+{
+	VARIANT result;
+	VARIANT args[5];
+
+	args[0] = arg5;
+	args[1] = arg4;
+	args[2] = arg3;
+	args[3] = arg2;
+	args[4] = arg1;
+
+	InvokeHelper(method, args, 5, DISPATCH_METHOD | DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
+						const _variant_t& arg1,
+						const _variant_t& arg2,
+						const _variant_t& arg3,
+						const _variant_t& arg4,
+						const _variant_t& arg5,
+						const _variant_t& arg6)
+{
+	VARIANT result;
+	VARIANT args[6];
+
+	args[0] = arg6;
+	args[1] = arg5;
+	args[2] = arg4;
+	args[3] = arg3;
+	args[4] = arg2;
+	args[5] = arg1;
+
+	InvokeHelper(method, args, 6, DISPATCH_METHOD | DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
+						const _variant_t& arg1,
+						const _variant_t& arg2,
+						const _variant_t& arg3,
+						const _variant_t& arg4,
+						const _variant_t& arg5,
+						const _variant_t& arg6,
+						const _variant_t& arg7)
+{
+	VARIANT result;
+	VARIANT args[7];
+
+	args[0] = arg7;
+	args[1] = arg6;
+	args[2] = arg5;
+	args[3] = arg4;
+	args[4] = arg3;
+	args[5] = arg2;
+	args[6] = arg1;
+
+	InvokeHelper(method, args, 7, DISPATCH_METHOD | DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
+						const _variant_t& arg1,
+						const _variant_t& arg2,
+						const _variant_t& arg3,
+						const _variant_t& arg4,
+						const _variant_t& arg5,
+						const _variant_t& arg6,
+						const _variant_t& arg7,
+						const _variant_t& arg8)
+{
+	VARIANT result;
+	VARIANT args[8];
+	
+	args[0] = arg8;
+	args[1] = arg7;
+	args[2] = arg6;
+	args[3] = arg5;
+	args[4] = arg4;
+	args[5] = arg3;
+	args[6] = arg2;
+	args[7] = arg1;
+
+	InvokeHelper(method, args, 8, DISPATCH_METHOD | DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+template <class DispatchItem>
+CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
+						const _variant_t& arg1,
+						const _variant_t& arg2,
+						const _variant_t& arg3,
+						const _variant_t& arg4,
+						const _variant_t& arg5,
+						const _variant_t& arg6,
+						const _variant_t& arg7,
+						const _variant_t& arg8,
+						const _variant_t& arg9)
+{
+	VARIANT result;
+	VARIANT args[9];
+
+	args[0] = arg9;
+	args[1] = arg8;
+	args[2] = arg7;
+	args[3] = arg6;
+	args[4] = arg5;
+	args[5] = arg4;
+	args[6] = arg3;
+	args[7] = arg2;
+	args[8] = arg1;
+
+	InvokeHelper(method, args, 9, DISPATCH_METHOD | DISPATCH_PROPERTYGET, &result);
+	return result;
+}
+
+namespace bpp
+{
+
+inline string conv(string* ptr, CDispatchVariant x)
+{
+	LPSTR val = x;
+	string ret(val);
+	return variant(ret);
+}
+
+
+inline CDispatchVariant conv(CDispatchVariant* ptr, string x)
+{
+	LPSTR str = x.cstr();
+	_variant_t ret(str);
+	return ret;
+}
+	
+
+/*
+inline CDispatchVariant conv(CDispatchVariant* ptr, string x)
+{
+	LPSTR str = x.cstr();
+	_variant_t ret(str);
+	return ret;
+}
+
+inline _variant_t conv(_variant_t* ptr, string x)
+{
+	LPSTR str = x.cstr();
+	_variant_t ret(str);
+	return ret;
+}
+
+inline string conv(string* ptr, _bstr_t x)
+{
+	LPSTR val = x;
+	string ret(val);
+	return variant(ret);
+}
+
+inline int conv(int* ptr, _bstr_t x)
+{
+	LPSTR val = x;
+	string ret(val);
+	return variant(ret);
+}
+
+inline _bstr_t conv(_bstr_t* ptr, variant x)
+{
+	string val = x;
+	LPSTR str = val.cstr();
+	_bstr_t ret(str);
+	return ret;
+}
+
+
+
+
+inline _bstr_t conv(_bstr_t* ptr, int x)
+{
+	variant num = x;
+	string val = num;
+	LPSTR str = val.cstr();
+	_bstr_t ret(str);
+	return ret;
+}
+*/
+
+} //namespace bpp
