@@ -1,0 +1,2 @@
+bpp -k dll
+pause
