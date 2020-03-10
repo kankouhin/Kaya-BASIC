@@ -1,2 +1,2 @@
-bpp -c foreach
+bpp -c -w foreach
 pause

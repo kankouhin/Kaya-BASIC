@@ -1,5 +1,7 @@
 Option Explicit
 
+Using MsgBoxDoEvents
+
 Sub Main
 
 	Dim Xlb As ComObject, Xls As ComObject, Rng As ComObject,xlapp As ComObject
@@ -14,9 +16,9 @@ Sub Main
 	sName = "Name"
 
 	Dim s As String = CallByName(xls, "Name")
-	Print s
+	Msgbox s
 	s = CallByName(xls, sName)
-	Print s
+	Msgbox s
 	
 	Rng = CallByName(xls, "Range")("A1:A5")
 	Rng.Font.Size = 14

@@ -1,5 +1,7 @@
 Option Explicit
 
+Using MsgBoxDoEvents
+
 Sub Main
 
 	Dim Xlb As ComObject, Xls As ComObject, xlapp As ComObject
@@ -14,16 +16,16 @@ Sub Main
 	
 	For each Xls in Xlb.WorkSheets
 		Dim s As String = Xls.Name
-		Print s
+		MsgBox s
 	Next
 	
 	For each Xls2 As comobject in Xlb.WorkSheets
 		Dim s As String = Xls2.Name
-		Print s
+		MsgBox s
 	Next
 
 	xlapp.DisplayAlerts = FALSE
-	Sleep 5
+	Msgbox "Click to continue..."
 
 	xlapp.quit
 
