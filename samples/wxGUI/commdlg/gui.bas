@@ -1,6 +1,6 @@
 Option Explicit
 
-using wxWidgets
+using msgboxdoevents
 
 Dim f As wxFrame Ptr
 Dim btnOpen 	As wxButton Ptr
