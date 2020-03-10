@@ -1,0 +1,3 @@
+knowned issue:
+about compile com samples with wxWidgets 
+can NOT exit completly
