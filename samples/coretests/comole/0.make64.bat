@@ -1,2 +1,2 @@
-bpp -m64 -x -c -r test
+bpp -m64 -c -r test
 pause

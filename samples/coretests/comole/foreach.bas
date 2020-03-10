@@ -1,9 +1,8 @@
 Option Explicit
-Option Console
 
 Sub Main
 
-	DIM Xlb As ComObject, Xls AS ComObject, xlapp AS ComObject
+	Dim Xlb As ComObject, Xls As ComObject, xlapp As ComObject
 
 	xlapp.CreateObject("Excel.Application")
 	xlapp.Visible = TRUE
@@ -13,16 +12,18 @@ Sub Main
 	Xlb.WorkSheets.Add
 	Xlb.WorkSheets.Add
 	
-	for each Xls in Xlb.WorkSheets
-		msgbox Xls.Name
-	next
+	For each Xls in Xlb.WorkSheets
+		Dim s As String = Xls.Name
+		Print s
+	Next
 	
-	for each Xls2 as comobject in Xlb.WorkSheets
-		msgbox Xls2.Name
-	next
+	For each Xls2 As comobject in Xlb.WorkSheets
+		Dim s As String = Xls2.Name
+		Print s
+	Next
 
 	xlapp.DisplayAlerts = FALSE
-	msgbox "click to continue..."
+	Sleep 5
 
 	xlapp.quit
 

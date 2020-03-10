@@ -1,9 +1,8 @@
 Option Explicit
-Option Console
 
 Sub Main
 
-	DIM Xlb As ComObject, Xls AS ComObject, Rng AS ComObject,xlapp AS ComObject
+	Dim Xlb As ComObject, Xls As ComObject, Rng As ComObject,xlapp As ComObject
 
 	xlapp.CreateObject("Excel.Application")
 	xlapp.Visible = TRUE
@@ -11,11 +10,13 @@ Sub Main
 	Xlb = xlapp.Workbooks.Add
 	Xls = Xlb.WorkSheets(1)
 	
-	dim sName as string
+	Dim sName As String
 	sName = "Name"
 
-	msgbox CallByName(xls, "Name")
-	msgbox CallByName(xls, sName)
+	Dim s As String = CallByName(xls, "Name")
+	Print s
+	s = CallByName(xls, sName)
+	Print s
 	
 	Rng = CallByName(xls, "Range")("A1:A5")
 	Rng.Font.Size = 14
@@ -25,7 +26,7 @@ Sub Main
 	Rng.EntireColumn.Autofit
 
 	xlapp.DisplayAlerts = FALSE
-	msgbox "click to continue..."
+	Sleep 5
 
 	xlapp.quit
 

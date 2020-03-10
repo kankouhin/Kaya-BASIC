@@ -1,2 +1,2 @@
-bpp -r -c callbyname
+bpp -c callbyname
 pause

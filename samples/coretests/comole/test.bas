@@ -1,9 +1,8 @@
 Option Explicit
-Option Console
 
 Sub Main
 
-	DIM Xlb, Xls, Rng ,xlapp As ComObject
+	Dim Xlb, Xls, Rng ,xlapp As ComObject
 
 	xlapp.CreateObject("Excel.Application")
 	xlapp.Visible = TRUE
@@ -11,19 +10,20 @@ Sub Main
 	Xlb = xlapp.Workbooks.Add
 	Xls = Xlb.WorkSheets(1)
 
-	with Xls.Cells(1, 1)
+	' test with
+	With Xls.Cells(1, 1)
 		.Value = "Name"
 		
-		with .Font
+		With .Font
 			.Bold = TRUE
 			.ColorIndex = 2
-		end with
+		End With
 		.Interior.ColorIndex = 30
 		.Value = "Test value 1"
 		.Value = "Test value 2"
 		.Value = "Tets value 3"
 		.Value = "Test value 4"
-	end with
+	End With
 	
 	Rng = Xls.Range("A1:A5")
 	Rng.Font.Size = 14
@@ -33,7 +33,7 @@ Sub Main
 	Rng.EntireColumn.Autofit
 
 	xlapp.DisplayAlerts = FALSE
-	//msgbox "click to continue..."
+	Sleep 5
 
 	xlapp.quit
 
