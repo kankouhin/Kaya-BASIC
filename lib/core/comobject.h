@@ -65,38 +65,6 @@ public:
 			return _variant_t::operator bool();
 	}
 	
-#ifndef _UNICODE
-	void CreateObject(LPCSTR szProgId)
-	{
-		OLECHAR nameBuff[256]; // try to avoid doing an allocation
-		LPOLESTR wideName;
-
-		int cch = lstrlen(szProgId) + 1;
-		if (cch <= sizeof(nameBuff) / sizeof(OLECHAR))
-			wideName = nameBuff;
-		else
-		{
-			// dispatch item name is longer than our fixed-size buffer; allocate.
-			// Do NOT use alloca() [or ATL's A2W(), which uses alloca()], because
-			// this is function may be inlined (although that's not likely), and
-			// that could cause a stack overflow if this function is called from
-			// within a loop
-
-			wideName = new OLECHAR[cch]; // cch may be just a bit bigger than necessary
-			if (wideName == NULL)
-				_com_raise_error(E_OUTOFMEMORY);
-		}
-
-		wideName[0] = '\0';
-		MultiByteToWideChar(CP_ACP, 0, szProgId, -1, wideName, cch);
-
-		CreateObject(wideName);
-
-		if (wideName != nameBuff)
-			delete[] wideName;	
-	}
-#endif
-	
 	void CreateObject(LPCOLESTR szProgId)
 	{
 		IDispatch *ppDisp;
@@ -269,7 +237,6 @@ protected:
 			MessageBoxW(NULL, dispatchItem, L"Error!", MB_ICONEXCLAMATION|MB_OK);
 	}
 
-#ifndef _UNICODE
 	// dispatchItem is an Ansi LPSTR  -- convert it to an LPOLESTR
 	void InvokeHelper(LPCSTR dispatchItem,
 					  const VARIANT* params,
@@ -280,7 +247,7 @@ protected:
 		OLECHAR nameBuff[256]; // try to avoid doing an allocation
 		LPOLESTR wideName;
 
-		int cch = lstrlen(dispatchItem) + 1;
+		int cch = strlen(dispatchItem) + 1;
 		if (cch <= sizeof(nameBuff) / sizeof(OLECHAR))
 			wideName = nameBuff;
 		else
@@ -305,7 +272,6 @@ protected:
 		if (wideName != nameBuff)
 			delete[] wideName;
 	}
-#endif
 };
 
 

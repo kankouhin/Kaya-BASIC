@@ -26,3 +26,25 @@
 #include <wx/printdlg.h>
 #include <wx/artprov.h>
 #include <wx/notebook.h>
+
+
+namespace bpp 
+{
+	inline string conv(string* ptr, wxString x)
+	{
+	    return string( x.ToStdString().c_str() );
+	}
+
+	inline wxString conv(wxString* ptr, string x)
+	{
+	    return wxString( x.cstr() );
+	}
+
+	#define DoEvents wxYield
+
+	inline Integer MsgBox(string prompt, Integer button, string title)
+	{
+	    return wxMessageBox( prompt.cstr(), title.cstr(), button );
+	}
+
+}
