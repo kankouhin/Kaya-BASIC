@@ -1,8 +1,7 @@
 # Kaya-BASIC
 Base on B++ complier( https://sourceforge.net/projects/b-plus-plus/ ). Now windows only.
 
-Compile with mingw-w64(i686-8.1.0-posix-#sjlj-rt_v6-rev0  and x86_64-8.1.0-posix-#seh-rt_v6-rev0  )
-and GUI with wxWidgets 3.x.x
+Compile with mingw-w64 and GUI with wxWidgets 3.1.3
 
 # Features
  - Compiles with Mingw-w64(both 32bit and 64bit)
@@ -24,7 +23,7 @@ and GUI with wxWidgets 3.x.x
      - change the MINGW path and wxWidgets Include and Lib paths.
   
   4. Add belowing paths to PATH environment.
-     - [BPP]/bin
+     - [Kaya-BASIC]/bin
      - [MINGW]/bin 
      - [wxWidgets]/lib/gcc810_dll
      - [wxWidgets]/lib/gcc810_x64_dll 
