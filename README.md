@@ -4,10 +4,12 @@ Base on B++ complier( https://sourceforge.net/projects/b-plus-plus/ ). Now windo
 Compile with mingw-w64(i686-8.1.0-posix-#sjlj-rt_v6-rev0  and x86_64-8.1.0-posix-#seh-rt_v6-rev0  )
 and GUI with wxWidgets 3.x.x
 
-# Compile with mingw-64(both 32bit and 64bit)
-# Easy call windows com/ole like VB
-# creates GUI(using wxWidgets), console or DLL applications
-
+# Features
+ - Compiles with Mingw-w64(both 32bit and 64bit)
+ - OOP supported.(CreateObject ByName and CallByName)
+ - Creates GUI(using wxWidgets), console or DLL applications.
+ - Easy calls windows comole like VB.
+ 
 # Install
  1. download mingw-w64 8.1.0
     - 32bit: i686-8.1.0-posix-sjlj-rt_v6-rev0  (must sjlj )
