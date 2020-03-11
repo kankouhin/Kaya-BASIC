@@ -2,9 +2,11 @@ Option Explicit
 
 Using MsgBoxDoEvents
 
-Sub Main
+Dim f As wxFrame Ptr
 
-	Dim Xlb As ComObject, Xls As ComObject, xlapp As ComObject
+Sub OnButtonClick(ByRef ev As wxCommandEvent)
+
+	Dim Xlb, Xls, xlapp As ComObject
 
 	xlapp.CreateObject("Excel.Application")
 	xlapp.Visible = TRUE
@@ -15,18 +17,27 @@ Sub Main
 	Xlb.WorkSheets.Add
 	
 	For each Xls in Xlb.WorkSheets
-		Dim s As String = Xls.Name
-		MsgBox s
+		MsgBox Xls.Name
 	Next
 	
 	For each Xls2 As comobject in Xlb.WorkSheets
-		Dim s As String = Xls2.Name
-		MsgBox s
+		MsgBox Xls2.Name
 	Next
 
 	xlapp.DisplayAlerts = FALSE
-	Msgbox "Click to continue..."
+	xlapp.Quit
 
-	xlapp.quit
+End Sub
 
+Sub Main
+
+	f = New wxFrame( NULL, wxID_ANY, "ComOle Samples" )
+	f.SetClientSize(wxSize(300,100))
+	
+	Dim p As New wxPanel(f, wxID_ANY)
+    Dim btnTest As New wxButton(p, 100, "Test", wxPoint(100,20))
+    btnTest.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
+    
+	f.SetIcon( wxICON(wxICON_AAA) )
+	f.Show(TRUE)
 End Sub

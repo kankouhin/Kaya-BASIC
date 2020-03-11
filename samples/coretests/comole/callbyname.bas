@@ -2,9 +2,11 @@ Option Explicit
 
 Using MsgBoxDoEvents
 
-Sub Main
+Dim f As wxFrame Ptr
 
-	Dim Xlb As ComObject, Xls As ComObject, Rng As ComObject,xlapp As ComObject
+Sub OnButtonClick(ByRef ev As wxCommandEvent)
+
+	Dim Xlb, Xls, Rng, xlapp As ComObject
 
 	xlapp.CreateObject("Excel.Application")
 	xlapp.Visible = TRUE
@@ -15,10 +17,8 @@ Sub Main
 	Dim sName As String
 	sName = "Name"
 
-	Dim s As String = CallByName(xls, "Name")
-	Msgbox s
-	s = CallByName(xls, sName)
-	Msgbox s
+	MsgBox CallByName(xls, "Name")
+	MsgBox CallByName(xls, sName)
 	
 	Rng = CallByName(xls, "Range")("A1:A5")
 	Rng.Font.Size = 14
@@ -28,8 +28,19 @@ Sub Main
 	Rng.EntireColumn.Autofit
 
 	xlapp.DisplayAlerts = FALSE
-	Sleep 5
+	xlapp.Quit
+	
+End Sub
 
-	xlapp.quit
+Sub Main
 
+	f = New wxFrame( NULL, wxID_ANY, "ComOle Samples" )
+	f.SetClientSize(wxSize(300,100))
+	
+	Dim p As New wxPanel(f, wxID_ANY)
+    Dim btnTest As New wxButton(p, 100, "Test", wxPoint(100,20))
+    btnTest.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
+    
+	f.SetIcon( wxICON(wxICON_AAA) )
+	f.Show(TRUE)
 End Sub
