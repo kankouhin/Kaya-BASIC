@@ -12,7 +12,7 @@ and GUI with wxWidgets 3.x.x
  
 # Install
  1. download mingw-w64 8.1.0
-    - 32bit: i686-8.1.0-posix-sjlj-rt_v6-rev0  (must sjlj )
+    - 32bit: i686-8.1.0-posix-sjlj-rt_v6-rev0  (must sjlj, because wxWidgets development files complied by this.)
     - 64bit: x86_64-8.1.0-posix-seh-rt_v6-rev0 
  2. download wxWidgets 3.1.3 (https://www.wxwidgets.org/downloads/  windows binaries ) Mingw-w64 8.1
      -  Header Files
