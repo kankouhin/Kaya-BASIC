@@ -1,8 +1,6 @@
 # Kaya-BASIC
 Base on B++ complier( https://sourceforge.net/projects/b-plus-plus/ ). Now windows only.
 
-Compile with mingw-w64 and GUI with wxWidgets 3.1.3
-
 # Features
  - Compiles with Mingw-w64(both 32bit and 64bit)
  - OOP, supports CreateObject by name and call function/sub/property by name)
