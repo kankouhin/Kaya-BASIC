@@ -6,7 +6,7 @@ and GUI with wxWidgets 3.x.x
 
 # Features
  - Compiles with Mingw-w64(both 32bit and 64bit)
- - OOP supported.(CreateObject ByName and CallByName)
+ - OOP, supports CreateObject by name and call function/sub/property by name)
  - Creates GUI(using wxWidgets), console or DLL applications.
  - Easy calls windows comole like VB.
  
