@@ -33,3 +33,4 @@ Base on B++ complier( https://sourceforge.net/projects/b-plus-plus/ ). Now windo
 # Sample 
  Easy create the GUI and easy call windows comole like this.
  - https://github.com/kankouhin/Kaya-BASIC/blob/master/samples/wxGUI/gui%26comole/gui.bas
+ ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/samples/wxGUI/gui%26comole/screenshot.png)
