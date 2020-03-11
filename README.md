@@ -23,7 +23,7 @@ and GUI with wxWidgets 3.x.x
   3. modify the config[XXX] file under Bin folder
      - change the MINGW path and wxWidgets Include and Lib paths.
   
-  4. Add belows to PATH environment.
+  4. Add belowing paths to PATH environment.
      - [BPP]/bin
      - [MINGW]/bin 
      - [wxWidgets]/lib/gcc810_dll
