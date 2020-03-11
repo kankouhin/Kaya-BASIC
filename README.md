@@ -33,10 +33,7 @@ Base on B++ complier( https://sourceforge.net/projects/b-plus-plus/ ). Now windo
 # Sample 
  Easy create the GUI and easy call windows comole like this.
 ```
-
 Option Explicit
-
-Using MsgBoxDoEvents
 
 Dim f As wxFrame Ptr
 Dim listctrl As wxListCtrl Ptr
@@ -80,7 +77,6 @@ Sub Main
 	f.SetIcon( wxICON(wxICON_AAA) )
 	f.Show(TRUE)
 End Sub
-
 ```
  - Screenshot<br>
  ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/samples/wxGUI/gui%26comole/screenshot.png)
