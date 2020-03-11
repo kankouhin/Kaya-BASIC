@@ -30,6 +30,11 @@ Base on B++ complier( https://sourceforge.net/projects/b-plus-plus/ ). Now windo
   
   5. try to build samples.
 
+# String <---> wxString
+  - Dim s As String = wxString("Hello Kaya-BASIC") // can auto convert wxString to String
+  - wxFrame.SetTitle( s )　// because wxWidgets unknown the String type, please use @ before the string variant.
+     -  wxFrame.SetTitle( @s )
+
 # Sample 
  Easy create the GUI and easy call windows comole like this.
 ```
