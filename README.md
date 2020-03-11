@@ -30,4 +30,6 @@ Compile with mingw-w64 and GUI with wxWidgets 3.1.3
   
   5. try to build samples.
 
-
+# Sample 
+ Easy create the GUI and easy call windows comole like this.
+ - https://github.com/kankouhin/Kaya-BASIC/blob/master/samples/wxGUI/gui%26comole/gui.bas
