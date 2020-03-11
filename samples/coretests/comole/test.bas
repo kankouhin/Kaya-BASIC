@@ -29,7 +29,7 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 		.Value = "Tets value 3"
 		
 		Dim v As String = "Test value 4"
-		.Value = @v
+		.Value = v
 		MsgBox .Value
 	End With
 	
