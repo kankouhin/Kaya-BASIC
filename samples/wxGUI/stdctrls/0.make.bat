@@ -1,0 +1,2 @@
+bpp -w gui
+pause
