@@ -1,5 +1,5 @@
 # Kaya-BASIC
-Base on B++ complier( https://sourceforge.net/projects/b-plus-plus/ ). Now windows only.
+Based on B++ complier( https://sourceforge.net/projects/b-plus-plus/ ). Now windows only.
 - Because the wxWidgets can also run on Linux and Mac, I will make Linux and Mac versions If i have time(and have a dev environment. Maybe easy to do it.).
   
 
@@ -30,10 +30,12 @@ Base on B++ complier( https://sourceforge.net/projects/b-plus-plus/ ). Now windo
   
   5. try to build samples.
 
-# String <---> wxString
-  - Dim s As String = wxString("Hello Kaya-BASIC") // can auto convert wxString to String
-  - wxFrame.SetTitle( s )　                        // because wxWidgets don't known the String type, please use @ before the string variant.
-     -  wxFrame.SetTitle( @s )                     // also use @ to set string to ComObject
+# String for wxWidgets and ComObject
+  - Dim s As String = "Hello Kaya-BASIC"
+  - wxFrame.SetTitle( s )　　　　　　　　　　　　　OK // not support string expressions: wxFrame.SetTitle( s + "Kaya" )
+     - wxFrame.SetTitle( s + "Kaya" )　　　　　　　NG
+  - WorkSheets(1).Cells(1,1) = s　　　　　　　　　　OK
+     - WorkSheets(1).Cells(1,1) = s + "Kaya"　　　　NG
 
 # Sample 
  Easy create the GUI and easy call windows comole like this.
@@ -52,21 +54,21 @@ Sub LoadDataFromExcel
 	path += "\data.xlsx"
 	
 	xlApp.CreateObject("Excel.Application")
-	Set xb = xlApp.WorkBooks.Open( @path )
+	Set xb = xlApp.WorkBooks.Open( path )
 	Set xls = xb.WorkSheets(1)
 	
 	For i As Integer = 1 To 4
 		Dim s As String = xls.Cells(1, i).Value
-		listctrl.InsertColumn( i - 1, @s )
+		listctrl.InsertColumn( i - 1, s )
 	Next
 	
 	For r As Integer = 2 To 5
 		Dim s As String = xls.Cells(r, 1).Value
-		listctrl.InsertItem( r - 2 , @s )
+		listctrl.InsertItem( r - 2 , s )
 		For c As Integer = 2 To 4
 			s = xls.Cells(r, c).Value
-			listctrl.SetItem( r - 2, c - 1, @s )
-		Next 
+			listctrl.SetItem( r - 2, c - 1, s )
+		Next
 	Next
 	
 	xb.Close
@@ -74,7 +76,8 @@ Sub LoadDataFromExcel
 End Sub
 
 Sub Main
-	f = New wxFrame( NULL, wxID_ANY, "listctrl" )
+	Dim strTitle As String = "listctrl"
+	f = New wxFrame( NULL, wxID_ANY, strTitle )
 	listctrl = New wxListCtrl( f, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT )
 	
 	Call LoadDataFromExcel
