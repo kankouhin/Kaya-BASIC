@@ -52,8 +52,8 @@ Sub Main
 	f.SetClientSize(wxSize(300,100))
 	
 	Dim p As New wxPanel(f, wxID_ANY)
-    Dim btnTest As New wxButton(p, 100, "Test", wxPoint(100,20))
-    btnTest.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
+	Dim btnTest As New wxButton(p, 100, "Test", wxPoint(100,20))
+	btnTest.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
     
 	f.SetIcon( wxICON(wxICON_AAA) )
 	f.Show(TRUE)
