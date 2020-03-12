@@ -34,8 +34,8 @@ Based on B++ complier( https://sourceforge.net/projects/b-plus-plus/ ). Now wind
   - Dim s As String = "Hello Kaya-BASIC"
   - wxFrame.SetTitle( s )　　　　　　　　　　　　　OK // not support string expressions: wxFrame.SetTitle( s + "Kaya" )
      - wxFrame.SetTitle( s + "Kaya" )　　　　　　　NG
-  - WorkSheets(1).Cells(1,1) = s　　　　　　　　　　OK
-     - WorkSheets(1).Cells(1,1) = s + "Kaya"　　　　NG
+  - WorkSheets(1).Cells(1,1).Value = s　　　　　　　OK
+     - WorkSheets(1).Cells(1,1).Value = s + "Kaya"　NG
 
 # Sample 
  Easy create the GUI and easy call windows comole like this.
