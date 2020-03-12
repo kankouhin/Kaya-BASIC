@@ -19,8 +19,9 @@ Based on B++ complier. Now Windows only.
          - Development Files
      - 64-Bit (x86_64)
          - Development Files
-  3. modify the config[XXX] file under Bin folder
+  3. modify the config[XX] file under Bin folder
      - change the MINGW path and wxWidgets Include and Lib paths.
+        - config[XX]_static. ★static link wxWidgets libs. Need build it by youself, I can't upload the libs because file size limitition.
   
   4. Add belowing paths to PATH environment.
      - [Kaya-BASIC]/bin
