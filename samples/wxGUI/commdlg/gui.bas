@@ -65,27 +65,27 @@ Sub Main
 
 	f = New wxFrame( NULL, wxID_ANY, "listctrl" )
 	f.SetClientSize(wxSize(435,382))
-	
+
 	Dim p As New wxPanel(f, wxID_ANY)
-	
-    btnOpen = New wxButton(p, 100, "Open...", wxPoint(100,20))
-    btnOpen.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
-    
-    btnSave = New wxButton(p, 200, "Save...", wxPoint(100,60))
-    btnSave.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
-    
-    btnColor = New wxButton(p, 300, "Color...", wxPoint(100,100))
-    btnColor.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
-    
-    btnPrint = New wxButton(p, 400, "Print...", wxPoint(100,140))
-    btnPrint.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
-    
-    btnDir = New wxButton(p, 500, "Dir...", wxPoint(100,180))
-    btnDir.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
-    
-    btnFont = New wxButton(p, 600, "Font...", wxPoint(100,220))
-    btnFont.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
-    
+
+	btnOpen = New wxButton(p, 100, "Open...", wxPoint(100,20))
+	btnOpen.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
+
+	btnSave = New wxButton(p, 200, "Save...", wxPoint(100,60))
+	btnSave.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
+
+	btnColor = New wxButton(p, 300, "Color...", wxPoint(100,100))
+	btnColor.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
+
+	btnPrint = New wxButton(p, 400, "Print...", wxPoint(100,140))
+	btnPrint.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
+
+	btnDir = New wxButton(p, 500, "Dir...", wxPoint(100,180))
+	btnDir.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
+
+	btnFont = New wxButton(p, 600, "Font...", wxPoint(100,220))
+	btnFont.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
+
 	f.SetIcon( wxICON(wxICON_AAA) )
 	f.Show(TRUE)
 End Sub
