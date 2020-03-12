@@ -1,5 +1,5 @@
 # Kaya-BASIC
-Based on B++ complier( https://sourceforge.net/projects/b-plus-plus/ ). Now windows only.
+Based on B++ complier. Now Windows only.
 - Because the wxWidgets can also run on Linux and Mac, I will make Linux and Mac versions If i have time(and have a dev environment. Maybe easy to do it.).
   
 
