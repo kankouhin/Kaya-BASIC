@@ -76,7 +76,7 @@ Sub readOptions
 		Dim s As String
 		Line Input #1, s
 		Dim txt As wxTextCtrl Ptr = Cast( wxTextCtrl Ptr,  f.FindWindow(id) )
-		txt.SetLabel( @s )
+		txt.SetLabel( s )
 	Next
 	
 	For id = CTRLID_OPTIONS_CHECKBOX To CTRLID_OPTIONS_CHECKBOX + 7
@@ -105,7 +105,7 @@ Sub OnCompile(ByRef ev As wxCommandEvent)
  	Dim src As String 	= Mid( s, ipos + 1 )
  	
  	src = Left( src, InStr(src, ".") - 1 )
- 	wxSetWorkingDirectory( @cwd )
+ 	wxSetWorkingDirectory( cwd )
  	
  	Dim params As String
 	For id As Integer = CTRLID_OPTIONS_CHECKBOX To CTRLID_OPTIONS_CHECKBOX + 7
@@ -128,8 +128,8 @@ Sub OnCompile(ByRef ev As wxCommandEvent)
 	Dim o As wxArrayString
 	Dim e As wxArrayString
 
-	wxExecute( @s, o, e)
-	wxSetWorkingDirectory( @org )
+	wxExecute( s, o, e)
+	wxSetWorkingDirectory( org )
 	
 	Dim cnt As Integer = o.GetCount()
 	For idx As Integer = 0 To cnt - 1
