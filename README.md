@@ -89,3 +89,7 @@ End Sub
 ```
  - Screenshot<br>
  ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/samples/wxGUI/gui%26comole/screenshot.png)
+ 
+# IDE
+ Using the FBEdit to write codes and compile.<br>
+ ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/FBEdit-For-KayaBASIC/FBEdit.png)
