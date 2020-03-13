@@ -1,7 +1,5 @@
 Option Explicit
 
-Using MsgBoxDoEvents
-
 Dim f As wxFrame Ptr
 Dim treeCtrl As wxTreeCtrl Ptr
 
