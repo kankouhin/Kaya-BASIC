@@ -20,10 +20,10 @@ Sub LoadDataFromWeb
 	
 	If (http.GetError() = wxPROTO_NOERR) Then
 		Dim res As wxString
-	    Dim out_stream As wxStringOutputStream( AddressOf res )
-	    httpStream.Read(out_stream)
-	    
-	    MsgBox res
+		Dim out_stream As wxStringOutputStream( AddressOf res )
+		httpStream.Read(out_stream)
+
+		MsgBox res
 	Else
 		MsgBox "Unable to connect!"
 	End If
