@@ -5,12 +5,12 @@ Using MsgBoxDoEvents
 Dim f As wxFrame Ptr
 Dim treeCtrl As wxTreeCtrl Ptr
 
-Sub AddChildren( p As wxTreeItemId, pn As wxXmlNode )
+Sub AddChildren( p As wxTreeItemId, pn As wxXmlNode Ptr )
 	
 	Dim node As wxXmlNode Ptr = pn.GetChildren()
 	While node
 		Dim parent As wxTreeItemId = treeCtrl.AppendItem( p, node.GetName(), 2 )
-		Call AddChildren( parent, *node )
+		Call AddChildren( parent, node )
 		node = node.GetNext()
 	Wend
 	
@@ -26,7 +26,7 @@ Sub LoadDataFromXml
 	node = doc.GetRoot()
 	Dim p As wxTreeItemId = treeCtrl.AppendItem( NULL, node.GetName(), 0 )
 
-	Call AddChildren( p, *node )
+	Call AddChildren( p, node )
 	
 End Sub
 
