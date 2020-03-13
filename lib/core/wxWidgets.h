@@ -28,6 +28,9 @@
 #include <wx/notebook.h>
 
 
+#include <wx/sstream.h>
+#include <wx/protocol/http.h>
+
 namespace bpp 
 {
 	inline string conv(string* ptr, wxString x)
