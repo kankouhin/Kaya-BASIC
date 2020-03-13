@@ -13,11 +13,9 @@ Sub AddChildren( p As wxTreeItemId, pn As wxXmlNode Ptr )
 		Call AddChildren( parent, node )
 		node = node.GetNext()
 	Wend
-	
 End Sub
 
 Sub LoadDataFromXml
-	
 	Dim doc As wxXmlDocument
 	doc.Load( "data.xml" )
 	
@@ -27,11 +25,9 @@ Sub LoadDataFromXml
 	Dim p As wxTreeItemId = treeCtrl.AppendItem( NULL, node.GetName(), 0 )
 
 	Call AddChildren( p, node )
-	
 End Sub
 
 Sub Main
-
 	f = New wxFrame( NULL, wxID_ANY, "treectrl demo" )
 
 	Dim images As New wxImageList(16, 16)
@@ -46,5 +42,4 @@ Sub Main
 
 	f.SetIcon( wxICON(wxICON_AAA) )
 	f.Show(TRUE)
-
 End Sub
