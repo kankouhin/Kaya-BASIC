@@ -5,7 +5,6 @@ Using MsgBoxDoEvents
 Dim f As wxFrame Ptr
 
 Sub LoadDataFromWeb
-	
 	Dim http As wxHTTP
 	Dim httpStream As wxInputStream Ptr
 	
@@ -30,16 +29,13 @@ Sub LoadDataFromWeb
 	
 	wxDELETE(httpStream)
 	http.Close()
-
 End Sub
 
 Sub Main
-
 	f = New wxFrame( NULL, wxID_ANY, "treectrl demo" )
 	
 	Call LoadDataFromWeb
 	
 	f.SetIcon( wxICON(wxICON_AAA) )
 	f.Show(TRUE)
-
 End Sub
