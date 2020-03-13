@@ -18,7 +18,7 @@ Sub LoadDataFromXml
 	doc.Load( "data.xml" )
 	
 	Dim node As wxXmlNode Ptr = doc.GetRoot()
-	Dim p As wxTreeItemId = treeCtrl.AppendItem( NULL, node.GetName(), 0 )
+	Dim p As wxTreeItemId = treeCtrl.AppendItem( Nothing, node.GetName(), 0 )
 
 	Call AddChildren( p, node )
 End Sub
