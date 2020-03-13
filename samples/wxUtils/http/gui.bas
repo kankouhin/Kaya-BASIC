@@ -32,7 +32,7 @@ Sub LoadDataFromWeb
 End Sub
 
 Sub Main
-	f = New wxFrame( NULL, wxID_ANY, "treectrl demo" )
+	f = New wxFrame( Nothing, wxID_ANY, "treectrl demo" )
 	
 	Call LoadDataFromWeb
 	
