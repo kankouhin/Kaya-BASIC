@@ -15,8 +15,6 @@ Public Declare BUILTIN Decimal
 
 Public Declare BUILTIN Boolean
 Public Declare BUILTIN String
-Public Declare BUILTIN ComString
-Public Declare BUILTIN ApiString
 Public Declare BUILTIN Variant
 Public Declare BUILTIN Type Event
 Public Declare BUILTIN ANY
