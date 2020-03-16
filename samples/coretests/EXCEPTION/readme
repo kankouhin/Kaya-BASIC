@@ -1,0 +1,1 @@
+can NOT catch div zero, null pointer exceptions, because std c++ can't catch also.
