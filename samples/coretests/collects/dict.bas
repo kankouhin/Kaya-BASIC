@@ -9,7 +9,7 @@ Sub main
 	If UBound(Command) = 1 Then	' yes,
 		filename = Command(1)
 	Else
-		filename = "dict.bpp"
+		filename = "dict.bas"
 	End If
 	
 	Print "filename: ", filename
