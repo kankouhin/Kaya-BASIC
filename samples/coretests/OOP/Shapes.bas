@@ -2,14 +2,14 @@
 Using MsgBoxDoEvents
 
 Public Class Shape
-	Public Function Area As Double 	Interface
-	Public Sub Draw 				Interface
+	Public Function Area As Double Interface
+	Public Sub Draw Interface
 	
 	Public Property Height As Single
 	Public Property Width As Single
 
-	Private m_Height As Double
-	Private m_Width As Double
+	Private m_Height As Single
+	Private m_Width As Single
 	
 	Public Test1 As Double
 	Public Test2 As Single
