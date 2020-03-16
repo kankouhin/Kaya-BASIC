@@ -56,9 +56,6 @@ Public CLASS GenericEvent EXTENDS Object
 End CLASS
 
 Public CLASS Stream EXTENDS Object
-	Public Property		EOF As Boolean READONLY
-	Public Property		Position As Long
-	Public Property		Size As Long READONLY
 	Public Sub			Read(Var As ANY) GENERIC
 	Public Function		ReadBlock(Block As ANY, Size As Long) As Long
 	Public Function		ReadLine As String
@@ -70,6 +67,11 @@ Public CLASS Stream EXTENDS Object
 	Public Sub			WriteLine(Line As String)
 	Public Sub			WriteObject(Obj As Object)
 	Public Sub			WriteString(s As String)
+
+	Public Property		EOF As Boolean READONLY
+	Public Property		Position As Long
+	Public Property		Size As Long READONLY
+
 End CLASS
 
 Public CLASS File EXTENDS Stream
