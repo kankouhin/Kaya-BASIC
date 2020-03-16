@@ -1,0 +1,1 @@
+can NOT catch dev zero null pointer exception, because std c++ can NOT catch its.
