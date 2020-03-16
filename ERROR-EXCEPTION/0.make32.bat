@@ -1,2 +1,0 @@
-bpp -w test
-pause
