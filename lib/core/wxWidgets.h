@@ -31,6 +31,8 @@
 #include <wx/sstream.h>
 #include <wx/protocol/http.h>
 #include <wx/xml/xml.h>
+#include <wx/zipstrm.h>
+#include <wx/wfstream.h>
 
 namespace bpp 
 {
