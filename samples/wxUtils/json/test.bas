@@ -23,22 +23,18 @@ Sub CreateJSONArray(ByRef root As wxJSONValue, numItems As Integer  )
 End Sub
 
 Sub OnButtonClick(ByRef ev As wxCommandEvent)
-
 	Dim root As wxJSONValue
 	
 	Call CreateJSONArray( root, 100 )
 	
 	Dim jsonText As wxString
-
 	Dim writer As wxJSONWriter
 	writer.Write( root, jsonText )
 
 	Msgbox jsonText
-	
 End Sub
 
 Sub Main
-
 	f = New wxFrame( NULL, wxID_ANY, "Json Sample" )
 	f.SetClientSize(wxSize(300,100))
 	
