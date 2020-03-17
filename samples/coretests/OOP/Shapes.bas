@@ -4,6 +4,9 @@ Using MsgBoxDoEvents
 Public Class Shape
 	Public Function Area As Double Interface
 	Public Sub Draw Interface
+		
+	Public Sub setWidthAndHeight(w As Single, h As Single)
+	Public Function getArea(w As Single, h As Single) As Double	
 	
 	Public Property Height As Single
 	Public Property Width As Single
@@ -14,6 +17,15 @@ Public Class Shape
 	Public Test1 As Double
 	Public Test2 As Single
 End Class
+
+Function Shape.getArea
+	Function = w * h
+End Function
+
+Sub Shape.setWidthAndHeight
+	m_Width  = w
+	m_Height = h
+End Sub
 
 Property Get Shape.Height
 	Value = m_Height

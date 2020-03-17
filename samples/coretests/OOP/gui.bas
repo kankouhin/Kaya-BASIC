@@ -74,7 +74,40 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 	 		CallByName( s, n, Call, v)
 	 		
 	 		MsgBox v
-	 				
+	 			
+		Case 600 ' CallByName Call Sub with params
+			
+	 		Dim s As Shape
+	 		
+	 		s = CreateObject("Shapes.Rect")
+	 		
+	 		'params type must same as sub declare
+	 		Dim w As Single = 3
+	 		Dim h As Single = 4
+	 		
+	 		Dim n As String = "setWidthAndHeight"
+	 		CallByName( s, n, Call )(w,h)
+	 		s.Draw
+	 		
+		Case 700 ' CallByName Call Function with params
+			
+	 		Dim s As Shape
+	 		
+	 		s = CreateObject("Shapes.Rect")
+	 		
+	 		'return type, params type must same as function/sub
+	 		// return type,params type must same as function/Sub
+	 		/*
+	 			return type,params type must same as function/Sub
+	 		*/
+	 		Dim v As Double
+	 		Dim w As Single = 30
+	 		Dim h As Single = 40
+	 		
+	 		Dim n As String = "getArea"
+	 		CallByName( s, n, Call, v )(w,h)
+	 		Msgbox v 		
+	 			 				
 	End Select
 	
 End Sub
@@ -101,6 +134,12 @@ Sub Main
 	Dim btn5 As New wxButton(p, 500, "CallByName Call Function", wxPoint(100,180))
 	btn5.Bind( wxEVT_BUTTON, Addressof OnButtonClick )		
 
+	Dim btn6 As New wxButton(p, 600, "CallByName Call Sub with params", wxPoint(100,220))
+	btn6.Bind( wxEVT_BUTTON, Addressof OnButtonClick )	
+
+	Dim btn7 As New wxButton(p, 700, "CallByName Call Function with params", wxPoint(100,260))
+	btn7.Bind( wxEVT_BUTTON, Addressof OnButtonClick )	
+	
 	f.SetIcon( wxICON(wxICON_AAA) )
 	f.Show(TRUE)
 End Sub
