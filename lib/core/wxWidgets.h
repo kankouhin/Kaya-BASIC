@@ -34,6 +34,11 @@
 #include <wx/zipstrm.h>
 #include <wx/wfstream.h>
 
+#include <wx/jsonval.h>
+#include <wx/jsonreader.h>
+#include <wx/jsonwriter.h>
+
+
 namespace bpp 
 {
 	inline string conv(string* ptr, wxString x)
