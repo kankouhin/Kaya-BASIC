@@ -3,4 +3,4 @@ CPP_FLAGS		= -O2
 WX_CPP_FLAGS	= -D__GNUWIN32__ -D__WXMSW__ -DwxUSE_UNICODE
 WX_INCLUDE		= -IC:/wxWidgets-3.1.3/lib/gcc810_x64_dll/mswu -IC:/wxWidgets-3.1.3/include
 WX_LD_FLAGS		= -LC:/wxWidgets-3.1.3/lib/gcc810_x64_dll
-WX_LIBRARY 		= -lwxbase31u_xml -lwxbase31u_net -lwxmsw31u_core -lwxbase31u -lwxpng -lwxzlib -lwxjpeg -lwxtiff
+WX_LIBRARY 		= -lwxJson64 -lwxbase31u_xml -lwxbase31u_net -lwxmsw31u_core -lwxbase31u -lwxpng -lwxzlib -lwxjpeg -lwxtiff
