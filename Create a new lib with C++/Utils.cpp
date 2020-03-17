@@ -9,10 +9,20 @@ namespace bpp
 namespace Utils
 {
 
-	Long __BPPCALL MsgBox(string Prompt, Long Buttons, string Title)
+	Integer __BPPCALL MsgBox(string Prompt, Integer Buttons, string Title)
 	{
 		return MessageBox(GetActiveWindow(), Prompt.cstr(), Title.cstr(), Buttons);
 	}
+
+	
+	
+initialization::initialization()
+{
+}
+
+finalization::~finalization()
+{
+}
 
 }
 }
