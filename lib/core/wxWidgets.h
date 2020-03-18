@@ -38,6 +38,8 @@
 #include <wx/jsonreader.h>
 #include <wx/jsonwriter.h>
 
+#include <wx/wxsqlite3.h>
+
 
 namespace bpp 
 {
