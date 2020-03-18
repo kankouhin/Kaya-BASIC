@@ -11,11 +11,10 @@ Sub CreateJSONArray(ByRef root As wxJSONValue, numItems As Integer  )
 	//	"name" : "item number <number>,
 	//	"float" : <float>,
 	//	"description" : "this is a description of the item"
-	
 	For i As Integer = 0 To numItems
 		root.Item(i).Item(_T("index")) = i
 		Dim s As wxString
-		s.Printf( _T("item number %d"), i )
+		s.Printf(_T("item number %d"), i )
 		root.Item(i).Item(_T("name"))  = s
 		root.Item(i).Item(_T("float")) = i
 		root.Item(i).Item(_T("description")) = _T("this is a description of the item")
