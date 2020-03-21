@@ -1,7 +1,7 @@
 # Kaya-BASIC
 Based on B++ complier. Now Windows only.
 - Because the wxWidgets can also run on Linux and Mac, I will make Linux and Mac versions If i have time(and have a dev environment. Maybe easy to do it.).
-- Linux version is Testing...(Unbuntu18.04.amd64)<br>
+- Linux version is Testing...(Ubuntu18.04.amd64)<br>
  ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Ubuntu18.04-x64/Ubuntu18.04.x64.Testing.png)
   
 
