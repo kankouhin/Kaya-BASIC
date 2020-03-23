@@ -58,7 +58,7 @@ Checkinstall would ask few questions during the process and make sure to provide
 
 Once the process is over, wxWidgets would be installed and also a deb file would be created in the same directory.
 
-5. Track the installed files
+5. Track the installed files.[optional]
 
 If you wish to check where the files are installed, use the dpkg command followed by the name of the package provided during the checkinstall process.
 
@@ -76,7 +76,9 @@ $ dpkg -L package_name
 /usr/local/lib/libwx_gtk3u_qa-3.0.a
 /usr/local/lib/libwx_baseu_net-3.0.a
 /usr/local/lib/libwxtiff-3.0.a
-6. Compile the samples
+
+
+6. Compile the samples.[optional]
 
 After compiling wxWidgets, its time to compile the sample programs to see it in action. In the same directory where we compiled wxwidgets, a new subdirectory called samples would have been created.
 
