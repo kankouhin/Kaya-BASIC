@@ -4,7 +4,6 @@ Based on B++ complier. Now Windows only.
 - Linux version is Testing...(Ubuntu18.04.amd64) <br>
     - ★★★Uploaded Testing Version Binary★★★<br>
        - Kaya-BASIC/Ubuntu18.04-x64/KayaBASIC.bin.for.Ubuntu.0323.zip <br>
- ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Ubuntu18.04-x64/Ubuntu18.04.x64.Testing.png)
   ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Ubuntu18.04-x64/Ubuntu02.png)
   
 
