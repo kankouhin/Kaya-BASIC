@@ -1,0 +1,6 @@
+MINGW			= C:/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64
+WX_CPP_FLAGS		= -D__GNUWIN32__ -D__WXMSW__ -DwxUSE_UNICODE
+WX_INCLUDE		= -IC:/wxWidgets-3.1.3/lib/gcc810_x64_dll/mswu -IC:/wxWidgets-3.1.3/include
+WX_LD_FLAGS		= -LC:/wxWidgets-3.1.3/lib/gcc810_x64_dll
+WX_LIBRARY 		= -lwxsqlite3_msw31u64 -lwxJson_msw31u64 -lwxbase31u_xml -lwxbase31u_net -lwxmsw31u_core -lwxbase31u -lwxpng -lwxzlib -lwxjpeg -lwxtiff
+LIBRARY 		= -lpthread -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lcomctl32 -lwsock32 -lodbc32 -lshlwapi -lversion -luxtheme -loleacc -mwindows
