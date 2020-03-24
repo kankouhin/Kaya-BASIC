@@ -1,0 +1,2 @@
+WX_CPP_FLAGS		= `wx-config --cppflags`
+WX_LIBRARY 		= `wx-config --libs`
