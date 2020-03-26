@@ -9,7 +9,7 @@ Sub LoadDataFromExcel
 	Dim path As String
 	
 	path = wxGetCwd()
-	path += "\data.xlsx"
+	path += "/data.xlsx"
 	
 	xlApp.CreateObject("Excel.Application")
 	Set xb = xlApp.WorkBooks.Open( path )
