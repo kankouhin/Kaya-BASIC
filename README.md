@@ -6,10 +6,10 @@ Based on B++ complier. supports Windows and Linux(built on Unbuntu18.04.x86_64).
  
 
 # Features
- - Compiles with Mingw-w64(both 32bit and 64bit)
+ - Compiles with g++(both 32bit and 64bit)
  - OOP, supports CreateObject by name and call function/sub/property by name)
  - Creates GUI(using wxWidgets), console or DLL applications.
- - Easy calls windows comole like VB.
+ - Easy calls Windows COM like VB.
  
 # Install(Windows)
  1. download mingw-w64 8.1.0
