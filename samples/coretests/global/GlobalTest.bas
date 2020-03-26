@@ -1,6 +1,5 @@
 
 Option Explicit
-Option CONSOLE ON
 
 USING globalVar
 USING globalUse

@@ -1,3 +1,4 @@
 del *.bpm
-bpp -k GlobalTest
+del *.a
+bpp GlobalTest
 pause

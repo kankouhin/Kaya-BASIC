@@ -1,6 +1,4 @@
 Option Explicit
-Option CONSOLE ON
-
 
 Public varGlobal As Integer = 500
 
