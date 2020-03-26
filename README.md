@@ -33,11 +33,13 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
   5. try to build samples.
 
 # String for wxWidgets and ComObject
+  not support string expressions: wxFrame.SetTitle( s + "Kaya" )
+
   - Dim s As String = "Hello Kaya-BASIC"
-  - wxFrame.SetTitle( s )　　　　　　　　　　　　　〇 // not support string expressions: wxFrame.SetTitle( s + "Kaya" )
-     - wxFrame.SetTitle( s + "Kaya" )　　　　　　　×
-  - WorkSheets(1).Cells(1,1).Value = s　　　　　　　〇
-     - WorkSheets(1).Cells(1,1).Value = s + "Kaya"　×
+  - wxFrame.SetTitle( s )　　　　　　　　　　　　　ＯＫ
+     - wxFrame.SetTitle( s + "Kaya" )　　　　　　　❌
+  - WorkSheets(1).Cells(1,1).Value = s　　　　　　　ＯＫ
+     - WorkSheets(1).Cells(1,1).Value = s + "Kaya"　❌
 
 # Sample 
  Easy create the GUI and easy call windows comole like this.
