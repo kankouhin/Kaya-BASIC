@@ -1,3 +1,2 @@
-
-bpp -k event
+bpp event
 pause
