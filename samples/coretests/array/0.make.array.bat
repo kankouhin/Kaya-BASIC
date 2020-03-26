@@ -1,3 +1,3 @@
 del *.bpm
-bpp -k Array
+bpp Array
 pause
