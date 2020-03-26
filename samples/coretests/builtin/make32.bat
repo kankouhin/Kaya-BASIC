@@ -1,2 +1,2 @@
-bpp -k buildin
+bpp buildin
 pause
