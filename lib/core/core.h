@@ -3,7 +3,13 @@
 #define _RWSTD_NO_EXCEPTIONS
 
 #include <typeinfo>
-#include "types_bpp.h"
+
+#ifdef __BPPWIN__
+    #include "types_bpp.h"
+#else
+    #include "types_bpp_lnx.h"
+#endif // __BPPWIN__
+
 #include <stdlib.h>
 //#include <string.h>
 //using namespace std;
@@ -17,13 +23,16 @@
 
 #define BPP_FILEGETOBJECT(fn) ( (System::File*)System::FileGetObject(fn) )
 #define __BPPCALL
-#define __CALLBACK __stdcall
+
+#ifdef __BPPWIN__
+    #define __CALLBACK __stdcall
+#else
+    #define __CALLBACK
+#endif // __BPPWIN__
 
 namespace bpp
 {
 
-extern "C" int printf(char*, ...);
-	
 class variant;
 class string;
 
@@ -33,7 +42,7 @@ void unloadlibs();
 void* getlibhandle(const string&);
 void* getprocaddr(void*, const string&);
 
-	
+
 //DEBUG functions
 int dbg_getline();
 string dbg_getfunc();
@@ -231,10 +240,10 @@ public:
 	array(int l1, int h1, int l2, int h2, int l3, int h3) { data = 0; preserve = 0; redim(l1, h1, l2, h2, l3, h3); }
 	array(int l1, int h1, int l2, int h2, int l3, int h3, int l4, int h4) { data = 0; preserve = 0; redim(l1, h1, l2, h2, l3, h3, l4, h4); }
 	~array(){ if (data) free(data); data = 0; }
-	
+
 	void redim()
 	{
-		if ( data && preserve ) 
+		if ( data && preserve )
 		{
 			data = (T*)realloc( (void*)data, this->size() * sizeof(T) );
 			return;
@@ -243,7 +252,7 @@ public:
 		if (data) free(data); data = 0;
 		data = (T*)calloc( this->size(), sizeof(T) );
 	}
-	
+
 	int lbound(int d = 1) { return dim[d].lo; }
 	int ubound(int d = 1) { return dim[d].hi; }
 
@@ -251,16 +260,16 @@ public:
 	{
 		if (h1 < l1)
 			swap(l1, h1);
-		
+
 		dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
-		
+
 		if ( !(data && preserve) )
 		{
 			dim[2].lo = dim[3].lo = dim[4].lo = 0;
 			dim[2].hi = dim[3].hi = dim[4].hi = 0;
 			dim[2].d = dim[3].d = dim[4].d = 0;
 		}
-		
+
 		redim();
 	}
 
@@ -270,8 +279,8 @@ public:
 			swap(l1, h1);
 		if (h2 < l2)
 			swap(l2, h2);
-		
-		if ( data && preserve ) 
+
+		if ( data && preserve )
 		{
 			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
 		}
@@ -280,11 +289,11 @@ public:
 			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
 			dim[2].lo = l2; dim[2].hi = h2; dim[2].d = h2 - l2 + 1;
 		}
-		
+
 		dim[3].lo = dim[4].lo = 0;
 		dim[3].hi = dim[4].hi = 0;
 		dim[3].d = dim[4].d = 0;
-		
+
 		redim();
 	}
 
@@ -296,8 +305,8 @@ public:
 			swap(l2, h2);
 		if (h3 < l3)
 			swap(l3, h3);
-		
-		if ( data && preserve ) 
+
+		if ( data && preserve )
 		{
 			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
 		}
@@ -307,7 +316,7 @@ public:
 			dim[2].lo = l2; dim[2].hi = h2; dim[2].d = h2 - l2 + 1;
 			dim[3].lo = l3; dim[3].hi = h3; dim[3].d = h3 - l3 + 1;
 		}
-		
+
 		dim[4].lo = 0;  dim[4].hi = 0;
 		dim[4].d = 0;
 		redim();
@@ -323,8 +332,8 @@ public:
 			swap(l3, h3);
 		if (h4 < l4)
 			swap(l4, h4);
-		
-		if ( data && preserve ) 
+
+		if ( data && preserve )
 		{
 			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
 		}
@@ -335,21 +344,21 @@ public:
 			dim[3].lo = l3; dim[3].hi = h3; dim[3].d = h3 - l3 + 1;
 			dim[4].lo = l4; dim[4].hi = h4; dim[4].d = h4 - l4 + 1;
 		}
-		
+
 		redim();
 	}
 
 	int size()
 	{
 		int ret = dim[1].d;
-		
+
 		if ( dim[2].d )
 			ret *= dim[2].d;
 		if ( dim[3].d )
 			ret *= dim[3].d;
 		if ( dim[4].d )
 			ret *= dim[4].d;
-		
+
 		return ret;
 	}
 
@@ -386,7 +395,7 @@ public:
 */
 		return data[
 			(i1 - dim[1].lo) * dim[2].d * dim[3].d +
-			(i2 - dim[2].lo) * dim[3].d + 
+			(i2 - dim[2].lo) * dim[3].d +
 			(i3 - dim[3].lo)];
 	}
 
@@ -406,7 +415,7 @@ public:
 			(i3 - dim[3].lo) * dim[4].d +
 			(i4 - dim[4].lo)];
 	}
-	
+
 	int preserve;
 };
 
@@ -606,29 +615,6 @@ inline void ref<T>::check_class()
 
 #endif
 
-
-class event
-{
-public:
-	event() { handler = 0; }
-	void raise(ref<object>) { if (handler) handler(ref<object>(obj)); }
-	template <class T>
-	void set(void* object, T handler)
-	{
-		union
-		{
-			T func;
-			void (__stdcall *funcptr)(ref<T>(object));
-		};
-		func = handler;
-		this->obj = object;
-		this->handler = funcptr;
-	}
-
-private:
-	void* obj;
-	void (__stdcall *handler)(ref<object>);
-};
 
 
 class variant

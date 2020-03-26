@@ -4,6 +4,8 @@
 	#include <wx/wx.h>
 #endif
 
+#include "sample.xpm"
+
 #include <wx/treectrl.h>
 #include <wx/listctrl.h>
 #include <wx/button.h>
