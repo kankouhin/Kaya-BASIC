@@ -1,6 +1,6 @@
 # Kaya-BASIC
-Based on B++ complier. supports Windows and Linux(Unbuntu18.04.x86_64).
-- Linux version(Ubuntu18.04.amd64) 
+Based on B++ complier. supports Windows and Linux(built on Unbuntu18.04.x86_64).
+- Linux version
    - dlltest ❌
    - json、sqlite  need to make libraries 
  
