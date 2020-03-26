@@ -1,3 +1,2 @@
-del *.bpm
-bpp -k fileio
+bpp fileio
 pause
