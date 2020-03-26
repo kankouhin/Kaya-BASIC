@@ -1,7 +1,10 @@
 # Kaya-BASIC
-Based on B++ complier. Now Windows and Linxu(Unbuntu18.04.x86_64) Versions.
+Based on B++ complier. Now Windows and Linux(Unbuntu18.04.x86_64) Versions.
 - Because the wxWidgets can also run on Linux and Mac, I will make Linux and Mac versions If i have time(and have a dev environment. Maybe easy to do it.).
-- Linux version pre released(Ubuntu18.04.amd64) <br>
+- Linux version pre released(Ubuntu18.04.amd64) 
+   - dlltest ❌
+   - json、sqlite  need to make libraries 
+<br>
   ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Ubuntu18.04-x64/bppgui.png)
   ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Ubuntu18.04-x64/regex.png)
 ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Ubuntu18.04-x64/stdctrls.png)
@@ -15,7 +18,7 @@ Based on B++ complier. Now Windows and Linxu(Unbuntu18.04.x86_64) Versions.
  - Creates GUI(using wxWidgets), console or DLL applications.
  - Easy calls windows comole like VB.
  
-# Install
+# Install(Windows)
  1. download mingw-w64 8.1.0
     - 32bit: i686-8.1.0-posix-sjlj-rt_v6-rev0  (must sjlj, because wxWidgets development files complied by this.)
     - 64bit: x86_64-8.1.0-posix-seh-rt_v6-rev0 
