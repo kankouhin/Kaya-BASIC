@@ -26,13 +26,6 @@ Public Const Nothing = 0
 Public Const False	= 0
 Public Const True	= 1
 
-Public Const  FileAttrNormal 	= &H00
-Public Const  FileAttrReadOnly 	= &H01
-Public Const  FileAttrHidden 	= &H02
-Public Const  FileAttrSystem 	= &H04
-Public Const  FileAttrDirectory = &H10
-Public Const  FileAttrArchive 	= &H20
-
 Public Enum SeekOffset
 	soFromStart,
 	soFromBeginning = soFromStart,
@@ -99,8 +92,15 @@ Public Declare Function	CrLf As String
 Public Declare Function Date As String
 Public Declare Function Delete(s As String, Start As Long, Length As Long) As String
 
-Public Declare Function Dir(Mask As String = "", autoClose As Boolean = False) As String
-Public Declare Function GetAttr(FileName As String = "") As Long
+Public Declare Function PathSep As String
+Public Declare Function Dir(path As String = "", autoClose As Boolean = False) As String
+Public Declare Function GetFileAttr(path As String) As Long
+
+Public Declare Function IsDIR(path As String) 	As Long
+Public Declare Function IsFIFO(path As String) 	As Long
+Public Declare Function IsCHR(path As String) 	As Long
+Public Declare Function IsBLK(path As String) 	As Long
+Public Declare Function IsREG(path As String) 	As Long
 
 Public Declare Function DirExists(Dir As String) As Boolean
 Public Declare Function Environ(Var As String) As String
@@ -112,9 +112,11 @@ Public Declare Function Frac(n As Double) As Double
 Public Declare Function FullDate As String
 Public Declare Function Hex(n As UInteger) As String
 Public Declare Function IIf(Cond As Boolean, OnTrue As Variant, OnFalse As Variant) As Variant
-Public Declare Function InKey As String
 Public Declare Function Insert(s As String, ss As String, Pos As Long) As String
+
 Public Declare Function InStat As Boolean
+Public Declare Function InKey As String
+
 Public Declare Function InStr(Start As Variant, s As String, ss As String = "") As Long
 Public Declare Function InStrRev(s As String, ss As String, Start As Long = -1) As Long
 Public Declare Function Int(n As Double) As Integer
@@ -171,17 +173,16 @@ Public Declare Function Atanh(n As Double) As Double
 Public Declare Function Asinh(n As Double) As Double
 Public Declare Function Acosh(n As Double) As Double
 Public Declare Function MemoryCreate(Count As Long) As Long
-Public Declare Sub 	MemoryFree(var As Long) 
+Public Declare Sub 	MemoryFree(var As Long)
 Public Declare Function MemoryResize(var AS Long,Size As Long) As Long
 Public Declare Function Format(Num As Double, mask AS String="") As String
-Public Declare Function Bin(Num As Long) As String
 
 Public Declare Function FreeFile As Integer
 Public Declare Sub FileOpen(filename As String, fm As String, fn As Integer)
 Public Declare Sub FileClose(fn As Integer)
 Public Declare Function FileGetObject(fn As Integer) As Long
 Public Declare Function EOF(fn As Integer) As Boolean
-Public Declare Function EOL(fn As Integer) As Long
+Public Declare Function FileLen(fn As Integer) As Long
 
 Public Declare Sub		Sleep(sec As Integer)
 
@@ -200,7 +201,6 @@ Alias Dir$		= Dir
 Alias Environ$	= Environ
 Alias FullDate$	= FullDate
 Alias Hex$		= Hex
-Alias InKey$	= InKey
 Alias Insert$	= Insert
 Alias LCase$	= LCase
 Alias Left$		= Left
@@ -217,4 +217,3 @@ Alias String$	= String
 Alias Trim$	    = Trim
 Alias UCase$	= UCase
 Alias Format$	= Format
-Alias Bin$	= Bin
