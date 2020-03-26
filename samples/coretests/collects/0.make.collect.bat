@@ -1,3 +1,3 @@
 del *.bpm
-bpp -k collect
+bpp collect
 pause
