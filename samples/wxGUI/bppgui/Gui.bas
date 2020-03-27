@@ -1,6 +1,4 @@
 Option Explicit
-Using MsgBoxDoEvents
-
 Dim f As wxFrame Ptr
 
 Dim txtSourcePath 	As wxTextCtrl Ptr
@@ -58,9 +56,7 @@ Sub saveOptions
 		Print #1, Str(s)
 	Next
 	
-	Dim s As String = txtBppPath.GetValue()
-	bppPath = Left( s, InStrRev(s, PathSep ) )
-	
+	bppPath = txtBppPath.GetValue()
 	Close #1
 End Sub
 
@@ -124,7 +120,7 @@ Sub OnCompile(ByRef ev As wxCommandEvent)
 		params += "-m64 "
 	End If
 	
-	s = bppPath + "bpp " + params + src
+	s = bppPath + " " + params + src
 
 	Dim o As wxArrayString
 	Dim e As wxArrayString
