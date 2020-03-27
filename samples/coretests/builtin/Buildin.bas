@@ -57,6 +57,8 @@ Sub Main
 	
 	Print "RInStr ", RInStr("abcdefg","e")
 	
+	Print "PathSep ", PathSep
+	Print "OsDescription ", OsDescription
 End Sub
 
 'sub showdir(sDir as string)
@@ -75,4 +77,6 @@ Sub showdir
 		
 		ss = Dir
 	Loop
+	
+	CloseDir
 End Sub
