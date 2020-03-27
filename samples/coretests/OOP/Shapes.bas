@@ -1,6 +1,4 @@
 
-Using MsgBoxDoEvents
-
 Public Class Shape
 	Public Function Area As Double Interface
 	Public Sub Draw Interface
@@ -72,6 +70,4 @@ End Function
 Sub Triangle.Draw
 	MsgBox "Triangle Height: " + Str(Me.Height) + " Width: " + Str(Me.Width)
 End Sub
-
-
 

@@ -1,12 +1,10 @@
 Option Explicit
 
-Using MsgBoxDoEvents
 Using Shapes
 
 Dim f As wxFrame Ptr
 
 Sub OnButtonClick(ByRef ev As wxCommandEvent)
-	
 	Dim id As Integer = ev.GetId()
 
 	Select Case id
@@ -113,7 +111,6 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 End Sub
 
 Sub Main
-
 	f = New wxFrame( NULL, wxID_ANY, "OOP demo" )
 	f.SetClientSize(wxSize(435,382))
 
@@ -139,7 +136,6 @@ Sub Main
 
 	Dim btn7 As New wxButton(p, 700, "CallByName Call Function with params", wxPoint(100,260))
 	btn7.Bind( wxEVT_BUTTON, Addressof OnButtonClick )	
-	
-	'f.SetIcon( wxICON(wxICON_AAA) )
+
 	f.Show(TRUE)
 End Sub
