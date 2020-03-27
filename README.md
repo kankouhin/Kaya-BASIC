@@ -1,9 +1,9 @@
 # Kaya-BASIC
 Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
 - Linux version
-   - menu&toolbar(used windows rc file) ❌
-   - dlltest、sqlite  ❌
- 
+   - menu&toolbar(fixed) 
+   - json(fixed)
+   - dlltest、sqlite(lib built failed)  ❌
 
 # Features
  - Compiles with g++(both 32bit and 64bit)
