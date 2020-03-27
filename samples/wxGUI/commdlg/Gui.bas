@@ -1,7 +1,5 @@
 Option Explicit
 
-Using MsgBoxDoEvents
-
 Dim f As wxFrame Ptr
 Dim btnOpen 	As wxButton Ptr
 Dim btnSave 	As wxButton Ptr
@@ -13,8 +11,7 @@ Dim btnFont 	As wxButton Ptr
 Sub OnButtonClick(ByRef ev As wxCommandEvent)
 	
 	Dim id As Integer = ev.GetId()
-	
-	doevents
+	DoEvents
 	
 	Select Case id
 	Case 100
@@ -23,7 +20,7 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
         
         If (dlg.ShowModal() <> wxID_CANCEL) Then
         	Dim s As String = dlg.GetPath()
-        	msgbox s
+        	MsgBox s
         End If
 	Case 200
  		Dim dlg As wxFileDialog(f, "Save XYZ file", "", "", _
@@ -62,7 +59,6 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 End Sub
 
 Sub Main
-
 	f = New wxFrame( NULL, wxID_ANY, "listctrl" )
 	f.SetClientSize(wxSize(435,382))
 
