@@ -1,7 +1,4 @@
 Option Explicit
-
-Using MsgBoxDoEvents
-
 Dim f As wxFrame Ptr
 
 Sub throwTest
@@ -27,7 +24,6 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 End Sub
 
 Sub Main
-
 	f = New wxFrame( NULL, wxID_ANY, "TryCatch Samples" )
 	f.SetClientSize(wxSize(300,100))
 	
@@ -35,7 +31,6 @@ Sub Main
 	Dim btnTest As New wxButton(p, 100, "Try Catch", wxPoint(100,20))
 	btnTest.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
     
-	'f.SetIcon( wxICON(wxICON_AAA) )
 	f.Show(TRUE)
 End Sub
 
