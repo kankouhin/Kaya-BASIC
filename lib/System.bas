@@ -16,7 +16,7 @@ Public Declare BUILTIN Decimal
 Public Declare BUILTIN Boolean
 Public Declare BUILTIN String
 Public Declare BUILTIN Variant
-Public Declare BUILTIN Type Event
+
 Public Declare BUILTIN ANY
 Public Declare BUILTIN CLASS Object
 
@@ -93,8 +93,10 @@ Public Declare Function Date As String
 Public Declare Function Delete(s As String, Start As Long, Length As Long) As String
 
 Public Declare Function PathSep As String
-Public Declare Function Dir(path As String = "", autoClose As Boolean = False) As String
-Public Declare Function GetFileAttr(path As String) As Long
+Public Declare Function OsDescription As String
+
+Public Declare Function Dir(path As String = "") As String
+Public Declare Sub 		CloseDir(closeAll As Boolean = False)
 
 Public Declare Function IsDIR(path As String) 	As Long
 Public Declare Function IsFIFO(path As String) 	As Long
@@ -173,18 +175,21 @@ Public Declare Function Atanh(n As Double) As Double
 Public Declare Function Asinh(n As Double) As Double
 Public Declare Function Acosh(n As Double) As Double
 Public Declare Function MemoryCreate(Count As Long) As Long
-Public Declare Sub 	MemoryFree(var As Long)
+Public Declare Sub 		MemoryFree(var As Long)
 Public Declare Function MemoryResize(var AS Long,Size As Long) As Long
 Public Declare Function Format(Num As Double, mask AS String="") As String
 
 Public Declare Function FreeFile As Integer
-Public Declare Sub FileOpen(filename As String, fm As String, fn As Integer)
-Public Declare Sub FileClose(fn As Integer)
-Public Declare Function FileGetObject(fn As Integer) As Long
 Public Declare Function EOF(fn As Integer) As Boolean
 Public Declare Function FileLen(fn As Integer) As Long
 
 Public Declare Sub		Sleep(sec As Integer)
+
+Public Declare Sub DoEvents 'GUI Only
+Public Declare Function MsgBox(prompt As String, buttons As Integer = 4, title As String = "Information") As Integer 'GUI Only
+
+Public Declare Function Split(src As String, sep As String, dest() As String) As Integer
+Public Declare Function Join(dest() As String, sep As String) As String
 
 
 
@@ -217,3 +222,4 @@ Alias String$	= String
 Alias Trim$	    = Trim
 Alias UCase$	= UCase
 Alias Format$	= Format
+Alias InKey$	= InKey
