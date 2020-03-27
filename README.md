@@ -11,7 +11,7 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
  - Creates GUI(using wxWidgets), console or DLL applications.
  - Easy calls Windows COM like VB.
  
-# Install(Ubuntu)
+# Install(Ubuntu.amd64)
  1. download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
  2. compile and install wxWidgets on Ubuntu
     - Setup build environment.
