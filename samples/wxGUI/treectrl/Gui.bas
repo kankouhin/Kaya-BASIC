@@ -30,6 +30,6 @@ Sub Main
 
 	m_treeCtrl.Bind( wxEVT_TREE_SEL_CHANGING, AddressOf OnItemSelectChanging )
 
-	f.SetIcon( wxArtProvider::GetIcon(wxART_GO_HOME, wxART_OTHER, wxSize(16,16)) )
+	f.SetIcon( wxIcon(sample_xpm) )
 	f.Show(TRUE)
 End Sub
