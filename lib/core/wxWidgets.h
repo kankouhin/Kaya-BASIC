@@ -4,8 +4,6 @@
 	#include <wx/wx.h>
 #endif
 
-#include "sample.xpm"
-
 #include <wx/treectrl.h>
 #include <wx/listctrl.h>
 #include <wx/button.h>
@@ -55,11 +53,16 @@ namespace bpp
 	    return wxString( x.cstr() );
 	}
 
-	#define DoEvents wxYield
-
-	inline Integer MsgBox(string prompt, Integer button, string title)
+	namespace System
 	{
-	    return wxMessageBox( prompt.cstr(), title.cstr(), button );
-	}
+		inline void DoEvents()
+		{
+			wxYield();
+		}
 
+		inline Integer MsgBox(string prompt, Integer button, string title)
+		{
+		    return wxMessageBox( prompt.cstr(), title.cstr(), button );
+		}
+	}
 }
