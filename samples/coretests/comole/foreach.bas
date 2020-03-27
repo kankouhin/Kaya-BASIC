@@ -1,7 +1,4 @@
 Option Explicit
-
-Using MsgBoxDoEvents
-
 Dim f As wxFrame Ptr
 
 Sub OnButtonClick(ByRef ev As wxCommandEvent)
@@ -26,11 +23,9 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 
 	xlapp.DisplayAlerts = FALSE
 	xlapp.Quit
-
 End Sub
 
 Sub Main
-
 	f = New wxFrame( NULL, wxID_ANY, "ComOle Samples" )
 	f.SetClientSize(wxSize(300,100))
 	

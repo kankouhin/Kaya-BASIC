@@ -1,7 +1,4 @@
 Option Explicit
-
-Using MsgBoxDoEvents
-
 Dim f As wxFrame Ptr
 
 Sub OnButtonClick(ByRef ev As wxCommandEvent)
@@ -39,7 +36,7 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 	Rng = Xls.Range("A2:A5")
 	
 	Dim clr As Integer = 36
-	Rng.Interior.ColorIndex = clr
+	Rng.Interior.ColorIndex = clr + 0
 	Rng.EntireColumn.Autofit
 
 	xlapp.DisplayAlerts = FALSE
