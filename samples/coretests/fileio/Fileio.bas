@@ -3,7 +3,7 @@ Option Explicit
 Sub Main
 
 	Dim ii As Integer
-	Open "filetest.txt" For Binary Output As #1
+	Open "filetest.txt" For Output As #1
 	
 	ii = 11
 	write #1, "write1", ii, "write2"
@@ -16,7 +16,7 @@ Sub Main
 	Dim s1, s2 As String, ll As Integer
 	
 	Print "fileno ", fn
-	Open "filetest.txt" For Binary Input As #fn
+	Open "filetest.txt" For Input As #fn
 	
 	Input #fn, s1, ll, s2
 	Print "s1 ", s1
