@@ -11,6 +11,24 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
  - Creates GUI(using wxWidgets), console or DLL applications.
  - Easy calls Windows COM like VB.
  
+# Install(Linux)
+ 1. download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
+ 2. compile and install wxWidgets on Ubuntu
+    - Setup build environment.
+         - $ sudo apt-get install libgtk-3-dev build-essential
+    - Compile wxWidgets
+    
+	  - $ cd wxWidgets.3.1.x
+	  - $ mkdir gtk-build
+	  - $ cd gtk-build/ 
+	  - $ ../configure --disable-shared --enable-unicode 
+	  - $ make
+    - Install wxWidgets
+         - $ make install
+  3. chomod 0777 [Kaya-BASIC]/bin/bpp64
+  
+  4. try to build samples.
+
 # Install(Windows)
  1. download mingw-w64 8.1.0
     - 32bit: i686-8.1.0-posix-sjlj-rt_v6-rev0  (must sjlj, because wxWidgets development files complied by this.)
@@ -33,8 +51,7 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
   5. try to build samples.
 
 # String for wxWidgets and ComObject
-  not support string expressions: wxFrame.SetTitle( s + "Kaya" )
-
+  NOT support string expressions.
   - Dim s As String = "Hello Kaya-BASIC"
   - wxFrame.SetTitle( s )　　　　　　　　　　　　　ＯＫ
      - wxFrame.SetTitle( s + "Kaya" )　　　　　　　❌
@@ -42,7 +59,7 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
      - WorkSheets(1).Cells(1,1).Value = s + "Kaya"　❌
 
 # Sample 
- Easy create the GUI and easy call windows comole like this.
+ Easy create GUI and easy call windows COM like this.
 ```
 Option Explicit
 
@@ -55,7 +72,7 @@ Sub LoadDataFromExcel
 	Dim path As String
 	
 	path = wxGetCwd()
-	path += "\data.xlsx"
+	path += "/data.xlsx"
 	
 	xlApp.CreateObject("Excel.Application")
 	Set xb = xlApp.WorkBooks.Open( path )
