@@ -137,5 +137,6 @@ Sub Main
 	Dim btn7 As New wxButton(p, 700, "CallByName Call Function with params", wxPoint(100,260))
 	btn7.Bind( wxEVT_BUTTON, Addressof OnButtonClick )	
 
+	f.SetIcon( wxIcon(sample_xpm) )
 	f.Show(TRUE)
 End Sub
