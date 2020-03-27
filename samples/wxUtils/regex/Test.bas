@@ -1,6 +1,4 @@
 Option Explicit
-
-Using MsgBoxDoEvents
 Dim f As wxFrame Ptr
 
 Function getExpresion( texto As String, Exp As String ) As String
