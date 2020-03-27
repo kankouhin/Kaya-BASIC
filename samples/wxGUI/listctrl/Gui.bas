@@ -1,5 +1,4 @@
 Option Explicit
-Using MsgBoxDoEvents
 
 Dim f As wxFrame Ptr
 Dim listctrl As wxListCtrl Ptr
@@ -46,7 +45,6 @@ Sub OnColumnClick(ByRef ev As wxListEvent)
 End Sub
 
 Sub Main
-
 	f = New wxFrame( NULL, wxID_ANY, "listctrl" )
 	listctrl = New wxListCtrl( f, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT )
 
