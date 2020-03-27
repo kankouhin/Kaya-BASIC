@@ -46,6 +46,18 @@ Sub Main
 	Next
 	Print aaa(10)
 	
+	Print Join( aaa, "," )
+	
+	
+	Dim src As String = "qwe,123,ert,xxx,1,2,3"
+	dim sar() As String
+	Print Split( src, ",", sar )
+	Print "Split ", Ubound( sar )
+	
+	For idx As Integer = LBound(sar) To UBound(sar)
+		Print sar(idx)
+	Next
+	
 	ArrayTest( aaa )
 	
 	ReDim Preserve aaa( UBound(aaa) - 6 )
