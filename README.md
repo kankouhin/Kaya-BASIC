@@ -28,6 +28,9 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
   3. chmod 777 [Kaya-BASIC]/bin/bpp64
   
   4. try to build samples.
+         - $ cd samples path
+         - $../../../bin/bpp64 -w Gui
+
 
 # Install(Windows)
  1. download mingw-w64 8.1.0
