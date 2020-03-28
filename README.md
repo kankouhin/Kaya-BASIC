@@ -25,7 +25,7 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
 	  - $ make
     - Install wxWidgets
          - $ make install
-  3. chmod 0777 [Kaya-BASIC]/bin/bpp64
+  3. chmod 777 [Kaya-BASIC]/bin/bpp64
   
   4. try to build samples.
 
