@@ -798,23 +798,23 @@ public:
 
 	class iterator: public bpp::iterator
 	{
-	public:
-		iterator(collection* owner)
-		{
-			i = owner->count ? owner->items : 0;
-		}
+        public:
+            iterator(collection* owner)
+            {
+                i = owner->count ? owner->items : 0;
+            }
 
-		virtual bool next(void* item)
-		{
-			if (!i)
-				return false;
-			*(T*)item = i->value;
-			i = i->next;
-			return true;
-		}
+            virtual bool next(void* item)
+            {
+                if (!i)
+                    return false;
+                *(T*)item = i->value;
+                i = i->next;
+                return true;
+            }
 
-	private:
-		collection<T>::item* i;
+        private:
+            item* i;
 	};
 
 	collection() { count = 0; }
@@ -968,67 +968,67 @@ public:
 
 	class iterator: public bpp::iterator
 	{
-	public:
-		iterator(dictionary* owner)
-		{
-			j = *(i = owner->table);
-			end = i + owner->maxhash - 1;
-		}
+        public:
+            iterator(dictionary* owner)
+            {
+                j = *(i = owner->table);
+                end = i + owner->maxhash - 1;
+            }
 
-		virtual bool next(void* item)
-		{
-			if (i == end && !j)
-				return false;
-			if (j)
-			{
-				*(T*)item = j->value;
-				j = j->next;
-			}
-			else
-			{
-				do
-					j = *(++i);
-				while (!j && i != end);
-				if (!j)
-					return false;
-				else
-				{
-					*(T*)item = j->value;
-					j = j->next;
-				}
-			}
-			return true;
-		}
+            virtual bool next(void* item)
+            {
+                if (i == end && !j)
+                    return false;
+                if (j)
+                {
+                    *(T*)item = j->value;
+                    j = j->next;
+                }
+                else
+                {
+                    do
+                        j = *(++i);
+                    while (!j && i != end);
+                    if (!j)
+                        return false;
+                    else
+                    {
+                        *(T*)item = j->value;
+                        j = j->next;
+                    }
+                }
+                return true;
+            }
 
-		virtual bool next(string& index, void* item)
-		{
-			if (i == end && !j)
-				return false;
-			if (j)
-			{
-				index = j->key;
-				*(T*)item = j->value;
-				j = j->next;
-			}
-			else
-			{
-				do
-					j = *(++i);
-				while (!j && i != end);
-				if (!j)
-					return false;
-				else
-				{
-					index = j->key;
-					*(T*)item = j->value;
-					j = j->next;
-				}
-			}
-			return true;
-		}
+            virtual bool next(string& index, void* item)
+            {
+                if (i == end && !j)
+                    return false;
+                if (j)
+                {
+                    index = j->key;
+                    *(T*)item = j->value;
+                    j = j->next;
+                }
+                else
+                {
+                    do
+                        j = *(++i);
+                    while (!j && i != end);
+                    if (!j)
+                        return false;
+                    else
+                    {
+                        index = j->key;
+                        *(T*)item = j->value;
+                        j = j->next;
+                    }
+                }
+                return true;
+            }
 
-	private:
-		item **i, **end, *j;
+        private:
+            item **i, **end, *j;
 	};
 
 	dictionary()
