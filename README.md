@@ -3,7 +3,8 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
 - Linux version
    - menu&toolbar(fixed) 
    - json(fixed)
-   - dlltest、sqlite(lib built failed)  ❌
+   - sqlite(fixed)
+   - dlltest❌
 
 # Features
  - Compiles with g++(both 32bit and 64bit)
@@ -24,8 +25,8 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
 	  - $ ../configure --disable-shared --enable-unicode 
 	  - $ make
     - Install wxWidgets
-         - $ make install
-  3. chmod 777 [Kaya-BASIC]/bin/bpp64
+         - $ sudo make install
+  3. chmod 777 [Kaya-BASIC]/bin/bpp
   
   4. try to build samples.
 
