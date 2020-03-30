@@ -1,2 +1,2 @@
-bpp -k test
+bpp test
 pause

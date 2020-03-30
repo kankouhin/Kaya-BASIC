@@ -1,2 +1,2 @@
-bpp -k dll
+bpp dll
 pause
