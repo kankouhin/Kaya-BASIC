@@ -4,7 +4,7 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
    - menu&toolbar(fixed) 
    - json(fixed)
    - sqlite(fixed)
-   - dlltest❌
+   - dlltest(fixed)
 
 # Features
  - Compiles with g++(both 32bit and 64bit)
