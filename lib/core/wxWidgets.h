@@ -42,6 +42,8 @@
 
 #include <wx/wxsqlite3.h>
 
+#include <wxThreadEx.h>
+
 
 namespace bpp 
 {
