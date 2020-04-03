@@ -5,60 +5,62 @@ Declare Sub showdir(sDir As String)
 Sub Main
 
 	Dim ss As String = " Hello world  "
-	Print "Left ", Left(ss,5)
-	Print "Right ", Right(ss,5)
-	Print "LTrim ", LTrim(ss)
-	Print "RTrim ", RTrim(ss)
+	Print "Left :", Left(ss,5), ";"
+	Print "Right :", Right(ss,5), ";"
+	Print "LTrim :", LTrim(ss), ";"
+	Print "RTrim :", RTrim(ss), ";"
+	Print "Tally :", Tally(ss,"l"), ";"
 	
-	Print "Delete ", Delete(ss, 1,3)
-	Print "Replace ", replace(ss, "Hel","ssssHel")
+	Print "Delete :", Delete(ss, 1,3), ";"
+	Print "Replace :", Replace(ss, "Hel","ssssHel"), ";"
 	
-	Print "Str ", Str(Val("2329.1232134"))
-	Print "String ", String(10,Chr(65))
-	Print "PadL ", padl(ss,20) + "aa"
-	Print "PadR ", padr(ss,30) + "aa"
-	Print "Mid ", Mid(ss, 2,7)
+	Print "Str :", Str(Val("2329.1232134")), ";"
+	Print "String :", String(10,Chr(65)), ";"
+	Print "String2 :", String(10,"ABC"), ";"
+	Print "Space :", Space(10), ";"
 	
-	Print "Abs ", Str(Abs(-1100))
-	Print "Asc ", Str(Asc("A"))
+	Print "PadL :", PadL(ss,30), ";"
+	Print "PadR :", PadR(ss,30), ";"
+	Print "Mid :", Mid(ss, 2,7), ";"
 	
-	Print "Ceil ", Str(Ceil(1.2323))
+	Print "Abs :", Str(Abs(-1100)), ";"
+	Print "Asc :", Str(Asc("A")), ";"
 	
-	showdir( ".." + PathSep + "builtin")
+	Print "Ceil :", Str(Ceil(1.2323)), ";"
 	
-	Print "FileExists ", FileExists("Buildin.bas")
-	Print "FileExists ", FileExists("Buildin.bpp")
+	showdir( "../../../samples")
 	
-	Print "Time ", Time
-	Print "Date ", Date
+	Print "FileExists :", FileExists("Buildin.bas")
+	Print "FileExists :", FileExists("Buildin.bpp")
 	
-	Print "DirExists ", DirExists("../builtin")
-	Print "DirExists ", DirExists("../builtin1")
-	Print "Environ ", Environ("PATH")
+	Print "Time :", Time
+	Print "Date :", Date
 	
-	Print "Fix ", Fix(12.67)
-	Print "FullDate ", FullDate
+	Print "DirExists :", DirExists("../builtin")
+	Print "DirExists :", DirExists("../builtin1")
+	Print "Environ :", Environ("PATH")
 	
-	Print "Hex ", Hex(125)
+	Print "Fix :", Fix(12.67)
+	Print "FullDate :", FullDate
 	
-	Print "IIf ", IIf(1,"false","true")
-	Print "IIf2 ", IIf(1,100,200)
+	Print "Hex :", Hex(125)
 	
-	Print "InStr ", InStr("abcdefg","e")
-	Print "InStrRev ", InStrRev("abcdefg","e")
+	Print "IIf :", IIf(1,"false","true")
+	Print "IIf2 :", IIf(1,100,200)
+	
+	Print "InStr :", InStr("abcdefg","e")
+	Print "InStrRev :", InStrRev("abcdefg","e")
 	
 	Kill("Buildin32_msw.exe")
 	
-	Print "LCase ", LCase(" Hello World ")
-	Print "UCase ", UCase(" Hello World ")
-	Print "Len ", Len("Hello World")
+	Print "LCase :", LCase(" Hello World "), ";"
+	Print "UCase :", UCase(" Hello World "), ";"
+	Print "Len :", Len("Hello World"), ";"
 	
-	Print "Reverse ", Reverse("Hello World")
+	Print "Reverse :", Reverse("Hello World"), ";"
 	
-	Print "RInStr ", RInStr("abcdefg","e")
-	
-	Print "PathSep ", PathSep
-	Print "OsDescription ", OsDescription
+	Print "PathSep :", PathSep
+	Print "RunAs :", RunAs
 End Sub
 
 'sub showdir(sDir as string)
