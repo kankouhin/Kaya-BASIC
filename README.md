@@ -58,14 +58,6 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
   
   5. try to build samples.
 
-# String for wxWidgets and ComObject
-  NOT support string expressions.
-  - Dim s As String = "Hello Kaya-BASIC"
-  - wxFrame.SetTitle( s )　　　　　　　　　　　　　ＯＫ
-     - wxFrame.SetTitle( s + "Kaya" )　　　　　　　❌
-  - WorkSheets(1).Cells(1,1).Value = s　　　　　　　ＯＫ
-     - WorkSheets(1).Cells(1,1).Value = s + "Kaya"　❌
-
 # Sample 
  Easy create GUI and easy call windows COM like this.
 ```
