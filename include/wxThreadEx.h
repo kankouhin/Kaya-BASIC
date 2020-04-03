@@ -1,4 +1,6 @@
 
+#ifndef __wxThreadJoinable_H__
+#define __wxThreadJoinable_H__
 
 class wxThreadJoinable : public wxThread
 {
@@ -17,23 +19,21 @@ public:
 	void (*OnRun)();
 };
 
-wxThreadJoinable::wxThreadJoinable()
+inline wxThreadJoinable::wxThreadJoinable()
         : wxThread(wxTHREAD_JOINABLE)
 {
 }
 
-void wxThreadJoinable::OnExit()
+inline void wxThreadJoinable::OnExit()
 {
 }
 
-wxThread::ExitCode wxThreadJoinable::Entry()
+inline wxThread::ExitCode wxThreadJoinable::Entry()
 {
-	//wxMutexGuiEnter();
-	
 	if (OnRun)
 		OnRun();
-	
-	//wxMutexGuiLeave();
-	
+
     return NULL;
 }
+
+#endif
