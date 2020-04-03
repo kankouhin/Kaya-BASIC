@@ -12,6 +12,7 @@
 
 #include <stdlib.h>
 #include <string>
+#include <vector>
 using namespace std;
 
 
@@ -125,8 +126,11 @@ inline void swap(T& a, T& b) { T c = a; a = b; b = c; }
 template <class T>
 class array
 {
+public:
+    typedef typename vector<T>::reference reference;
+
 private:
-	T* data;
+    vector<T> data;
 	struct { int lo, hi, d; } dim[5];
 
 	void check(int i1)
@@ -165,23 +169,23 @@ private:
 	}
 
 public:
-	array() { data = 0; preserve = 0; redim(0,1); }
-	array(int l1, int h1) { data = 0; preserve = 0; redim(l1, h1); }
-	array(int l1, int h1, int l2, int h2) { data = 0; preserve = 0; redim(l1, h1, l2, h2); }
-	array(int l1, int h1, int l2, int h2, int l3, int h3) { data = 0; preserve = 0; redim(l1, h1, l2, h2, l3, h3); }
-	array(int l1, int h1, int l2, int h2, int l3, int h3, int l4, int h4) { data = 0; preserve = 0; redim(l1, h1, l2, h2, l3, h3, l4, h4); }
-	~array(){ if (data) free(data); data = 0; }
+	array() { preserve = 0; redim(0,1); }
+	array(int l1, int h1) { preserve = 0; redim(l1, h1); }
+	array(int l1, int h1, int l2, int h2) { preserve = 0; redim(l1, h1, l2, h2); }
+	array(int l1, int h1, int l2, int h2, int l3, int h3) { preserve = 0; redim(l1, h1, l2, h2, l3, h3); }
+	array(int l1, int h1, int l2, int h2, int l3, int h3, int l4, int h4) { preserve = 0; redim(l1, h1, l2, h2, l3, h3, l4, h4); }
+	~array(){ data.clear(); }
 
 	void redim()
 	{
-		if ( data && preserve )
+		if ( preserve )
 		{
-			data = (T*)realloc( (void*)data, this->size() * sizeof(T) );
+			data.resize( this->size() );
 			return;
 		}
 
-		if (data) free(data); data = 0;
-		data = (T*)calloc( this->size(), sizeof(T) );
+        data.clear();
+		data.resize( this->size() );
 	}
 
 	int lbound(int d = 1) { return dim[d].lo; }
@@ -194,7 +198,7 @@ public:
 
 		dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
 
-		if ( !(data && preserve) )
+		if ( preserve == 0 )
 		{
 			dim[2].lo = dim[3].lo = dim[4].lo = 0;
 			dim[2].hi = dim[3].hi = dim[4].hi = 0;
@@ -211,7 +215,7 @@ public:
 		if (h2 < l2)
 			swap(l2, h2);
 
-		if ( data && preserve )
+		if ( preserve )
 		{
 			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
 		}
@@ -237,7 +241,7 @@ public:
 		if (h3 < l3)
 			swap(l3, h3);
 
-		if ( data && preserve )
+		if ( preserve )
 		{
 			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
 		}
@@ -264,7 +268,7 @@ public:
 		if (h4 < l4)
 			swap(l4, h4);
 
-		if ( data && preserve )
+		if ( preserve )
 		{
 			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
 		}
@@ -293,16 +297,16 @@ public:
 		return ret;
 	}
 
-	array<T>& operator() () { return *this; }
-	T* operator& () { return data; }
+	T operator& () { return data; }
 
-	T& operator() (int i1)
+	reference operator() (int i1)
 	{
-		check(i1);
+        check(i1);
+
 		return data[i1 - dim[1].lo];
 	}
 
-	T& operator() (int i1, int i2)
+	reference operator() (int i1, int i2)
 	{
 		check(i1, i2);
 /*
@@ -315,7 +319,7 @@ public:
 			(i2 - dim[2].lo)];
 	}
 
-	T& operator() (int i1, int i2, int i3)
+	reference operator() (int i1, int i2, int i3)
 	{
 		check(i1, i2, i3);
 /*
@@ -330,7 +334,7 @@ public:
 			(i3 - dim[3].lo)];
 	}
 
-	T& operator() (int i1, int i2, int i3, int i4)
+	reference operator() (int i1, int i2, int i3, int i4)
 	{
 		check(i1, i2, i3, i4);
 /*
@@ -1201,7 +1205,7 @@ public:
 struct end { };
 
 
-	
+
 /*
 template <int length>
 variant operator+ (const flstring<length>& s, const variant& v)
