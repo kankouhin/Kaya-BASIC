@@ -88,12 +88,12 @@ Public Declare Function Chr(n As Byte) As String
 Public Declare Function CLng(n As Double) As Long
 Public Declare Function Cos(n As Double) As Double
 Public Declare Function CreateObject(ClassName As String) As Object
-Public Declare Function	CrLf As String
+Public Declare Function	NewLine As String
 Public Declare Function Date As String
 Public Declare Function Delete(s As String, Start As Long, Length As Long) As String
 
 Public Declare Function PathSep As String
-Public Declare Function OsDescription As String
+Public Declare Function RunAs As String
 
 Public Declare Function Dir(path As String = "") As String
 Public Declare Sub 		CloseDir(closeAll As Boolean = False)
@@ -146,7 +146,6 @@ Public Declare Function Replace(s As String, OldStr As String, NewStr As String)
 Public Declare Function Reverse(s As String) As String
 Public Declare Function RGB(r As Byte, g As Byte, b As Byte) As Integer
 Public Declare Function Right(s As String, Count As Long) As String
-Public Declare Function RInStr(Start As Variant, s As String, ss As String = "") As Long
 Public Declare Sub		RmDir(Dir As String)
 Public Declare Function Rnd(Max As Long = 0) As Double
 Public Declare Function Round(n As Double) As Long
@@ -158,7 +157,7 @@ Public Declare Function Space(Count As Long) As String
 Public Declare Function Sqr(n As Double) As Double
 Public Declare Function Str(n As Double) As String
 Public Declare Function Str0(n As Double, Count As Long, Frac As Long = 16) As String
-Public Declare Function String(Count As Long, Str As Variant) As String
+Public Declare Function String(Count As Long, Str As String) As String
 Public Declare Function Tally(s As String, ss As String) As Long
 Public Declare Function Tan(n As Double) As Double
 Public Declare Function Time As String
@@ -182,6 +181,11 @@ Public Declare Function Format(Num As Double, mask AS String="") As String
 Public Declare Function FreeFile As Integer
 Public Declare Function EOF(fn As Integer) As Boolean
 Public Declare Function FileLen(fn As Integer) As Long
+
+Public Declare Sub FileOpen(filename As String, fm As String, fn As Integer)
+Public Declare Sub FileClose(fn As Integer)
+Public Declare Function FileGetObject(fn As Integer) As Long
+
 
 Public Declare Sub		Sleep(sec As Integer)
 
