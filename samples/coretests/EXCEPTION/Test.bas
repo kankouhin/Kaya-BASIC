@@ -16,7 +16,7 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 	Try
 		Throw 100
 	Catch msg As Integer
-		Msgbox "Catched a exception: " + msg
+		Msgbox "Catched a exception: " + Str(msg)
 	Catch msg As String
 		Msgbox "Catched a exception: " + msg
 	End Try
