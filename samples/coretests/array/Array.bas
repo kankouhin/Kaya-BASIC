@@ -6,8 +6,6 @@ End Sub
 
 Sub Main
 
-	Dim x,y As Integer = 10
-
 	Dim ar(2, 6, 8, 10) As Integer
 	Dim iv As Integer
 	
@@ -48,13 +46,31 @@ Sub Main
 	
 	Print Join( aaa, "," )
 	
-	
+	Print "Test Split1"
 	Dim src As String = "qwe,123,ert,xxx,1,2,3"
 	dim sar() As String
-	Print Split( src, ",", sar )
+	Dim cnt  = Split( src, ",", sar )
 	Print "Split ", Ubound( sar )
 	
-	For idx As Integer = LBound(sar) To UBound(sar)
+	For idx As Integer = LBound(sar) To Ubound(sar)
+		Print sar(idx)
+	Next
+
+	Print "Test Split2"
+	src = "qwe,123,ert,xxx,1,2,3,,,,1,"
+	cnt  = Split( src, ",", sar )
+	Print "Split ", Ubound( sar )
+	
+	For idx As Integer = LBound(sar) To Ubound(sar)
+		Print sar(idx)
+	Next
+
+	Print "Test Split3"
+	src = ",qwe,123,ert,xxx,1,2,3,,,,1,1111"
+	cnt  = Split( src, ",", sar )
+	Print "Split ", Ubound( sar )
+	
+	For idx As Integer = LBound(sar) To Ubound(sar)
 		Print sar(idx)
 	Next
 	
