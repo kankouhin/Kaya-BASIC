@@ -36,6 +36,19 @@ public:
 	CDispatchVariant(const VARIANT& varSrc) : _variant_t(varSrc) { }
 	CDispatchVariant(const VARIANT* pSrc) : _variant_t(pSrc) { }
 	CDispatchVariant(const _variant_t& varSrc) : _variant_t(varSrc) { }
+	
+	CDispatchVariant(string strSrc) : _variant_t( strSrc.c_str() ) { }
+	
+	CDispatchVariant(short varSrc) : _variant_t(varSrc, VT_I2) { }
+	CDispatchVariant(long varSrc) : _variant_t(varSrc, VT_I4) { }
+	CDispatchVariant(int varSrc) : _variant_t(varSrc, VT_I4) { }	
+	CDispatchVariant(float varSrc) : _variant_t(varSrc) { }
+	CDispatchVariant(double varSrc) : _variant_t(varSrc, VT_R8) { }
+	CDispatchVariant(BYTE varSrc) : _variant_t(varSrc) { }
+	
+	CDispatchVariant(const _bstr_t& varSrc) : _variant_t(varSrc) { }
+	CDispatchVariant(const wchar_t * varSrc) : _variant_t(varSrc) { }
+	CDispatchVariant(const char* varSrc) : _variant_t(varSrc) { }
 
 	CDispatchVariant(VARIANT& varSrc, bool fCopy) : _variant_t(varSrc, fCopy) { }
 
@@ -90,20 +103,20 @@ public:
 
 	template <class DispatchItem>
 	CDispatchVariant Get(DispatchItem property,
-							const _variant_t& arg1);
+							const CDispatchVariant& arg1);
 
 	template <class DispatchItem>
 	CDispatchVariant Get(DispatchItem property,
-							const _variant_t& arg1,
-							const _variant_t& arg2);
+							const CDispatchVariant& arg1,
+							const CDispatchVariant& arg2);
 
 	// Set: set a property's value
 	template <class DispatchItem>
-	void Set(DispatchItem property, const _variant_t& value);
+	void Set(DispatchItem property, const CDispatchVariant& value);
 
 	// SetRef: set a reference to a property's value
 	template <class DispatchItem>
-	void SetRef(DispatchItem property, const _variant_t& value);
+	void SetRef(DispatchItem property, const CDispatchVariant& value);
 
 	// Invoke: invoke a method
 	template <class DispatchItem>
@@ -111,75 +124,75 @@ public:
 
 	template <class DispatchItem>
 	CDispatchVariant Invoke(DispatchItem method,
-							const _variant_t& arg1);
+							const CDispatchVariant& arg1);
 
 	template <class DispatchItem>
 	CDispatchVariant Invoke(DispatchItem method,
-							const _variant_t& arg1,
-							const _variant_t& arg2);
+							const CDispatchVariant& arg1,
+							const CDispatchVariant& arg2);
 
 	template <class DispatchItem>
 	CDispatchVariant Invoke(DispatchItem method,
-							const _variant_t& arg1,
-							const _variant_t& arg2,
-							const _variant_t& arg3);
+							const CDispatchVariant& arg1,
+							const CDispatchVariant& arg2,
+							const CDispatchVariant& arg3);
 
 	template <class DispatchItem>
 	CDispatchVariant Invoke(DispatchItem method,
-							const _variant_t& arg1,
-							const _variant_t& arg2,
-							const _variant_t& arg3,
-							const _variant_t& arg4);
+							const CDispatchVariant& arg1,
+							const CDispatchVariant& arg2,
+							const CDispatchVariant& arg3,
+							const CDispatchVariant& arg4);
 
 	template <class DispatchItem>
 	CDispatchVariant Invoke(DispatchItem method,
-							const _variant_t& arg1,
-							const _variant_t& arg2,
-							const _variant_t& arg3,
-							const _variant_t& arg4,
-							const _variant_t& arg5);
+							const CDispatchVariant& arg1,
+							const CDispatchVariant& arg2,
+							const CDispatchVariant& arg3,
+							const CDispatchVariant& arg4,
+							const CDispatchVariant& arg5);
 
 	template <class DispatchItem>
 	CDispatchVariant Invoke(DispatchItem method,
-							const _variant_t& arg1,
-							const _variant_t& arg2,
-							const _variant_t& arg3,
-							const _variant_t& arg4,
-							const _variant_t& arg5,
-							const _variant_t& arg6);
+							const CDispatchVariant& arg1,
+							const CDispatchVariant& arg2,
+							const CDispatchVariant& arg3,
+							const CDispatchVariant& arg4,
+							const CDispatchVariant& arg5,
+							const CDispatchVariant& arg6);
 
 	template <class DispatchItem>
 	CDispatchVariant Invoke(DispatchItem method,
-							const _variant_t& arg1,
-							const _variant_t& arg2,
-							const _variant_t& arg3,
-							const _variant_t& arg4,
-							const _variant_t& arg5,
-							const _variant_t& arg6,
-							const _variant_t& arg7);
+							const CDispatchVariant& arg1,
+							const CDispatchVariant& arg2,
+							const CDispatchVariant& arg3,
+							const CDispatchVariant& arg4,
+							const CDispatchVariant& arg5,
+							const CDispatchVariant& arg6,
+							const CDispatchVariant& arg7);
 
 	template <class DispatchItem>
 	CDispatchVariant Invoke(DispatchItem method,
-							const _variant_t& arg1,
-							const _variant_t& arg2,
-							const _variant_t& arg3,
-							const _variant_t& arg4,
-							const _variant_t& arg5,
-							const _variant_t& arg6,
-							const _variant_t& arg7,
-							const _variant_t& arg8);
+							const CDispatchVariant& arg1,
+							const CDispatchVariant& arg2,
+							const CDispatchVariant& arg3,
+							const CDispatchVariant& arg4,
+							const CDispatchVariant& arg5,
+							const CDispatchVariant& arg6,
+							const CDispatchVariant& arg7,
+							const CDispatchVariant& arg8);
 
 	template <class DispatchItem>
 	CDispatchVariant Invoke(DispatchItem method,
-							const _variant_t& arg1,
-							const _variant_t& arg2,
-							const _variant_t& arg3,
-							const _variant_t& arg4,
-							const _variant_t& arg5,
-							const _variant_t& arg6,
-							const _variant_t& arg7,
-							const _variant_t& arg8,
-							const _variant_t& arg9);
+							const CDispatchVariant& arg1,
+							const CDispatchVariant& arg2,
+							const CDispatchVariant& arg3,
+							const CDispatchVariant& arg4,
+							const CDispatchVariant& arg5,
+							const CDispatchVariant& arg6,
+							const CDispatchVariant& arg7,
+							const CDispatchVariant& arg8,
+							const CDispatchVariant& arg9);
 
 
 protected:
@@ -216,6 +229,17 @@ protected:
 		return hr;
 	}
 
+	// dispatchItem is (wchar_t*) -- convert it to a DISPID
+	void InvokeHelper(string dispatchItem,
+					  const VARIANT* params,
+					  int cParams,
+					  WORD invokeType,
+					  VARIANT* result)
+	{
+		
+		InvokeHelper( dispatchItem.c_str(), params, cParams, invokeType, result );
+	}
+	
 	// dispatchItem is (wchar_t*) -- convert it to a DISPID
 	void InvokeHelper(LPCOLESTR dispatchItem,
 					  const VARIANT* params,
@@ -286,7 +310,7 @@ CDispatchVariant CDispatchVariant::Get(DispatchItem property)
 
 template <class DispatchItem>
 CDispatchVariant CDispatchVariant::Get(DispatchItem property,
-						const _variant_t& arg1)
+						const CDispatchVariant& arg1)
 {
 	VARIANT result;
 	InvokeHelper(property, &arg1, 1, DISPATCH_PROPERTYGET, &result);
@@ -295,8 +319,8 @@ CDispatchVariant CDispatchVariant::Get(DispatchItem property,
 
 template <class DispatchItem>
 CDispatchVariant CDispatchVariant::Get(DispatchItem property,
-						const _variant_t& arg1,
-						const _variant_t& arg2)
+						const CDispatchVariant& arg1,
+						const CDispatchVariant& arg2)
 {
 	VARIANT result;
 	VARIANT args[2];
@@ -309,14 +333,14 @@ CDispatchVariant CDispatchVariant::Get(DispatchItem property,
 
 // Set: set a property's value
 template <class DispatchItem>
-void CDispatchVariant::Set(DispatchItem property, const _variant_t& value)
+void CDispatchVariant::Set(DispatchItem property, const CDispatchVariant& value)
 {
 	InvokeHelper(property, &value, 1, DISPATCH_PROPERTYPUT, NULL);
 }
 
 // SetRef: set a reference to a property's value
 template <class DispatchItem>
-void CDispatchVariant::SetRef(DispatchItem property, const _variant_t& value)
+void CDispatchVariant::SetRef(DispatchItem property, const CDispatchVariant& value)
 {
 	InvokeHelper(property, &value, 1, DISPATCH_PROPERTYPUTREF, NULL);
 }
@@ -332,7 +356,7 @@ CDispatchVariant CDispatchVariant::Invoke(DispatchItem method)
 
 template <class DispatchItem>
 CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
-						const _variant_t& arg1)
+						const CDispatchVariant& arg1)
 {
 	VARIANT result;
 	InvokeHelper(method, &arg1, 1, DISPATCH_METHOD | DISPATCH_PROPERTYGET, &result);
@@ -341,8 +365,8 @@ CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
 
 template <class DispatchItem>
 CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
-						const _variant_t& arg1,
-						const _variant_t& arg2)
+						const CDispatchVariant& arg1,
+						const CDispatchVariant& arg2)
 {
 	VARIANT result;
 	VARIANT args[2];
@@ -356,9 +380,9 @@ CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
 
 template <class DispatchItem>
 CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
-						const _variant_t& arg1,
-						const _variant_t& arg2,
-						const _variant_t& arg3)
+						const CDispatchVariant& arg1,
+						const CDispatchVariant& arg2,
+						const CDispatchVariant& arg3)
 {
 	VARIANT result;
 	VARIANT args[3];
@@ -373,10 +397,10 @@ CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
 
 template <class DispatchItem>
 CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
-						const _variant_t& arg1,
-						const _variant_t& arg2,
-						const _variant_t& arg3,
-						const _variant_t& arg4)
+						const CDispatchVariant& arg1,
+						const CDispatchVariant& arg2,
+						const CDispatchVariant& arg3,
+						const CDispatchVariant& arg4)
 {
 	VARIANT result;
 	VARIANT args[4];
@@ -392,11 +416,11 @@ CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
 
 template <class DispatchItem>
 CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
-						const _variant_t& arg1,
-						const _variant_t& arg2,
-						const _variant_t& arg3,
-						const _variant_t& arg4,
-						const _variant_t& arg5)
+						const CDispatchVariant& arg1,
+						const CDispatchVariant& arg2,
+						const CDispatchVariant& arg3,
+						const CDispatchVariant& arg4,
+						const CDispatchVariant& arg5)
 {
 	VARIANT result;
 	VARIANT args[5];
@@ -413,12 +437,12 @@ CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
 
 template <class DispatchItem>
 CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
-						const _variant_t& arg1,
-						const _variant_t& arg2,
-						const _variant_t& arg3,
-						const _variant_t& arg4,
-						const _variant_t& arg5,
-						const _variant_t& arg6)
+						const CDispatchVariant& arg1,
+						const CDispatchVariant& arg2,
+						const CDispatchVariant& arg3,
+						const CDispatchVariant& arg4,
+						const CDispatchVariant& arg5,
+						const CDispatchVariant& arg6)
 {
 	VARIANT result;
 	VARIANT args[6];
@@ -436,13 +460,13 @@ CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
 
 template <class DispatchItem>
 CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
-						const _variant_t& arg1,
-						const _variant_t& arg2,
-						const _variant_t& arg3,
-						const _variant_t& arg4,
-						const _variant_t& arg5,
-						const _variant_t& arg6,
-						const _variant_t& arg7)
+						const CDispatchVariant& arg1,
+						const CDispatchVariant& arg2,
+						const CDispatchVariant& arg3,
+						const CDispatchVariant& arg4,
+						const CDispatchVariant& arg5,
+						const CDispatchVariant& arg6,
+						const CDispatchVariant& arg7)
 {
 	VARIANT result;
 	VARIANT args[7];
@@ -461,14 +485,14 @@ CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
 
 template <class DispatchItem>
 CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
-						const _variant_t& arg1,
-						const _variant_t& arg2,
-						const _variant_t& arg3,
-						const _variant_t& arg4,
-						const _variant_t& arg5,
-						const _variant_t& arg6,
-						const _variant_t& arg7,
-						const _variant_t& arg8)
+						const CDispatchVariant& arg1,
+						const CDispatchVariant& arg2,
+						const CDispatchVariant& arg3,
+						const CDispatchVariant& arg4,
+						const CDispatchVariant& arg5,
+						const CDispatchVariant& arg6,
+						const CDispatchVariant& arg7,
+						const CDispatchVariant& arg8)
 {
 	VARIANT result;
 	VARIANT args[8];
@@ -488,15 +512,15 @@ CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
 
 template <class DispatchItem>
 CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
-						const _variant_t& arg1,
-						const _variant_t& arg2,
-						const _variant_t& arg3,
-						const _variant_t& arg4,
-						const _variant_t& arg5,
-						const _variant_t& arg6,
-						const _variant_t& arg7,
-						const _variant_t& arg8,
-						const _variant_t& arg9)
+						const CDispatchVariant& arg1,
+						const CDispatchVariant& arg2,
+						const CDispatchVariant& arg3,
+						const CDispatchVariant& arg4,
+						const CDispatchVariant& arg5,
+						const CDispatchVariant& arg6,
+						const CDispatchVariant& arg7,
+						const CDispatchVariant& arg8,
+						const CDispatchVariant& arg9)
 {
 	VARIANT result;
 	VARIANT args[9];
@@ -520,7 +544,7 @@ namespace bpp
 
 inline string conv(string* ptr, CDispatchVariant x)
 {
-	LPSTR val = x;
+	const char* val = x;
 	string ret(val);
 	return variant(ret);
 }
@@ -528,60 +552,10 @@ inline string conv(string* ptr, CDispatchVariant x)
 
 inline CDispatchVariant conv(CDispatchVariant* ptr, string x)
 {
-	LPSTR str = x.cstr();
-	_variant_t ret(str);
-	return ret;
-}
-	
-
-/*
-inline CDispatchVariant conv(CDispatchVariant* ptr, string x)
-{
-	LPSTR str = x.cstr();
-	_variant_t ret(str);
-	return ret;
-}
-
-inline _variant_t conv(_variant_t* ptr, string x)
-{
-	LPSTR str = x.cstr();
-	_variant_t ret(str);
-	return ret;
-}
-
-inline string conv(string* ptr, _bstr_t x)
-{
-	LPSTR val = x;
-	string ret(val);
-	return variant(ret);
-}
-
-inline int conv(int* ptr, _bstr_t x)
-{
-	LPSTR val = x;
-	string ret(val);
-	return variant(ret);
-}
-
-inline _bstr_t conv(_bstr_t* ptr, variant x)
-{
-	string val = x;
-	LPSTR str = val.cstr();
-	_bstr_t ret(str);
+	CDispatchVariant ret(x);
 	return ret;
 }
 
 
-
-
-inline _bstr_t conv(_bstr_t* ptr, int x)
-{
-	variant num = x;
-	string val = num;
-	LPSTR str = val.cstr();
-	_bstr_t ret(str);
-	return ret;
-}
-*/
 
 } //namespace bpp

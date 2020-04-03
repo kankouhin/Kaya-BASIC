@@ -11,8 +11,8 @@
 #endif // __BPPWIN__
 
 #include <stdlib.h>
-//#include <string.h>
-//using namespace std;
+#include <string>
+using namespace std;
 
 
 #define UBOUND1(x) sizeof(x) / sizeof(x[0])
@@ -34,7 +34,6 @@ namespace bpp
 {
 
 class variant;
-class string;
 
 void nullify(void*, int);
 void loadlib(const string&);
@@ -51,57 +50,6 @@ void dbg_func(const string& s);
 void dbg_endfunc();
 int dbg_savefunc();
 void dbg_unwind(int n);
-
-
-
-class string
-{
-public:
-	string();
-	string(const char*);
-	string(const string&);
-	~string() { release(); }
-	string* ptr() { return this; }
-	char* cstr() { return dyn >= (string_t*)0x10000 ? dyn->data : (char*)dyn; }
-	const char* cstr() const { return dyn >= (string_t*)0x10000 ? dyn->data : (char*)dyn; }
-	void alloc(int);
-	int length() const;
-	int cmp(const string&) const;
-	char* operator& () { return cstr(); }
-	string& operator= (const string&);
-	string& operator+= (const string&);
-	string& operator-= (const string&);
-	string& operator*= (const string&);
-	string& operator/= (const string&);
-	string& operator= (const variant&);
-	string& operator+= (const variant&);
-	string& operator-= (const variant&);
-	string& operator*= (const variant&);
-	string& operator/= (const variant&);
-	string operator+ (const string&) const;
-	string operator+ (double) const;
-	bool operator== (const string&) const;
-	bool operator!= (const string&) const;
-	bool operator< (const string&) const;
-	bool operator> (const string&) const;
-	bool operator<= (const string&) const;
-	bool operator>= (const string&) const;
-	bool operator! () const { return dyn >= (string_t*)0x10000 ? length() == 0 : false; }
-	string& operator++ ();
-	string& operator-- ();
-	operator void* () const { return dyn >= (string_t*)0x10000 ? (void*)(length() != 0) : 0; }
-
-private:
-	struct string_t
-	{
-		int count;
-		int len;
-		char data[0];
-	} *dyn;
-
-	string(string_t* s) { dyn = s; }
-	void release();
-};
 
 
 template <int length>
@@ -131,7 +79,7 @@ public:
 	void operator= (string s)
 	{
 		int i;
-		char *p = data, *q = s.cstr();
+		char *p = data, *q = s.c_str();
 		for (i = 0; i < length; i++, p++, q++)
 		{
 			if (!*q)
@@ -142,18 +90,6 @@ public:
 		for (int j = i ; j < length; j++, p++)
 			*p = 32;
 	}
-
-	void operator= (const variant& v)
-	{
-		*this = string(v);
-	}
-
-	void operator+= (const variant& v) { *this = *this + string(v); }
-	void operator-= (const variant& v) { *this = *this - string(v); }
-	void operator*= (const variant& v) { *this = *this * string(v); }
-	void operator/= (const variant& v) { *this = *this / string(v); }
-	void operator++ () { ++(*this); }
-	void operator-- () { --(*this); }
 
 private:
 	char data[length];
@@ -173,11 +109,6 @@ public:
 	void alloc(int n);
 	void operator= (const apistring& s);
 	void operator= (const string& s);
-	void operator= (const variant& v);
-	void operator+= (const variant& v);
-	void operator-= (const variant& v);
-	void operator*= (const variant& v);
-	void operator/= (const variant& v);
 	void operator++ ();
 	void operator-- ();
 	char* operator& () { return data; }
@@ -624,6 +555,7 @@ public:
 
 	variant(double = 0);
 	variant(const string&);
+	variant(const char*);
 	template <int length>
 	variant(const flstring<length>& s) { *this = s.str(); }
 	variant(const apistring& s) { *this = s.str(); }
@@ -1170,7 +1102,7 @@ private:
 		return key.length();
 		unsigned int hash = 0;
 		unsigned int len = key.length();
-		const char* s = key.cstr();
+		const char* s = key.c_str();
 		while (true)
 		{
 			switch (len)
@@ -1208,6 +1140,8 @@ class Print
 {
 public:
 	Print& operator<< (variant);
+	Print& operator<< (string);
+	Print& operator<< (const char*);
 } extern print;
 
 
@@ -1253,14 +1187,6 @@ public:
 		return *this;
 	}
 
-	Input& operator>> (apistring& s)
-	{
-		variant v;
-		*this >> v;
-		s = v;
-		return *this;
-	}
-
 	template <class T>
 	Input& operator>> (ref<T>& r)
 	{
@@ -1275,6 +1201,8 @@ public:
 struct end { };
 
 
+	
+/*
 template <int length>
 variant operator+ (const flstring<length>& s, const variant& v)
 {
@@ -1420,12 +1348,12 @@ inline variant operator^ (const apistring& s, const variant& v)
 	return variant(s) ^ v;
 }
 
-/*
+
 inline bool operator== (const apistring& s, const variant& v)
 {
 	return variant(s) == v;
 }
-*/
+
 
 inline bool operator!= (const apistring& s, const variant& v)
 {
@@ -1456,14 +1384,7 @@ inline bool operator>= (const apistring& s, const variant& v)
 	return variant(s) >= v;
 }
 
-inline void apistring::operator= (const variant& v) { *this = string(v); }
-inline void apistring::operator+= (const variant& v) { *this = *this + string(v); }
-inline void apistring::operator-= (const variant& v) { *this = *this - string(v); }
-inline void apistring::operator*= (const variant& v) { *this = *this * string(v); }
-inline void apistring::operator/= (const variant& v) { *this = *this / string(v); }
-inline void apistring::operator++ () { *this = double(variant(*this)) + 1; }
-inline void apistring::operator-- () { *this = double(variant(*this)) - 1; }
-
+*/
 
 template<class T, class U>
 inline ref<T> conv(ref<T>* ptr, const ref<U>& x)
@@ -1477,7 +1398,6 @@ inline T conv(T* ptr, T x)
 {
 	return x;
 }
-
 
 template <class U, class T>
 inline U conv(U* ptr, T x)
@@ -1499,8 +1419,6 @@ inline int ubound (array<T>& x, int d = 1) { return x.ubound(d); }
 template <class T>
 inline void* ptr(T& x) { return &x; }
 
-inline void* ptr(string& s) { return s.ptr(); }
-
 
 
 }
@@ -1509,7 +1427,7 @@ extern "C"
 {
 	void __init_all();
 	void __final_all();
-	void abort_with_error(const bpp::string& s);
+	void abort_with_error(const string& s);
 	void Main();
 }
 

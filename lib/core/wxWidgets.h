@@ -49,12 +49,12 @@ namespace bpp
 {
 	inline string conv(string* ptr, wxString x)
 	{
-	    return string( x.ToStdString().c_str() );
+	    return string( x.ToStdString() );
 	}
 
 	inline wxString conv(wxString* ptr, string x)
 	{
-	    return wxString( x.cstr() );
+	    return wxString( x );
 	}
 
 	namespace System
@@ -66,7 +66,7 @@ namespace bpp
 
 		inline Integer MsgBox(string prompt, Integer button, string title)
 		{
-		    return wxMessageBox( prompt.cstr(), title.cstr(), button );
+		    return wxMessageBox( prompt, title, button );
 		}
 	}
 }
