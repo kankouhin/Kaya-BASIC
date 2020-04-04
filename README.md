@@ -8,7 +8,7 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
    - dlltest(fixed)
    
  - Next Plan
-   - Mac version(WIP)
+   - Mac version(WIP)<br>
     ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Mac64/Mac.png)
 # Features
  - Compiles with g++(both 32bit and 64bit)
