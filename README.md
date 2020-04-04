@@ -8,8 +8,8 @@ Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
    - dlltest(fixed)
    
  - Next Plan
-   - Mac version
-
+   - Mac version(WIP)
+    ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Mac64/Mac.png)
 # Features
  - Compiles with g++(both 32bit and 64bit)
  - OOP, supports CreateObject by name and call function/sub/property by name)
