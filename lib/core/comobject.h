@@ -542,13 +542,18 @@ CDispatchVariant CDispatchVariant::Invoke(DispatchItem method,
 namespace bpp
 {
 
+template<class T>
+inline T conv(T* ptr, CDispatchVariant x)
+{
+	return (double)x;
+}
+
 inline string conv(string* ptr, CDispatchVariant x)
 {
 	const char* val = x;
 	string ret(val);
-	return variant(ret);
+	return ret;
 }
-
 
 inline CDispatchVariant conv(CDispatchVariant* ptr, string x)
 {
