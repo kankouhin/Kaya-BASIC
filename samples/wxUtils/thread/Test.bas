@@ -14,6 +14,11 @@ Dim mux As wxMutex
 Dim bStop As BOOLEAN
 Dim bMutex As BOOLEAN
 
+Sub ThreadExited
+	btnStart.Enable()
+	btnStart2.Enable()
+End Sub
+
 Sub ThreadProc
 	Do
 		If bMutex Then
@@ -43,8 +48,8 @@ Sub OnStartClick(ByRef ev As wxCommandEvent)
 	bMutex = ev.GetId() - 100
 	bStop = FALSE
 	
-	thread = New wxThreadJoinable
-	thread.OnRun = AddressOf ThreadProc
+	wxDELETE(thread)
+	thread = New wxThreadJoinable( AddressOf ThreadProc, AddressOf ThreadExited )
 	thread.Run()
 	
 	Do
@@ -71,15 +76,13 @@ End Sub
 Sub OnStopClick(ByRef ev As wxCommandEvent)
 
 	btnStop.Disable()
-	
 	bStop = True
-	Do While ( thread.IsRunning() )
-		DoEvents
-	Loop
 	
-	wxDELETE(thread)
-	btnStart.Enable()
-	btnStart2.Enable()
+'	Do While ( thread.IsRunning() )
+'		DoEvents
+'	Loop
+	
+	
 End Sub
 
 Sub Main
