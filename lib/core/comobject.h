@@ -41,7 +41,7 @@ public:
 	
 	CDispatchVariant(short varSrc) : _variant_t(varSrc, VT_I2) { }
 	CDispatchVariant(long varSrc) : _variant_t(varSrc, VT_I4) { }
-	CDispatchVariant(int varSrc) : _variant_t(varSrc, VT_I4) { }	
+	CDispatchVariant(int varSrc) : _variant_t(varSrc) { }	
 	CDispatchVariant(float varSrc) : _variant_t(varSrc) { }
 	CDispatchVariant(double varSrc) : _variant_t(varSrc, VT_R8) { }
 	CDispatchVariant(BYTE varSrc) : _variant_t(varSrc) { }
@@ -84,14 +84,14 @@ public:
 		CLSID clsid;
 	
 		HRESULT hr = CLSIDFromProgID(szProgId, &clsid);
-		if (FAILED(hr)) msgerr("CLSIDFromProgID failed");
+		_com_util::CheckError(hr);
 		
 		hr = CoCreateInstance(
 		    		clsid, NULL,
 		    		CLSCTX_LOCAL_SERVER|CLSCTX_INPROC_SERVER,
 		    		IID_IDispatch, (LPVOID*)&ppDisp);
-		if (FAILED(hr)) msgerr("CoCreateInstance failed");
-				  
+		_com_util::CheckError(hr);
+		
 		*this = ppDisp;
 		ppDisp->Release();
 	}
@@ -253,12 +253,11 @@ protected:
 		DISPID dispid;
 		HRESULT hr = disp->GetIDsOfNames(IID_NULL, const_cast<LPOLESTR*>(&dispatchItem), 1,
 			LOCALE_SYSTEM_DEFAULT, &dispid);
-		if (FAILED(hr)) msgerr("InvokeHelper LPCOLESTR dispatchItem failed");
-
+		_com_util::CheckError(hr);
+		
 		// call the DISPID overload of InvokeHelper()
 		hr = InvokeHelper(dispid, params, cParams, invokeType, result);
-		if (FAILED(hr))
-			MessageBoxW(NULL, dispatchItem, L"Error!", MB_ICONEXCLAMATION|MB_OK);
+		_com_util::CheckError(hr);
 	}
 
 	// dispatchItem is an Ansi LPSTR  -- convert it to an LPOLESTR
@@ -284,7 +283,7 @@ protected:
 
 			wideName = new OLECHAR[cch]; // cch may be just a bit bigger than necessary
 			if (wideName == NULL)
-				_com_raise_error(E_OUTOFMEMORY);
+				_com_util::CheckError(0);
 		}
 
 		wideName[0] = '\0';
@@ -545,12 +544,12 @@ namespace bpp
 template<class T>
 inline T conv(T* ptr, CDispatchVariant x)
 {
-	return (double)x;
+	return x;
 }
 
 inline string conv(string* ptr, CDispatchVariant x)
 {
-	const char* val = x;
+	_bstr_t val = x;
 	string ret(val);
 	return ret;
 }
