@@ -1,2 +1,2 @@
-bpp -k Dims
+bpp Dims
 pause
