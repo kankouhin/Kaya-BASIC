@@ -30,54 +30,10 @@
 class CDispatchVariant : public _variant_t
 {
 public:
-
-	CDispatchVariant() throw() : _variant_t() { }
-
-	CDispatchVariant(const VARIANT& varSrc) : _variant_t(varSrc) { }
-	CDispatchVariant(const VARIANT* pSrc) : _variant_t(pSrc) { }
-	CDispatchVariant(const _variant_t& varSrc) : _variant_t(varSrc) { }
+	using _variant_t::_variant_t;
 	
 	CDispatchVariant(string strSrc) : _variant_t( strSrc.c_str() ) { }
-	
-	CDispatchVariant(short varSrc) : _variant_t(varSrc, VT_I2) { }
-	CDispatchVariant(long varSrc) : _variant_t(varSrc, VT_I4) { }
-	CDispatchVariant(int varSrc) : _variant_t(varSrc) { }	
-	CDispatchVariant(float varSrc) : _variant_t(varSrc) { }
-	CDispatchVariant(double varSrc) : _variant_t(varSrc, VT_R8) { }
-	CDispatchVariant(BYTE varSrc) : _variant_t(varSrc) { }
-	
-	CDispatchVariant(const _bstr_t& varSrc) : _variant_t(varSrc) { }
-	CDispatchVariant(const wchar_t * varSrc) : _variant_t(varSrc) { }
-	CDispatchVariant(const char* varSrc) : _variant_t(varSrc) { }
 
-	CDispatchVariant(VARIANT& varSrc, bool fCopy) : _variant_t(varSrc, fCopy) { }
-
-	CDispatchVariant(IDispatch* pSrc, bool fAddRef = true) throw() : _variant_t(pSrc, fAddRef) { }
-	CDispatchVariant(IUnknown* pSrc, bool fAddRef = true) throw() : _variant_t(pSrc, fAddRef) { }
-
-	_variant_t& operator=(const VARIANT& varSrc)
-		{ return _variant_t::operator=(varSrc); }
-	_variant_t& operator=(const VARIANT* pSrc)
-		{ return _variant_t::operator=(pSrc); }
-	_variant_t& operator=(const _variant_t& varSrc)
-		{ return _variant_t::operator=(varSrc); }
-
-	_variant_t& operator=(IDispatch* pSrc)
-		{ return _variant_t::operator=(pSrc); }
-	_variant_t& operator=(IUnknown* pSrc)
-		{ return _variant_t::operator=(pSrc); }
-
-	IDispatch* operator->() const
-		{ return (IDispatch*)*this; }
-
-	operator bool() const
-	{
-		if (vt == VT_DISPATCH)
-			return (pdispVal != NULL);
-		else
-			return _variant_t::operator bool();
-	}
-	
 	void CreateObject(LPCOLESTR szProgId)
 	{
 		IDispatch *ppDisp;
@@ -97,7 +53,6 @@ public:
 	}
 	
 public:
-
 	template <class DispatchItem>
 	CDispatchVariant Get(DispatchItem property);
 
