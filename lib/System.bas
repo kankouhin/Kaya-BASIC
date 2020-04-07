@@ -182,11 +182,6 @@ Public Declare Function FreeFile As Integer
 Public Declare Function EOF(fn As Integer) As Boolean
 Public Declare Function FileLen(fn As Integer) As Long
 
-Public Declare Sub FileOpen(filename As String, fm As String, fn As Integer)
-Public Declare Sub FileClose(fn As Integer)
-Public Declare Function FileGetObject(fn As Integer) As Long
-
-
 Public Declare Sub		Sleep(sec As Integer)
 
 Public Declare Sub DoEvents 'GUI Only
@@ -194,6 +189,8 @@ Public Declare Function MsgBox(prompt As String, buttons As Integer = 4, title A
 
 Public Declare Function Split(src As String, sep As String, dest() As String) As Integer
 Public Declare Function Join(dest() As String, sep As String) As String
+
+Public Declare Function Like(target As String, pattern As String) As Boolean
 
 
 
