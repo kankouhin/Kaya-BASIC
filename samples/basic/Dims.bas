@@ -20,7 +20,7 @@ Sub Main
 	Dim s1 As Single
 	Dim s2 As Double
 	
-	Dim l1 As Long ' x86 = Integer(32bit), on x64 platform Long is 64bit
+	Dim l1 As Long ' x86 = Integer(32bit), on x64 platform Long is 64bit(Windows)
 	Dim l2 As ULong
 	
 	Dim b As Byte
