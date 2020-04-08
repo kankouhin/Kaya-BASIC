@@ -2,6 +2,17 @@ Option Explicit
 
 Sub Main
 
+	'String
+	Dim eachs As String = "Hello KayaBASIC"
+	
+	For Each s As String in eachs
+		Print s
+	Next
+	
+	For Each idx As Integer, s As String in eachs
+		Print idx , " : ", s
+	Next	
+
 	'Array
 	Dim ar() As String
 	
