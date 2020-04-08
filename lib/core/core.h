@@ -10,9 +10,15 @@
     #include "types_bpp_lnx.h"
 #endif // __BPPWIN__
 
-#include <stdlib.h>
+#include <cstdlib>
+#include <cstdio>
+#include <cmath>
+
 #include <string>
 #include <vector>
+#include <list>
+#include <unordered_map>
+
 using namespace std;
 
 
@@ -116,242 +122,6 @@ public:
 
 private:
 	char* data;
-};
-
-
-template <class T>
-inline void swap(T& a, T& b) { T c = a; a = b; b = c; }
-
-
-template <class T>
-class array
-{
-public:
-    typedef typename vector<T>::reference reference;
-
-private:
-    vector<T> data;
-	struct { int lo, hi, d; } dim[5];
-
-	void check(int i1)
-	{
-#if defined(__BPP_DEBUG)
-		if (i1 < dim[1].lo || i1 > dim[1].hi)
-			throw string("array index out of bounds");
-#endif
-	}
-
-	void check(int i1, int i2)
-	{
-#if defined(__BPP_DEBUG)
-		check(i1);
-		if (i2 < dim[2].lo || i2 > dim[2].hi)
-			throw string("array index out of bounds");
-#endif
-	}
-
-	void check(int i1, int i2, int i3)
-	{
-#if defined(__BPP_DEBUG)
-		check(i1, i2);
-		if (i3 < dim[3].lo || i3 > dim[3].hi)
-			throw string("array index out of bounds");
-#endif
-	}
-
-	void check(int i1, int i2, int i3, int i4)
-	{
-#if defined(__BPP_DEBUG)
-		check(i1, i2, i3);
-		if (i4 < dim[4].lo || i4 > dim[4].hi)
-			throw string("array index out of bounds");
-#endif
-	}
-
-public:
-	array() { preserve = 0; redim(0,1); }
-	array(int l1, int h1) { preserve = 0; redim(l1, h1); }
-	array(int l1, int h1, int l2, int h2) { preserve = 0; redim(l1, h1, l2, h2); }
-	array(int l1, int h1, int l2, int h2, int l3, int h3) { preserve = 0; redim(l1, h1, l2, h2, l3, h3); }
-	array(int l1, int h1, int l2, int h2, int l3, int h3, int l4, int h4) { preserve = 0; redim(l1, h1, l2, h2, l3, h3, l4, h4); }
-	~array(){ data.clear(); }
-
-	void redim()
-	{
-		if ( preserve )
-		{
-			data.resize( this->size() );
-			return;
-		}
-
-        data.clear();
-		data.resize( this->size() );
-	}
-
-	int lbound(int d = 1) { return dim[d].lo; }
-	int ubound(int d = 1) { return dim[d].hi; }
-
-	void redim(int l1, int h1)
-	{
-		if (h1 < l1)
-			swap(l1, h1);
-
-		dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
-
-		if ( preserve == 0 )
-		{
-			dim[2].lo = dim[3].lo = dim[4].lo = 0;
-			dim[2].hi = dim[3].hi = dim[4].hi = 0;
-			dim[2].d = dim[3].d = dim[4].d = 0;
-		}
-
-		redim();
-	}
-
-	void redim(int l1, int h1, int l2, int h2)
-	{
-		if (h1 < l1)
-			swap(l1, h1);
-		if (h2 < l2)
-			swap(l2, h2);
-
-		if ( preserve )
-		{
-			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
-		}
-		else
-		{
-			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
-			dim[2].lo = l2; dim[2].hi = h2; dim[2].d = h2 - l2 + 1;
-		}
-
-		dim[3].lo = dim[4].lo = 0;
-		dim[3].hi = dim[4].hi = 0;
-		dim[3].d = dim[4].d = 0;
-
-		redim();
-	}
-
-	void redim(int l1, int h1, int l2, int h2, int l3, int h3)
-	{
-		if (h1 < l1)
-			swap(l1, h1);
-		if (h2 < l2)
-			swap(l2, h2);
-		if (h3 < l3)
-			swap(l3, h3);
-
-		if ( preserve )
-		{
-			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
-		}
-		else
-		{
-			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
-			dim[2].lo = l2; dim[2].hi = h2; dim[2].d = h2 - l2 + 1;
-			dim[3].lo = l3; dim[3].hi = h3; dim[3].d = h3 - l3 + 1;
-		}
-
-		dim[4].lo = 0;  dim[4].hi = 0;
-		dim[4].d = 0;
-		redim();
-	}
-
-	void redim(int l1, int h1, int l2, int h2, int l3, int h3, int l4, int h4)
-	{
-		if (h1 < l1)
-			swap(l1, h1);
-		if (h2 < l2)
-			swap(l2, h2);
-		if (h3 < l3)
-			swap(l3, h3);
-		if (h4 < l4)
-			swap(l4, h4);
-
-		if ( preserve )
-		{
-			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
-		}
-		else
-		{
-			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
-			dim[2].lo = l2; dim[2].hi = h2; dim[2].d = h2 - l2 + 1;
-			dim[3].lo = l3; dim[3].hi = h3; dim[3].d = h3 - l3 + 1;
-			dim[4].lo = l4; dim[4].hi = h4; dim[4].d = h4 - l4 + 1;
-		}
-
-		redim();
-	}
-
-	int size()
-	{
-		int ret = dim[1].d;
-
-		if ( dim[2].d )
-			ret *= dim[2].d;
-		if ( dim[3].d )
-			ret *= dim[3].d;
-		if ( dim[4].d )
-			ret *= dim[4].d;
-
-		return ret;
-	}
-
-	T operator& () { return data; }
-
-	reference operator() (int i1)
-	{
-        check(i1);
-
-		return data[i1 - dim[1].lo];
-	}
-
-	reference operator() (int i1, int i2)
-	{
-		check(i1, i2);
-/*
-		return data[
-			(i1 - dim[1].lo) * dim[1].d +
-			(i2 - dim[2].lo)];
-*/
-		return data[
-			(i1 - dim[1].lo) * dim[2].d +
-			(i2 - dim[2].lo)];
-	}
-
-	reference operator() (int i1, int i2, int i3)
-	{
-		check(i1, i2, i3);
-/*
-		return data[
-			(i1 - dim[1].lo) * dim[1].d * dim[2].d +
-			(i2 - dim[2].lo) * dim[2].d +
-			(i3 - dim[3].lo)];
-*/
-		return data[
-			(i1 - dim[1].lo) * dim[2].d * dim[3].d +
-			(i2 - dim[2].lo) * dim[3].d +
-			(i3 - dim[3].lo)];
-	}
-
-	reference operator() (int i1, int i2, int i3, int i4)
-	{
-		check(i1, i2, i3, i4);
-/*
-		return data[
-			(i1 - dim[1].lo) * dim[1].d * dim[2].d * dim[3].d +
-			(i2 - dim[2].lo) * dim[2].d * dim[3].d +
-			(i3 - dim[3].lo) * dim[3].d +
-			(i4 - dim[4].lo)];
-*/
-		return data[
-			(i1 - dim[1].lo) * dim[2].d * dim[3].d * dim[4].d +
-			(i2 - dim[2].lo) * dim[3].d * dim[4].d +
-			(i3 - dim[3].lo) * dim[4].d +
-			(i4 - dim[4].lo)];
-	}
-
-	int preserve;
 };
 
 
@@ -712,430 +482,289 @@ private:
 };
 
 
-class iterator
-{
-public:
-	virtual bool next(void* item) = 0;
-	virtual bool next(string& index, void* item) { return false; }
-};
+
+template <class T>
+inline void swap(T& a, T& b) { T c = a; a = b; b = c; }
 
 
 template <class T>
-class collection
+class array : public vector<T>
 {
 public:
-	struct item
+    typedef typename vector<T>::reference reference;
+    bool preserve;
+
+public:
+	array() { preserve = false; redim(0,1); }
+	array(int l1, int h1) { preserve = false; redim(l1, h1); }
+	array(int l1, int h1, int l2, int h2) { preserve = false; redim(l1, h1, l2, h2); }
+	array(int l1, int h1, int l2, int h2, int l3, int h3) { preserve = false; redim(l1, h1, l2, h2, l3, h3); }
+	array(int l1, int h1, int l2, int h2, int l3, int h3, int l4, int h4) { preserve = false; redim(l1, h1, l2, h2, l3, h3, l4, h4); }
+	~array(){ this->clear(); }
+
+	void redim()
 	{
-		T value;
-		item* next;
-		item(const T& x) { next = 0; value = x; }
-		~item() { if (next) delete next; }
-	};
+		if ( preserve )
+        {
+			this->resize( this->Size() );
+			return;
+		}
 
-	class iterator: public bpp::iterator
+        this->clear();
+		this->resize( this->Size() );
+	}
+
+	int lbound(int d = 1) { return dim[d].lo; }
+	int ubound(int d = 1) { return dim[d].hi; }
+
+	void redim(int l1, int h1)
 	{
-        public:
-            iterator(collection* owner)
-            {
-                i = owner->count ? owner->items : 0;
-            }
+		if (h1 < l1)
+			swap(l1, h1);
 
-            virtual bool next(void* item)
-            {
-                if (!i)
-                    return false;
-                *(T*)item = i->value;
-                i = i->next;
-                return true;
-            }
+		dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
 
-        private:
-            item* i;
-	};
+		if ( preserve == false )
+		{
+			dim[2].lo = dim[3].lo = dim[4].lo = 0;
+			dim[2].hi = dim[3].hi = dim[4].hi = 0;
+			dim[2].d = dim[3].d = dim[4].d = 0;
+		}
 
-	collection() { count = 0; }
-	~collection() { clear(); }
+		redim();
+	}
+
+	void redim(int l1, int h1, int l2, int h2)
+	{
+		if (h1 < l1)
+			swap(l1, h1);
+		if (h2 < l2)
+			swap(l2, h2);
+
+		if ( preserve )
+		{
+			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
+		}
+		else
+		{
+			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
+			dim[2].lo = l2; dim[2].hi = h2; dim[2].d = h2 - l2 + 1;
+		}
+
+		dim[3].lo = dim[4].lo = 0;
+		dim[3].hi = dim[4].hi = 0;
+		dim[3].d = dim[4].d = 0;
+
+		redim();
+	}
+
+	void redim(int l1, int h1, int l2, int h2, int l3, int h3)
+	{
+		if (h1 < l1)
+			swap(l1, h1);
+		if (h2 < l2)
+			swap(l2, h2);
+		if (h3 < l3)
+			swap(l3, h3);
+
+		if ( preserve )
+		{
+			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
+		}
+		else
+		{
+			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
+			dim[2].lo = l2; dim[2].hi = h2; dim[2].d = h2 - l2 + 1;
+			dim[3].lo = l3; dim[3].hi = h3; dim[3].d = h3 - l3 + 1;
+		}
+
+		dim[4].lo = 0;  dim[4].hi = 0;
+		dim[4].d = 0;
+		redim();
+	}
+
+	void redim(int l1, int h1, int l2, int h2, int l3, int h3, int l4, int h4)
+	{
+		if (h1 < l1)
+			swap(l1, h1);
+		if (h2 < l2)
+			swap(l2, h2);
+		if (h3 < l3)
+			swap(l3, h3);
+		if (h4 < l4)
+			swap(l4, h4);
+
+		if ( preserve )
+		{
+			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
+		}
+		else
+		{
+			dim[1].lo = l1; dim[1].hi = h1; dim[1].d = h1 - l1 + 1;
+			dim[2].lo = l2; dim[2].hi = h2; dim[2].d = h2 - l2 + 1;
+			dim[3].lo = l3; dim[3].hi = h3; dim[3].d = h3 - l3 + 1;
+			dim[4].lo = l4; dim[4].hi = h4; dim[4].d = h4 - l4 + 1;
+		}
+
+		redim();
+	}
+
+	int Size()
+	{
+		int ret = dim[1].d;
+
+		if ( dim[2].d )
+			ret *= dim[2].d;
+		if ( dim[3].d )
+			ret *= dim[3].d;
+		if ( dim[4].d )
+			ret *= dim[4].d;
+
+		return ret;
+	}
+
+	reference operator() (int i1)
+	{
+    	return this->at(i1 - dim[1].lo);
+	}
+
+	reference operator() (int i1, int i2)
+	{
+		return this->at(
+			(i1 - dim[1].lo) * dim[2].d +
+			(i2 - dim[2].lo)
+        );
+	}
+
+	reference operator() (int i1, int i2, int i3)
+	{
+		return this->at(
+			(i1 - dim[1].lo) * dim[2].d * dim[3].d +
+			(i2 - dim[2].lo) * dim[3].d +
+			(i3 - dim[3].lo)
+        );
+	}
+
+	reference operator() (int i1, int i2, int i3, int i4)
+	{
+		return this->at(
+			(i1 - dim[1].lo) * dim[2].d * dim[3].d * dim[4].d +
+			(i2 - dim[2].lo) * dim[3].d * dim[4].d +
+			(i3 - dim[3].lo) * dim[4].d +
+			(i4 - dim[4].lo)
+        );
+	}
+
+private:
+	struct { int lo, hi, d; } dim[5];
+};
+
+template <class T>
+class collection : public list<T>
+{
+public:
+    typedef typename list<T>::iterator iterator;
+
+	collection() { }
+	~collection() { this->clear(); }
 
 	void add(const T& x)
 	{
-		last = count ? (last->next = new item(x)) : (items = new item(x));
-		count++;
+	    this->push_back( x );
 	}
 
 	void add(const T& x, int index)
 	{
-		item* i = items;
-		if (index)
-		{
-			while (--index)
-			{
-				i = i->next;
-#if defined(__BPP_DEBUG)
-				if (!i)
-					throw string("collection index out of bounds");
-#endif
-			}
-			item* k = new item(x);
-			k->next = i->next;
-			i->next = k;
-			if (!k->next)
-				last = k;
-		}
-		else
-		{
-			item* k = items;
-			items = new item(x);
-			items->next = k;
-			if (!k)
-				last = items;
-		}
-		count++;
-	}
+        iterator i = this->begin();
+		int n = index;
+        while ( n-- && i != this->end() )
+            i++;
 
-	void clear()
-	{
-		if (count)
-			delete items;
+        if ( n != -1 ) throw "index error.";
+
+        this->insert( i, x );
 	}
 
 	void removeitem(const T& x)
 	{
-		item* i = items;
-		if (!i)
-			return;
-		else if (i->value == x)
-		{
-			items = i->next;
-			i->next = 0;
-			delete i;
-			count--;
-		}
-		else
-		{
-			while (i->next && i->next->value != x)
-				i = i->next;
-			if (item* k = i->next)
-			{
-				i->next = k->next;
-				if (!i->next)
-					last = i;
-				k->next = 0;
-				delete k;
-				count--;
-			}
-		}
+        iterator i = this->begin();
+        while ( i != this->end() && *i != x )
+            i++;
+
+        if ( i == this->end() ) return;
+
+		this->erase( i );
 	}
 
 	void remove(int n)
 	{
-		if (n)
-		{
-			item* i = items;
-			while (--n)
-			{
-				i = i->next;
-#if defined(__BPP_DEBUG)
-				if (!i)
-					throw string("collection index out of bounds");
-#endif
-			}
-			item* k = i->next;
-			i->next = k->next;
-			if (!i->next)
-				last = i;
-			k->next = 0;
-			delete k;
-			count--;
-		}
-		else
-		{
-#if defined(__BPP_DEBUG)
-			if (!items)
-				throw string("collection index out of bounds");
-#endif
-			item* k = items->next;
-			items->next = 0;
-			delete items;
-			items = k;
-			count--;
-		}
+        iterator i = this->begin();
+        while ( n-- && i != this->end() )
+            i++;
+
+        if ( n != -1 ) throw "index error.";
+
+		this->erase( i );
 	}
 
-	int length() { return count; }
-
-	iterator* iterate() { return new iterator(this); }
+	int length() { return this->size(); }
 
 	T& operator() (int n)
 	{
-		item* i = items;
-		while (n--)
-			i = i->next;
-#if defined(__BPP_DEBUG)
-		if (!i)
-			throw string("collection index out of bounds");
-#endif
-		return i->value;
-	}
+        iterator i = this->begin();
+        while ( n-- && i != this->end() )
+            i++;
 
-private:
-	friend class iterator;
-	item *items, *last;
-	int count;
+        if ( n != -1 ) throw "index error.";
+
+        return *i;
+	}
 };
 
 
 template <class T>
-class dictionary
+class dictionary : public unordered_map<string, T>
 {
 public:
-	struct item
-	{
-		string key;
-		T value;
-		item* next;
+    typedef typename unordered_map<string, T>::iterator iterator;
+    typedef typename unordered_map<string, T>::mapped_type mapped_type;
 
-		item(const string& key)
-		{
-			this->key = key;
-			nullify(&value, sizeof(value));
-			next = 0;
-		}
-	};
+	dictionary() {}
+	~dictionary() {}
 
-	class iterator: public bpp::iterator
-	{
-        public:
-            iterator(dictionary* owner)
-            {
-                j = *(i = owner->table);
-                end = i + owner->maxhash - 1;
-            }
-
-            virtual bool next(void* item)
-            {
-                if (i == end && !j)
-                    return false;
-                if (j)
-                {
-                    *(T*)item = j->value;
-                    j = j->next;
-                }
-                else
-                {
-                    do
-                        j = *(++i);
-                    while (!j && i != end);
-                    if (!j)
-                        return false;
-                    else
-                    {
-                        *(T*)item = j->value;
-                        j = j->next;
-                    }
-                }
-                return true;
-            }
-
-            virtual bool next(string& index, void* item)
-            {
-                if (i == end && !j)
-                    return false;
-                if (j)
-                {
-                    index = j->key;
-                    *(T*)item = j->value;
-                    j = j->next;
-                }
-                else
-                {
-                    do
-                        j = *(++i);
-                    while (!j && i != end);
-                    if (!j)
-                        return false;
-                    else
-                    {
-                        index = j->key;
-                        *(T*)item = j->value;
-                        j = j->next;
-                    }
-                }
-                return true;
-            }
-
-        private:
-            item **i, **end, *j;
-	};
-
-	dictionary()
-	{
-		count = 0;
-		table = new item*[maxhash = 64];
-		nullify(table, maxhash * sizeof(item*));
-	}
-
-	~dictionary()
-	{
-		clear();
-		delete table;
-	}
-
-	void clear()
-	{
-		for (int i = 0; i < maxhash; i++)
-			if (table[i])
-			{
-				item* j = table[i];
-				while (j)
-				{
-					item* tmp = j;
-					j = j->next;
-					delete tmp;
-				}
-			}
-	}
+    mapped_type& operator() (string key)
+    {
+        return unordered_map<string, T>::operator[](key);
+    }
 
 	void removeitem(const T& x)
 	{
+	    iterator i;
+        for ( i = this->begin(); i != this->end(); i++ )
+        {
+            std::pair<string, T> p = *i;
+            if ( p.second == x )
+            {
+                this->erase( i );
+                break;
+            }
+        }
 	}
 
 	void remove(string key)
 	{
-		unsigned int h = hash(key) % maxhash;
-		item* i = table[h];
-		if (!i)
-			return;
-		else if (i->key == key)
-		{
-			table[h] = i->next;
-			delete i;
-			return;
-		}
-		else
-		{
-			while (i->next)
-			{
-				if (i->next->key == key)
-				{
-					item* tmp = i->next;
-					i->next = tmp->next;
-					delete tmp;
-				}
-				else
-					i = i->next;
-			}
-		}
+        this->erase( key );
 	}
 
 	bool contains(string key)
 	{
-		item* i = table[hash(key) % maxhash];
-		while (i)
-		{
-			if (i->key == key)
-				return true;
-			i = i->next;
-		}
-		return false;
-	}
-
-	void rehash()
-	{
-		if (maxhash >= 10000)
-			return;
-		item** old = table;
-		int oldcnt = maxhash;
-		table = new item*[maxhash = count];
-		nullify(table, maxhash * sizeof(item*));
-		count = 0;
-		for (int n = 0; n < oldcnt; n++)
-		{
-			item* i = old[n];
-			while (i)
-			{
-				(*this)(i->key) = i->value;
-				item* tmp = i;
-				i = i->next;
-				delete tmp;
-			}
-		}
-		delete old;
+		iterator i = this->find( key );
+		return (i != this->end());
 	}
 
 	int length()
 	{
-		return count;
-	}
-
-	iterator* iterate() { return new iterator(this); }
-
-	T& operator() (string key)
-	{
-		if (count >= maxhash * 3)
-			rehash();
-		unsigned int h = hash(key) % maxhash;
-		item* i = table[h];
-		if (!i)
-		{
-			count++;
-			return (table[h] = new item(key))->value;
-		}
-		else if (i->key == key)
-			return i->value;
-		else
-		{
-			while (i->next)
-			{
-				if (i->next->key == key)
-					return i->next->value;
-				i = i->next;
-			}
-			count++;
-			i->next = new item(key);
-			return i->next->value;
-		}
-	}
-
-private:
-	friend class iterator;
-	item** table;
-	int count, maxhash;
-
-	static unsigned int hash(const string& key)
-	{
-		return key.length();
-		unsigned int hash = 0;
-		unsigned int len = key.length();
-		const char* s = key.c_str();
-		while (true)
-		{
-			switch (len)
-			{
-			case 0:
-				return hash;
-
-			case 1:
-				hash *= 9;
-				hash += *(unsigned char*)s;
-				return hash;
-
-			case 2:
-				hash *= 9;
-				hash += *(unsigned short*)s;
-				return hash;
-
-			case 3:
-				hash *= 9;
-				hash += (*(unsigned short*)s << 8) + ((unsigned char*)s)[2];
-				return hash;
-
-			default:
-				hash *= 9;
-				hash += *(unsigned int*)s;
-				s += 4;
-				len -= 4;
-			}
-		}
+		return this->size();
 	}
 };
 
