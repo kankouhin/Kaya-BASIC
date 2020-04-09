@@ -4,6 +4,7 @@ Sub Main
 	'Experimental Features
 	'NOW: only support variant
 	'	s.Trim  OK
+	'	s.Trim.Left(2)  X 
 	'	" Hello KayaBASIC ".Trim  X
 	
 	Dim s As String = "  Hello KayaBASIC  "
