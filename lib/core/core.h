@@ -19,6 +19,11 @@
 #include <list>
 #include <unordered_map>
 
+#include <iostream>       // std::cout
+#include <thread>         // std::thread
+#include <mutex>          // std::mutex
+#include <chrono>         // std::chrono::seconds
+
 using namespace std;
 
 
@@ -86,7 +91,8 @@ public:
 	void operator= (string s)
 	{
 		int i;
-		char *p = data, *q = s.c_str();
+		char *p = data;
+		const char *q = s.c_str();
 		for (i = 0; i < length; i++, p++, q++)
 		{
 			if (!*q)
@@ -180,22 +186,24 @@ public:
 #endif
 	}
 
+/*
 	void operator= (const variant& v)
 	{
 		//release();
-		(void*)ptr = (void*)Long(v);
+		(void*)ptr = (void*)double(v);
 #if defined(__BPP_DEBUG)
 		check_class();
 #endif
 	}
 
-	ref& operator+= (const variant& v) { ptr += int(v); return *this; }
-	ref& operator-= (const variant& v) { ptr -= int(v); return *this; }
-	ref& operator*= (const variant& v) { ptr = int(ptr) * int(v); return *this; }
-	ref& operator/= (const variant& v) { ptr = int(ptr) / int(v); return *this; }
+	ref& operator+= (const variant& v) { ptr += double(v); return *this; }
+	ref& operator-= (const variant& v) { ptr -= double(v); return *this; }
+	ref& operator*= (const variant& v) { ptr = double(ptr) * double(v); return *this; }
+	ref& operator/= (const variant& v) { ptr = double(ptr) / double(v); return *this; }
 	bool operator! () const { return ptr; }
 	ref& operator++ () { return *this += 1; }
 	ref& operator-- () { return *this -= 1; }
+*/
 	T* operator* () { return ptr; }
 
 	T* operator-> ()
