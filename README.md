@@ -1,8 +1,7 @@
 # Kaya-BASIC
-Based on B++ complier. supports Windows, Linux(64bit) and MacOS(64bit).
+Based on B++ complier. supports Windows(32bit and 64bit), Linux(64bit) and MacOS(64bit).
 
    - Mac version<br>
-    ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Mac64/Mac.png)<br>
     ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Mac64/bppgui_mac.png)
 # Features
  - Compiles with g++(both 32bit and 64bit)
@@ -10,7 +9,25 @@ Based on B++ complier. supports Windows, Linux(64bit) and MacOS(64bit).
  - Creates GUI(using wxWidgets), console or DLL applications.
  - Easy calls Windows COM like VB.
  
-# Install(Ubuntu.amd64)
+# Install(MacOS64bit,tested on 10.12)
+ 1. download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
+ 2. compile and install wxWidgets on Ubuntu
+    - Setup build environment.
+         - $ xcode-select --install
+    - Compile wxWidgets
+    
+	  - $ cd wxWidgets.3.1.x
+	  - $ mkdir mac-build
+	  - $ cd mac-build/ 
+	  - $ ../configure --disable-shared --enable-unicode 
+	  - $ make
+    - Install wxWidgets
+         - $ sudo make install
+  3. chmod 777 [Kaya-BASIC]/bin/bpp_mac
+  
+  4. try to build samples
+ 
+# Install(Ubuntu64bit)
  1. download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
  2. compile and install wxWidgets on Ubuntu
     - Setup build environment.
@@ -27,9 +44,6 @@ Based on B++ complier. supports Windows, Linux(64bit) and MacOS(64bit).
   3. chmod 777 [Kaya-BASIC]/bin/bpp
   
   4. try to build samples
-    - $ cd samples path
-    - $ ../../../bin/bpp -w Gui
-
 
 # Install(Windows)
  1. download mingw-w64 8.1.0
@@ -52,7 +66,7 @@ Based on B++ complier. supports Windows, Linux(64bit) and MacOS(64bit).
   
   5. try to build samples.
 
-# Sample 
+# Code Sample 
  Easy create GUI and easy call windows COM like this.
 ```
 Option Explicit
@@ -101,9 +115,4 @@ Sub Main
 	f.Show(TRUE)
 End Sub
 ```
- - Screenshot<br>
- ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/samples/wxGUI/gui%26comole/screenshot.png)
- 
-# IDE
- Using the FBEdit to write codes and compile.<br>
- ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/FBEdit-For-KayaBASIC/FBEdit.png)
+
