@@ -9,7 +9,7 @@ Based on B++ complier. supports Windows(32bit and 64bit), Linux(64bit) and MacOS
  - Creates GUI(using wxWidgets), console or DLL applications.
  - Easy calls Windows COM like VB.
  
-# Install(MacOS64bit,tested on 10.12)
+# Install(MacOS64bit, tested on 10.12 and 10.15)
  1. download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
  2. compile and install wxWidgets on MacOS
     - Setup build environment.
