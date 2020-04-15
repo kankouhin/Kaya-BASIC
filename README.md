@@ -11,7 +11,7 @@ Based on B++ complier. supports Windows(32bit and 64bit), Linux(64bit) and MacOS
  
 # Install(MacOS64bit,tested on 10.12)
  1. download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
- 2. compile and install wxWidgets on Ubuntu
+ 2. compile and install wxWidgets on MacOS
     - Setup build environment.
          - $ xcode-select --install
     - Compile wxWidgets
@@ -21,8 +21,10 @@ Based on B++ complier. supports Windows(32bit and 64bit), Linux(64bit) and MacOS
 	  - $ cd mac-build/ 
 	  - $ ../configure --disable-shared --enable-unicode 
 	  - $ make
+	  
     - Install wxWidgets
          - $ sudo make install
+	 
   3. chmod 777 [Kaya-BASIC]/bin/bpp_mac
   
   4. try to build samples
@@ -41,6 +43,7 @@ Based on B++ complier. supports Windows(32bit and 64bit), Linux(64bit) and MacOS
 	  - $ make
     - Install wxWidgets
          - $ sudo make install
+	 
   3. chmod 777 [Kaya-BASIC]/bin/bpp
   
   4. try to build samples
