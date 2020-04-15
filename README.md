@@ -1,16 +1,9 @@
 # Kaya-BASIC
-Based on B++ complier. supports Windows and Linux(built on Ubuntu18.04.amd64).
+Based on B++ complier. supports Windows, Linux(64bit) and MacOS(64bit).
 
-- Linux version (all issues fixed. now works well as same as windows version. 2020/03/30)
-   - menu&toolbar(fixed) 
-   - json(fixed)
-   - sqlite(fixed)
-   - dlltest(fixed)
-   
- - Next Plan
-   - Mac version(WIP)<br>
+   - Mac version<br>
     ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Mac64/Mac.png)<br>
-    ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Mac64/bppgui.png)
+    ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Mac64/bppgui_mac.png)
 # Features
  - Compiles with g++(both 32bit and 64bit)
  - OOP, supports CreateObject by name and call function/sub/property by name)
