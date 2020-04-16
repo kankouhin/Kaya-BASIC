@@ -1,4 +1,4 @@
-#include "../core/core.h"
+#include "../lib/core/core.h"
 #include <windows.h>
 
 namespace bpp
@@ -11,7 +11,7 @@ namespace Utils
 
 	Integer __BPPCALL MsgBox(string Prompt, Integer Buttons, string Title)
 	{
-		return MessageBox(GetActiveWindow(), Prompt.cstr(), Title.cstr(), Buttons);
+		return MessageBox(GetActiveWindow(), Prompt.c_str(), Title.c_str(), Buttons);
 	}
 
 	
