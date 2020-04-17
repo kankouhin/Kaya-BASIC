@@ -1,5 +1,5 @@
 # Kaya-BASIC
-Based on B++ complier. supports Windows(32bit and 64bit), Linux(64bit) and MacOS(64bit).
+Multi-platform BASIC compiler, supports Windows, Linux and MacOS. easy extends with C++.(Based on B++ complier)
 
 # Features
  - Compiles with g++(support C++11)
