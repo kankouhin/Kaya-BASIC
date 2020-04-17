@@ -1,10 +1,8 @@
 # Kaya-BASIC
 Based on B++ complier. supports Windows(32bit and 64bit), Linux(64bit) and MacOS(64bit).
 
-   - Mac version<br>
-    ![Cat](https://github.com/kankouhin/Kaya-BASIC/blob/master/Mac64/bppgui_mac.png)
 # Features
- - Compiles with g++(both 32bit and 64bit)
+ - Compiles with g++(support C++11)
  - OOP, supports CreateObject by name and call function/sub/property by name)
  - Creates GUI(using wxWidgets), console or DLL applications.
  - Easy calls Windows COM like VB.
