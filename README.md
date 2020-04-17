@@ -1,5 +1,5 @@
 # Kaya-BASIC
-Multi-platform BASIC compiler, supports Windows, Linux and MacOS. easy extends with C++.(Based on B++ complier)
+Multi-platform BASIC compiler, supports Windows, Linux and MacOS.(Based on B++ complier)
 
 # Features
  - Compiles with g++(support C++11)
@@ -7,7 +7,7 @@ Multi-platform BASIC compiler, supports Windows, Linux and MacOS. easy extends w
  - Creates GUI(using wxWidgets), console or DLL applications.
  - Easy calls Windows COM like VB.
  
-# Install(MacOS64bit, tested on 10.12 and 10.15)
+# Install(MacOS.64bit, tested on 10.12 and 10.15)
  1. download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
  2. compile and install wxWidgets on MacOS
     - Setup build environment.
@@ -27,7 +27,7 @@ Multi-platform BASIC compiler, supports Windows, Linux and MacOS. easy extends w
   
   4. try to build samples
  
-# Install(Ubuntu64bit)
+# Install(Ubuntu.64bit)
  1. download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
  2. compile and install wxWidgets on Ubuntu
     - Setup build environment.
