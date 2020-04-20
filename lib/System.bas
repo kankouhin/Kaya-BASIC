@@ -21,10 +21,10 @@ Public Declare BUILTIN ANY
 Public Declare BUILTIN CLASS Object
 
 
-Public Const Nothing = 0
+Public Const Nothing As Integer = 0
 
-Public Const False	= 0
-Public Const True	= 1
+Public Const False 	As Integer	= 0
+Public Const True	As Integer	= 1
 
 Public Enum SeekOffset
 	soFromStart,
@@ -33,10 +33,10 @@ Public Enum SeekOffset
 	soFromEnd,
 End Enum
 
-Public Const fmOpenRead 		= "r"
-Public Const fmOpenReadWrite	= "rb+"
-Public Const fmCreateWrite		= "w"
-Public Const fmCreateReadWrite	= "wb+"
+Public Const fmOpenRead 		As String = "r"
+Public Const fmOpenReadWrite	As String = "rb+"
+Public Const fmCreateWrite		As String = "w"
+Public Const fmCreateReadWrite	As String = "wb+"
 
 Public Enum VariantType
 	vtNumber,
@@ -181,6 +181,7 @@ Public Declare Function Format(Num As Double, mask AS String="") As String
 Public Declare Function FreeFile As Integer
 Public Declare Function EOF(fn As Integer) As Boolean
 Public Declare Function FileLen(fn As Integer) As Long
+
 
 Public Declare Sub		Sleep(sec As Integer)
 

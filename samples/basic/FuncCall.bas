@@ -1,6 +1,6 @@
 Option Explicit
 
-Const cs = "  Hello KayaBASIC const "
+Const cs As String = "  Hello KayaBASIC const "
 	
 Sub Main
 	'Universal Function Call Syntax
@@ -12,6 +12,7 @@ Sub Main
 	
 	Print "  Hello KayaBASIC  ".Trim
 	Print 2000.Str.Left(3)
+	Print 3.1415926.Str.Left(3)
 	Print cs.Trim
 	
 	Dim i As Integer = 2000

@@ -42,7 +42,7 @@ Multi-platform BASIC compiler, supports Windows, Linux and MacOS.(Based on B++ c
     - Install wxWidgets
          - $ sudo make install
 	 
-  3. chmod 777 [Kaya-BASIC]/bin/bpp
+  3. chmod 777 [Kaya-BASIC]/bin/bpp_lnx
   
   4. try to build samples
 
@@ -107,7 +107,7 @@ End Sub
 
 Sub Main
 	Dim strTitle As String = "listctrl"
-	f = New wxFrame( NULL, wxID_ANY, strTitle )
+	f = New wxFrame( Nothing, wxID_ANY, strTitle + " sample" )
 	listctrl = New wxListCtrl( f, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT )
 	
 	Call LoadDataFromExcel

@@ -19,9 +19,9 @@ Dim chkGUI			As wxCheckBox Ptr
 Dim rdo32bit		As wxRadioButton Ptr
 Dim rdo64bit 		As wxRadioButton Ptr
 
-Const CTRLID_OPTIONS_TEXTBOX 	= 100
-Const CTRLID_OPTIONS_BUTTON 	= 200
-Const CTRLID_OPTIONS_CHECKBOX 	= 300
+Const CTRLID_OPTIONS_TEXTBOX	As Integer 	= 100
+Const CTRLID_OPTIONS_BUTTON 	As Integer	= 200
+Const CTRLID_OPTIONS_CHECKBOX 	As Integer	= 300
 
 Dim txtMinGW32		As wxTextCtrl Ptr
 Dim txtMinGW64		As wxTextCtrl Ptr
@@ -96,7 +96,7 @@ Sub OnCompile(ByRef ev As wxCommandEvent)
 	Call saveOptions
 	
  	Dim s As String = txtSourcePath.GetValue()
- 	
+
  	Dim ipos As Integer = InStrRev(s, PathSep )
  	Dim cwd As String 	= Left( s, ipos - 1 )
  	Dim src As String 	= Mid( s, ipos + 1 )
@@ -193,7 +193,9 @@ Sub OnBrowweForOptions(ByRef ev As wxCommandEvent)
 End Sub
 
 Sub Main
-	f = New wxFrame( NULL, wxID_ANY, "Kaya-BASIC Compiler", wxDefaultPosition, wxDefaultSize, wxMINIMIZE_BOX Or wxCLOSE_BOX Or wxCAPTION Or wxCLIP_CHILDREN)
+
+	Dim title As String =  "Kaya-BASIC Compiler"
+	f = New wxFrame( NULL, wxID_ANY, title + " 0.3.5", wxDefaultPosition, wxDefaultSize, wxMINIMIZE_BOX Or wxCLOSE_BOX Or wxCAPTION Or wxCLIP_CHILDREN)
 	f.SetClientSize(wxSize(582,471))
 
 	Dim Panel1 As New wxPanel(f, wxID_ANY)
@@ -283,5 +285,6 @@ Sub Main
 
 	Call readOptions
 
+	f.SetIcon( wxIcon(sample_xpm) )
 	f.Show(TRUE)
 End Sub
