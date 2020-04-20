@@ -182,7 +182,6 @@ Public Declare Function FreeFile As Integer
 Public Declare Function EOF(fn As Integer) As Boolean
 Public Declare Function FileLen(fn As Integer) As Long
 
-
 Public Declare Sub		Sleep(sec As Integer)
 
 Public Declare Sub DoEvents 'GUI Only
