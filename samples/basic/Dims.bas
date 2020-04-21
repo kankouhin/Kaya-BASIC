@@ -20,7 +20,13 @@ Sub Main
 	Dim s1 As Single
 	Dim s2 As Double
 	
-	Dim l1 As Long ' x86 = Integer(32bit), on x64 platform Long is 64bit
+	
+	/*
+	About Long
+		Windows		: x86:32bit, x64: 64bit
+		Linux/macOS	: x86:32bit, x64: 32bit
+	*/
+	Dim l1 As Long
 	Dim l2 As ULong
 	
 	Dim b As Byte
@@ -30,6 +36,6 @@ Sub Main
 	Dim col As String Collection
 	
 
-	Dim x,y As Single = 3.14 ' both x and y are Single type
+	Dim x,y As Single = 3.14 ' both x and y are Single type and also init value are 3.14
 	
 End Sub
