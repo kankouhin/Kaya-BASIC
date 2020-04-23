@@ -1,2 +1,2 @@
-bpp -k Fors
+bpp Fors
 pause
