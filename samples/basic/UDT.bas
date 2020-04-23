@@ -7,8 +7,8 @@ Const CC As Integer = 100
 Type tagPerson
 	Name As String
 	Address As String * CC + 156   		' is fixed length char[length]
-	ChildrenName(5) As String			' in Type is a static array = C++ String[length]    		!maybe i will change it to BASIC array
-	Room(2,3,CC - 96) As Integer		' in Type is a static array = C++ int[len1][len2][len3]		!maybe i will change it to BASIC array
+	ChildrenName(5) As String			' in Type is a static array = C++ String[length]
+	Room(2,3,CC - 96) As Integer		' in Type is a static array = C++ int[len1][len2][len3]
 End Type
 
 Sub Main
@@ -35,5 +35,13 @@ Sub Main
 	Print Ubound(t1.Room)
 	Print Ubound(t1.Room,2)
 	Print Ubound(t1.Room,3)
-		
+	
+	t1.ChildrenName(0) = "Child 1"
+	t1.Room(0,0,0) = 100
+	
+	Print t1.ChildrenName(0)
+	Print t1.Room(0,0,0)
+	
+	Dim s As String = t1.Address
+	Print s, ";"
 End Sub
