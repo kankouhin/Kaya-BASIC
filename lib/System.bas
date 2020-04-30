@@ -187,8 +187,8 @@ Public Declare Sub		Sleep(sec As Integer)
 Public Declare Sub DoEvents 'GUI Only
 Public Declare Function MsgBox(prompt As String, buttons As Integer = 4, title As String = "Information") As Integer 'GUI Only
 
-Public Declare Function Split(src As String, sep As String, dest() As String) As Integer
-Public Declare Function Join(dest() As String, sep As String) As String
+Public Declare Function Split(src As String, sep As String, ByRef dest() As String) As Integer
+Public Declare Function Join(ByRef dest() As String, sep As String) As String
 
 Public Declare Function Like(target As String, pattern As String) As Boolean
 

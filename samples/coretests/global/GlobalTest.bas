@@ -1,9 +1,7 @@
-
 Option Explicit
 
-USING globalVar
-USING globalUse
-
+Using GlobalVar
+Using GlobalUse
 
 Sub Main
 	
@@ -15,5 +13,11 @@ Sub Main
 	
 	changeGlobal
 	print "Global var: ", varGlobal
+	
+	arGlobal(1,1,1) = 100
+	print Ubound(arGlobal,1)
+	print Ubound(arGlobal,2)
+	print Ubound(arGlobal,3)
+	print arGlobal(1,1,1)
 	
 End Sub

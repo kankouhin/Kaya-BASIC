@@ -19,10 +19,12 @@
 #include <list>
 #include <unordered_map>
 
-#include <iostream>       // std::cout
-#include <thread>         // std::thread
-#include <mutex>          // std::mutex
-#include <chrono>         // std::chrono::seconds
+#include <iostream>
+#include <thread>
+#include <mutex>
+#include <chrono>
+
+#include <functional>
 
 using namespace std;
 
@@ -41,6 +43,17 @@ using namespace std;
 #else
     #define __CALLBACK
 #endif // __BPPWIN__
+
+
+class Defer
+{
+public:
+	Defer(const function<void()>& deferfn) : DeferFn(deferfn) {}
+	~Defer() { if ( DeferFn ) DeferFn(); }
+
+private:
+	function<void()> DeferFn;
+};
 
 namespace bpp
 {
@@ -734,8 +747,8 @@ template <class T>
 class dictionary : public unordered_map<string, T>
 {
 public:
-    typedef typename unordered_map<string, T>::iterator iterator;
-    typedef typename unordered_map<string, T>::mapped_type mapped_type;
+	typedef typename unordered_map<string, T>::iterator iterator;
+	typedef typename unordered_map<string, T>::mapped_type mapped_type;
 
 	dictionary() {}
 	~dictionary() {}

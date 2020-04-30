@@ -9,11 +9,11 @@ Public Class Shape
 	Public Property Height As Single
 	Public Property Width As Single
 
-	Private m_Height As Single
-	Private m_Width As Single
+	Private m_Height As Single = 3
+	Private m_Width As Single = 4
 	
-	Public Test1 As Double
-	Public Test2 As Single
+	Public Test1 As Double = 12.34
+	Public Test2 As Single = 56.78
 End Class
 
 Function Shape.getArea
