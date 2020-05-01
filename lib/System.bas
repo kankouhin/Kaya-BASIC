@@ -119,8 +119,8 @@ Public Declare Function Insert(s As String, ss As String, Pos As Long) As String
 Public Declare Function InStat As Boolean
 Public Declare Function InKey As String
 
-Public Declare Function InStr(Start As Variant, s As String, ss As String = "") As Long
-Public Declare Function InStrRev(s As String, ss As String, Start As Long = -1) As Long
+Public Declare Function InStr(Start As Variant, substr As String, s As String = "") As Long
+Public Declare Function InStrRev(substr As String, s As String, Start As Long = -1) As Long
 Public Declare Function Int(n As Double) As Integer
 Public Declare Sub		Kill(FileName As String)
 Public Declare Function LCase(s As String) As String

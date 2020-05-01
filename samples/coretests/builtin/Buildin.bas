@@ -48,8 +48,8 @@ Sub Main
 	Print "IIf :", IIf(1,"false","true")
 	Print "IIf2 :", IIf(1,100,200)
 	
-	Print "InStr :", InStr("abcdefg","e")
-	Print "InStrRev :", InStrRev("abcdefg","e")
+	Print "InStr :", InStr("e", "abcdefg")
+	Print "InStrRev :", InStrRev("e", "abcdefg")
 	
 	Kill("Buildin32_msw.exe")
 	
