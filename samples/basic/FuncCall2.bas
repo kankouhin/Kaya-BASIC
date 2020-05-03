@@ -31,7 +31,7 @@ Function indict(s As String, ByRef list As String Dictionary ) As BOOLEAN
 End Function
 
 Sub Main
-	' Call function like a BASIC keyword
+	' Call Function As A Keyword
 	
 	If Like( "abbbbc", "ab*c" ) Then
 		Print "done"
@@ -50,20 +50,20 @@ Sub Main
 	Dim dict As String Dictionary
 	
 	For idx As Integer = 0 To 5
-		ar(idx) = Str(idx) + "array"
-		list.add( Str(idx) + "list" )
-		dict( Str(idx) + "dict" ) = Str(idx) + "dict"
+		ar(idx) = "array" + Str(idx)
+		list.add( "list" + Str(idx) )
+		dict( "dict" + Str(idx) ) = "dict" + Str(idx)
 	Next
 	
-	If  "1array" InArr ar Then
+	If  "array" + Str(1) InArr ar Then
 		Print "done array"
 	End If
 
-	If  "1list" InList list Then
+	If  "list1" InList list Then
 		Print "done list"
 	End If
 
-	If  "1dict" InDict dict Then
+	If  "dict1" InDict dict Then
 		Print "done dict"
 	End If
 End Sub

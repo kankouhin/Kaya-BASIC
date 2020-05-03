@@ -8,7 +8,7 @@ Sub Main
 		End If
 	)
 	
-	Print "defer sample"
+	Print "defer sample’†‘"
 
 	Open "Defers.txt" For Input As #1
 	Defer Close #1
