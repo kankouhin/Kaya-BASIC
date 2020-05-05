@@ -1,0 +1,26 @@
+Option Explicit
+
+Sub Main
+	Print "运行当前MBCS（中文）的前提条件："
+	Print "1.支持中文显示的系统（目前只测试了Windows）"
+	Print "2.将此文件由UTF8编码另存为ANSI"
+	Print ""
+	Print "感谢您关注KayaBASIC"
+	Print ""
+	Print "KayaBASIC基于B++(个人认为其为一款半成品)"
+	Print "主要是个人比较懒，不愿意从头去写语法语句和表达式分析"
+	Print "但也因为懒，而需要去填这款半成品的很多坑。。。"
+	Print "也许用KayaBASIC重写编译器是更好的选择？和懒惰在打架中。。。"
+	Print ""
+	Print "KayaBASIC虽然还在开发中，可能会有不少BUG"
+	Print "但目前已经实现了大部分的功能并添加了一些新的比较现代的语法"
+	Print "比如Defer，比如UFCS函数调用，比如象内置Keyword一样的函数调用，等等"
+	Print "支持三大主流平台：Windows, Linux, macOS"
+	Print "支持创建GUI，DLL（共享库）和COM自动绑定"
+	Print ""
+	Print "目前还存在的BASIC语言，基本都已经不再更新了"
+	Print "作为BASCI语言的爱好者，对此感到非常遗憾"
+	Print "个人觉得语言本身没有好坏之分，也没有错，当年的第一流行语言为什么要放弃呢？"
+	Print ""
+	Print "补充：VB.NET个人觉得已经不是VB了,只不过是披着.NET的外衣罢了"
+End Sub

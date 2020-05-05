@@ -34,15 +34,20 @@ Sub Main
 	' Call Function As A Keyword
 	
 	If Like( "abbbbc", "ab*c" ) Then
-		Print "done"
+		Print "done like1"
 	End If
 	
 	If  "abbbbc" Like  "ab*c"  Then
-		Print "done"
+		Print "done like2"
+	Else
+		Print "Error like"
 	End If
 	
-	If  "Hello" InStr  "Hello KayaBASIC"  Then
-		Print "done"
+	Dim s As String = "He"
+	If  (s + "llo") InStr s + "llo KayaBASIC" Then  ' NOT support function in expression
+		Print "done instr"
+	Else
+		Print "Error instr"
 	End If
 	
 	Dim ar(5) As String
@@ -55,15 +60,22 @@ Sub Main
 		dict( "dict" + Str(idx) ) = "dict" + Str(idx)
 	Next
 	
-	If  "array" + Str(1) InArr ar Then
+	If  "array1" InArr ar Then
 		Print "done array"
+	Else
+		Print "Error InArr"
 	End If
 
+	
 	If  "list1" InList list Then
 		Print "done list"
+	Else
+		Print "Error InList"
 	End If
 
 	If  "dict1" InDict dict Then
 		Print "done dict"
+	Else
+		Print "Error InDict"
 	End If
 End Sub

@@ -1,2 +1,2 @@
-..\..\bin\bpp Defers
+bpp Defers
 pause

@@ -8,7 +8,7 @@ Sub Main
 		End If
 	)
 	
-	Print "defer sample中国"　// need re-save as ANSI encode 
+	Print "defer sample"
 
 	Open "Defers.txt" For Input As #1
 	Defer Close #1
