@@ -1,6 +1,10 @@
 # Kaya-BASIC
 Multi-platform BASIC compiler, supports Windows, Linux and macOS.(Based on B++ complier)
 
+# Discord server
+ - https://discord.gg/UnhAc52
+
+
 # Features
  - Compiles with g++(support C++11)
  - OOP, supports CreateObject by name and call function/sub/property by name)
