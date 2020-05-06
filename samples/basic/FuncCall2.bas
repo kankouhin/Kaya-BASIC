@@ -44,7 +44,7 @@ Sub Main
 	End If
 	
 	Dim s As String = "He"
-	If  (s + "llo") InStr s + "llo KayaBASIC" Then  ' NOT support function in expression
+	If (s + "llo") InStr s + "llo KayaBASIC" + Str(1000) Then ' NOT support UFCS
 		Print "done instr"
 	Else
 		Print "Error instr"
@@ -60,7 +60,7 @@ Sub Main
 		dict( "dict" + Str(idx) ) = "dict" + Str(idx)
 	Next
 	
-	If  "array1" InArr ar Then
+	If  "array" + Str(1) InArr ar Then
 		Print "done array"
 	Else
 		Print "Error InArr"
