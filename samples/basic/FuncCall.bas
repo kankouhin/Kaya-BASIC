@@ -22,7 +22,7 @@ Sub Main
 	Dim filename As String = "  KayaBASIC.bas  "
 	Print filename.Trim.Right(3).UCase
 	Print UCase( filename.Trim.Right(3) )
-	Print UCase( filename.Trim.Right( Val("3")  ) )
+	Print UCase( filename.Right( Len(filename) - (".bas" Instr filename) ).Trim ) + 1.Str + Str(1)
 	
 	If "." + filename.Trim.Right(3).UCase = ".BAS" Then
 		Print "got it"

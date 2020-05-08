@@ -44,7 +44,7 @@ Sub Main
 	End If
 	
 	Dim s As String = "He"
-	If (s + "llo") InStr s + "llo KayaBASIC" + Str(1000) Then ' NOT support UFCS
+	If (s + "llo") InStr s + "llo KayaBASIC".Left(100) + Str(1000) + 65.Chr Then
 		Print "done instr"
 	Else
 		Print "Error instr"

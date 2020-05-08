@@ -76,74 +76,6 @@ void dbg_endfunc();
 int dbg_savefunc();
 void dbg_unwind(int n);
 
-
-template <int length>
-class flstring
-{
-public:
-	flstring()
-	{
-		*this = string("");
-	}
-
-	flstring(const string& s)
-	{
-		*this = s;
-	}
-
-	string str() const
-	{
-		char buffer[length + 1], *p = buffer;
-		const char *q = data;
-		for (int i = 0; i < length; i++, p++, q++)
-			*p = *q;
-		buffer[length] = 0;
-		return string(buffer);
-	}
-
-	void operator= (string s)
-	{
-		int i;
-		char *p = data;
-		const char *q = s.c_str();
-		for (i = 0; i < length; i++, p++, q++)
-		{
-			if (!*q)
-				break;
-			else
-				*p = *q;
-		}
-		for (int j = i ; j < length; j++, p++)
-			*p = 32;
-	}
-
-private:
-	char data[length];
-};
-
-
-class apistring
-{
-public:
-	apistring() { data = new char[1]; data[0] = 0; }
-	apistring(const char* s);
-	apistring(const apistring& s);
-	apistring(const string& s);
-	~apistring() { if (data >= (char*)0x10000) delete[] data; }
-	string str() const { return string(data); }
-	int length() const;
-	void alloc(int n);
-	void operator= (const apistring& s);
-	void operator= (const string& s);
-	void operator++ ();
-	void operator-- ();
-	char* operator& () { return data; }
-
-private:
-	char* data;
-};
-
-
 class object;
 
 template <class T>
@@ -199,24 +131,6 @@ public:
 #endif
 	}
 
-/*
-	void operator= (const variant& v)
-	{
-		//release();
-		(void*)ptr = (void*)double(v);
-#if defined(__BPP_DEBUG)
-		check_class();
-#endif
-	}
-
-	ref& operator+= (const variant& v) { ptr += double(v); return *this; }
-	ref& operator-= (const variant& v) { ptr -= double(v); return *this; }
-	ref& operator*= (const variant& v) { ptr = double(ptr) * double(v); return *this; }
-	ref& operator/= (const variant& v) { ptr = double(ptr) / double(v); return *this; }
-	bool operator! () const { return ptr; }
-	ref& operator++ () { return *this += 1; }
-	ref& operator-- () { return *this -= 1; }
-*/
 	T* operator* () { return ptr; }
 
 	T* operator-> ()
@@ -312,7 +226,6 @@ inline void ref<T>::release()
 	{
 		((object*)ptr)->Terminate();
 		delete ptr;
-		//MessageBox(0, "Delete", "release", 0);
 		ptr = 0;
 	}
 }
@@ -351,9 +264,7 @@ public:
 	variant(double = 0);
 	variant(const string&);
 	variant(const char*);
-	template <int length>
-	variant(const flstring<length>& s) { *this = s.str(); }
-	variant(const apistring& s) { *this = s.str(); }
+
 	template <class T>
 	variant(ref<T> p) { *this = (Long)p.ptr; }
 	variant& operator= (const variant&);
@@ -376,6 +287,7 @@ public:
 	bool operator> (const variant&) const;
 	bool operator<= (const variant&) const;
 	bool operator>= (const variant&) const;
+	
 	// operations with numbers
 	variant operator+ (double) const;
 	variant operator- (double) const;
@@ -391,6 +303,7 @@ public:
 	bool operator> (double) const;
 	bool operator<= (double) const;
 	bool operator>= (double) const;
+	
 	// operations with strings
 	variant operator+ (const string&) const;
 	variant operator- (const string&) const;
@@ -406,8 +319,7 @@ public:
 	bool operator> (const string&) const;
 	bool operator<= (const string&) const;
 	bool operator>= (const string&) const;
-	// operations with apistrings
-	bool operator== (const apistring&) const;
+
 	// generic operations
 	variant& operator++ () { return *this += 1; }
 	variant& operator-- () { return *this -= 1; }
@@ -415,87 +327,9 @@ public:
 	void* operator& ();
 	operator double () const;
 	operator string () const;
-	template <int length>
-	operator flstring<length>& () const { return s; }
-	operator apistring () const { return s; }
+
 	template <class T>
 	operator ref<T> () const { return (void*)Long(n); }
-	// numeric friends
-/*
-	friend variant operator+ (double, const variant&);
-	friend variant operator- (double, const variant&);
-	friend variant operator* (double, const variant&);
-	friend variant operator/ (double, const variant&);
-	friend variant operator% (double, const variant&);
-	friend bool operator&& (double, const variant&);
-	friend bool operator|| (double, const variant&);
-	friend variant operator^ (double, const variant&);
-	//friend bool operator== (double, const variant&);
-	friend bool operator!= (double, const variant&);
-	friend bool operator< (double, const variant&);
-	friend bool operator> (double, const variant&);
-	friend bool operator<= (double, const variant&);
-	friend bool operator>= (double, const variant&);
-	// string friends
-	friend variant operator+ (const string&, const variant&);
-	friend variant operator- (const string&, const variant&);
-	friend variant operator* (const string&, const variant&);
-	friend variant operator/ (const string&, const variant&);
-	friend variant operator% (const string&, const variant&);
-	friend bool operator&& (const string&, const variant&);
-	friend bool operator|| (const string&, const variant&);
-	friend variant operator^ (const string&, const variant&);
-	friend bool operator== (const string&, const variant&);
-	friend bool operator!= (const string&, const variant&);
-	friend bool operator< (const string&, const variant&);
-	friend bool operator> (const string&, const variant&);
-	friend bool operator<= (const string&, const variant&);
-	friend bool operator>= (const string&, const variant&);
-*/
-	// API string friends
-	friend variant operator+ (const apistring&, const variant&);
-	friend variant operator- (const apistring&, const variant&);
-	friend variant operator* (const apistring&, const variant&);
-	friend variant operator/ (const apistring&, const variant&);
-	friend variant operator% (const apistring&, const variant&);
-	friend bool operator&& (const apistring&, const variant&);
-	friend bool operator|| (const apistring&, const variant&);
-	friend variant operator^ (const apistring&, const variant&);
-	//friend bool operator== (const apistring&, const variant&);
-	friend bool operator!= (const apistring&, const variant&);
-	friend bool operator< (const apistring&, const variant&);
-	friend bool operator> (const apistring&, const variant&);
-	friend bool operator<= (const apistring&, const variant&);
-	friend bool operator>= (const apistring&, const variant&);
-	// fixed-length string friends
-	template <int length>
-	friend variant operator+ (const flstring<length>&, const variant&);
-	template <int length>
-	friend variant operator- (const flstring<length>&, const variant&);
-	template <int length>
-	friend variant operator* (const flstring<length>&, const variant&);
-	template <int length>
-	friend variant operator/ (const flstring<length>&, const variant&);
-	template <int length>
-	friend variant operator% (const flstring<length>&, const variant&);
-	template <int length>
-	friend bool operator&& (const flstring<length>&, const variant&);
-	template <int length>
-	friend bool operator|| (const flstring<length>&, const variant&);
-	template <int length>
-	friend variant operator^ (const flstring<length>&, const variant&);
-	template <int length>
-	friend bool operator== (const flstring<length>&, const variant&);
-	template <int length>
-	friend bool operator!= (const flstring<length>&, const variant&);
-	template <int length>
-	friend bool operator< (const flstring<length>&, const variant&);
-	template <int length>
-	friend bool operator> (const flstring<length>&, const variant&);
-	template <int length>
-	friend bool operator<= (const flstring<length>&, const variant&);
-	template <int length>
-	friend bool operator>= (const flstring<length>&, const variant&);
 
 private:
 	double n;
@@ -814,231 +648,12 @@ public:
 	Input& operator>> (long double&);
 	Input& operator>> (bool&);
 	Input& operator>> (string&);
-
-	template <int length>
-	Input& line(flstring<length>& s)
-	{
-		string t;
-		line(t);
-		s = t;
-		return *this;
-	}
-
-	Input& line(apistring& s)
-	{
-		string t;
-		line(t);
-		s = t;
-		return *this;
-	}
-
-	template <int length>
-	Input& operator>> (flstring<length>& s)
-	{
-		variant v;
-		*this >> v;
-		s = v;
-		return *this;
-	}
-
-	template <class T>
-	Input& operator>> (ref<T>& r)
-	{
-		int p;
-		*this >> p;
-		r = (void*)p;
-		return *this;
-	}
 } extern input;
 
 
 struct end { };
 
 
-
-/*
-template <int length>
-variant operator+ (const flstring<length>& s, const variant& v)
-{
-	return variant(s) + v;
-}
-
-
-template <int length>
-variant operator- (const flstring<length>& s, const variant& v)
-{
-	return variant(s) - v;
-}
-
-
-template <int length>
-variant operator* (const flstring<length>& s, const variant& v)
-{
-	return variant(s) * v;
-}
-
-
-template <int length>
-variant operator/ (const flstring<length>& s, const variant& v)
-{
-	return variant(s) / v;
-}
-
-
-template <int length>
-variant operator% (const flstring<length>& s, const variant& v)
-{
-	return variant(s) % v;
-}
-
-
-template <int length>
-bool operator&& (const flstring<length>& s, const variant& v)
-{
-	return variant(s) && v;
-}
-
-
-template <int length>
-bool operator|| (const flstring<length>& s, const variant& v)
-{
-	return variant(s) || v;
-}
-
-
-template <int length>
-variant operator^ (const flstring<length>& s, const variant& v)
-{
-	return variant(s) ^ v;
-}
-
-
-template <int length>
-bool operator== (const flstring<length>& s, const variant& v)
-{
-	return variant(s) == v;
-}
-
-
-template <int length>
-bool operator!= (const flstring<length>& s, const variant& v)
-{
-	return variant(s) != v;
-}
-
-
-template <int length>
-bool operator< (const flstring<length>& s, const variant& v)
-{
-	return variant(s) < v;
-}
-
-
-template <int length>
-bool operator> (const flstring<length>& s, const variant& v)
-{
-	return variant(s) > v;
-}
-
-
-template <int length>
-bool operator<= (const flstring<length>& s, const variant& v)
-{
-	return variant(s) <= v;
-}
-
-
-template <int length>
-bool operator>= (const flstring<length>& s, const variant& v)
-{
-	return variant(s) >= v;
-}
-
-
-inline variant operator+ (const apistring& s, const variant& v)
-{
-	return variant(s) + v;
-}
-
-
-inline variant operator- (const apistring& s, const variant& v)
-{
-	return variant(s) - v;
-}
-
-
-inline variant operator* (const apistring& s, const variant& v)
-{
-	return variant(s) * v;
-}
-
-
-inline variant operator/ (const apistring& s, const variant& v)
-{
-	return variant(s) / v;
-}
-
-
-inline variant operator% (const apistring& s, const variant& v)
-{
-	return variant(s) % v;
-}
-
-
-inline bool operator&& (const apistring& s, const variant& v)
-{
-	return variant(s) && v;
-}
-
-
-inline bool operator|| (const apistring& s, const variant& v)
-{
-	return variant(s) || v;
-}
-
-
-inline variant operator^ (const apistring& s, const variant& v)
-{
-	return variant(s) ^ v;
-}
-
-
-inline bool operator== (const apistring& s, const variant& v)
-{
-	return variant(s) == v;
-}
-
-
-inline bool operator!= (const apistring& s, const variant& v)
-{
-	return variant(s) != v;
-}
-
-
-inline bool operator< (const apistring& s, const variant& v)
-{
-	return variant(s) < v;
-}
-
-
-inline bool operator> (const apistring& s, const variant& v)
-{
-	return variant(s) > v;
-}
-
-
-inline bool operator<= (const apistring& s, const variant& v)
-{
-	return variant(s) <= v;
-}
-
-
-inline bool operator>= (const apistring& s, const variant& v)
-{
-	return variant(s) >= v;
-}
-
-*/
 
 template<class T, class U>
 inline ref<T> conv(ref<T>* ptr, const ref<U>& x)
