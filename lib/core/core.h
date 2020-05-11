@@ -29,12 +29,6 @@
 using namespace std;
 
 
-#define UBOUND1(x) sizeof(x) / sizeof(x[0])
-#define UBOUND2(x) sizeof(x[0]) / sizeof(x[0][0])
-#define UBOUND3(x) sizeof(x[0][0]) / sizeof(x[0][0][0])
-#define UBOUND4(x) sizeof(x[0][0][0]) / sizeof(x[0][0][0][0])
-
-
 #define BPP_FILEGETOBJECT(fn) ( (System::File*)System::FileGetObject(fn) )
 #define __BPPCALL
 
@@ -54,6 +48,9 @@ public:
 private:
 	function<void()> DeferFn;
 };
+
+
+
 
 namespace bpp
 {
@@ -75,6 +72,9 @@ void dbg_func(const string& s);
 void dbg_endfunc();
 int dbg_savefunc();
 void dbg_unwind(int n);
+
+	
+
 
 class object;
 
@@ -652,6 +652,67 @@ public:
 
 
 struct end { };
+
+
+
+template<class T, typename = std::enable_if_t<std::is_integral<T>::value> >
+string operator* (const string& s, T n)
+{
+	if (n < 0) throw string("n < 0");
+	string ret(s);
+	for ( int i = 1; i < n; i++ )
+		ret += s;
+	
+	return ret;
+}
+
+template<class T, typename = std::enable_if_t<std::is_integral<T>::value> >
+string operator/ (const string& s, T n)
+{
+	if (n < 1) throw string("n < 1");
+	string ret = s.substr( 0, (int)(s.length() / n) );
+	return ret;
+}
+
+template<class T, typename = std::enable_if_t<std::is_integral<T>::value> >
+string operator>> (const string& s, T n)
+{
+	if (n < 1) throw string("n < 1");
+	string ret = s.substr( 0, s.length() - n );
+	return ret;
+}
+
+template<class T, typename = std::enable_if_t<std::is_integral<T>::value> >
+string operator<< (const string& s, T n)
+{
+	if (n < 1) throw string("n < 1");
+	string ret = s.substr( n );
+	return ret;
+}
+
+template<class T, typename = std::enable_if_t<std::is_arithmetic<T>::value> >
+string operator+ (const string& s, T n)
+{
+	char tmp[256];
+	sprintf(tmp, "%.16g", (double)n);
+	
+	string ret;
+	ret += s;
+	ret += tmp;
+	return ret;
+}
+
+template<class T, typename = std::enable_if_t<std::is_arithmetic<T>::value> >
+string operator+ (T n, const string& s)
+{
+	char tmp[256];
+	sprintf(tmp, "%.16g", (double)n);
+	
+	string ret;
+	ret += tmp;
+	ret += s;
+	return ret;
+}
 
 
 

@@ -1,6 +1,6 @@
 Option Explicit
 
-Sub ArrayTest(arrrr() As String)
+Sub ArrayTest(ByRef arrrr() As String)
 	Print UBound(arrrr,1)
 End Sub
 
@@ -48,8 +48,7 @@ Sub Main
 	
 	Print "Test Split1"
 	Dim src As String = "qwe,123,ert,xxx,1,2,3"
-	dim sar() As String
-	Dim cnt  = Split( src, ",", sar )
+	dim sar() As String = Split( src, "," )
 	Print "Split ", Ubound( sar )
 	
 	For idx As Integer = LBound(sar) To Ubound(sar)
@@ -58,7 +57,7 @@ Sub Main
 
 	Print "Test Split2"
 	src = "qwe,123,ert,xxx,1,2,3,,,,1,"
-	cnt  = Split( src, ",", sar )
+	sar = Split( src, "," )
 	Print "Split ", Ubound( sar )
 	
 	For idx As Integer = LBound(sar) To Ubound(sar)
@@ -67,7 +66,7 @@ Sub Main
 
 	Print "Test Split3"
 	src = ",qwe,123,ert,xxx,1,2,3,,,,1,1111"
-	cnt  = Split( src, ",", sar )
+	sar = Split( src, "," )
 	Print "Split ", Ubound( sar )
 	
 	For idx As Integer = LBound(sar) To Ubound(sar)
