@@ -9,10 +9,10 @@ Sub Main
 
 		Wellcome to KayaBASIC
 
-KayaBAISC is a Multi-platform BASIC compiler, supports Windows, Linux and macOS.
+KayaBASIC is a Multi-platform BASIC compiler, supports Windows, Linux and macOS.
 
 Features:
-Compiles with g++(need support C++11)
+Compiles with g++(need support C++14)
 OOP, supports CreateObject by name and call function/sub/property by name)
 Creates GUI(using wxWidgets), console or DLL applications.
 Easy calls Windows COM like VB.
@@ -34,7 +34,6 @@ Easy calls Windows COM like VB.
 	
 	Print s.Mid(7)
 	Print s.Mid(8,4)
-	Print "Kaya".Instr(s)
 	Print s.Delete(1,2)
 	Print s.Insert("insert", 1)
 	Print s.Len
@@ -45,7 +44,6 @@ Easy calls Windows COM like VB.
 	
 	Print s.Replace("Hello", "Wellcome to")
 	Print s.Replace("a", "A")
-	Print s.ReplaceEx("Well", 2)
 	
 	Print s.Trim.StartsWith("Hello")
 	Print s.Trim.StartsWith(" Hello")
@@ -61,14 +59,14 @@ Easy calls Windows COM like VB.
 	Print (3 + s + 3)
 	Print (3.5 + s + 3.5)
 	
-	Print (s >> 2) ' delete 2 chars from the end
-	Print (s << 2) ' delete 2 chars from the begin
+	Print (s >> 2) ' delete last 2 chars
+	Print (s << 2) ' delete first 2 chars
 	
 	Print rs
 	Print s
-	Print s(2)
-	Print s(2, 5)
-	Print s(2, -1)
+	Print s(2)		' = s.Mid(2,1)
+	Print s(2, 5)	' = s.Mid(2,5)
+	Print s(2, -1)	' = s.Mid(2)
 	
 	Dim ar() As String = Split(s, " ")
 	For each s As String in ar
@@ -81,7 +79,20 @@ Easy calls Windows COM like VB.
 		Print s
 	Next
 	Print Join(ar, "_")
+
+	'RegEx Functions
+	s = "this subject has a submarine as a subsequence"
+	Dim pattern As String = "\\b(sub)([^ ]*)"
 	
+	Print s.ReplaceEx("sub", "Sub")
+	Print s.ReplaceEx(pattern, "_____")
+	Print s.SearchEx(pattern)
+	
+	ar = s.SearchAllEx(pattern)
+	For each s As String in ar
+		Print s
+	Next
+
 /*
 	For each c As String in s
 		Print c
