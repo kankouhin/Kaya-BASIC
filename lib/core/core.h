@@ -355,8 +355,8 @@ inline void swap(T& a, T& b) { T c = a; a = b; b = c; }
 
 #define ARRAY_OPERATOR_ARRAY_THIS(op) 		\
 	template<class U, typename = std::enable_if_t<std::is_arithmetic<U>::value> >	\
-	array<T>& operator op (const array<U>& ar)										\
-	{																				\	
+	array<T>& operator op (array<U>& ar)											\
+	{																				\
 		for (auto i = this->begin(), n = ar.begin(); i != this->end(); i++, n++ ) 	\
 			*i op *n;																\
     	return *this;																\

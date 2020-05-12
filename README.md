@@ -6,7 +6,7 @@ Multi-platform BASIC compiler, supports Windows, Linux and macOS.(Based on B++ c
 
 
 # Features
- - Compiles with g++(support C++11)
+ - Compiles with g++(support C++14)
  - OOP, supports CreateObject by name and call function/sub/property by name)
  - Creates GUI(using wxWidgets), console or DLL applications.
  - Easy calls Windows COM like VB.
