@@ -1,2 +1,2 @@
-bpp Strings
+..\..\bin\bpp Strings
 pause

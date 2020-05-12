@@ -341,6 +341,26 @@ private:
 template <class T>
 inline void swap(T& a, T& b) { T c = a; a = b; b = c; }
 
+//=========================================================================================================
+// ARRAY CORE
+
+#define ARRAY_OPERATOR_THIS(op) 		\
+	template<class U, typename = std::enable_if_t<std::is_arithmetic<U>::value> >	\
+	array<T>& operator op (const U& n)												\
+	{																				\
+		for (auto& i : *this )														\
+			i op n;																	\
+    	return *this;																\
+	}																				\
+
+#define ARRAY_OPERATOR_ARRAY_THIS(op) 		\
+	template<class U, typename = std::enable_if_t<std::is_arithmetic<U>::value> >	\
+	array<T>& operator op (const array<U>& ar)										\
+	{																				\	
+		for (auto i = this->begin(), n = ar.begin(); i != this->end(); i++, n++ ) 	\
+			*i op *n;																\
+    	return *this;																\
+	}																				\
 
 template <class T>
 class array : public vector<T>
@@ -355,6 +375,18 @@ public:
 	array(int l1, int h1, int l2, int h2) { preserve = false; redim(l1, h1, l2, h2); }
 	array(int l1, int h1, int l2, int h2, int l3, int h3) { preserve = false; redim(l1, h1, l2, h2, l3, h3); }
 	array(int l1, int h1, int l2, int h2, int l3, int h3, int l4, int h4) { preserve = false; redim(l1, h1, l2, h2, l3, h3, l4, h4); }
+	
+	array( initializer_list<T> args ) 
+	{
+		preserve = false; 
+		redim(0, args.size() - 1); 
+		
+		int n = 0;
+		for (T x : args) {
+			this->at(n++) = x;
+		}
+	}
+	
 	~array(){ this->clear(); }
 
 	void redim()
@@ -478,6 +510,70 @@ public:
 		return ret;
 	}
 
+	array<T>& operator<<(const T& item)
+	{
+		if ( dim[2].d )
+			throw string("not support <<");
+		
+		dim[1].d++;
+		dim[1].hi++;
+		
+		this->push_back( item );
+		
+    	return *this;
+	}
+
+	array<T>& operator<<(const array<T>& ar)
+	{
+		if ( dim[2].d )
+			throw string("not support <<");
+		
+		for (auto i : ar )
+			*this << i;
+	
+    	return *this;
+	}
+
+	array<T>& operator>>(const T& item)
+	{
+		if ( dim[2].d )
+			throw string("not support >>");
+		
+		typename vector<T>::iterator it;
+		for ( it = this->end() - 1; it >= this->begin(); it-- )
+		{
+			if ( (*it) == item )
+			{
+				dim[1].d--;
+				dim[1].hi--;
+				this->erase( it );
+			}
+		}
+	
+    	return *this;
+	}
+	
+	array<T>& operator>>(const array<T>& ar)
+	{
+		if ( dim[2].d )
+			throw string("not support >>");
+		
+		for (auto i : ar )
+			*this >> i;
+	
+    	return *this;
+	}
+	
+	ARRAY_OPERATOR_THIS( *= )
+	ARRAY_OPERATOR_THIS( += )
+	ARRAY_OPERATOR_THIS( -= )
+	ARRAY_OPERATOR_THIS( /= )
+	
+	ARRAY_OPERATOR_ARRAY_THIS( *= )
+	ARRAY_OPERATOR_ARRAY_THIS( += )
+	ARRAY_OPERATOR_ARRAY_THIS( -= )
+	ARRAY_OPERATOR_ARRAY_THIS( /= )
+
 	reference operator() (int i1)
 	{
     	return this->at(i1 - dim[1].lo);
@@ -518,6 +614,8 @@ template <class T>
 class collection : public list<T>
 {
 public:
+	using list<T>::list;
+	
     typedef typename list<T>::iterator iterator;
 
 	collection() { }
@@ -581,6 +679,8 @@ template <class T>
 class dictionary : public unordered_map<string, T>
 {
 public:
+	using unordered_map<string, T>::unordered_map;
+	
 	typedef typename unordered_map<string, T>::iterator iterator;
 	typedef typename unordered_map<string, T>::mapped_type mapped_type;
 
