@@ -106,7 +106,6 @@ Public Declare Function PadC(s As String, Length As Long, Char As String = " ") 
 Public Declare Function PadL(s As String, Length As Long, Char As String = " ") As String
 Public Declare Function PadR(s As String, Length As Long, Char As String = " ") As String
 
-Public Declare Function ReplaceEx(s As String, NewStr As String, Index As Long) As String
 Public Declare Function Replace(s As String, OldStr As String, NewStr As String) As String
 Public Declare Function Reverse(s As String) As String
 
@@ -125,9 +124,15 @@ Public Declare Function Split(src As String, sep As String) As String()
 Public Declare Function SplitAny(src As String, sep As String) As String()
 
 Public Declare Function Join(ByRef dest() As String, sep As String) As String
-Public Declare Function Like(target As String, pattern As String) As Boolean
 Public Declare Function StartsWith(s As String, chk As String) As Boolean
 Public Declare Function EndsWith(s As String, chk As String) As Boolean
+
+'Strings RegEx---------------------------------------------------------------------------------------------------
+Public Declare Function Like(target As String, pattern As String) As Boolean
+Public Declare Function ReplaceEx(text As String, pattern As String, NewStr As String) As String
+Public Declare Function SearchEx(text As String, pattern As String) As String
+Public Declare Function SearchAllEx(text As String, pattern As String) As String()
+'Strings RegEx---------------------------------------------------------------------------------------------------
 'Strings---------------------------------------------------------------------------------------------------
 
 
@@ -160,6 +165,7 @@ Public Declare Function Asinh(n As Double) As Double
 Public Declare Function Acosh(n As Double) As Double
 'Maths---------------------------------------------------------------------------------------------------
 
+
 'FileSystems---------------------------------------------------------------------------------------------------
 Public Declare Function PathSep As String
 Public Declare Sub		ChDir(Dir As String)
@@ -183,7 +189,13 @@ Public Declare Sub		RmDir(Dir As String)
 Public Declare Function FreeFile As Integer
 Public Declare Function EOF(fn As Integer) As Boolean
 Public Declare Function FileLen(fn As Integer) As Long
+
+'For Internal
+Public Declare Sub FileOpen(filename As String, fm As String, fn As Integer)
+Public Declare Sub FileClose(fn As Integer)
+Public Declare Function FileGetObject(fn As Integer) As Long
 'FileSystems---------------------------------------------------------------------------------------------------
+
 
 'OS---------------------------------------------------------------------------------------------------
 Public Declare Function Date As String
@@ -197,12 +209,15 @@ Public Declare Function InStat As Boolean
 Public Declare Function InKey As String
 Public Declare Sub		Shell(Cmd As String)
 Public Declare Sub		Sleep(sec As Integer)
+
 'OS---------------------------------------------------------------------------------------------------
+
 
 'GUI---------------------------------------------------------------------------------------------------
 Public Declare Sub DoEvents
 Public Declare Function MsgBox(prompt As String, buttons As Integer = 4, title As String = "Information") As Integer
 'GUI---------------------------------------------------------------------------------------------------
+
 
 'Utilities---------------------------------------------------------------------------------------------------
 Public Declare Function CreateObject(ClassName As String) As Object
