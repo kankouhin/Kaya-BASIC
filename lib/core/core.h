@@ -338,11 +338,31 @@ private:
 
 
 
-template <class T>
-inline void swap(T& a, T& b) { T c = a; a = b; b = c; }
 
 //=========================================================================================================
 // ARRAY CORE
+#define ARRAY_OPERATOR(op) 		\
+	template<class U, typename = std::enable_if_t<std::is_arithmetic<U>::value> >	\
+	array<U> operator op (const array<U>& ar, const U& n)							\
+	{																				\
+		array<U> ret = ar; 															\
+		for (auto& i : ret )														\
+			i = i op n;																\
+    	return ret;																	\
+	}																				\
+	
+#define ARRAY_OPERATOR_ARRAY(op) 		\
+	template<class U, typename = std::enable_if_t<std::is_arithmetic<U>::value> >	\
+	array<U> operator op (const array<U>& ar1, const array<U>& ar2)					\
+	{																				\
+		array<U> ret = ar1;															\
+		int idx = 0;																\
+		for (auto i = ar1.begin(), n = ar2.begin(); i != ar1.end() && n != ar2.end(); i++, n++ ) 	\
+		{																			\
+			ret[idx++] = *i op *n;													\
+		}																			\
+		return ret;																	\
+	}																				\
 
 #define ARRAY_OPERATOR_THIS(op) 		\
 	template<class U, typename = std::enable_if_t<std::is_arithmetic<U>::value> >	\
@@ -357,7 +377,7 @@ inline void swap(T& a, T& b) { T c = a; a = b; b = c; }
 	template<class U, typename = std::enable_if_t<std::is_arithmetic<U>::value> >	\
 	array<T>& operator op (array<U>& ar)											\
 	{																				\
-		for (auto i = this->begin(), n = ar.begin(); i != this->end(); i++, n++ ) 	\
+		for (auto i = this->begin(), n = ar.begin(); i != this->end() && n != ar.end(); i++, n++ ) 	\
 			*i op *n;																\
     	return *this;																\
 	}																				\
@@ -375,8 +395,8 @@ public:
 	array(int l1, int h1, int l2, int h2) { preserve = false; redim(l1, h1, l2, h2); }
 	array(int l1, int h1, int l2, int h2, int l3, int h3) { preserve = false; redim(l1, h1, l2, h2, l3, h3); }
 	array(int l1, int h1, int l2, int h2, int l3, int h3, int l4, int h4) { preserve = false; redim(l1, h1, l2, h2, l3, h3, l4, h4); }
-	
-	array( initializer_list<T> args ) 
+
+	array( initializer_list<T> args )
 	{
 		preserve = false; 
 		redim(0, args.size() - 1); 
@@ -386,6 +406,31 @@ public:
 			this->at(n++) = x;
 		}
 	}
+
+	array( initializer_list<initializer_list<T>> args )
+	{
+		preserve = false;
+		auto i = args.begin();
+		
+		int ROW = args.size();
+		int COL = i->size();
+		
+		redim(0, ROW - 1, 0, COL - 1);
+		
+		int r = 0;
+		for (auto it : args )
+		{
+			int c = 0;
+			for (T x : it) 
+			{
+				this->at(r*COL + c) = x;
+				c++;
+			}
+			
+			r++;
+		}
+	}
+
 	
 	~array(){ this->clear(); }
 
@@ -610,6 +655,20 @@ private:
 	struct { int lo, hi, d; } dim[5];
 };
 
+
+ARRAY_OPERATOR( * )
+ARRAY_OPERATOR( + )
+ARRAY_OPERATOR( - )
+ARRAY_OPERATOR( / )
+	
+ARRAY_OPERATOR_ARRAY( * )
+ARRAY_OPERATOR_ARRAY( + )
+ARRAY_OPERATOR_ARRAY( - )
+ARRAY_OPERATOR_ARRAY( / )
+
+// ARRAY CORE
+//=========================================================================================================
+
 template <class T>
 class collection : public list<T>
 {
@@ -754,7 +813,8 @@ public:
 struct end { };
 
 
-
+//===================================================================================================
+// String Operators
 template<class T, typename = std::enable_if_t<std::is_integral<T>::value> >
 string operator* (const string& s, T n)
 {
@@ -813,6 +873,12 @@ string operator+ (T n, const string& s)
 	ret += s;
 	return ret;
 }
+// String Operators
+//===================================================================================================
+
+
+template <class T>
+inline void swap(T& a, T& b) { T c = a; a = b; b = c; }
 
 
 
