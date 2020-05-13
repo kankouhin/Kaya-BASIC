@@ -1,2 +1,2 @@
-bpp MBCScn
+..\..\bin\bpp MBCScn
 pause

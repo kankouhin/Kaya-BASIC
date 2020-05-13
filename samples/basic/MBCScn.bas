@@ -1,9 +1,15 @@
 Option Explicit
 
 Sub Main
-	Print "运行当前MBCS（中文）的前提条件："
-	Print "1.支持中文显示的系统（目前只测试了Windows）"
-	Print "2.将此文件由UTF8编码另存为ANSI"
+	Print ""
+	Print "================================================================================"
+	Print "运行当前MBCS（中文）的条件（目前只测试了Windows）："
+	Print " 1.支持中文显示的系统"
+	Print " 2.将此文件由UTF8另存为ANSI编码之后再编译"
+	Print ""
+	Print "或者最简单的方法，执行以下命令将控制台CodePage改为UTF8，直接编译就可显示中文"
+	Print "  chcp 65001"
+	Print "================================================================================"
 	Print ""
 	Print "感谢您关注KayaBASIC"
 	Print ""
@@ -19,7 +25,7 @@ Sub Main
 	Print "支持创建GUI，DLL（共享库）和COM自动绑定"
 	Print ""
 	Print "目前还存在的BASIC语言，基本都已经不再更新了"
-	Print "作为BASIC语言的爱好者，对此感到非常遗憾"
+	Print "作为BASCI语言的爱好者，对此感到非常遗憾"
 	Print "个人觉得语言本身没有好坏之分，也没有错，当年的第一流行语言为什么要放弃呢？"
 	Print ""
 	Print "补充：VB.NET个人觉得已经不是VB了,只不过是披着.NET的外衣罢了"
