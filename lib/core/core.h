@@ -623,7 +623,7 @@ public:
 	{
     	return this->at(i1 - dim[1].lo);
 	}
-
+	
 	reference operator() (int i1, int i2)
 	{
 		return this->at(
@@ -668,6 +668,10 @@ ARRAY_OPERATOR_ARRAY( / )
 
 // ARRAY CORE
 //=========================================================================================================
+
+	
+//=========================================================================================================
+// COLLECTION CORE
 
 template <class T>
 class collection : public list<T>
@@ -720,7 +724,34 @@ public:
 	}
 
 	int length() { return this->size(); }
+	
+	collection<T>& operator<<(const T& item)
+	{
+		this->add( item );
+    	return *this;
+	}
+	
+	collection<T>& operator<<(const collection<T>& col)
+	{
+		for (auto i : col)
+			this->add( i );
+    	
+		return *this;
+	}
+	
+	collection<T>& operator>>(const T& item)
+	{
+		this->removeitem( item );
+    	return *this;
+	}
 
+	collection<T>& operator>>(const collection<T>& col)
+	{
+		for (auto i : col)
+			this->removeitem( i );
+    	return *this;
+	}
+	
 	T& operator() (int n)
 	{
         iterator i = this->begin();
@@ -732,6 +763,9 @@ public:
         return *i;
 	}
 };
+	
+// COLLECTION CORE
+//=========================================================================================================
 
 
 template <class T>
