@@ -25,7 +25,7 @@ Sub Main
 	Print "支持创建GUI，DLL（共享库）和COM自动绑定"
 	Print ""
 	Print "目前还存在的BASIC语言，基本都已经不再更新了"
-	Print "作为BASCI语言的爱好者，对此感到非常遗憾"
+	Print "作为BASIC语言的爱好者，对此感到非常遗憾"
 	Print "个人觉得语言本身没有好坏之分，也没有错，当年的第一流行语言为什么要放弃呢？"
 	Print ""
 	Print "补充：VB.NET个人觉得已经不是VB了,只不过是披着.NET的外衣罢了"
