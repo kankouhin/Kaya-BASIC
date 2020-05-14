@@ -20,6 +20,7 @@ Sub Main
 	Dim i As Integer = atoi( "123" )
 	Dim s As String = Format( "this is a string format by sprintf %d %s ", 100, "KayaBASIC" ) ' sprintf
 	
+	Print Format( ";  %s  ;", CStr(s) )
 	Print i
 	Print SizeOf(i)
 	Print s

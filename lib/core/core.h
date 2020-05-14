@@ -857,6 +857,10 @@ struct quit { };
 
 //===================================================================================================
 // Strings
+inline const char* CStr(const string& s)
+{
+	return s.c_str();
+}
 inline string Format(string fmt, ...)
 {
 	char buffer[1024];

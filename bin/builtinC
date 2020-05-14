@@ -1,5 +1,6 @@
 [Function]
 Format
+CStr
 begin
 end
 sizeof
