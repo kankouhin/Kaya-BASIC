@@ -27,20 +27,24 @@ Sub Main
 	Printf( "Wellcom to %s!!!\n", "KayaBASIC" )
 	
 	' std::sort
-	Dim ar() As Integer = { 4,7,9,3,6,1,5 }
+	Dim ar() As Integer = { 4,7,9,3,6,1,5,2,6,7,7,3,7 }
 	Sort ( begin(ar), end(ar), AddressOf compare )
 	Call showArr(ar)
 	Sort ( begin(ar), end(ar) )	
 	Call showArr(ar)
 	
+	' std::count
+	Print Count( begin(ar), end(ar), 3)
+	Print Count( begin(ar), end(ar), 7)
+	
 	' fstream
-	Dim ofs As ofstream
-	ofs.open ("test.txt", ofstream::out Or ofstream::app)
+	Dim ofs As OFStream
+	ofs.open ("test.txt", OFStream::out Or OFStream::app)
 	ofs << " more lorem ipsum"
 	ofs.close()
 	
-	Dim ifs As ifstream
-	ifs.open ("test.txt", ifstream::in)
+	Dim ifs As IFStream
+	ifs.open ("test.txt", IFStream::in)
 	
 	Dim c As Char = ifs.get()
 	While ifs.good()
