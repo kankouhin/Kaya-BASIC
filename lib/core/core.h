@@ -13,6 +13,11 @@
 #include <cstdlib>
 #include <cstdio>
 #include <cmath>
+#include <cstdarg>
+#include <cstddef>
+#include <cstring>
+#include <ctime>
+#include <algorithm>
 
 #include <string>
 #include <vector>
@@ -20,6 +25,9 @@
 #include <unordered_map>
 
 #include <iostream>
+#include <fstream>
+#include <sstream>
+
 #include <thread>
 #include <mutex>
 #include <chrono>
@@ -844,11 +852,22 @@ public:
 } extern input;
 
 
-struct end { };
+struct quit { };
 
 
 //===================================================================================================
-// String Operators
+// Strings
+inline string Format(string fmt, ...)
+{
+	char buffer[1024];
+	va_list args;
+	va_start (args, fmt);
+	vsprintf( buffer, fmt.c_str(), args );
+	va_end (args);
+	
+	return buffer;
+}
+
 template<class T, typename = std::enable_if_t<std::is_integral<T>::value> >
 string operator* (const string& s, T n)
 {
@@ -907,7 +926,7 @@ string operator+ (T n, const string& s)
 	ret += s;
 	return ret;
 }
-// String Operators
+// Strings
 //===================================================================================================
 
 

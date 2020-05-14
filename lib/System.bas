@@ -118,12 +118,10 @@ Public Declare Function Tally(s As String, ss As String) As Long
 Public Declare Function Asc(s As String) As Byte
 Public Declare Function Chr(n As Byte) As String
 
-Public Declare Function Format(Num As Double, mask AS String="") As String
-
 Public Declare Function Split(src As String, sep As String) As String()
 Public Declare Function SplitAny(src As String, sep As String) As String()
-
 Public Declare Function Join(ByRef dest() As String, sep As String) As String
+
 Public Declare Function StartsWith(s As String, chk As String) As Boolean
 Public Declare Function EndsWith(s As String, chk As String) As Boolean
 
@@ -266,5 +264,4 @@ Alias Str$		= Str
 Alias String$	= String
 Alias Trim$	    = Trim
 Alias UCase$	= UCase
-Alias Format$	= Format
 Alias InKey$	= InKey
