@@ -49,7 +49,11 @@ Sub Main
 	
 	' std::transform
 	ReDim arTo( UBound(ar) )
-	Transform( begin(ar), end(ar), begin(arTo), AddressOf fn )
+	Transform( begin(ar), end(ar), begin(arTo), _
+				Function( i As Integer )
+					Return i * i
+				End Function 
+			)
 	Call showArr(arTo)
 	
 	' lower_bound and upper_bound 

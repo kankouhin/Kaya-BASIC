@@ -1,2 +1,2 @@
-bpp Dims
+..\..\bin\bpp Dims
 pause
