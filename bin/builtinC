@@ -1,6 +1,7 @@
 [KayaBASIC]
 Format
 CStr
+DATA_OF
 
 sizeof
 auto

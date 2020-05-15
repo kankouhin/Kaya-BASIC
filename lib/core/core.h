@@ -673,6 +673,8 @@ ARRAY_OPERATOR_ARRAY( * )
 ARRAY_OPERATOR_ARRAY( + )
 ARRAY_OPERATOR_ARRAY( - )
 ARRAY_OPERATOR_ARRAY( / )
+	
+#define DATA_OF(ar) ar.data()
 
 // ARRAY CORE
 //=========================================================================================================
