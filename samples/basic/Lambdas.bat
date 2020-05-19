@@ -1,2 +1,2 @@
-..\..\bin\bpp Lambdas
+..\..\bin\bpp -r Lambdas
 pause

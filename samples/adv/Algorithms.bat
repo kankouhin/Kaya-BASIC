@@ -1,2 +1,2 @@
-..\..\bin\bpp -pro Algorithms
+..\..\bin\bpp -pro -r Algorithms
 pause
