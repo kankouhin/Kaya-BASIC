@@ -58,6 +58,7 @@ private:
 };
 
 
+#define TypeName(v) typeid(v).name()
 
 
 namespace bpp
@@ -673,8 +674,8 @@ ARRAY_OPERATOR_ARRAY( * )
 ARRAY_OPERATOR_ARRAY( + )
 ARRAY_OPERATOR_ARRAY( - )
 ARRAY_OPERATOR_ARRAY( / )
-	
-#define DATA_OF(ar) ar.data()
+
+#define CData(ar) ar.data()
 
 // ARRAY CORE
 //=========================================================================================================
@@ -859,10 +860,8 @@ struct quit { };
 
 //===================================================================================================
 // Strings
-inline const char* CStr(const string& s)
-{
-	return s.c_str();
-}
+#define CStr(s) s.c_str()
+
 inline string Format(string fmt, ...)
 {
 	char buffer[1024];

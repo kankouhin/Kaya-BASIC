@@ -1,4 +1,5 @@
 Option Explicit
+' http://www.cplusplus.com/reference/algorithm/
 
 Sub showArr(ar() As Integer)
 	Dim s As String = "UBound:" + UBound(ar) + " {"
@@ -23,7 +24,6 @@ End Function
 Sub Main
 	Dim ar() As Integer = { 4,7,9,3,6,1,5,2,6,7,7,3,7 }
 
-	' Non-modifying sequence operations
 	' std::sort
 	Sort ( begin(ar), end(ar), AddressOf compare )
 	Call showArr(ar)
@@ -32,7 +32,7 @@ Sub Main
 	
 	' std::find_first_of
 	Dim arFind() As Integer = {9,7,6}
-	Dim p As Integer Ptr = Data_Of(arFind)
+	Dim p As Integer Ptr = CData(arFind)
 	Dim it As Auto = find_first_of ( begin(ar), end(ar), p, p + 3)
 	Print "find_first_of: ", (*it)
 	
@@ -41,7 +41,6 @@ Sub Main
 	Print Count( begin(ar), end(ar), 7)
 	Dim cnt As Integer = Count_if( begin(ar), end(ar), AddressOf fn )
 	
-	' Modifying sequence operations
 	' std::copy_if
 	Dim arTo( cnt - 1) As Integer
 	Copy_if( begin(ar), end(ar), begin(arTo), AddressOf fn )

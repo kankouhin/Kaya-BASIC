@@ -5,11 +5,11 @@ Sub Main
 	'String
 	Dim eachs As String = "Hello KayaBASIC"
 	
-	For Each s As String in eachs
+	For Each s As Char in eachs
 		Print s
 	Next
 	
-	For Each idx As Integer, s As String in eachs
+	For Each idx As Integer, s As Char in eachs
 		Print idx , " : ", s
 	Next	
 
@@ -97,6 +97,6 @@ Sub Main
 	
 	For Each ,, value in dict
 		Print value
-	Next	
+	Next
 	
 End Sub

@@ -1,4 +1,5 @@
 Option Explicit
+' http://www.cplusplus.com/reference/mutex/mutex/
 
 Dim mtx As Mutex
 

@@ -1,8 +1,9 @@
 [KayaBASIC]
 Format
 CStr
-DATA_OF
+CData
 
+std
 sizeof
 auto
 
@@ -100,6 +101,26 @@ minmax_element
 lexicographical_compare
 next_permutation
 prev_permutation
+
+<regex>
+regex_match
+regex_search
+regex_replace
+
+regex
+wregex
+
+cmatch
+wcmatch
+smatch
+wsmatch
+
+csub_match
+wcsub_match
+ssub_match
+wssub_match
+
+regex_constants
 
 <numeric>
 accumulate

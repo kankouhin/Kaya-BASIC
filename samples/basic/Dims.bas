@@ -42,7 +42,11 @@ Sub Main
 	Dim dic As Integer Dictionary
 	Dim col As String Collection
 	
-
+	Print TypeName(dic)
+	Print TypeName(l1)
+	Print TypeName(s1)
+	Print TypeName(i1)
+	
 	Dim x,y As Single = 3.14 ' both x and y are Single type and also init value are 3.14
 	
 	
