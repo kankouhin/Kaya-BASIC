@@ -68,13 +68,13 @@ Easy calls Windows COM like VB.
 	Print s(2, 5)	' = s.Mid(2,5)
 	Print s(2, -1)	' = s.Mid(2)
 	
-	Dim ar() As String = Split(s, " ")
+	Dim ar() As String = s.Split(" ")
 	For each s As String in ar
 		Print s
 	Next
 	Print Join(ar, "_")
 
-	ar = SplitAny("a+c*2-1/4", "+-*/")
+	ar = "a+c*2-1/4".SplitAny("+-*/")
 	For each s As String in ar
 		Print s
 	Next
@@ -92,14 +92,9 @@ Easy calls Windows COM like VB.
 	For each s As String in ar
 		Print s
 	Next
-
-/*
-	For each c As String in s
-		Print c
-	Next
 	
-	For each c As Integer in s
-		Print c
-	Next
-*/
+	s = Format( "this a string formatted by sprintf: %s %s %d", "Hello", "KayaBASIC", 100 )
+	Print s
+	s = Format( ";  %s  ;", CStr(s) ) ' CStr: convert s to C String(const char*)
+	Print s
 End Sub

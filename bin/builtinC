@@ -300,6 +300,10 @@ uintptr_t
 
 
 <cstdio>
+stdin
+stdout
+stderr
+
 remove
 rename
 tmpfile

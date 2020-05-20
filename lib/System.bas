@@ -61,7 +61,7 @@ Public CLASS Stream EXTENDS Object
 	Public Sub			WriteObject(Obj As Object)
 	Public Sub			WriteString(s As String)
 
-	Public Property		EOF As Boolean READONLY
+	Public Property		Eof As Boolean READONLY
 	Public Property		Position As Long
 	Public Property		Size As Long READONLY
 
@@ -185,7 +185,7 @@ Public Declare Sub		Rename(OldName As String, FileName As String)
 Public Declare Sub		RmDir(Dir As String)
 
 Public Declare Function FreeFile As Integer
-Public Declare Function EOF(fn As Integer) As Boolean
+Public Declare Function Eof(fn As Integer) As Boolean
 Public Declare Function FileLen(fn As Integer) As Long
 
 'For Internal
@@ -220,7 +220,7 @@ Public Declare Function MsgBox(prompt As String, buttons As Integer = 4, title A
 'Utilities---------------------------------------------------------------------------------------------------
 Public Declare Function CreateObject(ClassName As String) As Object
 Public Declare Function IIf(Cond As Boolean, OnTrue As Variant, OnFalse As Variant) As Variant
-Public Declare Function RGB(r As Byte, g As Byte, b As Byte) As Integer
+Public Declare Function Rgb(r As Byte, g As Byte, b As Byte) As Integer
 
 Public Declare Function MemCmp(P1 As Long, P2 As Long, Size As Long) As Long
 Public Declare Sub		MemCpy(Dest As Long, Src As Long, Count As Long)
