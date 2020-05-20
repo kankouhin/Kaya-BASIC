@@ -1,6 +1,6 @@
 Option Explicit
 ' http://www.cplusplus.com/reference/cstdio/
-' because FILE and EOF are defined in KayaBASIC, using the prefix c_[NAME]. 
+' because FILE ,EOF and RENAME are defined in KayaBASIC, using the prefix c_[NAME]. 
 
 Sub Main
 	Dim f As c_FILE Ptr
@@ -14,7 +14,7 @@ Sub Main
 		fclose( f )
 	End If
 	
-	rename( "myfile.txt", "stdios.txt" )
+	c_rename( "myfile.txt", "stdios.txt" )
 	f = fopen ("stdios.txt","r")
 	
 	While Not feof(f)

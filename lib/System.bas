@@ -157,10 +157,6 @@ Public Declare Function Sin(n As Double) As Double
 Public Declare Function Sqr(n As Double) As Double
 Public Declare Function Tan(n As Double) As Double
 Public Declare Function Val(s As String) As Double
-
-Public Declare Function Atanh(n As Double) As Double
-Public Declare Function Asinh(n As Double) As Double
-Public Declare Function Acosh(n As Double) As Double
 'Maths---------------------------------------------------------------------------------------------------
 
 
