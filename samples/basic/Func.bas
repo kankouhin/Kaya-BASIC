@@ -14,6 +14,12 @@ Class CPerson
 	Public Address As String
 End Class
 
+Dim gi As Integer
+
+Function funcByRef As Integer ByRef
+	Function = gi
+End Function
+
 Sub testArray( ByRef ar() As String )
 	For Each s As String in ar
 		Print s
@@ -47,7 +53,7 @@ Function funcArray As String()
 		ar(idx) = s
 	Next
 	
-	Return ar ' MUST use return keyword
+	Return ar
 End Function
 
 Function funcList As String Collection
@@ -57,7 +63,7 @@ Function funcList As String Collection
 		list.add( s )
 	Next
 	
-	Return list ' MUST use return keyword
+	Return list
 End Function
 
 Function funcTable As String Dictionary
@@ -67,7 +73,7 @@ Function funcTable As String Dictionary
 		dict(s) = s + " Value" + Str(idx)
 	Next
 	
-	Return dict ' MUST use return keyword
+	Function = dict
 End Function
 
 Sub Main
@@ -120,4 +126,10 @@ Sub Main
 	For Each k As String, v As String in table
 		Print "Key:", k, " Value:", v
 	Next
+	
+	
+	Dim ref As Integer ByRef = funcByRef
+	ref = 100
+	Print gi
+	
 End Sub

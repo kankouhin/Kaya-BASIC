@@ -18,17 +18,10 @@ Sub Main
 	f = fopen ("stdios.txt","r")
 	
 	While Not feof(f)
-		
-		Dim s As String
-		Dim c As Char
-		
-		c = fgetc(f)
-		While c <> 10 AndAlso c <> 13 AndAlso c <> c_EOF
-			s += Chr(c)
-			c = fgetc(f)
-		Wend
-		
-		cout << s << endl
+		Dim l[256] As Char = {0}
+		If fgets( l, 256, f ) <> NULL Then
+			puts ( l )	
+		End If
 	Wend
 	
 	fclose( f )
