@@ -39,7 +39,12 @@ Function getTextSpec( htmlText As String, spec As String, beginflag As String, e
 	Dim idx As Integer
 	Dim iPos As Integer
 
-	idx = InStr( beginflag + spec, htmlText ) + beginflag.Len
+	idx = InStr( beginflag + spec, htmlText )
+	If idx = 0 Then
+		Function = ""
+	End If
+	
+	idx += beginflag.Len
 	iPos = InStr( idx + 1, endflag, htmlText )
 	
 	s = htmlText.Mid( idx, iPos - idx )	
@@ -59,7 +64,7 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 	
 	Dim colMembers As String Collection
 	Dim colConsts As String Collection
-	Dim colInhertedFrom As String Collection
+	Dim colInhertedFrom As String Dictionary
 	Dim IsBaseClass As Boolean = False
 	
 	While Not Eof(f1)
@@ -98,7 +103,7 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 		
 		If sLine.StartsWith( "<li><span class=\"event" ) Then 
 			Dim s As String = getTextSpec( sLine, "wxEVT_", ">", "<" )
-			
+			colConsts.Add( s )
 		End If
 		
 		If sLine.StartsWith( "<tr class=\"memitem:" ) Then
@@ -136,7 +141,7 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 				Else
 					If fn <> className Then
 						IsBaseClass = True 
-						colInhertedFrom.Add( fn )
+						colInhertedFrom( fn ) = fn
 					End If
 				End if
 			End If 
@@ -153,7 +158,7 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 		End If
 	Next
 	
-	For Each s As String in colInhertedFrom
+	For Each s As String,, in colInhertedFrom
 		If s.Len Then
 			Print #f2, s
 		End If
