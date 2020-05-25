@@ -21,9 +21,22 @@ Sub test2( fn As Function(p As Integer) As Long, x As Integer )
 	Print i
 End Sub
 
+Sub test5(p As Integer)
+	Print "test5", p
+End Sub
+
+
 Sub Main
 	Dim fn1 As Sub(p As Integer)
 	Dim fn2 As Function(p As Integer) As Long
+	Dim c As New LambdaClass
+	
+	Set c.fn1 = test5
+	Set fn1 = test5
+	
+	fn1( 888 )
+	c.fn1( 666 )
+	Call test( fn1, 555 )
 
 	Call test( _
 				Sub(x As Integer)
