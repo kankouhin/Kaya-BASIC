@@ -1,6 +1,6 @@
 Option Explicit
 
-Using LambdaUsing
+Using LambdasUsing
 
 Type LambdaType
 	fn1 As Sub(p As Integer)
