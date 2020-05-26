@@ -1,2 +1,2 @@
-bpp -k Func
+bpp Func
 pause

@@ -17,12 +17,14 @@ Public Declare BUILTIN Boolean
 Public Declare BUILTIN String
 Public Declare BUILTIN Variant
 
+Public Declare BUILTIN Function
+Public Declare BUILTIN Tuple
+
 Public Declare BUILTIN ANY
 Public Declare BUILTIN CLASS Object
 
 
 Public Const Nothing As Integer = 0
-
 Public Const False 	As Integer	= 0
 Public Const True	As Integer	= 1
 
