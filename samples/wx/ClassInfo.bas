@@ -20,15 +20,10 @@ Function getText( htmlText As String ) As String
 		End If
 	Next
 	
-	s = s.Replace( "virtual ", "" )	
-	s = s.Replace( "const ", "" )
 	s = s.Replace( "&amp;", "& " )
 	s = s.Replace( "&#160;", " " )
 	s = s.Replace( "&lt;", "<" )
 	s = s.Replace( "&gt;", "<" )
-	
-	s = s.Replace( "(", "( " )
-	s = s.Replace( ")", " )" )
 	
 	Return s.Trim
 End Function
@@ -64,7 +59,7 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 	
 	Dim colMembers As String Collection
 	Dim colConsts As String Collection
-	Dim colInhertedFrom As String Dictionary
+	Dim colInhertedFrom As String Collection
 	Dim IsBaseClass As Boolean = False
 	
 	While Not Eof(f1)
@@ -88,33 +83,69 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 			incFile = "<" + ar(0) + ">"
 			colMembers.Add( incFile )
 		End If
+
+		'If loadRelationClass Then
+		'	If sLine.StartsWith( "<area shape=\"rect" ) Then 
+		'		Dim s As String = getTextSpec( sLine, "", "href=\"", "\"" )
+		'		Call loadClassInfo( s ,False )
+		'	End If
+		'End If
 		
 		If sLine.StartsWith( "<li><span class=\"style" ) Then 
 			Dim s As String = getTextSpec( sLine, "wx", ">", "<" )
 			colConsts.Add( s )
 		End If
-		
-		If loadRelationClass Then
-			If sLine.StartsWith( "<area shape=\"rect" ) Then 
-				Dim s As String = getTextSpec( sLine, "", "href=\"", "\"" )
-				Call loadClassInfo( s ,False )
-			End If
+
+		If sLine.StartsWith( "<li><code>" ) Then 
+			Dim s As String = getTextSpec( sLine, "wx", ">", "<" )
+			colConsts.Add( s )
 		End If
-		
+
 		If sLine.StartsWith( "<li><span class=\"event" ) Then 
 			Dim s As String = getTextSpec( sLine, "wxEVT_", ">", "<" )
 			colConsts.Add( s )
 		End If
+
+		' get inherited classes
+		If sLine.StartsWith( "<tr class=\"inherit_header pub_methods" ) Then
+			Dim base As String = getText( sLine )
+			Dim sFrom As String = "inherited from "
+			Dim ipos As Integer = sFrom.Instr( base ) + sFrom.Len
+			
+			base = base.Mid( ipos )
+			colInhertedFrom.Add( base )
+			
+			If loadRelationClass Then
+				Dim s As String = getTextSpec( sLine, "", "href=\"", "\"" )
+				Call loadClassInfo( s ,False )
+			End If			
+		End If
 		
-		If sLine.StartsWith( "<tr class=\"memitem:" ) Then
-			Dim func As String = getText( sLine )
+		If sLine.StartsWith( "<table class=\"memname\">" ) Then
+			Dim func As String
+			Do 
+				Line Input #f1, sLine
+				sLine = sLine.Trim
+				
+				func += Trim( getText( sLine ) )
+				func += " "
+			Loop Until sLine.StartsWith( "</table>" )
+					
+			func = func.Replace( "virtual", "" )	
+			func = func.Replace( "const", "" )
+			func = func.Replace( className + "::", "" )	
+			func = func.Trim
+			
 			Dim ar() As String = func.Split( " " )
 			
-			Dim fn As String
-			Dim isPtr As Boolean
-			Dim isStatic As Boolean
+			Remove_If( begin(ar), end(ar), _
+					Function(s)
+						Return (s.Len = 0)
+					End Function )
 			
+			Dim fn As String
 			Dim idx As Integer
+			
 			For each idx, s As String in ar
 				If s = "(" Then
 					idx -= 1
@@ -122,29 +153,24 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 					Exit For
 				End If
 			Next
-
-			If fn.Len > 0 Then  
-				If idx > 0 Then
-					If IsBaseClass = False Then 
-						isStatic = ( ar(0) = "static" )
-						isPtr = ( ar(idx-1) = "*" )
-						
-						Dim rt As String
-						If isPtr Then
-							rt = ar(idx-2)
-						Else
-							rt = ar(idx-1)
-						End If 
+			
+			If idx > 0 Then
+				Dim isStatic As Boolean = ( ar(0) = "static" )
+				Dim rt As String = ar(idx-1)
+				Dim isPtr As Boolean = ( rt.Right(1) = "*" )
 				
-						colMembers.Add( fn + "," + isStatic.Str + "," + isPtr.Str + "," + rt + "\t\t\t\t\t\t" + func )
-					End If
-				Else
-					If fn <> className Then
-						IsBaseClass = True 
-						colInhertedFrom( fn ) = fn
-					End If
-				End if
-			End If 
+				If isPtr Then
+					rt = rt >> 1
+				End If
+
+				If rt.Right(1) = "&" Then
+					rt = rt >> 1
+				End If
+				
+				func = fn + "," + isStatic.Str + "," + isPtr.Str + "," + rt + "\t\t\t\t\t\t" + func 
+			End If
+			
+			colMembers.Add( func )
 		End If
 	Wend
 	
@@ -158,18 +184,17 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 		End If
 	Next
 	
-	For Each s As String,, in colInhertedFrom
-		If s.Len Then
-			Print #f2, s
-		End If
-	Next
-	
 	For Each s As String in colMembers
 		If s.Len Then
 			Print #f2, s
 		End If
 	Next
 	
+	For Each s As String in colInhertedFrom
+		If s.Len Then
+			Print #f2, s
+		End If
+	Next	
 End Sub
 
 Sub Main
