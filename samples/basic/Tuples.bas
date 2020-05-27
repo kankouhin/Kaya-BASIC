@@ -6,6 +6,10 @@ Function test(s As String, p As Integer) As [String, Integer]
 	Return [ s, p ] 
 End Function
 
+Sub test3(ByRef t As [String, Integer])
+	Print t(0), " ", t(1)
+End Sub
+
 Sub Main	
 	Dim s As String
 	Dim i As Integer
@@ -28,6 +32,8 @@ Sub Main
 	
 	t = [ "KayaBASIC", 600 ]
 	Print t(0), " ", t(1)
+	
+	test3( [ "KayaBASIC", 700 ] )
 End Sub
 
 
