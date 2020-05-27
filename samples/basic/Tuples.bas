@@ -34,6 +34,7 @@ Sub Main
 	Print t(0), " ", t(1)
 	
 	test3( [ "KayaBASIC", 700 ] )
+	test3( t )
 End Sub
 
 
