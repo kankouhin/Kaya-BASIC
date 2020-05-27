@@ -6,10 +6,17 @@ Multi-platform BASIC compiler, supports Windows, Linux and macOS.(Based on B++ c
 
 
 # Features
- - Compiles with g++(support C++14)
+ - Compiles with g++(need support C++14)
  - OOP, supports CreateObject by name and call function/sub/property by name)
- - Creates GUI(using wxWidgets), console or DLL applications.
- - Easy calls Windows COM like VB.
+ - Creates GUI(using wxWidgets), console or Shared Library/DLL applications.
+ - Easy call Windows COM like VB/VBA.
+ - Supports Lambda Expression.
+ - Supports Tuple, return multiple values from a function.
+ - Supports Multi-Thread.
+ - Supports RegEx Expression.
+ - Supports C++ STL(Algorithms), fstream. stringstream, etc.
+ - Supports C standard functions(math, stdio, etc).
+
  
 # Install(macOS.64bit, tested on 10.12 and 10.15)
  1. download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
