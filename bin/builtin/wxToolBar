@@ -1,0 +1,82 @@
+[CONSTS]
+wxTB_FLAT
+wxTB_DOCKABLE
+wxTB_HORIZONTAL
+wxTB_VERTICAL
+wxTB_TEXT
+wxTB_NOICONS
+wxTB_NODIVIDER
+wxTB_NOALIGN
+wxTB_HORZ_LAYOUT
+wxTB_HORZ_TEXT
+wxTB_NO_TOOLTIPS
+wxTB_BOTTOM
+wxTB_RIGHT
+wxTB_DEFAULT_STYLE
+wxEVT_TOOL
+wxEVT_TOOL
+wxEVT_TOOL_RCLICKED
+wxEVT_TOOL_RCLICKED
+wxEVT_TOOL_ENTER
+wxEVT_TOOL_DROPDOWN
+[METHODS]
+<wx/toolbar.h>
+AddCheckTool,0,1,7,wxToolBarToolBase,						wxToolBarToolBase* AddCheckTool ( int toolId,      wxString & label,      wxBitmap & bitmap1,      wxBitmap & bmpDisabled = wxNullBitmap,      wxString & shortHelp = wxEmptyString,      wxString & longHelp = wxEmptyString,     wxObject * clientData = NULL    )
+AddControl,0,1,2,wxToolBarToolBase,						wxToolBarToolBase* AddControl ( wxControl * control,      wxString & label = wxEmptyString    )
+AddRadioTool,0,1,7,wxToolBarToolBase,						wxToolBarToolBase* AddRadioTool ( int toolId,      wxString & label,      wxBitmap & bitmap1,      wxBitmap & bmpDisabled = wxNullBitmap,      wxString & shortHelp = wxEmptyString,      wxString & longHelp = wxEmptyString,     wxObject * clientData = NULL    )
+AddSeparator,0,1,0,wxToolBarToolBase,						wxToolBarToolBase* AddSeparator ( )
+AddStretchableSpace,0,1,0,wxToolBarToolBase,						wxToolBarToolBase* AddStretchableSpace ( )
+AddTool,0,1,1,wxToolBarToolBase,						wxToolBarToolBase* AddTool ( wxToolBarToolBase * tool)
+AddTool,0,1,5,wxToolBarToolBase,						wxToolBarToolBase* AddTool ( int toolId,      wxString & label,      wxBitmap & bitmap,      wxString & shortHelp = wxEmptyString,     wxItemKind kind = wxITEM_NORMAL    )
+AddTool,0,1,8,wxToolBarToolBase,						wxToolBarToolBase* AddTool ( int toolId,      wxString & label,      wxBitmap & bitmap,      wxBitmap & bmpDisabled,     wxItemKind kind = wxITEM_NORMAL,      wxString & shortHelpString = wxEmptyString,      wxString & longHelpString = wxEmptyString,     wxObject * clientData = NULL    )
+ClearTools,0,0,0,void,						void ClearTools ( )
+CreateSeparator,0,1,0,wxToolBarToolBase,						wxToolBarToolBase* CreateSeparator ( )
+CreateTool,0,1,8,wxToolBarToolBase,						wxToolBarToolBase* CreateTool ( int toolId,      wxString & label,      wxBitmap & bmpNormal,      wxBitmap & bmpDisabled = wxNullBitmap,     wxItemKind kind = wxITEM_NORMAL,     wxObject * clientData = NULL,      wxString & shortHelp = wxEmptyString,      wxString & longHelp = wxEmptyString    )
+CreateTool,0,1,2,wxToolBarToolBase,						wxToolBarToolBase* CreateTool ( wxControl * control,      wxString & label    )
+DeleteTool,0,0,1,bool,						bool DeleteTool ( int toolId)
+DeleteToolByPos,0,0,1,bool,						bool DeleteToolByPos ( size_t pos)
+EnableTool,0,0,2,void,						void EnableTool ( int toolId,     bool enable    )
+FindById,0,1,1,wxToolBarToolBase,						wxToolBarToolBase* FindById ( int id)
+FindControl,0,1,1,wxControl,						wxControl* FindControl ( int id)
+FindToolForPosition,0,1,2,wxToolBarToolBase,						wxToolBarToolBase* FindToolForPosition ( wxCoord x,     wxCoord y    )
+GetMargins,0,0,0,wxSize,						wxSize GetMargins ( )
+GetToolBitmapSize,0,0,0,wxSize,						wxSize GetToolBitmapSize ( )
+GetToolByPos,0,1,1,wxToolBarToolBase,						wxToolBarToolBase* GetToolByPos ( int pos)
+GetToolByPos,0,1,1,wxToolBarToolBase,						wxToolBarToolBase* GetToolByPos ( int pos)
+GetToolClientData,0,1,1,wxObject,						wxObject* GetToolClientData ( int toolId)
+GetToolEnabled,0,0,1,bool,						bool GetToolEnabled ( int toolId)
+GetToolLongHelp,0,0,1,wxString,						wxString GetToolLongHelp ( int toolId)
+GetToolPacking,0,0,0,int,						int GetToolPacking ( )
+GetToolPos,0,0,1,int,						int GetToolPos ( int toolId)
+GetToolsCount,0,0,0,size_t,						size_t GetToolsCount ( )
+GetToolSeparation,0,0,0,int,						int GetToolSeparation ( )
+GetToolShortHelp,0,0,1,wxString,						wxString GetToolShortHelp ( int toolId)
+GetToolSize,0,0,0,wxSize,						wxSize GetToolSize ( )
+GetToolState,0,0,1,bool,						bool GetToolState ( int toolId)
+InsertControl,0,1,3,wxToolBarToolBase,						wxToolBarToolBase* InsertControl ( size_t pos,     wxControl * control,      wxString & label = wxEmptyString    )
+InsertSeparator,0,1,1,wxToolBarToolBase,						wxToolBarToolBase* InsertSeparator ( size_t pos)
+InsertStretchableSpace,0,1,1,wxToolBarToolBase,						wxToolBarToolBase* InsertStretchableSpace ( size_t pos)
+InsertTool,0,1,9,wxToolBarToolBase,						wxToolBarToolBase* InsertTool ( size_t pos,     int toolId,      wxString & label,      wxBitmap & bitmap,      wxBitmap & bmpDisabled = wxNullBitmap,     wxItemKind kind = wxITEM_NORMAL,      wxString & shortHelp = wxEmptyString,      wxString & longHelp = wxEmptyString,     wxObject * clientData = NULL    )
+InsertTool,0,1,2,wxToolBarToolBase,						wxToolBarToolBase* InsertTool ( size_t pos,     wxToolBarToolBase * tool    )
+OnLeftClick,0,0,2,bool,						bool OnLeftClick ( int toolId,     bool toggleDown    )
+OnMouseEnter,0,0,1,void,						void OnMouseEnter ( int toolId)
+OnRightClick,0,0,3,void,						void OnRightClick ( int toolId,     long x,     long y    )
+Realize,0,0,0,bool,						bool Realize ( )
+RemoveTool,0,1,1,wxToolBarToolBase,						wxToolBarToolBase* RemoveTool ( int id)
+SetDropdownMenu,0,0,2,bool,						bool SetDropdownMenu ( int id,     wxMenu * menu    )
+SetMargins,0,0,2,void,						void SetMargins ( int x,     int y    )
+SetMargins,0,0,1,void,						void SetMargins (  wxSize & size)
+SetToolBitmapSize,0,0,1,void,						void SetToolBitmapSize (  wxSize & size)
+SetToolClientData,0,0,2,void,						void SetToolClientData ( int id,     wxObject * clientData    )
+SetToolDisabledBitmap,0,0,2,void,						void SetToolDisabledBitmap ( int id,      wxBitmap & bitmap    )
+SetToolLongHelp,0,0,2,void,						void SetToolLongHelp ( int toolId,      wxString & helpString    )
+SetToolNormalBitmap,0,0,2,void,						void SetToolNormalBitmap ( int id,      wxBitmap & bitmap    )
+SetToolPacking,0,0,1,void,						void SetToolPacking ( int packing)
+SetToolSeparation,0,0,1,void,						void SetToolSeparation ( int separation)
+SetToolShortHelp,0,0,2,void,						void SetToolShortHelp ( int toolId,      wxString & helpString    )
+ToggleTool,0,0,2,void,						void ToggleTool ( int toolId,     bool toggle    )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

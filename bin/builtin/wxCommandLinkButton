@@ -1,0 +1,18 @@
+[CONSTS]
+[METHODS]
+<wx/commandlinkbutton.h>
+Create,0,0,9,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & mainLabel = wxEmptyString,      wxString & note = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxButtonNameStr    )
+GetLabel,0,0,0,wxString,						wxString GetLabel ( )
+GetMainLabel,0,0,0,wxString,						wxString GetMainLabel ( )
+GetNote,0,0,0,wxString,						wxString GetNote ( )
+SetLabel,0,0,1,void,						void SetLabel (  wxString & label)
+SetMainLabel,0,0,1,void,						void SetMainLabel (  wxString & mainLabel)
+SetMainLabelAndNote,0,0,2,void,						void SetMainLabelAndNote (  wxString & mainLabel,      wxString & note    )
+SetNote,0,0,1,void,						void SetNote (  wxString & note)
+[INHERITS]
+wxButton
+wxAnyButton
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

@@ -1,0 +1,24 @@
+[CONSTS]
+[METHODS]
+<wx/anybutton.h>
+GetBitmap,0,0,0,wxBitmap,						wxBitmap GetBitmap ( )
+GetBitmapCurrent,0,0,0,wxBitmap,						wxBitmap GetBitmapCurrent ( )
+GetBitmapDisabled,0,0,0,wxBitmap,						wxBitmap GetBitmapDisabled ( )
+GetBitmapFocus,0,0,0,wxBitmap,						wxBitmap GetBitmapFocus ( )
+GetBitmapLabel,0,0,0,wxBitmap,						wxBitmap GetBitmapLabel ( )
+GetBitmapMargins,0,0,0,wxSize,						wxSize GetBitmapMargins ( )
+GetBitmapPressed,0,0,0,wxBitmap,						wxBitmap GetBitmapPressed ( )
+SetBitmap,0,0,2,void,						void SetBitmap (  wxBitmap & bitmap,     wxDirection dir = wxLEFT    )
+SetBitmapCurrent,0,0,1,void,						void SetBitmapCurrent (  wxBitmap & bitmap)
+SetBitmapDisabled,0,0,1,void,						void SetBitmapDisabled (  wxBitmap & bitmap)
+SetBitmapFocus,0,0,1,void,						void SetBitmapFocus (  wxBitmap & bitmap)
+SetBitmapLabel,0,0,1,void,						void SetBitmapLabel (  wxBitmap & bitmap)
+SetBitmapMargins,0,0,2,void,						void SetBitmapMargins ( wxCoord x,     wxCoord y    )
+SetBitmapMargins,0,0,1,void,						void SetBitmapMargins (  wxSize & sz)
+SetBitmapPosition,0,0,1,void,						void SetBitmapPosition ( wxDirection dir)
+SetBitmapPressed,0,0,1,void,						void SetBitmapPressed (  wxBitmap & bitmap)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

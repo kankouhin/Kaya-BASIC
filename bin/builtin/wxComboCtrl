@@ -1,0 +1,77 @@
+[CONSTS]
+wxCB_READONLY
+wxCB_SORT
+wxTE_PROCESS_ENTER
+wxCC_SPECIAL_DCLICK
+wxCC_STD_BUTTON
+wxEVT_TEXT
+wxEVT_TEXT_ENTER
+wxEVT_COMBOBOX_DROPDOWN
+wxEVT_COMBOBOX_CLOSEUP
+[METHODS]
+<wx/combo.h>
+,0,0,0,anonymous,						anonymous enum
+AnimateShow,0,0,2,bool,						bool AnimateShow (  wxRect & rect,     int flags    )
+Copy,0,0,0,void,						void Copy ( )
+Create,0,0,8,bool,						bool Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxString & value = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxComboBoxNameStr    )
+Cut,0,0,0,void,						void Cut ( )
+Dismiss,0,0,0,void,						void Dismiss ( )
+DoSetPopupControl,0,0,1,void,						void DoSetPopupControl ( wxComboPopup * popup)
+DoShowPopup,0,0,2,void,						void DoShowPopup (  wxRect & rect,     int flags    )
+EnablePopupAnimation,0,0,1,void,						void EnablePopupAnimation ( bool enable = true)
+GetBitmapDisabled,0,0,0,wxBitmap,						wxBitmap&  GetBitmapDisabled ( )
+GetBitmapHover,0,0,0,wxBitmap,						wxBitmap&  GetBitmapHover ( )
+GetBitmapNormal,0,0,0,wxBitmap,						wxBitmap&  GetBitmapNormal ( )
+GetBitmapPressed,0,0,0,wxBitmap,						wxBitmap&  GetBitmapPressed ( )
+GetButtonSize,0,0,0,wxSize,						wxSize GetButtonSize ( )
+GetCustomPaintWidth,0,0,0,int,						int GetCustomPaintWidth ( )
+GetFeatures,1,0,0,int,						static int GetFeatures ( )
+GetHint,0,0,0,wxString,						wxString GetHint ( )
+GetInsertionPoint,0,0,0,long,						long GetInsertionPoint ( )
+GetLastPosition,0,0,0,long,						long GetLastPosition ( )
+GetMargins,0,0,0,wxPoint,						wxPoint GetMargins ( )
+GetPopupControl,0,1,0,wxComboPopup,						wxComboPopup* GetPopupControl ( )
+GetPopupWindow,0,1,0,wxWindow,						wxWindow* GetPopupWindow ( )
+GetTextCtrl,0,1,0,wxTextCtrl,						wxTextCtrl* GetTextCtrl ( )
+GetTextIndent,0,0,0,wxCoord,						wxCoord GetTextIndent ( )
+GetTextRect,0,0,0,wxRect,						wxRect&  GetTextRect ( )
+GetValue,0,0,0,wxString,						wxString GetValue ( )
+HidePopup,0,0,1,void,						void HidePopup ( bool generateEvent = false)
+IsKeyPopupToggle,0,0,1,bool,						bool IsKeyPopupToggle (  wxKeyEvent & event)
+IsPopupShown,0,0,0,bool,						bool IsPopupShown ( )
+IsPopupWindowState,0,0,1,bool,						bool IsPopupWindowState ( int state)
+OnButtonClick,0,0,0,void,						void OnButtonClick ( )
+Paste,0,0,0,void,						void Paste ( )
+Popup,0,0,0,void,						void Popup ( )
+PrepareBackground,0,0,3,void,						void PrepareBackground ( wxDC & dc,      wxRect & rect,     int flags    )
+Remove,0,0,2,void,						void Remove ( long from,     long to    )
+Replace,0,0,3,void,						void Replace ( long from,     long to,      wxString & text    )
+SetButtonBitmaps,0,0,5,void,						void SetButtonBitmaps (  wxBitmap & bmpNormal,     bool pushButtonBg = false,      wxBitmap & bmpPressed = wxNullBitmap,      wxBitmap & bmpHover = wxNullBitmap,      wxBitmap & bmpDisabled = wxNullBitmap    )
+SetButtonPosition,0,0,4,void,						void SetButtonPosition ( int width = -1,     int height = -1,     int side = wxRIGHT,     int spacingX = 0    )
+SetCustomPaintWidth,0,0,1,void,						void SetCustomPaintWidth ( int width)
+SetHint,0,0,1,bool,						bool SetHint (  wxString & hint)
+SetInsertionPoint,0,0,1,void,						void SetInsertionPoint ( long pos)
+SetInsertionPointEnd,0,0,0,void,						void SetInsertionPointEnd ( )
+SetMargins,0,0,1,bool,						bool SetMargins (  wxPoint & pt)
+SetMargins,0,0,2,bool,						bool SetMargins ( wxCoord left,     wxCoord top = -1    )
+SetPopupAnchor,0,0,1,void,						void SetPopupAnchor ( int anchorSide)
+SetPopupControl,0,0,1,void,						void SetPopupControl ( wxComboPopup * popup)
+SetPopupExtents,0,0,2,void,						void SetPopupExtents ( int extLeft,     int extRight    )
+SetPopupMaxHeight,0,0,1,void,						void SetPopupMaxHeight ( int height)
+SetPopupMinWidth,0,0,1,void,						void SetPopupMinWidth ( int width)
+SetSelection,0,0,2,void,						void SetSelection ( long from,     long to    )
+SetText,0,0,1,void,						void SetText (  wxString & value)
+SetTextCtrlStyle,0,0,1,void,						void SetTextCtrlStyle ( int style)
+SetTextIndent,0,0,1,void,						void SetTextIndent ( int indent)
+SetValue,0,0,1,void,						void SetValue (  wxString & value)
+SetValueByUser,0,0,1,void,						void SetValueByUser (  wxString & value)
+ShouldDrawFocus,0,0,0,bool,						bool ShouldDrawFocus ( )
+ShowPopup,0,0,0,void,						void ShowPopup ( )
+Undo,0,0,0,void,						void Undo ( )
+UseAltPopupWindow,0,0,1,void,						void UseAltPopupWindow ( bool enable = true)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxTextEntry

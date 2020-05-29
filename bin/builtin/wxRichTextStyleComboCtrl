@@ -1,0 +1,16 @@
+[CONSTS]
+[METHODS]
+<wx/richtext/richtextstyles.h>
+Create,0,0,5,bool,						bool Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0    )
+GetRichTextCtrl,0,1,0,wxRichTextCtrl,						wxRichTextCtrl* GetRichTextCtrl ( )
+GetStyleSheet,0,1,0,wxRichTextStyleSheet,						wxRichTextStyleSheet* GetStyleSheet ( )
+SetRichTextCtrl,0,0,1,void,						void SetRichTextCtrl ( wxRichTextCtrl * ctrl)
+SetStyleSheet,0,0,1,void,						void SetStyleSheet ( wxRichTextStyleSheet * styleSheet)
+UpdateStyles,0,0,0,void,						void UpdateStyles ( )
+[INHERITS]
+wxComboCtrl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxTextEntry

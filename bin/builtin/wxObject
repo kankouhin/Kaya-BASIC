@@ -1,0 +1,18 @@
+[CONSTS]
+[METHODS]
+<wx/object.h>
+AllocExclusive,0,0,0,void,						void AllocExclusive ( )
+CloneRefData,0,1,1,wxObjectRefData,						wxObjectRefData* CloneRefData (  wxObjectRefData * data)
+CreateRefData,0,1,0,wxObjectRefData,						wxObjectRefData* CreateRefData ( )
+GetClassInfo,0,1,0,wxClassInfo,						wxClassInfo* GetClassInfo ( )
+GetRefData,0,1,0,wxObjectRefData,						wxObjectRefData* GetRefData ( )
+IsKindOf,0,0,1,bool,						bool IsKindOf (  wxClassInfo * info)
+IsSameAs,0,0,1,bool,						bool IsSameAs (  wxObject & obj)
+delete,0,0,1,operator,						void operator delete ( void * buf)
+new,0,0,3,operator,						void* operator new ( size_t size,      wxString & filename = NULL,     int lineNum = 0    )
+Ref,0,0,1,void,						void Ref (  wxObject & clone)
+SetRefData,0,0,1,void,						void SetRefData ( wxObjectRefData * data)
+UnRef,0,0,0,void,						void UnRef ( )
+UnShare,0,0,0,void,						void UnShare ( )
+,0,1,0,wxObjectRefData,						wxObjectRefData* m_refData
+[INHERITS]

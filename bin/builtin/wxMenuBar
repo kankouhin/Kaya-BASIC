@@ -1,0 +1,39 @@
+[CONSTS]
+[METHODS]
+<wx/menu.h>
+Append,0,0,2,bool,						bool Append ( wxMenu * menu,      wxString & title    )
+Attach,0,0,1,void,						void Attach ( wxFrame * frame)
+Check,0,0,2,void,						void Check ( int id,     bool check    )
+Detach,0,0,0,void,						void Detach ( )
+Enable,0,0,2,void,						void Enable ( int id,     bool enable    )
+EnableTop,0,0,2,void,						void EnableTop ( size_t pos,     bool enable    )
+FindItem,0,1,2,wxMenuItem,						wxMenuItem* FindItem ( int id,     wxMenu ** menu = NULL    )
+FindMenu,0,0,1,int,						int FindMenu (  wxString & title)
+FindMenuItem,0,0,2,int,						int FindMenuItem (  wxString & menuString,      wxString & itemString    )
+GetFrame,0,1,0,wxFrame,						wxFrame* GetFrame ( )
+GetHelpString,0,0,1,wxString,						wxString GetHelpString ( int id)
+GetLabel,0,0,1,wxString,						wxString GetLabel ( int id)
+GetLabelTop,0,0,1,wxString,						wxString GetLabelTop ( size_t pos)
+GetMenu,0,1,1,wxMenu,						wxMenu* GetMenu ( size_t menuIndex)
+GetMenuCount,0,0,0,size_t,						size_t GetMenuCount ( )
+GetMenuLabel,0,0,1,wxString,						wxString GetMenuLabel ( size_t pos)
+GetMenuLabelText,0,0,1,wxString,						wxString GetMenuLabelText ( size_t pos)
+Insert,0,0,3,bool,						bool Insert ( size_t pos,     wxMenu * menu,      wxString & title    )
+IsAttached,0,0,0,bool,						bool IsAttached ( )
+IsChecked,0,0,1,bool,						bool IsChecked ( int id)
+IsEnabled,0,0,1,bool,						bool IsEnabled ( int id)
+IsEnabledTop,0,0,1,bool,						bool IsEnabledTop ( size_t pos)
+MacGetCommonMenuBar,1,1,0,wxMenuBar,						static wxMenuBar* MacGetCommonMenuBar ( )
+MacSetCommonMenuBar,1,0,1,void,						static void MacSetCommonMenuBar ( wxMenuBar * menubar)
+OSXGetAppleMenu,0,1,0,wxMenu,						wxMenu* OSXGetAppleMenu ( )
+Refresh,0,0,2,void,						void Refresh ( bool eraseBackground = true,      wxRect * rect = NULL    )
+Remove,0,1,1,wxMenu,						wxMenu* Remove ( size_t pos)
+Replace,0,1,3,wxMenu,						wxMenu* Replace ( size_t pos,     wxMenu * menu,      wxString & title    )
+SetHelpString,0,0,2,void,						void SetHelpString ( int id,      wxString & helpString    )
+SetLabel,0,0,2,void,						void SetLabel ( int id,      wxString & label    )
+SetLabelTop,0,0,2,void,						void SetLabelTop ( size_t pos,      wxString & label    )
+SetMenuLabel,0,0,2,void,						void SetMenuLabel ( size_t pos,      wxString & label    )
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

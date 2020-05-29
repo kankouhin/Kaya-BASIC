@@ -1,0 +1,84 @@
+[CONSTS]
+wxART_ERROR
+wxART_QUESTION
+wxART_WARNING
+wxART_INFORMATION
+wxART_ADD_BOOKMARK
+wxART_DEL_BOOKMARK
+wxART_HELP_SIDE_PANEL
+wxART_HELP_SETTINGS
+wxART_HELP_BOOK
+wxART_HELP_FOLDER
+wxART_HELP_PAGE
+wxART_GO_BACK
+wxART_GO_FORWARD
+wxART_GO_UP
+wxART_GO_DOWN
+wxART_GO_TO_PARENT
+wxART_GO_HOME
+wxART_GOTO_FIRST
+wxART_GOTO_LAST
+wxART_PRINT
+wxART_HELP
+wxART_TIP
+wxART_REPORT_VIEW
+wxART_LIST_VIEW
+wxART_NEW_DIR
+wxART_FOLDER
+wxART_FOLDER_OPEN
+wxART_GO_DIR_UP
+wxART_EXECUTABLE_FILE
+wxART_NORMAL_FILE
+wxART_TICK_MARK
+wxART_CROSS_MARK
+wxART_MISSING_IMAGE
+wxART_NEW
+wxART_FILE_OPEN
+wxART_FILE_SAVE
+wxART_FILE_SAVE_AS
+wxART_DELETE
+wxART_COPY
+wxART_CUT
+wxART_PASTE
+wxART_UNDO
+wxART_REDO
+wxART_PLUS
+wxART_MINUS
+wxART_CLOSE
+wxART_QUIT
+wxART_FIND
+wxART_FIND_AND_REPLACE
+wxART_FULL_SCREEN
+wxART_EDIT
+wxART_HARDDISK
+wxART_FLOPPY
+wxART_CDROM
+wxART_REMOVABLE
+wxART_TOOLBAR
+wxART_MENU
+wxART_BUTTON
+wxART_FRAME_ICON
+wxART_CMN_DIALOG
+wxART_HELP_BROWSER
+wxART_MESSAGE_BOX
+wxART_OTHER
+[METHODS]
+<wx/artprov.h>
+CreateBitmap,0,0,wxBitmap,						wxBitmap CreateBitmap (  wxArtID & id,      wxArtClient & client,      wxSize & size    )
+CreateIconBundle,0,0,wxIconBundle,						wxIconBundle CreateIconBundle (  wxArtID & id,      wxArtClient & client    )
+Delete,1,0,bool,						static bool Delete ( wxArtProvider * provider)
+GetBitmap,1,0,wxBitmap,						static wxBitmap GetBitmap (  wxArtID & id,      wxArtClient & client = wxART_OTHER,      wxSize & size = wxDefaultSize    )
+GetIcon,1,0,wxIcon,						static wxIcon GetIcon (  wxArtID & id,      wxArtClient & client = wxART_OTHER,      wxSize & size = wxDefaultSize    )
+GetIconBundle,1,0,wxIconBundle,						static wxIconBundle GetIconBundle (  wxArtID & id,      wxArtClient & client = wxART_OTHER    )
+GetMessageBoxIcon,1,0,wxIcon,						static wxIcon GetMessageBoxIcon ( int flags)
+GetMessageBoxIconId,1,0,wxArtID,						static wxArtID GetMessageBoxIconId ( int flags)
+GetNativeSizeHint,1,0,wxSize,						static wxSize GetNativeSizeHint (  wxArtClient & client)
+GetSizeHint,1,0,wxSize,						static wxSize GetSizeHint (  wxArtClient & client,     bool platform_default = false    )
+HasNativeProvider,1,0,bool,						static bool HasNativeProvider ( )
+Insert,1,0,void,						static void Insert ( wxArtProvider * provider)
+Pop,1,0,bool,						static bool Pop ( )
+Push,1,0,void,						static void Push ( wxArtProvider * provider)
+PushBack,1,0,void,						static void PushBack ( wxArtProvider * provider)
+Remove,1,0,bool,						static bool Remove ( wxArtProvider * provider)
+[INHERITS]
+wxObject

@@ -1,0 +1,29 @@
+[CONSTS]
+wxCB_READONLY
+wxCB_SORT
+wxTE_PROCESS_ENTER
+wxEVT_COMBOBOX
+wxEVT_TEXT
+wxEVT_TEXT_ENTER
+[METHODS]
+<wx/bmpcbox.h>
+Append,0,0,2,int,						int Append (  wxString & item,      wxBitmap & bitmap = wxNullBitmap    )
+Append,0,0,3,int,						int Append (  wxString & item,      wxBitmap & bitmap,     void * clientData    )
+Append,0,0,3,int,						int Append (  wxString & item,      wxBitmap & bitmap,     wxClientData * clientData    )
+Create,0,0,10,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & value,      wxPoint & pos,      wxSize & size,     int n,      wxString choices[],     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxBitmapComboBoxNameStr    )
+Create,0,0,9,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & value,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxBitmapComboBoxNameStr    )
+GetBitmapSize,0,0,0,wxSize,						wxSize GetBitmapSize ( )
+GetItemBitmap,0,0,1,wxBitmap,						wxBitmap GetItemBitmap ( unsigned int n)
+Insert,0,0,3,int,						int Insert (  wxString & item,      wxBitmap & bitmap,     unsigned int pos    )
+Insert,0,0,4,int,						int Insert (  wxString & item,      wxBitmap & bitmap,     unsigned int pos,     void * clientData    )
+Insert,0,0,4,int,						int Insert (  wxString & item,      wxBitmap & bitmap,     unsigned int pos,     wxClientData * clientData    )
+SetItemBitmap,0,0,2,void,						void SetItemBitmap ( unsigned int n,      wxBitmap & bitmap    )
+[INHERITS]
+wxComboBox
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxItemContainer
+wxItemContainerImmutable
+wxTextEntry

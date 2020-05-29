@@ -1,0 +1,13 @@
+[CONSTS]
+wxLI_HORIZONTAL
+wxLI_VERTICAL
+[METHODS]
+<wx/statline.h>
+Create,0,0,6,bool,						bool Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxLI_HORIZONTAL,      wxString & name = wxStaticLineNameStr    )
+GetDefaultSize,1,0,0,int,						static int GetDefaultSize ( )
+IsVertical,0,0,0,bool,						bool IsVertical ( )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

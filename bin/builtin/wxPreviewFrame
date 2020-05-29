@@ -1,0 +1,15 @@
+[CONSTS]
+[METHODS]
+<wx/print.h>
+CreateCanvas,0,0,0,void,						void CreateCanvas ( )
+CreateControlBar,0,0,0,void,						void CreateControlBar ( )
+Initialize,0,0,0,void,						void Initialize ( )
+InitializeWithModality,0,0,1,void,						void InitializeWithModality ( wxPreviewFrameModalityKind kind)
+OnCloseWindow,0,0,1,void,						void OnCloseWindow ( wxCloseEvent & event)
+[INHERITS]
+wxFrame
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

@@ -1,0 +1,24 @@
+[CONSTS]
+wxBU_LEFT
+wxBU_TOP
+wxBU_RIGHT
+wxBU_BOTTOM
+wxBU_EXACTFIT
+wxBU_NOTEXT
+wxBORDER_NONE
+wxEVT_BUTTON
+[METHODS]
+<wx/button.h>
+Create,0,0,8,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & label = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxButtonNameStr    )
+GetAuthNeeded,0,0,0,bool,						bool GetAuthNeeded ( )
+GetDefaultSize,1,0,1,wxSize,						static wxSize GetDefaultSize ( wxWindow * win = NULL)
+GetLabel,0,0,0,wxString,						wxString GetLabel ( )
+SetAuthNeeded,0,0,1,void,						void SetAuthNeeded ( bool needed = true)
+SetDefault,0,1,0,wxWindow,						wxWindow* SetDefault ( )
+SetLabel,0,0,1,void,						void SetLabel (  wxString & label)
+[INHERITS]
+wxAnyButton
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

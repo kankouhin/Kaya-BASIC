@@ -1,0 +1,26 @@
+[CONSTS]
+wxODCB_DCLICK_CYCLES
+wxODCB_STD_CONTROL_PAINT
+[METHODS]
+<wx/odcombo.h>
+Create,0,0,8,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & value = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxComboBoxNameStr    )
+Create,0,0,10,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & value,      wxPoint & pos,      wxSize & size,     int n,      wxString choices[],     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxComboBoxNameStr    )
+Create,0,0,9,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & value,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxComboBoxNameStr    )
+GetWidestItem,0,0,0,int,						int GetWidestItem ( )
+GetWidestItemWidth,0,0,0,int,						int GetWidestItemWidth ( )
+IsEmpty,0,0,0,bool,						bool IsEmpty ( )
+IsListEmpty,0,0,0,bool,						bool IsListEmpty ( )
+IsTextEmpty,0,0,0,bool,						bool IsTextEmpty ( )
+OnDrawBackground,0,0,4,void,						void OnDrawBackground ( wxDC & dc,      wxRect & rect,     int item,     int flags    )
+OnDrawItem,0,0,4,void,						void OnDrawItem ( wxDC & dc,      wxRect & rect,     int item,     int flags    )
+OnMeasureItem,0,0,1,wxCoord,						wxCoord OnMeasureItem ( size_t item)
+OnMeasureItemWidth,0,0,1,wxCoord,						wxCoord OnMeasureItemWidth ( size_t item)
+[INHERITS]
+wxComboCtrl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxTextEntry
+wxItemContainer
+wxItemContainerImmutable

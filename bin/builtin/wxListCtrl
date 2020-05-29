@@ -1,0 +1,137 @@
+[CONSTS]
+wxLC_LIST
+wxLC_REPORT
+wxLC_VIRTUAL
+wxLC_ICON
+wxLC_SMALL_ICON
+wxLC_ALIGN_TOP
+wxLC_ALIGN_LEFT
+wxLC_AUTOARRANGE
+wxLC_EDIT_LABELS
+wxLC_NO_HEADER
+wxLC_SINGLE_SEL
+wxLC_SORT_ASCENDING
+wxLC_SORT_DESCENDING
+wxLC_HRULES
+wxLC_VRULES
+wxEVT_LIST_BEGIN_DRAG
+wxEVT_LIST_BEGIN_RDRAG
+wxEVT_LIST_BEGIN_LABEL_EDIT
+wxEVT_LIST_END_LABEL_EDIT
+wxEVT_LIST_DELETE_ITEM
+wxEVT_LIST_DELETE_ALL_ITEMS
+wxEVT_LIST_ITEM_SELECTED
+wxEVT_LIST_ITEM_DESELECTED
+wxEVT_LIST_ITEM_ACTIVATED
+wxEVT_LIST_ITEM_FOCUSED
+wxEVT_LIST_ITEM_MIDDLE_CLICK
+wxEVT_LIST_ITEM_RIGHT_CLICK
+wxEVT_LIST_KEY_DOWN
+wxEVT_LIST_INSERT_ITEM
+wxEVT_LIST_COL_CLICK
+wxEVT_LIST_COL_RIGHT_CLICK
+wxEVT_LIST_COL_BEGIN_DRAG
+wxEVT_LIST_COL_DRAGGING
+wxEVT_LIST_COL_END_DRAG
+wxEVT_LIST_CACHE_HINT
+wxEVT_LIST_ITEM_CHECKED
+wxEVT_LIST_ITEM_UNCHECKED
+[METHODS]
+<wx/listctrl.h>
+AppendColumn,0,0,3,long,						long AppendColumn (  wxString & heading,     wxListColumnFormat format = wxLIST_FORMAT_LEFT,     int width = -1    )
+Arrange,0,0,1,bool,						bool Arrange ( int flag = wxLIST_ALIGN_DEFAULT)
+AssignImageList,0,0,2,void,						void AssignImageList ( wxImageList * imageList,     int which    )
+CheckItem,0,0,2,void,						void CheckItem ( long item,     bool check    )
+ClearAll,0,0,0,void,						void ClearAll ( )
+Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxLC_ICON,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxListCtrlNameStr    )
+DeleteAllColumns,0,0,0,bool,						bool DeleteAllColumns ( )
+DeleteAllItems,0,0,0,bool,						bool DeleteAllItems ( )
+DeleteColumn,0,0,1,bool,						bool DeleteColumn ( int col)
+DeleteItem,0,0,1,bool,						bool DeleteItem ( long item)
+EditLabel,0,1,2,wxTextCtrl,						wxTextCtrl* EditLabel ( long item,     wxClassInfo * textControlClass = wxCLASSINFO(wxTextCtrl)    )
+EnableAlternateRowColours,0,0,1,void,						void EnableAlternateRowColours ( bool enable = true)
+EnableBellOnNoMatch,0,0,1,void,						void EnableBellOnNoMatch ( bool on = true)
+EnableCheckBoxes,0,0,1,bool,						bool EnableCheckBoxes ( bool enable = true)
+EndEditLabel,0,0,1,bool,						bool EndEditLabel ( bool cancel)
+EnsureVisible,0,0,1,bool,						bool EnsureVisible ( long item)
+FindItem,0,0,3,long,						long FindItem ( long start,      wxString & str,     bool partial = false    )
+FindItem,0,0,2,long,						long FindItem ( long start,     wxUIntPtr data    )
+FindItem,0,0,3,long,						long FindItem ( long start,      wxPoint & pt,     int direction    )
+GetAlternateRowColour,0,0,0,wxColour,						wxColour GetAlternateRowColour ( )
+GetColumn,0,0,2,bool,						bool GetColumn ( int col,     wxListItem & item    )
+GetColumnCount,0,0,0,int,						int GetColumnCount ( )
+GetColumnIndexFromOrder,0,0,1,int,						int GetColumnIndexFromOrder ( int pos)
+GetColumnOrder,0,0,1,int,						int GetColumnOrder ( int col)
+GetColumnsOrder,0,0,0,wxArrayInt,						wxArrayInt GetColumnsOrder ( )
+GetColumnWidth,0,0,1,int,						int GetColumnWidth ( int col)
+GetCountPerPage,0,0,0,int,						int GetCountPerPage ( )
+GetEditControl,0,1,0,wxTextCtrl,						wxTextCtrl* GetEditControl ( )
+GetImageList,0,1,1,wxImageList,						wxImageList* GetImageList ( int which)
+GetItem,0,0,1,bool,						bool GetItem ( wxListItem & info)
+GetItemBackgroundColour,0,0,1,wxColour,						wxColour GetItemBackgroundColour ( long item)
+GetItemCount,0,0,0,int,						int GetItemCount ( )
+GetItemData,0,0,1,wxUIntPtr,						wxUIntPtr GetItemData ( long item)
+GetItemFont,0,0,1,wxFont,						wxFont GetItemFont ( long item)
+GetItemPosition,0,0,2,bool,						bool GetItemPosition ( long item,     wxPoint & pos    )
+GetItemRect,0,0,3,bool,						bool GetItemRect ( long item,     wxRect & rect,     int code = wxLIST_RECT_BOUNDS    )
+GetItemSpacing,0,0,0,wxSize,						wxSize GetItemSpacing ( )
+GetItemState,0,0,2,int,						int GetItemState ( long item,     long stateMask    )
+GetItemText,0,0,2,wxString,						wxString GetItemText ( long item,     int col = 0    )
+GetItemTextColour,0,0,1,wxColour,						wxColour GetItemTextColour ( long item)
+GetNextItem,0,0,3,long,						long GetNextItem ( long item,     int geometry = wxLIST_NEXT_ALL,     int state = wxLIST_STATE_DONTCARE    )
+GetSelectedItemCount,0,0,0,int,						int GetSelectedItemCount ( )
+GetSubItemRect,0,0,4,bool,						bool GetSubItemRect ( long item,     long subItem,     wxRect & rect,     int code = wxLIST_RECT_BOUNDS    )
+GetTextColour,0,0,0,wxColour,						wxColour GetTextColour ( )
+GetTopItem,0,0,0,long,						long GetTopItem ( )
+GetViewRect,0,0,0,wxRect,						wxRect GetViewRect ( )
+HasCheckBoxes,0,0,0,bool,						bool HasCheckBoxes ( )
+HitTest,0,0,3,long,						long HitTest (  wxPoint & point,     int & flags,     long * ptrSubItem = NULL    )
+InReportView,0,0,0,bool,						bool InReportView ( )
+InsertColumn,0,0,2,long,						long InsertColumn ( long col,      wxListItem & info    )
+InsertColumn,0,0,4,long,						long InsertColumn ( long col,      wxString & heading,     int format = wxLIST_FORMAT_LEFT,     int width = wxLIST_AUTOSIZE    )
+InsertItem,0,0,1,long,						long InsertItem ( wxListItem & info)
+InsertItem,0,0,2,long,						long InsertItem ( long index,      wxString & label    )
+InsertItem,0,0,2,long,						long InsertItem ( long index,     int imageIndex    )
+InsertItem,0,0,3,long,						long InsertItem ( long index,      wxString & label,     int imageIndex    )
+IsEmpty,0,0,0,bool,						bool IsEmpty ( )
+IsItemChecked,0,0,1,bool,						bool IsItemChecked ( long item)
+IsVirtual,0,0,0,bool,						bool IsVirtual ( )
+IsVisible,0,0,1,bool,						bool IsVisible ( long item)
+OnGetItemAttr,0,1,1,wxItemAttr,						wxItemAttr* OnGetItemAttr ( long item)
+OnGetItemColumnAttr,0,1,2,wxItemAttr,						wxItemAttr* OnGetItemColumnAttr ( long item,     long column    )
+OnGetItemColumnImage,0,0,2,int,						int OnGetItemColumnImage ( long item,     long column    )
+OnGetItemImage,0,0,1,int,						int OnGetItemImage ( long item)
+OnGetItemIsChecked,0,0,1,bool,						bool OnGetItemIsChecked ( long item)
+OnGetItemText,0,0,2,wxString,						wxString OnGetItemText ( long item,     long column    )
+RefreshItem,0,0,1,void,						void RefreshItem ( long item)
+RefreshItems,0,0,2,void,						void RefreshItems ( long itemFrom,     long itemTo    )
+ScrollList,0,0,2,bool,						bool ScrollList ( int dx,     int dy    )
+SetAlternateRowColour,0,0,1,void,						void SetAlternateRowColour (  wxColour & colour)
+SetBackgroundColour,0,0,1,bool,						bool SetBackgroundColour (  wxColour & col)
+SetColumn,0,0,2,bool,						bool SetColumn ( int col,     wxListItem & item    )
+SetColumnsOrder,0,0,1,bool,						bool SetColumnsOrder (  wxArrayInt & orders)
+SetColumnWidth,0,0,2,bool,						bool SetColumnWidth ( int col,     int width    )
+SetHeaderAttr,0,0,1,bool,						bool SetHeaderAttr (  wxItemAttr & attr)
+SetImageList,0,0,2,void,						void SetImageList ( wxImageList * imageList,     int which    )
+SetItem,0,0,1,bool,						bool SetItem ( wxListItem & info)
+SetItem,0,0,4,bool,						bool SetItem ( long index,     int column,      wxString & label,     int imageId = -1    )
+SetItemBackgroundColour,0,0,2,void,						void SetItemBackgroundColour ( long item,      wxColour & col    )
+SetItemColumnImage,0,0,3,bool,						bool SetItemColumnImage ( long item,     long column,     int image    )
+SetItemCount,0,0,1,void,						void SetItemCount ( long count)
+SetItemData,0,0,2,bool,						bool SetItemData ( long item,     long data    )
+SetItemFont,0,0,2,void,						void SetItemFont ( long item,      wxFont & font    )
+SetItemImage,0,0,3,bool,						bool SetItemImage ( long item,     int image,     int selImage = -1    )
+SetItemPosition,0,0,2,bool,						bool SetItemPosition ( long item,      wxPoint & pos    )
+SetItemPtrData,0,0,2,bool,						bool SetItemPtrData ( long item,     wxUIntPtr data    )
+SetItemState,0,0,3,bool,						bool SetItemState ( long item,     long state,     long stateMask    )
+SetItemText,0,0,2,void,						void SetItemText ( long item,      wxString & text    )
+SetItemTextColour,0,0,2,void,						void SetItemTextColour ( long item,      wxColour & col    )
+SetSingleStyle,0,0,2,void,						void SetSingleStyle ( long style,     bool add = true    )
+SetTextColour,0,0,1,void,						void SetTextColour (  wxColour & col)
+SetWindowStyleFlag,0,0,1,void,						void SetWindowStyleFlag ( long style)
+SortItems,0,0,2,bool,						bool SortItems ( wxListCtrlCompare fnSortCallBack,     wxIntPtr data    )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

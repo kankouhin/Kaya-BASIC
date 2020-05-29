@@ -1,0 +1,9 @@
+[CONSTS]
+[METHODS]
+<wx/nonownedwnd.h>
+SetShape,0,0,1,bool,						bool SetShape (  wxRegion & region)
+SetShape,0,0,1,bool,						bool SetShape (  wxGraphicsPath & path)
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

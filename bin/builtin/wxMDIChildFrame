@@ -1,0 +1,16 @@
+[CONSTS]
+[METHODS]
+<wx/mdi.h>
+Activate,0,0,0,void,						void Activate ( )
+Create,0,0,7,bool,						bool Create ( wxMDIParentFrame * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_FRAME_STYLE,      wxString & name = wxFrameNameStr    )
+GetMDIParent,0,1,0,wxMDIParentFrame,						wxMDIParentFrame* GetMDIParent ( )
+IsAlwaysMaximized,0,0,0,bool,						bool IsAlwaysMaximized ( )
+Maximize,0,0,1,void,						void Maximize ( bool maximize = true)
+Restore,0,0,0,void,						void Restore ( )
+[INHERITS]
+wxFrame
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

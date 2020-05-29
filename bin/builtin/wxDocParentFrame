@@ -1,0 +1,12 @@
+[CONSTS]
+[METHODS]
+<wx/docview.h>
+Create,0,0,8,bool,						bool Create ( wxDocManager * manager,     wxFrame * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 541072960,      wxString & name = wxFrameNameStr    )
+GetDocumentManager,0,1,0,wxDocManager,						wxDocManager* GetDocumentManager ( )
+[INHERITS]
+wxFrame
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

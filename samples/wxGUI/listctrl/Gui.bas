@@ -35,11 +35,11 @@ Callback Function myCompareFunction(item1 As Long, item2 As Long, sortData As Lo
 End Function
 
 Sub OnItemSelected(ByRef ev As wxListEvent)
-	f.SetTitle( ev.GetText() )
+	f.SetTitle( ev.GetText )
 End Sub
 
 Sub OnColumnClick(ByRef ev As wxListEvent)
-	colSort = ev.GetColumn()
+	colSort = ev.GetColumn
 	arSort(colSort) *= -1
 	listctrl.SortItems( AddressOf myCompareFunction, 0 )
 End Sub

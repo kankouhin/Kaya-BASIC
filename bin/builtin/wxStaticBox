@@ -1,0 +1,11 @@
+[CONSTS]
+[METHODS]
+<wx/statbox.h>
+Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxStaticBoxNameStr    )
+Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID id,     wxWindow * label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxStaticBoxNameStr    )
+Enable,0,0,1,bool,						bool Enable ( bool enable = true)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

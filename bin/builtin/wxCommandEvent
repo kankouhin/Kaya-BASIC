@@ -1,0 +1,47 @@
+[CONSTS]
+wxEVT_BUTTON
+wxEVT_CHECKBOX
+wxEVT_CHOICE
+wxEVT_COMBOBOX
+wxEVT_LISTBOX
+wxEVT_LISTBOX_DCLICK
+wxEVT_CHECKLISTBOX
+wxEVT_MENU
+wxEVT_MENU
+wxEVT_RADIOBOX
+wxEVT_RADIOBUTTON
+wxEVT_SCROLLBAR
+wxEVT_SLIDER
+wxEVT_TEXT
+wxEVT_TEXT_ENTER
+wxEVT_TEXT_MAXLEN
+wxEVT_TOGGLEBUTTON
+wxEVT_TOOL
+wxEVT_TOOL
+wxEVT_TOOL_RCLICKED
+wxEVT_TOOL_RCLICKED
+wxEVT_TOOL_ENTER
+wxEVT_COMMAND_LEFT_CLICK
+wxEVT_COMMAND_LEFT_DCLICK
+wxEVT_COMMAND_RIGHT_CLICK
+wxEVT_COMMAND_SET_FOCUS
+wxEVT_COMMAND_KILL_FOCUS
+wxEVT_COMMAND_ENTER
+[METHODS]
+<wx/event.h>
+GetClientData,0,1,0,void,						void* GetClientData ( )
+GetClientObject,0,1,0,wxClientData,						wxClientData* GetClientObject ( )
+GetExtraLong,0,0,0,long,						long GetExtraLong ( )
+GetInt,0,0,0,int,						int GetInt ( )
+GetSelection,0,0,0,int,						int GetSelection ( )
+GetString,0,0,0,wxString,						wxString GetString ( )
+IsChecked,0,0,0,bool,						bool IsChecked ( )
+IsSelection,0,0,0,bool,						bool IsSelection ( )
+SetClientData,0,0,1,void,						void SetClientData ( void * clientData)
+SetClientObject,0,0,1,void,						void SetClientObject ( wxClientData * clientObject)
+SetExtraLong,0,0,1,void,						void SetExtraLong ( long extraLong)
+SetInt,0,0,1,void,						void SetInt ( int intCommand)
+SetString,0,0,1,void,						void SetString (  wxString & string)
+[INHERITS]
+wxEvent
+wxObject

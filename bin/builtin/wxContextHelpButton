@@ -1,0 +1,11 @@
+[CONSTS]
+[METHODS]
+<wx/cshelp.h>
+[INHERITS]
+wxBitmapButton
+wxButton
+wxAnyButton
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

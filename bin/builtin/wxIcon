@@ -1,0 +1,18 @@
+[CONSTS]
+[METHODS]
+<wx/icon.h>
+ConvertToDisabled,0,0,1,wxIcon,						wxIcon ConvertToDisabled ( unsigned char brightness = 255)
+CopyFromBitmap,0,0,1,void,						void CopyFromBitmap (  wxBitmap & bmp)
+CreateFromHICON,0,0,1,bool,						bool CreateFromHICON ( WXHICON icon)
+GetDepth,0,0,0,int,						int GetDepth ( )
+GetHeight,0,0,0,int,						int GetHeight ( )
+GetWidth,0,0,0,int,						int GetWidth ( )
+IsOk,0,0,0,bool,						bool IsOk ( )
+LoadFile,0,0,4,bool,						bool LoadFile (  wxString & name,     wxBitmapType type = wxICON_DEFAULT_TYPE,     int desiredWidth = -1,     int desiredHeight = -1    )
+operator=,0,0,1,wxIcon,						wxIcon&  operator= (  wxIcon & icon)
+SetDepth,0,0,1,void,						void SetDepth ( int depth)
+SetHeight,0,0,1,void,						void SetHeight ( int height)
+SetWidth,0,0,1,void,						void SetWidth ( int width)
+[INHERITS]
+wxGDIObject
+wxObject

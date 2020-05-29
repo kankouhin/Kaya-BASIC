@@ -1,0 +1,40 @@
+[CONSTS]
+wxCB_SIMPLE
+wxCB_DROPDOWN
+wxCB_READONLY
+wxCB_SORT
+wxTE_PROCESS_ENTER
+wxEVT_COMBOBOX
+wxEVT_TEXT
+wxEVT_TEXT_ENTER
+wxEVT_COMBOBOX_DROPDOWN
+wxEVT_COMBOBOX_CLOSEUP
+[METHODS]
+<wx/combobox.h>
+Create,0,0,10,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & value = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     int n = 0,      wxString choices[] = ( wxString *) NULL,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxComboBoxNameStr    )
+Create,0,0,9,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & value,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxComboBoxNameStr    )
+Dismiss,0,0,0,void,						void Dismiss ( )
+FindString,0,0,2,int,						int FindString (  wxString & string,     bool caseSensitive = false    )
+GetCount,0,0,0,int,						unsigned int GetCount ( )
+GetCurrentSelection,0,0,0,int,						int GetCurrentSelection ( )
+GetInsertionPoint,0,0,0,long,						long GetInsertionPoint ( )
+GetSelection,0,0,0,int,						int GetSelection ( )
+GetSelection,0,0,2,void,						void GetSelection ( long * from,     long * to    )
+GetString,0,0,1,wxString,						wxString GetString ( unsigned int n)
+GetStringSelection,0,0,0,wxString,						wxString GetStringSelection ( )
+IsEmpty,0,0,0,bool,						bool IsEmpty ( )
+IsListEmpty,0,0,0,bool,						bool IsListEmpty ( )
+IsTextEmpty,0,0,0,bool,						bool IsTextEmpty ( )
+Popup,0,0,0,void,						void Popup ( )
+SetSelection,0,0,2,void,						void SetSelection ( long from,     long to    )
+SetSelection,0,0,1,void,						void SetSelection ( int n)
+SetString,0,0,2,void,						void SetString ( unsigned int n,      wxString & text    )
+SetValue,0,0,1,void,						void SetValue (  wxString & text)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxItemContainer
+wxItemContainerImmutable
+wxTextEntry

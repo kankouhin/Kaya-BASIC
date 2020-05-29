@@ -1,0 +1,27 @@
+[CONSTS]
+wxTE_PROCESS_TAB
+wxTE_NOHIDESEL
+wxTE_LEFT
+wxTE_CENTRE
+wxTE_RIGHT
+wxTE_CAPITALIZE
+wxEVT_SEARCH
+wxEVT_SEARCH_CANCEL
+[METHODS]
+<wx/srchctrl.h>
+Create,0,0,8,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & value = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxSearchCtrlNameStr    )
+GetDescriptiveText,0,0,0,wxString,						wxString GetDescriptiveText ( )
+GetMenu,0,1,0,wxMenu,						wxMenu* GetMenu ( )
+IsCancelButtonVisible,0,0,0,bool,						bool IsCancelButtonVisible ( )
+IsSearchButtonVisible,0,0,0,bool,						bool IsSearchButtonVisible ( )
+SetDescriptiveText,0,0,1,void,						void SetDescriptiveText (  wxString & text)
+SetMenu,0,0,1,void,						void SetMenu ( wxMenu * menu)
+ShowCancelButton,0,0,1,void,						void ShowCancelButton ( bool show)
+ShowSearchButton,0,0,1,void,						void ShowSearchButton ( bool show)
+[INHERITS]
+wxTextCtrl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxTextEntry

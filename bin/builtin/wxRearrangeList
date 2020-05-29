@@ -1,0 +1,18 @@
+[CONSTS]
+[METHODS]
+<wx/rearrangectrl.h>
+CanMoveCurrentDown,0,0,0,bool,						bool CanMoveCurrentDown ( )
+CanMoveCurrentUp,0,0,0,bool,						bool CanMoveCurrentUp ( )
+Create,0,0,9,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos,      wxSize & size,      wxArrayInt & order,      wxArrayString & items,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxRearrangeListNameStr    )
+GetCurrentOrder,0,0,0,wxArrayInt,						wxArrayInt&  GetCurrentOrder ( )
+MoveCurrentDown,0,0,0,bool,						bool MoveCurrentDown ( )
+MoveCurrentUp,0,0,0,bool,						bool MoveCurrentUp ( )
+[INHERITS]
+wxCheckListBox
+wxListBox
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxItemContainer
+wxItemContainerImmutable

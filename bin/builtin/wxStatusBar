@@ -1,0 +1,33 @@
+[CONSTS]
+wxSTB_SIZEGRIP
+wxSTB_SHOW_TIPS
+wxSTB_ELLIPSIZE_START
+wxSTB_ELLIPSIZE_MIDDLE
+wxSTB_ELLIPSIZE_END
+wxSTB_DEFAULT_STYLE
+wxSB_NORMAL
+wxSB_FLAT
+wxSB_RAISED
+wxSB_SUNKEN
+[METHODS]
+<wx/statusbr.h>
+Create,0,0,4,bool,						bool Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,     long style = wxSTB_DEFAULT_STYLE,      wxString & name = wxStatusBarNameStr    )
+GetBorders,0,0,0,wxSize,						wxSize GetBorders ( )
+GetField,0,0,1,wxStatusBarPane,						wxStatusBarPane&  GetField ( int n)
+GetFieldRect,0,0,2,bool,						bool GetFieldRect ( int i,     wxRect & rect    )
+GetFieldsCount,0,0,0,int,						int GetFieldsCount ( )
+GetStatusStyle,0,0,1,int,						int GetStatusStyle ( int n)
+GetStatusText,0,0,1,wxString,						wxString GetStatusText ( int i = 0)
+GetStatusWidth,0,0,1,int,						int GetStatusWidth ( int n)
+PopStatusText,0,0,1,void,						void PopStatusText ( int field = 0)
+PushStatusText,0,0,2,void,						void PushStatusText (  wxString & string,     int field = 0    )
+SetFieldsCount,0,0,2,void,						void SetFieldsCount ( int number = 1,      int * widths = NULL    )
+SetMinHeight,0,0,1,void,						void SetMinHeight ( int height)
+SetStatusStyles,0,0,2,void,						void SetStatusStyles ( int n,      int * styles    )
+SetStatusText,0,0,2,void,						void SetStatusText (  wxString & text,     int i = 0    )
+SetStatusWidths,0,0,2,void,						void SetStatusWidths ( int n,      int * widths_field    )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

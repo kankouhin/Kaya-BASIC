@@ -1,0 +1,10 @@
+[CONSTS]
+[METHODS]
+<wx/event.h>
+Allow,0,0,0,void,						void Allow ( )
+IsAllowed,0,0,0,bool,						bool IsAllowed ( )
+Veto,0,0,0,void,						void Veto ( )
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

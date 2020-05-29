@@ -1,0 +1,15 @@
+[CONSTS]
+[METHODS]
+<wx/aui/floatpane.h>
+GetOwnerManager,0,1,0,wxAuiManager,						wxAuiManager* GetOwnerManager ( )
+OnMoveFinished,0,0,0,void,						void OnMoveFinished ( )
+OnMoveStart,0,0,0,void,						void OnMoveStart ( )
+OnMoving,0,0,2,void,						void OnMoving (  wxRect & windowRect,     wxDirection dir    )
+SetPaneWindow,0,0,1,void,						void SetPaneWindow (  wxAuiPaneInfo & pane)
+[INHERITS]
+wxFrame
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

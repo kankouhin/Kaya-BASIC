@@ -1,0 +1,16 @@
+[CONSTS]
+[METHODS]
+<wx/docview.h>
+GetDocument,0,1,0,wxDocument,						wxDocument* GetDocument ( )
+GetView,0,1,0,wxView,						wxView* GetView ( )
+SetDocument,0,0,1,void,						void SetDocument ( wxDocument * doc)
+SetView,0,0,1,void,						void SetView ( wxView * view)
+,0,1,0,wxDocument,						wxDocument* m_childDocument
+,0,1,0,wxView,						wxView* m_childView
+[INHERITS]
+wxFrame
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

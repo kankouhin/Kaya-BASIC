@@ -1,0 +1,15 @@
+[CONSTS]
+[METHODS]
+<wx/html/helpfrm.h>
+AddToolbarButtons,0,0,2,void,						void AddToolbarButtons ( wxToolBar * toolBar,     int style    )
+Create,0,0,6,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & title = wxEmptyString,     int style = wxHF_DEFAULT_STYLE,     wxConfigBase * config = NULL,      wxString & rootpath = wxEmptyString    )
+GetController,0,1,0,wxHtmlHelpController,						wxHtmlHelpController* GetController ( )
+SetController,0,0,1,void,						void SetController ( wxHtmlHelpController * controller)
+SetTitleFormat,0,0,1,void,						void SetTitleFormat (  wxString & format)
+[INHERITS]
+wxFrame
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

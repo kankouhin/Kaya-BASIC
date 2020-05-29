@@ -1,0 +1,19 @@
+[CONSTS]
+[METHODS]
+<wx/imaglist.h>
+Add,0,0,2,int,						int Add (  wxBitmap & bitmap,      wxBitmap & mask = wxNullBitmap    )
+Add,0,0,2,int,						int Add (  wxBitmap & bitmap,      wxColour & maskColour    )
+Add,0,0,1,int,						int Add (  wxIcon & icon)
+Create,0,0,4,bool,						bool Create ( int width,     int height,     bool mask = true,     int initialCount = 1    )
+Draw,0,0,6,bool,						bool Draw ( int index,     wxDC & dc,     int x,     int y,     int flags = wxIMAGELIST_DRAW_NORMAL,     bool solidBackground = false    )
+GetBitmap,0,0,1,wxBitmap,						wxBitmap GetBitmap ( int index)
+GetIcon,0,0,1,wxIcon,						wxIcon GetIcon ( int index)
+GetImageCount,0,0,0,int,						int GetImageCount ( )
+GetSize,0,0,3,bool,						bool GetSize ( int index,     int & width,     int & height    )
+GetSize,0,0,0,wxSize,						wxSize GetSize ( )
+Remove,0,0,1,bool,						bool Remove ( int index)
+RemoveAll,0,0,0,bool,						bool RemoveAll ( )
+Replace,0,0,3,bool,						bool Replace ( int index,      wxBitmap & bitmap,      wxBitmap & mask = wxNullBitmap    )
+Replace,0,0,2,bool,						bool Replace ( int index,      wxIcon & icon    )
+[INHERITS]
+wxObject

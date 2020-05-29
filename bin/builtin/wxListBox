@@ -1,0 +1,43 @@
+[CONSTS]
+wxLB_SINGLE
+wxLB_MULTIPLE
+wxLB_EXTENDED
+wxLB_HSCROLL
+wxLB_ALWAYS_SB
+wxLB_NEEDED_SB
+wxLB_NO_SB
+wxLB_SORT
+wxEVT_LISTBOX
+wxEVT_LISTBOX_DCLICK
+[METHODS]
+<wx/listbox.h>
+Create,0,0,9,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     int n = 0,      wxString choices[] = NULL,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxListBoxNameStr    )
+Create,0,0,8,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxListBoxNameStr    )
+Deselect,0,0,1,void,						void Deselect ( int n)
+EnsureVisible,0,0,1,void,						void EnsureVisible ( int n)
+FindString,0,0,2,int,						int FindString (  wxString & string,     bool caseSensitive = false    )
+GetCount,0,0,0,int,						unsigned int GetCount ( )
+GetCountPerPage,0,0,0,int,						int GetCountPerPage ( )
+GetSelection,0,0,0,int,						int GetSelection ( )
+GetSelections,0,0,1,int,						int GetSelections ( wxArrayInt & selections)
+GetString,0,0,1,wxString,						wxString GetString ( unsigned int n)
+GetTopItem,0,0,0,int,						int GetTopItem ( )
+HitTest,0,0,1,int,						int HitTest (  wxPoint & point)
+HitTest,0,0,2,int,						int HitTest ( int x,     int y    )
+InsertItems,0,0,3,void,						void InsertItems ( unsigned int nItems,      wxString * items,     unsigned int pos    )
+InsertItems,0,0,2,void,						void InsertItems (  wxArrayString & items,     unsigned int pos    )
+IsSelected,0,0,1,bool,						bool IsSelected ( int n)
+IsSorted,0,0,0,bool,						bool IsSorted ( )
+SetFirstItem,0,0,1,void,						void SetFirstItem ( int n)
+SetFirstItem,0,0,1,void,						void SetFirstItem (  wxString & string)
+SetSelection,0,0,1,void,						void SetSelection ( int n)
+SetString,0,0,2,void,						void SetString ( unsigned int n,      wxString & string    )
+SetStringSelection,0,0,2,bool,						bool SetStringSelection (  wxString & s,     bool select    )
+SetStringSelection,0,0,1,bool,						bool SetStringSelection (  wxString & s)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxItemContainer
+wxItemContainerImmutable

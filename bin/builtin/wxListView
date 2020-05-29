@@ -1,0 +1,17 @@
+[CONSTS]
+[METHODS]
+<wx/listctrl.h>
+ClearColumnImage,0,0,1,void,						void ClearColumnImage ( int col)
+Focus,0,0,1,void,						void Focus ( long index)
+GetFirstSelected,0,0,0,long,						long GetFirstSelected ( )
+GetFocusedItem,0,0,0,long,						long GetFocusedItem ( )
+GetNextSelected,0,0,1,long,						long GetNextSelected ( long item)
+IsSelected,0,0,1,bool,						bool IsSelected ( long index)
+Select,0,0,2,void,						void Select ( long n,     bool on = true    )
+SetColumnImage,0,0,2,void,						void SetColumnImage ( int col,     int image    )
+[INHERITS]
+wxListCtrl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

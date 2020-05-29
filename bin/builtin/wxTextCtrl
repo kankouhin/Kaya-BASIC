@@ -1,0 +1,61 @@
+[CONSTS]
+wxTE_PROCESS_ENTER
+wxTE_PROCESS_TAB
+wxTE_MULTILINE
+wxTE_PASSWORD
+wxTE_READONLY
+wxTE_RICH
+wxTE_RICH2
+wxTE_AUTO_URL
+wxTE_NOHIDESEL
+wxHSCROLL
+wxTE_NO_VSCROLL
+wxTE_LEFT
+wxTE_CENTRE
+wxTE_RIGHT
+wxTE_DONTWRAP
+wxTE_CHARWRAP
+wxTE_WORDWRAP
+wxTE_BESTWRAP
+wxTE_CAPITALIZE
+wxEVT_TEXT
+wxEVT_TEXT_ENTER
+[METHODS]
+<wx/textctrl.h>
+Create,0,0,8,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & value = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxTextCtrlNameStr    )
+DiscardEdits,0,0,0,void,						void DiscardEdits ( )
+EmulateKeyPress,0,0,1,bool,						bool EmulateKeyPress (  wxKeyEvent & event)
+GetDefaultStyle,0,0,0,wxTextAttr,						wxTextAttr&  GetDefaultStyle ( )
+GetLineLength,0,0,1,int,						int GetLineLength ( long lineNo)
+GetLineText,0,0,1,wxString,						wxString GetLineText ( long lineNo)
+GetNumberOfLines,0,0,0,int,						int GetNumberOfLines ( )
+GetStyle,0,0,2,bool,						bool GetStyle ( long position,     wxTextAttr & style    )
+HitTest,0,0,2,wxTextCtrlHitTestResult,						wxTextCtrlHitTestResult HitTest (  wxPoint & pt,     long * pos    )
+HitTest,0,0,3,wxTextCtrlHitTestResult,						wxTextCtrlHitTestResult HitTest (  wxPoint & pt,     wxTextCoord * col,     wxTextCoord * row    )
+IsModified,0,0,0,bool,						bool IsModified ( )
+IsMultiLine,0,0,0,bool,						bool IsMultiLine ( )
+IsSingleLine,0,0,0,bool,						bool IsSingleLine ( )
+LoadFile,0,0,2,bool,						bool LoadFile (  wxString & filename,     int fileType = wxTEXT_TYPE_ANY    )
+MarkDirty,0,0,0,void,						void MarkDirty ( )
+OnDropFiles,0,0,1,void,						void OnDropFiles ( wxDropFilesEvent & event)
+operator<<,0,0,1,wxTextCtrl,						wxTextCtrl&  operator<< (  wxString & s)
+operator<<,0,0,1,wxTextCtrl,						wxTextCtrl&  operator<< ( int i)
+operator<<,0,0,1,wxTextCtrl,						wxTextCtrl&  operator<< ( long i)
+operator<<,0,0,1,wxTextCtrl,						wxTextCtrl&  operator<< ( float f)
+operator<<,0,0,1,wxTextCtrl,						wxTextCtrl&  operator<< ( double d)
+operator<<,0,0,1,wxTextCtrl,						wxTextCtrl&  operator<< ( char c)
+operator<<,0,0,1,wxTextCtrl,						wxTextCtrl&  operator<< ( wchar_t c)
+PositionToCoords,0,0,1,wxPoint,						wxPoint PositionToCoords ( long pos)
+PositionToXY,0,0,3,bool,						bool PositionToXY ( long pos,     long * x,     long * y    )
+SaveFile,0,0,2,bool,						bool SaveFile (  wxString & filename = wxEmptyString,     int fileType = wxTEXT_TYPE_ANY    )
+SetDefaultStyle,0,0,1,bool,						bool SetDefaultStyle (  wxTextAttr & style)
+SetModified,0,0,1,void,						void SetModified ( bool modified)
+SetStyle,0,0,3,bool,						bool SetStyle ( long start,     long end,      wxTextAttr & style    )
+ShowPosition,0,0,1,void,						void ShowPosition ( long pos)
+XYToPosition,0,0,2,long,						long XYToPosition ( long x,     long y    )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxTextEntry

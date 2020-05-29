@@ -1,0 +1,143 @@
+[CONSTS]
+wxTR_EDIT_LABELS
+wxTR_NO_BUTTONS
+wxTR_HAS_BUTTONS
+wxTR_TWIST_BUTTONS
+wxTR_NO_LINES
+wxTR_FULL_ROW_HIGHLIGHT
+wxTR_LINES_AT_ROOT
+wxTR_HIDE_ROOT
+wxTR_ROW_LINES
+wxTR_HAS_VARIABLE_ROW_HEIGHT
+wxTR_SINGLE
+wxTR_MULTIPLE
+wxTR_DEFAULT_STYLE
+wxEVT_TREE_BEGIN_DRAG
+wxEVT_TREE_BEGIN_RDRAG
+wxEVT_TREE_END_DRAG
+wxEVT_TREE_BEGIN_LABEL_EDIT
+wxEVT_TREE_END_LABEL_EDIT
+wxEVT_TREE_DELETE_ITEM
+wxEVT_TREE_GET_INFO
+wxEVT_TREE_SET_INFO
+wxEVT_TREE_ITEM_ACTIVATED
+wxEVT_TREE_ITEM_COLLAPSED
+wxEVT_TREE_ITEM_COLLAPSING
+wxEVT_TREE_ITEM_EXPANDED
+wxEVT_TREE_ITEM_EXPANDING
+wxEVT_TREE_ITEM_RIGHT_CLICK
+wxEVT_TREE_ITEM_MIDDLE_CLICK
+wxEVT_TREE_SEL_CHANGED
+wxEVT_TREE_SEL_CHANGING
+wxEVT_TREE_KEY_DOWN
+wxEVT_TREE_ITEM_GETTOOLTIP
+wxEVT_CONTEXT_MENU
+wxEVT_TREE_STATE_IMAGE_CLICK
+wxTREE_HITTEST_ABOVE
+wxTREE_HITTEST_BELOW
+wxTREE_HITTEST_NOWHERE
+wxTREE_HITTEST_ONITEMBUTTON
+wxTREE_HITTEST_ONITEMICON
+wxTREE_HITTEST_ONITEMINDENT
+wxTREE_HITTEST_ONITEMLABEL
+wxTREE_HITTEST_ONITEMRIGHT
+wxTREE_HITTEST_ONITEMSTATEICON
+wxTREE_HITTEST_TOLEFT
+wxTREE_HITTEST_TORIGHT
+wxTREE_ITEMSTATE_NONE
+wxTREE_ITEMSTATE_NEXT
+wxTREE_ITEMSTATE_PREV
+[METHODS]
+<wx/treectrl.h>
+AddRoot,0,0,4,wxTreeItemId,						wxTreeItemId AddRoot (  wxString & text,     int image = -1,     int selImage = -1,     wxTreeItemData * data = NULL    )
+AppendItem,0,0,5,wxTreeItemId,						wxTreeItemId AppendItem (  wxTreeItemId & parent,      wxString & text,     int image = -1,     int selImage = -1,     wxTreeItemData * data = NULL    )
+AssignButtonsImageList,0,0,1,void,						void AssignButtonsImageList ( wxImageList * imageList)
+AssignImageList,0,0,1,void,						void AssignImageList ( wxImageList * imageList)
+AssignStateImageList,0,0,1,void,						void AssignStateImageList ( wxImageList * imageList)
+ClearFocusedItem,0,0,0,void,						void ClearFocusedItem ( )
+Collapse,0,0,1,void,						void Collapse (  wxTreeItemId & item)
+CollapseAll,0,0,0,void,						void CollapseAll ( )
+CollapseAllChildren,0,0,1,void,						void CollapseAllChildren (  wxTreeItemId & item)
+CollapseAndReset,0,0,1,void,						void CollapseAndReset (  wxTreeItemId & item)
+Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxTR_DEFAULT_STYLE,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxTreeCtrlNameStr    )
+Delete,0,0,1,void,						void Delete (  wxTreeItemId & item)
+DeleteAllItems,0,0,0,void,						void DeleteAllItems ( )
+DeleteChildren,0,0,1,void,						void DeleteChildren (  wxTreeItemId & item)
+EditLabel,0,1,2,wxTextCtrl,						wxTextCtrl* EditLabel (  wxTreeItemId & item,     wxClassInfo * textCtrlClass = wxCLASSINFO(wxTextCtrl)    )
+EnableBellOnNoMatch,0,0,1,void,						void EnableBellOnNoMatch ( bool on = true)
+EndEditLabel,0,0,2,void,						void EndEditLabel (  wxTreeItemId & item,     bool discardChanges = false    )
+EnsureVisible,0,0,1,void,						void EnsureVisible (  wxTreeItemId & item)
+Expand,0,0,1,void,						void Expand (  wxTreeItemId & item)
+ExpandAll,0,0,0,void,						void ExpandAll ( )
+ExpandAllChildren,0,0,1,void,						void ExpandAllChildren (  wxTreeItemId & item)
+GetBoundingRect,0,0,3,bool,						bool GetBoundingRect (  wxTreeItemId & item,     wxRect & rect,     bool textOnly = false    )
+GetButtonsImageList,0,1,0,wxImageList,						wxImageList* GetButtonsImageList ( )
+GetChildrenCount,0,0,2,size_t,						size_t GetChildrenCount (  wxTreeItemId & item,     bool recursively = true    )
+GetCount,0,0,0,int,						unsigned int GetCount ( )
+GetEditControl,0,1,0,wxTextCtrl,						wxTextCtrl* GetEditControl ( )
+GetFirstChild,0,0,2,wxTreeItemId,						wxTreeItemId GetFirstChild (  wxTreeItemId & item,     wxTreeItemIdValue & cookie    )
+GetFirstVisibleItem,0,0,0,wxTreeItemId,						wxTreeItemId GetFirstVisibleItem ( )
+GetFocusedItem,0,0,0,wxTreeItemId,						wxTreeItemId GetFocusedItem ( )
+GetImageList,0,1,0,wxImageList,						wxImageList* GetImageList ( )
+GetIndent,0,0,0,int,						unsigned int GetIndent ( )
+GetItemBackgroundColour,0,0,1,wxColour,						wxColour GetItemBackgroundColour (  wxTreeItemId & item)
+GetItemData,0,1,1,wxTreeItemData,						wxTreeItemData* GetItemData (  wxTreeItemId & item)
+GetItemFont,0,0,1,wxFont,						wxFont GetItemFont (  wxTreeItemId & item)
+GetItemImage,0,0,2,int,						int GetItemImage (  wxTreeItemId & item,     wxTreeItemIcon which = wxTreeItemIcon_Normal    )
+GetItemParent,0,0,1,wxTreeItemId,						wxTreeItemId GetItemParent (  wxTreeItemId & item)
+GetItemState,0,0,1,int,						int GetItemState (  wxTreeItemId & item)
+GetItemText,0,0,1,wxString,						wxString GetItemText (  wxTreeItemId & item)
+GetItemTextColour,0,0,1,wxColour,						wxColour GetItemTextColour (  wxTreeItemId & item)
+GetLastChild,0,0,1,wxTreeItemId,						wxTreeItemId GetLastChild (  wxTreeItemId & item)
+GetNextChild,0,0,2,wxTreeItemId,						wxTreeItemId GetNextChild (  wxTreeItemId & item,     wxTreeItemIdValue & cookie    )
+GetNextSibling,0,0,1,wxTreeItemId,						wxTreeItemId GetNextSibling (  wxTreeItemId & item)
+GetNextVisible,0,0,1,wxTreeItemId,						wxTreeItemId GetNextVisible (  wxTreeItemId & item)
+GetPrevSibling,0,0,1,wxTreeItemId,						wxTreeItemId GetPrevSibling (  wxTreeItemId & item)
+GetPrevVisible,0,0,1,wxTreeItemId,						wxTreeItemId GetPrevVisible (  wxTreeItemId & item)
+GetQuickBestSize,0,0,0,bool,						bool GetQuickBestSize ( )
+GetRootItem,0,0,0,wxTreeItemId,						wxTreeItemId GetRootItem ( )
+GetSelection,0,0,0,wxTreeItemId,						wxTreeItemId GetSelection ( )
+GetSelections,0,0,1,size_t,						size_t GetSelections ( wxArrayTreeItemIds & selection)
+GetStateImageList,0,1,0,wxImageList,						wxImageList* GetStateImageList ( )
+HitTest,0,0,2,wxTreeItemId,						wxTreeItemId HitTest (  wxPoint & point,     int & flags    )
+InsertItem,0,0,6,wxTreeItemId,						wxTreeItemId InsertItem (  wxTreeItemId & parent,      wxTreeItemId & previous,      wxString & text,     int image = -1,     int selImage = -1,     wxTreeItemData * data = NULL    )
+InsertItem,0,0,6,wxTreeItemId,						wxTreeItemId InsertItem (  wxTreeItemId & parent,     size_t pos,      wxString & text,     int image = -1,     int selImage = -1,     wxTreeItemData * data = NULL    )
+IsBold,0,0,1,bool,						bool IsBold (  wxTreeItemId & item)
+IsEmpty,0,0,0,bool,						bool IsEmpty ( )
+IsExpanded,0,0,1,bool,						bool IsExpanded (  wxTreeItemId & item)
+IsSelected,0,0,1,bool,						bool IsSelected (  wxTreeItemId & item)
+IsVisible,0,0,1,bool,						bool IsVisible (  wxTreeItemId & item)
+ItemHasChildren,0,0,1,bool,						bool ItemHasChildren (  wxTreeItemId & item)
+OnCompareItems,0,0,2,int,						int OnCompareItems (  wxTreeItemId & item1,      wxTreeItemId & item2    )
+PrependItem,0,0,5,wxTreeItemId,						wxTreeItemId PrependItem (  wxTreeItemId & parent,      wxString & text,     int image = -1,     int selImage = -1,     wxTreeItemData * data = NULL    )
+ScrollTo,0,0,1,void,						void ScrollTo (  wxTreeItemId & item)
+SelectChildren,0,0,1,void,						void SelectChildren (  wxTreeItemId & parent)
+SelectItem,0,0,2,void,						void SelectItem (  wxTreeItemId & item,     bool select = true    )
+SetButtonsImageList,0,0,1,void,						void SetButtonsImageList ( wxImageList * imageList)
+SetFocusedItem,0,0,1,void,						void SetFocusedItem (  wxTreeItemId & item)
+SetImageList,0,0,1,void,						void SetImageList ( wxImageList * imageList)
+SetIndent,0,0,1,void,						void SetIndent ( unsigned int indent)
+SetItemBackgroundColour,0,0,2,void,						void SetItemBackgroundColour (  wxTreeItemId & item,      wxColour & col    )
+SetItemBold,0,0,2,void,						void SetItemBold (  wxTreeItemId & item,     bool bold = true    )
+SetItemData,0,0,2,void,						void SetItemData (  wxTreeItemId & item,     wxTreeItemData * data    )
+SetItemDropHighlight,0,0,2,void,						void SetItemDropHighlight (  wxTreeItemId & item,     bool highlight = true    )
+SetItemFont,0,0,2,void,						void SetItemFont (  wxTreeItemId & item,      wxFont & font    )
+SetItemHasChildren,0,0,2,void,						void SetItemHasChildren (  wxTreeItemId & item,     bool hasChildren = true    )
+SetItemImage,0,0,3,void,						void SetItemImage (  wxTreeItemId & item,     int image,     wxTreeItemIcon which = wxTreeItemIcon_Normal    )
+SetItemState,0,0,2,void,						void SetItemState (  wxTreeItemId & item,     int state    )
+SetItemText,0,0,2,void,						void SetItemText (  wxTreeItemId & item,      wxString & text    )
+SetItemTextColour,0,0,2,void,						void SetItemTextColour (  wxTreeItemId & item,      wxColour & col    )
+SetQuickBestSize,0,0,1,void,						void SetQuickBestSize ( bool quickBestSize)
+SetStateImageList,0,0,1,void,						void SetStateImageList ( wxImageList * imageList)
+SetWindowStyle,0,0,1,void,						void SetWindowStyle ( long styles)
+SortChildren,0,0,1,void,						void SortChildren (  wxTreeItemId & item)
+Toggle,0,0,1,void,						void Toggle (  wxTreeItemId & item)
+ToggleItemSelection,0,0,1,void,						void ToggleItemSelection (  wxTreeItemId & item)
+Unselect,0,0,0,void,						void Unselect ( )
+UnselectAll,0,0,0,void,						void UnselectAll ( )
+UnselectItem,0,0,1,void,						void UnselectItem (  wxTreeItemId & item)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

@@ -60,7 +60,6 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 	Dim colMembers As String Collection
 	Dim colConsts As String Collection
 	Dim colInhertedFrom As String Collection
-	Dim IsBaseClass As Boolean = False
 	
 	While Not Eof(f1)
 		
@@ -84,12 +83,12 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 			colMembers.Add( incFile )
 		End If
 
-		'If loadRelationClass Then
-		'	If sLine.StartsWith( "<area shape=\"rect" ) Then 
-		'		Dim s As String = getTextSpec( sLine, "", "href=\"", "\"" )
-		'		Call loadClassInfo( s ,False )
-		'	End If
-		'End If
+		If loadRelationClass Then
+			If sLine.StartsWith( "<area shape=\"rect" ) Then 
+				Dim s As String = getTextSpec( sLine, "", "href=\"", "\"" )
+				Call loadClassInfo( s ,False )
+			End If
+		End If
 		
 		If sLine.StartsWith( "<li><span class=\"style" ) Then 
 			Dim s As String = getTextSpec( sLine, "wx", ">", "<" )
@@ -123,11 +122,17 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 		
 		If sLine.StartsWith( "<table class=\"memname\">" ) Then
 			Dim func As String
+			Dim params As Integer = 0
+			
 			Do 
 				Line Input #f1, sLine
 				sLine = sLine.Trim
 				
-				func += Trim( getText( sLine ) )
+				If sLine.StartsWith( "<td class=\"paramtype" ) then
+					params++
+				End If
+				
+				func += getText( sLine )
 				func += " "
 			Loop Until sLine.StartsWith( "</table>" )
 					
@@ -167,10 +172,9 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 					rt = rt >> 1
 				End If
 				
-				func = fn + "," + isStatic.Str + "," + isPtr.Str + "," + rt + "\t\t\t\t\t\t" + func 
+				func = fn + "," + isStatic.Str + "," + isPtr.Str + "," + params.Str + "," + rt + ",\t\t\t\t\t\t" + func 
+				colMembers.Add( func )
 			End If
-			
-			colMembers.Add( func )
 		End If
 	Wend
 	
@@ -178,18 +182,25 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 	Open className For Output As #f2
 	Defer Close #f2
 	
+	Print #f2, "[CONSTS]"
 	For Each s As String in colConsts
 		If s.Len Then
+			If s.Right(1) = ":" Then
+				s = s >> 1
+			End If 
+		
 			Print #f2, s
 		End If
 	Next
 	
+	Print #f2, "[METHODS]"
 	For Each s As String in colMembers
 		If s.Len Then
 			Print #f2, s
 		End If
 	Next
 	
+	Print #f2, "[INHERITS]"
 	For Each s As String in colInhertedFrom
 		If s.Len Then
 			Print #f2, s

@@ -1,0 +1,65 @@
+[CONSTS]
+wxEVT_MAXIMIZE
+wxEVT_MOVE
+wxEVT_MOVE_START
+wxEVT_MOVE_END
+wxEVT_SHOW
+wxFULLSCREEN_NOMENUBAR
+wxFULLSCREEN_NOTOOLBAR
+wxFULLSCREEN_NOSTATUSBAR
+wxFULLSCREEN_NOBORDER
+wxFULLSCREEN_NOCAPTION
+wxFULLSCREEN_ALL
+[METHODS]
+<wx/toplevel.h>
+CanSetTransparent,0,0,0,bool,						bool CanSetTransparent ( )
+CenterOnScreen,0,0,1,void,						void CenterOnScreen ( int direction = wxBOTH)
+CentreOnScreen,0,0,1,void,						void CentreOnScreen ( int direction = wxBOTH)
+Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_FRAME_STYLE,      wxString & name = wxFrameNameStr    )
+EnableCloseButton,0,0,1,bool,						bool EnableCloseButton ( bool enable = true)
+EnableFullScreenView,0,0,1,bool,						bool EnableFullScreenView ( bool enable = true)
+EnableMaximizeButton,0,0,1,bool,						bool EnableMaximizeButton ( bool enable = true)
+EnableMinimizeButton,0,0,1,bool,						bool EnableMinimizeButton ( bool enable = true)
+GetDefaultItem,0,1,0,wxWindow,						wxWindow* GetDefaultItem ( )
+GetDefaultSize,1,0,0,wxSize,						static wxSize GetDefaultSize ( )
+GetIcon,0,0,0,wxIcon,						wxIcon GetIcon ( )
+GetIcons,0,0,0,wxIconBundle,						wxIconBundle&  GetIcons ( )
+GetTitle,0,0,0,wxString,						wxString GetTitle ( )
+GetTmpDefaultItem,0,1,0,wxWindow,						wxWindow* GetTmpDefaultItem ( )
+Iconize,0,0,1,void,						void Iconize ( bool iconize = true)
+IsActive,0,0,0,bool,						bool IsActive ( )
+IsAlwaysMaximized,0,0,0,bool,						bool IsAlwaysMaximized ( )
+IsFullScreen,0,0,0,bool,						bool IsFullScreen ( )
+IsIconized,0,0,0,bool,						bool IsIconized ( )
+IsMaximized,0,0,0,bool,						bool IsMaximized ( )
+IsUsingNativeDecorations,0,0,0,bool,						bool IsUsingNativeDecorations ( )
+Layout,0,0,0,bool,						bool Layout ( )
+Maximize,0,0,1,void,						void Maximize ( bool maximize = true)
+MSWGetSystemMenu,0,1,0,wxMenu,						wxMenu* MSWGetSystemMenu ( )
+OSXIsModified,0,0,0,bool,						bool OSXIsModified ( )
+OSXSetModified,0,0,1,void,						void OSXSetModified ( bool modified)
+RequestUserAttention,0,0,1,void,						void RequestUserAttention ( int flags = wxUSER_ATTENTION_INFO)
+Restore,0,0,0,void,						void Restore ( )
+RestoreToGeometry,0,0,1,bool,						bool RestoreToGeometry ( GeometrySerializer & ser)
+SaveGeometry,0,0,1,bool,						bool SaveGeometry (  GeometrySerializer & ser)
+SetDefaultItem,0,1,1,wxWindow,						wxWindow* SetDefaultItem ( wxWindow * win)
+SetIcon,0,0,1,void,						void SetIcon (  wxIcon & icon)
+SetIcons,0,0,1,void,						void SetIcons (  wxIconBundle & icons)
+SetMaxSize,0,0,1,void,						void SetMaxSize (  wxSize & size)
+SetMinSize,0,0,1,void,						void SetMinSize (  wxSize & size)
+SetRepresentedFilename,0,0,1,void,						void SetRepresentedFilename (  wxString & filename)
+SetSizeHints,0,0,6,void,						void SetSizeHints ( int minW,     int minH,     int maxW = -1,     int maxH = -1,     int incW = -1,     int incH = -1    )
+SetSizeHints,0,0,3,void,						void SetSizeHints (  wxSize & minSize,      wxSize & maxSize = wxDefaultSize,      wxSize & incSize = wxDefaultSize    )
+SetTitle,0,0,1,void,						void SetTitle (  wxString & title)
+SetTmpDefaultItem,0,1,1,wxWindow,						wxWindow* SetTmpDefaultItem ( wxWindow * win)
+SetTransparent,0,0,1,bool,						bool SetTransparent ( wxByte alpha)
+ShouldPreventAppExit,0,0,0,bool,						bool ShouldPreventAppExit ( )
+ShowFullScreen,0,0,2,bool,						bool ShowFullScreen ( bool show,     long style = wxFULLSCREEN_ALL    )
+ShowWithoutActivating,0,0,0,void,						void ShowWithoutActivating ( )
+UseNativeDecorations,0,0,1,void,						void UseNativeDecorations ( bool native = true)
+UseNativeDecorationsByDefault,0,0,1,void,						void UseNativeDecorationsByDefault ( bool native = true)
+[INHERITS]
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

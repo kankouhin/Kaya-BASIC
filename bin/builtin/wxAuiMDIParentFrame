@@ -1,0 +1,27 @@
+[CONSTS]
+[METHODS]
+<wx/aui/tabmdi.h>
+ActivateNext,0,0,0,void,						void ActivateNext ( )
+ActivatePrevious,0,0,0,void,						void ActivatePrevious ( )
+ArrangeIcons,0,0,0,void,						void ArrangeIcons ( )
+Cascade,0,0,0,void,						void Cascade ( )
+Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID winid,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_FRAME_STYLE|wxVSCROLL|wxHSCROLL,      wxString & name = wxFrameNameStr    )
+GetActiveChild,0,1,0,wxAuiMDIChildFrame,						wxAuiMDIChildFrame* GetActiveChild ( )
+GetArtProvider,0,1,0,wxAuiTabArt,						wxAuiTabArt* GetArtProvider ( )
+GetClientWindow,0,1,0,wxAuiMDIClientWindow,						wxAuiMDIClientWindow* GetClientWindow ( )
+GetNotebook,0,1,0,wxAuiNotebook,						wxAuiNotebook* GetNotebook ( )
+GetWindowMenu,0,1,0,wxMenu,						wxMenu* GetWindowMenu ( )
+OnCreateClient,0,1,0,wxAuiMDIClientWindow,						wxAuiMDIClientWindow* OnCreateClient ( )
+SetActiveChild,0,0,1,void,						void SetActiveChild ( wxAuiMDIChildFrame * pChildFrame)
+SetArtProvider,0,0,1,void,						void SetArtProvider ( wxAuiTabArt * provider)
+SetChildMenuBar,0,0,1,void,						void SetChildMenuBar ( wxAuiMDIChildFrame * pChild)
+SetMenuBar,0,0,1,void,						void SetMenuBar ( wxMenuBar * menuBar)
+SetWindowMenu,0,0,1,void,						void SetWindowMenu ( wxMenu * pMenu)
+Tile,0,0,1,void,						void Tile ( wxOrientation orient = wxHORIZONTAL)
+[INHERITS]
+wxFrame
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

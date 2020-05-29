@@ -1,0 +1,21 @@
+[CONSTS]
+wxICONIZE
+wxCAPTION
+wxMINIMIZE
+wxMINIMIZE_BOX
+wxMAXIMIZE
+wxMAXIMIZE_BOX
+wxCLOSE_BOX
+wxSTAY_ON_TOP
+wxSYSTEM_MENU
+wxRESIZE_BORDER
+[METHODS]
+<wx/minifram.h>
+Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxCAPTION|wxRESIZE_BORDER,      wxString & name = wxFrameNameStr    )
+[INHERITS]
+wxFrame
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

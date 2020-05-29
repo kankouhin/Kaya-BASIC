@@ -1,0 +1,10 @@
+[CONSTS]
+wxEVT_MENU
+[METHODS]
+<wx/event.h>
+GetMenu,0,1,0,wxMenu,						wxMenu* GetMenu ( )
+GetMenuId,0,0,0,int,						int GetMenuId ( )
+IsPopup,0,0,0,bool,						bool IsPopup ( )
+[INHERITS]
+wxEvent
+wxObject

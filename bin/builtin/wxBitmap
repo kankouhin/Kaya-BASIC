@@ -1,0 +1,38 @@
+[CONSTS]
+[METHODS]
+<wx/bitmap.h>
+AddHandler,1,0,1,void,						static void AddHandler ( wxBitmapHandler * handler)
+CleanUpHandlers,1,0,0,void,						static void CleanUpHandlers ( )
+ConvertToDisabled,0,0,1,wxBitmap,						wxBitmap ConvertToDisabled ( unsigned char brightness = 255)
+ConvertToImage,0,0,0,wxImage,						wxImage ConvertToImage ( )
+CopyFromIcon,0,0,1,bool,						bool CopyFromIcon (  wxIcon & icon)
+Create,0,0,3,bool,						bool Create ( int width,     int height,     int depth = wxBITMAP_SCREEN_DEPTH    )
+Create,0,0,2,bool,						bool Create (  wxSize & sz,     int depth = wxBITMAP_SCREEN_DEPTH    )
+Create,0,0,3,bool,						bool Create ( int width,     int height,      wxDC & dc    )
+CreateScaled,0,0,4,bool,						bool CreateScaled ( int width,     int height,     int depth,     double logicalScale    )
+FindHandler,1,1,1,wxBitmapHandler,						static wxBitmapHandler* FindHandler (  wxString & name)
+FindHandler,1,1,2,wxBitmapHandler,						static wxBitmapHandler* FindHandler (  wxString & extension,     wxBitmapType bitmapType    )
+FindHandler,1,1,1,wxBitmapHandler,						static wxBitmapHandler* FindHandler ( wxBitmapType bitmapType)
+GetDepth,0,0,0,int,						int GetDepth ( )
+GetHandlers,1,0,0,wxList,						static wxList&  GetHandlers ( )
+GetHeight,0,0,0,int,						int GetHeight ( )
+GetMask,0,1,0,wxMask,						wxMask* GetMask ( )
+GetPalette,0,1,0,wxPalette,						wxPalette* GetPalette ( )
+GetSize,0,0,0,wxSize,						wxSize GetSize ( )
+GetSubBitmap,0,0,1,wxBitmap,						wxBitmap GetSubBitmap (  wxRect & rect)
+GetWidth,0,0,0,int,						int GetWidth ( )
+InitStandardHandlers,1,0,0,void,						static void InitStandardHandlers ( )
+InsertHandler,1,0,1,void,						static void InsertHandler ( wxBitmapHandler * handler)
+IsOk,0,0,0,bool,						bool IsOk ( )
+LoadFile,0,0,2,bool,						bool LoadFile (  wxString & name,     wxBitmapType type = wxBITMAP_DEFAULT_TYPE    )
+NewFromPNGData,1,0,2,wxBitmap,						static wxBitmap NewFromPNGData (  void * data,     size_t size    )
+RemoveHandler,1,0,1,bool,						static bool RemoveHandler (  wxString & name)
+SaveFile,0,0,3,bool,						bool SaveFile (  wxString & name,     wxBitmapType type,      wxPalette * palette = NULL    )
+SetDepth,0,0,1,void,						void SetDepth ( int depth)
+SetHeight,0,0,1,void,						void SetHeight ( int height)
+SetMask,0,0,1,void,						void SetMask ( wxMask * mask)
+SetPalette,0,0,1,void,						void SetPalette (  wxPalette & palette)
+SetWidth,0,0,1,void,						void SetWidth ( int width)
+[INHERITS]
+wxGDIObject
+wxObject

@@ -1,0 +1,17 @@
+[CONSTS]
+wxEVT_CHECKLISTBOX
+[METHODS]
+<wx/checklst.h>
+Check,0,0,2,void,						void Check ( unsigned int item,     bool check = true    )
+Create,0,0,9,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     int nStrings = 0,      wxString choices[] = NULL,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxListBoxNameStr    )
+Create,0,0,8,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxListBoxNameStr    )
+GetCheckedItems,0,0,1,int,						unsigned int GetCheckedItems ( wxArrayInt & checkedItems)
+IsChecked,0,0,1,bool,						bool IsChecked ( unsigned int item)
+[INHERITS]
+wxListBox
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxItemContainer
+wxItemContainerImmutable
