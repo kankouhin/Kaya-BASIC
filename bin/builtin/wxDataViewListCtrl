@@ -1,0 +1,44 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewListCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewListCtrl.AppendColumn,0,0,1,bool,						bool wxDataViewListCtrl.AppendColumn ( wxDataViewColumn * column)
+wxDataViewListCtrl.AppendColumn,0,0,2,void,						void wxDataViewListCtrl.AppendColumn ( wxDataViewColumn * column,      wxString & varianttype    )
+wxDataViewListCtrl.AppendIconTextColumn,0,1,5,wxDataViewColumn,						wxDataViewColumn* wxDataViewListCtrl.AppendIconTextColumn (  wxString & label,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_LEFT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewListCtrl.AppendItem,0,0,2,void,						void wxDataViewListCtrl.AppendItem (  wxVector< wxVariant < & values,     wxUIntPtr data = NULL    )
+wxDataViewListCtrl.AppendProgressColumn,0,1,5,wxDataViewColumn,						wxDataViewColumn* wxDataViewListCtrl.AppendProgressColumn (  wxString & label,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_LEFT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewListCtrl.AppendTextColumn,0,1,5,wxDataViewColumn,						wxDataViewColumn* wxDataViewListCtrl.AppendTextColumn (  wxString & label,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_LEFT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewListCtrl.AppendToggleColumn,0,1,5,wxDataViewColumn,						wxDataViewColumn* wxDataViewListCtrl.AppendToggleColumn (  wxString & label,     wxDataViewCellMode mode = wxDATAVIEW_CELL_ACTIVATABLE,     int width = -1,     wxAlignment align = wxALIGN_LEFT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewListCtrl.Create,0,0,6,bool,						bool wxDataViewListCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDV_ROW_LINES,      wxValidator & validator = wxDefaultValidator    )
+wxDataViewListCtrl.DeleteAllItems,0,0,0,void,						void wxDataViewListCtrl.DeleteAllItems ( )
+wxDataViewListCtrl.DeleteItem,0,0,1,void,						void wxDataViewListCtrl.DeleteItem ( unsigned row)
+wxDataViewListCtrl.GetItemCount,0,0,0,int,						unsigned int wxDataViewListCtrl.GetItemCount ( )
+wxDataViewListCtrl.GetItemData,0,0,1,wxUIntPtr,						wxUIntPtr wxDataViewListCtrl.GetItemData (  wxDataViewItem & item)
+wxDataViewListCtrl.GetSelectedRow,0,0,0,int,						int wxDataViewListCtrl.GetSelectedRow ( )
+wxDataViewListCtrl.GetStore,0,1,0,wxDataViewListStore,						wxDataViewListStore* wxDataViewListCtrl.GetStore ( )
+wxDataViewListCtrl.GetStore,0,1,0,wxDataViewListStore,						wxDataViewListStore* wxDataViewListCtrl.GetStore ( )
+wxDataViewListCtrl.GetTextValue,0,0,2,wxString,						wxString wxDataViewListCtrl.GetTextValue ( unsigned int row,     unsigned int col    )
+wxDataViewListCtrl.GetToggleValue,0,0,2,bool,						bool wxDataViewListCtrl.GetToggleValue ( unsigned int row,     unsigned int col    )
+wxDataViewListCtrl.GetValue,0,0,3,void,						void wxDataViewListCtrl.GetValue ( wxVariant & value,     unsigned int row,     unsigned int col    )
+wxDataViewListCtrl.InsertColumn,0,0,2,bool,						bool wxDataViewListCtrl.InsertColumn ( unsigned int pos,     wxDataViewColumn * column    )
+wxDataViewListCtrl.InsertColumn,0,0,3,void,						void wxDataViewListCtrl.InsertColumn ( unsigned int pos,     wxDataViewColumn * column,      wxString & varianttype    )
+wxDataViewListCtrl.InsertItem,0,0,3,void,						void wxDataViewListCtrl.InsertItem ( unsigned int row,      wxVector< wxVariant < & values,     wxUIntPtr data = NULL    )
+wxDataViewListCtrl.IsRowSelected,0,0,1,bool,						bool wxDataViewListCtrl.IsRowSelected ( unsigned row)
+wxDataViewListCtrl.ItemToRow,0,0,1,int,						int wxDataViewListCtrl.ItemToRow (  wxDataViewItem & item)
+wxDataViewListCtrl.PrependColumn,0,0,1,bool,						bool wxDataViewListCtrl.PrependColumn ( wxDataViewColumn * column)
+wxDataViewListCtrl.PrependColumn,0,0,2,void,						void wxDataViewListCtrl.PrependColumn ( wxDataViewColumn * column,      wxString & varianttype    )
+wxDataViewListCtrl.PrependItem,0,0,2,void,						void wxDataViewListCtrl.PrependItem (  wxVector< wxVariant < & values,     wxUIntPtr data = NULL    )
+wxDataViewListCtrl.RowToItem,0,0,1,wxDataViewItem,						wxDataViewItem wxDataViewListCtrl.RowToItem ( int row)
+wxDataViewListCtrl.SelectRow,0,0,1,void,						void wxDataViewListCtrl.SelectRow ( unsigned row)
+wxDataViewListCtrl.SetItemData,0,0,2,void,						void wxDataViewListCtrl.SetItemData (  wxDataViewItem & item,     wxUIntPtr data    )
+wxDataViewListCtrl.SetTextValue,0,0,3,void,						void wxDataViewListCtrl.SetTextValue (  wxString & value,     unsigned int row,     unsigned int col    )
+wxDataViewListCtrl.SetToggleValue,0,0,3,void,						void wxDataViewListCtrl.SetToggleValue ( bool value,     unsigned int row,     unsigned int col    )
+wxDataViewListCtrl.SetValue,0,0,3,void,						void wxDataViewListCtrl.SetValue (  wxVariant & value,     unsigned int row,     unsigned int col    )
+wxDataViewListCtrl.UnselectRow,0,0,1,void,						void wxDataViewListCtrl.UnselectRow ( unsigned row)
+[INHERITS]
+wxDataViewCtrl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

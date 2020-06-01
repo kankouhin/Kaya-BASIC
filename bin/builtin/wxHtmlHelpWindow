@@ -1,0 +1,26 @@
+[CONSTS]
+[HEADER]
+<wx/html/helpwnd.h>
+[METHODS]
+wxHtmlHelpWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlHelpWindow.AddToolbarButtons,0,0,2,void,						void wxHtmlHelpWindow.AddToolbarButtons ( wxToolBar * toolBar,     int style    )
+wxHtmlHelpWindow.Create,0,0,6,bool,						bool wxHtmlHelpWindow.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     int style = wxTAB_TRAVERSAL|wxBORDER_NONE,     int helpStyle = wxHF_DEFAULT_STYLE    )
+wxHtmlHelpWindow.CreateContents,0,0,0,void,						void wxHtmlHelpWindow.CreateContents ( )
+wxHtmlHelpWindow.CreateIndex,0,0,0,void,						void wxHtmlHelpWindow.CreateIndex ( )
+wxHtmlHelpWindow.CreateSearch,0,0,0,void,						void wxHtmlHelpWindow.CreateSearch ( )
+wxHtmlHelpWindow.Display,0,0,1,bool,						bool wxHtmlHelpWindow.Display (  wxString & x)
+wxHtmlHelpWindow.Display,0,0,1,bool,						bool wxHtmlHelpWindow.Display ( int id)
+wxHtmlHelpWindow.DisplayContents,0,0,0,bool,						bool wxHtmlHelpWindow.DisplayContents ( )
+wxHtmlHelpWindow.DisplayIndex,0,0,0,bool,						bool wxHtmlHelpWindow.DisplayIndex ( )
+wxHtmlHelpWindow.GetController,0,1,0,wxHtmlHelpController,						wxHtmlHelpController* wxHtmlHelpWindow.GetController ( )
+wxHtmlHelpWindow.GetData,0,1,0,wxHtmlHelpData,						wxHtmlHelpData* wxHtmlHelpWindow.GetData ( )
+wxHtmlHelpWindow.KeywordSearch,0,0,2,bool,						bool wxHtmlHelpWindow.KeywordSearch (  wxString & keyword,     wxHelpSearchMode mode = wxHELP_SEARCH_ALL    )
+wxHtmlHelpWindow.ReadCustomization,0,0,2,void,						void wxHtmlHelpWindow.ReadCustomization ( wxConfigBase * cfg,      wxString & path = wxEmptyString    )
+wxHtmlHelpWindow.RefreshLists,0,0,0,void,						void wxHtmlHelpWindow.RefreshLists ( )
+wxHtmlHelpWindow.SetController,0,0,1,void,						void wxHtmlHelpWindow.SetController ( wxHtmlHelpController * controller)
+wxHtmlHelpWindow.UseConfig,0,0,2,void,						void wxHtmlHelpWindow.UseConfig ( wxConfigBase * config,      wxString & rootpath = wxEmptyString    )
+wxHtmlHelpWindow.WriteCustomization,0,0,2,void,						void wxHtmlHelpWindow.WriteCustomization ( wxConfigBase * cfg,      wxString & path = wxEmptyString    )
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

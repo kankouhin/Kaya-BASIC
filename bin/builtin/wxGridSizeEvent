@@ -1,0 +1,19 @@
+[CONSTS]
+wxEVT_GRID_COL_SIZE
+wxEVT_GRID_ROW_SIZE
+wxEVT_GRID_COL_AUTO_SIZE
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridSizeEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridSizeEvent.AltDown,0,0,0,bool,						bool wxGridSizeEvent.AltDown ( )
+wxGridSizeEvent.ControlDown,0,0,0,bool,						bool wxGridSizeEvent.ControlDown ( )
+wxGridSizeEvent.GetPosition,0,0,0,wxPoint,						wxPoint wxGridSizeEvent.GetPosition ( )
+wxGridSizeEvent.GetRowOrCol,0,0,0,int,						int wxGridSizeEvent.GetRowOrCol ( )
+wxGridSizeEvent.MetaDown,0,0,0,bool,						bool wxGridSizeEvent.MetaDown ( )
+wxGridSizeEvent.ShiftDown,0,0,0,bool,						bool wxGridSizeEvent.ShiftDown ( )
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

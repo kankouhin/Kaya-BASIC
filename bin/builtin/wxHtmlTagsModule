@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/html/winpars.h>
+[METHODS]
+wxHtmlTagsModule.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlTagsModule.FillHandlersTable,0,0,1,void,						void wxHtmlTagsModule.FillHandlersTable ( wxHtmlWinParser * parser)
+[INHERITS]
+wxModule
+wxObject

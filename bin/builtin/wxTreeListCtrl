@@ -1,0 +1,72 @@
+[CONSTS]
+wxTL_SINGLE
+wxTL_MULTIPLE
+wxTL_CHECKBOX
+wxTL_3STATE
+wxTL_USER_3STATE
+wxTL_NO_HEADER
+wxTL_DEFAULT_STYLE
+wxEVT_TREELIST_SELECTION_CHANGED
+wxEVT_TREELIST_ITEM_EXPANDING
+wxEVT_TREELIST_ITEM_EXPANDED
+wxEVT_TREELIST_ITEM_CHECKED
+wxEVT_TREELIST_ITEM_ACTIVATED
+wxEVT_TREELIST_ITEM_CONTEXT_MENU
+wxEVT_TREELIST_COLUMN_SORTED
+[HEADER]
+<wx/treelist.h>
+[METHODS]
+wxTreeListCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTreeListCtrl.AppendColumn,0,0,4,int,						int wxTreeListCtrl.AppendColumn (  wxString & title,     int width = wxCOL_WIDTH_AUTOSIZE,     wxAlignment align = wxALIGN_LEFT,     int flags = wxCOL_RESIZABLE    )
+wxTreeListCtrl.AppendItem,0,0,5,wxTreeListItem,						wxTreeListItem wxTreeListCtrl.AppendItem ( wxTreeListItem parent,      wxString & text,     int imageClosed = NO_IMAGE,     int imageOpened = NO_IMAGE,     wxClientData * data = NULL    )
+wxTreeListCtrl.AreAllChildrenInState,0,0,2,bool,						bool wxTreeListCtrl.AreAllChildrenInState ( wxTreeListItem item,     wxCheckBoxState state    )
+wxTreeListCtrl.AssignImageList,0,0,1,void,						void wxTreeListCtrl.AssignImageList ( wxImageList * imageList)
+wxTreeListCtrl.CheckItem,0,0,2,void,						void wxTreeListCtrl.CheckItem ( wxTreeListItem item,     wxCheckBoxState state = wxCHK_CHECKED    )
+wxTreeListCtrl.CheckItemRecursively,0,0,2,void,						void wxTreeListCtrl.CheckItemRecursively ( wxTreeListItem item,     wxCheckBoxState state = wxCHK_CHECKED    )
+wxTreeListCtrl.ClearColumns,0,0,0,void,						void wxTreeListCtrl.ClearColumns ( )
+wxTreeListCtrl.Collapse,0,0,1,void,						void wxTreeListCtrl.Collapse ( wxTreeListItem item)
+wxTreeListCtrl.Create,0,0,6,bool,						bool wxTreeListCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxTL_DEFAULT_STYLE,      wxString & name = wxTreeListCtrlNameStr    )
+wxTreeListCtrl.DeleteAllItems,0,0,0,void,						void wxTreeListCtrl.DeleteAllItems ( )
+wxTreeListCtrl.DeleteColumn,0,0,1,bool,						bool wxTreeListCtrl.DeleteColumn ( unsigned col)
+wxTreeListCtrl.DeleteItem,0,0,1,void,						void wxTreeListCtrl.DeleteItem ( wxTreeListItem item)
+wxTreeListCtrl.EnsureVisible,0,0,1,void,						void wxTreeListCtrl.EnsureVisible ( wxTreeListItem item)
+wxTreeListCtrl.Expand,0,0,1,void,						void wxTreeListCtrl.Expand ( wxTreeListItem item)
+wxTreeListCtrl.GetCheckedState,0,0,1,wxCheckBoxState,						wxCheckBoxState wxTreeListCtrl.GetCheckedState ( wxTreeListItem item)
+wxTreeListCtrl.GetColumnCount,0,0,0,unsigned,						unsigned wxTreeListCtrl.GetColumnCount ( )
+wxTreeListCtrl.GetColumnWidth,0,0,1,int,						int wxTreeListCtrl.GetColumnWidth ( unsigned col)
+wxTreeListCtrl.GetDataView,0,1,0,wxDataViewCtrl,						wxDataViewCtrl* wxTreeListCtrl.GetDataView ( )
+wxTreeListCtrl.GetFirstChild,0,0,1,wxTreeListItem,						wxTreeListItem wxTreeListCtrl.GetFirstChild ( wxTreeListItem item)
+wxTreeListCtrl.GetFirstItem,0,0,0,wxTreeListItem,						wxTreeListItem wxTreeListCtrl.GetFirstItem ( )
+wxTreeListCtrl.GetItemData,0,1,1,wxClientData,						wxClientData* wxTreeListCtrl.GetItemData ( wxTreeListItem item)
+wxTreeListCtrl.GetItemParent,0,0,1,wxTreeListItem,						wxTreeListItem wxTreeListCtrl.GetItemParent ( wxTreeListItem item)
+wxTreeListCtrl.GetItemText,0,0,2,wxString,						wxString&  wxTreeListCtrl.GetItemText ( wxTreeListItem item,     unsigned col = 0    )
+wxTreeListCtrl.GetNextItem,0,0,1,wxTreeListItem,						wxTreeListItem wxTreeListCtrl.GetNextItem ( wxTreeListItem item)
+wxTreeListCtrl.GetNextSibling,0,0,1,wxTreeListItem,						wxTreeListItem wxTreeListCtrl.GetNextSibling ( wxTreeListItem item)
+wxTreeListCtrl.GetRootItem,0,0,0,wxTreeListItem,						wxTreeListItem wxTreeListCtrl.GetRootItem ( )
+wxTreeListCtrl.GetSelection,0,0,0,wxTreeListItem,						wxTreeListItem wxTreeListCtrl.GetSelection ( )
+wxTreeListCtrl.GetSelections,0,0,1,unsigned,						unsigned wxTreeListCtrl.GetSelections ( wxTreeListItems & selections)
+wxTreeListCtrl.GetSortColumn,0,0,2,bool,						bool wxTreeListCtrl.GetSortColumn ( unsigned * col,     bool * ascendingOrder = NULL    )
+wxTreeListCtrl.GetView,0,1,0,wxWindow,						wxWindow* wxTreeListCtrl.GetView ( )
+wxTreeListCtrl.InsertItem,0,0,6,wxTreeListItem,						wxTreeListItem wxTreeListCtrl.InsertItem ( wxTreeListItem parent,     wxTreeListItem previous,      wxString & text,     int imageClosed = NO_IMAGE,     int imageOpened = NO_IMAGE,     wxClientData * data = NULL    )
+wxTreeListCtrl.IsExpanded,0,0,1,bool,						bool wxTreeListCtrl.IsExpanded ( wxTreeListItem item)
+wxTreeListCtrl.IsSelected,0,0,1,bool,						bool wxTreeListCtrl.IsSelected ( wxTreeListItem item)
+wxTreeListCtrl.PrependItem,0,0,5,wxTreeListItem,						wxTreeListItem wxTreeListCtrl.PrependItem ( wxTreeListItem parent,      wxString & text,     int imageClosed = NO_IMAGE,     int imageOpened = NO_IMAGE,     wxClientData * data = NULL    )
+wxTreeListCtrl.Select,0,0,1,void,						void wxTreeListCtrl.Select ( wxTreeListItem item)
+wxTreeListCtrl.SelectAll,0,0,0,void,						void wxTreeListCtrl.SelectAll ( )
+wxTreeListCtrl.SetColumnWidth,0,0,2,void,						void wxTreeListCtrl.SetColumnWidth ( unsigned col,     int width    )
+wxTreeListCtrl.SetImageList,0,0,1,void,						void wxTreeListCtrl.SetImageList ( wxImageList * imageList)
+wxTreeListCtrl.SetItemComparator,0,0,1,void,						void wxTreeListCtrl.SetItemComparator ( wxTreeListItemComparator * comparator)
+wxTreeListCtrl.SetItemData,0,0,2,void,						void wxTreeListCtrl.SetItemData ( wxTreeListItem item,     wxClientData * data    )
+wxTreeListCtrl.SetItemImage,0,0,3,void,						void wxTreeListCtrl.SetItemImage ( wxTreeListItem item,     int closed,     int opened = NO_IMAGE    )
+wxTreeListCtrl.SetItemText,0,0,3,void,						void wxTreeListCtrl.SetItemText ( wxTreeListItem item,     unsigned col,      wxString & text    )
+wxTreeListCtrl.SetItemText,0,0,2,void,						void wxTreeListCtrl.SetItemText ( wxTreeListItem item,      wxString & text    )
+wxTreeListCtrl.SetSortColumn,0,0,2,void,						void wxTreeListCtrl.SetSortColumn ( unsigned col,     bool ascendingOrder = true    )
+wxTreeListCtrl.UncheckItem,0,0,1,void,						void wxTreeListCtrl.UncheckItem ( wxTreeListItem item)
+wxTreeListCtrl.Unselect,0,0,1,void,						void wxTreeListCtrl.Unselect ( wxTreeListItem item)
+wxTreeListCtrl.UnselectAll,0,0,0,void,						void wxTreeListCtrl.UnselectAll ( )
+wxTreeListCtrl.UpdateItemParentStateRecursively,0,0,1,void,						void wxTreeListCtrl.UpdateItemParentStateRecursively ( wxTreeListItem item)
+wxTreeListCtrl.WidthFor,0,0,1,int,						int wxTreeListCtrl.WidthFor (  wxString & text)
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

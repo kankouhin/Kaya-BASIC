@@ -1,14 +1,16 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/commandlinkbutton.h>
-Create,0,0,9,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & mainLabel = wxEmptyString,      wxString & note = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxButtonNameStr    )
-GetLabel,0,0,0,wxString,						wxString GetLabel ( )
-GetMainLabel,0,0,0,wxString,						wxString GetMainLabel ( )
-GetNote,0,0,0,wxString,						wxString GetNote ( )
-SetLabel,0,0,1,void,						void SetLabel (  wxString & label)
-SetMainLabel,0,0,1,void,						void SetMainLabel (  wxString & mainLabel)
-SetMainLabelAndNote,0,0,2,void,						void SetMainLabelAndNote (  wxString & mainLabel,      wxString & note    )
-SetNote,0,0,1,void,						void SetNote (  wxString & note)
+[METHODS]
+wxCommandLinkButton.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCommandLinkButton.Create,0,0,9,bool,						bool wxCommandLinkButton.Create ( wxWindow * parent,     wxWindowID id,      wxString & mainLabel = wxEmptyString,      wxString & note = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxButtonNameStr    )
+wxCommandLinkButton.GetLabel,0,0,0,wxString,						wxString wxCommandLinkButton.GetLabel ( )
+wxCommandLinkButton.GetMainLabel,0,0,0,wxString,						wxString wxCommandLinkButton.GetMainLabel ( )
+wxCommandLinkButton.GetNote,0,0,0,wxString,						wxString wxCommandLinkButton.GetNote ( )
+wxCommandLinkButton.SetLabel,0,0,1,void,						void wxCommandLinkButton.SetLabel (  wxString & label)
+wxCommandLinkButton.SetMainLabel,0,0,1,void,						void wxCommandLinkButton.SetMainLabel (  wxString & mainLabel)
+wxCommandLinkButton.SetMainLabelAndNote,0,0,2,void,						void wxCommandLinkButton.SetMainLabelAndNote (  wxString & mainLabel,      wxString & note    )
+wxCommandLinkButton.SetNote,0,0,1,void,						void wxCommandLinkButton.SetNote (  wxString & note)
 [INHERITS]
 wxButton
 wxAnyButton

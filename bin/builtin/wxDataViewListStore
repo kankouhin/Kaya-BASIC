@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewListStore.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewListStore.AppendColumn,0,0,1,void,						void wxDataViewListStore.AppendColumn (  wxString & varianttype)
+wxDataViewListStore.AppendItem,0,0,2,void,						void wxDataViewListStore.AppendItem (  wxVector< wxVariant < & values,     wxUIntPtr data = NULL    )
+wxDataViewListStore.DeleteAllItems,0,0,0,void,						void wxDataViewListStore.DeleteAllItems ( )
+wxDataViewListStore.DeleteItem,0,0,1,void,						void wxDataViewListStore.DeleteItem ( unsigned pos)
+wxDataViewListStore.GetColumnCount,0,0,0,int,						unsigned int wxDataViewListStore.GetColumnCount ( )
+wxDataViewListStore.GetColumnType,0,0,1,wxString,						wxString wxDataViewListStore.GetColumnType ( unsigned int col)
+wxDataViewListStore.GetItemCount,0,0,0,int,						unsigned int wxDataViewListStore.GetItemCount ( )
+wxDataViewListStore.GetItemData,0,0,1,wxUIntPtr,						wxUIntPtr wxDataViewListStore.GetItemData (  wxDataViewItem & item)
+wxDataViewListStore.GetValueByRow,0,0,3,void,						void wxDataViewListStore.GetValueByRow ( wxVariant & value,     unsigned int row,     unsigned int col    )
+wxDataViewListStore.InsertColumn,0,0,2,void,						void wxDataViewListStore.InsertColumn ( unsigned int pos,      wxString & varianttype    )
+wxDataViewListStore.InsertItem,0,0,3,void,						void wxDataViewListStore.InsertItem ( unsigned int row,      wxVector< wxVariant < & values,     wxUIntPtr data = NULL    )
+wxDataViewListStore.PrependColumn,0,0,1,void,						void wxDataViewListStore.PrependColumn (  wxString & varianttype)
+wxDataViewListStore.PrependItem,0,0,2,void,						void wxDataViewListStore.PrependItem (  wxVector< wxVariant < & values,     wxUIntPtr data = NULL    )
+wxDataViewListStore.SetItemData,0,0,2,void,						void wxDataViewListStore.SetItemData (  wxDataViewItem & item,     wxUIntPtr data    )
+wxDataViewListStore.SetValueByRow,0,0,3,bool,						bool wxDataViewListStore.SetValueByRow (  wxVariant & value,     unsigned int row,     unsigned int col    )
+[INHERITS]
+wxDataViewIndexListModel
+wxDataViewListModel
+wxDataViewModel
+wxRefCounter

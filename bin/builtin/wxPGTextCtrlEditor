@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/editors.h>
+[METHODS]
+wxPGTextCtrlEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGTextCtrlEditor.CreateControls,0,0,4,wxPGWindowList,						wxPGWindowList wxPGTextCtrlEditor.CreateControls ( wxPropertyGrid * propgrid,     wxPGProperty * property,      wxPoint & pos,      wxSize & size    )
+wxPGTextCtrlEditor.GetName,0,0,0,wxString,						wxString wxPGTextCtrlEditor.GetName ( )
+wxPGTextCtrlEditor.GetTextCtrlValueFromControl,1,0,3,bool,						static bool wxPGTextCtrlEditor.GetTextCtrlValueFromControl ( wxVariant & variant,     wxPGProperty * property,     wxWindow * ctrl    )
+wxPGTextCtrlEditor.GetValueFromControl,0,0,3,bool,						bool wxPGTextCtrlEditor.GetValueFromControl ( wxVariant & variant,     wxPGProperty * property,     wxWindow * ctrl    )
+wxPGTextCtrlEditor.OnEvent,0,0,4,bool,						bool wxPGTextCtrlEditor.OnEvent ( wxPropertyGrid * propgrid,     wxPGProperty * property,     wxWindow * wnd_primary,     wxEvent & event    )
+wxPGTextCtrlEditor.OnFocus,0,0,2,void,						void wxPGTextCtrlEditor.OnFocus ( wxPGProperty * property,     wxWindow * wnd    )
+wxPGTextCtrlEditor.OnTextCtrlEvent,1,0,4,bool,						static bool wxPGTextCtrlEditor.OnTextCtrlEvent ( wxPropertyGrid * propgrid,     wxPGProperty * property,     wxWindow * ctrl,     wxEvent & event    )
+wxPGTextCtrlEditor.SetControlStringValue,0,0,3,void,						void wxPGTextCtrlEditor.SetControlStringValue ( wxPGProperty * property,     wxWindow * ctrl,      wxString & txt    )
+wxPGTextCtrlEditor.UpdateControl,0,0,2,void,						void wxPGTextCtrlEditor.UpdateControl ( wxPGProperty * property,     wxWindow * ctrl    )
+[INHERITS]
+wxPGEditor
+wxObject

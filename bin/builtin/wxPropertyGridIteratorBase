@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/propgridpagestate.h>
+[METHODS]
+wxPropertyGridIteratorBase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPropertyGridIteratorBase.Assign,0,0,1,void,						void wxPropertyGridIteratorBase.Assign (  wxPropertyGridIteratorBase & it)
+wxPropertyGridIteratorBase.AtEnd,0,0,0,bool,						bool wxPropertyGridIteratorBase.AtEnd ( )
+wxPropertyGridIteratorBase.GetProperty,0,1,0,wxPGProperty,						wxPGProperty* wxPropertyGridIteratorBase.GetProperty ( )
+wxPropertyGridIteratorBase.Init,0,0,4,void,						void wxPropertyGridIteratorBase.Init ( wxPropertyGridPageState * state,     int flags,     wxPGProperty * property,     int dir = 1    )
+wxPropertyGridIteratorBase.Init,0,0,4,void,						void wxPropertyGridIteratorBase.Init ( wxPropertyGridPageState * state,     int flags,     int startPos = wxTOP,     int dir = 0    )
+wxPropertyGridIteratorBase.Next,0,0,1,void,						void wxPropertyGridIteratorBase.Next ( bool iterateChildren = true)
+wxPropertyGridIteratorBase.Prev,0,0,0,void,						void wxPropertyGridIteratorBase.Prev ( )
+wxPropertyGridIteratorBase.SetBaseParent,0,0,1,void,						void wxPropertyGridIteratorBase.SetBaseParent ( wxPGProperty * baseParent)
+[INHERITS]

@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewBitmapRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewBitmapRenderer.GetDefaultType,1,0,0,wxString,						static wxString wxDataViewBitmapRenderer.GetDefaultType ( )
+[INHERITS]
+wxDataViewRenderer
+wxObject

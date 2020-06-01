@@ -1,0 +1,23 @@
+[CONSTS]
+wxSP_ARROW_KEYS
+wxSP_WRAP
+[HEADER]
+<wx/spinctrl.h>
+[METHODS]
+wxSpinCtrlDouble.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSpinCtrlDouble.Create,0,0,11,bool,						bool wxSpinCtrlDouble.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxString & value = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxSP_ARROW_KEYS,     double min = 0,     double max = 100,     double initial = 0,     double inc = 1,      wxString & name = &quot;wxSpinCtrlDouble&quot;    )
+wxSpinCtrlDouble.GetDigits,0,0,0,int,						unsigned int wxSpinCtrlDouble.GetDigits ( )
+wxSpinCtrlDouble.GetIncrement,0,0,0,double,						double wxSpinCtrlDouble.GetIncrement ( )
+wxSpinCtrlDouble.GetMax,0,0,0,double,						double wxSpinCtrlDouble.GetMax ( )
+wxSpinCtrlDouble.GetMin,0,0,0,double,						double wxSpinCtrlDouble.GetMin ( )
+wxSpinCtrlDouble.GetValue,0,0,0,double,						double wxSpinCtrlDouble.GetValue ( )
+wxSpinCtrlDouble.SetDigits,0,0,1,void,						void wxSpinCtrlDouble.SetDigits ( unsigned int digits)
+wxSpinCtrlDouble.SetIncrement,0,0,1,void,						void wxSpinCtrlDouble.SetIncrement ( double inc)
+wxSpinCtrlDouble.SetRange,0,0,2,void,						void wxSpinCtrlDouble.SetRange ( double minVal,     double maxVal    )
+wxSpinCtrlDouble.SetValue,0,0,1,void,						void wxSpinCtrlDouble.SetValue (  wxString & text)
+wxSpinCtrlDouble.SetValue,0,0,1,void,						void wxSpinCtrlDouble.SetValue ( double value)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

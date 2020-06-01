@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/zipstrm.h>
+[METHODS]
+wxZipOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxZipOutputStream.Close,0,0,0,bool,						bool wxZipOutputStream.Close ( )
+wxZipOutputStream.CloseEntry,0,0,0,bool,						bool wxZipOutputStream.CloseEntry ( )
+wxZipOutputStream.CopyArchiveMetaData,0,0,1,bool,						bool wxZipOutputStream.CopyArchiveMetaData ( wxZipInputStream & inputStream)
+wxZipOutputStream.CopyEntry,0,0,2,bool,						bool wxZipOutputStream.CopyEntry ( wxZipEntry * entry,     wxZipInputStream & inputStream    )
+wxZipOutputStream.GetFormat,0,0,0,wxZipArchiveFormat,						wxZipArchiveFormat wxZipOutputStream.GetFormat ( )
+wxZipOutputStream.GetLevel,0,0,0,int,						int wxZipOutputStream.GetLevel ( )
+wxZipOutputStream.PutNextDirEntry,0,0,2,bool,						bool wxZipOutputStream.PutNextDirEntry (  wxString & name,      wxDateTime & dt = wxDateTime.Now()    )
+wxZipOutputStream.PutNextEntry,0,0,1,bool,						bool wxZipOutputStream.PutNextEntry ( wxZipEntry * entry)
+wxZipOutputStream.PutNextEntry,0,0,3,bool,						bool wxZipOutputStream.PutNextEntry (  wxString & name,      wxDateTime & dt = wxDateTime.Now(),     wxFileOffset size = wxInvalidOffset    )
+wxZipOutputStream.SetComment,0,0,1,void,						void wxZipOutputStream.SetComment (  wxString & comment)
+wxZipOutputStream.SetFormat,0,0,1,void,						void wxZipOutputStream.SetFormat ( wxZipArchiveFormat format)
+wxZipOutputStream.SetLevel,0,0,1,void,						void wxZipOutputStream.SetLevel ( int level)
+[INHERITS]
+wxArchiveOutputStream
+wxFilterOutputStream
+wxOutputStream
+wxStreamBase

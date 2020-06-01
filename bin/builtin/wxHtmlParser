@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlpars.h>
+[METHODS]
+wxHtmlParser.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlParser.AddTag,0,0,1,void,						void wxHtmlParser.AddTag (  wxHtmlTag & tag)
+wxHtmlParser.AddTagHandler,0,0,1,void,						void wxHtmlParser.AddTagHandler ( wxHtmlTagHandler * handler)
+wxHtmlParser.AddWord,0,0,1,void,						void wxHtmlParser.AddWord (  wxString & txt)
+wxHtmlParser.DoneParser,0,0,0,void,						void wxHtmlParser.DoneParser ( )
+wxHtmlParser.DoParsing,0,0,2,void,						void wxHtmlParser.DoParsing (  _iterator & begin_pos,      _iterator & end_pos    )
+wxHtmlParser.DoParsing,0,0,0,void,						void wxHtmlParser.DoParsing ( )
+wxHtmlParser.GetFS,0,1,0,wxFileSystem,						wxFileSystem* wxHtmlParser.GetFS ( )
+wxHtmlParser.GetProduct,0,1,0,wxObject,						wxObject* wxHtmlParser.GetProduct ( )
+wxHtmlParser.GetSource,0,1,0,wxString,						wxString* wxHtmlParser.GetSource ( )
+wxHtmlParser.InitParser,0,0,1,void,						void wxHtmlParser.InitParser (  wxString & source)
+wxHtmlParser.OpenURL,0,1,2,wxFSFile,						wxFSFile* wxHtmlParser.OpenURL ( wxHtmlURLType type,      wxString & url    )
+wxHtmlParser.Parse,0,1,1,wxObject,						wxObject* wxHtmlParser.Parse (  wxString & source)
+wxHtmlParser.PopTagHandler,0,0,0,void,						void wxHtmlParser.PopTagHandler ( )
+wxHtmlParser.PushTagHandler,0,0,2,void,						void wxHtmlParser.PushTagHandler ( wxHtmlTagHandler * handler,      wxString & tags    )
+wxHtmlParser.SetFS,0,0,1,void,						void wxHtmlParser.SetFS ( wxFileSystem * fs)
+wxHtmlParser.StopParsing,0,0,0,void,						void wxHtmlParser.StopParsing ( )
+[INHERITS]

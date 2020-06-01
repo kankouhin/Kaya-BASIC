@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/treebase.h>
+[METHODS]
+wxTreeItemData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTreeItemData.GetId,0,0,0,wxTreeItemId,						wxTreeItemId&  wxTreeItemData.GetId ( )
+wxTreeItemData.SetId,0,0,1,void,						void wxTreeItemData.SetId (  wxTreeItemId & id)
+[INHERITS]
+wxClientData

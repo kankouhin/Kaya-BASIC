@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/config.h>
+[METHODS]
+wxConfigPathChanger.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxConfigPathChanger.Name,0,0,0,wxString,						wxString&  wxConfigPathChanger.Name ( )
+wxConfigPathChanger.UpdateIfDeleted,0,0,0,void,						void wxConfigPathChanger.UpdateIfDeleted ( )
+[INHERITS]

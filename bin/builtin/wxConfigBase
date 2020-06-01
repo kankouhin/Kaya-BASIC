@@ -1,0 +1,63 @@
+[CONSTS]
+wx/config.h
+wx/fileconf.h
+wx/msw/regconf.h
+[HEADER]
+<wx/config.h>
+[METHODS]
+wxConfigBase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxConfigBase.EntryType,0,0,-1,enum,						enum wxConfigBase.EntryType
+wxConfigBase.Create,1,1,0,wxConfigBase,						static wxConfigBase* wxConfigBase.Create ( )
+wxConfigBase.DeleteAll,0,0,0,bool,						bool wxConfigBase.DeleteAll ( )
+wxConfigBase.DeleteEntry,0,0,2,bool,						bool wxConfigBase.DeleteEntry (  wxString & key,     bool bDeleteGroupIfEmpty = true    )
+wxConfigBase.DeleteGroup,0,0,1,bool,						bool wxConfigBase.DeleteGroup (  wxString & key)
+wxConfigBase.DontCreateOnDemand,1,0,0,void,						static void wxConfigBase.DontCreateOnDemand ( )
+wxConfigBase.Exists,0,0,1,bool,						bool wxConfigBase.Exists (  wxString & strName)
+wxConfigBase.Flush,0,0,1,bool,						bool wxConfigBase.Flush ( bool bCurrentOnly = false)
+wxConfigBase.Get,1,1,1,wxConfigBase,						static wxConfigBase* wxConfigBase.Get ( bool CreateOnDemand = true)
+wxConfigBase.GetAppName,0,0,0,wxString,						wxString wxConfigBase.GetAppName ( )
+wxConfigBase.GetEntryType,0,0,1,wxConfigBase.EntryType,						wxConfigBase.EntryType wxConfigBase.GetEntryType (  wxString & name)
+wxConfigBase.GetFirstEntry,0,0,2,bool,						bool wxConfigBase.GetFirstEntry ( wxString & str,     long & index    )
+wxConfigBase.GetFirstGroup,0,0,2,bool,						bool wxConfigBase.GetFirstGroup ( wxString & str,     long & index    )
+wxConfigBase.GetNextEntry,0,0,2,bool,						bool wxConfigBase.GetNextEntry ( wxString & str,     long & index    )
+wxConfigBase.GetNextGroup,0,0,2,bool,						bool wxConfigBase.GetNextGroup ( wxString & str,     long & index    )
+wxConfigBase.GetNumberOfEntries,0,0,1,size_t,						size_t wxConfigBase.GetNumberOfEntries ( bool bRecursive = false)
+wxConfigBase.GetNumberOfGroups,0,0,1,size_t,						size_t wxConfigBase.GetNumberOfGroups ( bool bRecursive = false)
+wxConfigBase.GetPath,0,0,0,wxString,						wxString&  wxConfigBase.GetPath ( )
+wxConfigBase.GetVendorName,0,0,0,wxString,						wxString wxConfigBase.GetVendorName ( )
+wxConfigBase.HasEntry,0,0,1,bool,						bool wxConfigBase.HasEntry (  wxString & strName)
+wxConfigBase.HasGroup,0,0,1,bool,						bool wxConfigBase.HasGroup (  wxString & strName)
+wxConfigBase.IsExpandingEnvVars,0,0,0,bool,						bool wxConfigBase.IsExpandingEnvVars ( )
+wxConfigBase.IsRecordingDefaults,0,0,0,bool,						bool wxConfigBase.IsRecordingDefaults ( )
+wxConfigBase.Read,0,0,2,bool,						bool wxConfigBase.Read (  wxString & key,     wxString * str    )
+wxConfigBase.Read,0,0,3,bool,						bool wxConfigBase.Read (  wxString & key,     wxString * str,      wxString & defaultVal    )
+wxConfigBase.Read,0,0,2,wxString,						wxString wxConfigBase.Read (  wxString & key,      wxString & defaultVal    )
+wxConfigBase.Read,0,0,2,bool,						bool wxConfigBase.Read (  wxString & key,     long * l    )
+wxConfigBase.Read,0,0,3,bool,						bool wxConfigBase.Read (  wxString & key,     long * l,     long defaultVal    )
+wxConfigBase.Read,0,0,2,bool,						bool wxConfigBase.Read (  wxString & key,     double * d    )
+wxConfigBase.Read,0,0,3,bool,						bool wxConfigBase.Read (  wxString & key,     double * d,     double defaultVal    )
+wxConfigBase.Read,0,0,2,bool,						bool wxConfigBase.Read (  wxString & key,     float * f    )
+wxConfigBase.Read,0,0,3,bool,						bool wxConfigBase.Read (  wxString & key,     float * f,     float defaultVal    )
+wxConfigBase.Read,0,0,2,bool,						bool wxConfigBase.Read (  wxString & key,     bool * b    )
+wxConfigBase.Read,0,0,3,bool,						bool wxConfigBase.Read (  wxString & key,     bool * d,     bool defaultVal    )
+wxConfigBase.Read,0,0,2,bool,						bool wxConfigBase.Read (  wxString & key,     wxMemoryBuffer * buf    )
+wxConfigBase.Read,0,0,2,bool,						bool wxConfigBase.Read (  wxString & key,     T * value    )
+wxConfigBase.Read,0,0,3,bool,						bool wxConfigBase.Read (  wxString & key,     T * value,      T & defaultVal    )
+wxConfigBase.ReadBool,0,0,2,bool,						bool wxConfigBase.ReadBool (  wxString & key,     bool defaultVal    )
+wxConfigBase.ReadDouble,0,0,2,double,						double wxConfigBase.ReadDouble (  wxString & key,     double defaultVal    )
+wxConfigBase.ReadLong,0,0,2,long,						long wxConfigBase.ReadLong (  wxString & key,     long defaultVal    )
+wxConfigBase.ReadObject,0,0,2,T,						T wxConfigBase.ReadObject (  wxString & key,     T  & defaultVal    )
+wxConfigBase.RenameEntry,0,0,2,bool,						bool wxConfigBase.RenameEntry (  wxString & oldName,      wxString & newName    )
+wxConfigBase.RenameGroup,0,0,2,bool,						bool wxConfigBase.RenameGroup (  wxString & oldName,      wxString & newName    )
+wxConfigBase.Set,1,1,1,wxConfigBase,						static wxConfigBase* wxConfigBase.Set ( wxConfigBase * pConfig)
+wxConfigBase.SetExpandEnvVars,0,0,1,void,						void wxConfigBase.SetExpandEnvVars ( bool bDoIt = true)
+wxConfigBase.SetPath,0,0,1,void,						void wxConfigBase.SetPath (  wxString & strPath)
+wxConfigBase.SetRecordDefaults,0,0,1,void,						void wxConfigBase.SetRecordDefaults ( bool bDoIt = true)
+wxConfigBase.Write,0,0,2,bool,						bool wxConfigBase.Write (  wxString & key,      wxString & value    )
+wxConfigBase.Write,0,0,2,bool,						bool wxConfigBase.Write (  wxString & key,     long value    )
+wxConfigBase.Write,0,0,2,bool,						bool wxConfigBase.Write (  wxString & key,     double value    )
+wxConfigBase.Write,0,0,2,bool,						bool wxConfigBase.Write (  wxString & key,     bool value    )
+wxConfigBase.Write,0,0,2,bool,						bool wxConfigBase.Write (  wxString & key,      wxMemoryBuffer & buf    )
+wxConfigBase.Write,0,0,2,bool,						bool wxConfigBase.Write (  wxString & key,     T  & buf    )
+[INHERITS]
+wxObject

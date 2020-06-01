@@ -1,0 +1,89 @@
+[CONSTS]
+wxAUI_TB_TEXT
+wxAUI_TB_NO_TOOLTIPS
+wxAUI_TB_NO_AUTORESIZE
+wxAUI_TB_GRIPPER
+wxAUI_TB_OVERFLOW
+wxAUI_TB_VERTICAL
+wxAUI_TB_HORZ_LAYOUT
+wxAUI_TB_HORIZONTAL
+wxAUI_TB_PLAIN_BACKGROUND
+wxAUI_TB_HORZ_TEXT
+wxAUI_TB_DEFAULT_STYLE
+[HEADER]
+<wx/aui/auibar.h>
+[METHODS]
+wxAuiToolBar.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiToolBar.AddControl,0,1,2,wxAuiToolBarItem,						wxAuiToolBarItem* wxAuiToolBar.AddControl ( wxControl * control,      wxString & label = wxEmptyString    )
+wxAuiToolBar.AddLabel,0,1,3,wxAuiToolBarItem,						wxAuiToolBarItem* wxAuiToolBar.AddLabel ( int tool_id,      wxString & label = wxEmptyString,      int width = -1    )
+wxAuiToolBar.AddSeparator,0,1,0,wxAuiToolBarItem,						wxAuiToolBarItem* wxAuiToolBar.AddSeparator ( )
+wxAuiToolBar.AddSpacer,0,1,1,wxAuiToolBarItem,						wxAuiToolBarItem* wxAuiToolBar.AddSpacer ( int pixels)
+wxAuiToolBar.AddStretchSpacer,0,1,1,wxAuiToolBarItem,						wxAuiToolBarItem* wxAuiToolBar.AddStretchSpacer ( int proportion = 1)
+wxAuiToolBar.AddTool,0,1,5,wxAuiToolBarItem,						wxAuiToolBarItem* wxAuiToolBar.AddTool ( int tool_id,      wxString & label,      wxBitmap & bitmap,      wxString & short_help_string = wxEmptyString,     wxItemKind kind = wxITEM_NORMAL    )
+wxAuiToolBar.AddTool,0,1,8,wxAuiToolBarItem,						wxAuiToolBarItem* wxAuiToolBar.AddTool ( int tool_id,      wxString & label,      wxBitmap & bitmap,      wxBitmap & disabled_bitmap,     wxItemKind kind,      wxString & short_help_string,      wxString & long_help_string,     wxObject * client_data    )
+wxAuiToolBar.AddTool,0,1,7,wxAuiToolBarItem,						wxAuiToolBarItem* wxAuiToolBar.AddTool ( int tool_id,      wxBitmap & bitmap,      wxBitmap & disabled_bitmap,     bool toggle = false,     wxObject * client_data = NULL,      wxString & short_help_string = wxEmptyString,      wxString & long_help_string = wxEmptyString    )
+wxAuiToolBar.Clear,0,0,0,void,						void wxAuiToolBar.Clear ( )
+wxAuiToolBar.ClearTools,0,0,0,void,						void wxAuiToolBar.ClearTools ( )
+wxAuiToolBar.Create,0,0,5,bool,						bool wxAuiToolBar.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxAUI_TB_DEFAULT_STYLE    )
+wxAuiToolBar.DeleteByIndex,0,0,1,bool,						bool wxAuiToolBar.DeleteByIndex ( int tool_id)
+wxAuiToolBar.DeleteTool,0,0,1,bool,						bool wxAuiToolBar.DeleteTool ( int tool_id)
+wxAuiToolBar.EnableTool,0,0,2,void,						void wxAuiToolBar.EnableTool ( int tool_id,     bool state    )
+wxAuiToolBar.FindControl,0,1,1,wxControl,						wxControl* wxAuiToolBar.FindControl ( int window_id)
+wxAuiToolBar.FindTool,0,1,1,wxAuiToolBarItem,						wxAuiToolBarItem* wxAuiToolBar.FindTool ( int tool_id)
+wxAuiToolBar.FindToolByIndex,0,1,1,wxAuiToolBarItem,						wxAuiToolBarItem* wxAuiToolBar.FindToolByIndex ( int idx)
+wxAuiToolBar.FindToolByPosition,0,1,2,wxAuiToolBarItem,						wxAuiToolBarItem* wxAuiToolBar.FindToolByPosition ( wxCoord x,     wxCoord y    )
+wxAuiToolBar.GetArtProvider,0,1,0,wxAuiToolBarArt,						wxAuiToolBarArt* wxAuiToolBar.GetArtProvider ( )
+wxAuiToolBar.GetGripperVisible,0,0,0,bool,						bool wxAuiToolBar.GetGripperVisible ( )
+wxAuiToolBar.GetHintSize,0,0,1,wxSize,						wxSize wxAuiToolBar.GetHintSize ( int dock_direction)
+wxAuiToolBar.GetOverflowVisible,0,0,0,bool,						bool wxAuiToolBar.GetOverflowVisible ( )
+wxAuiToolBar.GetToolBarFits,0,0,0,bool,						bool wxAuiToolBar.GetToolBarFits ( )
+wxAuiToolBar.GetToolBitmap,0,0,1,wxBitmap,						wxBitmap wxAuiToolBar.GetToolBitmap ( int tool_id)
+wxAuiToolBar.GetToolBitmapSize,0,0,0,wxSize,						wxSize wxAuiToolBar.GetToolBitmapSize ( )
+wxAuiToolBar.GetToolBorderPadding,0,0,0,int,						int wxAuiToolBar.GetToolBorderPadding ( )
+wxAuiToolBar.GetToolCount,0,0,0,size_t,						size_t wxAuiToolBar.GetToolCount ( )
+wxAuiToolBar.GetToolDropDown,0,0,1,bool,						bool wxAuiToolBar.GetToolDropDown ( int tool_id)
+wxAuiToolBar.GetToolEnabled,0,0,1,bool,						bool wxAuiToolBar.GetToolEnabled ( int tool_id)
+wxAuiToolBar.GetToolFits,0,0,1,bool,						bool wxAuiToolBar.GetToolFits ( int tool_id)
+wxAuiToolBar.GetToolFitsByIndex,0,0,1,bool,						bool wxAuiToolBar.GetToolFitsByIndex ( int tool_id)
+wxAuiToolBar.GetToolIndex,0,0,1,int,						int wxAuiToolBar.GetToolIndex ( int tool_id)
+wxAuiToolBar.GetToolLabel,0,0,1,wxString,						wxString wxAuiToolBar.GetToolLabel ( int tool_id)
+wxAuiToolBar.GetToolLongHelp,0,0,1,wxString,						wxString wxAuiToolBar.GetToolLongHelp ( int tool_id)
+wxAuiToolBar.GetToolPacking,0,0,0,int,						int wxAuiToolBar.GetToolPacking ( )
+wxAuiToolBar.GetToolPos,0,0,1,int,						int wxAuiToolBar.GetToolPos ( int tool_id)
+wxAuiToolBar.GetToolProportion,0,0,1,int,						int wxAuiToolBar.GetToolProportion ( int tool_id)
+wxAuiToolBar.GetToolRect,0,0,1,wxRect,						wxRect wxAuiToolBar.GetToolRect ( int tool_id)
+wxAuiToolBar.GetToolSeparation,0,0,0,int,						int wxAuiToolBar.GetToolSeparation ( )
+wxAuiToolBar.GetToolShortHelp,0,0,1,wxString,						wxString wxAuiToolBar.GetToolShortHelp ( int tool_id)
+wxAuiToolBar.GetToolSticky,0,0,1,bool,						bool wxAuiToolBar.GetToolSticky ( int tool_id)
+wxAuiToolBar.GetToolTextOrientation,0,0,0,int,						int wxAuiToolBar.GetToolTextOrientation ( )
+wxAuiToolBar.GetToolToggled,0,0,1,bool,						bool wxAuiToolBar.GetToolToggled ( int tool_id)
+wxAuiToolBar.GetWindowStyleFlag,0,0,0,long,						long wxAuiToolBar.GetWindowStyleFlag ( )
+wxAuiToolBar.IsPaneValid,0,0,1,bool,						bool wxAuiToolBar.IsPaneValid (  wxAuiPaneInfo & pane)
+wxAuiToolBar.Realize,0,0,0,bool,						bool wxAuiToolBar.Realize ( )
+wxAuiToolBar.SetArtProvider,0,0,1,void,						void wxAuiToolBar.SetArtProvider ( wxAuiToolBarArt * art)
+wxAuiToolBar.SetCustomOverflowItems,0,0,2,void,						void wxAuiToolBar.SetCustomOverflowItems (  wxAuiToolBarItemArray & prepend,      wxAuiToolBarItemArray & append    )
+wxAuiToolBar.SetFont,0,0,1,bool,						bool wxAuiToolBar.SetFont (  wxFont & font)
+wxAuiToolBar.SetGripperVisible,0,0,1,void,						void wxAuiToolBar.SetGripperVisible ( bool visible)
+wxAuiToolBar.SetMargins,0,0,1,void,						void wxAuiToolBar.SetMargins (  wxSize & size)
+wxAuiToolBar.SetMargins,0,0,2,void,						void wxAuiToolBar.SetMargins ( int x,     int y    )
+wxAuiToolBar.SetMargins,0,0,4,void,						void wxAuiToolBar.SetMargins ( int left,     int right,     int top,     int bottom    )
+wxAuiToolBar.SetOverflowVisible,0,0,1,void,						void wxAuiToolBar.SetOverflowVisible ( bool visible)
+wxAuiToolBar.SetToolBitmap,0,0,2,void,						void wxAuiToolBar.SetToolBitmap ( int tool_id,      wxBitmap & bitmap    )
+wxAuiToolBar.SetToolBitmapSize,0,0,1,void,						void wxAuiToolBar.SetToolBitmapSize (  wxSize & size)
+wxAuiToolBar.SetToolBorderPadding,0,0,1,void,						void wxAuiToolBar.SetToolBorderPadding ( int padding)
+wxAuiToolBar.SetToolDropDown,0,0,2,void,						void wxAuiToolBar.SetToolDropDown ( int tool_id,     bool dropdown    )
+wxAuiToolBar.SetToolLabel,0,0,2,void,						void wxAuiToolBar.SetToolLabel ( int tool_id,      wxString & label    )
+wxAuiToolBar.SetToolLongHelp,0,0,2,void,						void wxAuiToolBar.SetToolLongHelp ( int tool_id,      wxString & help_string    )
+wxAuiToolBar.SetToolPacking,0,0,1,void,						void wxAuiToolBar.SetToolPacking ( int packing)
+wxAuiToolBar.SetToolProportion,0,0,2,void,						void wxAuiToolBar.SetToolProportion ( int tool_id,     int proportion    )
+wxAuiToolBar.SetToolSeparation,0,0,1,void,						void wxAuiToolBar.SetToolSeparation ( int separation)
+wxAuiToolBar.SetToolShortHelp,0,0,2,void,						void wxAuiToolBar.SetToolShortHelp ( int tool_id,      wxString & help_string    )
+wxAuiToolBar.SetToolSticky,0,0,2,void,						void wxAuiToolBar.SetToolSticky ( int tool_id,     bool sticky    )
+wxAuiToolBar.SetToolTextOrientation,0,0,1,void,						void wxAuiToolBar.SetToolTextOrientation ( int orientation)
+wxAuiToolBar.SetWindowStyleFlag,0,0,1,void,						void wxAuiToolBar.SetWindowStyleFlag ( long style)
+wxAuiToolBar.ToggleTool,0,0,2,void,						void wxAuiToolBar.ToggleTool ( int tool_id,     bool state    )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

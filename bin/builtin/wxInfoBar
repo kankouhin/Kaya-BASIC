@@ -1,0 +1,24 @@
+[CONSTS]
+[HEADER]
+<wx/infobar.h>
+[METHODS]
+wxInfoBar.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxInfoBar.AddButton,0,0,2,void,						void wxInfoBar.AddButton ( wxWindowID btnid,      wxString & label = wxString()    )
+wxInfoBar.Create,0,0,2,bool,						bool wxInfoBar.Create ( wxWindow * parent,     wxWindowID winid = wxID_ANY    )
+wxInfoBar.Dismiss,0,0,0,void,						void wxInfoBar.Dismiss ( )
+wxInfoBar.GetButtonCount,0,0,0,size_t,						size_t wxInfoBar.GetButtonCount ( )
+wxInfoBar.GetButtonId,0,0,1,wxWindowID,						wxWindowID wxInfoBar.GetButtonId ( size_t idx)
+wxInfoBar.GetEffectDuration,0,0,0,int,						int wxInfoBar.GetEffectDuration ( )
+wxInfoBar.GetHideEffect,0,0,0,wxShowEffect,						wxShowEffect wxInfoBar.GetHideEffect ( )
+wxInfoBar.GetShowEffect,0,0,0,wxShowEffect,						wxShowEffect wxInfoBar.GetShowEffect ( )
+wxInfoBar.HasButtonId,0,0,1,bool,						bool wxInfoBar.HasButtonId ( wxWindowID btnid)
+wxInfoBar.RemoveButton,0,0,1,void,						void wxInfoBar.RemoveButton ( wxWindowID btnid)
+wxInfoBar.SetEffectDuration,0,0,1,void,						void wxInfoBar.SetEffectDuration ( int duration)
+wxInfoBar.SetFont,0,0,1,bool,						bool wxInfoBar.SetFont (  wxFont & font)
+wxInfoBar.SetShowHideEffects,0,0,2,void,						void wxInfoBar.SetShowHideEffects ( wxShowEffect showEffect,     wxShowEffect hideEffect    )
+wxInfoBar.ShowMessage,0,0,2,void,						void wxInfoBar.ShowMessage (  wxString & msg,     int flags = wxICON_INFORMATION    )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

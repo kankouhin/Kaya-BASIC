@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/archive.h>
+[METHODS]
+wxArchiveInputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxArchiveInputStream.CloseEntry,0,0,0,bool,						bool wxArchiveInputStream.CloseEntry ( )
+wxArchiveInputStream.GetNextEntry,0,1,0,wxArchiveEntry,						wxArchiveEntry* wxArchiveInputStream.GetNextEntry ( )
+wxArchiveInputStream.OpenEntry,0,0,1,bool,						bool wxArchiveInputStream.OpenEntry ( wxArchiveEntry & entry)
+[INHERITS]
+wxFilterInputStream
+wxInputStream
+wxStreamBase

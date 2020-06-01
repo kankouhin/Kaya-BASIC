@@ -1,0 +1,34 @@
+[CONSTS]
+[HEADER]
+<wx/ribbon/gallery.h>
+[METHODS]
+wxRibbonGallery.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonGallery.Append,0,1,2,wxRibbonGalleryItem,						wxRibbonGalleryItem* wxRibbonGallery.Append (  wxBitmap & bitmap,     int id    )
+wxRibbonGallery.Append,0,1,3,wxRibbonGalleryItem,						wxRibbonGalleryItem* wxRibbonGallery.Append (  wxBitmap & bitmap,     int id,     void * clientData    )
+wxRibbonGallery.Append,0,1,3,wxRibbonGalleryItem,						wxRibbonGalleryItem* wxRibbonGallery.Append (  wxBitmap & bitmap,     int id,     wxClientData * clientData    )
+wxRibbonGallery.Clear,0,0,0,void,						void wxRibbonGallery.Clear ( )
+wxRibbonGallery.Create,0,0,5,bool,						bool wxRibbonGallery.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0    )
+wxRibbonGallery.EnsureVisible,0,0,1,void,						void wxRibbonGallery.EnsureVisible (  wxRibbonGalleryItem * item)
+wxRibbonGallery.GetActiveItem,0,1,0,wxRibbonGalleryItem,						wxRibbonGalleryItem* wxRibbonGallery.GetActiveItem ( )
+wxRibbonGallery.GetCount,0,0,0,int,						unsigned int wxRibbonGallery.GetCount ( )
+wxRibbonGallery.GetDownButtonState,0,0,0,wxRibbonGalleryButtonState,						wxRibbonGalleryButtonState wxRibbonGallery.GetDownButtonState ( )
+wxRibbonGallery.GetExtensionButtonState,0,0,0,wxRibbonGalleryButtonState,						wxRibbonGalleryButtonState wxRibbonGallery.GetExtensionButtonState ( )
+wxRibbonGallery.GetHoveredItem,0,1,0,wxRibbonGalleryItem,						wxRibbonGalleryItem* wxRibbonGallery.GetHoveredItem ( )
+wxRibbonGallery.GetItem,0,1,1,wxRibbonGalleryItem,						wxRibbonGalleryItem* wxRibbonGallery.GetItem ( unsigned int n)
+wxRibbonGallery.GetItemClientData,0,1,1,void,						void* wxRibbonGallery.GetItemClientData (  wxRibbonGalleryItem * item)
+wxRibbonGallery.GetItemClientObject,0,1,1,wxClientData,						wxClientData* wxRibbonGallery.GetItemClientObject (  wxRibbonGalleryItem * item)
+wxRibbonGallery.GetSelection,0,1,0,wxRibbonGalleryItem,						wxRibbonGalleryItem* wxRibbonGallery.GetSelection ( )
+wxRibbonGallery.GetUpButtonState,0,0,0,wxRibbonGalleryButtonState,						wxRibbonGalleryButtonState wxRibbonGallery.GetUpButtonState ( )
+wxRibbonGallery.IsEmpty,0,0,0,bool,						bool wxRibbonGallery.IsEmpty ( )
+wxRibbonGallery.IsHovered,0,0,0,bool,						bool wxRibbonGallery.IsHovered ( )
+wxRibbonGallery.ScrollLines,0,0,1,bool,						bool wxRibbonGallery.ScrollLines ( int lines)
+wxRibbonGallery.ScrollPixels,0,0,1,bool,						bool wxRibbonGallery.ScrollPixels ( int pixels)
+wxRibbonGallery.SetItemClientData,0,0,2,void,						void wxRibbonGallery.SetItemClientData ( wxRibbonGalleryItem * item,     void * data    )
+wxRibbonGallery.SetItemClientObject,0,0,2,void,						void wxRibbonGallery.SetItemClientObject ( wxRibbonGalleryItem * item,     wxClientData * data    )
+wxRibbonGallery.SetSelection,0,0,1,void,						void wxRibbonGallery.SetSelection ( wxRibbonGalleryItem * item)
+[INHERITS]
+wxRibbonControl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

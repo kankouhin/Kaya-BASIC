@@ -1,0 +1,46 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxTextAttrShadow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextAttrShadow.AddFlag,0,0,1,void,						void wxTextAttrShadow.AddFlag ( int flag)
+wxTextAttrShadow.Apply,0,0,2,bool,						bool wxTextAttrShadow.Apply (  wxTextAttrShadow & shadow,      wxTextAttrShadow * compareWith = NULL    )
+wxTextAttrShadow.CollectCommonAttributes,0,0,3,void,						void wxTextAttrShadow.CollectCommonAttributes (  wxTextAttrShadow & attr,     wxTextAttrShadow & clashingAttr,     wxTextAttrShadow & absentAttr    )
+wxTextAttrShadow.EqPartial,0,0,2,bool,						bool wxTextAttrShadow.EqPartial (  wxTextAttrShadow & shadow,     bool weakTest = true    )
+wxTextAttrShadow.GetBlurDistance,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrShadow.GetBlurDistance ( )
+wxTextAttrShadow.GetBlurDistance,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrShadow.GetBlurDistance ( )
+wxTextAttrShadow.GetColour,0,0,0,wxColour,						wxColour wxTextAttrShadow.GetColour ( )
+wxTextAttrShadow.GetColourLong,0,0,0,long,						unsigned long wxTextAttrShadow.GetColourLong ( )
+wxTextAttrShadow.GetFlags,0,0,0,int,						int wxTextAttrShadow.GetFlags ( )
+wxTextAttrShadow.GetOffsetX,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrShadow.GetOffsetX ( )
+wxTextAttrShadow.GetOffsetX,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrShadow.GetOffsetX ( )
+wxTextAttrShadow.GetOffsetY,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrShadow.GetOffsetY ( )
+wxTextAttrShadow.GetOffsetY,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrShadow.GetOffsetY ( )
+wxTextAttrShadow.GetOpacity,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrShadow.GetOpacity ( )
+wxTextAttrShadow.GetOpacity,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrShadow.GetOpacity ( )
+wxTextAttrShadow.GetSpread,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrShadow.GetSpread ( )
+wxTextAttrShadow.GetSpread,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrShadow.GetSpread ( )
+wxTextAttrShadow.HasColour,0,0,0,bool,						bool wxTextAttrShadow.HasColour ( )
+wxTextAttrShadow.IsDefault,0,0,0,bool,						bool wxTextAttrShadow.IsDefault ( )
+wxTextAttrShadow.IsValid,0,0,0,bool,						bool wxTextAttrShadow.IsValid ( )
+wxTextAttrShadow.operator==,0,0,1,bool,						bool wxTextAttrShadow.operator== (  wxTextAttrShadow & shadow)
+wxTextAttrShadow.RemoveFlag,0,0,1,void,						void wxTextAttrShadow.RemoveFlag ( int flag)
+wxTextAttrShadow.RemoveStyle,0,0,1,bool,						bool wxTextAttrShadow.RemoveStyle (  wxTextAttrShadow & attr)
+wxTextAttrShadow.Reset,0,0,0,void,						void wxTextAttrShadow.Reset ( )
+wxTextAttrShadow.SetBlurDistance,0,0,1,void,						void wxTextAttrShadow.SetBlurDistance (  wxTextAttrDimension & blur)
+wxTextAttrShadow.SetColour,0,0,1,void,						void wxTextAttrShadow.SetColour ( unsigned long colour)
+wxTextAttrShadow.SetColour,0,0,1,void,						void wxTextAttrShadow.SetColour (  wxColour & colour)
+wxTextAttrShadow.SetFlags,0,0,1,void,						void wxTextAttrShadow.SetFlags ( int flags)
+wxTextAttrShadow.SetOffsetX,0,0,1,void,						void wxTextAttrShadow.SetOffsetX (  wxTextAttrDimension & offset)
+wxTextAttrShadow.SetOffsetY,0,0,1,void,						void wxTextAttrShadow.SetOffsetY (  wxTextAttrDimension & offset)
+wxTextAttrShadow.SetOpacity,0,0,1,void,						void wxTextAttrShadow.SetOpacity (  wxTextAttrDimension & opacity)
+wxTextAttrShadow.SetSpread,0,0,1,void,						void wxTextAttrShadow.SetSpread (  wxTextAttrDimension & spread)
+wxTextAttrShadow.SetValid,0,0,1,void,						void wxTextAttrShadow.SetValid ( bool b)
+wxTextAttrShadow.m_blurDistance,0,0,-1,wxTextAttrDimension,						wxTextAttrDimension wxTextAttrShadow.m_blurDistance
+wxTextAttrShadow.m_flags,0,0,-1,int,						int wxTextAttrShadow.m_flags
+wxTextAttrShadow.m_offsetX,0,0,-1,wxTextAttrDimension,						wxTextAttrDimension wxTextAttrShadow.m_offsetX
+wxTextAttrShadow.m_offsetY,0,0,-1,wxTextAttrDimension,						wxTextAttrDimension wxTextAttrShadow.m_offsetY
+wxTextAttrShadow.m_opacity,0,0,-1,wxTextAttrDimension,						wxTextAttrDimension wxTextAttrShadow.m_opacity
+wxTextAttrShadow.m_shadowColour,0,0,-1,long,						unsigned long wxTextAttrShadow.m_shadowColour
+wxTextAttrShadow.m_spread,0,0,-1,wxTextAttrDimension,						wxTextAttrDimension wxTextAttrShadow.m_spread
+[INHERITS]

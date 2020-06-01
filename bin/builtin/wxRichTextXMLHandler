@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextxml.h>
+[METHODS]
+wxRichTextXMLHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextXMLHandler.CanLoad,0,0,0,bool,						bool wxRichTextXMLHandler.CanLoad ( )
+wxRichTextXMLHandler.CanSave,0,0,0,bool,						bool wxRichTextXMLHandler.CanSave ( )
+wxRichTextXMLHandler.ClearNodeToClassMap,1,0,0,void,						static void wxRichTextXMLHandler.ClearNodeToClassMap ( )
+wxRichTextXMLHandler.DoLoadFile,0,0,2,bool,						bool wxRichTextXMLHandler.DoLoadFile ( wxRichTextBuffer * buffer,     wxInputStream & stream    )
+wxRichTextXMLHandler.DoSaveFile,0,0,2,bool,						bool wxRichTextXMLHandler.DoSaveFile ( wxRichTextBuffer * buffer,     wxOutputStream & stream    )
+wxRichTextXMLHandler.ExportXML,0,0,3,bool,						bool wxRichTextXMLHandler.ExportXML ( wxOutputStream & stream,     wxRichTextObject & obj,     int level    )
+wxRichTextXMLHandler.ImportXML,0,0,3,bool,						bool wxRichTextXMLHandler.ImportXML ( wxRichTextBuffer * buffer,     wxRichTextObject * obj,     wxXmlNode * node    )
+wxRichTextXMLHandler.RegisterNodeName,1,0,2,void,						static void wxRichTextXMLHandler.RegisterNodeName (  wxString & nodeName,      wxString & className    )
+[INHERITS]
+wxRichTextFileHandler
+wxObject

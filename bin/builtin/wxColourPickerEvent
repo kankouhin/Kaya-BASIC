@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/clrpicker.h>
+[METHODS]
+wxColourPickerEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxColourPickerEvent.GetColour,0,0,0,wxColour,						wxColour wxColourPickerEvent.GetColour ( )
+wxColourPickerEvent.SetColour,0,0,1,void,						void wxColourPickerEvent.SetColour (  wxColour & pos)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

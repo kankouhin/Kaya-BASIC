@@ -1,0 +1,27 @@
+[CONSTS]
+[HEADER]
+<wx/strconv.h>
+[METHODS]
+wxMBConv.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMBConv.Clone,0,1,0,wxMBConv,						wxMBConv* wxMBConv.Clone ( )
+wxMBConv.cMB2WC,0,0,3,wxWCharBuffer,						wxWCharBuffer wxMBConv.cMB2WC (  char * in,     size_t inLen,     size_t * outLen    )
+wxMBConv.cMB2WC,0,0,1,wxWCharBuffer,						wxWCharBuffer wxMBConv.cMB2WC (  wxCharBuffer & buf)
+wxMBConv.cMB2WX,0,1,1,char,						char* wxMBConv.cMB2WX (  char * psz)
+wxMBConv.cMB2WX,0,0,1,wxWCharBuffer,						wxWCharBuffer wxMBConv.cMB2WX (  char * psz)
+wxMBConv.cWC2MB,0,0,3,wxCharBuffer,						wxCharBuffer wxMBConv.cWC2MB (  wchar_t * in,     size_t inLen,     size_t * outLen    )
+wxMBConv.cWC2MB,0,0,1,wxCharBuffer,						wxCharBuffer wxMBConv.cWC2MB (  wxWCharBuffer & buf)
+wxMBConv.cWC2WX,0,1,1,wchar_t,						wchar_t* wxMBConv.cWC2WX (  wchar_t * psz)
+wxMBConv.cWC2WX,0,0,1,wxCharBuffer,						wxCharBuffer wxMBConv.cWC2WX (  wchar_t * psz)
+wxMBConv.cWX2MB,0,1,1,char,						char* wxMBConv.cWX2MB (  wxChar * psz)
+wxMBConv.cWX2MB,0,0,1,wxCharBuffer,						wxCharBuffer wxMBConv.cWX2MB (  wxChar * psz)
+wxMBConv.cWX2WC,0,1,1,wchar_t,						wchar_t* wxMBConv.cWX2WC (  wxChar * psz)
+wxMBConv.cWX2WC,0,0,1,wxWCharBuffer,						wxWCharBuffer wxMBConv.cWX2WC (  wxChar * psz)
+wxMBConv.FromWChar,0,0,4,size_t,						size_t wxMBConv.FromWChar ( char * dst,     size_t dstLen,      wchar_t * src,     size_t srcLen = wxNO_LEN    )
+wxMBConv.GetMaxCharLen,0,0,0,size_t,						size_t wxMBConv.GetMaxCharLen ( )
+wxMBConv.GetMaxMBNulLen,1,0,0,size_t,						static size_t wxMBConv.GetMaxMBNulLen ( )
+wxMBConv.GetMBNulLen,0,0,0,size_t,						size_t wxMBConv.GetMBNulLen ( )
+wxMBConv.IsUTF8,0,0,0,bool,						bool wxMBConv.IsUTF8 ( )
+wxMBConv.MB2WC,0,0,3,size_t,						size_t wxMBConv.MB2WC ( wchar_t * out,      char * in,     size_t outLen    )
+wxMBConv.ToWChar,0,0,4,size_t,						size_t wxMBConv.ToWChar ( wchar_t * dst,     size_t dstLen,      char * src,     size_t srcLen = wxNO_LEN    )
+wxMBConv.WC2MB,0,0,3,size_t,						size_t wxMBConv.WC2MB ( char * buf,      wchar_t * psz,     size_t n    )
+[INHERITS]

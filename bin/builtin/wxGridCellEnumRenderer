@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellEnumRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellEnumRenderer.SetParameters,0,0,1,void,						void wxGridCellEnumRenderer.SetParameters (  wxString & params)
+[INHERITS]
+wxGridCellStringRenderer
+wxGridCellRenderer
+wxClientDataContainer
+wxRefCounter

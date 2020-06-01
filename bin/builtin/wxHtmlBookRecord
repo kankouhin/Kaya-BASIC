@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/html/helpdata.h>
+[METHODS]
+wxHtmlBookRecord.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlBookRecord.GetBasePath,0,0,0,wxString,						wxString wxHtmlBookRecord.GetBasePath ( )
+wxHtmlBookRecord.GetBookFile,0,0,0,wxString,						wxString wxHtmlBookRecord.GetBookFile ( )
+wxHtmlBookRecord.GetContentsEnd,0,0,0,int,						int wxHtmlBookRecord.GetContentsEnd ( )
+wxHtmlBookRecord.GetContentsStart,0,0,0,int,						int wxHtmlBookRecord.GetContentsStart ( )
+wxHtmlBookRecord.GetFullPath,0,0,1,wxString,						wxString wxHtmlBookRecord.GetFullPath (  wxString & page)
+wxHtmlBookRecord.GetStart,0,0,0,wxString,						wxString wxHtmlBookRecord.GetStart ( )
+wxHtmlBookRecord.GetTitle,0,0,0,wxString,						wxString wxHtmlBookRecord.GetTitle ( )
+wxHtmlBookRecord.SetBasePath,0,0,1,void,						void wxHtmlBookRecord.SetBasePath (  wxString & path)
+wxHtmlBookRecord.SetContentsRange,0,0,2,void,						void wxHtmlBookRecord.SetContentsRange ( int start,     int end    )
+wxHtmlBookRecord.SetStart,0,0,1,void,						void wxHtmlBookRecord.SetStart (  wxString & start)
+wxHtmlBookRecord.SetTitle,0,0,1,void,						void wxHtmlBookRecord.SetTitle (  wxString & title)
+[INHERITS]

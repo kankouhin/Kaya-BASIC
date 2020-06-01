@@ -1,0 +1,36 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextImage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextImage.CanEditProperties,0,0,0,bool,						bool wxRichTextImage.CanEditProperties ( )
+wxRichTextImage.Clone,0,1,0,wxRichTextObject,						wxRichTextObject* wxRichTextImage.Clone ( )
+wxRichTextImage.Copy,0,0,1,void,						void wxRichTextImage.Copy (  wxRichTextImage & obj)
+wxRichTextImage.Draw,0,0,7,bool,						bool wxRichTextImage.Draw ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRichTextRange & range,      wxRichTextSelection & selection,      wxRect & rect,     int descent,     int style    )
+wxRichTextImage.EditProperties,0,0,2,bool,						bool wxRichTextImage.EditProperties ( wxWindow * parent,     wxRichTextBuffer * buffer    )
+wxRichTextImage.GetImageBlock,0,0,0,wxRichTextImageBlock,						wxRichTextImageBlock&  wxRichTextImage.GetImageBlock ( )
+wxRichTextImage.GetImageCache,0,0,0,wxBitmap,						wxBitmap&  wxRichTextImage.GetImageCache ( )
+wxRichTextImage.GetImageState,0,0,0,int,						int wxRichTextImage.GetImageState ( )
+wxRichTextImage.GetNaturalSize,0,0,0,wxTextAttrSize,						wxTextAttrSize wxRichTextImage.GetNaturalSize ( )
+wxRichTextImage.GetOriginalImageSize,0,0,0,wxSize,						wxSize wxRichTextImage.GetOriginalImageSize ( )
+wxRichTextImage.GetPropertiesMenuLabel,0,0,0,wxString,						wxString wxRichTextImage.GetPropertiesMenuLabel ( )
+wxRichTextImage.GetRangeSize,0,0,9,bool,						bool wxRichTextImage.GetRangeSize (  wxRichTextRange & range,     wxSize & size,     int & descent,     wxDC & dc,     wxRichTextDrawingContext & context,     int flags,      wxPoint & position = wxPoint(0, 0),      wxSize & parentSize = wxDefaultSize,     wxArrayInt * partialExtents = NULL    )
+wxRichTextImage.GetXMLNodeName,0,0,0,wxString,						wxString wxRichTextImage.GetXMLNodeName ( )
+wxRichTextImage.ImportFromXML,0,0,4,bool,						bool wxRichTextImage.ImportFromXML ( wxRichTextBuffer * buffer,     wxXmlNode * node,     wxRichTextXMLHandler * handler,     bool * recurse    )
+wxRichTextImage.IsEmpty,0,0,0,bool,						bool wxRichTextImage.IsEmpty ( )
+wxRichTextImage.IsFloatable,0,0,0,bool,						bool wxRichTextImage.IsFloatable ( )
+wxRichTextImage.Layout,0,0,5,bool,						bool wxRichTextImage.Layout ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRect & rect,      wxRect & parentRect,     int style    )
+wxRichTextImage.LoadAndScaleImageCache,0,0,4,bool,						bool wxRichTextImage.LoadAndScaleImageCache ( wxImage & image,      wxSize & sz,     wxRichTextDrawingContext & context,     bool & changed    )
+wxRichTextImage.LoadImageCache,0,0,5,bool,						bool wxRichTextImage.LoadImageCache ( wxDC & dc,     wxRichTextDrawingContext & context,     wxSize & retImageSize,     bool resetCache = false,      wxSize & parentSize = wxDefaultSize    )
+wxRichTextImage.ResetImageCache,0,0,0,void,						void wxRichTextImage.ResetImageCache ( )
+wxRichTextImage.SetImageCache,0,0,1,void,						void wxRichTextImage.SetImageCache (  wxBitmap & bitmap)
+wxRichTextImage.SetImageState,0,0,1,void,						void wxRichTextImage.SetImageState ( int state)
+wxRichTextImage.SetOriginalImageSize,0,0,1,void,						void wxRichTextImage.SetOriginalImageSize (  wxSize & sz)
+wxRichTextImage.UsesParagraphAttributes,0,0,0,bool,						bool wxRichTextImage.UsesParagraphAttributes ( )
+wxRichTextImage.m_imageBlock,0,0,-1,wxRichTextImageBlock,						wxRichTextImageBlock wxRichTextImage.m_imageBlock
+wxRichTextImage.m_imageCache,0,0,-1,wxBitmap,						wxBitmap wxRichTextImage.m_imageCache
+wxRichTextImage.m_imageState,0,0,-1,int,						int wxRichTextImage.m_imageState
+wxRichTextImage.m_originalImageSize,0,0,-1,wxSize,						wxSize wxRichTextImage.m_originalImageSize
+[INHERITS]
+wxRichTextObject
+wxObject

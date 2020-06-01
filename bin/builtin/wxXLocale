@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/xlocale.h>
+[METHODS]
+wxXLocale.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxXLocale.GetCLocale,1,0,0,wxXLocale,						static wxXLocale&  wxXLocale.GetCLocale ( )
+wxXLocale.IsOk,0,0,0,bool,						bool wxXLocale.IsOk ( )
+wxXLocale.operator==,0,0,1,bool,						bool wxXLocale.operator== (  wxXLocale & loc)
+[INHERITS]

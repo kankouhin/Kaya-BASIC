@@ -1,0 +1,40 @@
+[CONSTS]
+[HEADER]
+<wx/docview.h>
+[METHODS]
+wxDocTemplate.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDocTemplate.CreateDocument,0,1,2,wxDocument,						wxDocument* wxDocTemplate.CreateDocument (  wxString & path,     long flags = 0    )
+wxDocTemplate.CreateView,0,1,2,wxView,						wxView* wxDocTemplate.CreateView ( wxDocument * doc,     long flags = 0    )
+wxDocTemplate.FileMatchesTemplate,0,0,1,bool,						bool wxDocTemplate.FileMatchesTemplate (  wxString & path)
+wxDocTemplate.GetDefaultExtension,0,0,0,wxString,						wxString wxDocTemplate.GetDefaultExtension ( )
+wxDocTemplate.GetDescription,0,0,0,wxString,						wxString wxDocTemplate.GetDescription ( )
+wxDocTemplate.GetDirectory,0,0,0,wxString,						wxString wxDocTemplate.GetDirectory ( )
+wxDocTemplate.GetDocClassInfo,0,1,0,wxClassInfo,						wxClassInfo* wxDocTemplate.GetDocClassInfo ( )
+wxDocTemplate.GetDocumentManager,0,1,0,wxDocManager,						wxDocManager* wxDocTemplate.GetDocumentManager ( )
+wxDocTemplate.GetDocumentName,0,0,0,wxString,						wxString wxDocTemplate.GetDocumentName ( )
+wxDocTemplate.GetFileFilter,0,0,0,wxString,						wxString wxDocTemplate.GetFileFilter ( )
+wxDocTemplate.GetFlags,0,0,0,long,						long wxDocTemplate.GetFlags ( )
+wxDocTemplate.GetPageSetupDialogData,0,0,0,wxPageSetupDialogData,						wxPageSetupDialogData&  wxDocTemplate.GetPageSetupDialogData ( )
+wxDocTemplate.GetPageSetupDialogData,0,0,0,wxPageSetupDialogData,						wxPageSetupDialogData&  wxDocTemplate.GetPageSetupDialogData ( )
+wxDocTemplate.GetViewClassInfo,0,1,0,wxClassInfo,						wxClassInfo* wxDocTemplate.GetViewClassInfo ( )
+wxDocTemplate.GetViewName,0,0,0,wxString,						wxString wxDocTemplate.GetViewName ( )
+wxDocTemplate.InitDocument,0,0,3,bool,						bool wxDocTemplate.InitDocument ( wxDocument * doc,      wxString & path,     long flags = 0    )
+wxDocTemplate.IsVisible,0,0,0,bool,						bool wxDocTemplate.IsVisible ( )
+wxDocTemplate.SetDefaultExtension,0,0,1,void,						void wxDocTemplate.SetDefaultExtension (  wxString & ext)
+wxDocTemplate.SetDescription,0,0,1,void,						void wxDocTemplate.SetDescription (  wxString & descr)
+wxDocTemplate.SetDirectory,0,0,1,void,						void wxDocTemplate.SetDirectory (  wxString & dir)
+wxDocTemplate.SetDocumentManager,0,0,1,void,						void wxDocTemplate.SetDocumentManager ( wxDocManager * manager)
+wxDocTemplate.SetFileFilter,0,0,1,void,						void wxDocTemplate.SetFileFilter (  wxString & filter)
+wxDocTemplate.SetFlags,0,0,1,void,						void wxDocTemplate.SetFlags ( long flags)
+wxDocTemplate.m_defaultExt,0,0,-1,wxString,						wxString wxDocTemplate.m_defaultExt
+wxDocTemplate.m_description,0,0,-1,wxString,						wxString wxDocTemplate.m_description
+wxDocTemplate.m_directory,0,0,-1,wxString,						wxString wxDocTemplate.m_directory
+wxDocTemplate.m_docClassInfo,0,1,-1,wxClassInfo,						wxClassInfo* wxDocTemplate.m_docClassInfo
+wxDocTemplate.m_docTypeName,0,0,-1,wxString,						wxString wxDocTemplate.m_docTypeName
+wxDocTemplate.m_documentManager,0,1,-1,wxDocTemplate,						wxDocTemplate* wxDocTemplate.m_documentManager
+wxDocTemplate.m_fileFilter,0,0,-1,wxString,						wxString wxDocTemplate.m_fileFilter
+wxDocTemplate.m_flags,0,0,-1,long,						long wxDocTemplate.m_flags
+wxDocTemplate.m_viewClassInfo,0,1,-1,wxClassInfo,						wxClassInfo* wxDocTemplate.m_viewClassInfo
+wxDocTemplate.m_viewTypeName,0,0,-1,wxString,						wxString wxDocTemplate.m_viewTypeName
+[INHERITS]
+wxObject

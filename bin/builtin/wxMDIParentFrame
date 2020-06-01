@@ -5,20 +5,22 @@ wxID_MDI_WINDOW_TILE_VERT
 wxID_MDI_WINDOW_ARRANGE_ICONS
 wxID_MDI_WINDOW_PREV
 wxID_MDI_WINDOW_NEXT
-[METHODS]
+[HEADER]
 <wx/mdi.h>
-ActivateNext,0,0,0,void,						void ActivateNext ( )
-ActivatePrevious,0,0,0,void,						void ActivatePrevious ( )
-ArrangeIcons,0,0,0,void,						void ArrangeIcons ( )
-Cascade,0,0,0,void,						void Cascade ( )
-Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_FRAME_STYLE|wxVSCROLL|wxHSCROLL,      wxString & name = wxFrameNameStr    )
-GetActiveChild,0,1,0,wxMDIChildFrame,						wxMDIChildFrame* GetActiveChild ( )
-GetClientWindow,0,1,0,wxMDIClientWindowBase,						wxMDIClientWindowBase* GetClientWindow ( )
-GetWindowMenu,0,1,0,wxMenu,						wxMenu* GetWindowMenu ( )
-IsTDI,1,0,0,bool,						static bool IsTDI ( )
-OnCreateClient,0,1,0,wxMDIClientWindow,						wxMDIClientWindow* OnCreateClient ( )
-SetWindowMenu,0,0,1,void,						void SetWindowMenu ( wxMenu * menu)
-Tile,0,0,1,void,						void Tile ( wxOrientation orient = wxHORIZONTAL)
+[METHODS]
+wxMDIParentFrame.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMDIParentFrame.ActivateNext,0,0,0,void,						void wxMDIParentFrame.ActivateNext ( )
+wxMDIParentFrame.ActivatePrevious,0,0,0,void,						void wxMDIParentFrame.ActivatePrevious ( )
+wxMDIParentFrame.ArrangeIcons,0,0,0,void,						void wxMDIParentFrame.ArrangeIcons ( )
+wxMDIParentFrame.Cascade,0,0,0,void,						void wxMDIParentFrame.Cascade ( )
+wxMDIParentFrame.Create,0,0,7,bool,						bool wxMDIParentFrame.Create ( wxWindow * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_FRAME_STYLE|wxVSCROLL|wxHSCROLL,      wxString & name = wxFrameNameStr    )
+wxMDIParentFrame.GetActiveChild,0,1,0,wxMDIChildFrame,						wxMDIChildFrame* wxMDIParentFrame.GetActiveChild ( )
+wxMDIParentFrame.GetClientWindow,0,1,0,wxMDIClientWindowBase,						wxMDIClientWindowBase* wxMDIParentFrame.GetClientWindow ( )
+wxMDIParentFrame.GetWindowMenu,0,1,0,wxMenu,						wxMenu* wxMDIParentFrame.GetWindowMenu ( )
+wxMDIParentFrame.IsTDI,1,0,0,bool,						static bool wxMDIParentFrame.IsTDI ( )
+wxMDIParentFrame.OnCreateClient,0,1,0,wxMDIClientWindow,						wxMDIClientWindow* wxMDIParentFrame.OnCreateClient ( )
+wxMDIParentFrame.SetWindowMenu,0,0,1,void,						void wxMDIParentFrame.SetWindowMenu ( wxMenu * menu)
+wxMDIParentFrame.Tile,0,0,1,void,						void wxMDIParentFrame.Tile ( wxOrientation orient = wxHORIZONTAL)
 [INHERITS]
 wxFrame
 wxTopLevelWindow

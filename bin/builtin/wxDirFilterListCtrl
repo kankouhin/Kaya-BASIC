@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/dirctrl.h>
+[METHODS]
+wxDirFilterListCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDirFilterListCtrl.Create,0,0,5,bool,						bool wxDirFilterListCtrl.Create ( wxGenericDirCtrl * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0    )
+wxDirFilterListCtrl.FillFilterList,0,0,2,void,						void wxDirFilterListCtrl.FillFilterList (  wxString & filter,     int defaultFilter    )
+wxDirFilterListCtrl.Init,0,0,0,void,						void wxDirFilterListCtrl.Init ( )
+[INHERITS]
+wxChoice
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxItemContainer
+wxItemContainerImmutable

@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/dragimag.h>
+[METHODS]
+wxDragImage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDragImage.BeginDrag,0,0,4,bool,						bool wxDragImage.BeginDrag (  wxPoint & hotspot,     wxWindow * window,     bool fullScreen = false,     wxRect * rect = NULL    )
+wxDragImage.BeginDrag,0,0,3,bool,						bool wxDragImage.BeginDrag (  wxPoint & hotspot,     wxWindow * window,     wxWindow * boundingWindow    )
+wxDragImage.DoDrawImage,0,0,2,bool,						bool wxDragImage.DoDrawImage ( wxDC & dc,      wxPoint & pos    )
+wxDragImage.EndDrag,0,0,0,bool,						bool wxDragImage.EndDrag ( )
+wxDragImage.GetImageRect,0,0,1,wxRect,						wxRect wxDragImage.GetImageRect (  wxPoint & pos)
+wxDragImage.Hide,0,0,0,bool,						bool wxDragImage.Hide ( )
+wxDragImage.Move,0,0,1,bool,						bool wxDragImage.Move (  wxPoint & pt)
+wxDragImage.Show,0,0,0,bool,						bool wxDragImage.Show ( )
+wxDragImage.UpdateBackingFromWindow,0,0,4,bool,						bool wxDragImage.UpdateBackingFromWindow ( wxDC & windowDC,     wxMemoryDC & destDC,      wxRect & sourceRect,      wxRect & destRect    )
+[INHERITS]
+wxObject

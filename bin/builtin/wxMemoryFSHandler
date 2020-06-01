@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/fs_mem.h>
+[METHODS]
+wxMemoryFSHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMemoryFSHandler.AddFile,1,0,3,void,						static void wxMemoryFSHandler.AddFile (  wxString & filename,     wxImage & image,     wxBitmapType type    )
+wxMemoryFSHandler.AddFile,1,0,3,void,						static void wxMemoryFSHandler.AddFile (  wxString & filename,      wxBitmap & bitmap,     wxBitmapType type    )
+wxMemoryFSHandler.AddFile,1,0,2,void,						static void wxMemoryFSHandler.AddFile (  wxString & filename,      wxString & textdata    )
+wxMemoryFSHandler.AddFile,1,0,3,void,						static void wxMemoryFSHandler.AddFile (  wxString & filename,      void * binarydata,     size_t size    )
+wxMemoryFSHandler.AddFileWithMimeType,1,0,3,void,						static void wxMemoryFSHandler.AddFileWithMimeType (  wxString & filename,      wxString & textdata,      wxString & mimetype    )
+wxMemoryFSHandler.AddFileWithMimeType,1,0,4,void,						static void wxMemoryFSHandler.AddFileWithMimeType (  wxString & filename,      void * binarydata,     size_t size,      wxString & mimetype    )
+wxMemoryFSHandler.RemoveFile,1,0,1,void,						static void wxMemoryFSHandler.RemoveFile (  wxString & filename)
+[INHERITS]
+wxFileSystemHandler
+wxObject

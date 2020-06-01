@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewCheckIconTextRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewCheckIconTextRenderer.Allow3rdStateForUser,0,0,1,void,						void wxDataViewCheckIconTextRenderer.Allow3rdStateForUser ( bool allow = true)
+wxDataViewCheckIconTextRenderer.GetDefaultType,1,0,0,wxString,						static wxString wxDataViewCheckIconTextRenderer.GetDefaultType ( )
+[INHERITS]
+wxDataViewRenderer
+wxObject

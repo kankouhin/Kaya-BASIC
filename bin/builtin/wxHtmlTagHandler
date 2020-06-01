@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlpars.h>
+[METHODS]
+wxHtmlTagHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlTagHandler.GetParser,0,1,0,wxHtmlParser,						wxHtmlParser* wxHtmlTagHandler.GetParser ( )
+wxHtmlTagHandler.GetSupportedTags,0,0,0,wxString,						wxString wxHtmlTagHandler.GetSupportedTags ( )
+wxHtmlTagHandler.HandleTag,0,0,1,bool,						bool wxHtmlTagHandler.HandleTag (  wxHtmlTag & tag)
+wxHtmlTagHandler.ParseInner,0,0,1,void,						void wxHtmlTagHandler.ParseInner (  wxHtmlTag & tag)
+wxHtmlTagHandler.ParseInnerSource,0,0,1,void,						void wxHtmlTagHandler.ParseInnerSource (  wxString & source)
+wxHtmlTagHandler.SetParser,0,0,1,void,						void wxHtmlTagHandler.SetParser ( wxHtmlParser * parser)
+wxHtmlTagHandler.m_Parser,0,1,-1,wxHtmlParser,						wxHtmlParser* wxHtmlTagHandler.m_Parser
+[INHERITS]
+wxObject

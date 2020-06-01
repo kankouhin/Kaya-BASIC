@@ -1,0 +1,32 @@
+[CONSTS]
+wxRIBBON_PANEL_DEFAULT_STYLE
+wxRIBBON_PANEL_NO_AUTO_MINIMISE
+wxRIBBON_PANEL_EXT_BUTTON
+wxRIBBON_PANEL_MINIMISE_BUTTON
+wxRIBBON_PANEL_STRETCH
+wxRIBBON_PANEL_FLEXIBLE
+[HEADER]
+<wx/ribbon/panel.h>
+[METHODS]
+wxRibbonPanel.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonPanel.CanAutoMinimise,0,0,0,bool,						bool wxRibbonPanel.CanAutoMinimise ( )
+wxRibbonPanel.Create,0,0,7,bool,						bool wxRibbonPanel.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxString & label = wxEmptyString,      wxBitmap & icon = wxNullBitmap,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxRIBBON_PANEL_DEFAULT_STYLE    )
+wxRibbonPanel.GetExpandedDummy,0,1,0,wxRibbonPanel,						wxRibbonPanel* wxRibbonPanel.GetExpandedDummy ( )
+wxRibbonPanel.GetExpandedPanel,0,1,0,wxRibbonPanel,						wxRibbonPanel* wxRibbonPanel.GetExpandedPanel ( )
+wxRibbonPanel.GetMinimisedIcon,0,0,0,wxBitmap,						wxBitmap&  wxRibbonPanel.GetMinimisedIcon ( )
+wxRibbonPanel.GetMinimisedIcon,0,0,0,wxBitmap,						wxBitmap&  wxRibbonPanel.GetMinimisedIcon ( )
+wxRibbonPanel.HasExtButton,0,0,0,bool,						bool wxRibbonPanel.HasExtButton ( )
+wxRibbonPanel.HideExpanded,0,0,0,bool,						bool wxRibbonPanel.HideExpanded ( )
+wxRibbonPanel.IsExtButtonHovered,0,0,0,bool,						bool wxRibbonPanel.IsExtButtonHovered ( )
+wxRibbonPanel.IsHovered,0,0,0,bool,						bool wxRibbonPanel.IsHovered ( )
+wxRibbonPanel.IsMinimised,0,0,0,bool,						bool wxRibbonPanel.IsMinimised ( )
+wxRibbonPanel.IsMinimised,0,0,1,bool,						bool wxRibbonPanel.IsMinimised ( wxSize at_size)
+wxRibbonPanel.Realize,0,0,0,bool,						bool wxRibbonPanel.Realize ( )
+wxRibbonPanel.SetArtProvider,0,0,1,void,						void wxRibbonPanel.SetArtProvider ( wxRibbonArtProvider * art)
+wxRibbonPanel.ShowExpanded,0,0,0,bool,						bool wxRibbonPanel.ShowExpanded ( )
+[INHERITS]
+wxRibbonControl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

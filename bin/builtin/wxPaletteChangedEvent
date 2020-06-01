@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxPaletteChangedEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPaletteChangedEvent.GetChangedWindow,0,1,0,wxWindow,						wxWindow* wxPaletteChangedEvent.GetChangedWindow ( )
+wxPaletteChangedEvent.SetChangedWindow,0,0,1,void,						void wxPaletteChangedEvent.SetChangedWindow ( wxWindow * win)
+[INHERITS]
+wxEvent
+wxObject

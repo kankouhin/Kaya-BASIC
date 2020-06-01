@@ -1,0 +1,16 @@
+[CONSTS]
+wxEVT_MEDIA_LOADED
+wxEVT_MEDIA_STOP
+wxEVT_MEDIA_FINISHED
+wxEVT_MEDIA_STATECHANGED
+wxEVT_MEDIA_PLAY
+wxEVT_MEDIA_PAUSE
+[HEADER]
+<wx/mediactrl.h>
+[METHODS]
+wxMediaEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

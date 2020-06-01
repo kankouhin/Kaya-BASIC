@@ -1,8 +1,10 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/nonownedwnd.h>
-SetShape,0,0,1,bool,						bool SetShape (  wxRegion & region)
-SetShape,0,0,1,bool,						bool SetShape (  wxGraphicsPath & path)
+[METHODS]
+wxNonOwnedWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxNonOwnedWindow.SetShape,0,0,1,bool,						bool wxNonOwnedWindow.SetShape (  wxRegion & region)
+wxNonOwnedWindow.SetShape,0,0,1,bool,						bool wxNonOwnedWindow.SetShape (  wxGraphicsPath & path)
 [INHERITS]
 wxWindow
 wxEvtHandler

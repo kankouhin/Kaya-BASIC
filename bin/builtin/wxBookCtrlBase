@@ -1,0 +1,31 @@
+[CONSTS]
+[HEADER]
+<wx/bookctrl.h>
+[METHODS]
+wxBookCtrlBase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBookCtrlBase.AddPage,0,0,4,bool,						bool wxBookCtrlBase.AddPage ( wxWindow * page,      wxString & text,     bool select = false,     int imageId = NO_IMAGE    )
+wxBookCtrlBase.AdvanceSelection,0,0,1,void,						void wxBookCtrlBase.AdvanceSelection ( bool forward = true)
+wxBookCtrlBase.ChangeSelection,0,0,1,int,						int wxBookCtrlBase.ChangeSelection ( size_t page)
+wxBookCtrlBase.Create,0,0,6,bool,						bool wxBookCtrlBase.Create ( wxWindow * parent,     wxWindowID winid,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxEmptyString    )
+wxBookCtrlBase.DeleteAllPages,0,0,0,bool,						bool wxBookCtrlBase.DeleteAllPages ( )
+wxBookCtrlBase.DeletePage,0,0,1,bool,						bool wxBookCtrlBase.DeletePage ( size_t page)
+wxBookCtrlBase.FindPage,0,0,1,int,						int wxBookCtrlBase.FindPage (  wxWindow * page)
+wxBookCtrlBase.GetCurrentPage,0,1,0,wxWindow,						wxWindow* wxBookCtrlBase.GetCurrentPage ( )
+wxBookCtrlBase.GetPage,0,1,1,wxWindow,						wxWindow* wxBookCtrlBase.GetPage ( size_t page)
+wxBookCtrlBase.GetPageCount,0,0,0,size_t,						size_t wxBookCtrlBase.GetPageCount ( )
+wxBookCtrlBase.GetPageImage,0,0,1,int,						int wxBookCtrlBase.GetPageImage ( size_t nPage)
+wxBookCtrlBase.GetPageText,0,0,1,wxString,						wxString wxBookCtrlBase.GetPageText ( size_t nPage)
+wxBookCtrlBase.GetSelection,0,0,0,int,						int wxBookCtrlBase.GetSelection ( )
+wxBookCtrlBase.HitTest,0,0,2,int,						int wxBookCtrlBase.HitTest (  wxPoint & pt,     long * flags = NULL    )
+wxBookCtrlBase.InsertPage,0,0,5,bool,						bool wxBookCtrlBase.InsertPage ( size_t index,     wxWindow * page,      wxString & text,     bool select = false,     int imageId = NO_IMAGE    )
+wxBookCtrlBase.RemovePage,0,0,1,bool,						bool wxBookCtrlBase.RemovePage ( size_t page)
+wxBookCtrlBase.SetPageImage,0,0,2,bool,						bool wxBookCtrlBase.SetPageImage ( size_t page,     int image    )
+wxBookCtrlBase.SetPageSize,0,0,1,void,						void wxBookCtrlBase.SetPageSize (  wxSize & size)
+wxBookCtrlBase.SetPageText,0,0,2,bool,						bool wxBookCtrlBase.SetPageText ( size_t page,      wxString & text    )
+wxBookCtrlBase.SetSelection,0,0,1,int,						int wxBookCtrlBase.SetSelection ( size_t page)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxWithImages

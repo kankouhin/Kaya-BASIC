@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/wizard.h>
+[METHODS]
+wxWizardPage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWizardPage.Create,0,0,2,bool,						bool wxWizardPage.Create ( wxWizard * parent,      wxBitmap & bitmap = wxNullBitmap    )
+wxWizardPage.GetBitmap,0,0,0,wxBitmap,						wxBitmap wxWizardPage.GetBitmap ( )
+wxWizardPage.GetNext,0,1,0,wxWizardPage,						wxWizardPage* wxWizardPage.GetNext ( )
+wxWizardPage.GetPrev,0,1,0,wxWizardPage,						wxWizardPage* wxWizardPage.GetPrev ( )
+[INHERITS]
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject

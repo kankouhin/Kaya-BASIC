@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/file.h>
+[METHODS]
+wxTempFile.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTempFile.Commit,0,0,0,bool,						bool wxTempFile.Commit ( )
+wxTempFile.Discard,0,0,0,void,						void wxTempFile.Discard ( )
+wxTempFile.Flush,0,0,0,bool,						bool wxTempFile.Flush ( )
+wxTempFile.IsOpened,0,0,0,bool,						bool wxTempFile.IsOpened ( )
+wxTempFile.Length,0,0,0,wxFileOffset,						wxFileOffset wxTempFile.Length ( )
+wxTempFile.Open,0,0,1,bool,						bool wxTempFile.Open (  wxString & strName)
+wxTempFile.Seek,0,0,2,wxFileOffset,						wxFileOffset wxTempFile.Seek ( wxFileOffset ofs,     wxSeekMode mode = wxFromStart    )
+wxTempFile.Tell,0,0,0,wxFileOffset,						wxFileOffset wxTempFile.Tell ( )
+wxTempFile.Write,0,0,2,bool,						bool wxTempFile.Write (  wxString & str,      wxMBConv & conv = wxConvUTF8    )
+[INHERITS]

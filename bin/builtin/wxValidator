@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/validate.h>
+[METHODS]
+wxValidator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxValidator.Clone,0,1,0,wxObject,						wxObject* wxValidator.Clone ( )
+wxValidator.GetWindow,0,1,0,wxWindow,						wxWindow* wxValidator.GetWindow ( )
+wxValidator.IsSilent,1,0,0,bool,						static bool wxValidator.IsSilent ( )
+wxValidator.SetWindow,0,0,1,void,						void wxValidator.SetWindow ( wxWindow * window)
+wxValidator.SuppressBellOnError,1,0,1,void,						static void wxValidator.SuppressBellOnError ( bool suppress = true)
+wxValidator.TransferFromWindow,0,0,0,bool,						bool wxValidator.TransferFromWindow ( )
+wxValidator.TransferToWindow,0,0,0,bool,						bool wxValidator.TransferToWindow ( )
+wxValidator.Validate,0,0,1,bool,						bool wxValidator.Validate ( wxWindow * parent)
+[INHERITS]
+wxEvtHandler
+wxObject

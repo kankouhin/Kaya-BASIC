@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dataobj.h>
+[METHODS]
+wxDataObjectComposite.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataObjectComposite.Add,0,0,2,void,						void wxDataObjectComposite.Add ( wxDataObjectSimple * dataObject,     bool preferred = false    )
+wxDataObjectComposite.GetObject,0,1,2,wxDataObjectSimple,						wxDataObjectSimple* wxDataObjectComposite.GetObject (  wxDataFormat & format,     wxDataObject.Direction dir = wxDataObject.Get    )
+wxDataObjectComposite.GetReceivedFormat,0,0,0,wxDataFormat,						wxDataFormat wxDataObjectComposite.GetReceivedFormat ( )
+[INHERITS]
+wxDataObject

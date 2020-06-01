@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/bitmap.h>
+[METHODS]
+wxMask.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMask.Create,0,0,2,bool,						bool wxMask.Create (  wxBitmap & bitmap,     int index    )
+wxMask.Create,0,0,1,bool,						bool wxMask.Create (  wxBitmap & bitmap)
+wxMask.Create,0,0,2,bool,						bool wxMask.Create (  wxBitmap & bitmap,      wxColour & colour    )
+wxMask.GetBitmap,0,0,0,wxBitmap,						wxBitmap wxMask.GetBitmap ( )
+[INHERITS]
+wxObject

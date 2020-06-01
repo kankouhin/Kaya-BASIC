@@ -1,0 +1,28 @@
+[CONSTS]
+[HEADER]
+<wx/debugrpt.h>
+[METHODS]
+wxDebugReport.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDebugReport.Context,0,0,-1,enum,						enum wxDebugReport.Context
+wxDebugReport.AddAll,0,0,1,void,						void wxDebugReport.AddAll ( Context context = Context_Exception)
+wxDebugReport.AddContext,0,0,1,bool,						bool wxDebugReport.AddContext ( Context ctx)
+wxDebugReport.AddCurrentContext,0,0,0,bool,						bool wxDebugReport.AddCurrentContext ( )
+wxDebugReport.AddCurrentDump,0,0,0,bool,						bool wxDebugReport.AddCurrentDump ( )
+wxDebugReport.AddDump,0,0,1,bool,						bool wxDebugReport.AddDump ( Context ctx)
+wxDebugReport.AddExceptionContext,0,0,0,bool,						bool wxDebugReport.AddExceptionContext ( )
+wxDebugReport.AddExceptionDump,0,0,0,bool,						bool wxDebugReport.AddExceptionDump ( )
+wxDebugReport.AddFile,0,0,2,void,						void wxDebugReport.AddFile (  wxString & filename,      wxString & description    )
+wxDebugReport.AddText,0,0,3,bool,						bool wxDebugReport.AddText (  wxString & filename,      wxString & text,      wxString & description    )
+wxDebugReport.DoAddCustomContext,0,0,1,void,						void wxDebugReport.DoAddCustomContext ( wxXmlNode * nodeRoot)
+wxDebugReport.DoAddExceptionInfo,0,0,1,bool,						bool wxDebugReport.DoAddExceptionInfo ( wxXmlNode * nodeContext)
+wxDebugReport.DoAddLoadedModules,0,0,1,bool,						bool wxDebugReport.DoAddLoadedModules ( wxXmlNode * nodeModules)
+wxDebugReport.DoAddSystemInfo,0,0,1,bool,						bool wxDebugReport.DoAddSystemInfo ( wxXmlNode * nodeSystemInfo)
+wxDebugReport.GetDirectory,0,0,0,wxString,						wxString&  wxDebugReport.GetDirectory ( )
+wxDebugReport.GetFile,0,0,3,bool,						bool wxDebugReport.GetFile ( size_t n,     wxString * name,     wxString * desc    )
+wxDebugReport.GetFilesCount,0,0,0,size_t,						size_t wxDebugReport.GetFilesCount ( )
+wxDebugReport.GetReportName,0,0,0,wxString,						wxString wxDebugReport.GetReportName ( )
+wxDebugReport.IsOk,0,0,0,bool,						bool wxDebugReport.IsOk ( )
+wxDebugReport.Process,0,0,0,bool,						bool wxDebugReport.Process ( )
+wxDebugReport.RemoveFile,0,0,1,void,						void wxDebugReport.RemoveFile (  wxString & name)
+wxDebugReport.Reset,0,0,0,void,						void wxDebugReport.Reset ( )
+[INHERITS]

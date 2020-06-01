@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/fontmap.h>
+[METHODS]
+wxFontMapper.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFontMapper.CharsetToEncoding,0,0,2,wxFontEncoding,						wxFontEncoding wxFontMapper.CharsetToEncoding (  wxString & charset,     bool interactive = true    )
+wxFontMapper.Get,1,1,0,wxFontMapper,						static wxFontMapper* wxFontMapper.Get ( )
+wxFontMapper.GetAllEncodingNames,1,1,1,wxChar*,						static  wxChar** wxFontMapper.GetAllEncodingNames ( wxFontEncoding encoding)
+wxFontMapper.GetAltForEncoding,0,0,4,bool,						bool wxFontMapper.GetAltForEncoding ( wxFontEncoding encoding,     wxNativeEncodingInfo * info,      wxString & facename = wxEmptyString,     bool interactive = true    )
+wxFontMapper.GetAltForEncoding,0,0,4,bool,						bool wxFontMapper.GetAltForEncoding ( wxFontEncoding encoding,     wxFontEncoding * alt_encoding,      wxString & facename = wxEmptyString,     bool interactive = true    )
+wxFontMapper.GetEncoding,1,0,1,wxFontEncoding,						static wxFontEncoding wxFontMapper.GetEncoding ( size_t n)
+wxFontMapper.GetEncodingDescription,1,0,1,wxString,						static wxString wxFontMapper.GetEncodingDescription ( wxFontEncoding encoding)
+wxFontMapper.GetEncodingFromName,1,0,1,wxFontEncoding,						static wxFontEncoding wxFontMapper.GetEncodingFromName (  wxString & encoding)
+wxFontMapper.GetEncodingName,1,0,1,wxString,						static wxString wxFontMapper.GetEncodingName ( wxFontEncoding encoding)
+wxFontMapper.GetSupportedEncodingsCount,1,0,0,size_t,						static size_t wxFontMapper.GetSupportedEncodingsCount ( )
+wxFontMapper.IsEncodingAvailable,0,0,2,bool,						bool wxFontMapper.IsEncodingAvailable ( wxFontEncoding encoding,      wxString & facename = wxEmptyString    )
+wxFontMapper.Set,1,1,1,wxFontMapper,						static wxFontMapper* wxFontMapper.Set ( wxFontMapper * mapper)
+wxFontMapper.SetConfigPath,0,0,1,void,						void wxFontMapper.SetConfigPath (  wxString & prefix)
+wxFontMapper.SetDialogParent,0,0,1,void,						void wxFontMapper.SetDialogParent ( wxWindow * parent)
+wxFontMapper.SetDialogTitle,0,0,1,void,						void wxFontMapper.SetDialogTitle (  wxString & title)
+[INHERITS]

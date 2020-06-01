@@ -1,0 +1,37 @@
+[CONSTS]
+[HEADER]
+<wx/log.h>
+[METHODS]
+wxLog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxLog.AddTraceMask,1,0,1,void,						static void wxLog.AddTraceMask (  wxString & mask)
+wxLog.ClearTraceMasks,1,0,0,void,						static void wxLog.ClearTraceMasks ( )
+wxLog.DisableTimestamp,1,0,0,void,						static void wxLog.DisableTimestamp ( )
+wxLog.DoLogRecord,0,0,3,void,						void wxLog.DoLogRecord ( wxLogLevel level,      wxString & msg,      wxLogRecordInfo & info    )
+wxLog.DoLogText,0,0,1,void,						void wxLog.DoLogText (  wxString & msg)
+wxLog.DoLogTextAtLevel,0,0,2,void,						void wxLog.DoLogTextAtLevel ( wxLogLevel level,      wxString & msg    )
+wxLog.DontCreateOnDemand,1,0,0,void,						static void wxLog.DontCreateOnDemand ( )
+wxLog.EnableLogging,1,0,1,bool,						static bool wxLog.EnableLogging ( bool enable = true)
+wxLog.Flush,0,0,0,void,						void wxLog.Flush ( )
+wxLog.FlushActive,1,0,0,void,						static void wxLog.FlushActive ( )
+wxLog.GetActiveTarget,1,1,0,wxLog,						static wxLog* wxLog.GetActiveTarget ( )
+wxLog.GetLogLevel,1,0,0,wxLogLevel,						static wxLogLevel wxLog.GetLogLevel ( )
+wxLog.GetRepetitionCounting,1,0,0,bool,						static bool wxLog.GetRepetitionCounting ( )
+wxLog.GetTimestamp,1,0,0,wxString,						static  wxString&  wxLog.GetTimestamp ( )
+wxLog.GetTraceMasks,1,0,0,wxArrayString,						static  wxArrayString&  wxLog.GetTraceMasks ( )
+wxLog.GetVerbose,1,0,0,bool,						static bool wxLog.GetVerbose ( )
+wxLog.IsAllowedTraceMask,1,0,1,bool,						static bool wxLog.IsAllowedTraceMask (  wxString & mask)
+wxLog.IsEnabled,1,0,0,bool,						static bool wxLog.IsEnabled ( )
+wxLog.IsLevelEnabled,1,0,2,bool,						static bool wxLog.IsLevelEnabled ( wxLogLevel level,     wxString component    )
+wxLog.LogRecord,0,0,3,void,						void wxLog.LogRecord ( wxLogLevel level,      wxString & msg,      wxLogRecordInfo & info    )
+wxLog.RemoveTraceMask,1,0,1,void,						static void wxLog.RemoveTraceMask (  wxString & mask)
+wxLog.Resume,1,0,0,void,						static void wxLog.Resume ( )
+wxLog.SetActiveTarget,1,1,1,wxLog,						static wxLog* wxLog.SetActiveTarget ( wxLog * logtarget)
+wxLog.SetComponentLevel,1,0,2,void,						static void wxLog.SetComponentLevel (  wxString & component,     wxLogLevel level    )
+wxLog.SetFormatter,0,1,1,wxLogFormatter,						wxLogFormatter* wxLog.SetFormatter ( wxLogFormatter * formatter)
+wxLog.SetLogLevel,1,0,1,void,						static void wxLog.SetLogLevel ( wxLogLevel logLevel)
+wxLog.SetRepetitionCounting,1,0,1,void,						static void wxLog.SetRepetitionCounting ( bool repetCounting = true)
+wxLog.SetThreadActiveTarget,1,1,1,wxLog,						static wxLog* wxLog.SetThreadActiveTarget ( wxLog * logger)
+wxLog.SetTimestamp,1,0,1,void,						static void wxLog.SetTimestamp (  wxString & format)
+wxLog.SetVerbose,1,0,1,void,						static void wxLog.SetVerbose ( bool verbose = true)
+wxLog.Suspend,1,0,0,void,						static void wxLog.Suspend ( )
+[INHERITS]

@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/editors.h>
+[METHODS]
+wxPGWindowList.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGWindowList.SetSecondary,0,0,1,void,						void wxPGWindowList.SetSecondary ( wxWindow * secondary)
+wxPGWindowList.m_primary,0,1,-1,wxWindow,						wxWindow* wxPGWindowList.m_primary
+wxPGWindowList.m_secondary,0,1,-1,wxWindow,						wxWindow* wxPGWindowList.m_secondary
+[INHERITS]

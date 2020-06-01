@@ -1,0 +1,27 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/advprops.h>
+[METHODS]
+wxSystemColourProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSystemColourProperty.ColourToString,0,0,3,wxString,						wxString wxSystemColourProperty.ColourToString (  wxColour & col,     int index,     int argFlags = 0    )
+wxSystemColourProperty.ColToInd,0,0,1,int,						int wxSystemColourProperty.ColToInd (  wxColour & colour)
+wxSystemColourProperty.DoSetAttribute,0,0,2,bool,						bool wxSystemColourProperty.DoSetAttribute (  wxString & name,     wxVariant & value    )
+wxSystemColourProperty.DoTranslateVal,0,0,1,wxVariant,						wxVariant wxSystemColourProperty.DoTranslateVal ( wxColourPropertyValue & v)
+wxSystemColourProperty.GetColour,0,0,1,wxColour,						wxColour wxSystemColourProperty.GetColour ( int index)
+wxSystemColourProperty.GetCustomColourIndex,0,0,0,int,						int wxSystemColourProperty.GetCustomColourIndex ( )
+wxSystemColourProperty.GetVal,0,0,1,wxColourPropertyValue,						wxColourPropertyValue wxSystemColourProperty.GetVal (  wxVariant * pVariant = NULL)
+wxSystemColourProperty.Init,0,0,2,void,						void wxSystemColourProperty.Init ( int type,      wxColour & colour    )
+wxSystemColourProperty.IntToValue,0,0,3,bool,						bool wxSystemColourProperty.IntToValue ( wxVariant & variant,     int number,     int argFlags = 0    )
+wxSystemColourProperty.OnCustomPaint,0,0,3,void,						void wxSystemColourProperty.OnCustomPaint ( wxDC & dc,      wxRect & rect,     wxPGPaintData & paintdata    )
+wxSystemColourProperty.OnEvent,0,0,3,bool,						bool wxSystemColourProperty.OnEvent ( wxPropertyGrid * propgrid,     wxWindow * wnd_primary,     wxEvent & event    )
+wxSystemColourProperty.OnMeasureImage,0,0,1,wxSize,						wxSize wxSystemColourProperty.OnMeasureImage ( int item)
+wxSystemColourProperty.OnSetValue,0,0,0,void,						void wxSystemColourProperty.OnSetValue ( )
+wxSystemColourProperty.QueryColourFromUser,0,0,1,bool,						bool wxSystemColourProperty.QueryColourFromUser ( wxVariant & variant)
+wxSystemColourProperty.StringToValue,0,0,3,bool,						bool wxSystemColourProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags = 0    )
+wxSystemColourProperty.TranslateVal,0,0,1,wxVariant,						wxVariant wxSystemColourProperty.TranslateVal ( wxColourPropertyValue & v)
+wxSystemColourProperty.TranslateVal,0,0,2,wxVariant,						wxVariant wxSystemColourProperty.TranslateVal ( int type,      wxColour & colour    )
+wxSystemColourProperty.ValueToString,0,0,2,wxString,						wxString wxSystemColourProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+[INHERITS]
+wxEnumProperty
+wxPGProperty
+wxObject

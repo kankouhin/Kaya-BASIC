@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/appprogress.h>
+[METHODS]
+wxAppProgressIndicator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAppProgressIndicator.IsAvailable,0,0,0,bool,						bool wxAppProgressIndicator.IsAvailable ( )
+wxAppProgressIndicator.Pulse,0,0,0,bool,						bool wxAppProgressIndicator.Pulse ( )
+wxAppProgressIndicator.SetRange,0,0,1,void,						void wxAppProgressIndicator.SetRange ( int range)
+wxAppProgressIndicator.SetValue,0,0,1,void,						void wxAppProgressIndicator.SetValue ( int value)
+[INHERITS]

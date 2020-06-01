@@ -1,0 +1,27 @@
+[CONSTS]
+[HEADER]
+<wx/aui/auibar.h>
+[METHODS]
+wxAuiToolBarArt.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiToolBarArt.Clone,0,1,0,wxAuiToolBarArt,						wxAuiToolBarArt* wxAuiToolBarArt.Clone ( )
+wxAuiToolBarArt.DrawBackground,0,0,3,void,						void wxAuiToolBarArt.DrawBackground ( wxDC & dc,     wxWindow * wnd,      wxRect & rect    )
+wxAuiToolBarArt.DrawButton,0,0,4,void,						void wxAuiToolBarArt.DrawButton ( wxDC & dc,     wxWindow * wnd,      wxAuiToolBarItem & item,      wxRect & rect    )
+wxAuiToolBarArt.DrawControlLabel,0,0,4,void,						void wxAuiToolBarArt.DrawControlLabel ( wxDC & dc,     wxWindow * wnd,      wxAuiToolBarItem & item,      wxRect & rect    )
+wxAuiToolBarArt.DrawDropDownButton,0,0,4,void,						void wxAuiToolBarArt.DrawDropDownButton ( wxDC & dc,     wxWindow * wnd,      wxAuiToolBarItem & item,      wxRect & rect    )
+wxAuiToolBarArt.DrawGripper,0,0,3,void,						void wxAuiToolBarArt.DrawGripper ( wxDC & dc,     wxWindow * wnd,      wxRect & rect    )
+wxAuiToolBarArt.DrawLabel,0,0,4,void,						void wxAuiToolBarArt.DrawLabel ( wxDC & dc,     wxWindow * wnd,      wxAuiToolBarItem & item,      wxRect & rect    )
+wxAuiToolBarArt.DrawOverflowButton,0,0,4,void,						void wxAuiToolBarArt.DrawOverflowButton ( wxDC & dc,     wxWindow * wnd,      wxRect & rect,     int state    )
+wxAuiToolBarArt.DrawPlainBackground,0,0,3,void,						void wxAuiToolBarArt.DrawPlainBackground ( wxDC & dc,     wxWindow * wnd,      wxRect & rect    )
+wxAuiToolBarArt.DrawSeparator,0,0,3,void,						void wxAuiToolBarArt.DrawSeparator ( wxDC & dc,     wxWindow * wnd,      wxRect & rect    )
+wxAuiToolBarArt.GetElementSize,0,0,1,int,						int wxAuiToolBarArt.GetElementSize ( int element_id)
+wxAuiToolBarArt.GetFlags,0,0,0,int,						unsigned int wxAuiToolBarArt.GetFlags ( )
+wxAuiToolBarArt.GetFont,0,0,0,wxFont,						wxFont wxAuiToolBarArt.GetFont ( )
+wxAuiToolBarArt.GetLabelSize,0,0,3,wxSize,						wxSize wxAuiToolBarArt.GetLabelSize ( wxDC & dc,     wxWindow * wnd,      wxAuiToolBarItem & item    )
+wxAuiToolBarArt.GetTextOrientation,0,0,0,int,						int wxAuiToolBarArt.GetTextOrientation ( )
+wxAuiToolBarArt.GetToolSize,0,0,3,wxSize,						wxSize wxAuiToolBarArt.GetToolSize ( wxDC & dc,     wxWindow * wnd,      wxAuiToolBarItem & item    )
+wxAuiToolBarArt.SetElementSize,0,0,2,void,						void wxAuiToolBarArt.SetElementSize ( int element_id,     int size    )
+wxAuiToolBarArt.SetFlags,0,0,1,void,						void wxAuiToolBarArt.SetFlags ( unsigned int flags)
+wxAuiToolBarArt.SetFont,0,0,1,void,						void wxAuiToolBarArt.SetFont (  wxFont & font)
+wxAuiToolBarArt.SetTextOrientation,0,0,1,void,						void wxAuiToolBarArt.SetTextOrientation ( int orientation)
+wxAuiToolBarArt.ShowDropDown,0,0,2,int,						int wxAuiToolBarArt.ShowDropDown ( wxWindow * wnd,      wxAuiToolBarItemArray & items    )
+[INHERITS]

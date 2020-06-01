@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/editors.h>
+[METHODS]
+wxPGCheckBoxEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGCheckBoxEditor.CreateControls,0,0,4,wxPGWindowList,						wxPGWindowList wxPGCheckBoxEditor.CreateControls ( wxPropertyGrid * propgrid,     wxPGProperty * property,      wxPoint & pos,      wxSize & size    )
+wxPGCheckBoxEditor.DrawValue,0,0,4,void,						void wxPGCheckBoxEditor.DrawValue ( wxDC & dc,      wxRect & rect,     wxPGProperty * property,      wxString & text    )
+wxPGCheckBoxEditor.GetName,0,0,0,wxString,						wxString wxPGCheckBoxEditor.GetName ( )
+wxPGCheckBoxEditor.GetValueFromControl,0,0,3,bool,						bool wxPGCheckBoxEditor.GetValueFromControl ( wxVariant & variant,     wxPGProperty * property,     wxWindow * ctrl    )
+wxPGCheckBoxEditor.OnEvent,0,0,4,bool,						bool wxPGCheckBoxEditor.OnEvent ( wxPropertyGrid * propgrid,     wxPGProperty * property,     wxWindow * wnd_primary,     wxEvent & event    )
+wxPGCheckBoxEditor.SetControlIntValue,0,0,3,void,						void wxPGCheckBoxEditor.SetControlIntValue ( wxPGProperty * property,     wxWindow * ctrl,     int value    )
+wxPGCheckBoxEditor.SetValueToUnspecified,0,0,2,void,						void wxPGCheckBoxEditor.SetValueToUnspecified ( wxPGProperty * property,     wxWindow * ctrl    )
+wxPGCheckBoxEditor.UpdateControl,0,0,2,void,						void wxPGCheckBoxEditor.UpdateControl ( wxPGProperty * property,     wxWindow * ctrl    )
+[INHERITS]
+wxPGEditor
+wxObject

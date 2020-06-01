@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/stream.h>
+[METHODS]
+wxInputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxInputStream.CanRead,0,0,0,bool,						bool wxInputStream.CanRead ( )
+wxInputStream.Eof,0,0,0,bool,						bool wxInputStream.Eof ( )
+wxInputStream.GetC,0,0,0,int,						int wxInputStream.GetC ( )
+wxInputStream.LastRead,0,0,0,size_t,						size_t wxInputStream.LastRead ( )
+wxInputStream.OnSysRead,0,0,2,size_t,						size_t wxInputStream.OnSysRead ( void * buffer,     size_t bufsize    )
+wxInputStream.Peek,0,0,0,char,						char wxInputStream.Peek ( )
+wxInputStream.Read,0,0,2,wxInputStream,						wxInputStream&  wxInputStream.Read ( void * buffer,     size_t size    )
+wxInputStream.Read,0,0,1,wxInputStream,						wxInputStream&  wxInputStream.Read ( wxOutputStream & stream_out)
+wxInputStream.ReadAll,0,0,2,bool,						bool wxInputStream.ReadAll ( void * buffer,     size_t size    )
+wxInputStream.SeekI,0,0,2,wxFileOffset,						wxFileOffset wxInputStream.SeekI ( wxFileOffset pos,     wxSeekMode mode = wxFromStart    )
+wxInputStream.TellI,0,0,0,wxFileOffset,						wxFileOffset wxInputStream.TellI ( )
+wxInputStream.Ungetch,0,0,2,size_t,						size_t wxInputStream.Ungetch (  void * buffer,     size_t size    )
+wxInputStream.Ungetch,0,0,1,bool,						bool wxInputStream.Ungetch ( char c)
+[INHERITS]
+wxStreamBase

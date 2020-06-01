@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/property.h>
+[METHODS]
+wxPropertyCategory.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPropertyCategory.GetTextExtent,0,0,2,int,						int wxPropertyCategory.GetTextExtent (  wxWindow * wnd,      wxFont & font    )
+wxPropertyCategory.GetValueAsString,0,0,1,wxString,						wxString wxPropertyCategory.GetValueAsString ( int argFlags = 0)
+wxPropertyCategory.ValueToString,0,0,2,wxString,						wxString wxPropertyCategory.ValueToString ( wxVariant & value,     int argFlags    )
+[INHERITS]
+wxPGProperty
+wxObject

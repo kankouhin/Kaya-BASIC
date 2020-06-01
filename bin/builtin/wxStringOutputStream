@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/sstream.h>
+[METHODS]
+wxStringOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStringOutputStream.GetString,0,0,0,wxString,						wxString&  wxStringOutputStream.GetString ( )
+[INHERITS]
+wxOutputStream
+wxStreamBase

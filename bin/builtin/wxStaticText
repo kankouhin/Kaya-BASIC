@@ -6,12 +6,14 @@ wxST_NO_AUTORESIZE
 wxST_ELLIPSIZE_START
 wxST_ELLIPSIZE_MIDDLE
 wxST_ELLIPSIZE_END
-[METHODS]
+[HEADER]
 <wx/stattext.h>
-Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxStaticTextNameStr    )
-IsEllipsized,0,0,0,bool,						bool IsEllipsized ( )
-SetLabel,0,0,1,void,						void SetLabel (  wxString & label)
-Wrap,0,0,1,void,						void Wrap ( int width)
+[METHODS]
+wxStaticText.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStaticText.Create,0,0,7,bool,						bool wxStaticText.Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxStaticTextNameStr    )
+wxStaticText.IsEllipsized,0,0,0,bool,						bool wxStaticText.IsEllipsized ( )
+wxStaticText.SetLabel,0,0,1,void,						void wxStaticText.SetLabel (  wxString & label)
+wxStaticText.Wrap,0,0,1,void,						void wxStaticText.Wrap ( int width)
 [INHERITS]
 wxControl
 wxWindow

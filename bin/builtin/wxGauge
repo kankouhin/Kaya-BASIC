@@ -1,0 +1,22 @@
+[CONSTS]
+wxGA_HORIZONTAL
+wxGA_VERTICAL
+wxGA_SMOOTH
+wxGA_TEXT
+wxGA_PROGRESS
+[HEADER]
+<wx/gauge.h>
+[METHODS]
+wxGauge.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGauge.Create,0,0,8,bool,						bool wxGauge.Create ( wxWindow * parent,     wxWindowID id,     int range,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxGA_HORIZONTAL,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxGaugeNameStr    )
+wxGauge.GetRange,0,0,0,int,						int wxGauge.GetRange ( )
+wxGauge.GetValue,0,0,0,int,						int wxGauge.GetValue ( )
+wxGauge.IsVertical,0,0,0,bool,						bool wxGauge.IsVertical ( )
+wxGauge.Pulse,0,0,0,void,						void wxGauge.Pulse ( )
+wxGauge.SetRange,0,0,1,void,						void wxGauge.SetRange ( int range)
+wxGauge.SetValue,0,0,1,void,						void wxGauge.SetValue ( int pos)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

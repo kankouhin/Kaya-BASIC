@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/dialog.h>
+[METHODS]
+wxWindowModalDialogEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWindowModalDialogEvent.Clone,0,1,0,wxEvent,						wxEvent* wxWindowModalDialogEvent.Clone ( )
+wxWindowModalDialogEvent.GetDialog,0,1,0,wxDialog,						wxDialog* wxWindowModalDialogEvent.GetDialog ( )
+wxWindowModalDialogEvent.GetReturnCode,0,0,0,int,						int wxWindowModalDialogEvent.GetReturnCode ( )
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

@@ -1,0 +1,17 @@
+[CONSTS]
+wxEVT_CLOSE_WINDOW
+wxEVT_QUERY_END_SESSION
+wxEVT_END_SESSION
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxCloseEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCloseEvent.CanVeto,0,0,0,bool,						bool wxCloseEvent.CanVeto ( )
+wxCloseEvent.GetLoggingOff,0,0,0,bool,						bool wxCloseEvent.GetLoggingOff ( )
+wxCloseEvent.GetVeto,0,0,0,bool,						bool wxCloseEvent.GetVeto ( )
+wxCloseEvent.SetCanVeto,0,0,1,void,						void wxCloseEvent.SetCanVeto ( bool canVeto)
+wxCloseEvent.SetLoggingOff,0,0,1,void,						void wxCloseEvent.SetLoggingOff ( bool loggingOff)
+wxCloseEvent.Veto,0,0,1,void,						void wxCloseEvent.Veto ( bool veto = true)
+[INHERITS]
+wxEvent
+wxObject

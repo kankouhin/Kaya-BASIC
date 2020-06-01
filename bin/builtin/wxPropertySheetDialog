@@ -1,0 +1,28 @@
+[CONSTS]
+[HEADER]
+<wx/propdlg.h>
+[METHODS]
+wxPropertySheetDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPropertySheetDialog.AddBookCtrl,0,0,1,void,						void wxPropertySheetDialog.AddBookCtrl ( wxSizer * sizer)
+wxPropertySheetDialog.Create,0,0,7,bool,						bool wxPropertySheetDialog.Create ( wxWindow * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_DIALOG_STYLE,      wxString & name = wxDialogNameStr    )
+wxPropertySheetDialog.CreateBookCtrl,0,1,0,wxBookCtrlBase,						wxBookCtrlBase* wxPropertySheetDialog.CreateBookCtrl ( )
+wxPropertySheetDialog.CreateButtons,0,0,1,void,						void wxPropertySheetDialog.CreateButtons ( int flags = wxOK|wxCANCEL)
+wxPropertySheetDialog.GetBookCtrl,0,1,0,wxBookCtrlBase,						wxBookCtrlBase* wxPropertySheetDialog.GetBookCtrl ( )
+wxPropertySheetDialog.GetContentWindow,0,1,0,wxWindow,						wxWindow* wxPropertySheetDialog.GetContentWindow ( )
+wxPropertySheetDialog.GetInnerSizer,0,1,0,wxSizer,						wxSizer* wxPropertySheetDialog.GetInnerSizer ( )
+wxPropertySheetDialog.GetSheetInnerBorder,0,0,0,int,						int wxPropertySheetDialog.GetSheetInnerBorder ( )
+wxPropertySheetDialog.GetSheetOuterBorder,0,0,0,int,						int wxPropertySheetDialog.GetSheetOuterBorder ( )
+wxPropertySheetDialog.GetSheetStyle,0,0,0,long,						long wxPropertySheetDialog.GetSheetStyle ( )
+wxPropertySheetDialog.LayoutDialog,0,0,1,void,						void wxPropertySheetDialog.LayoutDialog ( int centreFlags = wxBOTH)
+wxPropertySheetDialog.SetBookCtrl,0,0,1,void,						void wxPropertySheetDialog.SetBookCtrl ( wxBookCtrlBase * bookCtrl)
+wxPropertySheetDialog.SetInnerSizer,0,0,1,void,						void wxPropertySheetDialog.SetInnerSizer ( wxSizer * sizer)
+wxPropertySheetDialog.SetSheetInnerBorder,0,0,1,void,						void wxPropertySheetDialog.SetSheetInnerBorder ( int border)
+wxPropertySheetDialog.SetSheetOuterBorder,0,0,1,void,						void wxPropertySheetDialog.SetSheetOuterBorder ( int border)
+wxPropertySheetDialog.SetSheetStyle,0,0,1,void,						void wxPropertySheetDialog.SetSheetStyle ( long style)
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

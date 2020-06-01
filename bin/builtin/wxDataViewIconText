@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewIconText.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewIconText.GetIcon,0,0,0,wxIcon,						wxIcon&  wxDataViewIconText.GetIcon ( )
+wxDataViewIconText.GetText,0,0,0,wxString,						wxString wxDataViewIconText.GetText ( )
+wxDataViewIconText.SetIcon,0,0,1,void,						void wxDataViewIconText.SetIcon (  wxIcon & icon)
+wxDataViewIconText.SetText,0,0,1,void,						void wxDataViewIconText.SetText (  wxString & text)
+[INHERITS]
+wxObject

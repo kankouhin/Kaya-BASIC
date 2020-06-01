@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/editors.h>
+[METHODS]
+wxPGChoiceEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGChoiceEditor.CanContainCustomImage,0,0,0,bool,						bool wxPGChoiceEditor.CanContainCustomImage ( )
+wxPGChoiceEditor.CreateControls,0,0,4,wxPGWindowList,						wxPGWindowList wxPGChoiceEditor.CreateControls ( wxPropertyGrid * propgrid,     wxPGProperty * property,      wxPoint & pos,      wxSize & size    )
+wxPGChoiceEditor.CreateControlsBase,0,1,5,wxWindow,						wxWindow* wxPGChoiceEditor.CreateControlsBase ( wxPropertyGrid * propgrid,     wxPGProperty * property,      wxPoint & pos,      wxSize & sz,     long extraStyle    )
+wxPGChoiceEditor.DeleteItem,0,0,2,void,						void wxPGChoiceEditor.DeleteItem ( wxWindow * ctrl,     int index    )
+wxPGChoiceEditor.GetName,0,0,0,wxString,						wxString wxPGChoiceEditor.GetName ( )
+wxPGChoiceEditor.GetValueFromControl,0,0,3,bool,						bool wxPGChoiceEditor.GetValueFromControl ( wxVariant & variant,     wxPGProperty * property,     wxWindow * ctrl    )
+wxPGChoiceEditor.InsertItem,0,0,3,int,						int wxPGChoiceEditor.InsertItem ( wxWindow * ctrl,      wxString & label,     int index    )
+wxPGChoiceEditor.OnEvent,0,0,4,bool,						bool wxPGChoiceEditor.OnEvent ( wxPropertyGrid * propgrid,     wxPGProperty * property,     wxWindow * wnd_primary,     wxEvent & event    )
+wxPGChoiceEditor.SetControlIntValue,0,0,3,void,						void wxPGChoiceEditor.SetControlIntValue ( wxPGProperty * property,     wxWindow * ctrl,     int value    )
+wxPGChoiceEditor.SetControlStringValue,0,0,3,void,						void wxPGChoiceEditor.SetControlStringValue ( wxPGProperty * property,     wxWindow * ctrl,      wxString & txt    )
+wxPGChoiceEditor.SetValueToUnspecified,0,0,2,void,						void wxPGChoiceEditor.SetValueToUnspecified ( wxPGProperty * property,     wxWindow * ctrl    )
+wxPGChoiceEditor.UpdateControl,0,0,2,void,						void wxPGChoiceEditor.UpdateControl ( wxPGProperty * property,     wxWindow * ctrl    )
+[INHERITS]
+wxPGEditor
+wxObject

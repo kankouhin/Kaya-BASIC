@@ -9,27 +9,29 @@ wxEVT_TEXT
 wxEVT_TEXT_ENTER
 wxEVT_COMBOBOX_DROPDOWN
 wxEVT_COMBOBOX_CLOSEUP
-[METHODS]
+[HEADER]
 <wx/combobox.h>
-Create,0,0,10,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & value = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     int n = 0,      wxString choices[] = ( wxString *) NULL,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxComboBoxNameStr    )
-Create,0,0,9,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & value,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxComboBoxNameStr    )
-Dismiss,0,0,0,void,						void Dismiss ( )
-FindString,0,0,2,int,						int FindString (  wxString & string,     bool caseSensitive = false    )
-GetCount,0,0,0,int,						unsigned int GetCount ( )
-GetCurrentSelection,0,0,0,int,						int GetCurrentSelection ( )
-GetInsertionPoint,0,0,0,long,						long GetInsertionPoint ( )
-GetSelection,0,0,0,int,						int GetSelection ( )
-GetSelection,0,0,2,void,						void GetSelection ( long * from,     long * to    )
-GetString,0,0,1,wxString,						wxString GetString ( unsigned int n)
-GetStringSelection,0,0,0,wxString,						wxString GetStringSelection ( )
-IsEmpty,0,0,0,bool,						bool IsEmpty ( )
-IsListEmpty,0,0,0,bool,						bool IsListEmpty ( )
-IsTextEmpty,0,0,0,bool,						bool IsTextEmpty ( )
-Popup,0,0,0,void,						void Popup ( )
-SetSelection,0,0,2,void,						void SetSelection ( long from,     long to    )
-SetSelection,0,0,1,void,						void SetSelection ( int n)
-SetString,0,0,2,void,						void SetString ( unsigned int n,      wxString & text    )
-SetValue,0,0,1,void,						void SetValue (  wxString & text)
+[METHODS]
+wxComboBox.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxComboBox.Create,0,0,10,bool,						bool wxComboBox.Create ( wxWindow * parent,     wxWindowID id,      wxString & value = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     int n = 0,      wxString choices[] = ( wxString *) NULL,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxComboBoxNameStr    )
+wxComboBox.Create,0,0,9,bool,						bool wxComboBox.Create ( wxWindow * parent,     wxWindowID id,      wxString & value,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxComboBoxNameStr    )
+wxComboBox.Dismiss,0,0,0,void,						void wxComboBox.Dismiss ( )
+wxComboBox.FindString,0,0,2,int,						int wxComboBox.FindString (  wxString & string,     bool caseSensitive = false    )
+wxComboBox.GetCount,0,0,0,int,						unsigned int wxComboBox.GetCount ( )
+wxComboBox.GetCurrentSelection,0,0,0,int,						int wxComboBox.GetCurrentSelection ( )
+wxComboBox.GetInsertionPoint,0,0,0,long,						long wxComboBox.GetInsertionPoint ( )
+wxComboBox.GetSelection,0,0,0,int,						int wxComboBox.GetSelection ( )
+wxComboBox.GetSelection,0,0,2,void,						void wxComboBox.GetSelection ( long * from,     long * to    )
+wxComboBox.GetString,0,0,1,wxString,						wxString wxComboBox.GetString ( unsigned int n)
+wxComboBox.GetStringSelection,0,0,0,wxString,						wxString wxComboBox.GetStringSelection ( )
+wxComboBox.IsEmpty,0,0,0,bool,						bool wxComboBox.IsEmpty ( )
+wxComboBox.IsListEmpty,0,0,0,bool,						bool wxComboBox.IsListEmpty ( )
+wxComboBox.IsTextEmpty,0,0,0,bool,						bool wxComboBox.IsTextEmpty ( )
+wxComboBox.Popup,0,0,0,void,						void wxComboBox.Popup ( )
+wxComboBox.SetSelection,0,0,2,void,						void wxComboBox.SetSelection ( long from,     long to    )
+wxComboBox.SetSelection,0,0,1,void,						void wxComboBox.SetSelection ( int n)
+wxComboBox.SetString,0,0,2,void,						void wxComboBox.SetString ( unsigned int n,      wxString & text    )
+wxComboBox.SetValue,0,0,1,void,						void wxComboBox.SetValue (  wxString & text)
 [INHERITS]
 wxControl
 wxWindow

@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/protocol/http.h>
+[METHODS]
+wxHTTP.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHTTP.Connect,0,0,1,bool,						bool wxHTTP.Connect (  wxString & host)
+wxHTTP.Connect,0,0,2,bool,						bool wxHTTP.Connect (  wxString & host,     unsigned short port    )
+wxHTTP.Connect,0,0,2,bool,						bool wxHTTP.Connect (  wxSockAddress & addr,     bool wait    )
+wxHTTP.GetCookie,0,0,1,wxString,						wxString wxHTTP.GetCookie (  wxString & cookie)
+wxHTTP.GetHeader,0,0,1,wxString,						wxString wxHTTP.GetHeader (  wxString & header)
+wxHTTP.GetInputStream,0,1,1,wxInputStream,						wxInputStream* wxHTTP.GetInputStream (  wxString & path)
+wxHTTP.GetResponse,0,0,0,int,						int wxHTTP.GetResponse ( )
+wxHTTP.HasCookies,0,0,0,bool,						bool wxHTTP.HasCookies ( )
+wxHTTP.SetHeader,0,0,2,void,						void wxHTTP.SetHeader (  wxString & header,      wxString & h_data    )
+wxHTTP.SetMethod,0,0,1,void,						void wxHTTP.SetMethod (  wxString & method)
+wxHTTP.SetPostBuffer,0,0,2,bool,						bool wxHTTP.SetPostBuffer (  wxString & contentType,      wxMemoryBuffer & data    )
+wxHTTP.SetPostText,0,0,3,bool,						bool wxHTTP.SetPostText (  wxString & contentType,      wxString & data,      wxMBConv & conv = wxConvUTF8    )
+[INHERITS]
+wxProtocol
+wxSocketClient
+wxSocketBase
+wxObject

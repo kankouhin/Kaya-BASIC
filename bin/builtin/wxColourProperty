@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/advprops.h>
+[METHODS]
+wxColourProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxColourProperty.DoTranslateVal,0,0,1,wxVariant,						wxVariant wxColourProperty.DoTranslateVal ( wxColourPropertyValue & v)
+wxColourProperty.GetColour,0,0,1,wxColour,						wxColour wxColourProperty.GetColour ( int index)
+wxColourProperty.ValueToString,0,0,2,wxString,						wxString wxColourProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+[INHERITS]
+wxSystemColourProperty
+wxEnumProperty
+wxPGProperty
+wxObject

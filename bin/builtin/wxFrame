@@ -20,30 +20,32 @@ wxFRAME_EX_CONTEXTHELP
 wxFRAME_EX_METAL
 wxEVT_CLOSE_WINDOW
 wxEVT_ICONIZE
-[METHODS]
+[HEADER]
 <wx/frame.h>
-Centre,0,0,1,void,						void Centre ( int direction = wxBOTH)
-Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_FRAME_STYLE,      wxString & name = wxFrameNameStr    )
-CreateStatusBar,0,1,4,wxStatusBar,						wxStatusBar* CreateStatusBar ( int number = 1,     long style = wxSTB_DEFAULT_STYLE,     wxWindowID id = 0,      wxString & name = wxStatusBarNameStr    )
-CreateToolBar,0,1,3,wxToolBar,						wxToolBar* CreateToolBar ( long style = wxTB_DEFAULT_STYLE,     wxWindowID id = wxID_ANY,      wxString & name = wxToolBarNameStr    )
-DoGiveHelp,0,0,2,void,						void DoGiveHelp (  wxString & text,     bool show    )
-GetClientAreaOrigin,0,0,0,wxPoint,						wxPoint GetClientAreaOrigin ( )
-GetMenuBar,0,1,0,wxMenuBar,						wxMenuBar* GetMenuBar ( )
-GetStatusBar,0,1,0,wxStatusBar,						wxStatusBar* GetStatusBar ( )
-GetStatusBarPane,0,0,0,int,						int GetStatusBarPane ( )
-GetToolBar,0,1,0,wxToolBar,						wxToolBar* GetToolBar ( )
-MSWGetTaskBarButton,0,1,0,wxTaskBarButton,						wxTaskBarButton* MSWGetTaskBarButton ( )
-OnCreateStatusBar,0,1,4,wxStatusBar,						wxStatusBar* OnCreateStatusBar ( int number,     long style,     wxWindowID id,      wxString & name    )
-OnCreateToolBar,0,1,3,wxToolBar,						wxToolBar* OnCreateToolBar ( long style,     wxWindowID id,      wxString & name    )
-PopStatusText,0,0,1,void,						void PopStatusText ( int number = 0)
-ProcessCommand,0,0,1,bool,						bool ProcessCommand ( int id)
-PushStatusText,0,0,2,void,						void PushStatusText (  wxString & text,     int number = 0    )
-SetMenuBar,0,0,1,void,						void SetMenuBar ( wxMenuBar * menuBar)
-SetStatusBar,0,0,1,void,						void SetStatusBar ( wxStatusBar * statusBar)
-SetStatusBarPane,0,0,1,void,						void SetStatusBarPane ( int n)
-SetStatusText,0,0,2,void,						void SetStatusText (  wxString & text,     int number = 0    )
-SetStatusWidths,0,0,2,void,						void SetStatusWidths ( int n,      int * widths_field    )
-SetToolBar,0,0,1,void,						void SetToolBar ( wxToolBar * toolBar)
+[METHODS]
+wxFrame.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFrame.Centre,0,0,1,void,						void wxFrame.Centre ( int direction = wxBOTH)
+wxFrame.Create,0,0,7,bool,						bool wxFrame.Create ( wxWindow * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_FRAME_STYLE,      wxString & name = wxFrameNameStr    )
+wxFrame.CreateStatusBar,0,1,4,wxStatusBar,						wxStatusBar* wxFrame.CreateStatusBar ( int number = 1,     long style = wxSTB_DEFAULT_STYLE,     wxWindowID id = 0,      wxString & name = wxStatusBarNameStr    )
+wxFrame.CreateToolBar,0,1,3,wxToolBar,						wxToolBar* wxFrame.CreateToolBar ( long style = wxTB_DEFAULT_STYLE,     wxWindowID id = wxID_ANY,      wxString & name = wxToolBarNameStr    )
+wxFrame.DoGiveHelp,0,0,2,void,						void wxFrame.DoGiveHelp (  wxString & text,     bool show    )
+wxFrame.GetClientAreaOrigin,0,0,0,wxPoint,						wxPoint wxFrame.GetClientAreaOrigin ( )
+wxFrame.GetMenuBar,0,1,0,wxMenuBar,						wxMenuBar* wxFrame.GetMenuBar ( )
+wxFrame.GetStatusBar,0,1,0,wxStatusBar,						wxStatusBar* wxFrame.GetStatusBar ( )
+wxFrame.GetStatusBarPane,0,0,0,int,						int wxFrame.GetStatusBarPane ( )
+wxFrame.GetToolBar,0,1,0,wxToolBar,						wxToolBar* wxFrame.GetToolBar ( )
+wxFrame.MSWGetTaskBarButton,0,1,0,wxTaskBarButton,						wxTaskBarButton* wxFrame.MSWGetTaskBarButton ( )
+wxFrame.OnCreateStatusBar,0,1,4,wxStatusBar,						wxStatusBar* wxFrame.OnCreateStatusBar ( int number,     long style,     wxWindowID id,      wxString & name    )
+wxFrame.OnCreateToolBar,0,1,3,wxToolBar,						wxToolBar* wxFrame.OnCreateToolBar ( long style,     wxWindowID id,      wxString & name    )
+wxFrame.PopStatusText,0,0,1,void,						void wxFrame.PopStatusText ( int number = 0)
+wxFrame.ProcessCommand,0,0,1,bool,						bool wxFrame.ProcessCommand ( int id)
+wxFrame.PushStatusText,0,0,2,void,						void wxFrame.PushStatusText (  wxString & text,     int number = 0    )
+wxFrame.SetMenuBar,0,0,1,void,						void wxFrame.SetMenuBar ( wxMenuBar * menuBar)
+wxFrame.SetStatusBar,0,0,1,void,						void wxFrame.SetStatusBar ( wxStatusBar * statusBar)
+wxFrame.SetStatusBarPane,0,0,1,void,						void wxFrame.SetStatusBarPane ( int n)
+wxFrame.SetStatusText,0,0,2,void,						void wxFrame.SetStatusText (  wxString & text,     int number = 0    )
+wxFrame.SetStatusWidths,0,0,2,void,						void wxFrame.SetStatusWidths ( int n,      int * widths_field    )
+wxFrame.SetToolBar,0,0,1,void,						void wxFrame.SetToolBar ( wxToolBar * toolBar)
 [INHERITS]
 wxTopLevelWindow
 wxNonOwnedWindow

@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/zstream.h>
+[METHODS]
+wxZlibOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxZlibOutputStream.CanHandleGZip,1,0,0,bool,						static bool wxZlibOutputStream.CanHandleGZip ( )
+wxZlibOutputStream.SetDictionary,0,0,2,bool,						bool wxZlibOutputStream.SetDictionary (  char * data,     size_t datalen    )
+wxZlibOutputStream.SetDictionary,0,0,1,bool,						bool wxZlibOutputStream.SetDictionary (  wxMemoryBuffer & buf)
+[INHERITS]
+wxFilterOutputStream
+wxOutputStream
+wxStreamBase

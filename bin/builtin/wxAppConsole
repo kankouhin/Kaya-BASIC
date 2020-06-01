@@ -1,0 +1,56 @@
+[CONSTS]
+[HEADER]
+<wx/app.h>
+[METHODS]
+wxAppConsole.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAppConsole.CreateTraits,0,1,0,wxAppTraits,						wxAppTraits* wxAppConsole.CreateTraits ( )
+wxAppConsole.DeletePendingEvents,0,0,0,void,						void wxAppConsole.DeletePendingEvents ( )
+wxAppConsole.ExitMainLoop,0,0,0,void,						void wxAppConsole.ExitMainLoop ( )
+wxAppConsole.FilterEvent,0,0,1,int,						int wxAppConsole.FilterEvent ( wxEvent & event)
+wxAppConsole.GetAppDisplayName,0,0,0,wxString,						wxString wxAppConsole.GetAppDisplayName ( )
+wxAppConsole.GetAppName,0,0,0,wxString,						wxString wxAppConsole.GetAppName ( )
+wxAppConsole.GetClassName,0,0,0,wxString,						wxString wxAppConsole.GetClassName ( )
+wxAppConsole.GetInstance,1,1,0,wxAppConsole,						static wxAppConsole* wxAppConsole.GetInstance ( )
+wxAppConsole.GetMainLoop,0,1,0,wxEventLoopBase,						wxEventLoopBase* wxAppConsole.GetMainLoop ( )
+wxAppConsole.GetTraits,0,1,0,wxAppTraits,						wxAppTraits* wxAppConsole.GetTraits ( )
+wxAppConsole.GetVendorDisplayName,0,0,0,wxString,						wxString&  wxAppConsole.GetVendorDisplayName ( )
+wxAppConsole.GetVendorName,0,0,0,wxString,						wxString&  wxAppConsole.GetVendorName ( )
+wxAppConsole.HandleEvent,0,0,3,void,						void wxAppConsole.HandleEvent ( wxEvtHandler * handler,     wxEventFunction func,     wxEvent & event    )
+wxAppConsole.HasPendingEvents,0,0,0,bool,						bool wxAppConsole.HasPendingEvents ( )
+wxAppConsole.IsMainLoopRunning,1,0,0,bool,						static bool wxAppConsole.IsMainLoopRunning ( )
+wxAppConsole.IsScheduledForDestruction,0,0,1,bool,						bool wxAppConsole.IsScheduledForDestruction ( wxObject * object)
+wxAppConsole.MainLoop,0,0,0,int,						int wxAppConsole.MainLoop ( )
+wxAppConsole.OnAssertFailure,0,0,5,void,						void wxAppConsole.OnAssertFailure (  wxChar * file,     int line,      wxChar * func,      wxChar * cond,      wxChar * msg    )
+wxAppConsole.OnCmdLineError,0,0,1,bool,						bool wxAppConsole.OnCmdLineError ( wxCmdLineParser & parser)
+wxAppConsole.OnCmdLineHelp,0,0,1,bool,						bool wxAppConsole.OnCmdLineHelp ( wxCmdLineParser & parser)
+wxAppConsole.OnCmdLineParsed,0,0,1,bool,						bool wxAppConsole.OnCmdLineParsed ( wxCmdLineParser & parser)
+wxAppConsole.OnEventLoopEnter,0,0,1,void,						void wxAppConsole.OnEventLoopEnter ( wxEventLoopBase * loop)
+wxAppConsole.OnEventLoopExit,0,0,1,void,						void wxAppConsole.OnEventLoopExit ( wxEventLoopBase * loop)
+wxAppConsole.OnExceptionInMainLoop,0,0,0,bool,						bool wxAppConsole.OnExceptionInMainLoop ( )
+wxAppConsole.OnExit,0,0,0,int,						int wxAppConsole.OnExit ( )
+wxAppConsole.OnFatalException,0,0,0,void,						void wxAppConsole.OnFatalException ( )
+wxAppConsole.OnInit,0,0,0,bool,						bool wxAppConsole.OnInit ( )
+wxAppConsole.OnInitCmdLine,0,0,1,void,						void wxAppConsole.OnInitCmdLine ( wxCmdLineParser & parser)
+wxAppConsole.OnRun,0,0,0,int,						int wxAppConsole.OnRun ( )
+wxAppConsole.OnUnhandledException,0,0,0,void,						void wxAppConsole.OnUnhandledException ( )
+wxAppConsole.ProcessPendingEvents,0,0,0,void,						void wxAppConsole.ProcessPendingEvents ( )
+wxAppConsole.ResumeProcessingOfPendingEvents,0,0,0,void,						void wxAppConsole.ResumeProcessingOfPendingEvents ( )
+wxAppConsole.RethrowStoredException,0,0,0,void,						void wxAppConsole.RethrowStoredException ( )
+wxAppConsole.ScheduleForDestruction,0,0,1,void,						void wxAppConsole.ScheduleForDestruction ( wxObject * object)
+wxAppConsole.SetAppDisplayName,0,0,1,void,						void wxAppConsole.SetAppDisplayName (  wxString & name)
+wxAppConsole.SetAppName,0,0,1,void,						void wxAppConsole.SetAppName (  wxString & name)
+wxAppConsole.SetClassName,0,0,1,void,						void wxAppConsole.SetClassName (  wxString & name)
+wxAppConsole.SetCLocale,0,0,0,void,						void wxAppConsole.SetCLocale ( )
+wxAppConsole.SetInstance,1,0,1,void,						static void wxAppConsole.SetInstance ( wxAppConsole * app)
+wxAppConsole.SetVendorDisplayName,0,0,1,void,						void wxAppConsole.SetVendorDisplayName (  wxString & name)
+wxAppConsole.SetVendorName,0,0,1,void,						void wxAppConsole.SetVendorName (  wxString & name)
+wxAppConsole.StoreCurrentException,0,0,0,bool,						bool wxAppConsole.StoreCurrentException ( )
+wxAppConsole.SuspendProcessingOfPendingEvents,0,0,0,void,						void wxAppConsole.SuspendProcessingOfPendingEvents ( )
+wxAppConsole.UsesEventLoop,0,0,0,bool,						bool wxAppConsole.UsesEventLoop ( )
+wxAppConsole.Yield,0,0,1,bool,						bool wxAppConsole.Yield ( bool onlyIfNeeded = false)
+wxAppConsole.argc,0,0,-1,int,						int wxAppConsole.argc
+wxAppConsole.argv,0,1,-1,wxChar*,						wxChar** wxAppConsole.argv
+[INHERITS]
+wxEvtHandler
+wxObject
+wxEventFilter

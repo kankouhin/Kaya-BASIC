@@ -1,0 +1,24 @@
+[CONSTS]
+wxFNTP_DEFAULT_STYLE
+wxFNTP_USE_TEXTCTRL
+wxFNTP_FONTDESC_AS_LABEL
+wxFNTP_USEFONT_FOR_LABEL
+[HEADER]
+<wx/fontpicker.h>
+[METHODS]
+wxFontPickerCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFontPickerCtrl.Create,0,0,8,bool,						bool wxFontPickerCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxFont & font = wxNullFont,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxFNTP_DEFAULT_STYLE,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxFontPickerCtrlNameStr    )
+wxFontPickerCtrl.GetMaxPointSize,0,0,0,int,						unsigned int wxFontPickerCtrl.GetMaxPointSize ( )
+wxFontPickerCtrl.GetMinPointSize,0,0,0,int,						unsigned int wxFontPickerCtrl.GetMinPointSize ( )
+wxFontPickerCtrl.GetSelectedColour,0,0,0,wxColour,						wxColour wxFontPickerCtrl.GetSelectedColour ( )
+wxFontPickerCtrl.GetSelectedFont,0,0,0,wxFont,						wxFont wxFontPickerCtrl.GetSelectedFont ( )
+wxFontPickerCtrl.SetMaxPointSize,0,0,1,void,						void wxFontPickerCtrl.SetMaxPointSize ( unsigned int max)
+wxFontPickerCtrl.SetMinPointSize,0,0,1,void,						void wxFontPickerCtrl.SetMinPointSize ( unsigned int min)
+wxFontPickerCtrl.SetSelectedColour,0,0,1,void,						void wxFontPickerCtrl.SetSelectedColour (  wxColour & colour)
+wxFontPickerCtrl.SetSelectedFont,0,0,1,void,						void wxFontPickerCtrl.SetSelectedFont (  wxFont & font)
+[INHERITS]
+wxPickerBase
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

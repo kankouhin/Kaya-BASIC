@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/property.h>
+[METHODS]
+wxPGCell.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGCell.GetBgCol,0,0,0,wxColour,						wxColour&  wxPGCell.GetBgCol ( )
+wxPGCell.GetBitmap,0,0,0,wxBitmap,						wxBitmap&  wxPGCell.GetBitmap ( )
+wxPGCell.GetData,0,1,0,wxPGCellData,						wxPGCellData* wxPGCell.GetData ( )
+wxPGCell.GetData,0,1,0,wxPGCellData,						wxPGCellData* wxPGCell.GetData ( )
+wxPGCell.GetFgCol,0,0,0,wxColour,						wxColour&  wxPGCell.GetFgCol ( )
+wxPGCell.GetFont,0,0,0,wxFont,						wxFont&  wxPGCell.GetFont ( )
+wxPGCell.GetText,0,0,0,wxString,						wxString&  wxPGCell.GetText ( )
+wxPGCell.HasText,0,0,0,bool,						bool wxPGCell.HasText ( )
+wxPGCell.MergeFrom,0,0,1,void,						void wxPGCell.MergeFrom (  wxPGCell & srcCell)
+wxPGCell.operator=,0,0,1,wxPGCell,						wxPGCell&  wxPGCell.operator= (  wxPGCell & other)
+wxPGCell.SetBgCol,0,0,1,void,						void wxPGCell.SetBgCol (  wxColour & col)
+wxPGCell.SetBitmap,0,0,1,void,						void wxPGCell.SetBitmap (  wxBitmap & bitmap)
+wxPGCell.SetEmptyData,0,0,0,void,						void wxPGCell.SetEmptyData ( )
+wxPGCell.SetFgCol,0,0,1,void,						void wxPGCell.SetFgCol (  wxColour & col)
+wxPGCell.SetFont,0,0,1,void,						void wxPGCell.SetFont (  wxFont & font)
+wxPGCell.SetText,0,0,1,void,						void wxPGCell.SetText (  wxString & text)
+[INHERITS]
+wxObject

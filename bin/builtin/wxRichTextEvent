@@ -1,0 +1,54 @@
+[CONSTS]
+wxEVT_RICHTEXT_LEFT_CLICK
+wxEVT_RICHTEXT_RIGHT_CLICK
+wxEVT_RICHTEXT_MIDDLE_CLICK
+wxEVT_RICHTEXT_LEFT_DCLICK
+wxEVT_RICHTEXT_RETURN
+wxEVT_RICHTEXT_CHARACTER
+wxEVT_RICHTEXT_CONSUMING_CHARACTER
+wxEVT_RICHTEXT_DELETE
+wxEVT_RICHTEXT_RETURN
+wxEVT_RICHTEXT_STYLE_CHANGED
+wxEVT_RICHTEXT_STYLESHEET_CHANGING
+wxEVT_RICHTEXT_STYLESHEET_REPLACING
+wxEVT_RICHTEXT_STYLESHEET_REPLACED
+wxEVT_RICHTEXT_PROPERTIES_CHANGED
+wxEVT_RICHTEXT_CONTENT_INSERTED
+wxEVT_RICHTEXT_CONTENT_DELETED
+wxEVT_RICHTEXT_BUFFER_RESET
+wxEVT_RICHTEXT_SELECTION_CHANGED
+wxEVT_RICHTEXT_FOCUS_OBJECT_CHANGED
+[HEADER]
+<wx/richtext/richtextctrl.h>
+[METHODS]
+wxRichTextEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextEvent.Clone,0,1,0,wxEvent,						wxEvent* wxRichTextEvent.Clone ( )
+wxRichTextEvent.GetCharacter,0,0,0,wxChar,						wxChar wxRichTextEvent.GetCharacter ( )
+wxRichTextEvent.GetContainer,0,1,0,wxRichTextParagraphLayoutBox,						wxRichTextParagraphLayoutBox* wxRichTextEvent.GetContainer ( )
+wxRichTextEvent.GetFlags,0,0,0,int,						int wxRichTextEvent.GetFlags ( )
+wxRichTextEvent.GetNewStyleSheet,0,1,0,wxRichTextStyleSheet,						wxRichTextStyleSheet* wxRichTextEvent.GetNewStyleSheet ( )
+wxRichTextEvent.GetOldContainer,0,1,0,wxRichTextParagraphLayoutBox,						wxRichTextParagraphLayoutBox* wxRichTextEvent.GetOldContainer ( )
+wxRichTextEvent.GetOldStyleSheet,0,1,0,wxRichTextStyleSheet,						wxRichTextStyleSheet* wxRichTextEvent.GetOldStyleSheet ( )
+wxRichTextEvent.GetPosition,0,0,0,long,						long wxRichTextEvent.GetPosition ( )
+wxRichTextEvent.GetRange,0,0,0,wxRichTextRange,						wxRichTextRange&  wxRichTextEvent.GetRange ( )
+wxRichTextEvent.SetCharacter,0,0,1,void,						void wxRichTextEvent.SetCharacter ( wxChar ch)
+wxRichTextEvent.SetContainer,0,0,1,void,						void wxRichTextEvent.SetContainer ( wxRichTextParagraphLayoutBox * container)
+wxRichTextEvent.SetFlags,0,0,1,void,						void wxRichTextEvent.SetFlags ( int flags)
+wxRichTextEvent.SetNewStyleSheet,0,0,1,void,						void wxRichTextEvent.SetNewStyleSheet ( wxRichTextStyleSheet * sheet)
+wxRichTextEvent.SetOldContainer,0,0,1,void,						void wxRichTextEvent.SetOldContainer ( wxRichTextParagraphLayoutBox * container)
+wxRichTextEvent.SetOldStyleSheet,0,0,1,void,						void wxRichTextEvent.SetOldStyleSheet ( wxRichTextStyleSheet * sheet)
+wxRichTextEvent.SetPosition,0,0,1,void,						void wxRichTextEvent.SetPosition ( long pos)
+wxRichTextEvent.SetRange,0,0,1,void,						void wxRichTextEvent.SetRange (  wxRichTextRange & range)
+wxRichTextEvent.m_char,0,0,-1,wxChar,						wxChar wxRichTextEvent.m_char
+wxRichTextEvent.m_container,0,1,-1,wxRichTextParagraphLayoutBox,						wxRichTextParagraphLayoutBox* wxRichTextEvent.m_container
+wxRichTextEvent.m_flags,0,0,-1,int,						int wxRichTextEvent.m_flags
+wxRichTextEvent.m_newStyleSheet,0,1,-1,wxRichTextStyleSheet,						wxRichTextStyleSheet* wxRichTextEvent.m_newStyleSheet
+wxRichTextEvent.m_oldContainer,0,1,-1,wxRichTextParagraphLayoutBox,						wxRichTextParagraphLayoutBox* wxRichTextEvent.m_oldContainer
+wxRichTextEvent.m_oldStyleSheet,0,1,-1,wxRichTextStyleSheet,						wxRichTextStyleSheet* wxRichTextEvent.m_oldStyleSheet
+wxRichTextEvent.m_position,0,0,-1,long,						long wxRichTextEvent.m_position
+wxRichTextEvent.m_range,0,0,-1,wxRichTextRange,						wxRichTextRange wxRichTextEvent.m_range
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

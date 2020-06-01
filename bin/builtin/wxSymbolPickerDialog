@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextsymboldlg.h>
+[METHODS]
+wxSymbolPickerDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSymbolPickerDialog.Create,0,0,9,bool,						bool wxSymbolPickerDialog.Create (  wxString & symbol,      wxString & initialFont,      wxString & normalTextFont,     wxWindow * parent,     wxWindowID id = wxID_ANY,      wxString & caption = wxGetTranslation(&quot;Symbols&quot;),      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxSize(400, 300),     long style = wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER|wxCLOSE_BOX    )
+wxSymbolPickerDialog.GetFontName,0,0,0,wxString,						wxString wxSymbolPickerDialog.GetFontName ( )
+wxSymbolPickerDialog.GetFromUnicode,0,0,0,bool,						bool wxSymbolPickerDialog.GetFromUnicode ( )
+wxSymbolPickerDialog.GetNormalTextFontName,0,0,0,wxString,						wxString wxSymbolPickerDialog.GetNormalTextFontName ( )
+wxSymbolPickerDialog.GetSymbol,0,0,0,wxString,						wxString wxSymbolPickerDialog.GetSymbol ( )
+wxSymbolPickerDialog.GetSymbolChar,0,0,0,int,						int wxSymbolPickerDialog.GetSymbolChar ( )
+wxSymbolPickerDialog.HasSelection,0,0,0,bool,						bool wxSymbolPickerDialog.HasSelection ( )
+wxSymbolPickerDialog.SetFontName,0,0,1,void,						void wxSymbolPickerDialog.SetFontName ( wxString value)
+wxSymbolPickerDialog.SetFromUnicode,0,0,1,void,						void wxSymbolPickerDialog.SetFromUnicode ( bool value)
+wxSymbolPickerDialog.SetNormalTextFontName,0,0,1,void,						void wxSymbolPickerDialog.SetNormalTextFontName ( wxString value)
+wxSymbolPickerDialog.SetSymbol,0,0,1,void,						void wxSymbolPickerDialog.SetSymbol ( wxString value)
+wxSymbolPickerDialog.SetUnicodeMode,0,0,1,void,						void wxSymbolPickerDialog.SetUnicodeMode ( bool unicodeMode)
+wxSymbolPickerDialog.UseNormalFont,0,0,0,bool,						bool wxSymbolPickerDialog.UseNormalFont ( )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

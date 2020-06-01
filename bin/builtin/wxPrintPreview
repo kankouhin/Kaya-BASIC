@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/print.h>
+[METHODS]
+wxPrintPreview.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPrintPreview.GetCanvas,0,1,0,wxPreviewCanvas,						wxPreviewCanvas* wxPrintPreview.GetCanvas ( )
+wxPrintPreview.GetCurrentPage,0,0,0,int,						int wxPrintPreview.GetCurrentPage ( )
+wxPrintPreview.GetFrame,0,1,0,wxFrame,						wxFrame* wxPrintPreview.GetFrame ( )
+wxPrintPreview.GetMaxPage,0,0,0,int,						int wxPrintPreview.GetMaxPage ( )
+wxPrintPreview.GetMinPage,0,0,0,int,						int wxPrintPreview.GetMinPage ( )
+wxPrintPreview.GetPrintout,0,1,0,wxPrintout,						wxPrintout* wxPrintPreview.GetPrintout ( )
+wxPrintPreview.GetPrintoutForPrinting,0,1,0,wxPrintout,						wxPrintout* wxPrintPreview.GetPrintoutForPrinting ( )
+wxPrintPreview.IsOk,0,0,0,bool,						bool wxPrintPreview.IsOk ( )
+wxPrintPreview.PaintPage,0,0,2,bool,						bool wxPrintPreview.PaintPage ( wxPreviewCanvas * canvas,     wxDC & dc    )
+wxPrintPreview.Print,0,0,1,bool,						bool wxPrintPreview.Print ( bool prompt)
+wxPrintPreview.RenderPage,0,0,1,bool,						bool wxPrintPreview.RenderPage ( int pageNum)
+wxPrintPreview.SetCanvas,0,0,1,void,						void wxPrintPreview.SetCanvas ( wxPreviewCanvas * window)
+wxPrintPreview.SetCurrentPage,0,0,1,bool,						bool wxPrintPreview.SetCurrentPage ( int pageNum)
+wxPrintPreview.SetFrame,0,0,1,void,						void wxPrintPreview.SetFrame ( wxFrame * frame)
+wxPrintPreview.SetPrintout,0,0,1,void,						void wxPrintPreview.SetPrintout ( wxPrintout * printout)
+wxPrintPreview.SetZoom,0,0,1,void,						void wxPrintPreview.SetZoom ( int percent)
+[INHERITS]
+wxObject

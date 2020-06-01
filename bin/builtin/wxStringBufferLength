@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/string.h>
+[METHODS]
+wxStringBufferLength.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStringBufferLength.SetLength,0,0,1,void,						void wxStringBufferLength.SetLength ( size_t nLength)
+[INHERITS]

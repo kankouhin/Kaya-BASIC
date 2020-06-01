@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dataobj.h>
+[METHODS]
+wxHTMLDataObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHTMLDataObject.GetHTML,0,0,0,wxString,						wxString wxHTMLDataObject.GetHTML ( )
+wxHTMLDataObject.SetHTML,0,0,1,void,						void wxHTMLDataObject.SetHTML (  wxString & html)
+[INHERITS]
+wxDataObjectSimple
+wxDataObject

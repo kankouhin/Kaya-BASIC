@@ -1,0 +1,47 @@
+[CONSTS]
+wxSP_3D
+wxSP_THIN_SASH
+wxSP_3DSASH
+wxSP_3DBORDER
+wxSP_BORDER
+wxSP_NOBORDER
+wxSP_NO_XP_THEME
+wxSP_PERMIT_UNSPLIT
+wxSP_LIVE_UPDATE
+wxEVT_SPLITTER_SASH_POS_CHANGING
+wxEVT_SPLITTER_SASH_POS_CHANGED
+wxEVT_SPLITTER_UNSPLIT
+wxEVT_SPLITTER_DOUBLECLICKED
+[HEADER]
+<wx/splitter.h>
+[METHODS]
+wxSplitterWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSplitterWindow.Create,0,0,6,bool,						bool wxSplitterWindow.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & point = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxSP_3D,      wxString & name = &quot;splitter&quot;    )
+wxSplitterWindow.GetDefaultSashSize,0,0,0,int,						int wxSplitterWindow.GetDefaultSashSize ( )
+wxSplitterWindow.GetMinimumPaneSize,0,0,0,int,						int wxSplitterWindow.GetMinimumPaneSize ( )
+wxSplitterWindow.GetSashGravity,0,0,0,double,						double wxSplitterWindow.GetSashGravity ( )
+wxSplitterWindow.GetSashPosition,0,0,0,int,						int wxSplitterWindow.GetSashPosition ( )
+wxSplitterWindow.GetSashSize,0,0,0,int,						int wxSplitterWindow.GetSashSize ( )
+wxSplitterWindow.GetSplitMode,0,0,0,wxSplitMode,						wxSplitMode wxSplitterWindow.GetSplitMode ( )
+wxSplitterWindow.GetWindow1,0,1,0,wxWindow,						wxWindow* wxSplitterWindow.GetWindow1 ( )
+wxSplitterWindow.GetWindow2,0,1,0,wxWindow,						wxWindow* wxSplitterWindow.GetWindow2 ( )
+wxSplitterWindow.Initialize,0,0,1,void,						void wxSplitterWindow.Initialize ( wxWindow * window)
+wxSplitterWindow.IsSashInvisible,0,0,0,bool,						bool wxSplitterWindow.IsSashInvisible ( )
+wxSplitterWindow.IsSplit,0,0,0,bool,						bool wxSplitterWindow.IsSplit ( )
+wxSplitterWindow.OnDoubleClickSash,0,0,2,void,						void wxSplitterWindow.OnDoubleClickSash ( int x,     int y    )
+wxSplitterWindow.OnSashPositionChange,0,0,1,bool,						bool wxSplitterWindow.OnSashPositionChange ( int newSashPosition)
+wxSplitterWindow.OnUnsplit,0,0,1,void,						void wxSplitterWindow.OnUnsplit ( wxWindow * removed)
+wxSplitterWindow.ReplaceWindow,0,0,2,bool,						bool wxSplitterWindow.ReplaceWindow ( wxWindow * winOld,     wxWindow * winNew    )
+wxSplitterWindow.SetMinimumPaneSize,0,0,1,void,						void wxSplitterWindow.SetMinimumPaneSize ( int paneSize)
+wxSplitterWindow.SetSashGravity,0,0,1,void,						void wxSplitterWindow.SetSashGravity ( double gravity)
+wxSplitterWindow.SetSashInvisible,0,0,1,void,						void wxSplitterWindow.SetSashInvisible ( bool invisible = true)
+wxSplitterWindow.SetSashPosition,0,0,2,void,						void wxSplitterWindow.SetSashPosition ( int position,     bool redraw = true    )
+wxSplitterWindow.SetSplitMode,0,0,1,void,						void wxSplitterWindow.SetSplitMode ( int mode)
+wxSplitterWindow.SplitHorizontally,0,0,3,bool,						bool wxSplitterWindow.SplitHorizontally ( wxWindow * window1,     wxWindow * window2,     int sashPosition = 0    )
+wxSplitterWindow.SplitVertically,0,0,3,bool,						bool wxSplitterWindow.SplitVertically ( wxWindow * window1,     wxWindow * window2,     int sashPosition = 0    )
+wxSplitterWindow.Unsplit,0,0,1,bool,						bool wxSplitterWindow.Unsplit ( wxWindow * toRemove = NULL)
+wxSplitterWindow.UpdateSize,0,0,0,void,						void wxSplitterWindow.UpdateSize ( )
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/variant.h>
+[METHODS]
+wxVariantData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxVariantData.Clone,0,1,0,wxVariantData,						wxVariantData* wxVariantData.Clone ( )
+wxVariantData.DecRef,0,0,0,void,						void wxVariantData.DecRef ( )
+wxVariantData.Eq,0,0,1,bool,						bool wxVariantData.Eq ( wxVariantData & data)
+wxVariantData.GetAny,0,0,1,bool,						bool wxVariantData.GetAny ( wxAny * any)
+wxVariantData.GetType,0,0,0,wxString,						wxString wxVariantData.GetType ( )
+wxVariantData.GetValueClassInfo,0,1,0,wxClassInfo,						wxClassInfo* wxVariantData.GetValueClassInfo ( )
+wxVariantData.IncRef,0,0,0,void,						void wxVariantData.IncRef ( )
+wxVariantData.Read,0,0,1,bool,						bool wxVariantData.Read ( istream & stream)
+wxVariantData.Read,0,0,1,bool,						bool wxVariantData.Read ( wxString & string)
+wxVariantData.Write,0,0,1,bool,						bool wxVariantData.Write ( ostream & stream)
+wxVariantData.Write,0,0,1,bool,						bool wxVariantData.Write ( wxString & string)
+[INHERITS]

@@ -1,0 +1,29 @@
+[CONSTS]
+[HEADER]
+<wx/cmdproc.h>
+[METHODS]
+wxCommandProcessor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCommandProcessor.CanRedo,0,0,0,bool,						bool wxCommandProcessor.CanRedo ( )
+wxCommandProcessor.CanUndo,0,0,0,bool,						bool wxCommandProcessor.CanUndo ( )
+wxCommandProcessor.ClearCommands,0,0,0,void,						void wxCommandProcessor.ClearCommands ( )
+wxCommandProcessor.GetCommands,0,0,0,wxList,						wxList&  wxCommandProcessor.GetCommands ( )
+wxCommandProcessor.GetCurrentCommand,0,1,0,wxCommand,						wxCommand* wxCommandProcessor.GetCurrentCommand ( )
+wxCommandProcessor.GetEditMenu,0,1,0,wxMenu,						wxMenu* wxCommandProcessor.GetEditMenu ( )
+wxCommandProcessor.GetMaxCommands,0,0,0,int,						int wxCommandProcessor.GetMaxCommands ( )
+wxCommandProcessor.GetRedoAccelerator,0,0,0,wxString,						wxString&  wxCommandProcessor.GetRedoAccelerator ( )
+wxCommandProcessor.GetRedoMenuLabel,0,0,0,wxString,						wxString wxCommandProcessor.GetRedoMenuLabel ( )
+wxCommandProcessor.GetUndoAccelerator,0,0,0,wxString,						wxString&  wxCommandProcessor.GetUndoAccelerator ( )
+wxCommandProcessor.GetUndoMenuLabel,0,0,0,wxString,						wxString wxCommandProcessor.GetUndoMenuLabel ( )
+wxCommandProcessor.Initialize,0,0,0,void,						void wxCommandProcessor.Initialize ( )
+wxCommandProcessor.IsDirty,0,0,0,bool,						bool wxCommandProcessor.IsDirty ( )
+wxCommandProcessor.MarkAsSaved,0,0,0,void,						void wxCommandProcessor.MarkAsSaved ( )
+wxCommandProcessor.Redo,0,0,0,bool,						bool wxCommandProcessor.Redo ( )
+wxCommandProcessor.SetEditMenu,0,0,1,void,						void wxCommandProcessor.SetEditMenu ( wxMenu * menu)
+wxCommandProcessor.SetMenuStrings,0,0,0,void,						void wxCommandProcessor.SetMenuStrings ( )
+wxCommandProcessor.SetRedoAccelerator,0,0,1,void,						void wxCommandProcessor.SetRedoAccelerator (  wxString & accel)
+wxCommandProcessor.SetUndoAccelerator,0,0,1,void,						void wxCommandProcessor.SetUndoAccelerator (  wxString & accel)
+wxCommandProcessor.Store,0,0,1,void,						void wxCommandProcessor.Store ( wxCommand * command)
+wxCommandProcessor.Submit,0,0,2,bool,						bool wxCommandProcessor.Submit ( wxCommand * command,     bool storeIt = true    )
+wxCommandProcessor.Undo,0,0,0,bool,						bool wxCommandProcessor.Undo ( )
+[INHERITS]
+wxObject

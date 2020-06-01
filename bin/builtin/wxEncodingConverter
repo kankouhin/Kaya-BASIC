@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/encconv.h>
+[METHODS]
+wxEncodingConverter.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxEncodingConverter.CanConvert,1,0,2,bool,						static bool wxEncodingConverter.CanConvert ( wxFontEncoding encIn,     wxFontEncoding encOut    )
+wxEncodingConverter.Convert,0,0,2,bool,						bool wxEncodingConverter.Convert (  char * input,     char * output    )
+wxEncodingConverter.Convert,0,0,2,bool,						bool wxEncodingConverter.Convert (  wchar_t * input,     wchar_t * output    )
+wxEncodingConverter.Convert,0,0,2,bool,						bool wxEncodingConverter.Convert (  char * input,     wchar_t * output    )
+wxEncodingConverter.Convert,0,0,2,bool,						bool wxEncodingConverter.Convert (  wchar_t * input,     char * output    )
+wxEncodingConverter.Convert,0,0,1,bool,						bool wxEncodingConverter.Convert ( char * str)
+wxEncodingConverter.Convert,0,0,1,bool,						bool wxEncodingConverter.Convert ( wchar_t * str)
+wxEncodingConverter.Convert,0,0,1,wxString,						wxString wxEncodingConverter.Convert (  wxString & input)
+wxEncodingConverter.GetAllEquivalents,1,0,1,wxFontEncodingArray,						static wxFontEncodingArray wxEncodingConverter.GetAllEquivalents ( wxFontEncoding enc)
+wxEncodingConverter.GetPlatformEquivalents,1,0,2,wxFontEncodingArray,						static wxFontEncodingArray wxEncodingConverter.GetPlatformEquivalents ( wxFontEncoding enc,     int platform = wxPLATFORM_CURRENT    )
+wxEncodingConverter.Init,0,0,3,bool,						bool wxEncodingConverter.Init ( wxFontEncoding input_enc,     wxFontEncoding output_enc,     int method = wxCONVERT_STRICT    )
+[INHERITS]
+wxObject

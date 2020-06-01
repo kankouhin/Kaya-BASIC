@@ -1,0 +1,38 @@
+[CONSTS]
+[HEADER]
+<wx/aui/tabmdi.h>
+[METHODS]
+wxAuiMDIChildFrame.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiMDIChildFrame.Activate,0,0,0,void,						void wxAuiMDIChildFrame.Activate ( )
+wxAuiMDIChildFrame.Create,0,0,7,bool,						bool wxAuiMDIChildFrame.Create ( wxAuiMDIParentFrame * parent,     wxWindowID winid,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_FRAME_STYLE,      wxString & name = wxFrameNameStr    )
+wxAuiMDIChildFrame.CreateStatusBar,0,1,4,wxStatusBar,						wxStatusBar* wxAuiMDIChildFrame.CreateStatusBar ( int number = 1,     long style = 1,     wxWindowID winid = 1,      wxString & name = wxEmptyString    )
+wxAuiMDIChildFrame.CreateToolBar,0,1,3,wxToolBar,						wxToolBar* wxAuiMDIChildFrame.CreateToolBar ( long style,     wxWindowID winid,      wxString & name    )
+wxAuiMDIChildFrame.Destroy,0,0,0,bool,						bool wxAuiMDIChildFrame.Destroy ( )
+wxAuiMDIChildFrame.GetIcon,0,0,0,wxIcon,						wxIcon&  wxAuiMDIChildFrame.GetIcon ( )
+wxAuiMDIChildFrame.GetIcons,0,0,0,wxIconBundle,						wxIconBundle&  wxAuiMDIChildFrame.GetIcons ( )
+wxAuiMDIChildFrame.GetMDIParentFrame,0,1,0,wxAuiMDIParentFrame,						wxAuiMDIParentFrame* wxAuiMDIChildFrame.GetMDIParentFrame ( )
+wxAuiMDIChildFrame.GetMenuBar,0,1,0,wxMenuBar,						wxMenuBar* wxAuiMDIChildFrame.GetMenuBar ( )
+wxAuiMDIChildFrame.GetStatusBar,0,1,0,wxStatusBar,						wxStatusBar* wxAuiMDIChildFrame.GetStatusBar ( )
+wxAuiMDIChildFrame.GetTitle,0,0,0,wxString,						wxString wxAuiMDIChildFrame.GetTitle ( )
+wxAuiMDIChildFrame.GetToolBar,0,1,0,wxToolBar,						wxToolBar* wxAuiMDIChildFrame.GetToolBar ( )
+wxAuiMDIChildFrame.Iconize,0,0,1,void,						void wxAuiMDIChildFrame.Iconize ( bool iconize = true)
+wxAuiMDIChildFrame.IsFullScreen,0,0,0,bool,						bool wxAuiMDIChildFrame.IsFullScreen ( )
+wxAuiMDIChildFrame.IsIconized,0,0,0,bool,						bool wxAuiMDIChildFrame.IsIconized ( )
+wxAuiMDIChildFrame.IsMaximized,0,0,0,bool,						bool wxAuiMDIChildFrame.IsMaximized ( )
+wxAuiMDIChildFrame.IsTopLevel,0,0,0,bool,						bool wxAuiMDIChildFrame.IsTopLevel ( )
+wxAuiMDIChildFrame.Maximize,0,0,1,void,						void wxAuiMDIChildFrame.Maximize ( bool maximize = true)
+wxAuiMDIChildFrame.Restore,0,0,0,void,						void wxAuiMDIChildFrame.Restore ( )
+wxAuiMDIChildFrame.SetIcon,0,0,1,void,						void wxAuiMDIChildFrame.SetIcon (  wxIcon & icon)
+wxAuiMDIChildFrame.SetIcons,0,0,1,void,						void wxAuiMDIChildFrame.SetIcons (  wxIconBundle & icons)
+wxAuiMDIChildFrame.SetMDIParentFrame,0,0,1,void,						void wxAuiMDIChildFrame.SetMDIParentFrame ( wxAuiMDIParentFrame * parent)
+wxAuiMDIChildFrame.SetMenuBar,0,0,1,void,						void wxAuiMDIChildFrame.SetMenuBar ( wxMenuBar * menuBar)
+wxAuiMDIChildFrame.SetStatusText,0,0,2,void,						void wxAuiMDIChildFrame.SetStatusText (  wxString & text,     int number = 0    )
+wxAuiMDIChildFrame.SetStatusWidths,0,0,2,void,						void wxAuiMDIChildFrame.SetStatusWidths ( int n,      int widths_field[]    )
+wxAuiMDIChildFrame.SetTitle,0,0,1,void,						void wxAuiMDIChildFrame.SetTitle (  wxString & title)
+wxAuiMDIChildFrame.Show,0,0,1,bool,						bool wxAuiMDIChildFrame.Show ( bool show = true)
+wxAuiMDIChildFrame.ShowFullScreen,0,0,2,bool,						bool wxAuiMDIChildFrame.ShowFullScreen ( bool show,     long style    )
+[INHERITS]
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject

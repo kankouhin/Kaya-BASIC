@@ -1,0 +1,31 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextSelection.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextSelection.Add,0,0,1,void,						void wxRichTextSelection.Add (  wxRichTextRange & range)
+wxRichTextSelection.Copy,0,0,1,void,						void wxRichTextSelection.Copy (  wxRichTextSelection & sel)
+wxRichTextSelection.GetContainer,0,1,0,wxRichTextParagraphLayoutBox,						wxRichTextParagraphLayoutBox* wxRichTextSelection.GetContainer ( )
+wxRichTextSelection.GetCount,0,0,0,size_t,						size_t wxRichTextSelection.GetCount ( )
+wxRichTextSelection.GetRange,0,0,1,wxRichTextRange,						wxRichTextRange wxRichTextSelection.GetRange ( size_t i)
+wxRichTextSelection.GetRange,0,0,0,wxRichTextRange,						wxRichTextRange wxRichTextSelection.GetRange ( )
+wxRichTextSelection.GetRanges,0,0,0,wxRichTextRangeArray,						wxRichTextRangeArray&  wxRichTextSelection.GetRanges ( )
+wxRichTextSelection.GetRanges,0,0,0,wxRichTextRangeArray,						wxRichTextRangeArray&  wxRichTextSelection.GetRanges ( )
+wxRichTextSelection.GetSelectionForObject,0,0,1,wxRichTextRangeArray,						wxRichTextRangeArray wxRichTextSelection.GetSelectionForObject ( wxRichTextObject * obj)
+wxRichTextSelection.IsValid,0,0,0,bool,						bool wxRichTextSelection.IsValid ( )
+wxRichTextSelection.operator=,0,0,1,void,						void wxRichTextSelection.operator= (  wxRichTextSelection & sel)
+wxRichTextSelection.operator==,0,0,1,bool,						bool wxRichTextSelection.operator== (  wxRichTextSelection & sel)
+wxRichTextSelection.operator[],0,0,1,wxRichTextRange,						wxRichTextRange wxRichTextSelection.operator[] ( size_t i)
+wxRichTextSelection.Reset,0,0,0,void,						void wxRichTextSelection.Reset ( )
+wxRichTextSelection.Set,0,0,2,void,						void wxRichTextSelection.Set (  wxRichTextRange & range,     wxRichTextParagraphLayoutBox * container    )
+wxRichTextSelection.Set,0,0,2,void,						void wxRichTextSelection.Set (  wxRichTextRangeArray & ranges,     wxRichTextParagraphLayoutBox * container    )
+wxRichTextSelection.SetContainer,0,0,1,void,						void wxRichTextSelection.SetContainer ( wxRichTextParagraphLayoutBox * container)
+wxRichTextSelection.SetRange,0,0,1,void,						void wxRichTextSelection.SetRange (  wxRichTextRange & range)
+wxRichTextSelection.SetRanges,0,0,1,void,						void wxRichTextSelection.SetRanges (  wxRichTextRangeArray & ranges)
+wxRichTextSelection.WithinSelection,0,0,2,bool,						bool wxRichTextSelection.WithinSelection ( long pos,     wxRichTextObject * obj    )
+wxRichTextSelection.WithinSelection,0,0,1,bool,						bool wxRichTextSelection.WithinSelection ( long pos)
+wxRichTextSelection.WithinSelection,1,0,2,bool,						static bool wxRichTextSelection.WithinSelection ( long pos,      wxRichTextRangeArray & ranges    )
+wxRichTextSelection.WithinSelection,1,0,2,bool,						static bool wxRichTextSelection.WithinSelection (  wxRichTextRange & range,      wxRichTextRangeArray & ranges    )
+wxRichTextSelection.m_container,0,1,-1,wxRichTextParagraphLayoutBox,						wxRichTextParagraphLayoutBox* wxRichTextSelection.m_container
+wxRichTextSelection.m_ranges,0,0,-1,wxRichTextRangeArray,						wxRichTextRangeArray wxRichTextSelection.m_ranges
+[INHERITS]

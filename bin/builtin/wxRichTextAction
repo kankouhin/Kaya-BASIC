@@ -1,0 +1,45 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextAction.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextAction.ApplyParagraphs,0,0,1,void,						void wxRichTextAction.ApplyParagraphs (  wxRichTextParagraphLayoutBox & fragment)
+wxRichTextAction.CalculateRefreshOptimizations,0,0,3,void,						void wxRichTextAction.CalculateRefreshOptimizations ( wxArrayInt & optimizationLineCharPositions,     wxArrayInt & optimizationLineYPositions,     wxRect & oldFloatRect    )
+wxRichTextAction.Do,0,0,0,bool,						bool wxRichTextAction.Do ( )
+wxRichTextAction.GetAttributes,0,0,0,wxRichTextAttr,						wxRichTextAttr&  wxRichTextAction.GetAttributes ( )
+wxRichTextAction.GetContainer,0,1,0,wxRichTextParagraphLayoutBox,						wxRichTextParagraphLayoutBox* wxRichTextAction.GetContainer ( )
+wxRichTextAction.GetContainerAddress,0,0,0,wxRichTextObjectAddress,						wxRichTextObjectAddress&  wxRichTextAction.GetContainerAddress ( )
+wxRichTextAction.GetContainerAddress,0,0,0,wxRichTextObjectAddress,						wxRichTextObjectAddress&  wxRichTextAction.GetContainerAddress ( )
+wxRichTextAction.GetIgnoreFirstTime,0,0,0,bool,						bool wxRichTextAction.GetIgnoreFirstTime ( )
+wxRichTextAction.GetName,0,0,0,wxString,						wxString&  wxRichTextAction.GetName ( )
+wxRichTextAction.GetNewParagraphs,0,0,0,wxRichTextParagraphLayoutBox,						wxRichTextParagraphLayoutBox&  wxRichTextAction.GetNewParagraphs ( )
+wxRichTextAction.GetObject,0,1,0,wxRichTextObject,						wxRichTextObject* wxRichTextAction.GetObject ( )
+wxRichTextAction.GetOldParagraphs,0,0,0,wxRichTextParagraphLayoutBox,						wxRichTextParagraphLayoutBox&  wxRichTextAction.GetOldParagraphs ( )
+wxRichTextAction.GetPosition,0,0,0,long,						long wxRichTextAction.GetPosition ( )
+wxRichTextAction.GetRange,0,0,0,wxRichTextRange,						wxRichTextRange&  wxRichTextAction.GetRange ( )
+wxRichTextAction.MakeObject,0,0,1,void,						void wxRichTextAction.MakeObject ( wxRichTextObject * obj)
+wxRichTextAction.SetContainerAddress,0,0,1,void,						void wxRichTextAction.SetContainerAddress (  wxRichTextObjectAddress & address)
+wxRichTextAction.SetContainerAddress,0,0,2,void,						void wxRichTextAction.SetContainerAddress ( wxRichTextParagraphLayoutBox * container,     wxRichTextObject * obj    )
+wxRichTextAction.SetIgnoreFirstTime,0,0,1,void,						void wxRichTextAction.SetIgnoreFirstTime ( bool b)
+wxRichTextAction.SetObject,0,0,1,void,						void wxRichTextAction.SetObject ( wxRichTextObject * obj)
+wxRichTextAction.SetOldAndNewObjects,0,0,2,void,						void wxRichTextAction.SetOldAndNewObjects ( wxRichTextObject * oldObj,     wxRichTextObject * newObj    )
+wxRichTextAction.SetPosition,0,0,1,void,						void wxRichTextAction.SetPosition ( long pos)
+wxRichTextAction.SetRange,0,0,1,void,						void wxRichTextAction.SetRange (  wxRichTextRange & range)
+wxRichTextAction.StoreObject,0,0,1,void,						void wxRichTextAction.StoreObject ( wxRichTextObject * obj)
+wxRichTextAction.Undo,0,0,0,bool,						bool wxRichTextAction.Undo ( )
+wxRichTextAction.UpdateAppearance,0,0,6,void,						void wxRichTextAction.UpdateAppearance ( long caretPosition,     bool sendUpdateEvent = false,      wxRect & oldFloatRect = wxRect(),     wxArrayInt * optimizationLineCharPositions = NULL,     wxArrayInt * optimizationLineYPositions = NULL,     bool isDoCmd = true    )
+wxRichTextAction.m_attributes,0,0,-1,wxRichTextAttr,						wxRichTextAttr wxRichTextAction.m_attributes
+wxRichTextAction.m_buffer,0,1,-1,wxRichTextBuffer,						wxRichTextBuffer* wxRichTextAction.m_buffer
+wxRichTextAction.m_cmdId,0,0,-1,wxRichTextCommandId,						wxRichTextCommandId wxRichTextAction.m_cmdId
+wxRichTextAction.m_containerAddress,0,0,-1,wxRichTextObjectAddress,						wxRichTextObjectAddress wxRichTextAction.m_containerAddress
+wxRichTextAction.m_ctrl,0,1,-1,wxRichTextCtrl,						wxRichTextCtrl* wxRichTextAction.m_ctrl
+wxRichTextAction.m_ignoreThis,0,0,-1,bool,						bool wxRichTextAction.m_ignoreThis
+wxRichTextAction.m_name,0,0,-1,wxString,						wxString wxRichTextAction.m_name
+wxRichTextAction.m_newParagraphs,0,0,-1,wxRichTextParagraphLayoutBox,						wxRichTextParagraphLayoutBox wxRichTextAction.m_newParagraphs
+wxRichTextAction.m_object,0,1,-1,wxRichTextObject,						wxRichTextObject* wxRichTextAction.m_object
+wxRichTextAction.m_objectAddress,0,0,-1,wxRichTextObjectAddress,						wxRichTextObjectAddress wxRichTextAction.m_objectAddress
+wxRichTextAction.m_oldParagraphs,0,0,-1,wxRichTextParagraphLayoutBox,						wxRichTextParagraphLayoutBox wxRichTextAction.m_oldParagraphs
+wxRichTextAction.m_position,0,0,-1,long,						long wxRichTextAction.m_position
+wxRichTextAction.m_range,0,0,-1,wxRichTextRange,						wxRichTextRange wxRichTextAction.m_range
+[INHERITS]
+wxObject

@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/simplebook.h>
+[METHODS]
+wxSimplebook.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSimplebook.Create,0,0,6,bool,						bool wxSimplebook.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxEmptyString    )
+wxSimplebook.SetEffect,0,0,1,void,						void wxSimplebook.SetEffect ( wxShowEffect effect)
+wxSimplebook.SetEffects,0,0,2,void,						void wxSimplebook.SetEffects ( wxShowEffect showEffect,     wxShowEffect hideEffect    )
+wxSimplebook.SetEffectsTimeouts,0,0,2,void,						void wxSimplebook.SetEffectsTimeouts ( unsigned showTimeout,     unsigned hideTimeout    )
+wxSimplebook.SetEffectTimeout,0,0,1,void,						void wxSimplebook.SetEffectTimeout ( unsigned timeout)
+wxSimplebook.ShowNewPage,0,0,1,bool,						bool wxSimplebook.ShowNewPage ( wxWindow * page)
+[INHERITS]
+wxBookCtrlBase
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxWithImages

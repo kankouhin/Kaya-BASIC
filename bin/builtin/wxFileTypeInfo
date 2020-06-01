@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/mimetype.h>
+[METHODS]
+wxFileTypeInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileTypeInfo.AddExtension,0,0,1,void,						void wxFileTypeInfo.AddExtension (  wxString & ext)
+wxFileTypeInfo.GetDescription,0,0,0,wxString,						wxString&  wxFileTypeInfo.GetDescription ( )
+wxFileTypeInfo.GetExtensions,0,0,0,wxArrayString,						wxArrayString&  wxFileTypeInfo.GetExtensions ( )
+wxFileTypeInfo.GetExtensionsCount,0,0,0,size_t,						size_t wxFileTypeInfo.GetExtensionsCount ( )
+wxFileTypeInfo.GetIconFile,0,0,0,wxString,						wxString&  wxFileTypeInfo.GetIconFile ( )
+wxFileTypeInfo.GetIconIndex,0,0,0,int,						int wxFileTypeInfo.GetIconIndex ( )
+wxFileTypeInfo.GetMimeType,0,0,0,wxString,						wxString&  wxFileTypeInfo.GetMimeType ( )
+wxFileTypeInfo.GetOpenCommand,0,0,0,wxString,						wxString&  wxFileTypeInfo.GetOpenCommand ( )
+wxFileTypeInfo.GetPrintCommand,0,0,0,wxString,						wxString&  wxFileTypeInfo.GetPrintCommand ( )
+wxFileTypeInfo.GetShortDesc,0,0,0,wxString,						wxString&  wxFileTypeInfo.GetShortDesc ( )
+wxFileTypeInfo.SetDescription,0,0,1,void,						void wxFileTypeInfo.SetDescription (  wxString & description)
+wxFileTypeInfo.SetIcon,0,0,2,void,						void wxFileTypeInfo.SetIcon (  wxString & iconFile,     int iconIndex = 0    )
+wxFileTypeInfo.SetOpenCommand,0,0,1,void,						void wxFileTypeInfo.SetOpenCommand (  wxString & command)
+wxFileTypeInfo.SetPrintCommand,0,0,1,void,						void wxFileTypeInfo.SetPrintCommand (  wxString & command)
+wxFileTypeInfo.SetShortDesc,0,0,1,void,						void wxFileTypeInfo.SetShortDesc (  wxString & shortDesc)
+[INHERITS]

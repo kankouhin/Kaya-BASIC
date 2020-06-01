@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellChoiceEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellChoiceEditor.SetParameters,0,0,1,void,						void wxGridCellChoiceEditor.SetParameters (  wxString & params)
+[INHERITS]
+wxGridCellEditor
+wxClientDataContainer
+wxRefCounter

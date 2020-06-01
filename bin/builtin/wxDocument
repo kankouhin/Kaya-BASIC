@@ -1,0 +1,63 @@
+[CONSTS]
+[HEADER]
+<wx/docview.h>
+[METHODS]
+wxDocument.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDocument.Activate,0,0,0,void,						void wxDocument.Activate ( )
+wxDocument.AddView,0,0,1,bool,						bool wxDocument.AddView ( wxView * view)
+wxDocument.AlreadySaved,0,0,0,bool,						bool wxDocument.AlreadySaved ( )
+wxDocument.Close,0,0,0,bool,						bool wxDocument.Close ( )
+wxDocument.DeleteAllViews,0,0,0,bool,						bool wxDocument.DeleteAllViews ( )
+wxDocument.DeleteContents,0,0,0,bool,						bool wxDocument.DeleteContents ( )
+wxDocument.DoOpenDocument,0,0,1,bool,						bool wxDocument.DoOpenDocument (  wxString & file)
+wxDocument.DoSaveDocument,0,0,1,bool,						bool wxDocument.DoSaveDocument (  wxString & file)
+wxDocument.GetCommandProcessor,0,1,0,wxCommandProcessor,						wxCommandProcessor* wxDocument.GetCommandProcessor ( )
+wxDocument.GetDocumentManager,0,1,0,wxDocManager,						wxDocManager* wxDocument.GetDocumentManager ( )
+wxDocument.GetDocumentName,0,0,0,wxString,						wxString wxDocument.GetDocumentName ( )
+wxDocument.GetDocumentSaved,0,0,0,bool,						bool wxDocument.GetDocumentSaved ( )
+wxDocument.GetDocumentTemplate,0,1,0,wxDocTemplate,						wxDocTemplate* wxDocument.GetDocumentTemplate ( )
+wxDocument.GetDocumentWindow,0,1,0,wxWindow,						wxWindow* wxDocument.GetDocumentWindow ( )
+wxDocument.GetFilename,0,0,0,wxString,						wxString wxDocument.GetFilename ( )
+wxDocument.GetFirstView,0,1,0,wxView,						wxView* wxDocument.GetFirstView ( )
+wxDocument.GetTitle,0,0,0,wxString,						wxString wxDocument.GetTitle ( )
+wxDocument.GetUserReadableName,0,0,0,wxString,						wxString wxDocument.GetUserReadableName ( )
+wxDocument.GetViews,0,0,0,wxList,						wxList&  wxDocument.GetViews ( )
+wxDocument.GetViews,0,0,0,wxList,						wxList&  wxDocument.GetViews ( )
+wxDocument.GetViewsVector,0,0,0,wxViewVector,						wxViewVector wxDocument.GetViewsVector ( )
+wxDocument.IsChildDocument,0,0,0,bool,						bool wxDocument.IsChildDocument ( )
+wxDocument.IsModified,0,0,0,bool,						bool wxDocument.IsModified ( )
+wxDocument.LoadObject,0,0,1,istream,						istream&  wxDocument.LoadObject ( istream & stream)
+wxDocument.LoadObject,0,0,1,wxInputStream,						wxInputStream&  wxDocument.LoadObject ( wxInputStream & stream)
+wxDocument.Modify,0,0,1,void,						void wxDocument.Modify ( bool modify)
+wxDocument.OnChangedViewList,0,0,0,void,						void wxDocument.OnChangedViewList ( )
+wxDocument.OnChangeFilename,0,0,1,void,						void wxDocument.OnChangeFilename ( bool notifyViews)
+wxDocument.OnCloseDocument,0,0,0,bool,						bool wxDocument.OnCloseDocument ( )
+wxDocument.OnCreate,0,0,2,bool,						bool wxDocument.OnCreate (  wxString & path,     long flags    )
+wxDocument.OnCreateCommandProcessor,0,1,0,wxCommandProcessor,						wxCommandProcessor* wxDocument.OnCreateCommandProcessor ( )
+wxDocument.OnNewDocument,0,0,0,bool,						bool wxDocument.OnNewDocument ( )
+wxDocument.OnOpenDocument,0,0,1,bool,						bool wxDocument.OnOpenDocument (  wxString & filename)
+wxDocument.OnSaveDocument,0,0,1,bool,						bool wxDocument.OnSaveDocument (  wxString & filename)
+wxDocument.OnSaveModified,0,0,0,bool,						bool wxDocument.OnSaveModified ( )
+wxDocument.RemoveView,0,0,1,bool,						bool wxDocument.RemoveView ( wxView * view)
+wxDocument.Revert,0,0,0,bool,						bool wxDocument.Revert ( )
+wxDocument.Save,0,0,0,bool,						bool wxDocument.Save ( )
+wxDocument.SaveAs,0,0,0,bool,						bool wxDocument.SaveAs ( )
+wxDocument.SaveObject,0,0,1,ostream,						ostream&  wxDocument.SaveObject ( ostream & stream)
+wxDocument.SaveObject,0,0,1,wxOutputStream,						wxOutputStream&  wxDocument.SaveObject ( wxOutputStream & stream)
+wxDocument.SetCommandProcessor,0,0,1,void,						void wxDocument.SetCommandProcessor ( wxCommandProcessor * processor)
+wxDocument.SetDocumentName,0,0,1,void,						void wxDocument.SetDocumentName (  wxString & name)
+wxDocument.SetDocumentSaved,0,0,1,void,						void wxDocument.SetDocumentSaved ( bool saved = true)
+wxDocument.SetDocumentTemplate,0,0,1,void,						void wxDocument.SetDocumentTemplate ( wxDocTemplate * templ)
+wxDocument.SetFilename,0,0,2,void,						void wxDocument.SetFilename (  wxString & filename,     bool notifyViews = false    )
+wxDocument.SetTitle,0,0,1,void,						void wxDocument.SetTitle (  wxString & title)
+wxDocument.UpdateAllViews,0,0,2,void,						void wxDocument.UpdateAllViews ( wxView * sender = NULL,     wxObject * hint = NULL    )
+wxDocument.m_commandProcessor,0,1,-1,wxCommandProcessor,						wxCommandProcessor* wxDocument.m_commandProcessor
+wxDocument.m_documentFile,0,0,-1,wxString,						wxString wxDocument.m_documentFile
+wxDocument.m_documentModified,0,0,-1,bool,						bool wxDocument.m_documentModified
+wxDocument.m_documentTemplate,0,1,-1,wxDocTemplate,						wxDocTemplate* wxDocument.m_documentTemplate
+wxDocument.m_documentTitle,0,0,-1,wxString,						wxString wxDocument.m_documentTitle
+wxDocument.m_documentTypeName,0,0,-1,wxString,						wxString wxDocument.m_documentTypeName
+wxDocument.m_documentViews,0,0,-1,wxList,						wxList wxDocument.m_documentViews
+[INHERITS]
+wxEvtHandler
+wxObject

@@ -1,0 +1,22 @@
+[CONSTS]
+wxAC_DEFAULT_STYLE
+wxAC_NO_AUTORESIZE
+[HEADER]
+<wx/animate.h>
+[METHODS]
+wxAnimationCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAnimationCtrl.Create,0,0,7,bool,						bool wxAnimationCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxAnimation & anim = wxNullAnimation,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxAC_DEFAULT_STYLE,      wxString & name = wxAnimationCtrlNameStr    )
+wxAnimationCtrl.GetAnimation,0,0,0,wxAnimation,						wxAnimation wxAnimationCtrl.GetAnimation ( )
+wxAnimationCtrl.GetInactiveBitmap,0,0,0,wxBitmap,						wxBitmap wxAnimationCtrl.GetInactiveBitmap ( )
+wxAnimationCtrl.IsPlaying,0,0,0,bool,						bool wxAnimationCtrl.IsPlaying ( )
+wxAnimationCtrl.Load,0,0,2,bool,						bool wxAnimationCtrl.Load ( wxInputStream & file,     wxAnimationType animType = wxANIMATION_TYPE_ANY    )
+wxAnimationCtrl.LoadFile,0,0,2,bool,						bool wxAnimationCtrl.LoadFile (  wxString & file,     wxAnimationType animType = wxANIMATION_TYPE_ANY    )
+wxAnimationCtrl.Play,0,0,0,bool,						bool wxAnimationCtrl.Play ( )
+wxAnimationCtrl.SetAnimation,0,0,1,void,						void wxAnimationCtrl.SetAnimation (  wxAnimation & anim)
+wxAnimationCtrl.SetInactiveBitmap,0,0,1,void,						void wxAnimationCtrl.SetInactiveBitmap (  wxBitmap & bmp)
+wxAnimationCtrl.Stop,0,0,0,void,						void wxAnimationCtrl.Stop ( )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

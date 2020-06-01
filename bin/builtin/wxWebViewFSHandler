@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/webviewfshandler.h>
+[METHODS]
+wxWebViewFSHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWebViewFSHandler.GetFile,0,1,1,wxFSFile,						wxFSFile* wxWebViewFSHandler.GetFile (  wxString & uri)
+[INHERITS]
+wxWebViewHandler

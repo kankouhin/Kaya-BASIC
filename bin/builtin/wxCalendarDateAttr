@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/calctrl.h>
+[METHODS]
+wxCalendarDateAttr.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCalendarDateAttr.GetBackgroundColour,0,0,0,wxColour,						wxColour&  wxCalendarDateAttr.GetBackgroundColour ( )
+wxCalendarDateAttr.GetBorder,0,0,0,wxCalendarDateBorder,						wxCalendarDateBorder wxCalendarDateAttr.GetBorder ( )
+wxCalendarDateAttr.GetBorderColour,0,0,0,wxColour,						wxColour&  wxCalendarDateAttr.GetBorderColour ( )
+wxCalendarDateAttr.GetFont,0,0,0,wxFont,						wxFont&  wxCalendarDateAttr.GetFont ( )
+wxCalendarDateAttr.GetMark,1,0,0,wxCalendarDateAttr,						static  wxCalendarDateAttr&  wxCalendarDateAttr.GetMark ( )
+wxCalendarDateAttr.GetTextColour,0,0,0,wxColour,						wxColour&  wxCalendarDateAttr.GetTextColour ( )
+wxCalendarDateAttr.HasBackgroundColour,0,0,0,bool,						bool wxCalendarDateAttr.HasBackgroundColour ( )
+wxCalendarDateAttr.HasBorder,0,0,0,bool,						bool wxCalendarDateAttr.HasBorder ( )
+wxCalendarDateAttr.HasBorderColour,0,0,0,bool,						bool wxCalendarDateAttr.HasBorderColour ( )
+wxCalendarDateAttr.HasFont,0,0,0,bool,						bool wxCalendarDateAttr.HasFont ( )
+wxCalendarDateAttr.HasTextColour,0,0,0,bool,						bool wxCalendarDateAttr.HasTextColour ( )
+wxCalendarDateAttr.IsHoliday,0,0,0,bool,						bool wxCalendarDateAttr.IsHoliday ( )
+wxCalendarDateAttr.SetBackgroundColour,0,0,1,void,						void wxCalendarDateAttr.SetBackgroundColour (  wxColour & colBack)
+wxCalendarDateAttr.SetBorder,0,0,1,void,						void wxCalendarDateAttr.SetBorder ( wxCalendarDateBorder border)
+wxCalendarDateAttr.SetBorderColour,0,0,1,void,						void wxCalendarDateAttr.SetBorderColour (  wxColour & col)
+wxCalendarDateAttr.SetFont,0,0,1,void,						void wxCalendarDateAttr.SetFont (  wxFont & font)
+wxCalendarDateAttr.SetHoliday,0,0,1,void,						void wxCalendarDateAttr.SetHoliday ( bool holiday)
+wxCalendarDateAttr.SetMark,1,0,1,void,						static void wxCalendarDateAttr.SetMark (  wxCalendarDateAttr & m)
+wxCalendarDateAttr.SetTextColour,0,0,1,void,						void wxCalendarDateAttr.SetTextColour (  wxColour & colText)
+[INHERITS]

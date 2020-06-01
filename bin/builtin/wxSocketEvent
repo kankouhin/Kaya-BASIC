@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/socket.h>
+[METHODS]
+wxSocketEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSocketEvent.GetClientData,0,1,0,void,						void* wxSocketEvent.GetClientData ( )
+wxSocketEvent.GetSocket,0,1,0,wxSocketBase,						wxSocketBase* wxSocketEvent.GetSocket ( )
+wxSocketEvent.GetSocketEvent,0,0,0,wxSocketNotify,						wxSocketNotify wxSocketEvent.GetSocketEvent ( )
+[INHERITS]
+wxEvent
+wxObject

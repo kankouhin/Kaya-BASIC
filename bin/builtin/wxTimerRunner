@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/timer.h>
+[METHODS]
+wxTimerRunner.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTimerRunner.Start,0,0,2,void,						void wxTimerRunner.Start ( int milli,     bool oneShot = false    )
+[INHERITS]

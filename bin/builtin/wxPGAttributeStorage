@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/property.h>
+[METHODS]
+wxPGAttributeStorage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGAttributeStorage._iterator,0,0,-1,wxPGHashMapS2P._iterator,						typedef wxPGHashMapS2P._iterator wxPGAttributeStorage._iterator
+wxPGAttributeStorage.FindValue,0,0,1,wxVariant,						wxVariant wxPGAttributeStorage.FindValue (  wxString & name)
+wxPGAttributeStorage.GetCount,0,0,0,int,						unsigned int wxPGAttributeStorage.GetCount ( )
+wxPGAttributeStorage.GetNext,0,0,2,bool,						bool wxPGAttributeStorage.GetNext ( _iterator & it,     wxVariant & variant    )
+wxPGAttributeStorage.Set,0,0,2,void,						void wxPGAttributeStorage.Set (  wxString & name,      wxVariant & value    )
+wxPGAttributeStorage.StartIteration,0,0,0,_iterator,						_iterator wxPGAttributeStorage.StartIteration ( )
+[INHERITS]

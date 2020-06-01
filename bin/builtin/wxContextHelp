@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/cshelp.h>
+[METHODS]
+wxContextHelp.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxContextHelp.BeginContextHelp,0,0,1,bool,						bool wxContextHelp.BeginContextHelp ( wxWindow * window)
+wxContextHelp.EndContextHelp,0,0,0,bool,						bool wxContextHelp.EndContextHelp ( )
+[INHERITS]
+wxObject

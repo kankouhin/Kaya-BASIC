@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextformatdlg.h>
+[METHODS]
+wxRichTextFormattingDialogFactory.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextFormattingDialogFactory.CreateButtons,0,0,1,bool,						bool wxRichTextFormattingDialogFactory.CreateButtons ( wxRichTextFormattingDialog * dialog)
+wxRichTextFormattingDialogFactory.CreatePage,0,1,3,wxPanel,						wxPanel* wxRichTextFormattingDialogFactory.CreatePage ( int page,     wxString & title,     wxRichTextFormattingDialog * dialog    )
+wxRichTextFormattingDialogFactory.CreatePages,0,0,2,bool,						bool wxRichTextFormattingDialogFactory.CreatePages ( long pages,     wxRichTextFormattingDialog * dialog    )
+wxRichTextFormattingDialogFactory.GetPageId,0,0,1,int,						int wxRichTextFormattingDialogFactory.GetPageId ( int i)
+wxRichTextFormattingDialogFactory.GetPageIdCount,0,0,0,int,						int wxRichTextFormattingDialogFactory.GetPageIdCount ( )
+wxRichTextFormattingDialogFactory.GetPageImage,0,0,1,int,						int wxRichTextFormattingDialogFactory.GetPageImage ( int id)
+wxRichTextFormattingDialogFactory.SetSheetStyle,0,0,1,bool,						bool wxRichTextFormattingDialogFactory.SetSheetStyle ( wxRichTextFormattingDialog * dialog)
+wxRichTextFormattingDialogFactory.ShowHelp,0,0,2,bool,						bool wxRichTextFormattingDialogFactory.ShowHelp ( int page,     wxRichTextFormattingDialog * dialog    )
+[INHERITS]
+wxObject

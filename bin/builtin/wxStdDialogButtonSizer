@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/sizer.h>
+[METHODS]
+wxStdDialogButtonSizer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStdDialogButtonSizer.AddButton,0,0,1,void,						void wxStdDialogButtonSizer.AddButton ( wxButton * button)
+wxStdDialogButtonSizer.CalcMin,0,0,0,wxSize,						wxSize wxStdDialogButtonSizer.CalcMin ( )
+wxStdDialogButtonSizer.Realize,0,0,0,void,						void wxStdDialogButtonSizer.Realize ( )
+wxStdDialogButtonSizer.RepositionChildren,0,0,1,void,						void wxStdDialogButtonSizer.RepositionChildren (  wxSize & minSize)
+wxStdDialogButtonSizer.SetAffirmativeButton,0,0,1,void,						void wxStdDialogButtonSizer.SetAffirmativeButton ( wxButton * button)
+wxStdDialogButtonSizer.SetCancelButton,0,0,1,void,						void wxStdDialogButtonSizer.SetCancelButton ( wxButton * button)
+wxStdDialogButtonSizer.SetNegativeButton,0,0,1,void,						void wxStdDialogButtonSizer.SetNegativeButton ( wxButton * button)
+[INHERITS]
+wxBoxSizer
+wxSizer
+wxObject

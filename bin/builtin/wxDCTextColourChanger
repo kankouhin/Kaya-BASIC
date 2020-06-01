@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/dc.h>
+[METHODS]
+wxDCTextColourChanger.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDCTextColourChanger.Set,0,0,1,void,						void wxDCTextColourChanger.Set (  wxColour & col)
+[INHERITS]

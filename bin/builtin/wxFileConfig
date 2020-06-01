@@ -1,0 +1,32 @@
+[CONSTS]
+[HEADER]
+<wx/fileconf.h>
+[METHODS]
+wxFileConfig.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileConfig.DeleteAll,0,0,0,bool,						bool wxFileConfig.DeleteAll ( )
+wxFileConfig.DeleteEntry,0,0,2,bool,						bool wxFileConfig.DeleteEntry (  wxString & key,     bool bDeleteGroupIfEmpty = true    )
+wxFileConfig.DeleteGroup,0,0,1,bool,						bool wxFileConfig.DeleteGroup (  wxString & key)
+wxFileConfig.DisableAutoSave,0,0,0,void,						void wxFileConfig.DisableAutoSave ( )
+wxFileConfig.EnableAutoSave,0,0,0,void,						void wxFileConfig.EnableAutoSave ( )
+wxFileConfig.Flush,0,0,1,bool,						bool wxFileConfig.Flush ( bool bCurrentOnly = false)
+wxFileConfig.GetFirstEntry,0,0,2,bool,						bool wxFileConfig.GetFirstEntry ( wxString & str,     long & index    )
+wxFileConfig.GetFirstGroup,0,0,2,bool,						bool wxFileConfig.GetFirstGroup ( wxString & str,     long & index    )
+wxFileConfig.GetGlobalFile,1,0,1,wxFileName,						static wxFileName wxFileConfig.GetGlobalFile (  wxString & basename)
+wxFileConfig.GetGlobalFileName,1,0,1,wxString,						static wxString wxFileConfig.GetGlobalFileName (  wxString & szFile)
+wxFileConfig.GetLocalFile,1,0,2,wxFileName,						static wxFileName wxFileConfig.GetLocalFile (  wxString & basename,     int style = 0    )
+wxFileConfig.GetLocalFileName,1,0,2,wxString,						static wxString wxFileConfig.GetLocalFileName (  wxString & szFile,     int style = 0    )
+wxFileConfig.GetNextEntry,0,0,2,bool,						bool wxFileConfig.GetNextEntry ( wxString & str,     long & index    )
+wxFileConfig.GetNextGroup,0,0,2,bool,						bool wxFileConfig.GetNextGroup ( wxString & str,     long & index    )
+wxFileConfig.GetNumberOfEntries,0,0,1,size_t,						size_t wxFileConfig.GetNumberOfEntries ( bool bRecursive = false)
+wxFileConfig.GetNumberOfGroups,0,0,1,size_t,						size_t wxFileConfig.GetNumberOfGroups ( bool bRecursive = false)
+wxFileConfig.GetPath,0,0,0,wxString,						wxString&  wxFileConfig.GetPath ( )
+wxFileConfig.HasEntry,0,0,1,bool,						bool wxFileConfig.HasEntry (  wxString & strName)
+wxFileConfig.HasGroup,0,0,1,bool,						bool wxFileConfig.HasGroup (  wxString & strName)
+wxFileConfig.RenameEntry,0,0,2,bool,						bool wxFileConfig.RenameEntry (  wxString & oldName,      wxString & newName    )
+wxFileConfig.RenameGroup,0,0,2,bool,						bool wxFileConfig.RenameGroup (  wxString & oldName,      wxString & newName    )
+wxFileConfig.Save,0,0,2,bool,						bool wxFileConfig.Save ( wxOutputStream & os,      wxMBConv & conv = wxConvAuto()    )
+wxFileConfig.SetPath,0,0,1,void,						void wxFileConfig.SetPath (  wxString & strPath)
+wxFileConfig.SetUmask,0,0,1,void,						void wxFileConfig.SetUmask ( int mode)
+[INHERITS]
+wxConfigBase
+wxObject

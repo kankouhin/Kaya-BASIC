@@ -1,0 +1,19 @@
+[CONSTS]
+wxEVT_WEBVIEW_NAVIGATING
+wxEVT_WEBVIEW_NAVIGATED
+wxEVT_WEBVIEW_LOADED
+wxEVT_WEBVIEW_ERROR
+wxEVT_WEBVIEW_NEWWINDOW
+wxEVT_WEBVIEW_TITLE_CHANGED
+[HEADER]
+<wx/webview.h>
+[METHODS]
+wxWebViewEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWebViewEvent.GetNavigationAction,0,0,0,wxWebViewNavigationActionFlags,						wxWebViewNavigationActionFlags wxWebViewEvent.GetNavigationAction ( )
+wxWebViewEvent.GetTarget,0,0,0,wxString,						wxString&  wxWebViewEvent.GetTarget ( )
+wxWebViewEvent.GetURL,0,0,0,wxString,						wxString&  wxWebViewEvent.GetURL ( )
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/wizard.h>
+[METHODS]
+wxWizardEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWizardEvent.GetDirection,0,0,0,bool,						bool wxWizardEvent.GetDirection ( )
+wxWizardEvent.GetPage,0,1,0,wxWizardPage,						wxWizardPage* wxWizardEvent.GetPage ( )
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

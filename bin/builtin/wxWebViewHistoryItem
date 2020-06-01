@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/webview.h>
+[METHODS]
+wxWebViewHistoryItem.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWebViewHistoryItem.GetTitle,0,0,0,wxString,						wxString wxWebViewHistoryItem.GetTitle ( )
+wxWebViewHistoryItem.GetUrl,0,0,0,wxString,						wxString wxWebViewHistoryItem.GetUrl ( )
+[INHERITS]

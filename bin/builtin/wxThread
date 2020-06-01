@@ -1,0 +1,37 @@
+[CONSTS]
+wxPRIORITY_MIN
+wxPRIORITY_DEFAULT
+wxPRIORITY_MAX
+[HEADER]
+<wx/thread.h>
+[METHODS]
+wxThread.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxThread.ExitCode,0,1,-1,void,						typedef void* wxThread.ExitCode
+wxThread.Create,0,0,1,wxThreadError,						wxThreadError wxThread.Create ( unsigned int stackSize = 0)
+wxThread.Delete,0,0,2,wxThreadError,						wxThreadError wxThread.Delete ( ExitCode * rc = NULL,     wxThreadWait waitMode = wxTHREAD_WAIT_DEFAULT    )
+wxThread.Entry,0,0,0,ExitCode,						ExitCode wxThread.Entry ( )
+wxThread.Exit,0,0,1,void,						void wxThread.Exit ( ExitCode exitcode = 0)
+wxThread.GetCPUCount,1,0,0,int,						static int wxThread.GetCPUCount ( )
+wxThread.GetCurrentId,1,0,0,wxThreadIdType,						static wxThreadIdType wxThread.GetCurrentId ( )
+wxThread.GetId,0,0,0,wxThreadIdType,						wxThreadIdType wxThread.GetId ( )
+wxThread.GetKind,0,0,0,wxThreadKind,						wxThreadKind wxThread.GetKind ( )
+wxThread.GetMainId,1,0,0,wxThreadIdType,						static wxThreadIdType wxThread.GetMainId ( )
+wxThread.GetPriority,0,0,0,int,						unsigned int wxThread.GetPriority ( )
+wxThread.IsAlive,0,0,0,bool,						bool wxThread.IsAlive ( )
+wxThread.IsDetached,0,0,0,bool,						bool wxThread.IsDetached ( )
+wxThread.IsMain,1,0,0,bool,						static bool wxThread.IsMain ( )
+wxThread.IsPaused,0,0,0,bool,						bool wxThread.IsPaused ( )
+wxThread.IsRunning,0,0,0,bool,						bool wxThread.IsRunning ( )
+wxThread.Kill,0,0,0,wxThreadError,						wxThreadError wxThread.Kill ( )
+wxThread.MSWGetHandle,0,0,0,WXHANDLE,						WXHANDLE wxThread.MSWGetHandle ( )
+wxThread.Pause,0,0,0,wxThreadError,						wxThreadError wxThread.Pause ( )
+wxThread.Resume,0,0,0,wxThreadError,						wxThreadError wxThread.Resume ( )
+wxThread.Run,0,0,0,wxThreadError,						wxThreadError wxThread.Run ( )
+wxThread.SetConcurrency,1,0,1,bool,						static bool wxThread.SetConcurrency ( size_t level)
+wxThread.SetPriority,0,0,1,void,						void wxThread.SetPriority ( unsigned int priority)
+wxThread.Sleep,1,0,1,void,						static void wxThread.Sleep ( unsigned long milliseconds)
+wxThread.TestDestroy,0,0,0,bool,						bool wxThread.TestDestroy ( )
+wxThread.This,1,1,0,wxThread,						static wxThread* wxThread.This ( )
+wxThread.Wait,0,0,1,ExitCode,						ExitCode wxThread.Wait ( wxThreadWait flags = wxTHREAD_WAIT_DEFAULT)
+wxThread.Yield,1,0,0,void,						static void wxThread.Yield ( )
+[INHERITS]

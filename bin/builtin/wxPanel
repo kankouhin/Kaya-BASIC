@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/panel.h>
+[METHODS]
+wxPanel.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPanel.AcceptsFocus,0,0,0,bool,						bool wxPanel.AcceptsFocus ( )
+wxPanel.Create,0,0,6,bool,						bool wxPanel.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxTAB_TRAVERSAL,      wxString & name = wxPanelNameStr    )
+wxPanel.InitDialog,0,0,0,void,						void wxPanel.InitDialog ( )
+wxPanel.Layout,0,0,0,bool,						bool wxPanel.Layout ( )
+wxPanel.OnSysColourChanged,0,0,1,void,						void wxPanel.OnSysColourChanged ( wxSysColourChangedEvent & event)
+wxPanel.SetFocus,0,0,0,void,						void wxPanel.SetFocus ( )
+wxPanel.SetFocusIgnoringChildren,0,0,0,void,						void wxPanel.SetFocusIgnoringChildren ( )
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

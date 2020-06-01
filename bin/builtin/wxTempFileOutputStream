@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/wfstream.h>
+[METHODS]
+wxTempFileOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTempFileOutputStream.Commit,0,0,0,bool,						bool wxTempFileOutputStream.Commit ( )
+wxTempFileOutputStream.Discard,0,0,0,void,						void wxTempFileOutputStream.Discard ( )
+[INHERITS]
+wxOutputStream
+wxStreamBase

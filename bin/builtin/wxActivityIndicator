@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/activityindicator.h>
+[METHODS]
+wxActivityIndicator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxActivityIndicator.Create,0,0,6,bool,						bool wxActivityIndicator.Create ( wxWindow * parent,     wxWindowID winid = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = &quot;activityindicator&quot;    )
+wxActivityIndicator.IsRunning,0,0,0,bool,						bool wxActivityIndicator.IsRunning ( )
+wxActivityIndicator.Start,0,0,0,void,						void wxActivityIndicator.Start ( )
+wxActivityIndicator.Stop,0,0,0,void,						void wxActivityIndicator.Stop ( )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

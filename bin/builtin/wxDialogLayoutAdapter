@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/dialog.h>
+[METHODS]
+wxDialogLayoutAdapter.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDialogLayoutAdapter.CanDoLayoutAdaptation,0,0,1,bool,						bool wxDialogLayoutAdapter.CanDoLayoutAdaptation ( wxDialog * dialog)
+wxDialogLayoutAdapter.DoLayoutAdaptation,0,0,1,bool,						bool wxDialogLayoutAdapter.DoLayoutAdaptation ( wxDialog * dialog)
+[INHERITS]

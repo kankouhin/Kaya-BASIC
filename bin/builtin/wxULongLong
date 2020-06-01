@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/longlong.h>
+[METHODS]
+wxULongLong.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxULongLong.GetHi,0,0,0,wxUint32,						wxUint32 wxULongLong.GetHi ( )
+wxULongLong.GetLo,0,0,0,long,						wxUint32 long wxULongLong.GetLo ( )
+wxULongLong.GetValue,0,0,0,wxULongLong_t,						wxULongLong_t wxULongLong.GetValue ( )
+wxULongLong.operator+,0,0,1,wxULongLong,						wxULongLong wxULongLong.operator+ (  wxULongLong & ll)
+wxULongLong.operator+,0,0,1,wxULongLong,						wxULongLong&  wxULongLong.operator+ (  wxULongLong & ll)
+wxULongLong.operator++,0,0,0,wxULongLong,						wxULongLong wxULongLong.operator++ ( )
+wxULongLong.operator++,0,0,1,wxULongLong,						wxULongLong wxULongLong.operator++ ( int )
+wxULongLong.operator-,0,0,1,wxULongLong,						wxULongLong wxULongLong.operator- (  wxULongLong & ll)
+wxULongLong.operator-,0,0,1,wxULongLong,						wxULongLong&  wxULongLong.operator- (  wxULongLong & ll)
+wxULongLong.operator--,0,0,0,wxULongLong,						wxULongLong wxULongLong.operator-- ( )
+wxULongLong.operator--,0,0,1,wxULongLong,						wxULongLong wxULongLong.operator-- ( int )
+wxULongLong.operator=,0,0,1,wxULongLong,						wxULongLong&  wxULongLong.operator= (  wxLongLong & ll)
+wxULongLong.operator=,0,0,1,wxULongLong,						wxULongLong&  wxULongLong.operator= ( wxLongLong_t ll)
+wxULongLong.operator=,0,0,1,wxULongLong,						wxULongLong&  wxULongLong.operator= ( wxULongLong_t ll)
+wxULongLong.operator=,0,0,1,wxULongLong,						wxULongLong&  wxULongLong.operator= ( long l)
+wxULongLong.operator=,0,0,1,wxULongLong,						wxULongLong&  wxULongLong.operator= ( unsigned long l)
+wxULongLong.ToDouble,0,0,0,double,						double wxULongLong.ToDouble ( )
+wxULongLong.ToString,0,0,0,wxString,						wxString wxULongLong.ToString ( )
+wxULongLong.ToULong,0,0,0,long,						unsigned long wxULongLong.ToULong ( )
+[INHERITS]

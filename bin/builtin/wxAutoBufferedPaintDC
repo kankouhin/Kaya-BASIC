@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/dcbuffer.h>
+[METHODS]
+wxAutoBufferedPaintDC.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+[INHERITS]
+wxBufferedPaintDC
+wxBufferedDC
+wxMemoryDC
+wxDC
+wxObject

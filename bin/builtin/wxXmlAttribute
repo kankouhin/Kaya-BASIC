@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/xml/xml.h>
+[METHODS]
+wxXmlAttribute.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxXmlAttribute.GetName,0,0,0,wxString,						wxString wxXmlAttribute.GetName ( )
+wxXmlAttribute.GetNext,0,1,0,wxXmlAttribute,						wxXmlAttribute* wxXmlAttribute.GetNext ( )
+wxXmlAttribute.GetValue,0,0,0,wxString,						wxString wxXmlAttribute.GetValue ( )
+wxXmlAttribute.SetName,0,0,1,void,						void wxXmlAttribute.SetName (  wxString & name)
+wxXmlAttribute.SetNext,0,0,1,void,						void wxXmlAttribute.SetNext ( wxXmlAttribute * next)
+wxXmlAttribute.SetValue,0,0,1,void,						void wxXmlAttribute.SetValue (  wxString & value)
+[INHERITS]

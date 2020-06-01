@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxArrayStringProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxArrayStringProperty.ConversionFlags,0,0,-1,enum,						enum wxArrayStringProperty.ConversionFlags
+wxArrayStringProperty.ArrayStringToString,1,0,4,void,						static void wxArrayStringProperty.ArrayStringToString ( wxString & dst,      wxArrayString & src,     wxUniChar delimiter,     int flags    )
+wxArrayStringProperty.ConvertArrayToString,0,0,3,void,						void wxArrayStringProperty.ConvertArrayToString (  wxArrayString & arr,     wxString * pString,      wxUniChar & delimiter    )
+wxArrayStringProperty.CreateEditorDialog,0,1,0,wxPGArrayEditorDialog,						wxPGArrayEditorDialog* wxArrayStringProperty.CreateEditorDialog ( )
+wxArrayStringProperty.DisplayEditorDialog,0,0,2,bool,						bool wxArrayStringProperty.DisplayEditorDialog ( wxPropertyGrid * pg,     wxVariant & value    )
+wxArrayStringProperty.DoSetAttribute,0,0,2,bool,						bool wxArrayStringProperty.DoSetAttribute (  wxString & name,     wxVariant & value    )
+wxArrayStringProperty.GenerateValueAsString,0,0,0,void,						void wxArrayStringProperty.GenerateValueAsString ( )
+wxArrayStringProperty.OnCustomStringEdit,0,0,2,bool,						bool wxArrayStringProperty.OnCustomStringEdit ( wxWindow * parent,     wxString & value    )
+wxArrayStringProperty.OnSetValue,0,0,0,void,						void wxArrayStringProperty.OnSetValue ( )
+wxArrayStringProperty.StringToValue,0,0,3,bool,						bool wxArrayStringProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags = 0    )
+wxArrayStringProperty.ValueToString,0,0,2,wxString,						wxString wxArrayStringProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+wxArrayStringProperty.m_customBtnText,0,0,-1,wxString,						wxString wxArrayStringProperty.m_customBtnText
+wxArrayStringProperty.m_delimiter,0,0,-1,wxUniChar,						wxUniChar wxArrayStringProperty.m_delimiter
+wxArrayStringProperty.m_display,0,0,-1,wxString,						wxString wxArrayStringProperty.m_display
+[INHERITS]
+wxEditorDialogProperty
+wxPGProperty
+wxObject

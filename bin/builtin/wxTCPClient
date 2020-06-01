@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/sckipc.h>
+[METHODS]
+wxTCPClient.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTCPClient.MakeConnection,0,1,3,wxConnectionBase,						wxConnectionBase* wxTCPClient.MakeConnection (  wxString & host,      wxString & service,      wxString & topic    )
+wxTCPClient.OnMakeConnection,0,1,0,wxConnectionBase,						wxConnectionBase* wxTCPClient.OnMakeConnection ( )
+wxTCPClient.ValidHost,0,0,1,bool,						bool wxTCPClient.ValidHost (  wxString & host)
+[INHERITS]
+wxObject

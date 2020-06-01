@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellFloatRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellFloatRenderer.GetFormat,0,0,0,int,						int wxGridCellFloatRenderer.GetFormat ( )
+wxGridCellFloatRenderer.GetPrecision,0,0,0,int,						int wxGridCellFloatRenderer.GetPrecision ( )
+wxGridCellFloatRenderer.GetWidth,0,0,0,int,						int wxGridCellFloatRenderer.GetWidth ( )
+wxGridCellFloatRenderer.SetFormat,0,0,1,void,						void wxGridCellFloatRenderer.SetFormat ( int format)
+wxGridCellFloatRenderer.SetParameters,0,0,1,void,						void wxGridCellFloatRenderer.SetParameters (  wxString & params)
+wxGridCellFloatRenderer.SetPrecision,0,0,1,void,						void wxGridCellFloatRenderer.SetPrecision ( int precision)
+wxGridCellFloatRenderer.SetWidth,0,0,1,void,						void wxGridCellFloatRenderer.SetWidth ( int width)
+[INHERITS]
+wxGridCellStringRenderer
+wxGridCellRenderer
+wxClientDataContainer
+wxRefCounter

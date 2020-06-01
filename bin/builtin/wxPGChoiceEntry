@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/property.h>
+[METHODS]
+wxPGChoiceEntry.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGChoiceEntry.GetValue,0,0,0,int,						int wxPGChoiceEntry.GetValue ( )
+wxPGChoiceEntry.operator=,0,0,1,wxPGChoiceEntry,						wxPGChoiceEntry&  wxPGChoiceEntry.operator= (  wxPGChoiceEntry & other)
+wxPGChoiceEntry.SetValue,0,0,1,void,						void wxPGChoiceEntry.SetValue ( int value)
+[INHERITS]
+wxPGCell
+wxObject

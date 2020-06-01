@@ -1,0 +1,14 @@
+[CONSTS]
+wxEVT_ACTIVATE
+wxEVT_ACTIVATE_APP
+wxEVT_ACTIVATE
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxActivateEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxActivateEvent.Reason,0,0,-1,enum,						enum wxActivateEvent.Reason
+wxActivateEvent.GetActivationReason,0,0,0,Reason,						Reason wxActivateEvent.GetActivationReason ( )
+wxActivateEvent.GetActive,0,0,0,bool,						bool wxActivateEvent.GetActive ( )
+[INHERITS]
+wxEvent
+wxObject

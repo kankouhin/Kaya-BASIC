@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/vscroll.h>
+[METHODS]
+wxVScrolledWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxVScrolledWindow.Create,0,0,6,bool,						bool wxVScrolledWindow.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxPanelNameStr    )
+[INHERITS]
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject
+wxVarVScrollHelper
+wxVarScrollHelperBase

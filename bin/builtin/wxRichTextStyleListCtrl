@@ -1,0 +1,21 @@
+[CONSTS]
+wxRICHTEXTSTYLELIST_HIDE_TYPE_SELECTOR
+[HEADER]
+<wx/richtext/richtextstyles.h>
+[METHODS]
+wxRichTextStyleListCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextStyleListCtrl.Create,0,0,5,bool,						bool wxRichTextStyleListCtrl.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0    )
+wxRichTextStyleListCtrl.GetRichTextCtrl,0,1,0,wxRichTextCtrl,						wxRichTextCtrl* wxRichTextStyleListCtrl.GetRichTextCtrl ( )
+wxRichTextStyleListCtrl.GetStyleChoice,0,1,0,wxChoice,						wxChoice* wxRichTextStyleListCtrl.GetStyleChoice ( )
+wxRichTextStyleListCtrl.GetStyleListBox,0,1,0,wxRichTextStyleListBox,						wxRichTextStyleListBox* wxRichTextStyleListCtrl.GetStyleListBox ( )
+wxRichTextStyleListCtrl.GetStyleSheet,0,1,0,wxRichTextStyleSheet,						wxRichTextStyleSheet* wxRichTextStyleListCtrl.GetStyleSheet ( )
+wxRichTextStyleListCtrl.GetStyleType,0,0,0,wxRichTextStyleListBox.wxRichTextStyleType,						wxRichTextStyleListBox.wxRichTextStyleType wxRichTextStyleListCtrl.GetStyleType ( )
+wxRichTextStyleListCtrl.SetRichTextCtrl,0,0,1,void,						void wxRichTextStyleListCtrl.SetRichTextCtrl ( wxRichTextCtrl * ctrl)
+wxRichTextStyleListCtrl.SetStyleSheet,0,0,1,void,						void wxRichTextStyleListCtrl.SetStyleSheet ( wxRichTextStyleSheet * styleSheet)
+wxRichTextStyleListCtrl.SetStyleType,0,0,1,void,						void wxRichTextStyleListCtrl.SetStyleType ( wxRichTextStyleListBox.wxRichTextStyleType styleType)
+wxRichTextStyleListCtrl.UpdateStyles,0,0,0,void,						void wxRichTextStyleListCtrl.UpdateStyles ( )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

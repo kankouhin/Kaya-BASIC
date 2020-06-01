@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/xml/xml.h>
+[METHODS]
+wxXmlDoctype.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxXmlDoctype.Clear,0,0,0,void,						void wxXmlDoctype.Clear ( )
+wxXmlDoctype.GetFullString,0,0,0,wxString,						wxString wxXmlDoctype.GetFullString ( )
+wxXmlDoctype.GetPublicId,0,0,0,wxString,						wxString&  wxXmlDoctype.GetPublicId ( )
+wxXmlDoctype.GetRootName,0,0,0,wxString,						wxString&  wxXmlDoctype.GetRootName ( )
+wxXmlDoctype.GetSystemId,0,0,0,wxString,						wxString&  wxXmlDoctype.GetSystemId ( )
+wxXmlDoctype.IsValid,0,0,0,bool,						bool wxXmlDoctype.IsValid ( )
+[INHERITS]

@@ -9,31 +9,33 @@ wxLB_NO_SB
 wxLB_SORT
 wxEVT_LISTBOX
 wxEVT_LISTBOX_DCLICK
-[METHODS]
+[HEADER]
 <wx/listbox.h>
-Create,0,0,9,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     int n = 0,      wxString choices[] = NULL,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxListBoxNameStr    )
-Create,0,0,8,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxListBoxNameStr    )
-Deselect,0,0,1,void,						void Deselect ( int n)
-EnsureVisible,0,0,1,void,						void EnsureVisible ( int n)
-FindString,0,0,2,int,						int FindString (  wxString & string,     bool caseSensitive = false    )
-GetCount,0,0,0,int,						unsigned int GetCount ( )
-GetCountPerPage,0,0,0,int,						int GetCountPerPage ( )
-GetSelection,0,0,0,int,						int GetSelection ( )
-GetSelections,0,0,1,int,						int GetSelections ( wxArrayInt & selections)
-GetString,0,0,1,wxString,						wxString GetString ( unsigned int n)
-GetTopItem,0,0,0,int,						int GetTopItem ( )
-HitTest,0,0,1,int,						int HitTest (  wxPoint & point)
-HitTest,0,0,2,int,						int HitTest ( int x,     int y    )
-InsertItems,0,0,3,void,						void InsertItems ( unsigned int nItems,      wxString * items,     unsigned int pos    )
-InsertItems,0,0,2,void,						void InsertItems (  wxArrayString & items,     unsigned int pos    )
-IsSelected,0,0,1,bool,						bool IsSelected ( int n)
-IsSorted,0,0,0,bool,						bool IsSorted ( )
-SetFirstItem,0,0,1,void,						void SetFirstItem ( int n)
-SetFirstItem,0,0,1,void,						void SetFirstItem (  wxString & string)
-SetSelection,0,0,1,void,						void SetSelection ( int n)
-SetString,0,0,2,void,						void SetString ( unsigned int n,      wxString & string    )
-SetStringSelection,0,0,2,bool,						bool SetStringSelection (  wxString & s,     bool select    )
-SetStringSelection,0,0,1,bool,						bool SetStringSelection (  wxString & s)
+[METHODS]
+wxListBox.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxListBox.Create,0,0,9,bool,						bool wxListBox.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     int n = 0,      wxString choices[] = NULL,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxListBoxNameStr    )
+wxListBox.Create,0,0,8,bool,						bool wxListBox.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxListBoxNameStr    )
+wxListBox.Deselect,0,0,1,void,						void wxListBox.Deselect ( int n)
+wxListBox.EnsureVisible,0,0,1,void,						void wxListBox.EnsureVisible ( int n)
+wxListBox.FindString,0,0,2,int,						int wxListBox.FindString (  wxString & string,     bool caseSensitive = false    )
+wxListBox.GetCount,0,0,0,int,						unsigned int wxListBox.GetCount ( )
+wxListBox.GetCountPerPage,0,0,0,int,						int wxListBox.GetCountPerPage ( )
+wxListBox.GetSelection,0,0,0,int,						int wxListBox.GetSelection ( )
+wxListBox.GetSelections,0,0,1,int,						int wxListBox.GetSelections ( wxArrayInt & selections)
+wxListBox.GetString,0,0,1,wxString,						wxString wxListBox.GetString ( unsigned int n)
+wxListBox.GetTopItem,0,0,0,int,						int wxListBox.GetTopItem ( )
+wxListBox.HitTest,0,0,1,int,						int wxListBox.HitTest (  wxPoint & point)
+wxListBox.HitTest,0,0,2,int,						int wxListBox.HitTest ( int x,     int y    )
+wxListBox.InsertItems,0,0,3,void,						void wxListBox.InsertItems ( unsigned int nItems,      wxString * items,     unsigned int pos    )
+wxListBox.InsertItems,0,0,2,void,						void wxListBox.InsertItems (  wxArrayString & items,     unsigned int pos    )
+wxListBox.IsSelected,0,0,1,bool,						bool wxListBox.IsSelected ( int n)
+wxListBox.IsSorted,0,0,0,bool,						bool wxListBox.IsSorted ( )
+wxListBox.SetFirstItem,0,0,1,void,						void wxListBox.SetFirstItem ( int n)
+wxListBox.SetFirstItem,0,0,1,void,						void wxListBox.SetFirstItem (  wxString & string)
+wxListBox.SetSelection,0,0,1,void,						void wxListBox.SetSelection ( int n)
+wxListBox.SetString,0,0,2,void,						void wxListBox.SetString ( unsigned int n,      wxString & string    )
+wxListBox.SetStringSelection,0,0,2,bool,						bool wxListBox.SetStringSelection (  wxString & s,     bool select    )
+wxListBox.SetStringSelection,0,0,1,bool,						bool wxListBox.SetStringSelection (  wxString & s)
 [INHERITS]
 wxControl
 wxWindow

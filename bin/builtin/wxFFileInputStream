@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/wfstream.h>
+[METHODS]
+wxFFileInputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFFileInputStream.GetFile,0,1,0,wxFFile,						wxFFile* wxFFileInputStream.GetFile ( )
+wxFFileInputStream.IsOk,0,0,0,bool,						bool wxFFileInputStream.IsOk ( )
+[INHERITS]
+wxInputStream
+wxStreamBase

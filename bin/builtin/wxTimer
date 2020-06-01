@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/timer.h>
+[METHODS]
+wxTimer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTimer.GetId,0,0,0,int,						int wxTimer.GetId ( )
+wxTimer.GetInterval,0,0,0,int,						int wxTimer.GetInterval ( )
+wxTimer.GetOwner,0,1,0,wxEvtHandler,						wxEvtHandler* wxTimer.GetOwner ( )
+wxTimer.IsOneShot,0,0,0,bool,						bool wxTimer.IsOneShot ( )
+wxTimer.IsRunning,0,0,0,bool,						bool wxTimer.IsRunning ( )
+wxTimer.Notify,0,0,0,void,						void wxTimer.Notify ( )
+wxTimer.SetOwner,0,0,2,void,						void wxTimer.SetOwner ( wxEvtHandler * owner,     int id = -1    )
+wxTimer.Start,0,0,2,bool,						bool wxTimer.Start ( int milliseconds = -1,     bool oneShot = wxTIMER_CONTINUOUS    )
+wxTimer.StartOnce,0,0,1,bool,						bool wxTimer.StartOnce ( int milliseconds = -1)
+wxTimer.Stop,0,0,0,void,						void wxTimer.Stop ( )
+[INHERITS]
+wxEvtHandler
+wxObject

@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/dnd.h>
+[METHODS]
+wxFileDropTarget.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileDropTarget.OnDrop,0,0,2,bool,						bool wxFileDropTarget.OnDrop ( wxCoord x,     wxCoord y    )
+wxFileDropTarget.OnDropFiles,0,0,3,bool,						bool wxFileDropTarget.OnDropFiles ( wxCoord x,     wxCoord y,      wxArrayString & filenames    )
+[INHERITS]
+wxDropTarget

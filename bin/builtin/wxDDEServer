@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/dde.h>
+[METHODS]
+wxDDEServer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDDEServer.Create,0,0,1,bool,						bool wxDDEServer.Create (  wxString & service)
+wxDDEServer.OnAcceptConnection,0,1,1,wxConnectionBase,						wxConnectionBase* wxDDEServer.OnAcceptConnection (  wxString & topic)
+[INHERITS]

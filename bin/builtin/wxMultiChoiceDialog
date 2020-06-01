@@ -1,0 +1,18 @@
+[CONSTS]
+wxOK
+wxCANCEL
+wxCENTRE
+[HEADER]
+<wx/choicdlg.h>
+[METHODS]
+wxMultiChoiceDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMultiChoiceDialog.GetSelections,0,0,0,wxArrayInt,						wxArrayInt wxMultiChoiceDialog.GetSelections ( )
+wxMultiChoiceDialog.SetSelections,0,0,1,void,						void wxMultiChoiceDialog.SetSelections (  wxArrayInt & selections)
+wxMultiChoiceDialog.ShowModal,0,0,0,int,						int wxMultiChoiceDialog.ShowModal ( )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

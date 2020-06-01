@@ -1,0 +1,41 @@
+[CONSTS]
+wxFD_DEFAULT_STYLE
+wxFD_OPEN
+wxFD_SAVE
+wxFD_OVERWRITE_PROMPT
+wxFD_NO_FOLLOW
+wxFD_FILE_MUST_EXIST
+wxFD_MULTIPLE
+wxFD_CHANGE_DIR
+wxFD_PREVIEW
+wxFD_SHOW_HIDDEN
+[HEADER]
+<wx/filedlg.h>
+[METHODS]
+wxFileDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileDialog.GetCurrentlySelectedFilename,0,0,0,wxString,						wxString wxFileDialog.GetCurrentlySelectedFilename ( )
+wxFileDialog.GetCurrentlySelectedFilterIndex,0,0,0,int,						int wxFileDialog.GetCurrentlySelectedFilterIndex ( )
+wxFileDialog.GetDirectory,0,0,0,wxString,						wxString wxFileDialog.GetDirectory ( )
+wxFileDialog.GetExtraControl,0,1,0,wxWindow,						wxWindow* wxFileDialog.GetExtraControl ( )
+wxFileDialog.GetFilename,0,0,0,wxString,						wxString wxFileDialog.GetFilename ( )
+wxFileDialog.GetFilenames,0,0,1,void,						void wxFileDialog.GetFilenames ( wxArrayString & filenames)
+wxFileDialog.GetFilterIndex,0,0,0,int,						int wxFileDialog.GetFilterIndex ( )
+wxFileDialog.GetMessage,0,0,0,wxString,						wxString wxFileDialog.GetMessage ( )
+wxFileDialog.GetPath,0,0,0,wxString,						wxString wxFileDialog.GetPath ( )
+wxFileDialog.GetPaths,0,0,1,void,						void wxFileDialog.GetPaths ( wxArrayString & paths)
+wxFileDialog.GetWildcard,0,0,0,wxString,						wxString wxFileDialog.GetWildcard ( )
+wxFileDialog.SetDirectory,0,0,1,void,						void wxFileDialog.SetDirectory (  wxString & directory)
+wxFileDialog.SetExtraControlCreator,0,0,1,bool,						bool wxFileDialog.SetExtraControlCreator ( ExtraControlCreatorFunction creator)
+wxFileDialog.SetFilename,0,0,1,void,						void wxFileDialog.SetFilename (  wxString & setfilename)
+wxFileDialog.SetFilterIndex,0,0,1,void,						void wxFileDialog.SetFilterIndex ( int filterIndex)
+wxFileDialog.SetMessage,0,0,1,void,						void wxFileDialog.SetMessage (  wxString & message)
+wxFileDialog.SetPath,0,0,1,void,						void wxFileDialog.SetPath (  wxString & path)
+wxFileDialog.SetWildcard,0,0,1,void,						void wxFileDialog.SetWildcard (  wxString & wildCard)
+wxFileDialog.ShowModal,0,0,0,int,						int wxFileDialog.ShowModal ( )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

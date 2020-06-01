@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/socket.h>
+[METHODS]
+wxSockAddress.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSockAddress.Clear,0,0,0,void,						void wxSockAddress.Clear ( )
+wxSockAddress.GetAddressData,0,1,0,sockaddr,						sockaddr* wxSockAddress.GetAddressData ( )
+wxSockAddress.GetAddressDataLen,0,0,0,int,						int wxSockAddress.GetAddressDataLen ( )
+wxSockAddress.SockAddrLen,0,0,0,int,						int wxSockAddress.SockAddrLen ( )
+[INHERITS]
+wxObject

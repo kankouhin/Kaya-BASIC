@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/imagpnm.h>
+[METHODS]
+wxPNMHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPNMHandler.DoCanRead,0,0,1,bool,						bool wxPNMHandler.DoCanRead ( wxInputStream & stream)
+wxPNMHandler.LoadFile,0,0,4,bool,						bool wxPNMHandler.LoadFile ( wxImage * image,     wxInputStream & stream,     bool verbose = true,     int index = -1    )
+wxPNMHandler.SaveFile,0,0,3,bool,						bool wxPNMHandler.SaveFile ( wxImage * image,     wxOutputStream & stream,     bool verbose = true    )
+[INHERITS]
+wxImageHandler
+wxObject

@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/spinbutt.h>
+[METHODS]
+wxSpinEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSpinEvent.GetPosition,0,0,0,int,						int wxSpinEvent.GetPosition ( )
+wxSpinEvent.SetPosition,0,0,1,void,						void wxSpinEvent.SetPosition ( int pos)
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

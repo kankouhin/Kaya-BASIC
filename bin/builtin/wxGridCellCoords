@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellCoords.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellCoords.GetCol,0,0,0,int,						int wxGridCellCoords.GetCol ( )
+wxGridCellCoords.GetRow,0,0,0,int,						int wxGridCellCoords.GetRow ( )
+wxGridCellCoords.operator!,0,0,0,bool,						bool wxGridCellCoords.operator! ( )
+wxGridCellCoords.operator!=,0,0,1,bool,						bool wxGridCellCoords.operator!= (  wxGridCellCoords & other)
+wxGridCellCoords.operator=,0,0,1,wxGridCellCoords,						wxGridCellCoords&  wxGridCellCoords.operator= (  wxGridCellCoords & other)
+wxGridCellCoords.operator==,0,0,1,bool,						bool wxGridCellCoords.operator== (  wxGridCellCoords & other)
+wxGridCellCoords.Set,0,0,2,void,						void wxGridCellCoords.Set ( int row,     int col    )
+wxGridCellCoords.SetCol,0,0,1,void,						void wxGridCellCoords.SetCol ( int n)
+wxGridCellCoords.SetRow,0,0,1,void,						void wxGridCellCoords.SetRow ( int n)
+[INHERITS]

@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/debugrpt.h>
+[METHODS]
+wxDebugReportPreview.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDebugReportPreview.Show,0,0,1,bool,						bool wxDebugReportPreview.Show ( wxDebugReport & dbgrpt)
+[INHERITS]

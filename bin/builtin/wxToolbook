@@ -1,0 +1,20 @@
+[CONSTS]
+wxTBK_BUTTONBAR
+wxTBK_HORZ_LAYOUT
+wxEVT_TOOLBOOK_PAGE_CHANGED
+wxEVT_TOOLBOOK_PAGE_CHANGING
+[HEADER]
+<wx/toolbook.h>
+[METHODS]
+wxToolbook.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxToolbook.Create,0,0,6,bool,						bool wxToolbook.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxEmptyString    )
+wxToolbook.EnablePage,0,0,2,bool,						bool wxToolbook.EnablePage ( size_t page,     bool enable    )
+wxToolbook.EnablePage,0,0,2,bool,						bool wxToolbook.EnablePage ( wxWindow * page,     bool enable    )
+wxToolbook.GetToolBar,0,1,0,wxToolBarBase,						wxToolBarBase* wxToolbook.GetToolBar ( )
+[INHERITS]
+wxBookCtrlBase
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxWithImages

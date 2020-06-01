@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/stopwatch.h>
+[METHODS]
+wxStopWatch.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStopWatch.Pause,0,0,0,void,						void wxStopWatch.Pause ( )
+wxStopWatch.Resume,0,0,0,void,						void wxStopWatch.Resume ( )
+wxStopWatch.Start,0,0,1,void,						void wxStopWatch.Start ( long milliseconds = 0)
+wxStopWatch.Time,0,0,0,long,						long wxStopWatch.Time ( )
+wxStopWatch.TimeInMicro,0,0,0,wxLongLong,						wxLongLong wxStopWatch.TimeInMicro ( )
+[INHERITS]

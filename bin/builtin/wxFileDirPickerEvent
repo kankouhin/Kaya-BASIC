@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/filepicker.h>
+[METHODS]
+wxFileDirPickerEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileDirPickerEvent.GetPath,0,0,0,wxString,						wxString wxFileDirPickerEvent.GetPath ( )
+wxFileDirPickerEvent.SetPath,0,0,1,void,						void wxFileDirPickerEvent.SetPath (  wxString & path)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

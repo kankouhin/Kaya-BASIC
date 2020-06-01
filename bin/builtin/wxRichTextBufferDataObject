@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextBufferDataObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextBufferDataObject.GetDataHere,0,0,1,bool,						bool wxRichTextBufferDataObject.GetDataHere ( void * buf)
+wxRichTextBufferDataObject.GetDataHere,0,0,2,bool,						bool wxRichTextBufferDataObject.GetDataHere (  wxDataFormat & format,     void * buf    )
+wxRichTextBufferDataObject.GetDataSize,0,0,0,size_t,						size_t wxRichTextBufferDataObject.GetDataSize ( )
+wxRichTextBufferDataObject.GetDataSize,0,0,1,size_t,						size_t wxRichTextBufferDataObject.GetDataSize (  wxDataFormat & format)
+wxRichTextBufferDataObject.GetPreferredFormat,0,0,1,wxDataFormat,						wxDataFormat wxRichTextBufferDataObject.GetPreferredFormat ( Direction dir)
+wxRichTextBufferDataObject.GetRichTextBuffer,0,1,0,wxRichTextBuffer,						wxRichTextBuffer* wxRichTextBufferDataObject.GetRichTextBuffer ( )
+wxRichTextBufferDataObject.GetRichTextBufferFormatId,1,1,0,wxChar,						static  wxChar* wxRichTextBufferDataObject.GetRichTextBufferFormatId ( )
+wxRichTextBufferDataObject.SetData,0,0,2,bool,						bool wxRichTextBufferDataObject.SetData ( size_t len,      void * buf    )
+wxRichTextBufferDataObject.SetData,0,0,3,bool,						bool wxRichTextBufferDataObject.SetData (  wxDataFormat & format,     size_t len,      void * buf    )
+wxRichTextBufferDataObject.m_formatRichTextBuffer,0,0,-1,wxDataFormat,						wxDataFormat wxRichTextBufferDataObject.m_formatRichTextBuffer
+wxRichTextBufferDataObject.m_richTextBuffer,0,1,-1,wxRichTextBuffer,						wxRichTextBuffer* wxRichTextBufferDataObject.m_richTextBuffer
+wxRichTextBufferDataObject.ms_richTextBufferFormatId,0,1,-1,wxChar,						wxChar* wxRichTextBufferDataObject.ms_richTextBufferFormatId
+[INHERITS]
+wxDataObjectSimple
+wxDataObject

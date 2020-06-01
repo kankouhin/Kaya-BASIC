@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/filectrl.h>
+[METHODS]
+wxFileCtrlEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileCtrlEvent.GetDirectory,0,0,0,wxString,						wxString wxFileCtrlEvent.GetDirectory ( )
+wxFileCtrlEvent.GetFile,0,0,0,wxString,						wxString wxFileCtrlEvent.GetFile ( )
+wxFileCtrlEvent.GetFiles,0,0,0,wxArrayString,						wxArrayString wxFileCtrlEvent.GetFiles ( )
+wxFileCtrlEvent.GetFilterIndex,0,0,0,int,						int wxFileCtrlEvent.GetFilterIndex ( )
+wxFileCtrlEvent.SetDirectory,0,0,1,void,						void wxFileCtrlEvent.SetDirectory (  wxString & directory)
+wxFileCtrlEvent.SetFiles,0,0,1,void,						void wxFileCtrlEvent.SetFiles (  wxArrayString & files)
+wxFileCtrlEvent.SetFilterIndex,0,0,1,void,						void wxFileCtrlEvent.SetFilterIndex ( int index)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

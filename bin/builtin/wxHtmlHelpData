@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/html/helpdata.h>
+[METHODS]
+wxHtmlHelpData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlHelpData.AddBook,0,0,1,bool,						bool wxHtmlHelpData.AddBook (  wxString & book_url)
+wxHtmlHelpData.FindPageById,0,0,1,wxString,						wxString wxHtmlHelpData.FindPageById ( int id)
+wxHtmlHelpData.FindPageByName,0,0,1,wxString,						wxString wxHtmlHelpData.FindPageByName (  wxString & page)
+wxHtmlHelpData.GetBookRecArray,0,0,0,wxHtmlBookRecArray,						wxHtmlBookRecArray&  wxHtmlHelpData.GetBookRecArray ( )
+wxHtmlHelpData.GetContentsArray,0,0,0,wxHtmlHelpDataItems,						wxHtmlHelpDataItems&  wxHtmlHelpData.GetContentsArray ( )
+wxHtmlHelpData.GetIndexArray,0,0,0,wxHtmlHelpDataItems,						wxHtmlHelpDataItems&  wxHtmlHelpData.GetIndexArray ( )
+wxHtmlHelpData.SetTempDir,0,0,1,void,						void wxHtmlHelpData.SetTempDir (  wxString & path)
+[INHERITS]
+wxObject

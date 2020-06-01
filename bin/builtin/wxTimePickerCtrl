@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/timectrl.h>
+[METHODS]
+wxTimePickerCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTimePickerCtrl.Create,0,0,8,bool,						bool wxTimePickerCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxDateTime & dt = wxDefaultDateTime,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxTP_DEFAULT,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxTimePickerCtrlNameStr    )
+wxTimePickerCtrl.GetTime,0,0,3,bool,						bool wxTimePickerCtrl.GetTime ( int * hour,     int * min,     int * sec    )
+wxTimePickerCtrl.GetValue,0,0,0,wxDateTime,						wxDateTime wxTimePickerCtrl.GetValue ( )
+wxTimePickerCtrl.SetTime,0,0,3,bool,						bool wxTimePickerCtrl.SetTime ( int hour,     int min,     int sec    )
+wxTimePickerCtrl.SetValue,0,0,1,void,						void wxTimePickerCtrl.SetValue (  wxDateTime & dt)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

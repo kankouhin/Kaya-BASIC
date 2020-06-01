@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/glcanvas.h>
+[METHODS]
+wxGLCanvas.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGLCanvas.IsDisplaySupported,1,0,1,bool,						static bool wxGLCanvas.IsDisplaySupported (  wxGLAttributes & dispAttrs)
+wxGLCanvas.IsDisplaySupported,1,0,1,bool,						static bool wxGLCanvas.IsDisplaySupported (  int * attribList)
+wxGLCanvas.IsExtensionSupported,1,0,1,bool,						static bool wxGLCanvas.IsExtensionSupported (  char * extension)
+wxGLCanvas.SetColour,0,0,1,bool,						bool wxGLCanvas.SetColour (  wxString & colour)
+wxGLCanvas.SetCurrent,0,0,1,bool,						bool wxGLCanvas.SetCurrent (  wxGLContext & context)
+wxGLCanvas.SwapBuffers,0,0,0,bool,						bool wxGLCanvas.SwapBuffers ( )
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/socket.h>
+[METHODS]
+wxSocketServer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSocketServer.Accept,0,1,1,wxSocketBase,						wxSocketBase* wxSocketServer.Accept ( bool wait = true)
+wxSocketServer.AcceptWith,0,0,2,bool,						bool wxSocketServer.AcceptWith ( wxSocketBase & socket,     bool wait = true    )
+wxSocketServer.WaitForAccept,0,0,2,bool,						bool wxSocketServer.WaitForAccept ( long seconds = -1,     long millisecond = 0    )
+[INHERITS]
+wxSocketBase
+wxObject

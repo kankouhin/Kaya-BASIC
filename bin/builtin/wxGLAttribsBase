@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/glcanvas.h>
+[METHODS]
+wxGLAttribsBase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGLAttribsBase.AddAttribBits,0,0,2,void,						void wxGLAttribsBase.AddAttribBits ( int searchVal,     int combineVal    )
+wxGLAttribsBase.AddAttribute,0,0,1,void,						void wxGLAttribsBase.AddAttribute ( int attribute)
+wxGLAttribsBase.GetGLAttrs,0,1,0,int,						int* wxGLAttribsBase.GetGLAttrs ( )
+wxGLAttribsBase.GetSize,0,0,0,int,						int wxGLAttribsBase.GetSize ( )
+wxGLAttribsBase.NeedsARB,0,0,0,bool,						bool wxGLAttribsBase.NeedsARB ( )
+wxGLAttribsBase.Reset,0,0,0,void,						void wxGLAttribsBase.Reset ( )
+wxGLAttribsBase.SetNeedsARB,0,0,1,void,						void wxGLAttribsBase.SetNeedsARB ( bool needsARB = true)
+[INHERITS]

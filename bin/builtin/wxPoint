@@ -1,0 +1,28 @@
+[CONSTS]
+[HEADER]
+<wx/gdicmn.h>
+[METHODS]
+wxPoint.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPoint.IsFullySpecified,0,0,0,bool,						bool wxPoint.IsFullySpecified ( )
+wxPoint.operator!=,0,0,2,bool,						bool wxPoint.operator!= (  wxPoint & p1,      wxPoint & p2    )
+wxPoint.operator*,0,0,2,wxSize,						wxSize wxPoint.operator* (  wxPoint & sz,     int factor    )
+wxPoint.operator*,0,0,2,wxSize,						wxSize wxPoint.operator* ( int factor,      wxSize & sz    )
+wxPoint.operator*=,0,0,1,wxSize,						wxSize&  wxPoint.operator*= ( int factor)
+wxPoint.operator+,0,0,2,wxPoint,						wxPoint wxPoint.operator+ (  wxPoint & p1,      wxPoint & p2    )
+wxPoint.operator+,0,0,2,wxPoint,						wxPoint wxPoint.operator+ (  wxPoint & pt,      wxSize & sz    )
+wxPoint.operator+,0,0,2,wxPoint,						wxPoint wxPoint.operator+ (  wxSize & sz,      wxPoint & pt    )
+wxPoint.operator+=,0,0,1,wxPoint,						wxPoint&  wxPoint.operator+= (  wxPoint & pt)
+wxPoint.operator+=,0,0,1,wxPoint,						wxPoint&  wxPoint.operator+= (  wxSize & sz)
+wxPoint.operator-,0,0,2,wxPoint,						wxPoint wxPoint.operator- (  wxPoint & p1,      wxPoint & p2    )
+wxPoint.operator-,0,0,2,wxPoint,						wxPoint wxPoint.operator- (  wxPoint & pt,      wxSize & sz    )
+wxPoint.operator-,0,0,2,wxPoint,						wxPoint wxPoint.operator- (  wxSize & sz,      wxPoint & pt    )
+wxPoint.operator-=,0,0,1,wxPoint,						wxPoint&  wxPoint.operator-= (  wxPoint & pt)
+wxPoint.operator-=,0,0,1,wxPoint,						wxPoint&  wxPoint.operator-= (  wxSize & sz)
+wxPoint.operator/,0,0,2,wxSize,						wxSize wxPoint.operator/ (  wxPoint & sz,     int factor    )
+wxPoint.operator/=,0,0,1,wxSize,						wxSize&  wxPoint.operator/= ( int factor)
+wxPoint.operator=,0,0,1,wxPoint,						wxPoint&  wxPoint.operator= (  wxPoint & pt)
+wxPoint.operator==,0,0,2,bool,						bool wxPoint.operator== (  wxPoint & p1,      wxPoint & p2    )
+wxPoint.SetDefaults,0,0,1,void,						void wxPoint.SetDefaults (  wxPoint & pt)
+wxPoint.x,0,0,-1,int,						int wxPoint.x
+wxPoint.y,0,0,-1,int,						int wxPoint.y
+[INHERITS]

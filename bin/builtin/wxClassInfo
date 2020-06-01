@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/object.h>
+[METHODS]
+wxClassInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxClassInfo.CreateObject,0,1,0,wxObject,						wxObject* wxClassInfo.CreateObject ( )
+wxClassInfo.FindClass,1,1,1,wxClassInfo,						static wxClassInfo* wxClassInfo.FindClass (  wxString & className)
+wxClassInfo.GetBaseClassName1,0,1,0,wxChar,						wxChar* wxClassInfo.GetBaseClassName1 ( )
+wxClassInfo.GetBaseClassName2,0,1,0,wxChar,						wxChar* wxClassInfo.GetBaseClassName2 ( )
+wxClassInfo.GetClassName,0,1,0,wxChar,						wxChar* wxClassInfo.GetClassName ( )
+wxClassInfo.GetSize,0,0,0,int,						int wxClassInfo.GetSize ( )
+wxClassInfo.IsDynamic,0,0,0,bool,						bool wxClassInfo.IsDynamic ( )
+wxClassInfo.IsKindOf,0,0,1,bool,						bool wxClassInfo.IsKindOf (  wxClassInfo * info)
+[INHERITS]

@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/archive.h>
+[METHODS]
+wxArchiveClassFactory.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxArchiveClassFactory.CanHandle,0,0,2,bool,						bool wxArchiveClassFactory.CanHandle (  wxString & protocol,     wxStreamProtocolType type = wxSTREAM_PROTOCOL    )
+wxArchiveClassFactory.Find,1,1,2,wxArchiveClassFactory,						static  wxArchiveClassFactory* wxArchiveClassFactory.Find (  wxString & protocol,     wxStreamProtocolType type = wxSTREAM_PROTOCOL    )
+wxArchiveClassFactory.GetConv,0,0,0,wxMBConv,						wxMBConv&  wxArchiveClassFactory.GetConv ( )
+wxArchiveClassFactory.GetFirst,1,1,0,wxArchiveClassFactory,						static  wxArchiveClassFactory* wxArchiveClassFactory.GetFirst ( )
+wxArchiveClassFactory.GetInternalName,0,0,2,wxString,						wxString wxArchiveClassFactory.GetInternalName (  wxString & name,     wxPathFormat format = wxPATH_NATIVE    )
+wxArchiveClassFactory.GetNext,0,1,0,wxArchiveClassFactory,						wxArchiveClassFactory* wxArchiveClassFactory.GetNext ( )
+wxArchiveClassFactory.GetProtocol,0,0,0,wxString,						wxString wxArchiveClassFactory.GetProtocol ( )
+wxArchiveClassFactory.GetProtocols,0,1,1,wxChar*,						wxChar** wxArchiveClassFactory.GetProtocols ( wxStreamProtocolType type = wxSTREAM_PROTOCOL)
+wxArchiveClassFactory.NewEntry,0,1,0,wxArchiveEntry,						wxArchiveEntry* wxArchiveClassFactory.NewEntry ( )
+wxArchiveClassFactory.NewStream,0,1,1,wxArchiveInputStream,						wxArchiveInputStream* wxArchiveClassFactory.NewStream ( wxInputStream & stream)
+wxArchiveClassFactory.NewStream,0,1,1,wxArchiveOutputStream,						wxArchiveOutputStream* wxArchiveClassFactory.NewStream ( wxOutputStream & stream)
+wxArchiveClassFactory.NewStream,0,1,1,wxArchiveInputStream,						wxArchiveInputStream* wxArchiveClassFactory.NewStream ( wxInputStream * stream)
+wxArchiveClassFactory.NewStream,0,1,1,wxArchiveOutputStream,						wxArchiveOutputStream* wxArchiveClassFactory.NewStream ( wxOutputStream * stream)
+wxArchiveClassFactory.PushFront,0,0,0,void,						void wxArchiveClassFactory.PushFront ( )
+wxArchiveClassFactory.Remove,0,0,0,void,						void wxArchiveClassFactory.Remove ( )
+wxArchiveClassFactory.SetConv,0,0,1,void,						void wxArchiveClassFactory.SetConv ( wxMBConv & conv)
+[INHERITS]
+wxObject

@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/advprops.h>
+[METHODS]
+wxMultiChoiceProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMultiChoiceProperty.DisplayEditorDialog,0,0,2,bool,						bool wxMultiChoiceProperty.DisplayEditorDialog ( wxPropertyGrid * pg,     wxVariant & value    )
+wxMultiChoiceProperty.GenerateValueAsString,0,0,2,void,						void wxMultiChoiceProperty.GenerateValueAsString ( wxVariant & value,     wxString * target    )
+wxMultiChoiceProperty.GetValueAsArrayInt,0,0,0,wxArrayInt,						wxArrayInt wxMultiChoiceProperty.GetValueAsArrayInt ( )
+wxMultiChoiceProperty.GetValueAsIndices,0,0,0,wxArrayInt,						wxArrayInt wxMultiChoiceProperty.GetValueAsIndices ( )
+wxMultiChoiceProperty.OnSetValue,0,0,0,void,						void wxMultiChoiceProperty.OnSetValue ( )
+wxMultiChoiceProperty.StringToValue,0,0,3,bool,						bool wxMultiChoiceProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags = 0    )
+wxMultiChoiceProperty.ValueToString,0,0,2,wxString,						wxString wxMultiChoiceProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+wxMultiChoiceProperty.m_display,0,0,-1,wxString,						wxString wxMultiChoiceProperty.m_display
+wxMultiChoiceProperty.m_userStringMode,0,0,-1,int,						int wxMultiChoiceProperty.m_userStringMode
+wxMultiChoiceProperty.m_valueAsStrings,0,0,-1,wxArrayString,						wxArrayString wxMultiChoiceProperty.m_valueAsStrings
+[INHERITS]
+wxEditorDialogProperty
+wxPGProperty
+wxObject

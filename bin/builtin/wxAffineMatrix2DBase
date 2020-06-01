@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/affinematrix2dbase.h>
+[METHODS]
+wxAffineMatrix2DBase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAffineMatrix2DBase.Concat,0,0,1,void,						void wxAffineMatrix2DBase.Concat (  wxAffineMatrix2DBase & t)
+wxAffineMatrix2DBase.Get,0,0,2,void,						void wxAffineMatrix2DBase.Get ( wxMatrix2D * mat2D,     wxPoint2DDouble * tr    )
+wxAffineMatrix2DBase.Invert,0,0,0,bool,						bool wxAffineMatrix2DBase.Invert ( )
+wxAffineMatrix2DBase.IsEqual,0,0,1,bool,						bool wxAffineMatrix2DBase.IsEqual (  wxAffineMatrix2DBase & t)
+wxAffineMatrix2DBase.IsIdentity,0,0,0,bool,						bool wxAffineMatrix2DBase.IsIdentity ( )
+wxAffineMatrix2DBase.Mirror,0,0,1,void,						void wxAffineMatrix2DBase.Mirror ( int direction = wxHORIZONTAL)
+wxAffineMatrix2DBase.operator!=,0,0,1,bool,						bool wxAffineMatrix2DBase.operator!= (  wxAffineMatrix2DBase & t)
+wxAffineMatrix2DBase.operator==,0,0,1,bool,						bool wxAffineMatrix2DBase.operator== (  wxAffineMatrix2DBase & t)
+wxAffineMatrix2DBase.Rotate,0,0,1,void,						void wxAffineMatrix2DBase.Rotate ( wxDouble cRadians)
+wxAffineMatrix2DBase.Scale,0,0,2,void,						void wxAffineMatrix2DBase.Scale ( wxDouble xScale,     wxDouble yScale    )
+wxAffineMatrix2DBase.Set,0,0,2,void,						void wxAffineMatrix2DBase.Set (  wxMatrix2D & mat2D,      wxPoint2DDouble & tr    )
+wxAffineMatrix2DBase.TransformDistance,0,0,1,wxPoint2DDouble,						wxPoint2DDouble wxAffineMatrix2DBase.TransformDistance (  wxPoint2DDouble & p)
+wxAffineMatrix2DBase.TransformDistance,0,0,2,void,						void wxAffineMatrix2DBase.TransformDistance ( wxDouble * dx,     wxDouble * dy    )
+wxAffineMatrix2DBase.TransformPoint,0,0,1,wxPoint2DDouble,						wxPoint2DDouble wxAffineMatrix2DBase.TransformPoint (  wxPoint2DDouble & p)
+wxAffineMatrix2DBase.TransformPoint,0,0,2,void,						void wxAffineMatrix2DBase.TransformPoint ( wxDouble * x,     wxDouble * y    )
+wxAffineMatrix2DBase.Translate,0,0,2,void,						void wxAffineMatrix2DBase.Translate ( wxDouble dx,     wxDouble dy    )
+[INHERITS]

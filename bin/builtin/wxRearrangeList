@@ -1,12 +1,14 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/rearrangectrl.h>
-CanMoveCurrentDown,0,0,0,bool,						bool CanMoveCurrentDown ( )
-CanMoveCurrentUp,0,0,0,bool,						bool CanMoveCurrentUp ( )
-Create,0,0,9,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos,      wxSize & size,      wxArrayInt & order,      wxArrayString & items,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxRearrangeListNameStr    )
-GetCurrentOrder,0,0,0,wxArrayInt,						wxArrayInt&  GetCurrentOrder ( )
-MoveCurrentDown,0,0,0,bool,						bool MoveCurrentDown ( )
-MoveCurrentUp,0,0,0,bool,						bool MoveCurrentUp ( )
+[METHODS]
+wxRearrangeList.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRearrangeList.CanMoveCurrentDown,0,0,0,bool,						bool wxRearrangeList.CanMoveCurrentDown ( )
+wxRearrangeList.CanMoveCurrentUp,0,0,0,bool,						bool wxRearrangeList.CanMoveCurrentUp ( )
+wxRearrangeList.Create,0,0,9,bool,						bool wxRearrangeList.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos,      wxSize & size,      wxArrayInt & order,      wxArrayString & items,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxRearrangeListNameStr    )
+wxRearrangeList.GetCurrentOrder,0,0,0,wxArrayInt,						wxArrayInt&  wxRearrangeList.GetCurrentOrder ( )
+wxRearrangeList.MoveCurrentDown,0,0,0,bool,						bool wxRearrangeList.MoveCurrentDown ( )
+wxRearrangeList.MoveCurrentUp,0,0,0,bool,						bool wxRearrangeList.MoveCurrentUp ( )
 [INHERITS]
 wxCheckListBox
 wxListBox

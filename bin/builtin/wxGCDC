@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dcgraph.h>
+[METHODS]
+wxGCDC.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGCDC.GetGraphicsContext,0,1,0,wxGraphicsContext,						wxGraphicsContext* wxGCDC.GetGraphicsContext ( )
+wxGCDC.SetGraphicsContext,0,0,1,void,						void wxGCDC.SetGraphicsContext ( wxGraphicsContext * context)
+[INHERITS]
+wxDC
+wxObject

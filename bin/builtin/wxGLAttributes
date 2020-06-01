@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/glcanvas.h>
+[METHODS]
+wxGLAttributes.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGLAttributes.AuxBuffers,0,0,1,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.AuxBuffers ( int val)
+wxGLAttributes.BufferSize,0,0,1,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.BufferSize ( int val)
+wxGLAttributes.Defaults,0,0,0,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.Defaults ( )
+wxGLAttributes.Depth,0,0,1,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.Depth ( int val)
+wxGLAttributes.DoubleBuffer,0,0,0,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.DoubleBuffer ( )
+wxGLAttributes.EndList,0,0,0,void,						void wxGLAttributes.EndList ( )
+wxGLAttributes.FrameBuffersRGB,0,0,0,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.FrameBuffersRGB ( )
+wxGLAttributes.Level,0,0,1,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.Level ( int val)
+wxGLAttributes.MinAcumRGBA,0,0,4,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.MinAcumRGBA ( int mRed,     int mGreen,     int mBlue,     int mAlpha    )
+wxGLAttributes.MinRGBA,0,0,4,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.MinRGBA ( int mRed,     int mGreen,     int mBlue,     int mAlpha    )
+wxGLAttributes.PlatformDefaults,0,0,0,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.PlatformDefaults ( )
+wxGLAttributes.RGBA,0,0,0,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.RGBA ( )
+wxGLAttributes.SampleBuffers,0,0,1,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.SampleBuffers ( int val)
+wxGLAttributes.Samplers,0,0,1,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.Samplers ( int val)
+wxGLAttributes.Stencil,0,0,1,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.Stencil ( int val)
+wxGLAttributes.Stereo,0,0,0,wxGLAttributes,						wxGLAttributes&  wxGLAttributes.Stereo ( )
+[INHERITS]
+wxGLAttribsBase

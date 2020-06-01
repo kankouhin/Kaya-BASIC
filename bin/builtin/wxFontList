@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/font.h>
+[METHODS]
+wxFontList.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFontList.FindOrCreateFont,0,1,7,wxFont,						wxFont* wxFontList.FindOrCreateFont ( int point_size,     wxFontFamily family,     wxFontStyle style,     wxFontWeight weight,     bool underline = false,      wxString & facename = wxEmptyString,     wxFontEncoding encoding = wxFONTENCODING_DEFAULT    )
+wxFontList.FindOrCreateFont,0,1,1,wxFont,						wxFont* wxFontList.FindOrCreateFont (  wxFontInfo & fontInfo)
+[INHERITS]

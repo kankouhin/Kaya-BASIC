@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/fontdata.h>
+[METHODS]
+wxFontData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFontData.EnableEffects,0,0,1,void,						void wxFontData.EnableEffects ( bool enable)
+wxFontData.GetAllowSymbols,0,0,0,bool,						bool wxFontData.GetAllowSymbols ( )
+wxFontData.GetChosenFont,0,0,0,wxFont,						wxFont wxFontData.GetChosenFont ( )
+wxFontData.GetColour,0,0,0,wxColour,						wxColour&  wxFontData.GetColour ( )
+wxFontData.GetEnableEffects,0,0,0,bool,						bool wxFontData.GetEnableEffects ( )
+wxFontData.GetInitialFont,0,0,0,wxFont,						wxFont wxFontData.GetInitialFont ( )
+wxFontData.GetShowHelp,0,0,0,bool,						bool wxFontData.GetShowHelp ( )
+wxFontData.operator=,0,0,1,wxFontData,						wxFontData&  wxFontData.operator= (  wxFontData & data)
+wxFontData.SetAllowSymbols,0,0,1,void,						void wxFontData.SetAllowSymbols ( bool allowSymbols)
+wxFontData.SetChosenFont,0,0,1,void,						void wxFontData.SetChosenFont (  wxFont & font)
+wxFontData.SetColour,0,0,1,void,						void wxFontData.SetColour (  wxColour & colour)
+wxFontData.SetInitialFont,0,0,1,void,						void wxFontData.SetInitialFont (  wxFont & font)
+wxFontData.SetRange,0,0,2,void,						void wxFontData.SetRange ( int min,     int max    )
+wxFontData.SetShowHelp,0,0,1,void,						void wxFontData.SetShowHelp ( bool showHelp)
+[INHERITS]
+wxObject

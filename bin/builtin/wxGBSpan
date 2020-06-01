@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/gbsizer.h>
+[METHODS]
+wxGBSpan.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGBSpan.GetColspan,0,0,0,int,						int wxGBSpan.GetColspan ( )
+wxGBSpan.GetRowspan,0,0,0,int,						int wxGBSpan.GetRowspan ( )
+wxGBSpan.operator!=,0,0,1,bool,						bool wxGBSpan.operator!= (  wxGBSpan & o)
+wxGBSpan.operator==,0,0,1,bool,						bool wxGBSpan.operator== (  wxGBSpan & o)
+wxGBSpan.SetColspan,0,0,1,void,						void wxGBSpan.SetColspan ( int colspan)
+wxGBSpan.SetRowspan,0,0,1,void,						void wxGBSpan.SetRowspan ( int rowspan)
+[INHERITS]

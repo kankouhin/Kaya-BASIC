@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/gbsizer.h>
+[METHODS]
+wxGBSizerItem.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGBSizerItem.GetEndPos,0,0,2,void,						void wxGBSizerItem.GetEndPos ( int & row,     int & col    )
+wxGBSizerItem.GetGBSizer,0,1,0,wxGridBagSizer,						wxGridBagSizer* wxGBSizerItem.GetGBSizer ( )
+wxGBSizerItem.GetPos,0,0,0,wxGBPosition,						wxGBPosition wxGBSizerItem.GetPos ( )
+wxGBSizerItem.GetPos,0,0,2,void,						void wxGBSizerItem.GetPos ( int & row,     int & col    )
+wxGBSizerItem.GetSpan,0,0,0,wxGBSpan,						wxGBSpan wxGBSizerItem.GetSpan ( )
+wxGBSizerItem.GetSpan,0,0,2,void,						void wxGBSizerItem.GetSpan ( int & rowspan,     int & colspan    )
+wxGBSizerItem.Intersects,0,0,1,bool,						bool wxGBSizerItem.Intersects (  wxGBSizerItem & other)
+wxGBSizerItem.Intersects,0,0,2,bool,						bool wxGBSizerItem.Intersects (  wxGBPosition & pos,      wxGBSpan & span    )
+wxGBSizerItem.SetGBSizer,0,0,1,void,						void wxGBSizerItem.SetGBSizer ( wxGridBagSizer * sizer)
+wxGBSizerItem.SetPos,0,0,1,bool,						bool wxGBSizerItem.SetPos (  wxGBPosition & pos)
+wxGBSizerItem.SetSpan,0,0,1,bool,						bool wxGBSizerItem.SetSpan (  wxGBSpan & span)
+[INHERITS]
+wxSizerItem
+wxObject

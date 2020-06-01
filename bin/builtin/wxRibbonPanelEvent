@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/ribbon/panel.h>
+[METHODS]
+wxRibbonPanelEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonPanelEvent.GetPanel,0,1,0,wxRibbonPanel,						wxRibbonPanel* wxRibbonPanelEvent.GetPanel ( )
+wxRibbonPanelEvent.SetPanel,0,0,1,void,						void wxRibbonPanelEvent.SetPanel ( wxRibbonPanel * page)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

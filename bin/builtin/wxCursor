@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/cursor.h>
+[METHODS]
+wxCursor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCursor.GetHotSpot,0,0,0,wxPoint,						wxPoint wxCursor.GetHotSpot ( )
+wxCursor.IsOk,0,0,0,bool,						bool wxCursor.IsOk ( )
+wxCursor.operator=,0,0,1,wxCursor,						wxCursor&  wxCursor.operator= (  wxCursor & cursor)
+[INHERITS]
+wxGDIObject
+wxObject

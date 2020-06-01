@@ -1,0 +1,13 @@
+[CONSTS]
+wxEVT_IDLE
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxIdleEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxIdleEvent.GetMode,1,0,0,wxIdleMode,						static wxIdleMode wxIdleEvent.GetMode ( )
+wxIdleEvent.MoreRequested,0,0,0,bool,						bool wxIdleEvent.MoreRequested ( )
+wxIdleEvent.RequestMore,0,0,1,void,						void wxIdleEvent.RequestMore ( bool needMore = true)
+wxIdleEvent.SetMode,1,0,1,void,						static void wxIdleEvent.SetMode ( wxIdleMode mode)
+[INHERITS]
+wxEvent
+wxObject

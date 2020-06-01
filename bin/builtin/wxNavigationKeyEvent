@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxNavigationKeyEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxNavigationKeyEvent.wxNavigationKeyEventFlags,0,0,-1,enum,						enum wxNavigationKeyEvent.wxNavigationKeyEventFlags
+wxNavigationKeyEvent.GetCurrentFocus,0,1,0,wxWindow,						wxWindow* wxNavigationKeyEvent.GetCurrentFocus ( )
+wxNavigationKeyEvent.GetDirection,0,0,0,bool,						bool wxNavigationKeyEvent.GetDirection ( )
+wxNavigationKeyEvent.IsFromTab,0,0,0,bool,						bool wxNavigationKeyEvent.IsFromTab ( )
+wxNavigationKeyEvent.IsWindowChange,0,0,0,bool,						bool wxNavigationKeyEvent.IsWindowChange ( )
+wxNavigationKeyEvent.SetCurrentFocus,0,0,1,void,						void wxNavigationKeyEvent.SetCurrentFocus ( wxWindow * currentFocus)
+wxNavigationKeyEvent.SetDirection,0,0,1,void,						void wxNavigationKeyEvent.SetDirection ( bool direction)
+wxNavigationKeyEvent.SetFlags,0,0,1,void,						void wxNavigationKeyEvent.SetFlags ( long flags)
+wxNavigationKeyEvent.SetFromTab,0,0,1,void,						void wxNavigationKeyEvent.SetFromTab ( bool fromTab)
+wxNavigationKeyEvent.SetWindowChange,0,0,1,void,						void wxNavigationKeyEvent.SetWindowChange ( bool windowChange)
+[INHERITS]
+wxEvent
+wxObject

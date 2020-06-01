@@ -1,14 +1,16 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/listctrl.h>
-ClearColumnImage,0,0,1,void,						void ClearColumnImage ( int col)
-Focus,0,0,1,void,						void Focus ( long index)
-GetFirstSelected,0,0,0,long,						long GetFirstSelected ( )
-GetFocusedItem,0,0,0,long,						long GetFocusedItem ( )
-GetNextSelected,0,0,1,long,						long GetNextSelected ( long item)
-IsSelected,0,0,1,bool,						bool IsSelected ( long index)
-Select,0,0,2,void,						void Select ( long n,     bool on = true    )
-SetColumnImage,0,0,2,void,						void SetColumnImage ( int col,     int image    )
+[METHODS]
+wxListView.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxListView.ClearColumnImage,0,0,1,void,						void wxListView.ClearColumnImage ( int col)
+wxListView.Focus,0,0,1,void,						void wxListView.Focus ( long index)
+wxListView.GetFirstSelected,0,0,0,long,						long wxListView.GetFirstSelected ( )
+wxListView.GetFocusedItem,0,0,0,long,						long wxListView.GetFocusedItem ( )
+wxListView.GetNextSelected,0,0,1,long,						long wxListView.GetNextSelected ( long item)
+wxListView.IsSelected,0,0,1,bool,						bool wxListView.IsSelected ( long index)
+wxListView.Select,0,0,2,void,						void wxListView.Select ( long n,     bool on = true    )
+wxListView.SetColumnImage,0,0,2,void,						void wxListView.SetColumnImage ( int col,     int image    )
 [INHERITS]
 wxListCtrl
 wxControl

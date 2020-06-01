@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/settings.h>
+[METHODS]
+wxSystemSettings.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSystemSettings.GetAppearance,1,0,0,wxSystemAppearance,						static wxSystemAppearance wxSystemSettings.GetAppearance ( )
+wxSystemSettings.GetColour,1,0,1,wxColour,						static wxColour wxSystemSettings.GetColour ( wxSystemColour index)
+wxSystemSettings.GetFont,1,0,1,wxFont,						static wxFont wxSystemSettings.GetFont ( wxSystemFont index)
+wxSystemSettings.GetMetric,1,0,2,int,						static int wxSystemSettings.GetMetric ( wxSystemMetric index,     wxWindow * win = NULL    )
+wxSystemSettings.GetScreenType,1,0,0,wxSystemScreenType,						static wxSystemScreenType wxSystemSettings.GetScreenType ( )
+wxSystemSettings.HasFeature,1,0,1,bool,						static bool wxSystemSettings.HasFeature ( wxSystemFeature index)
+[INHERITS]

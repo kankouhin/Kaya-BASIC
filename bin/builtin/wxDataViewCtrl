@@ -1,0 +1,108 @@
+[CONSTS]
+wxDV_SINGLE
+wxDV_MULTIPLE
+wxDV_ROW_LINES
+wxDV_HORIZ_RULES
+wxDV_VERT_RULES
+wxDV_VARIABLE_LINE_HEIGHT
+wxDV_NO_HEADER
+wxEVT_DATAVIEW_SELECTION_CHANGED
+wxEVT_DATAVIEW_ITEM_ACTIVATED
+wxEVT_DATAVIEW_ITEM_START_EDITING
+wxEVT_DATAVIEW_ITEM_EDITING_STARTED
+wxEVT_DATAVIEW_ITEM_EDITING_DONE
+wxEVT_DATAVIEW_ITEM_COLLAPSING
+wxEVT_DATAVIEW_ITEM_COLLAPSED
+wxEVT_DATAVIEW_ITEM_EXPANDING
+wxEVT_DATAVIEW_ITEM_EXPANDED
+wxEVT_DATAVIEW_ITEM_VALUE_CHANGED
+wxEVT_DATAVIEW_ITEM_CONTEXT_MENU
+wxEVT_DATAVIEW_COLUMN_HEADER_CLICK
+wxEVT_DATAVIEW_COLUMN_HEADER_RIGHT_CLICK
+wxEVT_DATAVIEW_COLUMN_SORTED
+wxEVT_DATAVIEW_COLUMN_REORDERED
+wxEVT_DATAVIEW_ITEM_BEGIN_DRAG
+wxEVT_DATAVIEW_ITEM_DROP_POSSIBLE
+wxEVT_DATAVIEW_ITEM_DROP
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewCtrl.AllowMultiColumnSort,0,0,1,bool,						bool wxDataViewCtrl.AllowMultiColumnSort ( bool allow)
+wxDataViewCtrl.AppendBitmapColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendBitmapColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AppendBitmapColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendBitmapColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AppendColumn,0,0,1,bool,						bool wxDataViewCtrl.AppendColumn ( wxDataViewColumn * col)
+wxDataViewCtrl.AppendDateColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendDateColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_ACTIVATABLE,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AppendDateColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendDateColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_ACTIVATABLE,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AppendIconTextColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendIconTextColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AppendIconTextColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendIconTextColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AppendProgressColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendProgressColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = 80,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AppendProgressColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendProgressColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = 80,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AppendTextColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendTextColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AppendTextColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendTextColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AppendToggleColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendToggleColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = 30,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AppendToggleColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.AppendToggleColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = 30,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.AssociateModel,0,0,1,bool,						bool wxDataViewCtrl.AssociateModel ( wxDataViewModel * model)
+wxDataViewCtrl.ClearColumns,0,0,0,bool,						bool wxDataViewCtrl.ClearColumns ( )
+wxDataViewCtrl.Collapse,0,0,1,void,						void wxDataViewCtrl.Collapse (  wxDataViewItem & item)
+wxDataViewCtrl.Create,0,0,7,bool,						bool wxDataViewCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxDataViewCtrlNameStr    )
+wxDataViewCtrl.DeleteColumn,0,0,1,bool,						bool wxDataViewCtrl.DeleteColumn ( wxDataViewColumn * column)
+wxDataViewCtrl.EditItem,0,0,2,void,						void wxDataViewCtrl.EditItem (  wxDataViewItem & item,      wxDataViewColumn * column    )
+wxDataViewCtrl.EnableDragSource,0,0,1,bool,						bool wxDataViewCtrl.EnableDragSource (  wxDataFormat & format)
+wxDataViewCtrl.EnableDropTarget,0,0,1,bool,						bool wxDataViewCtrl.EnableDropTarget (  wxDataFormat & format)
+wxDataViewCtrl.EnsureVisible,0,0,2,void,						void wxDataViewCtrl.EnsureVisible (  wxDataViewItem & item,      wxDataViewColumn * column = NULL    )
+wxDataViewCtrl.Expand,0,0,1,void,						void wxDataViewCtrl.Expand (  wxDataViewItem & item)
+wxDataViewCtrl.ExpandAncestors,0,0,1,void,						void wxDataViewCtrl.ExpandAncestors (  wxDataViewItem & item)
+wxDataViewCtrl.GetColumn,0,1,1,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.GetColumn ( unsigned int pos)
+wxDataViewCtrl.GetColumnCount,0,0,0,int,						unsigned int wxDataViewCtrl.GetColumnCount ( )
+wxDataViewCtrl.GetColumnPosition,0,0,1,int,						int wxDataViewCtrl.GetColumnPosition (  wxDataViewColumn * column)
+wxDataViewCtrl.GetCountPerPage,0,0,0,int,						int wxDataViewCtrl.GetCountPerPage ( )
+wxDataViewCtrl.GetCurrentColumn,0,1,0,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.GetCurrentColumn ( )
+wxDataViewCtrl.GetCurrentItem,0,0,0,wxDataViewItem,						wxDataViewItem wxDataViewCtrl.GetCurrentItem ( )
+wxDataViewCtrl.GetExpanderColumn,0,1,0,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.GetExpanderColumn ( )
+wxDataViewCtrl.GetIndent,0,0,0,int,						int wxDataViewCtrl.GetIndent ( )
+wxDataViewCtrl.GetItemRect,0,0,2,wxRect,						wxRect wxDataViewCtrl.GetItemRect (  wxDataViewItem & item,      wxDataViewColumn * col = NULL    )
+wxDataViewCtrl.GetMainWindow,0,1,0,wxWindow,						wxWindow* wxDataViewCtrl.GetMainWindow ( )
+wxDataViewCtrl.GetModel,0,1,0,wxDataViewModel,						wxDataViewModel* wxDataViewCtrl.GetModel ( )
+wxDataViewCtrl.GetSelectedItemsCount,0,0,0,int,						int wxDataViewCtrl.GetSelectedItemsCount ( )
+wxDataViewCtrl.GetSelection,0,0,0,wxDataViewItem,						wxDataViewItem wxDataViewCtrl.GetSelection ( )
+wxDataViewCtrl.GetSelections,0,0,1,int,						int wxDataViewCtrl.GetSelections ( wxDataViewItemArray & sel)
+wxDataViewCtrl.GetSortingColumn,0,1,0,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.GetSortingColumn ( )
+wxDataViewCtrl.GetSortingColumns,0,0,0,*<,						wxVector<wxDataViewColumn *< wxDataViewCtrl.GetSortingColumns ( )
+wxDataViewCtrl.GetTopItem,0,0,0,wxDataViewItem,						wxDataViewItem wxDataViewCtrl.GetTopItem ( )
+wxDataViewCtrl.HasSelection,0,0,0,bool,						bool wxDataViewCtrl.HasSelection ( )
+wxDataViewCtrl.HitTest,0,0,3,void,						void wxDataViewCtrl.HitTest (  wxPoint & point,     wxDataViewItem & item,     wxDataViewColumn *& col    )
+wxDataViewCtrl.InsertColumn,0,0,2,bool,						bool wxDataViewCtrl.InsertColumn ( unsigned int pos,     wxDataViewColumn * col    )
+wxDataViewCtrl.IsExpanded,0,0,1,bool,						bool wxDataViewCtrl.IsExpanded (  wxDataViewItem & item)
+wxDataViewCtrl.IsMultiColumnSortAllowed,0,0,0,bool,						bool wxDataViewCtrl.IsMultiColumnSortAllowed ( )
+wxDataViewCtrl.IsSelected,0,0,1,bool,						bool wxDataViewCtrl.IsSelected (  wxDataViewItem & item)
+wxDataViewCtrl.PrependBitmapColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependBitmapColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.PrependBitmapColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependBitmapColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.PrependColumn,0,0,1,bool,						bool wxDataViewCtrl.PrependColumn ( wxDataViewColumn * col)
+wxDataViewCtrl.PrependDateColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependDateColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_ACTIVATABLE,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.PrependDateColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependDateColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_ACTIVATABLE,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.PrependIconTextColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependIconTextColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.PrependIconTextColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependIconTextColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.PrependProgressColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependProgressColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = 80,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.PrependProgressColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependProgressColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = 80,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.PrependTextColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependTextColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.PrependTextColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependTextColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = -1,     wxAlignment align = wxALIGN_NOT,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.PrependToggleColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependToggleColumn (  wxString & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = 30,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.PrependToggleColumn,0,1,6,wxDataViewColumn,						wxDataViewColumn* wxDataViewCtrl.PrependToggleColumn (  wxBitmap & label,     unsigned int model_column,     wxDataViewCellMode mode = wxDATAVIEW_CELL_INERT,     int width = 30,     wxAlignment align = wxALIGN_CENTER,     int flags = wxDATAVIEW_COL_RESIZABLE    )
+wxDataViewCtrl.Select,0,0,1,void,						void wxDataViewCtrl.Select (  wxDataViewItem & item)
+wxDataViewCtrl.SelectAll,0,0,0,void,						void wxDataViewCtrl.SelectAll ( )
+wxDataViewCtrl.SetAlternateRowColour,0,0,1,bool,						bool wxDataViewCtrl.SetAlternateRowColour (  wxColour & colour)
+wxDataViewCtrl.SetCurrentItem,0,0,1,void,						void wxDataViewCtrl.SetCurrentItem (  wxDataViewItem & item)
+wxDataViewCtrl.SetExpanderColumn,0,0,1,void,						void wxDataViewCtrl.SetExpanderColumn ( wxDataViewColumn * col)
+wxDataViewCtrl.SetHeaderAttr,0,0,1,bool,						bool wxDataViewCtrl.SetHeaderAttr (  wxItemAttr & attr)
+wxDataViewCtrl.SetIndent,0,0,1,void,						void wxDataViewCtrl.SetIndent ( int indent)
+wxDataViewCtrl.SetRowHeight,0,0,1,bool,						bool wxDataViewCtrl.SetRowHeight ( int rowHeight)
+wxDataViewCtrl.SetSelections,0,0,1,void,						void wxDataViewCtrl.SetSelections (  wxDataViewItemArray & sel)
+wxDataViewCtrl.ToggleSortByColumn,0,0,1,void,						void wxDataViewCtrl.ToggleSortByColumn ( int column)
+wxDataViewCtrl.Unselect,0,0,1,void,						void wxDataViewCtrl.Unselect (  wxDataViewItem & item)
+wxDataViewCtrl.UnselectAll,0,0,0,void,						void wxDataViewCtrl.UnselectAll ( )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

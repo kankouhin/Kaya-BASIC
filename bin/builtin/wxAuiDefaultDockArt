@@ -1,0 +1,52 @@
+[CONSTS]
+[HEADER]
+<wx/aui/dockart.h>
+[METHODS]
+wxAuiDefaultDockArt.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiDefaultDockArt.DrawBackground,0,0,4,void,						void wxAuiDefaultDockArt.DrawBackground ( wxDC & dc,     wxWindow * window,     int orientation,      wxRect & rect    )
+wxAuiDefaultDockArt.DrawBorder,0,0,4,void,						void wxAuiDefaultDockArt.DrawBorder ( wxDC & dc,     wxWindow * window,      wxRect & rect,     wxAuiPaneInfo & pane    )
+wxAuiDefaultDockArt.DrawCaption,0,0,5,void,						void wxAuiDefaultDockArt.DrawCaption ( wxDC & dc,     wxWindow * window,      wxString & text,      wxRect & rect,     wxAuiPaneInfo & pane    )
+wxAuiDefaultDockArt.DrawCaptionBackground,0,0,3,void,						void wxAuiDefaultDockArt.DrawCaptionBackground ( wxDC & dc,      wxRect & rect,     bool active    )
+wxAuiDefaultDockArt.DrawGripper,0,0,4,void,						void wxAuiDefaultDockArt.DrawGripper ( wxDC & dc,     wxWindow * window,      wxRect & rect,     wxAuiPaneInfo & pane    )
+wxAuiDefaultDockArt.DrawIcon,0,0,3,void,						void wxAuiDefaultDockArt.DrawIcon ( wxDC & dc,      wxRect & rect,     wxAuiPaneInfo & pane    )
+wxAuiDefaultDockArt.DrawIcon,0,0,4,void,						void wxAuiDefaultDockArt.DrawIcon ( wxDC & dc,     wxWindow * window,      wxRect & rect,     wxAuiPaneInfo & pane    )
+wxAuiDefaultDockArt.DrawPaneButton,0,0,6,void,						void wxAuiDefaultDockArt.DrawPaneButton ( wxDC & dc,     wxWindow * window,     int button,     int button_state,      wxRect & rect,     wxAuiPaneInfo & pane    )
+wxAuiDefaultDockArt.DrawSash,0,0,4,void,						void wxAuiDefaultDockArt.DrawSash ( wxDC & dc,     wxWindow * window,     int orientation,      wxRect & rect    )
+wxAuiDefaultDockArt.GetColour,0,0,1,wxColour,						wxColour wxAuiDefaultDockArt.GetColour ( int id)
+wxAuiDefaultDockArt.GetFont,0,0,1,wxFont,						wxFont wxAuiDefaultDockArt.GetFont ( int id)
+wxAuiDefaultDockArt.GetMetric,0,0,1,int,						int wxAuiDefaultDockArt.GetMetric ( int id)
+wxAuiDefaultDockArt.InitBitmaps,0,0,0,void,						void wxAuiDefaultDockArt.InitBitmaps ( )
+wxAuiDefaultDockArt.SetColour,0,0,2,void,						void wxAuiDefaultDockArt.SetColour ( int id,      wxColour & colour    )
+wxAuiDefaultDockArt.SetFont,0,0,2,void,						void wxAuiDefaultDockArt.SetFont ( int id,      wxFont & font    )
+wxAuiDefaultDockArt.SetMetric,0,0,2,void,						void wxAuiDefaultDockArt.SetMetric ( int id,     int new_val    )
+wxAuiDefaultDockArt.m_activeCaptionColour,0,0,-1,wxColour,						wxColour wxAuiDefaultDockArt.m_activeCaptionColour
+wxAuiDefaultDockArt.m_activeCaptionGradientColour,0,0,-1,wxColour,						wxColour wxAuiDefaultDockArt.m_activeCaptionGradientColour
+wxAuiDefaultDockArt.m_activeCaptionTextColour,0,0,-1,wxColour,						wxColour wxAuiDefaultDockArt.m_activeCaptionTextColour
+wxAuiDefaultDockArt.m_activeCloseBitmap,0,0,-1,wxBitmap,						wxBitmap wxAuiDefaultDockArt.m_activeCloseBitmap
+wxAuiDefaultDockArt.m_activeMaximizeBitmap,0,0,-1,wxBitmap,						wxBitmap wxAuiDefaultDockArt.m_activeMaximizeBitmap
+wxAuiDefaultDockArt.m_activePinBitmap,0,0,-1,wxBitmap,						wxBitmap wxAuiDefaultDockArt.m_activePinBitmap
+wxAuiDefaultDockArt.m_activeRestoreBitmap,0,0,-1,wxBitmap,						wxBitmap wxAuiDefaultDockArt.m_activeRestoreBitmap
+wxAuiDefaultDockArt.m_backgroundBrush,0,0,-1,wxBrush,						wxBrush wxAuiDefaultDockArt.m_backgroundBrush
+wxAuiDefaultDockArt.m_baseColour,0,0,-1,wxColour,						wxColour wxAuiDefaultDockArt.m_baseColour
+wxAuiDefaultDockArt.m_borderPen,0,0,-1,wxPen,						wxPen wxAuiDefaultDockArt.m_borderPen
+wxAuiDefaultDockArt.m_borderSize,0,0,-1,int,						int wxAuiDefaultDockArt.m_borderSize
+wxAuiDefaultDockArt.m_buttonSize,0,0,-1,int,						int wxAuiDefaultDockArt.m_buttonSize
+wxAuiDefaultDockArt.m_captionFont,0,0,-1,wxFont,						wxFont wxAuiDefaultDockArt.m_captionFont
+wxAuiDefaultDockArt.m_captionSize,0,0,-1,int,						int wxAuiDefaultDockArt.m_captionSize
+wxAuiDefaultDockArt.m_gradientType,0,0,-1,int,						int wxAuiDefaultDockArt.m_gradientType
+wxAuiDefaultDockArt.m_gripperBrush,0,0,-1,wxBrush,						wxBrush wxAuiDefaultDockArt.m_gripperBrush
+wxAuiDefaultDockArt.m_gripperPen1,0,0,-1,wxPen,						wxPen wxAuiDefaultDockArt.m_gripperPen1
+wxAuiDefaultDockArt.m_gripperPen2,0,0,-1,wxPen,						wxPen wxAuiDefaultDockArt.m_gripperPen2
+wxAuiDefaultDockArt.m_gripperPen3,0,0,-1,wxPen,						wxPen wxAuiDefaultDockArt.m_gripperPen3
+wxAuiDefaultDockArt.m_gripperSize,0,0,-1,int,						int wxAuiDefaultDockArt.m_gripperSize
+wxAuiDefaultDockArt.m_inactiveCaptionColour,0,0,-1,wxColour,						wxColour wxAuiDefaultDockArt.m_inactiveCaptionColour
+wxAuiDefaultDockArt.m_inactiveCaptionGradientColour,0,0,-1,wxColour,						wxColour wxAuiDefaultDockArt.m_inactiveCaptionGradientColour
+wxAuiDefaultDockArt.m_inactiveCaptionTextColour,0,0,-1,wxColour,						wxColour wxAuiDefaultDockArt.m_inactiveCaptionTextColour
+wxAuiDefaultDockArt.m_inactiveCloseBitmap,0,0,-1,wxBitmap,						wxBitmap wxAuiDefaultDockArt.m_inactiveCloseBitmap
+wxAuiDefaultDockArt.m_inactiveMaximizeBitmap,0,0,-1,wxBitmap,						wxBitmap wxAuiDefaultDockArt.m_inactiveMaximizeBitmap
+wxAuiDefaultDockArt.m_inactivePinBitmap,0,0,-1,wxBitmap,						wxBitmap wxAuiDefaultDockArt.m_inactivePinBitmap
+wxAuiDefaultDockArt.m_inactiveRestoreBitmap,0,0,-1,wxBitmap,						wxBitmap wxAuiDefaultDockArt.m_inactiveRestoreBitmap
+wxAuiDefaultDockArt.m_sashBrush,0,0,-1,wxBrush,						wxBrush wxAuiDefaultDockArt.m_sashBrush
+wxAuiDefaultDockArt.m_sashSize,0,0,-1,int,						int wxAuiDefaultDockArt.m_sashSize
+[INHERITS]
+wxAuiDockArt

@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/print.h>
+[METHODS]
+wxPrinter.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPrinter.CreateAbortWindow,0,1,2,wxPrintAbortDialog,						wxPrintAbortDialog* wxPrinter.CreateAbortWindow ( wxWindow * parent,     wxPrintout * printout    )
+wxPrinter.GetAbort,0,0,0,bool,						bool wxPrinter.GetAbort ( )
+wxPrinter.GetLastError,1,0,0,wxPrinterError,						static wxPrinterError wxPrinter.GetLastError ( )
+wxPrinter.GetPrintDialogData,0,0,0,wxPrintDialogData,						wxPrintDialogData&  wxPrinter.GetPrintDialogData ( )
+wxPrinter.Print,0,0,3,bool,						bool wxPrinter.Print ( wxWindow * parent,     wxPrintout * printout,     bool prompt = true    )
+wxPrinter.PrintDialog,0,1,1,wxDC,						wxDC* wxPrinter.PrintDialog ( wxWindow * parent)
+wxPrinter.ReportError,0,0,3,void,						void wxPrinter.ReportError ( wxWindow * parent,     wxPrintout * printout,      wxString & message    )
+wxPrinter.Setup,0,0,1,bool,						bool wxPrinter.Setup ( wxWindow * parent)
+[INHERITS]
+wxObject

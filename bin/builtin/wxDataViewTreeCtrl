@@ -1,0 +1,36 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewTreeCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewTreeCtrl.AppendContainer,0,0,5,wxDataViewItem,						wxDataViewItem wxDataViewTreeCtrl.AppendContainer (  wxDataViewItem & parent,      wxString & text,     int icon = -1,     int expanded = -1,     wxClientData * data = NULL    )
+wxDataViewTreeCtrl.AppendItem,0,0,4,wxDataViewItem,						wxDataViewItem wxDataViewTreeCtrl.AppendItem (  wxDataViewItem & parent,      wxString & text,     int icon = -1,     wxClientData * data = NULL    )
+wxDataViewTreeCtrl.Create,0,0,6,bool,						bool wxDataViewTreeCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDV_NO_HEADER|wxDV_ROW_LINES,      wxValidator & validator = wxDefaultValidator    )
+wxDataViewTreeCtrl.DeleteAllItems,0,0,0,void,						void wxDataViewTreeCtrl.DeleteAllItems ( )
+wxDataViewTreeCtrl.DeleteChildren,0,0,1,void,						void wxDataViewTreeCtrl.DeleteChildren (  wxDataViewItem & item)
+wxDataViewTreeCtrl.DeleteItem,0,0,1,void,						void wxDataViewTreeCtrl.DeleteItem (  wxDataViewItem & item)
+wxDataViewTreeCtrl.GetChildCount,0,0,1,int,						int wxDataViewTreeCtrl.GetChildCount (  wxDataViewItem & parent)
+wxDataViewTreeCtrl.GetImageList,0,1,0,wxImageList,						wxImageList* wxDataViewTreeCtrl.GetImageList ( )
+wxDataViewTreeCtrl.GetItemData,0,1,1,wxClientData,						wxClientData* wxDataViewTreeCtrl.GetItemData (  wxDataViewItem & item)
+wxDataViewTreeCtrl.GetItemExpandedIcon,0,0,1,wxIcon,						wxIcon&  wxDataViewTreeCtrl.GetItemExpandedIcon (  wxDataViewItem & item)
+wxDataViewTreeCtrl.GetItemIcon,0,0,1,wxIcon,						wxIcon&  wxDataViewTreeCtrl.GetItemIcon (  wxDataViewItem & item)
+wxDataViewTreeCtrl.GetItemText,0,0,1,wxString,						wxString wxDataViewTreeCtrl.GetItemText (  wxDataViewItem & item)
+wxDataViewTreeCtrl.GetNthChild,0,0,2,wxDataViewItem,						wxDataViewItem wxDataViewTreeCtrl.GetNthChild (  wxDataViewItem & parent,     unsigned int pos    )
+wxDataViewTreeCtrl.GetStore,0,1,0,wxDataViewTreeStore,						wxDataViewTreeStore* wxDataViewTreeCtrl.GetStore ( )
+wxDataViewTreeCtrl.GetStore,0,1,0,wxDataViewTreeStore,						wxDataViewTreeStore* wxDataViewTreeCtrl.GetStore ( )
+wxDataViewTreeCtrl.InsertContainer,0,0,6,wxDataViewItem,						wxDataViewItem wxDataViewTreeCtrl.InsertContainer (  wxDataViewItem & parent,      wxDataViewItem & previous,      wxString & text,     int icon = -1,     int expanded = -1,     wxClientData * data = NULL    )
+wxDataViewTreeCtrl.InsertItem,0,0,5,wxDataViewItem,						wxDataViewItem wxDataViewTreeCtrl.InsertItem (  wxDataViewItem & parent,      wxDataViewItem & previous,      wxString & text,     int icon = -1,     wxClientData * data = NULL    )
+wxDataViewTreeCtrl.IsContainer,0,0,1,bool,						bool wxDataViewTreeCtrl.IsContainer (  wxDataViewItem & item)
+wxDataViewTreeCtrl.PrependContainer,0,0,5,wxDataViewItem,						wxDataViewItem wxDataViewTreeCtrl.PrependContainer (  wxDataViewItem & parent,      wxString & text,     int icon = -1,     int expanded = -1,     wxClientData * data = NULL    )
+wxDataViewTreeCtrl.PrependItem,0,0,4,wxDataViewItem,						wxDataViewItem wxDataViewTreeCtrl.PrependItem (  wxDataViewItem & parent,      wxString & text,     int icon = -1,     wxClientData * data = NULL    )
+wxDataViewTreeCtrl.SetImageList,0,0,1,void,						void wxDataViewTreeCtrl.SetImageList ( wxImageList * imagelist)
+wxDataViewTreeCtrl.SetItemData,0,0,2,void,						void wxDataViewTreeCtrl.SetItemData (  wxDataViewItem & item,     wxClientData * data    )
+wxDataViewTreeCtrl.SetItemExpandedIcon,0,0,2,void,						void wxDataViewTreeCtrl.SetItemExpandedIcon (  wxDataViewItem & item,      wxIcon & icon    )
+wxDataViewTreeCtrl.SetItemIcon,0,0,2,void,						void wxDataViewTreeCtrl.SetItemIcon (  wxDataViewItem & item,      wxIcon & icon    )
+wxDataViewTreeCtrl.SetItemText,0,0,2,void,						void wxDataViewTreeCtrl.SetItemText (  wxDataViewItem & item,      wxString & text    )
+[INHERITS]
+wxDataViewCtrl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

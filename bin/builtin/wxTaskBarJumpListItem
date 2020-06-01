@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/taskbarbutton.h>
+[METHODS]
+wxTaskBarJumpListItem.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTaskBarJumpListItem.GetArguments,0,0,0,wxString,						wxString&  wxTaskBarJumpListItem.GetArguments ( )
+wxTaskBarJumpListItem.GetCategory,0,1,0,wxTaskBarJumpListCategory,						wxTaskBarJumpListCategory* wxTaskBarJumpListItem.GetCategory ( )
+wxTaskBarJumpListItem.GetFilePath,0,0,0,wxString,						wxString&  wxTaskBarJumpListItem.GetFilePath ( )
+wxTaskBarJumpListItem.GetIconIndex,0,0,0,int,						int wxTaskBarJumpListItem.GetIconIndex ( )
+wxTaskBarJumpListItem.GetIconPath,0,0,0,wxString,						wxString&  wxTaskBarJumpListItem.GetIconPath ( )
+wxTaskBarJumpListItem.GetTitle,0,0,0,wxString,						wxString&  wxTaskBarJumpListItem.GetTitle ( )
+wxTaskBarJumpListItem.GetTooltip,0,0,0,wxString,						wxString&  wxTaskBarJumpListItem.GetTooltip ( )
+wxTaskBarJumpListItem.GetType,0,0,0,wxTaskBarJumpListItemType,						wxTaskBarJumpListItemType wxTaskBarJumpListItem.GetType ( )
+wxTaskBarJumpListItem.SetArguments,0,0,1,void,						void wxTaskBarJumpListItem.SetArguments (  wxString & arguments)
+wxTaskBarJumpListItem.SetCategory,0,0,1,void,						void wxTaskBarJumpListItem.SetCategory ( wxTaskBarJumpListCategory * category)
+wxTaskBarJumpListItem.SetFilePath,0,0,1,void,						void wxTaskBarJumpListItem.SetFilePath (  wxString & filePath)
+wxTaskBarJumpListItem.SetIconIndex,0,0,1,void,						void wxTaskBarJumpListItem.SetIconIndex ( int iconIndex)
+wxTaskBarJumpListItem.SetIconPath,0,0,1,void,						void wxTaskBarJumpListItem.SetIconPath (  wxString & iconPath)
+wxTaskBarJumpListItem.SetTitle,0,0,1,void,						void wxTaskBarJumpListItem.SetTitle (  wxString & title)
+wxTaskBarJumpListItem.SetTooltip,0,0,1,void,						void wxTaskBarJumpListItem.SetTooltip (  wxString & tooltip)
+wxTaskBarJumpListItem.SetType,0,0,1,void,						void wxTaskBarJumpListItem.SetType ( wxTaskBarJumpListItemType type)
+[INHERITS]

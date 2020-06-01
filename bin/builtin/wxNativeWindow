@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/nativewin.h>
+[METHODS]
+wxNativeWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxNativeWindow.Create,0,0,3,bool,						bool wxNativeWindow.Create ( wxWindow * parent,     wxWindowID winid,     wxNativeWindowHandle handle    )
+wxNativeWindow.Disown,0,0,0,void,						void wxNativeWindow.Disown ( )
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

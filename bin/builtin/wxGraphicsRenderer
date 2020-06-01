@@ -1,0 +1,38 @@
+[CONSTS]
+[HEADER]
+<wx/graphics.h>
+[METHODS]
+wxGraphicsRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGraphicsRenderer.CreateBitmap,0,0,1,wxGraphicsBitmap,						wxGraphicsBitmap wxGraphicsRenderer.CreateBitmap (  wxBitmap & bitmap)
+wxGraphicsRenderer.CreateBitmapFromImage,0,0,1,wxGraphicsBitmap,						wxGraphicsBitmap wxGraphicsRenderer.CreateBitmapFromImage (  wxImage & image)
+wxGraphicsRenderer.CreateBitmapFromNativeBitmap,0,0,1,wxGraphicsBitmap,						wxGraphicsBitmap wxGraphicsRenderer.CreateBitmapFromNativeBitmap ( void * bitmap)
+wxGraphicsRenderer.CreateBrush,0,0,1,wxGraphicsBrush,						wxGraphicsBrush wxGraphicsRenderer.CreateBrush (  wxBrush & brush)
+wxGraphicsRenderer.CreateContext,0,1,1,wxGraphicsContext,						wxGraphicsContext* wxGraphicsRenderer.CreateContext ( wxWindow * window)
+wxGraphicsRenderer.CreateContext,0,1,1,wxGraphicsContext,						wxGraphicsContext* wxGraphicsRenderer.CreateContext (  wxWindowDC & windowDC)
+wxGraphicsRenderer.CreateContext,0,1,1,wxGraphicsContext,						wxGraphicsContext* wxGraphicsRenderer.CreateContext (  wxMemoryDC & memoryDC)
+wxGraphicsRenderer.CreateContext,0,1,1,wxGraphicsContext,						wxGraphicsContext* wxGraphicsRenderer.CreateContext (  wxPrinterDC & printerDC)
+wxGraphicsRenderer.CreateContext,0,1,1,wxGraphicsContext,						wxGraphicsContext* wxGraphicsRenderer.CreateContext (  wxEnhMetaFileDC & metaFileDC)
+wxGraphicsRenderer.CreateContextFromImage,0,1,1,wxGraphicsContext,						wxGraphicsContext* wxGraphicsRenderer.CreateContextFromImage ( wxImage & image)
+wxGraphicsRenderer.CreateContextFromNativeContext,0,1,1,wxGraphicsContext,						wxGraphicsContext* wxGraphicsRenderer.CreateContextFromNativeContext ( void * context)
+wxGraphicsRenderer.CreateContextFromNativeHDC,1,1,1,wxGraphicsContext,						static wxGraphicsContext* wxGraphicsRenderer.CreateContextFromNativeHDC ( WXHDC dc)
+wxGraphicsRenderer.CreateContextFromNativeWindow,0,1,1,wxGraphicsContext,						wxGraphicsContext* wxGraphicsRenderer.CreateContextFromNativeWindow ( void * window)
+wxGraphicsRenderer.CreateContextFromUnknownDC,0,1,1,wxGraphicsContext,						wxGraphicsContext* wxGraphicsRenderer.CreateContextFromUnknownDC ( wxDC & dc)
+wxGraphicsRenderer.CreateFont,0,0,2,wxGraphicsFont,						wxGraphicsFont wxGraphicsRenderer.CreateFont (  wxFont & font,      wxColour & col = *wxBLACK    )
+wxGraphicsRenderer.CreateFont,0,0,4,wxGraphicsFont,						wxGraphicsFont wxGraphicsRenderer.CreateFont ( double sizeInPixels,      wxString & facename,     int flags = wxFONTFLAG_DEFAULT,      wxColour & col = *wxBLACK    )
+wxGraphicsRenderer.CreateFontAtDPI,0,0,3,wxGraphicsFont,						wxGraphicsFont wxGraphicsRenderer.CreateFontAtDPI (  wxFont & font,      wxRealPoint & dpi,      wxColour & col = *wxBLACK    )
+wxGraphicsRenderer.CreateImageFromBitmap,0,0,1,wxImage,						wxImage wxGraphicsRenderer.CreateImageFromBitmap (  wxGraphicsBitmap & bmp)
+wxGraphicsRenderer.CreateLinearGradientBrush,0,0,6,wxGraphicsBrush,						wxGraphicsBrush wxGraphicsRenderer.CreateLinearGradientBrush ( wxDouble x1,     wxDouble y1,     wxDouble x2,     wxDouble y2,      wxGraphicsGradientStops & stops,      wxGraphicsMatrix & matrix = wxNullGraphicsMatrix    )
+wxGraphicsRenderer.CreateMatrix,0,0,6,wxGraphicsMatrix,						wxGraphicsMatrix wxGraphicsRenderer.CreateMatrix ( wxDouble a = 1.0,     wxDouble b = 0.0,     wxDouble c = 0.0,     wxDouble d = 1.0,     wxDouble tx = 0.0,     wxDouble ty = 0.0    )
+wxGraphicsRenderer.CreateMeasuringContext,0,1,0,wxGraphicsContext,						wxGraphicsContext* wxGraphicsRenderer.CreateMeasuringContext ( )
+wxGraphicsRenderer.CreatePath,0,0,0,wxGraphicsPath,						wxGraphicsPath wxGraphicsRenderer.CreatePath ( )
+wxGraphicsRenderer.CreatePen,0,0,1,wxGraphicsPen,						wxGraphicsPen wxGraphicsRenderer.CreatePen (  wxGraphicsPenInfo & info)
+wxGraphicsRenderer.CreateRadialGradientBrush,0,0,7,wxGraphicsBrush,						wxGraphicsBrush wxGraphicsRenderer.CreateRadialGradientBrush ( wxDouble startX,     wxDouble startY,     wxDouble endX,     wxDouble endY,     wxDouble radius,      wxGraphicsGradientStops & stops,      wxGraphicsMatrix & matrix = wxNullGraphicsMatrix    )
+wxGraphicsRenderer.CreateSubBitmap,0,0,5,wxGraphicsBitmap,						wxGraphicsBitmap wxGraphicsRenderer.CreateSubBitmap (  wxGraphicsBitmap & bitmap,     wxDouble x,     wxDouble y,     wxDouble w,     wxDouble h    )
+wxGraphicsRenderer.GetCairoRenderer,1,1,0,wxGraphicsRenderer,						static wxGraphicsRenderer* wxGraphicsRenderer.GetCairoRenderer ( )
+wxGraphicsRenderer.GetDefaultRenderer,1,1,0,wxGraphicsRenderer,						static wxGraphicsRenderer* wxGraphicsRenderer.GetDefaultRenderer ( )
+wxGraphicsRenderer.GetDirect2DRenderer,1,1,0,wxGraphicsRenderer,						static wxGraphicsRenderer* wxGraphicsRenderer.GetDirect2DRenderer ( )
+wxGraphicsRenderer.GetGDIPlusRenderer,1,1,0,wxGraphicsRenderer,						static wxGraphicsRenderer* wxGraphicsRenderer.GetGDIPlusRenderer ( )
+wxGraphicsRenderer.GetName,0,0,0,wxString,						wxString wxGraphicsRenderer.GetName ( )
+wxGraphicsRenderer.GetVersion,0,0,3,void,						void wxGraphicsRenderer.GetVersion ( int * major,     int * minor = NULL,     int * micro = NULL    )
+[INHERITS]
+wxObject

@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/bannerwindow.h>
+[METHODS]
+wxBannerWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBannerWindow.Create,0,0,7,bool,						bool wxBannerWindow.Create ( wxWindow * parent,     wxWindowID winid,     wxDirection dir = wxLEFT,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxBannerWindowNameStr    )
+wxBannerWindow.SetBitmap,0,0,1,void,						void wxBannerWindow.SetBitmap (  wxBitmap & bmp)
+wxBannerWindow.SetGradient,0,0,2,void,						void wxBannerWindow.SetGradient (  wxColour & start,      wxColour & end    )
+wxBannerWindow.SetText,0,0,2,void,						void wxBannerWindow.SetText (  wxString & title,      wxString & message    )
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

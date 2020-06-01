@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextprint.h>
+[METHODS]
+wxRichTextHeaderFooterData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextHeaderFooterData.Clear,0,0,0,void,						void wxRichTextHeaderFooterData.Clear ( )
+wxRichTextHeaderFooterData.Copy,0,0,1,void,						void wxRichTextHeaderFooterData.Copy (  wxRichTextHeaderFooterData & data)
+wxRichTextHeaderFooterData.GetFont,0,0,0,wxFont,						wxFont&  wxRichTextHeaderFooterData.GetFont ( )
+wxRichTextHeaderFooterData.GetFooterMargin,0,0,0,int,						int wxRichTextHeaderFooterData.GetFooterMargin ( )
+wxRichTextHeaderFooterData.GetFooterText,0,0,2,wxString,						wxString wxRichTextHeaderFooterData.GetFooterText ( wxRichTextOddEvenPage page = wxRICHTEXT_PAGE_EVEN,     wxRichTextPageLocation location = wxRICHTEXT_PAGE_CENTRE    )
+wxRichTextHeaderFooterData.GetHeaderMargin,0,0,0,int,						int wxRichTextHeaderFooterData.GetHeaderMargin ( )
+wxRichTextHeaderFooterData.GetHeaderText,0,0,2,wxString,						wxString wxRichTextHeaderFooterData.GetHeaderText ( wxRichTextOddEvenPage page = wxRICHTEXT_PAGE_EVEN,     wxRichTextPageLocation location = wxRICHTEXT_PAGE_CENTRE    )
+wxRichTextHeaderFooterData.GetShowOnFirstPage,0,0,0,bool,						bool wxRichTextHeaderFooterData.GetShowOnFirstPage ( )
+wxRichTextHeaderFooterData.GetText,0,0,3,wxString,						wxString wxRichTextHeaderFooterData.GetText ( int headerFooter,     wxRichTextOddEvenPage page,     wxRichTextPageLocation location    )
+wxRichTextHeaderFooterData.GetTextColour,0,0,0,wxColour,						wxColour&  wxRichTextHeaderFooterData.GetTextColour ( )
+wxRichTextHeaderFooterData.Init,0,0,0,void,						void wxRichTextHeaderFooterData.Init ( )
+wxRichTextHeaderFooterData.SetFont,0,0,1,void,						void wxRichTextHeaderFooterData.SetFont (  wxFont & font)
+wxRichTextHeaderFooterData.SetFooterText,0,0,3,void,						void wxRichTextHeaderFooterData.SetFooterText (  wxString & text,     wxRichTextOddEvenPage page = wxRICHTEXT_PAGE_ALL,     wxRichTextPageLocation location = wxRICHTEXT_PAGE_CENTRE    )
+wxRichTextHeaderFooterData.SetHeaderText,0,0,3,void,						void wxRichTextHeaderFooterData.SetHeaderText (  wxString & text,     wxRichTextOddEvenPage page = wxRICHTEXT_PAGE_ALL,     wxRichTextPageLocation location = wxRICHTEXT_PAGE_CENTRE    )
+wxRichTextHeaderFooterData.SetMargins,0,0,2,void,						void wxRichTextHeaderFooterData.SetMargins ( int headerMargin,     int footerMargin    )
+wxRichTextHeaderFooterData.SetShowOnFirstPage,0,0,1,void,						void wxRichTextHeaderFooterData.SetShowOnFirstPage ( bool showOnFirstPage)
+wxRichTextHeaderFooterData.SetText,0,0,4,void,						void wxRichTextHeaderFooterData.SetText (  wxString & text,     int headerFooter,     wxRichTextOddEvenPage page,     wxRichTextPageLocation location    )
+wxRichTextHeaderFooterData.SetTextColour,0,0,1,void,						void wxRichTextHeaderFooterData.SetTextColour (  wxColour & col)
+[INHERITS]
+wxObject

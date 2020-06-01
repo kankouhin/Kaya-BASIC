@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/colordlg.h>
+[METHODS]
+wxColourDialogEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxColourDialogEvent.GetColour,0,0,0,wxColour,						wxColour wxColourDialogEvent.GetColour ( )
+wxColourDialogEvent.SetColour,0,0,1,void,						void wxColourDialogEvent.SetColour (  wxColour & colour)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

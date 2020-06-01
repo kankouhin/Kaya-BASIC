@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/stream.h>
+[METHODS]
+wxFilterClassFactory.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFilterClassFactory.CanHandle,0,0,2,bool,						bool wxFilterClassFactory.CanHandle (  wxString & protocol,     wxStreamProtocolType type = wxSTREAM_PROTOCOL    )
+wxFilterClassFactory.Find,1,1,2,wxFilterClassFactory,						static  wxFilterClassFactory* wxFilterClassFactory.Find (  wxString & protocol,     wxStreamProtocolType type = wxSTREAM_PROTOCOL    )
+wxFilterClassFactory.GetFirst,1,1,0,wxFilterClassFactory,						static  wxFilterClassFactory* wxFilterClassFactory.GetFirst ( )
+wxFilterClassFactory.GetNext,0,1,0,wxFilterClassFactory,						wxFilterClassFactory* wxFilterClassFactory.GetNext ( )
+wxFilterClassFactory.GetProtocol,0,0,0,wxString,						wxString wxFilterClassFactory.GetProtocol ( )
+wxFilterClassFactory.GetProtocols,0,1,1,,						wxChar* * wxFilterClassFactory.GetProtocols ( wxStreamProtocolType type = wxSTREAM_PROTOCOL)
+wxFilterClassFactory.NewStream,0,1,1,wxFilterInputStream,						wxFilterInputStream* wxFilterClassFactory.NewStream ( wxInputStream & stream)
+wxFilterClassFactory.NewStream,0,1,1,wxFilterOutputStream,						wxFilterOutputStream* wxFilterClassFactory.NewStream ( wxOutputStream & stream)
+wxFilterClassFactory.NewStream,0,1,1,wxFilterInputStream,						wxFilterInputStream* wxFilterClassFactory.NewStream ( wxInputStream * stream)
+wxFilterClassFactory.NewStream,0,1,1,wxFilterOutputStream,						wxFilterOutputStream* wxFilterClassFactory.NewStream ( wxOutputStream * stream)
+wxFilterClassFactory.PopExtension,0,0,1,wxString,						wxString wxFilterClassFactory.PopExtension (  wxString & location)
+wxFilterClassFactory.PushFront,0,0,0,void,						void wxFilterClassFactory.PushFront ( )
+wxFilterClassFactory.Remove,0,0,0,void,						void wxFilterClassFactory.Remove ( )
+[INHERITS]
+wxObject

@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtexthtml.h>
+[METHODS]
+wxRichTextHTMLHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextHTMLHandler.ClearTemporaryImageLocations,0,0,0,void,						void wxRichTextHTMLHandler.ClearTemporaryImageLocations ( )
+wxRichTextHTMLHandler.DeleteTemporaryImages,0,0,0,bool,						bool wxRichTextHTMLHandler.DeleteTemporaryImages ( )
+wxRichTextHTMLHandler.DeleteTemporaryImages,1,0,2,bool,						static bool wxRichTextHTMLHandler.DeleteTemporaryImages ( int flags,      wxArrayString & imageLocations    )
+wxRichTextHTMLHandler.DoSaveFile,0,0,2,bool,						bool wxRichTextHTMLHandler.DoSaveFile ( wxRichTextBuffer * buffer,     wxOutputStream & stream    )
+wxRichTextHTMLHandler.GetFontSizeMapping,0,0,0,wxArrayInt,						wxArrayInt wxRichTextHTMLHandler.GetFontSizeMapping ( )
+wxRichTextHTMLHandler.GetTempDir,0,0,0,wxString,						wxString&  wxRichTextHTMLHandler.GetTempDir ( )
+wxRichTextHTMLHandler.GetTemporaryImageLocations,0,0,0,wxArrayString,						wxArrayString&  wxRichTextHTMLHandler.GetTemporaryImageLocations ( )
+wxRichTextHTMLHandler.SetFileCounter,1,0,1,void,						static void wxRichTextHTMLHandler.SetFileCounter ( int counter)
+wxRichTextHTMLHandler.SetFontSizeMapping,0,0,1,void,						void wxRichTextHTMLHandler.SetFontSizeMapping (  wxArrayInt & fontSizeMapping)
+wxRichTextHTMLHandler.SetTempDir,0,0,1,void,						void wxRichTextHTMLHandler.SetTempDir (  wxString & tempDir)
+wxRichTextHTMLHandler.SetTemporaryImageLocations,0,0,1,void,						void wxRichTextHTMLHandler.SetTemporaryImageLocations (  wxArrayString & locations)
+[INHERITS]
+wxRichTextFileHandler
+wxObject

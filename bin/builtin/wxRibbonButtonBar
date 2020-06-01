@@ -1,0 +1,45 @@
+[CONSTS]
+[HEADER]
+<wx/ribbon/buttonbar.h>
+[METHODS]
+wxRibbonButtonBar.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonButtonBar.AddButton,0,1,5,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.AddButton ( int button_id,      wxString & label,      wxBitmap & bitmap,      wxString & help_string,     wxRibbonButtonKind kind = wxRIBBON_BUTTON_NORMAL    )
+wxRibbonButtonBar.AddButton,0,1,8,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.AddButton ( int button_id,      wxString & label,      wxBitmap & bitmap,      wxBitmap & bitmap_small = wxNullBitmap,      wxBitmap & bitmap_disabled = wxNullBitmap,      wxBitmap & bitmap_small_disabled = wxNullBitmap,     wxRibbonButtonKind kind = wxRIBBON_BUTTON_NORMAL,      wxString & help_string = wxEmptyString    )
+wxRibbonButtonBar.AddDropdownButton,0,1,4,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.AddDropdownButton ( int button_id,      wxString & label,      wxBitmap & bitmap,      wxString & help_string = wxEmptyString    )
+wxRibbonButtonBar.AddHybridButton,0,1,4,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.AddHybridButton ( int button_id,      wxString & label,      wxBitmap & bitmap,      wxString & help_string = wxEmptyString    )
+wxRibbonButtonBar.AddToggleButton,0,1,4,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.AddToggleButton ( int button_id,      wxString & label,      wxBitmap & bitmap,      wxString & help_string = wxEmptyString    )
+wxRibbonButtonBar.ClearButtons,0,0,0,void,						void wxRibbonButtonBar.ClearButtons ( )
+wxRibbonButtonBar.Create,0,0,5,bool,						bool wxRibbonButtonBar.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0    )
+wxRibbonButtonBar.DeleteButton,0,0,1,bool,						bool wxRibbonButtonBar.DeleteButton ( int button_id)
+wxRibbonButtonBar.EnableButton,0,0,2,void,						void wxRibbonButtonBar.EnableButton ( int button_id,     bool enable = true    )
+wxRibbonButtonBar.GetActiveItem,0,1,0,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.GetActiveItem ( )
+wxRibbonButtonBar.GetButtonCount,0,0,0,size_t,						size_t wxRibbonButtonBar.GetButtonCount ( )
+wxRibbonButtonBar.GetHoveredItem,0,1,0,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.GetHoveredItem ( )
+wxRibbonButtonBar.GetItem,0,1,1,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.GetItem ( size_t n)
+wxRibbonButtonBar.GetItemById,0,1,1,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.GetItemById ( int id)
+wxRibbonButtonBar.GetItemClientData,0,1,1,void,						void* wxRibbonButtonBar.GetItemClientData (  wxRibbonButtonBarButtonBase * item)
+wxRibbonButtonBar.GetItemClientObject,0,1,1,wxClientData,						wxClientData* wxRibbonButtonBar.GetItemClientObject (  wxRibbonButtonBarButtonBase * item)
+wxRibbonButtonBar.GetItemId,0,0,1,int,						int wxRibbonButtonBar.GetItemId ( wxRibbonButtonBarButtonBase * item)
+wxRibbonButtonBar.GetShowToolTipsForDisabled,0,0,0,bool,						bool wxRibbonButtonBar.GetShowToolTipsForDisabled ( )
+wxRibbonButtonBar.InsertButton,0,1,6,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.InsertButton ( size_t pos,     int button_id,      wxString & label,      wxBitmap & bitmap,      wxString & help_string,     wxRibbonButtonKind kind = wxRIBBON_BUTTON_NORMAL    )
+wxRibbonButtonBar.InsertButton,0,1,9,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.InsertButton ( size_t pos,     int button_id,      wxString & label,      wxBitmap & bitmap,      wxBitmap & bitmap_small = wxNullBitmap,      wxBitmap & bitmap_disabled = wxNullBitmap,      wxBitmap & bitmap_small_disabled = wxNullBitmap,     wxRibbonButtonKind kind = wxRIBBON_BUTTON_NORMAL,      wxString & help_string = wxEmptyString    )
+wxRibbonButtonBar.InsertDropdownButton,0,1,5,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.InsertDropdownButton ( size_t pos,     int button_id,      wxString & label,      wxBitmap & bitmap,      wxString & help_string = wxEmptyString    )
+wxRibbonButtonBar.InsertHybridButton,0,1,5,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.InsertHybridButton ( size_t pos,     int button_id,      wxString & label,      wxBitmap & bitmap,      wxString & help_string = wxEmptyString    )
+wxRibbonButtonBar.InsertToggleButton,0,1,5,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBar.InsertToggleButton ( size_t pos,     int button_id,      wxString & label,      wxBitmap & bitmap,      wxString & help_string = wxEmptyString    )
+wxRibbonButtonBar.Realize,0,0,0,bool,						bool wxRibbonButtonBar.Realize ( )
+wxRibbonButtonBar.SetButtonIcon,0,0,5,void,						void wxRibbonButtonBar.SetButtonIcon ( int button_id,      wxBitmap & bitmap,      wxBitmap & bitmap_small = wxNullBitmap,      wxBitmap & bitmap_disabled = wxNullBitmap,      wxBitmap & bitmap_small_disabled = wxNullBitmap    )
+wxRibbonButtonBar.SetButtonMaxSizeClass,0,0,2,void,						void wxRibbonButtonBar.SetButtonMaxSizeClass ( int button_id,     wxRibbonButtonBarButtonState max_size_class    )
+wxRibbonButtonBar.SetButtonMinSizeClass,0,0,2,void,						void wxRibbonButtonBar.SetButtonMinSizeClass ( int button_id,     wxRibbonButtonBarButtonState min_size_class    )
+wxRibbonButtonBar.SetButtonText,0,0,2,void,						void wxRibbonButtonBar.SetButtonText ( int button_id,      wxString & label    )
+wxRibbonButtonBar.SetButtonTextMinWidth,0,0,3,void,						void wxRibbonButtonBar.SetButtonTextMinWidth ( int button_id,     int min_width_medium,     int min_width_large    )
+wxRibbonButtonBar.SetButtonTextMinWidth,0,0,2,void,						void wxRibbonButtonBar.SetButtonTextMinWidth ( int button_id,      wxString & label    )
+wxRibbonButtonBar.SetItemClientData,0,0,2,void,						void wxRibbonButtonBar.SetItemClientData ( wxRibbonButtonBarButtonBase * item,     void * data    )
+wxRibbonButtonBar.SetItemClientObject,0,0,2,void,						void wxRibbonButtonBar.SetItemClientObject ( wxRibbonButtonBarButtonBase * item,     wxClientData * data    )
+wxRibbonButtonBar.SetShowToolTipsForDisabled,0,0,1,void,						void wxRibbonButtonBar.SetShowToolTipsForDisabled ( bool show)
+wxRibbonButtonBar.ToggleButton,0,0,2,void,						void wxRibbonButtonBar.ToggleButton ( int button_id,     bool checked    )
+[INHERITS]
+wxRibbonControl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

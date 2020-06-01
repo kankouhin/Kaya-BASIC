@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/filesys.h>
+[METHODS]
+wxFileSystem.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileSystem.AddHandler,1,0,1,void,						static void wxFileSystem.AddHandler ( wxFileSystemHandler * handler)
+wxFileSystem.ChangePathTo,0,0,2,void,						void wxFileSystem.ChangePathTo (  wxString & location,     bool is_dir = false    )
+wxFileSystem.FileNameToURL,1,0,1,wxString,						static wxString wxFileSystem.FileNameToURL (  wxFileName & filename)
+wxFileSystem.FindFileInPath,0,0,3,bool,						bool wxFileSystem.FindFileInPath ( wxString * pStr,      wxString & path,      wxString & file    )
+wxFileSystem.FindFirst,0,0,2,wxString,						wxString wxFileSystem.FindFirst (  wxString & wildcard,     int flags = 0    )
+wxFileSystem.FindNext,0,0,0,wxString,						wxString wxFileSystem.FindNext ( )
+wxFileSystem.GetPath,0,0,0,wxString,						wxString wxFileSystem.GetPath ( )
+wxFileSystem.HasHandlerForPath,1,0,1,bool,						static bool wxFileSystem.HasHandlerForPath (  wxString & location)
+wxFileSystem.OpenFile,0,1,2,wxFSFile,						wxFSFile* wxFileSystem.OpenFile (  wxString & location,     int flags = wxFS_READ    )
+wxFileSystem.RemoveHandler,1,1,1,wxFileSystemHandler,						static wxFileSystemHandler* wxFileSystem.RemoveHandler ( wxFileSystemHandler * handler)
+wxFileSystem.URLToFileName,1,0,1,wxFileName,						static wxFileName wxFileSystem.URLToFileName (  wxString & url)
+[INHERITS]
+wxObject

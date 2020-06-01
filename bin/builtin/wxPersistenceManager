@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/persist.h>
+[METHODS]
+wxPersistenceManager.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPersistenceManager.DisableRestoring,0,0,0,void,						void wxPersistenceManager.DisableRestoring ( )
+wxPersistenceManager.DisableSaving,0,0,0,void,						void wxPersistenceManager.DisableSaving ( )
+wxPersistenceManager.Find,0,1,1,wxPersistentObject,						wxPersistentObject* wxPersistenceManager.Find ( void * obj)
+wxPersistenceManager.Get,1,0,0,wxPersistenceManager,						static wxPersistenceManager&  wxPersistenceManager.Get ( )
+wxPersistenceManager.GetConfig,0,1,0,wxConfigBase,						wxConfigBase* wxPersistenceManager.GetConfig ( )
+wxPersistenceManager.GetKey,0,0,2,wxString,						wxString wxPersistenceManager.GetKey (  wxPersistentObject & who,      wxString & name    )
+wxPersistenceManager.Register,0,1,1,wxPersistentObject,						wxPersistentObject* wxPersistenceManager.Register ( T * obj)
+wxPersistenceManager.Register,0,1,2,wxPersistentObject,						wxPersistentObject* wxPersistenceManager.Register ( void * obj,     wxPersistentObject * po    )
+wxPersistenceManager.RegisterAndRestore,0,0,1,bool,						bool wxPersistenceManager.RegisterAndRestore ( T * obj)
+wxPersistenceManager.RegisterAndRestore,0,0,2,bool,						bool wxPersistenceManager.RegisterAndRestore ( void * obj,     wxPersistentObject * po    )
+wxPersistenceManager.Restore,0,0,1,bool,						bool wxPersistenceManager.Restore ( void * obj)
+wxPersistenceManager.Save,0,0,1,void,						void wxPersistenceManager.Save ( void * obj)
+wxPersistenceManager.SaveAndUnregister,0,0,1,void,						void wxPersistenceManager.SaveAndUnregister ( void * obj)
+wxPersistenceManager.Set,1,0,1,void,						static void wxPersistenceManager.Set ( wxPersistenceManager & manager)
+wxPersistenceManager.Unregister,0,0,1,void,						void wxPersistenceManager.Unregister ( void * obj)
+[INHERITS]

@@ -1,0 +1,10 @@
+[CONSTS]
+wxEVT_MOUSE_CAPTURE_CHANGED
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxMouseCaptureChangedEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMouseCaptureChangedEvent.GetCapturedWindow,0,1,0,wxWindow,						wxWindow* wxMouseCaptureChangedEvent.GetCapturedWindow ( )
+[INHERITS]
+wxEvent
+wxObject

@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/dataobj.h>
+[METHODS]
+wxTextDataObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextDataObject.GetAllFormats,0,0,2,void,						void wxTextDataObject.GetAllFormats ( wxDataFormat * formats,     wxDataObject.Direction dir = wxDataObject.Get    )
+wxTextDataObject.GetFormat,0,0,0,wxDataFormat,						wxDataFormat&  wxTextDataObject.GetFormat ( )
+wxTextDataObject.GetFormatCount,0,0,1,size_t,						size_t wxTextDataObject.GetFormatCount ( wxDataObject.Direction dir = wxDataObject.Get)
+wxTextDataObject.GetText,0,0,0,wxString,						wxString wxTextDataObject.GetText ( )
+wxTextDataObject.GetTextLength,0,0,0,size_t,						size_t wxTextDataObject.GetTextLength ( )
+wxTextDataObject.SetText,0,0,1,void,						void wxTextDataObject.SetText (  wxString & strText)
+[INHERITS]
+wxDataObjectSimple
+wxDataObject

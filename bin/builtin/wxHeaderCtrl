@@ -1,0 +1,35 @@
+[CONSTS]
+wxHD_ALLOW_REORDER
+wxHD_ALLOW_HIDE
+wxHD_BITMAP_ON_RIGHT
+wxHD_DEFAULT_STYLE
+[HEADER]
+<wx/headerctrl.h>
+[METHODS]
+wxHeaderCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHeaderCtrl.AddColumnsItems,0,0,2,void,						void wxHeaderCtrl.AddColumnsItems ( wxMenu & menu,     int idColumnsBase = 0    )
+wxHeaderCtrl.Create,0,0,6,bool,						bool wxHeaderCtrl.Create ( wxWindow * parent,     wxWindowID winid = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxHD_DEFAULT_STYLE,      wxString & name = wxHeaderCtrlNameStr    )
+wxHeaderCtrl.GetColumn,0,0,1,wxHeaderColumn,						wxHeaderColumn&  wxHeaderCtrl.GetColumn ( unsigned int idx)
+wxHeaderCtrl.GetColumnAt,0,0,1,int,						unsigned int wxHeaderCtrl.GetColumnAt ( unsigned int pos)
+wxHeaderCtrl.GetColumnCount,0,0,0,int,						unsigned int wxHeaderCtrl.GetColumnCount ( )
+wxHeaderCtrl.GetColumnPos,0,0,1,int,						unsigned int wxHeaderCtrl.GetColumnPos ( unsigned int idx)
+wxHeaderCtrl.GetColumnsOrder,0,0,0,wxArrayInt,						wxArrayInt wxHeaderCtrl.GetColumnsOrder ( )
+wxHeaderCtrl.GetColumnTitleWidth,0,0,1,int,						int wxHeaderCtrl.GetColumnTitleWidth (  wxHeaderColumn & col)
+wxHeaderCtrl.GetColumnTitleWidth,0,0,1,int,						int wxHeaderCtrl.GetColumnTitleWidth ( unsigned int idx)
+wxHeaderCtrl.IsEmpty,0,0,0,bool,						bool wxHeaderCtrl.IsEmpty ( )
+wxHeaderCtrl.MoveColumnInOrderArray,1,0,3,void,						static void wxHeaderCtrl.MoveColumnInOrderArray ( wxArrayInt & order,     unsigned int idx,     unsigned int pos    )
+wxHeaderCtrl.OnColumnCountChanging,0,0,1,void,						void wxHeaderCtrl.OnColumnCountChanging ( unsigned int count)
+wxHeaderCtrl.ResetColumnsOrder,0,0,0,void,						void wxHeaderCtrl.ResetColumnsOrder ( )
+wxHeaderCtrl.SetColumnCount,0,0,1,void,						void wxHeaderCtrl.SetColumnCount ( unsigned int count)
+wxHeaderCtrl.SetColumnsOrder,0,0,1,void,						void wxHeaderCtrl.SetColumnsOrder (  wxArrayInt & order)
+wxHeaderCtrl.ShowColumnsMenu,0,0,2,bool,						bool wxHeaderCtrl.ShowColumnsMenu (  wxPoint & pt,      wxString & title = wxString()    )
+wxHeaderCtrl.ShowCustomizeDialog,0,0,0,bool,						bool wxHeaderCtrl.ShowCustomizeDialog ( )
+wxHeaderCtrl.UpdateColumn,0,0,1,void,						void wxHeaderCtrl.UpdateColumn ( unsigned int idx)
+wxHeaderCtrl.UpdateColumnsOrder,0,0,1,void,						void wxHeaderCtrl.UpdateColumnsOrder (  wxArrayInt & order)
+wxHeaderCtrl.UpdateColumnVisibility,0,0,2,void,						void wxHeaderCtrl.UpdateColumnVisibility ( unsigned int idx,     bool show    )
+wxHeaderCtrl.UpdateColumnWidthToFit,0,0,2,bool,						bool wxHeaderCtrl.UpdateColumnWidthToFit ( unsigned int idx,     int widthTitle    )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/stackwalk.h>
+[METHODS]
+wxStackWalker.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStackWalker.OnStackFrame,0,0,1,void,						void wxStackWalker.OnStackFrame (  wxStackFrame & frame)
+wxStackWalker.Walk,0,0,2,void,						void wxStackWalker.Walk ( size_t skip = 1,     size_t maxDepth = wxSTACKWALKER_MAX_DEPTH    )
+wxStackWalker.WalkFromException,0,0,1,void,						void wxStackWalker.WalkFromException ( size_t maxDepth = wxSTACKWALKER_MAX_DEPTH)
+[INHERITS]

@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/evtloop.h>
+[METHODS]
+wxEventLoopBase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxEventLoopBase.Dispatch,0,0,0,bool,						bool wxEventLoopBase.Dispatch ( )
+wxEventLoopBase.DispatchTimeout,0,0,1,int,						int wxEventLoopBase.DispatchTimeout ( unsigned long timeout)
+wxEventLoopBase.Exit,0,0,1,void,						void wxEventLoopBase.Exit ( int rc = 0)
+wxEventLoopBase.GetActive,1,1,0,wxEventLoopBase,						static wxEventLoopBase* wxEventLoopBase.GetActive ( )
+wxEventLoopBase.IsEventAllowedInsideYield,0,0,1,bool,						bool wxEventLoopBase.IsEventAllowedInsideYield ( wxEventCategory cat)
+wxEventLoopBase.IsMain,0,0,0,bool,						bool wxEventLoopBase.IsMain ( )
+wxEventLoopBase.IsOk,0,0,0,bool,						bool wxEventLoopBase.IsOk ( )
+wxEventLoopBase.IsRunning,0,0,0,bool,						bool wxEventLoopBase.IsRunning ( )
+wxEventLoopBase.IsYielding,0,0,0,bool,						bool wxEventLoopBase.IsYielding ( )
+wxEventLoopBase.OnExit,0,0,0,void,						void wxEventLoopBase.OnExit ( )
+wxEventLoopBase.Pending,0,0,0,bool,						bool wxEventLoopBase.Pending ( )
+wxEventLoopBase.ProcessIdle,0,0,0,bool,						bool wxEventLoopBase.ProcessIdle ( )
+wxEventLoopBase.Run,0,0,0,int,						int wxEventLoopBase.Run ( )
+wxEventLoopBase.ScheduleExit,0,0,1,void,						void wxEventLoopBase.ScheduleExit ( int rc = 0)
+wxEventLoopBase.SetActive,1,0,1,void,						static void wxEventLoopBase.SetActive ( wxEventLoopBase * loop)
+wxEventLoopBase.WakeUp,0,0,0,void,						void wxEventLoopBase.WakeUp ( )
+wxEventLoopBase.WakeUpIdle,0,0,0,void,						void wxEventLoopBase.WakeUpIdle ( )
+wxEventLoopBase.Yield,0,0,1,bool,						bool wxEventLoopBase.Yield ( bool onlyIfNeeded = false)
+wxEventLoopBase.YieldFor,0,0,1,bool,						bool wxEventLoopBase.YieldFor ( long eventsToProcess)
+[INHERITS]

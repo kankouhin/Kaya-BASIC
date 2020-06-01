@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/html/webkit.h>
+[METHODS]
+wxWebKitStateChangedEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWebKitStateChangedEvent.GetState,0,0,0,int,						int wxWebKitStateChangedEvent.GetState ( )
+wxWebKitStateChangedEvent.GetURL,0,0,0,wxString,						wxString wxWebKitStateChangedEvent.GetURL ( )
+wxWebKitStateChangedEvent.SetState,0,0,1,void,						void wxWebKitStateChangedEvent.SetState ( int state)
+wxWebKitStateChangedEvent.SetURL,0,0,1,void,						void wxWebKitStateChangedEvent.SetURL (  wxString & url)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

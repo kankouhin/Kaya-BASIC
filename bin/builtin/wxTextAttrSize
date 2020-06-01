@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxTextAttrSize.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextAttrSize.Apply,0,0,2,bool,						bool wxTextAttrSize.Apply (  wxTextAttrSize & dims,      wxTextAttrSize * compareWith = NULL    )
+wxTextAttrSize.CollectCommonAttributes,0,0,3,void,						void wxTextAttrSize.CollectCommonAttributes (  wxTextAttrSize & attr,     wxTextAttrSize & clashingAttr,     wxTextAttrSize & absentAttr    )
+wxTextAttrSize.EqPartial,0,0,2,bool,						bool wxTextAttrSize.EqPartial (  wxTextAttrSize & size,     bool weakTest = true    )
+wxTextAttrSize.GetHeight,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrSize.GetHeight ( )
+wxTextAttrSize.GetHeight,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrSize.GetHeight ( )
+wxTextAttrSize.GetWidth,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrSize.GetWidth ( )
+wxTextAttrSize.GetWidth,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrSize.GetWidth ( )
+wxTextAttrSize.IsValid,0,0,0,bool,						bool wxTextAttrSize.IsValid ( )
+wxTextAttrSize.operator==,0,0,1,bool,						bool wxTextAttrSize.operator== (  wxTextAttrSize & size)
+wxTextAttrSize.RemoveStyle,0,0,1,bool,						bool wxTextAttrSize.RemoveStyle (  wxTextAttrSize & attr)
+wxTextAttrSize.Reset,0,0,0,void,						void wxTextAttrSize.Reset ( )
+wxTextAttrSize.SetHeight,0,0,2,void,						void wxTextAttrSize.SetHeight ( int value,     wxTextAttrDimensionFlags flags    )
+wxTextAttrSize.SetHeight,0,0,2,void,						void wxTextAttrSize.SetHeight ( int value,     wxTextAttrUnits units    )
+wxTextAttrSize.SetHeight,0,0,1,void,						void wxTextAttrSize.SetHeight (  wxTextAttrDimension & dim)
+wxTextAttrSize.SetWidth,0,0,2,void,						void wxTextAttrSize.SetWidth ( int value,     wxTextAttrDimensionFlags flags    )
+wxTextAttrSize.SetWidth,0,0,2,void,						void wxTextAttrSize.SetWidth ( int value,     wxTextAttrUnits units    )
+wxTextAttrSize.SetWidth,0,0,1,void,						void wxTextAttrSize.SetWidth (  wxTextAttrDimension & dim)
+wxTextAttrSize.m_height,0,0,-1,wxTextAttrDimension,						wxTextAttrDimension wxTextAttrSize.m_height
+wxTextAttrSize.m_width,0,0,-1,wxTextAttrDimension,						wxTextAttrDimension wxTextAttrSize.m_width
+[INHERITS]

@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/hash.h>
+[METHODS]
+wxHashTable.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHashTable.BeginFind,0,0,0,void,						void wxHashTable.BeginFind ( )
+wxHashTable.Clear,0,0,0,void,						void wxHashTable.Clear ( )
+wxHashTable.Delete,0,1,1,wxObject,						wxObject* wxHashTable.Delete ( long key)
+wxHashTable.Delete,0,1,1,wxObject,						wxObject* wxHashTable.Delete (  wxString & key)
+wxHashTable.DeleteContents,0,0,1,void,						void wxHashTable.DeleteContents ( bool flag)
+wxHashTable.Get,0,1,1,wxObject,						wxObject* wxHashTable.Get ( long key)
+wxHashTable.Get,0,1,1,wxObject,						wxObject* wxHashTable.Get (  char * key)
+wxHashTable.GetCount,0,0,0,size_t,						size_t wxHashTable.GetCount ( )
+wxHashTable.MakeKey,1,0,1,long,						static long wxHashTable.MakeKey (  wxString & string)
+wxHashTable.Next,0,1,0,wxHashTable.Node,						wxHashTable.Node* wxHashTable.Next ( )
+wxHashTable.Put,0,0,2,void,						void wxHashTable.Put ( long key,     wxObject * object    )
+wxHashTable.Put,0,0,2,void,						void wxHashTable.Put (  char * key,     wxObject * object    )
+[INHERITS]
+wxObject

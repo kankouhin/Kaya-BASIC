@@ -1,0 +1,32 @@
+[CONSTS]
+wxPB_USE_TEXTCTRL
+[HEADER]
+<wx/pickerbase.h>
+[METHODS]
+wxPickerBase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPickerBase.CreateBase,0,0,8,bool,						bool wxPickerBase.CreateBase ( wxWindow * parent,     wxWindowID id,      wxString & text = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxButtonNameStr    )
+wxPickerBase.GetInternalMargin,0,0,0,int,						int wxPickerBase.GetInternalMargin ( )
+wxPickerBase.GetPickerCtrl,0,1,0,wxControl,						wxControl* wxPickerBase.GetPickerCtrl ( )
+wxPickerBase.GetPickerCtrlProportion,0,0,0,int,						int wxPickerBase.GetPickerCtrlProportion ( )
+wxPickerBase.GetPickerStyle,0,0,1,long,						long wxPickerBase.GetPickerStyle ( long style)
+wxPickerBase.GetTextCtrl,0,1,0,wxTextCtrl,						wxTextCtrl* wxPickerBase.GetTextCtrl ( )
+wxPickerBase.GetTextCtrlProportion,0,0,0,int,						int wxPickerBase.GetTextCtrlProportion ( )
+wxPickerBase.GetTextCtrlStyle,0,0,1,long,						long wxPickerBase.GetTextCtrlStyle ( long style)
+wxPickerBase.HasTextCtrl,0,0,0,bool,						bool wxPickerBase.HasTextCtrl ( )
+wxPickerBase.IsPickerCtrlGrowable,0,0,0,bool,						bool wxPickerBase.IsPickerCtrlGrowable ( )
+wxPickerBase.IsTextCtrlGrowable,0,0,0,bool,						bool wxPickerBase.IsTextCtrlGrowable ( )
+wxPickerBase.PostCreation,0,0,0,void,						void wxPickerBase.PostCreation ( )
+wxPickerBase.SetInternalMargin,0,0,1,void,						void wxPickerBase.SetInternalMargin ( int margin)
+wxPickerBase.SetPickerCtrl,0,0,1,void,						void wxPickerBase.SetPickerCtrl ( wxControl * picker)
+wxPickerBase.SetPickerCtrlGrowable,0,0,1,void,						void wxPickerBase.SetPickerCtrlGrowable ( bool grow = true)
+wxPickerBase.SetPickerCtrlProportion,0,0,1,void,						void wxPickerBase.SetPickerCtrlProportion ( int prop)
+wxPickerBase.SetTextCtrl,0,0,1,void,						void wxPickerBase.SetTextCtrl ( wxTextCtrl * text)
+wxPickerBase.SetTextCtrlGrowable,0,0,1,void,						void wxPickerBase.SetTextCtrlGrowable ( bool grow = true)
+wxPickerBase.SetTextCtrlProportion,0,0,1,void,						void wxPickerBase.SetTextCtrlProportion ( int prop)
+wxPickerBase.UpdatePickerFromTextCtrl,0,0,0,void,						void wxPickerBase.UpdatePickerFromTextCtrl ( )
+wxPickerBase.UpdateTextCtrlFromPicker,0,0,0,void,						void wxPickerBase.UpdateTextCtrlFromPicker ( )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

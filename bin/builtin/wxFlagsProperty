@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxFlagsProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFlagsProperty.ChildChanged,0,0,3,wxVariant,						wxVariant wxFlagsProperty.ChildChanged ( wxVariant & thisValue,     int childIndex,     wxVariant & childValue    )
+wxFlagsProperty.DoSetAttribute,0,0,2,bool,						bool wxFlagsProperty.DoSetAttribute (  wxString & name,     wxVariant & value    )
+wxFlagsProperty.GetChoiceSelection,0,0,0,int,						int wxFlagsProperty.GetChoiceSelection ( )
+wxFlagsProperty.GetItemCount,0,0,0,size_t,						size_t wxFlagsProperty.GetItemCount ( )
+wxFlagsProperty.GetLabel,0,0,1,wxString,						wxString&  wxFlagsProperty.GetLabel ( size_t ind)
+wxFlagsProperty.IdToBit,0,0,1,long,						long wxFlagsProperty.IdToBit (  wxString & id)
+wxFlagsProperty.Init,0,0,0,void,						void wxFlagsProperty.Init ( )
+wxFlagsProperty.OnSetValue,0,0,0,void,						void wxFlagsProperty.OnSetValue ( )
+wxFlagsProperty.RefreshChildren,0,0,0,void,						void wxFlagsProperty.RefreshChildren ( )
+wxFlagsProperty.StringToValue,0,0,3,bool,						bool wxFlagsProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags    )
+wxFlagsProperty.ValueToString,0,0,2,wxString,						wxString wxFlagsProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+wxFlagsProperty.m_oldChoicesData,0,1,-1,wxPGChoicesData,						wxPGChoicesData* wxFlagsProperty.m_oldChoicesData
+wxFlagsProperty.m_oldValue,0,0,-1,long,						long wxFlagsProperty.m_oldValue
+[INHERITS]
+wxPGProperty
+wxObject

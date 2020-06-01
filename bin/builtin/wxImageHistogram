@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/image.h>
+[METHODS]
+wxImageHistogram.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxImageHistogram.FindFirstUnusedColour,0,0,6,bool,						bool wxImageHistogram.FindFirstUnusedColour ( unsigned char * r,     unsigned char * g,     unsigned char * b,     unsigned char startR = 1,     unsigned char startG = 0,     unsigned char startB = 0    )
+wxImageHistogram.MakeKey,1,0,3,long,						static unsigned long wxImageHistogram.MakeKey ( unsigned char r,     unsigned char g,     unsigned char b    )
+[INHERITS]

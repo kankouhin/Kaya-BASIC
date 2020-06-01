@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/print.h>
+[METHODS]
+wxPreviewCanvas.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPreviewCanvas.OnPaint,0,0,1,void,						void wxPreviewCanvas.OnPaint ( wxPaintEvent & event)
+[INHERITS]
+wxScrolled< T <

@@ -1,11 +1,13 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/aui/floatpane.h>
-GetOwnerManager,0,1,0,wxAuiManager,						wxAuiManager* GetOwnerManager ( )
-OnMoveFinished,0,0,0,void,						void OnMoveFinished ( )
-OnMoveStart,0,0,0,void,						void OnMoveStart ( )
-OnMoving,0,0,2,void,						void OnMoving (  wxRect & windowRect,     wxDirection dir    )
-SetPaneWindow,0,0,1,void,						void SetPaneWindow (  wxAuiPaneInfo & pane)
+[METHODS]
+wxAuiFloatingFrame.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiFloatingFrame.GetOwnerManager,0,1,0,wxAuiManager,						wxAuiManager* wxAuiFloatingFrame.GetOwnerManager ( )
+wxAuiFloatingFrame.OnMoveFinished,0,0,0,void,						void wxAuiFloatingFrame.OnMoveFinished ( )
+wxAuiFloatingFrame.OnMoveStart,0,0,0,void,						void wxAuiFloatingFrame.OnMoveStart ( )
+wxAuiFloatingFrame.OnMoving,0,0,2,void,						void wxAuiFloatingFrame.OnMoving (  wxRect & windowRect,     wxDirection dir    )
+wxAuiFloatingFrame.SetPaneWindow,0,0,1,void,						void wxAuiFloatingFrame.SetPaneWindow (  wxAuiPaneInfo & pane)
 [INHERITS]
 wxFrame
 wxTopLevelWindow

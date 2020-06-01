@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/protocol/protocol.h>
+[METHODS]
+wxProtocol.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxProtocol.Abort,0,0,0,bool,						bool wxProtocol.Abort ( )
+wxProtocol.DetachLog,0,1,0,wxProtocolLog,						wxProtocolLog* wxProtocol.DetachLog ( )
+wxProtocol.GetContentType,0,0,0,wxString,						wxString wxProtocol.GetContentType ( )
+wxProtocol.GetError,0,0,0,wxProtocolError,						wxProtocolError wxProtocol.GetError ( )
+wxProtocol.GetInputStream,0,1,1,wxInputStream,						wxInputStream* wxProtocol.GetInputStream (  wxString & path)
+wxProtocol.GetLog,0,1,0,wxProtocolLog,						wxProtocolLog* wxProtocol.GetLog ( )
+wxProtocol.LogRequest,0,0,1,void,						void wxProtocol.LogRequest (  wxString & str)
+wxProtocol.LogResponse,0,0,1,void,						void wxProtocol.LogResponse (  wxString & str)
+wxProtocol.Reconnect,0,0,0,bool,						bool wxProtocol.Reconnect ( )
+wxProtocol.SetDefaultTimeout,0,0,1,void,						void wxProtocol.SetDefaultTimeout ( wxUint32 Value)
+wxProtocol.SetLog,0,0,1,void,						void wxProtocol.SetLog ( wxProtocolLog * log)
+wxProtocol.SetPassword,0,0,1,void,						void wxProtocol.SetPassword (  wxString & user)
+wxProtocol.SetUser,0,0,1,void,						void wxProtocol.SetUser (  wxString & user)
+[INHERITS]
+wxSocketClient
+wxSocketBase
+wxObject

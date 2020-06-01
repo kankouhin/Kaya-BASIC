@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/fswatcher.h>
+[METHODS]
+wxFileSystemWatcher.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileSystemWatcher.Add,0,0,2,bool,						bool wxFileSystemWatcher.Add (  wxFileName & path,     int events = wxFSW_EVENT_ALL    )
+wxFileSystemWatcher.AddTree,0,0,3,bool,						bool wxFileSystemWatcher.AddTree (  wxFileName & path,     int events = wxFSW_EVENT_ALL,      wxString & filter = wxEmptyString    )
+wxFileSystemWatcher.GetWatchedPaths,0,0,1,int,						int wxFileSystemWatcher.GetWatchedPaths ( wxArrayString * paths)
+wxFileSystemWatcher.GetWatchedPathsCount,0,0,0,int,						int wxFileSystemWatcher.GetWatchedPathsCount ( )
+wxFileSystemWatcher.Remove,0,0,1,bool,						bool wxFileSystemWatcher.Remove (  wxFileName & path)
+wxFileSystemWatcher.RemoveAll,0,0,0,bool,						bool wxFileSystemWatcher.RemoveAll ( )
+wxFileSystemWatcher.RemoveTree,0,0,1,bool,						bool wxFileSystemWatcher.RemoveTree (  wxFileName & path)
+wxFileSystemWatcher.SetOwner,0,0,1,void,						void wxFileSystemWatcher.SetOwner ( wxEvtHandler * handler)
+[INHERITS]
+wxEvtHandler
+wxObject

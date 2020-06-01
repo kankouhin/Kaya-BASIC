@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/textctrl.h>
+[METHODS]
+wxTextUrlEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextUrlEvent.Clone,0,1,0,wxEvent,						wxEvent* wxTextUrlEvent.Clone ( )
+wxTextUrlEvent.GetMouseEvent,0,0,0,wxMouseEvent,						wxMouseEvent&  wxTextUrlEvent.GetMouseEvent ( )
+wxTextUrlEvent.GetURLEnd,0,0,0,long,						long wxTextUrlEvent.GetURLEnd ( )
+wxTextUrlEvent.GetURLStart,0,0,0,long,						long wxTextUrlEvent.GetURLStart ( )
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

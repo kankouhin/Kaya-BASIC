@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/hashmap.h>
+[METHODS]
+wxHashMap.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHashMap.begin,0,0,0,_iterator,						_iterator wxHashMap.begin ( )
+wxHashMap.begin,0,0,0,iterator,						iterator wxHashMap.begin ( )
+wxHashMap.clear,0,0,0,void,						void wxHashMap.clear ( )
+wxHashMap.count,0,0,1,size_type,						size_type wxHashMap.count (  key_type & key)
+wxHashMap.empty,0,0,0,bool,						bool wxHashMap.empty ( )
+wxHashMap.end,0,0,0,_iterator,						_iterator wxHashMap.end ( )
+wxHashMap.end,0,0,0,iterator,						iterator wxHashMap.end ( )
+wxHashMap.erase,0,0,1,size_type,						size_type wxHashMap.erase (  key_type & key)
+wxHashMap.erase,0,0,1,void,						void wxHashMap.erase ( iterator it)
+wxHashMap.erase,0,0,1,void,						void wxHashMap.erase ( _iterator it)
+wxHashMap.find,0,0,1,iterator,						iterator wxHashMap.find (  key_type & key)
+wxHashMap.find,0,0,1,_iterator,						_iterator wxHashMap.find (  key_type & key)
+wxHashMap.insert,0,0,1,Insert_Result,						Insert_Result wxHashMap.insert (  value_type & v)
+wxHashMap.operator[],0,0,1,mapped_type,						mapped_type wxHashMap.operator[] (  key_type & key)
+wxHashMap.size,0,0,0,size_type,						size_type wxHashMap.size ( )
+[INHERITS]

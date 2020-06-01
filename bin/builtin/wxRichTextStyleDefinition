@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextstyles.h>
+[METHODS]
+wxRichTextStyleDefinition.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextStyleDefinition.GetBaseStyle,0,0,0,wxString,						wxString&  wxRichTextStyleDefinition.GetBaseStyle ( )
+wxRichTextStyleDefinition.GetDescription,0,0,0,wxString,						wxString&  wxRichTextStyleDefinition.GetDescription ( )
+wxRichTextStyleDefinition.GetName,0,0,0,wxString,						wxString&  wxRichTextStyleDefinition.GetName ( )
+wxRichTextStyleDefinition.GetProperties,0,0,0,wxRichTextProperties,						wxRichTextProperties&  wxRichTextStyleDefinition.GetProperties ( )
+wxRichTextStyleDefinition.GetProperties,0,0,0,wxRichTextProperties,						wxRichTextProperties&  wxRichTextStyleDefinition.GetProperties ( )
+wxRichTextStyleDefinition.GetStyle,0,0,0,wxRichTextAttr,						wxRichTextAttr wxRichTextStyleDefinition.GetStyle ( )
+wxRichTextStyleDefinition.GetStyle,0,0,0,wxRichTextAttr,						wxRichTextAttr wxRichTextStyleDefinition.GetStyle ( )
+wxRichTextStyleDefinition.GetStyleMergedWithBase,0,0,1,wxRichTextAttr,						wxRichTextAttr wxRichTextStyleDefinition.GetStyleMergedWithBase (  wxRichTextStyleSheet * sheet)
+wxRichTextStyleDefinition.SetBaseStyle,0,0,1,void,						void wxRichTextStyleDefinition.SetBaseStyle (  wxString & name)
+wxRichTextStyleDefinition.SetDescription,0,0,1,void,						void wxRichTextStyleDefinition.SetDescription (  wxString & descr)
+wxRichTextStyleDefinition.SetName,0,0,1,void,						void wxRichTextStyleDefinition.SetName (  wxString & name)
+wxRichTextStyleDefinition.SetProperties,0,0,1,void,						void wxRichTextStyleDefinition.SetProperties (  wxRichTextProperties & props)
+wxRichTextStyleDefinition.SetStyle,0,0,1,void,						void wxRichTextStyleDefinition.SetStyle (  wxRichTextAttr & style)
+[INHERITS]
+wxObject

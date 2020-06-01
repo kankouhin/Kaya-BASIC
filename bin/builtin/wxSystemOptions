@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/sysopt.h>
+[METHODS]
+wxSystemOptions.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSystemOptions.GetOption,1,0,1,wxString,						static wxString wxSystemOptions.GetOption (  wxString & name)
+wxSystemOptions.GetOptionInt,1,0,1,int,						static int wxSystemOptions.GetOptionInt (  wxString & name)
+wxSystemOptions.HasOption,1,0,1,bool,						static bool wxSystemOptions.HasOption (  wxString & name)
+wxSystemOptions.IsFalse,1,0,1,bool,						static bool wxSystemOptions.IsFalse (  wxString & name)
+wxSystemOptions.SetOption,1,0,2,void,						static void wxSystemOptions.SetOption (  wxString & name,      wxString & value    )
+wxSystemOptions.SetOption,1,0,2,void,						static void wxSystemOptions.SetOption (  wxString & name,     int value    )
+[INHERITS]
+wxObject

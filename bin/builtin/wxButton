@@ -7,15 +7,17 @@ wxBU_EXACTFIT
 wxBU_NOTEXT
 wxBORDER_NONE
 wxEVT_BUTTON
-[METHODS]
+[HEADER]
 <wx/button.h>
-Create,0,0,8,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & label = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxButtonNameStr    )
-GetAuthNeeded,0,0,0,bool,						bool GetAuthNeeded ( )
-GetDefaultSize,1,0,1,wxSize,						static wxSize GetDefaultSize ( wxWindow * win = NULL)
-GetLabel,0,0,0,wxString,						wxString GetLabel ( )
-SetAuthNeeded,0,0,1,void,						void SetAuthNeeded ( bool needed = true)
-SetDefault,0,1,0,wxWindow,						wxWindow* SetDefault ( )
-SetLabel,0,0,1,void,						void SetLabel (  wxString & label)
+[METHODS]
+wxButton.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxButton.Create,0,0,8,bool,						bool wxButton.Create ( wxWindow * parent,     wxWindowID id,      wxString & label = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxButtonNameStr    )
+wxButton.GetAuthNeeded,0,0,0,bool,						bool wxButton.GetAuthNeeded ( )
+wxButton.GetDefaultSize,1,0,1,wxSize,						static wxSize wxButton.GetDefaultSize ( wxWindow * win = NULL)
+wxButton.GetLabel,0,0,0,wxString,						wxString wxButton.GetLabel ( )
+wxButton.SetAuthNeeded,0,0,1,void,						void wxButton.SetAuthNeeded ( bool needed = true)
+wxButton.SetDefault,0,1,0,wxWindow,						wxWindow* wxButton.SetDefault ( )
+wxButton.SetLabel,0,0,1,void,						void wxButton.SetLabel (  wxString & label)
 [INHERITS]
 wxAnyButton
 wxControl

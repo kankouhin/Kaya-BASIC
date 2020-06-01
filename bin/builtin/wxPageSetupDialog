@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/printdlg.h>
+[METHODS]
+wxPageSetupDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPageSetupDialog.GetPageSetupData,0,0,0,wxPageSetupDialogData,						wxPageSetupDialogData&  wxPageSetupDialog.GetPageSetupData ( )
+wxPageSetupDialog.ShowModal,0,0,0,int,						int wxPageSetupDialog.ShowModal ( )
+[INHERITS]
+wxObject

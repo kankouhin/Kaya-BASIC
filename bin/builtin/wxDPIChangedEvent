@@ -1,0 +1,11 @@
+[CONSTS]
+wxEVT_DPI_CHANGED
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxDPIChangedEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDPIChangedEvent.GetNewDPI,0,0,0,wxSize,						wxSize wxDPIChangedEvent.GetNewDPI ( )
+wxDPIChangedEvent.GetOldDPI,0,0,0,wxSize,						wxSize wxDPIChangedEvent.GetOldDPI ( )
+[INHERITS]
+wxEvent
+wxObject

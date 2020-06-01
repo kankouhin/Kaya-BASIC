@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/persist/toplevel.h>
+[METHODS]
+wxPersistentTLW.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPersistentTLW.Restore,0,0,0,bool,						bool wxPersistentTLW.Restore ( )
+wxPersistentTLW.Save,0,0,0,void,						void wxPersistentTLW.Save ( )
+[INHERITS]
+wxPersistentWindow< wxTopLevelWindow <
+wxPersistentObject

@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/tarstrm.h>
+[METHODS]
+wxTarInputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTarInputStream.CloseEntry,0,0,0,bool,						bool wxTarInputStream.CloseEntry ( )
+wxTarInputStream.GetNextEntry,0,1,0,wxTarEntry,						wxTarEntry* wxTarInputStream.GetNextEntry ( )
+wxTarInputStream.OpenEntry,0,0,1,bool,						bool wxTarInputStream.OpenEntry ( wxTarEntry & entry)
+[INHERITS]
+wxArchiveInputStream
+wxFilterInputStream
+wxInputStream
+wxStreamBase

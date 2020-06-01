@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/stream.h>
+[METHODS]
+wxBufferedOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBufferedOutputStream.SeekO,0,0,2,wxFileOffset,						wxFileOffset wxBufferedOutputStream.SeekO ( wxFileOffset pos,     wxSeekMode mode = wxFromStart    )
+wxBufferedOutputStream.Sync,0,0,0,void,						void wxBufferedOutputStream.Sync ( )
+[INHERITS]
+wxFilterOutputStream
+wxOutputStream
+wxStreamBase

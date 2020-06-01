@@ -1,0 +1,53 @@
+[CONSTS]
+wxAUI_MGR_ALLOW_FLOATING
+wxAUI_MGR_ALLOW_ACTIVE_PANE
+wxAUI_MGR_TRANSPARENT_DRAG
+wxAUI_MGR_TRANSPARENT_HINT
+wxAUI_MGR_VENETIAN_BLINDS_HINT
+wxAUI_MGR_RECTANGLE_HINT
+wxAUI_MGR_HINT_FADE
+wxAUI_MGR_NO_VENETIAN_BLINDS_FADE
+wxAUI_MGR_LIVE_RESIZE
+wxAUI_MGR_DEFAULT
+[HEADER]
+<wx/aui/framemanager.h>
+[METHODS]
+wxAuiManager.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiManager.AddPane,0,0,2,bool,						bool wxAuiManager.AddPane ( wxWindow * window,      wxAuiPaneInfo & pane_info    )
+wxAuiManager.AddPane,0,0,3,bool,						bool wxAuiManager.AddPane ( wxWindow * window,     int direction = wxLEFT,      wxString & caption = wxEmptyString    )
+wxAuiManager.AddPane,0,0,3,bool,						bool wxAuiManager.AddPane ( wxWindow * window,      wxAuiPaneInfo & pane_info,      wxPoint & drop_pos    )
+wxAuiManager.CalculateHintRect,0,0,3,wxRect,						wxRect wxAuiManager.CalculateHintRect ( wxWindow * paneWindow,      wxPoint & pt,      wxPoint & offset    )
+wxAuiManager.CanDockPanel,0,0,1,bool,						bool wxAuiManager.CanDockPanel (  wxAuiPaneInfo & p)
+wxAuiManager.ClosePane,0,0,1,void,						void wxAuiManager.ClosePane ( wxAuiPaneInfo & paneInfo)
+wxAuiManager.CreateFloatingFrame,0,1,2,wxAuiFloatingFrame,						wxAuiFloatingFrame* wxAuiManager.CreateFloatingFrame ( wxWindow * parent,      wxAuiPaneInfo & p    )
+wxAuiManager.DetachPane,0,0,1,bool,						bool wxAuiManager.DetachPane ( wxWindow * window)
+wxAuiManager.DrawHintRect,0,0,3,void,						void wxAuiManager.DrawHintRect ( wxWindow * paneWindow,      wxPoint & pt,      wxPoint & offset    )
+wxAuiManager.GetAllPanes,0,0,0,wxAuiPaneInfoArray,						wxAuiPaneInfoArray&  wxAuiManager.GetAllPanes ( )
+wxAuiManager.GetArtProvider,0,1,0,wxAuiDockArt,						wxAuiDockArt* wxAuiManager.GetArtProvider ( )
+wxAuiManager.GetDockSizeConstraint,0,0,2,void,						void wxAuiManager.GetDockSizeConstraint ( double * widthpct,     double * heightpct    )
+wxAuiManager.GetFlags,0,0,0,int,						unsigned int wxAuiManager.GetFlags ( )
+wxAuiManager.GetManagedWindow,0,1,0,wxWindow,						wxWindow* wxAuiManager.GetManagedWindow ( )
+wxAuiManager.GetManager,1,1,1,wxAuiManager,						static wxAuiManager* wxAuiManager.GetManager ( wxWindow * window)
+wxAuiManager.GetPane,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiManager.GetPane ( wxWindow * window)
+wxAuiManager.GetPane,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiManager.GetPane (  wxString & name)
+wxAuiManager.HideHint,0,0,0,void,						void wxAuiManager.HideHint ( )
+wxAuiManager.InsertPane,0,0,3,bool,						bool wxAuiManager.InsertPane ( wxWindow * window,      wxAuiPaneInfo & insert_location,     int insert_level = wxAUI_INSERT_PANE    )
+wxAuiManager.LoadPaneInfo,0,0,2,void,						void wxAuiManager.LoadPaneInfo ( wxString pane_part,     wxAuiPaneInfo & pane    )
+wxAuiManager.LoadPerspective,0,0,2,bool,						bool wxAuiManager.LoadPerspective (  wxString & perspective,     bool update = true    )
+wxAuiManager.MaximizePane,0,0,1,void,						void wxAuiManager.MaximizePane ( wxAuiPaneInfo & paneInfo)
+wxAuiManager.ProcessDockResult,0,0,2,bool,						bool wxAuiManager.ProcessDockResult ( wxAuiPaneInfo & target,      wxAuiPaneInfo & new_pos    )
+wxAuiManager.RestoreMaximizedPane,0,0,0,void,						void wxAuiManager.RestoreMaximizedPane ( )
+wxAuiManager.RestorePane,0,0,1,void,						void wxAuiManager.RestorePane ( wxAuiPaneInfo & paneInfo)
+wxAuiManager.SavePaneInfo,0,0,1,wxString,						wxString wxAuiManager.SavePaneInfo (  wxAuiPaneInfo & pane)
+wxAuiManager.SavePerspective,0,0,0,wxString,						wxString wxAuiManager.SavePerspective ( )
+wxAuiManager.SetArtProvider,0,0,1,void,						void wxAuiManager.SetArtProvider ( wxAuiDockArt * art_provider)
+wxAuiManager.SetDockSizeConstraint,0,0,2,void,						void wxAuiManager.SetDockSizeConstraint ( double widthpct,     double heightpct    )
+wxAuiManager.SetFlags,0,0,1,void,						void wxAuiManager.SetFlags ( unsigned int flags)
+wxAuiManager.SetManagedWindow,0,0,1,void,						void wxAuiManager.SetManagedWindow ( wxWindow * managed_wnd)
+wxAuiManager.ShowHint,0,0,1,void,						void wxAuiManager.ShowHint (  wxRect & rect)
+wxAuiManager.StartPaneDrag,0,0,2,void,						void wxAuiManager.StartPaneDrag ( wxWindow * paneWindow,      wxPoint & offset    )
+wxAuiManager.UnInit,0,0,0,void,						void wxAuiManager.UnInit ( )
+wxAuiManager.Update,0,0,0,void,						void wxAuiManager.Update ( )
+[INHERITS]
+wxEvtHandler
+wxObject

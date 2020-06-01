@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/headercol.h>
+[METHODS]
+wxHeaderColumnSimple.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHeaderColumnSimple.GetAlignment,0,0,0,wxAlignment,						wxAlignment wxHeaderColumnSimple.GetAlignment ( )
+wxHeaderColumnSimple.GetBitmap,0,0,0,wxBitmap,						wxBitmap wxHeaderColumnSimple.GetBitmap ( )
+wxHeaderColumnSimple.GetFlags,0,0,0,int,						int wxHeaderColumnSimple.GetFlags ( )
+wxHeaderColumnSimple.GetMinWidth,0,0,0,int,						int wxHeaderColumnSimple.GetMinWidth ( )
+wxHeaderColumnSimple.GetTitle,0,0,0,wxString,						wxString wxHeaderColumnSimple.GetTitle ( )
+wxHeaderColumnSimple.GetWidth,0,0,0,int,						int wxHeaderColumnSimple.GetWidth ( )
+wxHeaderColumnSimple.IsSortKey,0,0,0,bool,						bool wxHeaderColumnSimple.IsSortKey ( )
+wxHeaderColumnSimple.IsSortOrderAscending,0,0,0,bool,						bool wxHeaderColumnSimple.IsSortOrderAscending ( )
+wxHeaderColumnSimple.SetAlignment,0,0,1,void,						void wxHeaderColumnSimple.SetAlignment ( wxAlignment align)
+wxHeaderColumnSimple.SetBitmap,0,0,1,void,						void wxHeaderColumnSimple.SetBitmap (  wxBitmap & bitmap)
+wxHeaderColumnSimple.SetFlags,0,0,1,void,						void wxHeaderColumnSimple.SetFlags ( int flags)
+wxHeaderColumnSimple.SetMinWidth,0,0,1,void,						void wxHeaderColumnSimple.SetMinWidth ( int minWidth)
+wxHeaderColumnSimple.SetSortOrder,0,0,1,void,						void wxHeaderColumnSimple.SetSortOrder ( bool ascending)
+wxHeaderColumnSimple.SetTitle,0,0,1,void,						void wxHeaderColumnSimple.SetTitle (  wxString & title)
+wxHeaderColumnSimple.SetWidth,0,0,1,void,						void wxHeaderColumnSimple.SetWidth ( int width)
+[INHERITS]
+wxSettableHeaderColumn
+wxHeaderColumn

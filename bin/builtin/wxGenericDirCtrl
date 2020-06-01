@@ -1,0 +1,42 @@
+[CONSTS]
+wxDIRCTRL_DIR_ONLY
+wxDIRCTRL_3D_INTERNAL
+wxDIRCTRL_SELECT_FIRST
+wxDIRCTRL_SHOW_FILTERS
+wxDIRCTRL_EDIT_LABELS
+wxDIRCTRL_MULTIPLE
+wxEVT_DIRCTRL_SELECTIONCHANGED
+[HEADER]
+<wx/dirctrl.h>
+[METHODS]
+wxGenericDirCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGenericDirCtrl.CollapsePath,0,0,1,bool,						bool wxGenericDirCtrl.CollapsePath (  wxString & path)
+wxGenericDirCtrl.CollapseTree,0,0,0,void,						void wxGenericDirCtrl.CollapseTree ( )
+wxGenericDirCtrl.Create,0,0,9,bool,						bool wxGenericDirCtrl.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxString & dir = wxDirDialogDefaultFolderStr,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDIRCTRL_DEFAULT_STYLE,      wxString & filter = wxEmptyString,     int defaultFilter = 0,      wxString & name = wxTreeCtrlNameStr    )
+wxGenericDirCtrl.ExpandPath,0,0,1,bool,						bool wxGenericDirCtrl.ExpandPath (  wxString & path)
+wxGenericDirCtrl.GetDefaultPath,0,0,0,wxString,						wxString wxGenericDirCtrl.GetDefaultPath ( )
+wxGenericDirCtrl.GetFilePath,0,0,0,wxString,						wxString wxGenericDirCtrl.GetFilePath ( )
+wxGenericDirCtrl.GetFilePaths,0,0,1,void,						void wxGenericDirCtrl.GetFilePaths ( wxArrayString & paths)
+wxGenericDirCtrl.GetFilter,0,0,0,wxString,						wxString wxGenericDirCtrl.GetFilter ( )
+wxGenericDirCtrl.GetFilterIndex,0,0,0,int,						int wxGenericDirCtrl.GetFilterIndex ( )
+wxGenericDirCtrl.GetFilterListCtrl,0,1,0,wxDirFilterListCtrl,						wxDirFilterListCtrl* wxGenericDirCtrl.GetFilterListCtrl ( )
+wxGenericDirCtrl.GetPath,0,0,0,wxString,						wxString wxGenericDirCtrl.GetPath ( )
+wxGenericDirCtrl.GetPath,0,0,1,wxString,						wxString wxGenericDirCtrl.GetPath ( wxTreeItemId itemId)
+wxGenericDirCtrl.GetPaths,0,0,1,void,						void wxGenericDirCtrl.GetPaths ( wxArrayString & paths)
+wxGenericDirCtrl.GetRootId,0,0,0,wxTreeItemId,						wxTreeItemId wxGenericDirCtrl.GetRootId ( )
+wxGenericDirCtrl.GetTreeCtrl,0,1,0,wxTreeCtrl,						wxTreeCtrl* wxGenericDirCtrl.GetTreeCtrl ( )
+wxGenericDirCtrl.Init,0,0,0,void,						void wxGenericDirCtrl.Init ( )
+wxGenericDirCtrl.ReCreateTree,0,0,0,void,						void wxGenericDirCtrl.ReCreateTree ( )
+wxGenericDirCtrl.SelectPath,0,0,2,void,						void wxGenericDirCtrl.SelectPath (  wxString & path,     bool select = true    )
+wxGenericDirCtrl.SelectPaths,0,0,1,void,						void wxGenericDirCtrl.SelectPaths (  wxArrayString & paths)
+wxGenericDirCtrl.SetDefaultPath,0,0,1,void,						void wxGenericDirCtrl.SetDefaultPath (  wxString & path)
+wxGenericDirCtrl.SetFilter,0,0,1,void,						void wxGenericDirCtrl.SetFilter (  wxString & filter)
+wxGenericDirCtrl.SetFilterIndex,0,0,1,void,						void wxGenericDirCtrl.SetFilterIndex ( int n)
+wxGenericDirCtrl.SetPath,0,0,1,void,						void wxGenericDirCtrl.SetPath (  wxString & path)
+wxGenericDirCtrl.ShowHidden,0,0,1,void,						void wxGenericDirCtrl.ShowHidden ( bool show)
+wxGenericDirCtrl.UnselectAll,0,0,0,void,						void wxGenericDirCtrl.UnselectAll ( )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/html/webkit.h>
+[METHODS]
+wxWebKitBeforeLoadEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWebKitBeforeLoadEvent.Cancel,0,0,1,void,						void wxWebKitBeforeLoadEvent.Cancel ( bool cancel = true)
+wxWebKitBeforeLoadEvent.GetNavigationType,0,0,0,int,						int wxWebKitBeforeLoadEvent.GetNavigationType ( )
+wxWebKitBeforeLoadEvent.GetURL,0,0,0,wxString,						wxString wxWebKitBeforeLoadEvent.GetURL ( )
+wxWebKitBeforeLoadEvent.IsCancelled,0,0,0,bool,						bool wxWebKitBeforeLoadEvent.IsCancelled ( )
+wxWebKitBeforeLoadEvent.SetNavigationType,0,0,1,void,						void wxWebKitBeforeLoadEvent.SetNavigationType ( int navType)
+wxWebKitBeforeLoadEvent.SetURL,0,0,1,void,						void wxWebKitBeforeLoadEvent.SetURL (  wxString & url)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

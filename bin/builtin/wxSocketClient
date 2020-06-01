@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/socket.h>
+[METHODS]
+wxSocketClient.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSocketClient.Connect,0,0,2,bool,						bool wxSocketClient.Connect (  wxSockAddress & address,     bool wait = true    )
+wxSocketClient.Connect,0,0,3,bool,						bool wxSocketClient.Connect (  wxSockAddress & address,      wxSockAddress & local,     bool wait = true    )
+wxSocketClient.WaitOnConnect,0,0,2,bool,						bool wxSocketClient.WaitOnConnect ( long seconds = -1,     long milliseconds = 0    )
+[INHERITS]
+wxSocketBase
+wxObject

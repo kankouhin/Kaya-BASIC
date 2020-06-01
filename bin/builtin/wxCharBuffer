@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/buffer.h>
+[METHODS]
+wxCharBuffer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCharBuffer.wxCharTypeBufferBase,0,0,-1,wxCharTypeBuffer<char<,						typedef wxCharTypeBuffer<char< wxCharBuffer.wxCharTypeBufferBase
+wxCharBuffer.wxScopedCharTypeBufferBase,0,0,-1,wxScopedCharTypeBuffer<char<,						typedef wxScopedCharTypeBuffer<char< wxCharBuffer.wxScopedCharTypeBufferBase
+[INHERITS]
+wxCharTypeBuffer< char <
+wxScopedCharTypeBuffer< char <

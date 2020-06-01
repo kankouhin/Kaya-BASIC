@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxNumericPropertyValidator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxNumericPropertyValidator.NumericType,0,0,-1,enum,						enum wxNumericPropertyValidator.NumericType
+wxNumericPropertyValidator.Validate,0,0,1,bool,						bool wxNumericPropertyValidator.Validate ( wxWindow * parent)
+[INHERITS]
+wxTextValidator
+wxValidator
+wxEvtHandler
+wxObject

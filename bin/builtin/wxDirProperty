@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxDirProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDirProperty.DisplayEditorDialog,0,0,2,bool,						bool wxDirProperty.DisplayEditorDialog ( wxPropertyGrid * pg,     wxVariant & value    )
+wxDirProperty.DoGetValidator,0,1,0,wxValidator,						wxValidator* wxDirProperty.DoGetValidator ( )
+wxDirProperty.StringToValue,0,0,3,bool,						bool wxDirProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags = 0    )
+wxDirProperty.ValueToString,0,0,2,wxString,						wxString wxDirProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+[INHERITS]
+wxEditorDialogProperty
+wxPGProperty
+wxObject

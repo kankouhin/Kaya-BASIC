@@ -1,0 +1,35 @@
+[CONSTS]
+[HEADER]
+<wx/stdpaths.h>
+[METHODS]
+wxStandardPaths.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStandardPaths.ConfigFileConv,0,0,-1,enum,						enum wxStandardPaths.ConfigFileConv
+wxStandardPaths.Dir,0,0,-1,enum,						enum wxStandardPaths.Dir
+wxStandardPaths.FileLayout,0,0,-1,enum,						enum wxStandardPaths.FileLayout
+wxStandardPaths.ResourceCat,0,0,-1,enum,						enum wxStandardPaths.ResourceCat
+wxStandardPaths.DontIgnoreAppSubDir,0,0,0,void,						void wxStandardPaths.DontIgnoreAppSubDir ( )
+wxStandardPaths.Get,1,0,0,wxStandardPaths,						static wxStandardPaths&  wxStandardPaths.Get ( )
+wxStandardPaths.GetAppDocumentsDir,0,0,0,wxString,						wxString wxStandardPaths.GetAppDocumentsDir ( )
+wxStandardPaths.GetConfigDir,0,0,0,wxString,						wxString wxStandardPaths.GetConfigDir ( )
+wxStandardPaths.GetDataDir,0,0,0,wxString,						wxString wxStandardPaths.GetDataDir ( )
+wxStandardPaths.GetDocumentsDir,0,0,0,wxString,						wxString wxStandardPaths.GetDocumentsDir ( )
+wxStandardPaths.GetExecutablePath,0,0,0,wxString,						wxString wxStandardPaths.GetExecutablePath ( )
+wxStandardPaths.GetFileLayout,0,0,0,FileLayout,						FileLayout wxStandardPaths.GetFileLayout ( )
+wxStandardPaths.GetInstallPrefix,0,0,0,wxString,						wxString wxStandardPaths.GetInstallPrefix ( )
+wxStandardPaths.GetLocalDataDir,0,0,0,wxString,						wxString wxStandardPaths.GetLocalDataDir ( )
+wxStandardPaths.GetLocalizedResourcesDir,0,0,2,wxString,						wxString wxStandardPaths.GetLocalizedResourcesDir (  wxString & lang,     ResourceCat category = ResourceCat_None    )
+wxStandardPaths.GetPluginsDir,0,0,0,wxString,						wxString wxStandardPaths.GetPluginsDir ( )
+wxStandardPaths.GetResourcesDir,0,0,0,wxString,						wxString wxStandardPaths.GetResourcesDir ( )
+wxStandardPaths.GetTempDir,0,0,0,wxString,						wxString wxStandardPaths.GetTempDir ( )
+wxStandardPaths.GetUserConfigDir,0,0,0,wxString,						wxString wxStandardPaths.GetUserConfigDir ( )
+wxStandardPaths.GetUserDataDir,0,0,0,wxString,						wxString wxStandardPaths.GetUserDataDir ( )
+wxStandardPaths.GetUserDir,0,0,1,wxString,						wxString wxStandardPaths.GetUserDir ( Dir userDir)
+wxStandardPaths.GetUserLocalDataDir,0,0,0,wxString,						wxString wxStandardPaths.GetUserLocalDataDir ( )
+wxStandardPaths.IgnoreAppBuildSubDirs,0,0,0,void,						void wxStandardPaths.IgnoreAppBuildSubDirs ( )
+wxStandardPaths.IgnoreAppSubDir,0,0,1,void,						void wxStandardPaths.IgnoreAppSubDir (  wxString & subdirPattern)
+wxStandardPaths.MakeConfigFileName,0,0,2,wxString,						wxString wxStandardPaths.MakeConfigFileName (  wxString & basename,     ConfigFileConv conv = ConfigFileConv_Ext    )
+wxStandardPaths.MSWGetShellDir,1,0,1,wxString,						static wxString wxStandardPaths.MSWGetShellDir ( int csidl)
+wxStandardPaths.SetFileLayout,0,0,1,void,						void wxStandardPaths.SetFileLayout ( FileLayout layout)
+wxStandardPaths.SetInstallPrefix,0,0,1,void,						void wxStandardPaths.SetInstallPrefix (  wxString & prefix)
+wxStandardPaths.UseAppInfo,0,0,1,void,						void wxStandardPaths.UseAppInfo ( int info)
+[INHERITS]

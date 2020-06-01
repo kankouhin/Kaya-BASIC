@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/vscroll.h>
+[METHODS]
+wxVarHScrollHelper.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxVarHScrollHelper.EstimateTotalWidth,0,0,0,wxCoord,						wxCoord wxVarHScrollHelper.EstimateTotalWidth ( )
+wxVarHScrollHelper.GetColumnCount,0,0,0,size_t,						size_t wxVarHScrollHelper.GetColumnCount ( )
+wxVarHScrollHelper.GetVisibleColumnsBegin,0,0,0,size_t,						size_t wxVarHScrollHelper.GetVisibleColumnsBegin ( )
+wxVarHScrollHelper.GetVisibleColumnsEnd,0,0,0,size_t,						size_t wxVarHScrollHelper.GetVisibleColumnsEnd ( )
+wxVarHScrollHelper.IsColumnVisible,0,0,1,bool,						bool wxVarHScrollHelper.IsColumnVisible ( size_t column)
+wxVarHScrollHelper.OnGetColumnsWidthHint,0,0,2,void,						void wxVarHScrollHelper.OnGetColumnsWidthHint ( size_t columnMin,     size_t columnMax    )
+wxVarHScrollHelper.OnGetColumnWidth,0,0,1,wxCoord,						wxCoord wxVarHScrollHelper.OnGetColumnWidth ( size_t column)
+wxVarHScrollHelper.RefreshColumn,0,0,1,void,						void wxVarHScrollHelper.RefreshColumn ( size_t column)
+wxVarHScrollHelper.RefreshColumns,0,0,2,void,						void wxVarHScrollHelper.RefreshColumns ( size_t from,     size_t to    )
+wxVarHScrollHelper.ScrollColumnPages,0,0,1,bool,						bool wxVarHScrollHelper.ScrollColumnPages ( int pages)
+wxVarHScrollHelper.ScrollColumns,0,0,1,bool,						bool wxVarHScrollHelper.ScrollColumns ( int columns)
+wxVarHScrollHelper.ScrollToColumn,0,0,1,bool,						bool wxVarHScrollHelper.ScrollToColumn ( size_t column)
+wxVarHScrollHelper.SetColumnCount,0,0,1,void,						void wxVarHScrollHelper.SetColumnCount ( size_t columnCount)
+[INHERITS]
+wxVarScrollHelperBase

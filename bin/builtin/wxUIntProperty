@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxUIntProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxUIntProperty.AddSpinStepValue,0,0,1,wxVariant,						wxVariant wxUIntProperty.AddSpinStepValue ( long stepScale)
+wxUIntProperty.DoGetValidator,0,1,0,wxValidator,						wxValidator* wxUIntProperty.DoGetValidator ( )
+wxUIntProperty.DoSetAttribute,0,0,2,bool,						bool wxUIntProperty.DoSetAttribute (  wxString & name,     wxVariant & value    )
+wxUIntProperty.IntToValue,0,0,3,bool,						bool wxUIntProperty.IntToValue ( wxVariant & variant,     int number,     int argFlags = 0    )
+wxUIntProperty.StringToValue,0,0,3,bool,						bool wxUIntProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags = 0    )
+wxUIntProperty.ValidateValue,0,0,2,bool,						bool wxUIntProperty.ValidateValue ( wxVariant & value,     wxPGValidationInfo & validationInfo    )
+wxUIntProperty.ValueToString,0,0,2,wxString,						wxString wxUIntProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+wxUIntProperty.m_base,0,0,-1,wxByte,						wxByte wxUIntProperty.m_base
+wxUIntProperty.m_prefix,0,0,-1,wxByte,						wxByte wxUIntProperty.m_prefix
+wxUIntProperty.m_realBase,0,0,-1,wxByte,						wxByte wxUIntProperty.m_realBase
+[INHERITS]
+wxNumericProperty
+wxPGProperty
+wxObject

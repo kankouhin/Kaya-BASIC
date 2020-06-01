@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/propgridpagestate.h>
+[METHODS]
+wxPropertyGridHitTestResult.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPropertyGridHitTestResult.GetColumn,0,0,0,int,						int wxPropertyGridHitTestResult.GetColumn ( )
+wxPropertyGridHitTestResult.GetProperty,0,1,0,wxPGProperty,						wxPGProperty* wxPropertyGridHitTestResult.GetProperty ( )
+wxPropertyGridHitTestResult.GetSplitter,0,0,0,int,						int wxPropertyGridHitTestResult.GetSplitter ( )
+wxPropertyGridHitTestResult.GetSplitterHitOffset,0,0,0,int,						int wxPropertyGridHitTestResult.GetSplitterHitOffset ( )
+[INHERITS]

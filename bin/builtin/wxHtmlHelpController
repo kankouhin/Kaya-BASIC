@@ -1,0 +1,27 @@
+[CONSTS]
+[HEADER]
+<wx/html/helpctrl.h>
+[METHODS]
+wxHtmlHelpController.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlHelpController.AddBook,0,0,2,bool,						bool wxHtmlHelpController.AddBook (  wxFileName & bookFile,     bool showWaitMsg = false    )
+wxHtmlHelpController.AddBook,0,0,2,bool,						bool wxHtmlHelpController.AddBook (  wxString & bookUrl,     bool showWaitMsg = false    )
+wxHtmlHelpController.CreateHelpDialog,0,1,1,wxHtmlHelpDialog,						wxHtmlHelpDialog* wxHtmlHelpController.CreateHelpDialog ( wxHtmlHelpData * data)
+wxHtmlHelpController.CreateHelpFrame,0,1,1,wxHtmlHelpFrame,						wxHtmlHelpFrame* wxHtmlHelpController.CreateHelpFrame ( wxHtmlHelpData * data)
+wxHtmlHelpController.Display,0,0,1,bool,						bool wxHtmlHelpController.Display (  wxString & x)
+wxHtmlHelpController.Display,0,0,1,bool,						bool wxHtmlHelpController.Display ( int id)
+wxHtmlHelpController.DisplayContents,0,0,0,bool,						bool wxHtmlHelpController.DisplayContents ( )
+wxHtmlHelpController.DisplayIndex,0,0,0,bool,						bool wxHtmlHelpController.DisplayIndex ( )
+wxHtmlHelpController.GetDialog,0,1,0,wxHtmlHelpDialog,						wxHtmlHelpDialog* wxHtmlHelpController.GetDialog ( )
+wxHtmlHelpController.GetFrame,0,1,0,wxHtmlHelpFrame,						wxHtmlHelpFrame* wxHtmlHelpController.GetFrame ( )
+wxHtmlHelpController.GetHelpWindow,0,1,0,wxHtmlHelpWindow,						wxHtmlHelpWindow* wxHtmlHelpController.GetHelpWindow ( )
+wxHtmlHelpController.KeywordSearch,0,0,2,bool,						bool wxHtmlHelpController.KeywordSearch (  wxString & keyword,     wxHelpSearchMode mode = wxHELP_SEARCH_ALL    )
+wxHtmlHelpController.ReadCustomization,0,0,2,void,						void wxHtmlHelpController.ReadCustomization ( wxConfigBase * cfg,      wxString & path = wxEmptyString    )
+wxHtmlHelpController.SetHelpWindow,0,0,1,void,						void wxHtmlHelpController.SetHelpWindow ( wxHtmlHelpWindow * helpWindow)
+wxHtmlHelpController.SetShouldPreventAppExit,0,0,1,void,						void wxHtmlHelpController.SetShouldPreventAppExit ( bool enable)
+wxHtmlHelpController.SetTempDir,0,0,1,void,						void wxHtmlHelpController.SetTempDir (  wxString & path)
+wxHtmlHelpController.SetTitleFormat,0,0,1,void,						void wxHtmlHelpController.SetTitleFormat (  wxString & format)
+wxHtmlHelpController.UseConfig,0,0,2,void,						void wxHtmlHelpController.UseConfig ( wxConfigBase * config,      wxString & rootpath = wxEmptyString    )
+wxHtmlHelpController.WriteCustomization,0,0,2,void,						void wxHtmlHelpController.WriteCustomization ( wxConfigBase * cfg,      wxString & path = wxEmptyString    )
+[INHERITS]
+wxHelpControllerBase
+wxObject

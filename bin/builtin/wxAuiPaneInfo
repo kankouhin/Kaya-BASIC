@@ -1,0 +1,102 @@
+[CONSTS]
+[HEADER]
+<wx/aui/framemanager.h>
+[METHODS]
+wxAuiPaneInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiPaneInfo.BestSize,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.BestSize (  wxSize & size)
+wxAuiPaneInfo.BestSize,0,0,2,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.BestSize ( int x,     int y    )
+wxAuiPaneInfo.Bottom,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Bottom ( )
+wxAuiPaneInfo.BottomDockable,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.BottomDockable ( bool b = true)
+wxAuiPaneInfo.Caption,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Caption (  wxString & c)
+wxAuiPaneInfo.CaptionVisible,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.CaptionVisible ( bool visible = true)
+wxAuiPaneInfo.Center,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Center ( )
+wxAuiPaneInfo.CenterPane,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.CenterPane ( )
+wxAuiPaneInfo.Centre,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Centre ( )
+wxAuiPaneInfo.CentrePane,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.CentrePane ( )
+wxAuiPaneInfo.CloseButton,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.CloseButton ( bool visible = true)
+wxAuiPaneInfo.DefaultPane,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.DefaultPane ( )
+wxAuiPaneInfo.DestroyOnClose,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.DestroyOnClose ( bool b = true)
+wxAuiPaneInfo.Direction,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Direction ( int direction)
+wxAuiPaneInfo.Dock,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Dock ( )
+wxAuiPaneInfo.Dockable,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Dockable ( bool b = true)
+wxAuiPaneInfo.DockFixed,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.DockFixed ( bool b = true)
+wxAuiPaneInfo.Fixed,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Fixed ( )
+wxAuiPaneInfo.Float,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Float ( )
+wxAuiPaneInfo.Floatable,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Floatable ( bool b = true)
+wxAuiPaneInfo.FloatingPosition,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.FloatingPosition (  wxPoint & pos)
+wxAuiPaneInfo.FloatingPosition,0,0,2,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.FloatingPosition ( int x,     int y    )
+wxAuiPaneInfo.FloatingSize,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.FloatingSize (  wxSize & size)
+wxAuiPaneInfo.FloatingSize,0,0,2,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.FloatingSize ( int x,     int y    )
+wxAuiPaneInfo.Gripper,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Gripper ( bool visible = true)
+wxAuiPaneInfo.GripperTop,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.GripperTop ( bool attop = true)
+wxAuiPaneInfo.HasBorder,0,0,0,bool,						bool wxAuiPaneInfo.HasBorder ( )
+wxAuiPaneInfo.HasCaption,0,0,0,bool,						bool wxAuiPaneInfo.HasCaption ( )
+wxAuiPaneInfo.HasCloseButton,0,0,0,bool,						bool wxAuiPaneInfo.HasCloseButton ( )
+wxAuiPaneInfo.HasFlag,0,0,1,bool,						bool wxAuiPaneInfo.HasFlag ( int flag)
+wxAuiPaneInfo.HasGripper,0,0,0,bool,						bool wxAuiPaneInfo.HasGripper ( )
+wxAuiPaneInfo.HasGripperTop,0,0,0,bool,						bool wxAuiPaneInfo.HasGripperTop ( )
+wxAuiPaneInfo.HasMaximizeButton,0,0,0,bool,						bool wxAuiPaneInfo.HasMaximizeButton ( )
+wxAuiPaneInfo.HasMinimizeButton,0,0,0,bool,						bool wxAuiPaneInfo.HasMinimizeButton ( )
+wxAuiPaneInfo.HasPinButton,0,0,0,bool,						bool wxAuiPaneInfo.HasPinButton ( )
+wxAuiPaneInfo.Hide,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Hide ( )
+wxAuiPaneInfo.Icon,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Icon (  wxBitmap & b)
+wxAuiPaneInfo.IsBottomDockable,0,0,0,bool,						bool wxAuiPaneInfo.IsBottomDockable ( )
+wxAuiPaneInfo.IsDockable,0,0,0,bool,						bool wxAuiPaneInfo.IsDockable ( )
+wxAuiPaneInfo.IsDocked,0,0,0,bool,						bool wxAuiPaneInfo.IsDocked ( )
+wxAuiPaneInfo.IsFixed,0,0,0,bool,						bool wxAuiPaneInfo.IsFixed ( )
+wxAuiPaneInfo.IsFloatable,0,0,0,bool,						bool wxAuiPaneInfo.IsFloatable ( )
+wxAuiPaneInfo.IsFloating,0,0,0,bool,						bool wxAuiPaneInfo.IsFloating ( )
+wxAuiPaneInfo.IsLeftDockable,0,0,0,bool,						bool wxAuiPaneInfo.IsLeftDockable ( )
+wxAuiPaneInfo.IsMovable,0,0,0,bool,						bool wxAuiPaneInfo.IsMovable ( )
+wxAuiPaneInfo.IsOk,0,0,0,bool,						bool wxAuiPaneInfo.IsOk ( )
+wxAuiPaneInfo.IsResizable,0,0,0,bool,						bool wxAuiPaneInfo.IsResizable ( )
+wxAuiPaneInfo.IsRightDockable,0,0,0,bool,						bool wxAuiPaneInfo.IsRightDockable ( )
+wxAuiPaneInfo.IsShown,0,0,0,bool,						bool wxAuiPaneInfo.IsShown ( )
+wxAuiPaneInfo.IsToolbar,0,0,0,bool,						bool wxAuiPaneInfo.IsToolbar ( )
+wxAuiPaneInfo.IsTopDockable,0,0,0,bool,						bool wxAuiPaneInfo.IsTopDockable ( )
+wxAuiPaneInfo.IsValid,0,0,0,bool,						bool wxAuiPaneInfo.IsValid ( )
+wxAuiPaneInfo.Layer,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Layer ( int layer)
+wxAuiPaneInfo.Left,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Left ( )
+wxAuiPaneInfo.LeftDockable,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.LeftDockable ( bool b = true)
+wxAuiPaneInfo.MaximizeButton,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.MaximizeButton ( bool visible = true)
+wxAuiPaneInfo.MaxSize,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.MaxSize (  wxSize & size)
+wxAuiPaneInfo.MaxSize,0,0,2,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.MaxSize ( int x,     int y    )
+wxAuiPaneInfo.MinimizeButton,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.MinimizeButton ( bool visible = true)
+wxAuiPaneInfo.MinSize,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.MinSize (  wxSize & size)
+wxAuiPaneInfo.MinSize,0,0,2,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.MinSize ( int x,     int y    )
+wxAuiPaneInfo.Movable,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Movable ( bool b = true)
+wxAuiPaneInfo.Name,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Name (  wxString & n)
+wxAuiPaneInfo.operator=,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.operator= (  wxAuiPaneInfo & c)
+wxAuiPaneInfo.PaneBorder,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.PaneBorder ( bool visible = true)
+wxAuiPaneInfo.PinButton,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.PinButton ( bool visible = true)
+wxAuiPaneInfo.Position,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Position ( int pos)
+wxAuiPaneInfo.Resizable,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Resizable ( bool resizable = true)
+wxAuiPaneInfo.Right,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Right ( )
+wxAuiPaneInfo.RightDockable,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.RightDockable ( bool b = true)
+wxAuiPaneInfo.Row,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Row ( int row)
+wxAuiPaneInfo.SafeSet,0,0,1,void,						void wxAuiPaneInfo.SafeSet ( wxAuiPaneInfo source)
+wxAuiPaneInfo.SetFlag,0,0,2,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.SetFlag ( int flag,     bool option_state    )
+wxAuiPaneInfo.Show,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Show ( bool show = true)
+wxAuiPaneInfo.ToolbarPane,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.ToolbarPane ( )
+wxAuiPaneInfo.Top,0,0,0,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Top ( )
+wxAuiPaneInfo.TopDockable,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.TopDockable ( bool b = true)
+wxAuiPaneInfo.Window,0,0,1,wxAuiPaneInfo,						wxAuiPaneInfo&  wxAuiPaneInfo.Window ( wxWindow * w)
+wxAuiPaneInfo.best_size,0,0,-1,wxSize,						wxSize wxAuiPaneInfo.best_size
+wxAuiPaneInfo.buttons,0,0,-1,wxAuiPaneButtonArray,						wxAuiPaneButtonArray wxAuiPaneInfo.buttons
+wxAuiPaneInfo.caption,0,0,-1,wxString,						wxString wxAuiPaneInfo.caption
+wxAuiPaneInfo.dock_direction,0,0,-1,int,						int wxAuiPaneInfo.dock_direction
+wxAuiPaneInfo.dock_layer,0,0,-1,int,						int wxAuiPaneInfo.dock_layer
+wxAuiPaneInfo.dock_pos,0,0,-1,int,						int wxAuiPaneInfo.dock_pos
+wxAuiPaneInfo.dock_proportion,0,0,-1,int,						int wxAuiPaneInfo.dock_proportion
+wxAuiPaneInfo.dock_row,0,0,-1,int,						int wxAuiPaneInfo.dock_row
+wxAuiPaneInfo.floating_pos,0,0,-1,wxPoint,						wxPoint wxAuiPaneInfo.floating_pos
+wxAuiPaneInfo.floating_size,0,0,-1,wxSize,						wxSize wxAuiPaneInfo.floating_size
+wxAuiPaneInfo.frame,0,1,-1,wxFrame,						wxFrame* wxAuiPaneInfo.frame
+wxAuiPaneInfo.icon,0,0,-1,wxBitmap,						wxBitmap wxAuiPaneInfo.icon
+wxAuiPaneInfo.max_size,0,0,-1,wxSize,						wxSize wxAuiPaneInfo.max_size
+wxAuiPaneInfo.min_size,0,0,-1,wxSize,						wxSize wxAuiPaneInfo.min_size
+wxAuiPaneInfo.name,0,0,-1,wxString,						wxString wxAuiPaneInfo.name
+wxAuiPaneInfo.rect,0,0,-1,wxRect,						wxRect wxAuiPaneInfo.rect
+wxAuiPaneInfo.state,0,0,-1,int,						unsigned int wxAuiPaneInfo.state
+wxAuiPaneInfo.window,0,1,-1,wxWindow,						wxWindow* wxAuiPaneInfo.window
+[INHERITS]

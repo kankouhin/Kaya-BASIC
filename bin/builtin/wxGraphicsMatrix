@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/graphics.h>
+[METHODS]
+wxGraphicsMatrix.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGraphicsMatrix.Concat,0,0,1,void,						void wxGraphicsMatrix.Concat (  wxGraphicsMatrix * t)
+wxGraphicsMatrix.Concat,0,0,1,void,						void wxGraphicsMatrix.Concat (  wxGraphicsMatrix & t)
+wxGraphicsMatrix.Get,0,0,6,void,						void wxGraphicsMatrix.Get ( wxDouble * a = NULL,     wxDouble * b = NULL,     wxDouble * c = NULL,     wxDouble * d = NULL,     wxDouble * tx = NULL,     wxDouble * ty = NULL    )
+wxGraphicsMatrix.GetNativeMatrix,0,1,0,void,						void* wxGraphicsMatrix.GetNativeMatrix ( )
+wxGraphicsMatrix.Invert,0,0,0,void,						void wxGraphicsMatrix.Invert ( )
+wxGraphicsMatrix.IsEqual,0,0,1,bool,						bool wxGraphicsMatrix.IsEqual (  wxGraphicsMatrix * t)
+wxGraphicsMatrix.IsEqual,0,0,1,bool,						bool wxGraphicsMatrix.IsEqual (  wxGraphicsMatrix & t)
+wxGraphicsMatrix.IsIdentity,0,0,0,bool,						bool wxGraphicsMatrix.IsIdentity ( )
+wxGraphicsMatrix.Rotate,0,0,1,void,						void wxGraphicsMatrix.Rotate ( wxDouble angle)
+wxGraphicsMatrix.Scale,0,0,2,void,						void wxGraphicsMatrix.Scale ( wxDouble xScale,     wxDouble yScale    )
+wxGraphicsMatrix.Set,0,0,6,void,						void wxGraphicsMatrix.Set ( wxDouble a = 1.0,     wxDouble b = 0.0,     wxDouble c = 0.0,     wxDouble d = 1.0,     wxDouble tx = 0.0,     wxDouble ty = 0.0    )
+wxGraphicsMatrix.TransformDistance,0,0,2,void,						void wxGraphicsMatrix.TransformDistance ( wxDouble * dx,     wxDouble * dy    )
+wxGraphicsMatrix.TransformPoint,0,0,2,void,						void wxGraphicsMatrix.TransformPoint ( wxDouble * x,     wxDouble * y    )
+wxGraphicsMatrix.Translate,0,0,2,void,						void wxGraphicsMatrix.Translate ( wxDouble dx,     wxDouble dy    )
+[INHERITS]
+wxGraphicsObject
+wxObject

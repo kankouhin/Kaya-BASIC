@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/wizard.h>
+[METHODS]
+wxWizardPageSimple.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWizardPageSimple.Chain,0,0,1,wxWizardPageSimple,						wxWizardPageSimple&  wxWizardPageSimple.Chain ( wxWizardPageSimple * next)
+wxWizardPageSimple.Chain,1,0,2,void,						static void wxWizardPageSimple.Chain ( wxWizardPageSimple * first,     wxWizardPageSimple * second    )
+wxWizardPageSimple.Create,0,0,4,bool,						bool wxWizardPageSimple.Create ( wxWizard * parent = NULL,     wxWizardPage * prev = NULL,     wxWizardPage * next = NULL,      wxBitmap & bitmap = wxNullBitmap    )
+wxWizardPageSimple.SetNext,0,0,1,void,						void wxWizardPageSimple.SetNext ( wxWizardPage * next)
+wxWizardPageSimple.SetPrev,0,0,1,void,						void wxWizardPageSimple.SetPrev ( wxWizardPage * prev)
+[INHERITS]
+wxWizardPage
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject

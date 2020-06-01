@@ -1,0 +1,13 @@
+[CONSTS]
+wxPU_CONTAINS_CONTROLS
+[HEADER]
+<wx/popupwin.h>
+[METHODS]
+wxPopupWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPopupWindow.Create,0,0,2,bool,						bool wxPopupWindow.Create ( wxWindow * parent,     int flags = wxBORDER_NONE    )
+wxPopupWindow.Position,0,0,2,void,						void wxPopupWindow.Position (  wxPoint & ptOrigin,      wxSize & sizePopup    )
+[INHERITS]
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

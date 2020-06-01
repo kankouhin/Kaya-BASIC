@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/treelist.h>
+[METHODS]
+wxTreeListItemComparator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTreeListItemComparator.Compare,0,0,4,int,						int wxTreeListItemComparator.Compare ( wxTreeListCtrl * treelist,     unsigned column,     wxTreeListItem first,     wxTreeListItem second    )
+[INHERITS]

@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/numformatter.h>
+[METHODS]
+wxNumberFormatter.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxNumberFormatter.Style,0,0,-1,enum,						enum wxNumberFormatter.Style
+wxNumberFormatter.FromString,1,0,2,bool,						static bool wxNumberFormatter.FromString ( wxString s,     long * val    )
+wxNumberFormatter.FromString,1,0,2,bool,						static bool wxNumberFormatter.FromString ( wxString s,     double * val    )
+wxNumberFormatter.GetDecimalSeparator,1,0,0,wxChar,						static wxChar wxNumberFormatter.GetDecimalSeparator ( )
+wxNumberFormatter.GetThousandsSeparatorIfUsed,1,0,1,bool,						static bool wxNumberFormatter.GetThousandsSeparatorIfUsed ( wxChar * sep)
+wxNumberFormatter.ToString,1,0,2,wxString,						static wxString wxNumberFormatter.ToString ( long val,     int flags = Style_WithThousandsSep    )
+wxNumberFormatter.ToString,1,0,3,wxString,						static wxString wxNumberFormatter.ToString ( double val,     int precision,     int flags = Style_WithThousandsSep    )
+[INHERITS]

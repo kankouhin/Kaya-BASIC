@@ -1,0 +1,12 @@
+[CONSTS]
+wxEVT_DROP_FILES
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxDropFilesEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDropFilesEvent.GetFiles,0,1,0,wxString,						wxString* wxDropFilesEvent.GetFiles ( )
+wxDropFilesEvent.GetNumberOfFiles,0,0,0,int,						int wxDropFilesEvent.GetNumberOfFiles ( )
+wxDropFilesEvent.GetPosition,0,0,0,wxPoint,						wxPoint wxDropFilesEvent.GetPosition ( )
+[INHERITS]
+wxEvent
+wxObject

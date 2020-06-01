@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/persist/bookctrl.h>
+[METHODS]
+wxPersistentBookCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPersistentBookCtrl.Restore,0,0,0,bool,						bool wxPersistentBookCtrl.Restore ( )
+wxPersistentBookCtrl.Save,0,0,0,void,						void wxPersistentBookCtrl.Save ( )
+[INHERITS]
+wxPersistentWindow< wxBookCtrlBase <
+wxPersistentObject

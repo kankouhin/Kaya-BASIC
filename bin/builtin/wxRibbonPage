@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/ribbon/page.h>
+[METHODS]
+wxRibbonPage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonPage.AdjustRectToIncludeScrollButtons,0,0,1,void,						void wxRibbonPage.AdjustRectToIncludeScrollButtons ( wxRect * rect)
+wxRibbonPage.Create,0,0,5,bool,						bool wxRibbonPage.Create ( wxRibbonBar * parent,     wxWindowID id = wxID_ANY,      wxString & label = wxEmptyString,      wxBitmap & icon = wxNullBitmap,     long style = 0    )
+wxRibbonPage.DismissExpandedPanel,0,0,0,bool,						bool wxRibbonPage.DismissExpandedPanel ( )
+wxRibbonPage.GetIcon,0,0,0,wxBitmap,						wxBitmap&  wxRibbonPage.GetIcon ( )
+wxRibbonPage.GetMajorAxis,0,0,0,wxOrientation,						wxOrientation wxRibbonPage.GetMajorAxis ( )
+wxRibbonPage.Realize,0,0,0,bool,						bool wxRibbonPage.Realize ( )
+wxRibbonPage.ScrollLines,0,0,1,bool,						bool wxRibbonPage.ScrollLines ( int lines)
+wxRibbonPage.ScrollPixels,0,0,1,bool,						bool wxRibbonPage.ScrollPixels ( int pixels)
+wxRibbonPage.ScrollSections,0,0,1,bool,						bool wxRibbonPage.ScrollSections ( int sections)
+wxRibbonPage.SetArtProvider,0,0,1,void,						void wxRibbonPage.SetArtProvider ( wxRibbonArtProvider * art)
+wxRibbonPage.SetSizeWithScrollButtonAdjustment,0,0,4,void,						void wxRibbonPage.SetSizeWithScrollButtonAdjustment ( int x,     int y,     int width,     int height    )
+[INHERITS]
+wxRibbonControl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/webview.h>
+[METHODS]
+wxWebViewHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWebViewHandler.GetFile,0,1,1,wxFSFile,						wxFSFile* wxWebViewHandler.GetFile (  wxString & uri)
+wxWebViewHandler.GetName,0,0,0,wxString,						wxString wxWebViewHandler.GetName ( )
+[INHERITS]

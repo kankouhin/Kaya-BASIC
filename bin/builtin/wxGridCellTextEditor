@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellTextEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellTextEditor.SetParameters,0,0,1,void,						void wxGridCellTextEditor.SetParameters (  wxString & params)
+wxGridCellTextEditor.SetValidator,0,0,1,void,						void wxGridCellTextEditor.SetValidator (  wxValidator & validator)
+[INHERITS]
+wxGridCellEditor
+wxClientDataContainer
+wxRefCounter

@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewListModel.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewListModel.Compare,0,0,4,int,						int wxDataViewListModel.Compare (  wxDataViewItem & item1,      wxDataViewItem & item2,     unsigned int column,     bool ascending    )
+wxDataViewListModel.GetAttrByRow,0,0,3,bool,						bool wxDataViewListModel.GetAttrByRow ( unsigned int row,     unsigned int col,     wxDataViewItemAttr & attr    )
+wxDataViewListModel.GetCount,0,0,0,int,						unsigned int wxDataViewListModel.GetCount ( )
+wxDataViewListModel.GetRow,0,0,1,int,						unsigned int wxDataViewListModel.GetRow (  wxDataViewItem & item)
+wxDataViewListModel.GetValueByRow,0,0,3,void,						void wxDataViewListModel.GetValueByRow ( wxVariant & variant,     unsigned int row,     unsigned int col    )
+wxDataViewListModel.IsEnabledByRow,0,0,2,bool,						bool wxDataViewListModel.IsEnabledByRow ( unsigned int row,     unsigned int col    )
+wxDataViewListModel.SetValueByRow,0,0,3,bool,						bool wxDataViewListModel.SetValueByRow (  wxVariant & variant,     unsigned int row,     unsigned int col    )
+[INHERITS]
+wxDataViewModel
+wxRefCounter

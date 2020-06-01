@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/cshelp.h>
+[METHODS]
+wxHelpControllerHelpProvider.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHelpControllerHelpProvider.GetHelpController,0,1,0,wxHelpControllerBase,						wxHelpControllerBase* wxHelpControllerHelpProvider.GetHelpController ( )
+wxHelpControllerHelpProvider.SetHelpController,0,0,1,void,						void wxHelpControllerHelpProvider.SetHelpController ( wxHelpControllerBase * hc)
+[INHERITS]
+wxHelpProvider

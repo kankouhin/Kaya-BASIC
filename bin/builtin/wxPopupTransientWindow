@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/popupwin.h>
+[METHODS]
+wxPopupTransientWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPopupTransientWindow.Dismiss,0,0,0,void,						void wxPopupTransientWindow.Dismiss ( )
+wxPopupTransientWindow.OnDismiss,0,0,0,void,						void wxPopupTransientWindow.OnDismiss ( )
+wxPopupTransientWindow.Popup,0,0,1,void,						void wxPopupTransientWindow.Popup ( wxWindow * focus = NULL)
+wxPopupTransientWindow.ProcessLeftDown,0,0,1,bool,						bool wxPopupTransientWindow.ProcessLeftDown ( wxMouseEvent & event)
+[INHERITS]
+wxPopupWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

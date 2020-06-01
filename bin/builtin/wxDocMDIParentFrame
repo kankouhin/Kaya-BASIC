@@ -1,7 +1,9 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/docmdi.h>
-Create,0,0,8,bool,						bool Create ( wxDocManager * manager,     wxFrame * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_FRAME_STYLE,      wxString & name = wxFrameNameStr    )
+[METHODS]
+wxDocMDIParentFrame.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDocMDIParentFrame.Create,0,0,8,bool,						bool wxDocMDIParentFrame.Create ( wxDocManager * manager,     wxFrame * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_FRAME_STYLE,      wxString & name = wxFrameNameStr    )
 [INHERITS]
 wxMDIParentFrame
 wxFrame

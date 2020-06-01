@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/dir.h>
+[METHODS]
+wxDir.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDir.Close,0,0,0,void,						void wxDir.Close ( )
+wxDir.Exists,1,0,1,bool,						static bool wxDir.Exists (  wxString & dir)
+wxDir.FindFirst,1,0,3,wxString,						static wxString wxDir.FindFirst (  wxString & dirname,      wxString & filespec,     int flags = wxDIR_DEFAULT    )
+wxDir.GetAllFiles,1,0,4,size_t,						static size_t wxDir.GetAllFiles (  wxString & dirname,     wxArrayString * files,      wxString & filespec = wxEmptyString,     int flags = wxDIR_DEFAULT    )
+wxDir.GetFirst,0,0,3,bool,						bool wxDir.GetFirst ( wxString * filename,      wxString & filespec = wxEmptyString,     int flags = wxDIR_DEFAULT    )
+wxDir.GetName,0,0,0,wxString,						wxString wxDir.GetName ( )
+wxDir.GetNameWithSep,0,0,0,wxString,						wxString wxDir.GetNameWithSep ( )
+wxDir.GetNext,0,0,1,bool,						bool wxDir.GetNext ( wxString * filename)
+wxDir.GetTotalSize,1,0,2,wxULongLong,						static wxULongLong wxDir.GetTotalSize (  wxString & dir,     wxArrayString * filesSkipped = NULL    )
+wxDir.HasFiles,0,0,1,bool,						bool wxDir.HasFiles (  wxString & filespec = wxEmptyString)
+wxDir.HasSubDirs,0,0,1,bool,						bool wxDir.HasSubDirs (  wxString & dirspec = wxEmptyString)
+wxDir.IsOpened,0,0,0,bool,						bool wxDir.IsOpened ( )
+wxDir.Make,1,0,3,bool,						static bool wxDir.Make (  wxString & dir,     int perm = wxS_DIR_DEFAULT,     int flags = 0    )
+wxDir.Open,0,0,1,bool,						bool wxDir.Open (  wxString & dir)
+wxDir.Remove,1,0,2,bool,						static bool wxDir.Remove (  wxString & dir,     int flags = 0    )
+wxDir.Traverse,0,0,3,size_t,						size_t wxDir.Traverse ( wxDirTraverser & sink,      wxString & filespec = wxEmptyString,     int flags = wxDIR_DEFAULT    )
+[INHERITS]

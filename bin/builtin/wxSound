@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/sound.h>
+[METHODS]
+wxSound.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSound.Create,0,0,2,bool,						bool wxSound.Create (  wxString & fileName,     bool isResource = false    )
+wxSound.Create,0,0,2,bool,						bool wxSound.Create ( size_t size,      void * data    )
+wxSound.IsOk,0,0,0,bool,						bool wxSound.IsOk ( )
+wxSound.IsPlaying,1,0,0,bool,						static bool wxSound.IsPlaying ( )
+wxSound.Play,0,0,1,bool,						bool wxSound.Play ( unsigned flags = wxSOUND_ASYNC)
+wxSound.Play,1,0,2,bool,						static bool wxSound.Play (  wxString & filename,     unsigned flags = wxSOUND_ASYNC    )
+wxSound.Stop,1,0,0,void,						static void wxSound.Stop ( )
+[INHERITS]
+wxObject

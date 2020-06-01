@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/editors.h>
+[METHODS]
+wxPGEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGEditor.CanContainCustomImage,0,0,0,bool,						bool wxPGEditor.CanContainCustomImage ( )
+wxPGEditor.CreateControls,0,0,4,wxPGWindowList,						wxPGWindowList wxPGEditor.CreateControls ( wxPropertyGrid * propgrid,     wxPGProperty * property,      wxPoint & pos,      wxSize & size    )
+wxPGEditor.DeleteItem,0,0,2,void,						void wxPGEditor.DeleteItem ( wxWindow * ctrl,     int index    )
+wxPGEditor.DrawValue,0,0,4,void,						void wxPGEditor.DrawValue ( wxDC & dc,      wxRect & rect,     wxPGProperty * property,      wxString & text    )
+wxPGEditor.GetName,0,0,0,wxString,						wxString wxPGEditor.GetName ( )
+wxPGEditor.GetValueFromControl,0,0,3,bool,						bool wxPGEditor.GetValueFromControl ( wxVariant & variant,     wxPGProperty * property,     wxWindow * ctrl    )
+wxPGEditor.InsertItem,0,0,3,int,						int wxPGEditor.InsertItem ( wxWindow * ctrl,      wxString & label,     int index    )
+wxPGEditor.OnEvent,0,0,4,bool,						bool wxPGEditor.OnEvent ( wxPropertyGrid * propgrid,     wxPGProperty * property,     wxWindow * wnd_primary,     wxEvent & event    )
+wxPGEditor.OnFocus,0,0,2,void,						void wxPGEditor.OnFocus ( wxPGProperty * property,     wxWindow * wnd    )
+wxPGEditor.SetControlAppearance,0,0,6,void,						void wxPGEditor.SetControlAppearance ( wxPropertyGrid * pg,     wxPGProperty * property,     wxWindow * ctrl,      wxPGCell & appearance,      wxPGCell & oldAppearance,     bool unspecified    )
+wxPGEditor.SetControlIntValue,0,0,3,void,						void wxPGEditor.SetControlIntValue ( wxPGProperty * property,     wxWindow * ctrl,     int value    )
+wxPGEditor.SetControlStringValue,0,0,3,void,						void wxPGEditor.SetControlStringValue ( wxPGProperty * property,     wxWindow * ctrl,      wxString & txt    )
+wxPGEditor.SetValueToUnspecified,0,0,2,void,						void wxPGEditor.SetValueToUnspecified ( wxPGProperty * property,     wxWindow * ctrl    )
+wxPGEditor.UpdateControl,0,0,2,void,						void wxPGEditor.UpdateControl ( wxPGProperty * property,     wxWindow * ctrl    )
+wxPGEditor.m_clientData,0,1,-1,void,						void* wxPGEditor.m_clientData
+[INHERITS]
+wxObject

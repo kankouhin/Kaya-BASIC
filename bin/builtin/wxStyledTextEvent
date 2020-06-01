@@ -1,0 +1,158 @@
+[CONSTS]
+wxEVT_STC_AUTOCOMP_CANCELLED
+wxEVT_STC_AUTOCOMP_CHAR_DELETED
+wxEVT_STC_AUTOCOMP_COMPLETED
+wxEVT_STC_AUTOCOMP_SELECTION
+wxEVT_STC_AUTOCOMP_SELECTION_CHANGE
+wxEVT_STC_CALLTIP_CLICK
+wxEVT_STC_CHANGE
+wxEVT_STC_CHARADDED
+wxEVT_STC_CLIPBOARD_COPY
+wxEVT_STC_CLIPBOARD_PASTE
+wxEVT_STC_DO_DROP
+wxEVT_STC_DOUBLECLICK
+wxEVT_STC_DRAG_OVER
+wxEVT_STC_DWELLEND
+wxEVT_STC_DWELLSTART
+wxEVT_STC_HOTSPOT_CLICK
+wxEVT_STC_HOTSPOT_DCLICK
+wxEVT_STC_HOTSPOT_RELEASE_CLICK
+wxEVT_STC_INDICATOR_CLICK
+wxEVT_STC_INDICATOR_RELEASE
+wxEVT_STC_MACRORECORD
+wxEVT_STC_MARGIN_RIGHT_CLICK
+wxEVT_STC_MARGINCLICK
+wxEVT_STC_MODIFIED
+wxEVT_STC_NEEDSHOWN
+wxEVT_STC_PAINTED
+wxEVT_STC_ROMODIFYATTEMPT
+wxEVT_STC_SAVEPOINTLEFT
+wxEVT_STC_SAVEPOINTREACHED
+wxEVT_STC_START_DRAG
+wxEVT_STC_STYLENEEDED
+wxEVT_STC_UPDATEUI
+wxEVT_STC_USERLISTSELECTION
+wxEVT_STC_ZOOM
+wxEVT_STC_DOUBLECLICK
+wxEVT_STC_MARGINCLICK
+wxEVT_STC_HOTSPOT_CLICK
+wxEVT_STC_HOTSPOT_DCLICK
+wxEVT_STC_HOTSPOT_RELEASE_CLICK
+wxEVT_STC_INDICATOR_CLICK
+wxEVT_STC_INDICATOR_RELEASE
+wxEVT_STC_MARGIN_RIGHT_CLICK
+wxEVT_STC_DOUBLECLICK
+wxEVT_STC_MARGINCLICK
+wxEVT_STC_HOTSPOT_CLICK
+wxEVT_STC_HOTSPOT_DCLICK
+wxEVT_STC_HOTSPOT_RELEASE_CLICK
+wxEVT_STC_INDICATOR_CLICK
+wxEVT_STC_INDICATOR_RELEASE
+wxEVT_STC_MARGIN_RIGHT_CLICK
+wxEVT_STC_CHARADDED
+wxEVT_STC_USERLISTSELECTION
+wxEVT_STC_AUTOCOMP_SELECTION
+wxEVT_STC_AUTOCOMP_COMPLETED
+wxEVT_STC_DOUBLECLICK
+wxEVT_STC_MARGINCLICK
+wxEVT_STC_HOTSPOT_CLICK
+wxEVT_STC_HOTSPOT_DCLICK
+wxEVT_STC_HOTSPOT_RELEASE_CLICK
+wxEVT_STC_INDICATOR_CLICK
+wxEVT_STC_INDICATOR_RELEASE
+wxEVT_STC_MARGIN_RIGHT_CLICK
+wxEVT_STC_STYLENEEDED
+wxEVT_STC_DOUBLECLICK
+wxEVT_STC_MODIFIED
+wxEVT_STC_MARGINCLICK
+wxEVT_STC_NEEDSHOWN
+wxEVT_STC_USERLISTSELECTION
+wxEVT_STC_DWELLSTART
+wxEVT_STC_DWELLEND
+wxEVT_STC_HOTSPOT_CLICK
+wxEVT_STC_HOTSPOT_DCLICK
+wxEVT_STC_HOTSPOT_RELEASE_CLICK
+wxEVT_STC_INDICATOR_CLICK
+wxEVT_STC_INDICATOR_RELEASE
+wxEVT_STC_CALLTIP_CLICK
+wxEVT_STC_AUTOCOMP_SELECTION
+wxEVT_STC_AUTOCOMP_SELECTION_CHANGE
+wxEVT_STC_AUTOCOMP_COMPLETED
+wxEVT_STC_MARGIN_RIGHT_CLICK
+wxEVT_STC_DOUBLECLICK
+wxEVT_STC_MARGINCLICK
+wxEVT_STC_HOTSPOT_CLICK
+wxEVT_STC_HOTSPOT_DCLICK
+wxEVT_STC_HOTSPOT_RELEASE_CLICK
+wxEVT_STC_INDICATOR_CLICK
+wxEVT_STC_INDICATOR_RELEASE
+wxEVT_STC_MARGIN_RIGHT_CLICK
+wxEVT_STC_DWELLSTART
+wxEVT_STC_DWELLEND
+wxEVT_STC_START_DRAG
+wxEVT_STC_DRAG_OVER
+wxEVT_STC_DO_DROP
+wxEVT_STC_DWELLSTART
+wxEVT_STC_DWELLEND
+wxEVT_STC_START_DRAG
+wxEVT_STC_DRAG_OVER
+wxEVT_STC_DO_DROP
+[HEADER]
+<wx/stc/stc.h>
+[METHODS]
+wxStyledTextEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStyledTextEvent.GetAlt,0,0,0,bool,						bool wxStyledTextEvent.GetAlt ( )
+wxStyledTextEvent.GetAnnotationsLinesAdded,0,0,0,int,						int wxStyledTextEvent.GetAnnotationsLinesAdded ( )
+wxStyledTextEvent.GetControl,0,0,0,bool,						bool wxStyledTextEvent.GetControl ( )
+wxStyledTextEvent.GetDragFlags,0,0,0,int,						int wxStyledTextEvent.GetDragFlags ( )
+wxStyledTextEvent.GetDragResult,0,0,0,wxDragResult,						wxDragResult wxStyledTextEvent.GetDragResult ( )
+wxStyledTextEvent.GetDragText,0,0,0,wxString,						wxString wxStyledTextEvent.GetDragText ( )
+wxStyledTextEvent.GetFoldLevelNow,0,0,0,int,						int wxStyledTextEvent.GetFoldLevelNow ( )
+wxStyledTextEvent.GetFoldLevelPrev,0,0,0,int,						int wxStyledTextEvent.GetFoldLevelPrev ( )
+wxStyledTextEvent.GetKey,0,0,0,int,						int wxStyledTextEvent.GetKey ( )
+wxStyledTextEvent.GetLength,0,0,0,int,						int wxStyledTextEvent.GetLength ( )
+wxStyledTextEvent.GetLine,0,0,0,int,						int wxStyledTextEvent.GetLine ( )
+wxStyledTextEvent.GetLinesAdded,0,0,0,int,						int wxStyledTextEvent.GetLinesAdded ( )
+wxStyledTextEvent.GetListCompletionMethod,0,0,0,int,						int wxStyledTextEvent.GetListCompletionMethod ( )
+wxStyledTextEvent.GetListType,0,0,0,int,						int wxStyledTextEvent.GetListType ( )
+wxStyledTextEvent.GetLParam,0,0,0,int,						int wxStyledTextEvent.GetLParam ( )
+wxStyledTextEvent.GetMargin,0,0,0,int,						int wxStyledTextEvent.GetMargin ( )
+wxStyledTextEvent.GetMessage,0,0,0,int,						int wxStyledTextEvent.GetMessage ( )
+wxStyledTextEvent.GetModificationType,0,0,0,int,						int wxStyledTextEvent.GetModificationType ( )
+wxStyledTextEvent.GetModifiers,0,0,0,int,						int wxStyledTextEvent.GetModifiers ( )
+wxStyledTextEvent.GetPosition,0,0,0,int,						int wxStyledTextEvent.GetPosition ( )
+wxStyledTextEvent.GetShift,0,0,0,bool,						bool wxStyledTextEvent.GetShift ( )
+wxStyledTextEvent.GetText,0,0,0,wxString,						wxString wxStyledTextEvent.GetText ( )
+wxStyledTextEvent.GetToken,0,0,0,int,						int wxStyledTextEvent.GetToken ( )
+wxStyledTextEvent.GetUpdated,0,0,0,int,						int wxStyledTextEvent.GetUpdated ( )
+wxStyledTextEvent.GetWParam,0,0,0,int,						int wxStyledTextEvent.GetWParam ( )
+wxStyledTextEvent.GetX,0,0,0,int,						int wxStyledTextEvent.GetX ( )
+wxStyledTextEvent.GetY,0,0,0,int,						int wxStyledTextEvent.GetY ( )
+wxStyledTextEvent.SetAnnotationLinesAdded,0,0,1,void,						void wxStyledTextEvent.SetAnnotationLinesAdded ( int val)
+wxStyledTextEvent.SetDragFlags,0,0,1,void,						void wxStyledTextEvent.SetDragFlags ( int flags)
+wxStyledTextEvent.SetDragResult,0,0,1,void,						void wxStyledTextEvent.SetDragResult ( wxDragResult val)
+wxStyledTextEvent.SetDragText,0,0,1,void,						void wxStyledTextEvent.SetDragText (  wxString & val)
+wxStyledTextEvent.SetFoldLevelNow,0,0,1,void,						void wxStyledTextEvent.SetFoldLevelNow ( int val)
+wxStyledTextEvent.SetFoldLevelPrev,0,0,1,void,						void wxStyledTextEvent.SetFoldLevelPrev ( int val)
+wxStyledTextEvent.SetKey,0,0,1,void,						void wxStyledTextEvent.SetKey ( int k)
+wxStyledTextEvent.SetLength,0,0,1,void,						void wxStyledTextEvent.SetLength ( int len)
+wxStyledTextEvent.SetLine,0,0,1,void,						void wxStyledTextEvent.SetLine ( int val)
+wxStyledTextEvent.SetLinesAdded,0,0,1,void,						void wxStyledTextEvent.SetLinesAdded ( int num)
+wxStyledTextEvent.SetListCompletionMethod,0,0,1,void,						void wxStyledTextEvent.SetListCompletionMethod ( int val)
+wxStyledTextEvent.SetListType,0,0,1,void,						void wxStyledTextEvent.SetListType ( int val)
+wxStyledTextEvent.SetLParam,0,0,1,void,						void wxStyledTextEvent.SetLParam ( int val)
+wxStyledTextEvent.SetMargin,0,0,1,void,						void wxStyledTextEvent.SetMargin ( int val)
+wxStyledTextEvent.SetMessage,0,0,1,void,						void wxStyledTextEvent.SetMessage ( int val)
+wxStyledTextEvent.SetModificationType,0,0,1,void,						void wxStyledTextEvent.SetModificationType ( int t)
+wxStyledTextEvent.SetModifiers,0,0,1,void,						void wxStyledTextEvent.SetModifiers ( int m)
+wxStyledTextEvent.SetPosition,0,0,1,void,						void wxStyledTextEvent.SetPosition ( int pos)
+wxStyledTextEvent.SetText,0,0,1,void,						void wxStyledTextEvent.SetText (  wxString & t)
+wxStyledTextEvent.SetToken,0,0,1,void,						void wxStyledTextEvent.SetToken ( int val)
+wxStyledTextEvent.SetUpdated,0,0,1,void,						void wxStyledTextEvent.SetUpdated ( int val)
+wxStyledTextEvent.SetWParam,0,0,1,void,						void wxStyledTextEvent.SetWParam ( int val)
+wxStyledTextEvent.SetX,0,0,1,void,						void wxStyledTextEvent.SetX ( int val)
+wxStyledTextEvent.SetY,0,0,1,void,						void wxStyledTextEvent.SetY ( int val)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

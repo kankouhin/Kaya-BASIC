@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/persist/dataview.h>
+[METHODS]
+wxPersistentDataViewCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPersistentDataViewCtrl.Restore,0,0,0,bool,						bool wxPersistentDataViewCtrl.Restore ( )
+wxPersistentDataViewCtrl.Save,0,0,0,void,						void wxPersistentDataViewCtrl.Save ( )
+[INHERITS]
+wxPersistentWindow< wxDataViewCtrl <
+wxPersistentObject

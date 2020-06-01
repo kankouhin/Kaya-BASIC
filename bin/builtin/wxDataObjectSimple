@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/dataobj.h>
+[METHODS]
+wxDataObjectSimple.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataObjectSimple.GetDataHere,0,0,1,bool,						bool wxDataObjectSimple.GetDataHere ( void * buf)
+wxDataObjectSimple.GetDataSize,0,0,0,size_t,						size_t wxDataObjectSimple.GetDataSize ( )
+wxDataObjectSimple.GetFormat,0,0,0,wxDataFormat,						wxDataFormat&  wxDataObjectSimple.GetFormat ( )
+wxDataObjectSimple.SetData,0,0,2,bool,						bool wxDataObjectSimple.SetData ( size_t len,      void * buf    )
+wxDataObjectSimple.SetFormat,0,0,1,void,						void wxDataObjectSimple.SetFormat (  wxDataFormat & format)
+[INHERITS]
+wxDataObject

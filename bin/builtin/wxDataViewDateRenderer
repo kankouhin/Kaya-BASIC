@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewDateRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewDateRenderer.GetDefaultType,1,0,0,wxString,						static wxString wxDataViewDateRenderer.GetDefaultType ( )
+[INHERITS]
+wxDataViewRenderer
+wxObject

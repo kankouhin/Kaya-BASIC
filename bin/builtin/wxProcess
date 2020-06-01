@@ -1,0 +1,25 @@
+[CONSTS]
+wxEVT_END_PROCESS
+[HEADER]
+<wx/process.h>
+[METHODS]
+wxProcess.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxProcess.Activate,0,0,0,bool,						bool wxProcess.Activate ( )
+wxProcess.CloseOutput,0,0,0,void,						void wxProcess.CloseOutput ( )
+wxProcess.Detach,0,0,0,void,						void wxProcess.Detach ( )
+wxProcess.Exists,1,0,1,bool,						static bool wxProcess.Exists ( int pid)
+wxProcess.GetErrorStream,0,1,0,wxInputStream,						wxInputStream* wxProcess.GetErrorStream ( )
+wxProcess.GetInputStream,0,1,0,wxInputStream,						wxInputStream* wxProcess.GetInputStream ( )
+wxProcess.GetOutputStream,0,1,0,wxOutputStream,						wxOutputStream* wxProcess.GetOutputStream ( )
+wxProcess.GetPid,0,0,0,long,						long wxProcess.GetPid ( )
+wxProcess.IsErrorAvailable,0,0,0,bool,						bool wxProcess.IsErrorAvailable ( )
+wxProcess.IsInputAvailable,0,0,0,bool,						bool wxProcess.IsInputAvailable ( )
+wxProcess.IsInputOpened,0,0,0,bool,						bool wxProcess.IsInputOpened ( )
+wxProcess.Kill,1,0,3,wxKillError,						static wxKillError wxProcess.Kill ( int pid,     wxSignal sig = wxSIGTERM,     int flags = wxKILL_NOCHILDREN    )
+wxProcess.OnTerminate,0,0,2,void,						void wxProcess.OnTerminate ( int pid,     int status    )
+wxProcess.Open,1,1,2,wxProcess,						static wxProcess* wxProcess.Open (  wxString & cmd,     int flags = wxEXEC_ASYNC    )
+wxProcess.Redirect,0,0,0,void,						void wxProcess.Redirect ( )
+wxProcess.SetPriority,0,0,1,void,						void wxProcess.SetPriority ( unsigned priority)
+[INHERITS]
+wxEvtHandler
+wxObject

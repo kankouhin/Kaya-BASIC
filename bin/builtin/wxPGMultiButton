@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/editors.h>
+[METHODS]
+wxPGMultiButton.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGMultiButton.Add,0,0,2,void,						void wxPGMultiButton.Add (  wxString & label,     int id = -2    )
+wxPGMultiButton.Add,0,0,2,void,						void wxPGMultiButton.Add (  wxBitmap & bitmap,     int id = -2    )
+wxPGMultiButton.Finalize,0,0,2,void,						void wxPGMultiButton.Finalize ( wxPropertyGrid * propGrid,      wxPoint & pos    )
+wxPGMultiButton.GetButton,0,1,1,wxWindow,						wxWindow* wxPGMultiButton.GetButton ( unsigned int i)
+wxPGMultiButton.GetButtonId,0,0,1,int,						int wxPGMultiButton.GetButtonId ( unsigned int i)
+wxPGMultiButton.GetCount,0,0,0,int,						unsigned int wxPGMultiButton.GetCount ( )
+wxPGMultiButton.GetPrimarySize,0,0,0,wxSize,						wxSize wxPGMultiButton.GetPrimarySize ( )
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

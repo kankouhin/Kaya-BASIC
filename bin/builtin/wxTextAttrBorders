@@ -1,0 +1,30 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxTextAttrBorders.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextAttrBorders.Apply,0,0,2,bool,						bool wxTextAttrBorders.Apply (  wxTextAttrBorders & borders,      wxTextAttrBorders * compareWith = NULL    )
+wxTextAttrBorders.CollectCommonAttributes,0,0,3,void,						void wxTextAttrBorders.CollectCommonAttributes (  wxTextAttrBorders & attr,     wxTextAttrBorders & clashingAttr,     wxTextAttrBorders & absentAttr    )
+wxTextAttrBorders.EqPartial,0,0,2,bool,						bool wxTextAttrBorders.EqPartial (  wxTextAttrBorders & borders,     bool weakTest = true    )
+wxTextAttrBorders.GetBottom,0,0,0,wxTextAttrBorder,						wxTextAttrBorder&  wxTextAttrBorders.GetBottom ( )
+wxTextAttrBorders.GetBottom,0,0,0,wxTextAttrBorder,						wxTextAttrBorder&  wxTextAttrBorders.GetBottom ( )
+wxTextAttrBorders.GetLeft,0,0,0,wxTextAttrBorder,						wxTextAttrBorder&  wxTextAttrBorders.GetLeft ( )
+wxTextAttrBorders.GetLeft,0,0,0,wxTextAttrBorder,						wxTextAttrBorder&  wxTextAttrBorders.GetLeft ( )
+wxTextAttrBorders.GetRight,0,0,0,wxTextAttrBorder,						wxTextAttrBorder&  wxTextAttrBorders.GetRight ( )
+wxTextAttrBorders.GetRight,0,0,0,wxTextAttrBorder,						wxTextAttrBorder&  wxTextAttrBorders.GetRight ( )
+wxTextAttrBorders.GetTop,0,0,0,wxTextAttrBorder,						wxTextAttrBorder&  wxTextAttrBorders.GetTop ( )
+wxTextAttrBorders.GetTop,0,0,0,wxTextAttrBorder,						wxTextAttrBorder&  wxTextAttrBorders.GetTop ( )
+wxTextAttrBorders.IsValid,0,0,0,bool,						bool wxTextAttrBorders.IsValid ( )
+wxTextAttrBorders.operator==,0,0,1,bool,						bool wxTextAttrBorders.operator== (  wxTextAttrBorders & borders)
+wxTextAttrBorders.RemoveStyle,0,0,1,bool,						bool wxTextAttrBorders.RemoveStyle (  wxTextAttrBorders & attr)
+wxTextAttrBorders.Reset,0,0,0,void,						void wxTextAttrBorders.Reset ( )
+wxTextAttrBorders.SetColour,0,0,1,void,						void wxTextAttrBorders.SetColour ( unsigned long colour)
+wxTextAttrBorders.SetColour,0,0,1,void,						void wxTextAttrBorders.SetColour (  wxColour & colour)
+wxTextAttrBorders.SetStyle,0,0,1,void,						void wxTextAttrBorders.SetStyle ( int style)
+wxTextAttrBorders.SetWidth,0,0,1,void,						void wxTextAttrBorders.SetWidth (  wxTextAttrDimension & width)
+wxTextAttrBorders.SetWidth,0,0,2,void,						void wxTextAttrBorders.SetWidth ( int value,     wxTextAttrUnits units = wxTEXT_ATTR_UNITS_TENTHS_MM    )
+wxTextAttrBorders.m_bottom,0,0,-1,wxTextAttrBorder,						wxTextAttrBorder wxTextAttrBorders.m_bottom
+wxTextAttrBorders.m_left,0,0,-1,wxTextAttrBorder,						wxTextAttrBorder wxTextAttrBorders.m_left
+wxTextAttrBorders.m_right,0,0,-1,wxTextAttrBorder,						wxTextAttrBorder wxTextAttrBorders.m_right
+wxTextAttrBorders.m_top,0,0,-1,wxTextAttrBorder,						wxTextAttrBorder wxTextAttrBorders.m_top
+[INHERITS]

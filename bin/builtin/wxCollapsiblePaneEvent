@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/collpane.h>
+[METHODS]
+wxCollapsiblePaneEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCollapsiblePaneEvent.GetCollapsed,0,0,0,bool,						bool wxCollapsiblePaneEvent.GetCollapsed ( )
+wxCollapsiblePaneEvent.SetCollapsed,0,0,1,void,						void wxCollapsiblePaneEvent.SetCollapsed ( bool collapsed)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

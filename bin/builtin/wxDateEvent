@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/dateevt.h>
+[METHODS]
+wxDateEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDateEvent.GetDate,0,0,0,wxDateTime,						wxDateTime&  wxDateEvent.GetDate ( )
+wxDateEvent.SetDate,0,0,1,void,						void wxDateEvent.SetDate (  wxDateTime & date)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

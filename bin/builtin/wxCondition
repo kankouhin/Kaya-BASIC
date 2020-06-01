@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/thread.h>
+[METHODS]
+wxCondition.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCondition.Broadcast,0,0,0,wxCondError,						wxCondError wxCondition.Broadcast ( )
+wxCondition.IsOk,0,0,0,bool,						bool wxCondition.IsOk ( )
+wxCondition.Signal,0,0,0,wxCondError,						wxCondError wxCondition.Signal ( )
+wxCondition.Wait,0,0,0,wxCondError,						wxCondError wxCondition.Wait ( )
+wxCondition.Wait,0,0,1,wxCondError,						wxCondError wxCondition.Wait (  Functor & predicate)
+wxCondition.WaitTimeout,0,0,1,wxCondError,						wxCondError wxCondition.WaitTimeout ( unsigned long milliseconds)
+[INHERITS]

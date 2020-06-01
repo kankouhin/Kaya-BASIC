@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/generic/aboutdlgg.h>
+[METHODS]
+wxGenericAboutDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGenericAboutDialog.AddCollapsiblePane,0,0,2,void,						void wxGenericAboutDialog.AddCollapsiblePane (  wxString & title,      wxString & text    )
+wxGenericAboutDialog.AddControl,0,0,2,void,						void wxGenericAboutDialog.AddControl ( wxWindow * win,      wxSizerFlags & flags    )
+wxGenericAboutDialog.AddControl,0,0,1,void,						void wxGenericAboutDialog.AddControl ( wxWindow * win)
+wxGenericAboutDialog.AddText,0,0,1,void,						void wxGenericAboutDialog.AddText (  wxString & text)
+wxGenericAboutDialog.Create,0,0,2,bool,						bool wxGenericAboutDialog.Create (  wxAboutDialogInfo & info,     wxWindow * parent = NULL    )
+wxGenericAboutDialog.DoAddCustomControls,0,0,0,void,						void wxGenericAboutDialog.DoAddCustomControls ( )
+[INHERITS]

@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/editors.h>
+[METHODS]
+wxPGComboBoxEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGComboBoxEditor.CreateControls,0,0,4,wxPGWindowList,						wxPGWindowList wxPGComboBoxEditor.CreateControls ( wxPropertyGrid * propgrid,     wxPGProperty * property,      wxPoint & pos,      wxSize & size    )
+wxPGComboBoxEditor.GetName,0,0,0,wxString,						wxString wxPGComboBoxEditor.GetName ( )
+wxPGComboBoxEditor.GetValueFromControl,0,0,3,bool,						bool wxPGComboBoxEditor.GetValueFromControl ( wxVariant & variant,     wxPGProperty * property,     wxWindow * ctrl    )
+wxPGComboBoxEditor.OnEvent,0,0,4,bool,						bool wxPGComboBoxEditor.OnEvent ( wxPropertyGrid * propgrid,     wxPGProperty * property,     wxWindow * wnd_primary,     wxEvent & event    )
+wxPGComboBoxEditor.OnFocus,0,0,2,void,						void wxPGComboBoxEditor.OnFocus ( wxPGProperty * property,     wxWindow * wnd    )
+wxPGComboBoxEditor.UpdateControl,0,0,2,void,						void wxPGComboBoxEditor.UpdateControl ( wxPGProperty * property,     wxWindow * ctrl    )
+[INHERITS]
+wxPGChoiceEditor
+wxPGEditor
+wxObject

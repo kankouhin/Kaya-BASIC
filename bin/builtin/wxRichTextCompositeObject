@@ -1,0 +1,33 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextCompositeObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextCompositeObject.AppendChild,0,0,1,size_t,						size_t wxRichTextCompositeObject.AppendChild ( wxRichTextObject * child)
+wxRichTextCompositeObject.CalculateRange,0,0,2,void,						void wxRichTextCompositeObject.CalculateRange ( long start,     long & end    )
+wxRichTextCompositeObject.Copy,0,0,1,void,						void wxRichTextCompositeObject.Copy (  wxRichTextCompositeObject & obj)
+wxRichTextCompositeObject.Defragment,0,0,2,bool,						bool wxRichTextCompositeObject.Defragment ( wxRichTextDrawingContext & context,      wxRichTextRange & range = wxRICHTEXT_ALL    )
+wxRichTextCompositeObject.DeleteChildren,0,0,0,bool,						bool wxRichTextCompositeObject.DeleteChildren ( )
+wxRichTextCompositeObject.DeleteRange,0,0,1,bool,						bool wxRichTextCompositeObject.DeleteRange (  wxRichTextRange & range)
+wxRichTextCompositeObject.Dump,0,0,1,void,						void wxRichTextCompositeObject.Dump ( wxTextOutputStream & stream)
+wxRichTextCompositeObject.FindPosition,0,0,6,bool,						bool wxRichTextCompositeObject.FindPosition ( wxDC & dc,     wxRichTextDrawingContext & context,     long index,     wxPoint & pt,     int * height,     bool forceLineStart    )
+wxRichTextCompositeObject.GetChild,0,1,1,wxRichTextObject,						wxRichTextObject* wxRichTextCompositeObject.GetChild ( size_t n)
+wxRichTextCompositeObject.GetChildAtPosition,0,1,1,wxRichTextObject,						wxRichTextObject* wxRichTextCompositeObject.GetChildAtPosition ( long pos)
+wxRichTextCompositeObject.GetChildCount,0,0,0,size_t,						size_t wxRichTextCompositeObject.GetChildCount ( )
+wxRichTextCompositeObject.GetChildren,0,0,0,wxRichTextObjectList,						wxRichTextObjectList&  wxRichTextCompositeObject.GetChildren ( )
+wxRichTextCompositeObject.GetChildren,0,0,0,wxRichTextObjectList,						wxRichTextObjectList&  wxRichTextCompositeObject.GetChildren ( )
+wxRichTextCompositeObject.GetRangeSize,0,0,9,bool,						bool wxRichTextCompositeObject.GetRangeSize (  wxRichTextRange & range,     wxSize & size,     int & descent,     wxDC & dc,     wxRichTextDrawingContext & context,     int flags,      wxPoint & position = wxPoint(0, 0),      wxSize & parentSize = wxDefaultSize,     wxArrayInt * partialExtents = NULL    )
+wxRichTextCompositeObject.GetTextForRange,0,0,1,wxString,						wxString wxRichTextCompositeObject.GetTextForRange (  wxRichTextRange & range)
+wxRichTextCompositeObject.HitTest,0,0,7,int,						int wxRichTextCompositeObject.HitTest ( wxDC & dc,     wxRichTextDrawingContext & context,      wxPoint & pt,     long & textPosition,     wxRichTextObject ** obj,     wxRichTextObject ** contextObj,     int flags = 0    )
+wxRichTextCompositeObject.InsertChild,0,0,2,bool,						bool wxRichTextCompositeObject.InsertChild ( wxRichTextObject * child,     wxRichTextObject * inFrontOf    )
+wxRichTextCompositeObject.Invalidate,0,0,1,void,						void wxRichTextCompositeObject.Invalidate (  wxRichTextRange & invalidRange = wxRICHTEXT_ALL)
+wxRichTextCompositeObject.IsAtomic,0,0,0,bool,						bool wxRichTextCompositeObject.IsAtomic ( )
+wxRichTextCompositeObject.IsComposite,0,0,0,bool,						bool wxRichTextCompositeObject.IsComposite ( )
+wxRichTextCompositeObject.IsEmpty,0,0,0,bool,						bool wxRichTextCompositeObject.IsEmpty ( )
+wxRichTextCompositeObject.Move,0,0,1,void,						void wxRichTextCompositeObject.Move (  wxPoint & pt)
+wxRichTextCompositeObject.operator=,0,0,1,void,						void wxRichTextCompositeObject.operator= (  wxRichTextCompositeObject & obj)
+wxRichTextCompositeObject.RemoveChild,0,0,2,bool,						bool wxRichTextCompositeObject.RemoveChild ( wxRichTextObject * child,     bool deleteChild = false    )
+wxRichTextCompositeObject.m_children,0,0,-1,wxRichTextObjectList,						wxRichTextObjectList wxRichTextCompositeObject.m_children
+[INHERITS]
+wxRichTextObject
+wxObject

@@ -1,0 +1,33 @@
+[CONSTS]
+wxEVT_ACTIVATE_APP
+wxEVT_IDLE
+[HEADER]
+<wx/app.h>
+[METHODS]
+wxApp.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxApp.GetDisplayMode,0,0,0,wxVideoMode,						wxVideoMode wxApp.GetDisplayMode ( )
+wxApp.GetExitOnFrameDelete,0,0,0,bool,						bool wxApp.GetExitOnFrameDelete ( )
+wxApp.GetLayoutDirection,0,0,0,wxLayoutDirection,						wxLayoutDirection wxApp.GetLayoutDirection ( )
+wxApp.GetTopWindow,0,1,0,wxWindow,						wxWindow* wxApp.GetTopWindow ( )
+wxApp.GetUseBestVisual,0,0,0,bool,						bool wxApp.GetUseBestVisual ( )
+wxApp.IsActive,0,0,0,bool,						bool wxApp.IsActive ( )
+wxApp.MacNewFile,0,0,0,void,						void wxApp.MacNewFile ( )
+wxApp.MacOpenFile,0,0,1,void,						void wxApp.MacOpenFile (  wxString & fileName)
+wxApp.MacOpenFiles,0,0,1,void,						void wxApp.MacOpenFiles (  wxArrayString & fileNames)
+wxApp.MacOpenURL,0,0,1,void,						void wxApp.MacOpenURL (  wxString & url)
+wxApp.MacPrintFile,0,0,1,void,						void wxApp.MacPrintFile (  wxString & fileName)
+wxApp.MacReopenApp,0,0,0,void,						void wxApp.MacReopenApp ( )
+wxApp.OSXIsGUIApplication,0,0,0,bool,						bool wxApp.OSXIsGUIApplication ( )
+wxApp.ProcessMessage,0,0,1,bool,						bool wxApp.ProcessMessage ( WXMSG * msg)
+wxApp.SafeYield,0,0,2,bool,						bool wxApp.SafeYield ( wxWindow * win,     bool onlyIfNeeded    )
+wxApp.SafeYieldFor,0,0,2,bool,						bool wxApp.SafeYieldFor ( wxWindow * win,     long eventsToProcess    )
+wxApp.SetDisplayMode,0,0,1,bool,						bool wxApp.SetDisplayMode (  wxVideoMode & info)
+wxApp.SetExitOnFrameDelete,0,0,1,void,						void wxApp.SetExitOnFrameDelete ( bool flag)
+wxApp.SetNativeTheme,0,0,1,bool,						bool wxApp.SetNativeTheme (  wxString & theme)
+wxApp.SetTopWindow,0,0,1,void,						void wxApp.SetTopWindow ( wxWindow * window)
+wxApp.SetUseBestVisual,0,0,2,void,						void wxApp.SetUseBestVisual ( bool flag,     bool forceTrueColour = false    )
+[INHERITS]
+wxAppConsole
+wxEvtHandler
+wxObject
+wxEventFilter

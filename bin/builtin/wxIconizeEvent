@@ -1,0 +1,11 @@
+[CONSTS]
+wxEVT_ICONIZE
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxIconizeEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxIconizeEvent.Iconized,0,0,0,bool,						bool wxIconizeEvent.Iconized ( )
+wxIconizeEvent.IsIconized,0,0,0,bool,						bool wxIconizeEvent.IsIconized ( )
+[INHERITS]
+wxEvent
+wxObject

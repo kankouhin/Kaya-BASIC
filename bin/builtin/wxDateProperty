@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/advprops.h>
+[METHODS]
+wxDateProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDateProperty.DetermineDefaultDateFormat,1,0,1,wxString,						static wxString wxDateProperty.DetermineDefaultDateFormat ( bool showCentury)
+wxDateProperty.DoSetAttribute,0,0,2,bool,						bool wxDateProperty.DoSetAttribute (  wxString & name,     wxVariant & value    )
+wxDateProperty.GetDatePickerStyle,0,0,0,long,						long wxDateProperty.GetDatePickerStyle ( )
+wxDateProperty.GetDateValue,0,0,0,wxDateTime,						wxDateTime wxDateProperty.GetDateValue ( )
+wxDateProperty.GetFormat,0,0,0,wxString,						wxString&  wxDateProperty.GetFormat ( )
+wxDateProperty.OnSetValue,0,0,0,void,						void wxDateProperty.OnSetValue ( )
+wxDateProperty.SetDateValue,0,0,1,void,						void wxDateProperty.SetDateValue (  wxDateTime & dt)
+wxDateProperty.SetFormat,0,0,1,void,						void wxDateProperty.SetFormat (  wxString & format)
+wxDateProperty.StringToValue,0,0,3,bool,						bool wxDateProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags = 0    )
+wxDateProperty.ValueToString,0,0,2,wxString,						wxString wxDateProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+wxDateProperty.m_dpStyle,0,0,-1,long,						long wxDateProperty.m_dpStyle
+wxDateProperty.m_format,0,0,-1,wxString,						wxString wxDateProperty.m_format
+wxDateProperty.ms_defaultDateFormat,0,0,-1,wxString,						wxString wxDateProperty.ms_defaultDateFormat
+[INHERITS]
+wxPGProperty
+wxObject

@@ -1,0 +1,24 @@
+[CONSTS]
+[HEADER]
+<wx/vscroll.h>
+[METHODS]
+wxVarHVScrollHelper.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxVarHVScrollHelper.EnablePhysicalScrolling,0,0,2,void,						void wxVarHVScrollHelper.EnablePhysicalScrolling ( bool vscrolling = true,     bool hscrolling = true    )
+wxVarHVScrollHelper.GetRowColumnCount,0,0,0,wxSize,						wxSize wxVarHVScrollHelper.GetRowColumnCount ( )
+wxVarHVScrollHelper.GetVisibleBegin,0,0,0,wxPosition,						wxPosition wxVarHVScrollHelper.GetVisibleBegin ( )
+wxVarHVScrollHelper.GetVisibleEnd,0,0,0,wxPosition,						wxPosition wxVarHVScrollHelper.GetVisibleEnd ( )
+wxVarHVScrollHelper.IsVisible,0,0,2,bool,						bool wxVarHVScrollHelper.IsVisible ( size_t row,     size_t column    )
+wxVarHVScrollHelper.IsVisible,0,0,1,bool,						bool wxVarHVScrollHelper.IsVisible (  wxPosition & pos)
+wxVarHVScrollHelper.RefreshRowColumn,0,0,2,void,						void wxVarHVScrollHelper.RefreshRowColumn ( size_t row,     size_t column    )
+wxVarHVScrollHelper.RefreshRowColumn,0,0,1,void,						void wxVarHVScrollHelper.RefreshRowColumn (  wxPosition & pos)
+wxVarHVScrollHelper.RefreshRowsColumns,0,0,4,void,						void wxVarHVScrollHelper.RefreshRowsColumns ( size_t fromRow,     size_t toRow,     size_t fromColumn,     size_t toColumn    )
+wxVarHVScrollHelper.RefreshRowsColumns,0,0,2,void,						void wxVarHVScrollHelper.RefreshRowsColumns (  wxPosition & from,      wxPosition & to    )
+wxVarHVScrollHelper.ScrollToRowColumn,0,0,2,bool,						bool wxVarHVScrollHelper.ScrollToRowColumn ( size_t row,     size_t column    )
+wxVarHVScrollHelper.ScrollToRowColumn,0,0,1,bool,						bool wxVarHVScrollHelper.ScrollToRowColumn (  wxPosition & pos)
+wxVarHVScrollHelper.SetRowColumnCount,0,0,2,void,						void wxVarHVScrollHelper.SetRowColumnCount ( size_t rowCount,     size_t columnCount    )
+wxVarHVScrollHelper.VirtualHitTest,0,0,2,wxPosition,						wxPosition wxVarHVScrollHelper.VirtualHitTest ( wxCoord x,     wxCoord y    )
+wxVarHVScrollHelper.VirtualHitTest,0,0,1,wxPosition,						wxPosition wxVarHVScrollHelper.VirtualHitTest (  wxPoint & pos)
+[INHERITS]
+wxVarVScrollHelper
+wxVarScrollHelperBase
+wxVarHScrollHelper

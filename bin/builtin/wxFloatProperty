@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxFloatProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFloatProperty.AddSpinStepValue,0,0,1,wxVariant,						wxVariant wxFloatProperty.AddSpinStepValue ( long stepScale)
+wxFloatProperty.DoGetValidator,0,1,0,wxValidator,						wxValidator* wxFloatProperty.DoGetValidator ( )
+wxFloatProperty.DoSetAttribute,0,0,2,bool,						bool wxFloatProperty.DoSetAttribute (  wxString & name,     wxVariant & value    )
+wxFloatProperty.GetClassValidator,1,1,0,wxValidator,						static wxValidator* wxFloatProperty.GetClassValidator ( )
+wxFloatProperty.StringToValue,0,0,3,bool,						bool wxFloatProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags = 0    )
+wxFloatProperty.ValidateValue,0,0,2,bool,						bool wxFloatProperty.ValidateValue ( wxVariant & value,     wxPGValidationInfo & validationInfo    )
+wxFloatProperty.ValueToString,0,0,2,wxString,						wxString wxFloatProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+wxFloatProperty.m_precision,0,0,-1,int,						int wxFloatProperty.m_precision
+[INHERITS]
+wxNumericProperty
+wxPGProperty
+wxObject

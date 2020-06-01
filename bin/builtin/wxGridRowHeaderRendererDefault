@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridRowHeaderRendererDefault.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridRowHeaderRendererDefault.DrawBorder,0,0,3,void,						void wxGridRowHeaderRendererDefault.DrawBorder (  wxGrid & grid,     wxDC & dc,     wxRect & rect    )
+[INHERITS]
+wxGridHeaderLabelsRenderer

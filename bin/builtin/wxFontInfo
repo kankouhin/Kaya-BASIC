@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/font.h>
+[METHODS]
+wxFontInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFontInfo.AllFlags,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.AllFlags ( int flags)
+wxFontInfo.AntiAliased,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.AntiAliased ( bool antiAliased = true)
+wxFontInfo.Bold,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.Bold ( bool bold = true)
+wxFontInfo.Encoding,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.Encoding ( wxFontEncoding encoding)
+wxFontInfo.FaceName,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.FaceName (  wxString & faceName)
+wxFontInfo.Family,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.Family ( wxFontFamily family)
+wxFontInfo.GetWeightClosestToNumericValue,1,0,1,wxFontWeight,						static wxFontWeight wxFontInfo.GetWeightClosestToNumericValue ( int numWeight)
+wxFontInfo.Italic,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.Italic ( bool italic = true)
+wxFontInfo.Light,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.Light ( bool light = true)
+wxFontInfo.Slant,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.Slant ( bool slant = true)
+wxFontInfo.Strikethrough,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.Strikethrough ( bool strikethrough = true)
+wxFontInfo.Style,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.Style ( wxFontStyle style)
+wxFontInfo.Underlined,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.Underlined ( bool underlined = true)
+wxFontInfo.Weight,0,0,1,wxFontInfo,						wxFontInfo&  wxFontInfo.Weight ( int weight)
+[INHERITS]

@@ -1,0 +1,45 @@
+[CONSTS]
+wxRIBBON_BAR_DEFAULT_STYLE
+wxRIBBON_BAR_FOLDBAR_STYLE
+wxRIBBON_BAR_SHOW_PAGE_LABELS
+wxRIBBON_BAR_SHOW_PAGE_ICONS
+wxRIBBON_BAR_FLOW_HORIZONTAL
+wxRIBBON_BAR_FLOW_VERTICAL
+wxRIBBON_BAR_SHOW_PANEL_EXT_BUTTONS
+wxRIBBON_BAR_SHOW_PANEL_MINIMISE_BUTTONS
+wxRIBBON_BAR_SHOW_TOGGLE_BUTTON
+wxRIBBON_BAR_SHOW_HELP_BUTTON
+[HEADER]
+<wx/ribbon/bar.h>
+[METHODS]
+wxRibbonBar.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonBar.AddPageHighlight,0,0,2,void,						void wxRibbonBar.AddPageHighlight ( size_t page,     bool highlight = true    )
+wxRibbonBar.ArePanelsShown,0,0,0,bool,						bool wxRibbonBar.ArePanelsShown ( )
+wxRibbonBar.ClearPages,0,0,0,void,						void wxRibbonBar.ClearPages ( )
+wxRibbonBar.Create,0,0,5,bool,						bool wxRibbonBar.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxRIBBON_BAR_DEFAULT_STYLE    )
+wxRibbonBar.DeletePage,0,0,1,void,						void wxRibbonBar.DeletePage ( size_t n)
+wxRibbonBar.DismissExpandedPanel,0,0,0,bool,						bool wxRibbonBar.DismissExpandedPanel ( )
+wxRibbonBar.GetActivePage,0,0,0,int,						int wxRibbonBar.GetActivePage ( )
+wxRibbonBar.GetDisplayMode,0,0,0,wxRibbonDisplayMode,						wxRibbonDisplayMode wxRibbonBar.GetDisplayMode ( )
+wxRibbonBar.GetPage,0,1,1,wxRibbonPage,						wxRibbonPage* wxRibbonBar.GetPage ( int n)
+wxRibbonBar.GetPageCount,0,0,0,size_t,						size_t wxRibbonBar.GetPageCount ( )
+wxRibbonBar.GetPageNumber,0,0,1,int,						int wxRibbonBar.GetPageNumber ( wxRibbonPage * page)
+wxRibbonBar.HidePage,0,0,1,void,						void wxRibbonBar.HidePage ( size_t page)
+wxRibbonBar.HidePanels,0,0,0,void,						void wxRibbonBar.HidePanels ( )
+wxRibbonBar.IsPageHighlighted,0,0,1,bool,						bool wxRibbonBar.IsPageHighlighted ( size_t page)
+wxRibbonBar.IsPageShown,0,0,1,bool,						bool wxRibbonBar.IsPageShown ( size_t page)
+wxRibbonBar.Realize,0,0,0,bool,						bool wxRibbonBar.Realize ( )
+wxRibbonBar.RemovePageHighlight,0,0,1,void,						void wxRibbonBar.RemovePageHighlight ( size_t page)
+wxRibbonBar.SetActivePage,0,0,1,bool,						bool wxRibbonBar.SetActivePage ( size_t page)
+wxRibbonBar.SetActivePage,0,0,1,bool,						bool wxRibbonBar.SetActivePage ( wxRibbonPage * page)
+wxRibbonBar.SetArtProvider,0,0,1,void,						void wxRibbonBar.SetArtProvider ( wxRibbonArtProvider * art)
+wxRibbonBar.SetTabCtrlMargins,0,0,2,void,						void wxRibbonBar.SetTabCtrlMargins ( int left,     int right    )
+wxRibbonBar.ShowPage,0,0,2,void,						void wxRibbonBar.ShowPage ( size_t page,     bool show_tab = true    )
+wxRibbonBar.ShowPanels,0,0,1,void,						void wxRibbonBar.ShowPanels ( wxRibbonDisplayMode mode)
+wxRibbonBar.ShowPanels,0,0,1,void,						void wxRibbonBar.ShowPanels ( bool show = true)
+[INHERITS]
+wxRibbonControl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

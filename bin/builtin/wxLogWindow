@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/log.h>
+[METHODS]
+wxLogWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxLogWindow.GetFrame,0,1,0,wxFrame,						wxFrame* wxLogWindow.GetFrame ( )
+wxLogWindow.OnFrameClose,0,0,1,bool,						bool wxLogWindow.OnFrameClose ( wxFrame * frame)
+wxLogWindow.OnFrameDelete,0,0,1,void,						void wxLogWindow.OnFrameDelete ( wxFrame * frame)
+wxLogWindow.Show,0,0,1,void,						void wxLogWindow.Show ( bool show = true)
+[INHERITS]
+wxLogInterposer
+wxLogChain
+wxLog

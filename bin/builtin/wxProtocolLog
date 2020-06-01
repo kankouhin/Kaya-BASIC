@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/protocol/log.h>
+[METHODS]
+wxProtocolLog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxProtocolLog.DoLogString,0,0,1,void,						void wxProtocolLog.DoLogString (  wxString & str)
+wxProtocolLog.LogRequest,0,0,1,void,						void wxProtocolLog.LogRequest (  wxString & str)
+wxProtocolLog.LogResponse,0,0,1,void,						void wxProtocolLog.LogResponse (  wxString & str)
+[INHERITS]

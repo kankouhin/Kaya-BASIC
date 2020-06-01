@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/log.h>
+[METHODS]
+wxLogBuffer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxLogBuffer.Flush,0,0,0,void,						void wxLogBuffer.Flush ( )
+wxLogBuffer.GetBuffer,0,0,0,wxString,						wxString&  wxLogBuffer.GetBuffer ( )
+[INHERITS]
+wxLog

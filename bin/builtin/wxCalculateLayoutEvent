@@ -1,0 +1,13 @@
+[CONSTS]
+wxEVT_CALCULATE_LAYOUT
+[HEADER]
+<wx/laywin.h>
+[METHODS]
+wxCalculateLayoutEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCalculateLayoutEvent.GetFlags,0,0,0,int,						int wxCalculateLayoutEvent.GetFlags ( )
+wxCalculateLayoutEvent.GetRect,0,0,0,wxRect,						wxRect wxCalculateLayoutEvent.GetRect ( )
+wxCalculateLayoutEvent.SetFlags,0,0,1,void,						void wxCalculateLayoutEvent.SetFlags ( int flags)
+wxCalculateLayoutEvent.SetRect,0,0,1,void,						void wxCalculateLayoutEvent.SetRect (  wxRect & rect)
+[INHERITS]
+wxEvent
+wxObject

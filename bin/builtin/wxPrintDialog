@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/printdlg.h>
+[METHODS]
+wxPrintDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPrintDialog.GetPrintData,0,0,0,wxPrintData,						wxPrintData&  wxPrintDialog.GetPrintData ( )
+wxPrintDialog.GetPrintDC,0,1,0,wxDC,						wxDC* wxPrintDialog.GetPrintDC ( )
+wxPrintDialog.GetPrintDialogData,0,0,0,wxPrintDialogData,						wxPrintDialogData&  wxPrintDialog.GetPrintDialogData ( )
+wxPrintDialog.ShowModal,0,0,0,int,						int wxPrintDialog.ShowModal ( )
+[INHERITS]
+wxObject

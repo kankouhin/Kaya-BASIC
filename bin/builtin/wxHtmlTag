@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmltag.h>
+[METHODS]
+wxHtmlTag.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlTag.GetAllParams,0,0,0,wxString,						wxString wxHtmlTag.GetAllParams ( )
+wxHtmlTag.GetBeginPos,0,0,0,int,						int wxHtmlTag.GetBeginPos ( )
+wxHtmlTag.GetEndPos1,0,0,0,int,						int wxHtmlTag.GetEndPos1 ( )
+wxHtmlTag.GetEndPos2,0,0,0,int,						int wxHtmlTag.GetEndPos2 ( )
+wxHtmlTag.GetName,0,0,0,wxString,						wxString wxHtmlTag.GetName ( )
+wxHtmlTag.GetParam,0,0,2,wxString,						wxString wxHtmlTag.GetParam (  wxString & par,     bool with_quotes = false    )
+wxHtmlTag.GetParamAsColour,0,0,2,bool,						bool wxHtmlTag.GetParamAsColour (  wxString & par,     wxColour * clr    )
+wxHtmlTag.GetParamAsInt,0,0,2,bool,						bool wxHtmlTag.GetParamAsInt (  wxString & par,     int * value    )
+wxHtmlTag.GetParamAsString,0,0,2,bool,						bool wxHtmlTag.GetParamAsString (  wxString & par,     wxString * value    )
+wxHtmlTag.HasEnding,0,0,0,bool,						bool wxHtmlTag.HasEnding ( )
+wxHtmlTag.HasParam,0,0,1,bool,						bool wxHtmlTag.HasParam (  wxString & par)
+wxHtmlTag.ParseAsColour,1,0,2,bool,						static bool wxHtmlTag.ParseAsColour (  wxString & str,     wxColour * clr    )
+wxHtmlTag.ScanParam,0,0,3,int,						int wxHtmlTag.ScanParam (  wxString & par,      wchar_t * format,     void * value    )
+wxHtmlTag.ScanParam,0,0,3,int,						int wxHtmlTag.ScanParam (  wxString & par,      char * format,     void * value    )
+[INHERITS]

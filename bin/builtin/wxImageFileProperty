@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/advprops.h>
+[METHODS]
+wxImageFileProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxImageFileProperty.OnCustomPaint,0,0,3,void,						void wxImageFileProperty.OnCustomPaint ( wxDC & dc,      wxRect & rect,     wxPGPaintData & paintdata    )
+wxImageFileProperty.OnMeasureImage,0,0,1,wxSize,						wxSize wxImageFileProperty.OnMeasureImage ( int item)
+wxImageFileProperty.OnSetValue,0,0,0,void,						void wxImageFileProperty.OnSetValue ( )
+wxImageFileProperty.m_pBitmap,0,1,-1,wxBitmap,						wxBitmap* wxImageFileProperty.m_pBitmap
+wxImageFileProperty.m_pImage,0,1,-1,wxImage,						wxImage* wxImageFileProperty.m_pImage
+[INHERITS]
+wxFileProperty
+wxEditorDialogProperty
+wxPGProperty
+wxObject

@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/timer.h>
+[METHODS]
+wxTimerEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTimerEvent.GetInterval,0,0,0,int,						int wxTimerEvent.GetInterval ( )
+wxTimerEvent.GetTimer,0,0,0,wxTimer,						wxTimer&  wxTimerEvent.GetTimer ( )
+[INHERITS]
+wxEvent
+wxObject

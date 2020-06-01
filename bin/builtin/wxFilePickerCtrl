@@ -1,0 +1,25 @@
+[CONSTS]
+wxFLP_DEFAULT_STYLE
+wxFLP_USE_TEXTCTRL
+wxFLP_OPEN
+wxFLP_SAVE
+wxFLP_OVERWRITE_PROMPT
+wxFLP_FILE_MUST_EXIST
+wxFLP_CHANGE_DIR
+wxFLP_SMALL
+[HEADER]
+<wx/filepicker.h>
+[METHODS]
+wxFilePickerCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFilePickerCtrl.Create,0,0,10,bool,						bool wxFilePickerCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxString & path = wxEmptyString,      wxString & message = wxFileSelectorPromptStr,      wxString & wildcard = wxFileSelectorDefaultWildcardStr,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxFLP_DEFAULT_STYLE,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxFilePickerCtrlNameStr    )
+wxFilePickerCtrl.GetFileName,0,0,0,wxFileName,						wxFileName wxFilePickerCtrl.GetFileName ( )
+wxFilePickerCtrl.GetPath,0,0,0,wxString,						wxString wxFilePickerCtrl.GetPath ( )
+wxFilePickerCtrl.SetFileName,0,0,1,void,						void wxFilePickerCtrl.SetFileName (  wxFileName & filename)
+wxFilePickerCtrl.SetInitialDirectory,0,0,1,void,						void wxFilePickerCtrl.SetInitialDirectory (  wxString & dir)
+wxFilePickerCtrl.SetPath,0,0,1,void,						void wxFilePickerCtrl.SetPath (  wxString & filename)
+[INHERITS]
+wxPickerBase
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

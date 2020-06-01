@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/aui/dockart.h>
+[METHODS]
+wxAuiDockArt.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiDockArt.DrawBackground,0,0,4,void,						void wxAuiDockArt.DrawBackground ( wxDC & dc,     wxWindow * window,     int orientation,      wxRect & rect    )
+wxAuiDockArt.DrawBorder,0,0,4,void,						void wxAuiDockArt.DrawBorder ( wxDC & dc,     wxWindow * window,      wxRect & rect,     wxAuiPaneInfo & pane    )
+wxAuiDockArt.DrawCaption,0,0,5,void,						void wxAuiDockArt.DrawCaption ( wxDC & dc,     wxWindow * window,      wxString & text,      wxRect & rect,     wxAuiPaneInfo & pane    )
+wxAuiDockArt.DrawGripper,0,0,4,void,						void wxAuiDockArt.DrawGripper ( wxDC & dc,     wxWindow * window,      wxRect & rect,     wxAuiPaneInfo & pane    )
+wxAuiDockArt.DrawPaneButton,0,0,6,void,						void wxAuiDockArt.DrawPaneButton ( wxDC & dc,     wxWindow * window,     int button,     int button_state,      wxRect & rect,     wxAuiPaneInfo & pane    )
+wxAuiDockArt.DrawSash,0,0,4,void,						void wxAuiDockArt.DrawSash ( wxDC & dc,     wxWindow * window,     int orientation,      wxRect & rect    )
+wxAuiDockArt.GetColour,0,0,1,wxColour,						wxColour wxAuiDockArt.GetColour ( int id)
+wxAuiDockArt.GetFont,0,0,1,wxFont,						wxFont wxAuiDockArt.GetFont ( int id)
+wxAuiDockArt.GetMetric,0,0,1,int,						int wxAuiDockArt.GetMetric ( int id)
+wxAuiDockArt.SetColour,0,0,2,void,						void wxAuiDockArt.SetColour ( int id,      wxColour & colour    )
+wxAuiDockArt.SetFont,0,0,2,void,						void wxAuiDockArt.SetFont ( int id,      wxFont & font    )
+wxAuiDockArt.SetMetric,0,0,2,void,						void wxAuiDockArt.SetMetric ( int id,     int new_val    )
+[INHERITS]

@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/mousemanager.h>
+[METHODS]
+wxMouseEventsManager.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMouseEventsManager.Create,0,0,1,bool,						bool wxMouseEventsManager.Create ( wxWindow * win)
+wxMouseEventsManager.MouseClickBegin,0,0,1,void,						void wxMouseEventsManager.MouseClickBegin ( int item)
+wxMouseEventsManager.MouseClickCancelled,0,0,1,void,						void wxMouseEventsManager.MouseClickCancelled ( int item)
+wxMouseEventsManager.MouseClicked,0,0,1,bool,						bool wxMouseEventsManager.MouseClicked ( int item)
+wxMouseEventsManager.MouseDragBegin,0,0,2,bool,						bool wxMouseEventsManager.MouseDragBegin ( int item,      wxPoint & pos    )
+wxMouseEventsManager.MouseDragCancelled,0,0,1,void,						void wxMouseEventsManager.MouseDragCancelled ( int item)
+wxMouseEventsManager.MouseDragEnd,0,0,2,void,						void wxMouseEventsManager.MouseDragEnd ( int item,      wxPoint & pos    )
+wxMouseEventsManager.MouseDragging,0,0,2,void,						void wxMouseEventsManager.MouseDragging ( int item,      wxPoint & pos    )
+wxMouseEventsManager.MouseHitTest,0,0,1,int,						int wxMouseEventsManager.MouseHitTest (  wxPoint & pos)
+[INHERITS]
+wxEvtHandler
+wxObject

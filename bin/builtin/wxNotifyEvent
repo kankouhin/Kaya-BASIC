@@ -1,9 +1,11 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/event.h>
-Allow,0,0,0,void,						void Allow ( )
-IsAllowed,0,0,0,bool,						bool IsAllowed ( )
-Veto,0,0,0,void,						void Veto ( )
+[METHODS]
+wxNotifyEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxNotifyEvent.Allow,0,0,0,void,						void wxNotifyEvent.Allow ( )
+wxNotifyEvent.IsAllowed,0,0,0,bool,						bool wxNotifyEvent.IsAllowed ( )
+wxNotifyEvent.Veto,0,0,0,void,						void wxNotifyEvent.Veto ( )
 [INHERITS]
 wxCommandEvent
 wxEvent

@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlcell.h>
+[METHODS]
+wxHtmlLinkInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlLinkInfo.GetEvent,0,1,0,wxMouseEvent,						wxMouseEvent* wxHtmlLinkInfo.GetEvent ( )
+wxHtmlLinkInfo.GetHref,0,0,0,wxString,						wxString wxHtmlLinkInfo.GetHref ( )
+wxHtmlLinkInfo.GetHtmlCell,0,1,0,wxHtmlCell,						wxHtmlCell* wxHtmlLinkInfo.GetHtmlCell ( )
+wxHtmlLinkInfo.GetTarget,0,0,0,wxString,						wxString wxHtmlLinkInfo.GetTarget ( )
+[INHERITS]
+wxObject

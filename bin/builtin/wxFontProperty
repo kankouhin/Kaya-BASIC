@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/advprops.h>
+[METHODS]
+wxFontProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFontProperty.ChildChanged,0,0,3,wxVariant,						wxVariant wxFontProperty.ChildChanged ( wxVariant & thisValue,     int childIndex,     wxVariant & childValue    )
+wxFontProperty.DisplayEditorDialog,0,0,2,bool,						bool wxFontProperty.DisplayEditorDialog ( wxPropertyGrid * pg,     wxVariant & value    )
+wxFontProperty.OnSetValue,0,0,0,void,						void wxFontProperty.OnSetValue ( )
+wxFontProperty.RefreshChildren,0,0,0,void,						void wxFontProperty.RefreshChildren ( )
+wxFontProperty.ValueToString,0,0,2,wxString,						wxString wxFontProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+[INHERITS]
+wxEditorDialogProperty
+wxPGProperty
+wxObject

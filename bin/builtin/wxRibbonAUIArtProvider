@@ -1,0 +1,33 @@
+[CONSTS]
+[HEADER]
+<wx/ribbon/art.h>
+[METHODS]
+wxRibbonAUIArtProvider.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonAUIArtProvider.Clone,0,1,0,wxRibbonArtProvider,						wxRibbonArtProvider* wxRibbonAUIArtProvider.Clone ( )
+wxRibbonAUIArtProvider.DrawButtonBarBackground,0,0,3,void,						void wxRibbonAUIArtProvider.DrawButtonBarBackground ( wxDC & dc,     wxWindow * wnd,      wxRect & rect    )
+wxRibbonAUIArtProvider.DrawButtonBarButton,0,0,8,void,						void wxRibbonAUIArtProvider.DrawButtonBarButton ( wxDC & dc,     wxWindow * wnd,      wxRect & rect,     wxRibbonButtonKind kind,     long state,      wxString & label,      wxBitmap & bitmap_large,      wxBitmap & bitmap_small    )
+wxRibbonAUIArtProvider.DrawGalleryBackground,0,0,3,void,						void wxRibbonAUIArtProvider.DrawGalleryBackground ( wxDC & dc,     wxRibbonGallery * wnd,      wxRect & rect    )
+wxRibbonAUIArtProvider.DrawGalleryItemBackground,0,0,4,void,						void wxRibbonAUIArtProvider.DrawGalleryItemBackground ( wxDC & dc,     wxRibbonGallery * wnd,      wxRect & rect,     wxRibbonGalleryItem * item    )
+wxRibbonAUIArtProvider.DrawMinimisedPanel,0,0,4,void,						void wxRibbonAUIArtProvider.DrawMinimisedPanel ( wxDC & dc,     wxRibbonPanel * wnd,      wxRect & rect,     wxBitmap & bitmap    )
+wxRibbonAUIArtProvider.DrawPageBackground,0,0,3,void,						void wxRibbonAUIArtProvider.DrawPageBackground ( wxDC & dc,     wxWindow * wnd,      wxRect & rect    )
+wxRibbonAUIArtProvider.DrawPanelBackground,0,0,3,void,						void wxRibbonAUIArtProvider.DrawPanelBackground ( wxDC & dc,     wxRibbonPanel * wnd,      wxRect & rect    )
+wxRibbonAUIArtProvider.DrawScrollButton,0,0,4,void,						void wxRibbonAUIArtProvider.DrawScrollButton ( wxDC & dc,     wxWindow * wnd,      wxRect & rect,     long style    )
+wxRibbonAUIArtProvider.DrawTab,0,0,3,void,						void wxRibbonAUIArtProvider.DrawTab ( wxDC & dc,     wxWindow * wnd,      wxRibbonPageTabInfo & tab    )
+wxRibbonAUIArtProvider.DrawTabCtrlBackground,0,0,3,void,						void wxRibbonAUIArtProvider.DrawTabCtrlBackground ( wxDC & dc,     wxWindow * wnd,      wxRect & rect    )
+wxRibbonAUIArtProvider.DrawTabSeparator,0,0,4,void,						void wxRibbonAUIArtProvider.DrawTabSeparator ( wxDC & dc,     wxWindow * wnd,      wxRect & rect,     double visibility    )
+wxRibbonAUIArtProvider.DrawTool,0,0,6,void,						void wxRibbonAUIArtProvider.DrawTool ( wxDC & dc,     wxWindow * wnd,      wxRect & rect,      wxBitmap & bitmap,     wxRibbonButtonKind kind,     long state    )
+wxRibbonAUIArtProvider.DrawToolBarBackground,0,0,3,void,						void wxRibbonAUIArtProvider.DrawToolBarBackground ( wxDC & dc,     wxWindow * wnd,      wxRect & rect    )
+wxRibbonAUIArtProvider.DrawToolGroupBackground,0,0,3,void,						void wxRibbonAUIArtProvider.DrawToolGroupBackground ( wxDC & dc,     wxWindow * wnd,      wxRect & rect    )
+wxRibbonAUIArtProvider.GetBarTabWidth,0,0,8,void,						void wxRibbonAUIArtProvider.GetBarTabWidth ( wxDC & dc,     wxWindow * wnd,      wxString & label,      wxBitmap & bitmap,     int * ideal,     int * small_begin_need_separator,     int * small_must_have_separator,     int * minimum    )
+wxRibbonAUIArtProvider.GetColour,0,0,1,wxColour,						wxColour wxRibbonAUIArtProvider.GetColour ( int id)
+wxRibbonAUIArtProvider.GetPanelClientSize,0,0,4,wxSize,						wxSize wxRibbonAUIArtProvider.GetPanelClientSize ( wxDC & dc,      wxRibbonPanel * wnd,     wxSize size,     wxPoint * client_offset    )
+wxRibbonAUIArtProvider.GetPanelExtButtonArea,0,0,3,wxRect,						wxRect wxRibbonAUIArtProvider.GetPanelExtButtonArea ( wxDC & dc,      wxRibbonPanel * wnd,     wxRect rect    )
+wxRibbonAUIArtProvider.GetPanelSize,0,0,4,wxSize,						wxSize wxRibbonAUIArtProvider.GetPanelSize ( wxDC & dc,      wxRibbonPanel * wnd,     wxSize client_size,     wxPoint * client_offset    )
+wxRibbonAUIArtProvider.GetScrollButtonMinimumSize,0,0,3,wxSize,						wxSize wxRibbonAUIArtProvider.GetScrollButtonMinimumSize ( wxDC & dc,     wxWindow * wnd,     long style    )
+wxRibbonAUIArtProvider.GetTabCtrlHeight,0,0,3,int,						int wxRibbonAUIArtProvider.GetTabCtrlHeight ( wxDC & dc,     wxWindow * wnd,      wxRibbonPageTabInfoArray & pages    )
+wxRibbonAUIArtProvider.SetColour,0,0,2,void,						void wxRibbonAUIArtProvider.SetColour ( int id,      wxColour & colour    )
+wxRibbonAUIArtProvider.SetColourScheme,0,0,3,void,						void wxRibbonAUIArtProvider.SetColourScheme (  wxColour & primary,      wxColour & secondary,      wxColour & tertiary    )
+wxRibbonAUIArtProvider.SetFont,0,0,2,void,						void wxRibbonAUIArtProvider.SetFont ( int id,      wxFont & font    )
+[INHERITS]
+wxRibbonMSWArtProvider
+wxRibbonArtProvider

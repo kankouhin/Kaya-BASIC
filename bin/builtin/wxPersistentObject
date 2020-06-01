@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/persist.h>
+[METHODS]
+wxPersistentObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPersistentObject.GetKind,0,0,0,wxString,						wxString wxPersistentObject.GetKind ( )
+wxPersistentObject.GetName,0,0,0,wxString,						wxString wxPersistentObject.GetName ( )
+wxPersistentObject.GetObject,0,1,0,void,						void* wxPersistentObject.GetObject ( )
+wxPersistentObject.Restore,0,0,0,bool,						bool wxPersistentObject.Restore ( )
+wxPersistentObject.RestoreValue,0,0,2,bool,						bool wxPersistentObject.RestoreValue (  wxString & name,     T * value    )
+wxPersistentObject.Save,0,0,0,void,						void wxPersistentObject.Save ( )
+wxPersistentObject.SaveValue,0,0,2,bool,						bool wxPersistentObject.SaveValue (  wxString & name,     T value    )
+[INHERITS]

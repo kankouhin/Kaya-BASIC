@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/eventfilter.h>
+[METHODS]
+wxEventFilter.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxEventFilter.FilterEvent,0,0,1,int,						int wxEventFilter.FilterEvent ( wxEvent & event)
+[INHERITS]

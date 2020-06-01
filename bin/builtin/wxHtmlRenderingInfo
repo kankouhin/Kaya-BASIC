@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlcell.h>
+[METHODS]
+wxHtmlRenderingInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlRenderingInfo.GetSelection,0,1,0,wxHtmlSelection,						wxHtmlSelection* wxHtmlRenderingInfo.GetSelection ( )
+wxHtmlRenderingInfo.GetState,0,0,0,wxHtmlRenderingState,						wxHtmlRenderingState&  wxHtmlRenderingInfo.GetState ( )
+wxHtmlRenderingInfo.GetStyle,0,0,0,wxHtmlRenderingStyle,						wxHtmlRenderingStyle&  wxHtmlRenderingInfo.GetStyle ( )
+wxHtmlRenderingInfo.SetSelection,0,0,1,void,						void wxHtmlRenderingInfo.SetSelection ( wxHtmlSelection * s)
+wxHtmlRenderingInfo.SetStyle,0,0,1,void,						void wxHtmlRenderingInfo.SetStyle ( wxHtmlRenderingStyle * style)
+[INHERITS]

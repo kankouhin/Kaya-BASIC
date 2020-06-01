@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/xrc/xh_sizer.h>
+[METHODS]
+wxSizerXmlHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSizerXmlHandler.CanHandle,0,0,1,bool,						bool wxSizerXmlHandler.CanHandle ( wxXmlNode * node)
+wxSizerXmlHandler.DoCreateResource,0,1,0,wxObject,						wxObject* wxSizerXmlHandler.DoCreateResource ( )
+wxSizerXmlHandler.DoCreateSizer,0,1,1,wxSizer,						wxSizer* wxSizerXmlHandler.DoCreateSizer (  wxString & name)
+wxSizerXmlHandler.IsSizerNode,0,0,1,bool,						bool wxSizerXmlHandler.IsSizerNode ( wxXmlNode * node)
+[INHERITS]
+wxXmlResourceHandler
+wxObject

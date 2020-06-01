@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/accel.h>
+[METHODS]
+wxAcceleratorTable.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAcceleratorTable.IsOk,0,0,0,bool,						bool wxAcceleratorTable.IsOk ( )
+[INHERITS]
+wxObject

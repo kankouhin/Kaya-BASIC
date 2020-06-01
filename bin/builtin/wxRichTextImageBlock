@@ -1,0 +1,35 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextImageBlock.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextImageBlock.Clear,0,0,0,void,						void wxRichTextImageBlock.Clear ( )
+wxRichTextImageBlock.Copy,0,0,1,void,						void wxRichTextImageBlock.Copy (  wxRichTextImageBlock & block)
+wxRichTextImageBlock.DoMakeImageBlock,0,0,2,bool,						bool wxRichTextImageBlock.DoMakeImageBlock (  wxImage & image,     wxBitmapType imageType    )
+wxRichTextImageBlock.GetData,0,1,0,char,						unsigned char* wxRichTextImageBlock.GetData ( )
+wxRichTextImageBlock.GetDataSize,0,0,0,size_t,						size_t wxRichTextImageBlock.GetDataSize ( )
+wxRichTextImageBlock.GetExtension,0,0,0,wxString,						wxString wxRichTextImageBlock.GetExtension ( )
+wxRichTextImageBlock.GetImageType,0,0,0,wxBitmapType,						wxBitmapType wxRichTextImageBlock.GetImageType ( )
+wxRichTextImageBlock.Init,0,0,0,void,						void wxRichTextImageBlock.Init ( )
+wxRichTextImageBlock.IsOk,0,0,0,bool,						bool wxRichTextImageBlock.IsOk ( )
+wxRichTextImageBlock.Load,0,0,1,bool,						bool wxRichTextImageBlock.Load ( wxImage & image)
+wxRichTextImageBlock.MakeImageBlock,0,0,4,bool,						bool wxRichTextImageBlock.MakeImageBlock (  wxString & filename,     wxBitmapType imageType,     wxImage & image,     bool convertToJPEG = true    )
+wxRichTextImageBlock.MakeImageBlock,0,0,3,bool,						bool wxRichTextImageBlock.MakeImageBlock ( wxImage & image,     wxBitmapType imageType,     int quality = 80    )
+wxRichTextImageBlock.MakeImageBlockDefaultQuality,0,0,2,bool,						bool wxRichTextImageBlock.MakeImageBlockDefaultQuality (  wxImage & image,     wxBitmapType imageType    )
+wxRichTextImageBlock.Ok,0,0,0,bool,						bool wxRichTextImageBlock.Ok ( )
+wxRichTextImageBlock.operator=,0,0,1,void,						void wxRichTextImageBlock.operator= (  wxRichTextImageBlock & block)
+wxRichTextImageBlock.ReadBlock,1,1,2,char,						static unsigned char* wxRichTextImageBlock.ReadBlock ( wxInputStream & stream,     size_t size    )
+wxRichTextImageBlock.ReadBlock,1,1,2,char,						static unsigned char* wxRichTextImageBlock.ReadBlock (  wxString & filename,     size_t size    )
+wxRichTextImageBlock.ReadHex,0,0,3,bool,						bool wxRichTextImageBlock.ReadHex ( wxInputStream & stream,     int length,     wxBitmapType imageType    )
+wxRichTextImageBlock.SetData,0,0,1,void,						void wxRichTextImageBlock.SetData ( unsigned char * image)
+wxRichTextImageBlock.SetDataSize,0,0,1,void,						void wxRichTextImageBlock.SetDataSize ( size_t size)
+wxRichTextImageBlock.SetImageType,0,0,1,void,						void wxRichTextImageBlock.SetImageType ( wxBitmapType imageType)
+wxRichTextImageBlock.Write,0,0,1,bool,						bool wxRichTextImageBlock.Write (  wxString & filename)
+wxRichTextImageBlock.WriteBlock,1,0,3,bool,						static bool wxRichTextImageBlock.WriteBlock ( wxOutputStream & stream,     unsigned char * block,     size_t size    )
+wxRichTextImageBlock.WriteBlock,1,0,3,bool,						static bool wxRichTextImageBlock.WriteBlock (  wxString & filename,     unsigned char * block,     size_t size    )
+wxRichTextImageBlock.WriteHex,0,0,1,bool,						bool wxRichTextImageBlock.WriteHex ( wxOutputStream & stream)
+wxRichTextImageBlock.m_data,0,1,-1,char,						unsigned char* wxRichTextImageBlock.m_data
+wxRichTextImageBlock.m_dataSize,0,0,-1,size_t,						size_t wxRichTextImageBlock.m_dataSize
+wxRichTextImageBlock.m_imageType,0,0,-1,wxBitmapType,						wxBitmapType wxRichTextImageBlock.m_imageType
+[INHERITS]
+wxObject

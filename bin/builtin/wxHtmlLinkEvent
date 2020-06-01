@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlwin.h>
+[METHODS]
+wxHtmlLinkEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlLinkEvent.GetLinkInfo,0,0,0,wxHtmlLinkInfo,						wxHtmlLinkInfo&  wxHtmlLinkEvent.GetLinkInfo ( )
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

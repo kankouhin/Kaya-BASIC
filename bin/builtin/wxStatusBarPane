@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/statusbr.h>
+[METHODS]
+wxStatusBarPane.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStatusBarPane.GetStyle,0,0,0,int,						int wxStatusBarPane.GetStyle ( )
+wxStatusBarPane.GetText,0,0,0,wxString,						wxString wxStatusBarPane.GetText ( )
+wxStatusBarPane.GetWidth,0,0,0,int,						int wxStatusBarPane.GetWidth ( )
+[INHERITS]

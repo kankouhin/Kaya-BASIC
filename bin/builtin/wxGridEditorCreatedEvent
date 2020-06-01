@@ -1,0 +1,19 @@
+[CONSTS]
+wxEVT_GRID_EDITOR_CREATED
+wxEVT_GRID_EDITOR_CREATED
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridEditorCreatedEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridEditorCreatedEvent.GetCol,0,0,0,int,						int wxGridEditorCreatedEvent.GetCol ( )
+wxGridEditorCreatedEvent.GetControl,0,1,0,wxControl,						wxControl* wxGridEditorCreatedEvent.GetControl ( )
+wxGridEditorCreatedEvent.GetRow,0,0,0,int,						int wxGridEditorCreatedEvent.GetRow ( )
+wxGridEditorCreatedEvent.GetWindow,0,1,0,wxWindow,						wxWindow* wxGridEditorCreatedEvent.GetWindow ( )
+wxGridEditorCreatedEvent.SetCol,0,0,1,void,						void wxGridEditorCreatedEvent.SetCol ( int col)
+wxGridEditorCreatedEvent.SetControl,0,0,1,void,						void wxGridEditorCreatedEvent.SetControl ( wxControl * ctrl)
+wxGridEditorCreatedEvent.SetRow,0,0,1,void,						void wxGridEditorCreatedEvent.SetRow ( int row)
+wxGridEditorCreatedEvent.SetWindow,0,0,1,void,						void wxGridEditorCreatedEvent.SetWindow ( wxWindow * window)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

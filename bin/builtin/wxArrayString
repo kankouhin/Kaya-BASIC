@@ -1,0 +1,28 @@
+[CONSTS]
+[HEADER]
+<wx/arrstr.h>
+[METHODS]
+wxArrayString.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxArrayString.CompareFunction),0,1,0,int(,						typedef int(* wxArrayString.CompareFunction) ( wxString & first,  wxString & second)
+wxArrayString.Add,0,0,2,size_t,						size_t wxArrayString.Add (  wxString & str,     size_t copies = 1    )
+wxArrayString.Alloc,0,0,1,void,						void wxArrayString.Alloc ( size_t nCount)
+wxArrayString.Clear,0,0,0,void,						void wxArrayString.Clear ( )
+wxArrayString.Empty,0,0,0,void,						void wxArrayString.Empty ( )
+wxArrayString.GetCount,0,0,0,size_t,						size_t wxArrayString.GetCount ( )
+wxArrayString.Index,0,0,3,int,						int wxArrayString.Index (  wxString & str,     bool bCase = true,     bool bFromEnd = false    )
+wxArrayString.Insert,0,0,3,void,						void wxArrayString.Insert (  wxString & str,     size_t nIndex,     size_t copies = 1    )
+wxArrayString.IsEmpty,0,0,0,bool,						bool wxArrayString.IsEmpty ( )
+wxArrayString.Item,0,0,1,wxString,						wxString&  wxArrayString.Item ( size_t nIndex)
+wxArrayString.Item,0,0,1,wxString,						wxString&  wxArrayString.Item ( size_t nIndex)
+wxArrayString.Last,0,0,0,wxString,						wxString&  wxArrayString.Last ( )
+wxArrayString.Last,0,0,0,wxString,						wxString&  wxArrayString.Last ( )
+wxArrayString.operator!=,0,0,1,bool,						bool wxArrayString.operator!= (  wxArrayString & array)
+wxArrayString.operator=,0,0,1,wxArrayString,						wxArrayString&  wxArrayString.operator= (  wxArrayString & )
+wxArrayString.operator==,0,0,1,bool,						bool wxArrayString.operator== (  wxArrayString & array)
+wxArrayString.operator[],0,0,1,wxString,						wxString&  wxArrayString.operator[] ( size_t nIndex)
+wxArrayString.Remove,0,0,1,void,						void wxArrayString.Remove (  wxString & sz)
+wxArrayString.RemoveAt,0,0,2,void,						void wxArrayString.RemoveAt ( size_t nIndex,     size_t count = 1    )
+wxArrayString.Shrink,0,0,0,void,						void wxArrayString.Shrink ( )
+wxArrayString.Sort,0,0,1,void,						void wxArrayString.Sort ( bool reverseOrder = false)
+wxArrayString.Sort,0,0,1,void,						void wxArrayString.Sort ( CompareFunction compareFunction)
+[INHERITS]

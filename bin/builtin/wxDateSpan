@@ -1,0 +1,38 @@
+[CONSTS]
+[HEADER]
+<wx/datetime.h>
+[METHODS]
+wxDateSpan.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDateSpan.Add,0,0,1,wxDateSpan,						wxDateSpan wxDateSpan.Add (  wxDateSpan & other)
+wxDateSpan.Add,0,0,1,wxDateSpan,						wxDateSpan&  wxDateSpan.Add (  wxDateSpan & other)
+wxDateSpan.Day,1,0,0,wxDateSpan,						static wxDateSpan wxDateSpan.Day ( )
+wxDateSpan.Days,1,0,1,wxDateSpan,						static wxDateSpan wxDateSpan.Days ( int days)
+wxDateSpan.GetDays,0,0,0,int,						int wxDateSpan.GetDays ( )
+wxDateSpan.GetMonths,0,0,0,int,						int wxDateSpan.GetMonths ( )
+wxDateSpan.GetTotalDays,0,0,0,int,						int wxDateSpan.GetTotalDays ( )
+wxDateSpan.GetTotalMonths,0,0,0,int,						int wxDateSpan.GetTotalMonths ( )
+wxDateSpan.GetWeeks,0,0,0,int,						int wxDateSpan.GetWeeks ( )
+wxDateSpan.GetYears,0,0,0,int,						int wxDateSpan.GetYears ( )
+wxDateSpan.Month,1,0,0,wxDateSpan,						static wxDateSpan wxDateSpan.Month ( )
+wxDateSpan.Months,1,0,1,wxDateSpan,						static wxDateSpan wxDateSpan.Months ( int mon)
+wxDateSpan.Multiply,0,0,1,wxDateSpan,						wxDateSpan wxDateSpan.Multiply ( int factor)
+wxDateSpan.Multiply,0,0,1,wxDateSpan,						wxDateSpan&  wxDateSpan.Multiply ( int factor)
+wxDateSpan.Neg,0,0,0,wxDateSpan,						wxDateSpan&  wxDateSpan.Neg ( )
+wxDateSpan.Negate,0,0,0,wxDateSpan,						wxDateSpan wxDateSpan.Negate ( )
+wxDateSpan.operator!=,0,0,1,bool,						bool wxDateSpan.operator!= (  wxDateSpan & other)
+wxDateSpan.operator*=,0,0,1,wxDateSpan,						wxDateSpan&  wxDateSpan.operator*= ( int factor)
+wxDateSpan.operator+=,0,0,1,wxDateSpan,						wxDateSpan&  wxDateSpan.operator+= (  wxDateSpan & other)
+wxDateSpan.operator-,0,0,0,wxDateSpan,						wxDateSpan&  wxDateSpan.operator- ( )
+wxDateSpan.operator-=,0,0,1,wxDateSpan,						wxDateSpan&  wxDateSpan.operator-= (  wxDateSpan & other)
+wxDateSpan.operator==,0,0,1,bool,						bool wxDateSpan.operator== (  wxDateSpan & other)
+wxDateSpan.SetDays,0,0,1,wxDateSpan,						wxDateSpan&  wxDateSpan.SetDays ( int n)
+wxDateSpan.SetMonths,0,0,1,wxDateSpan,						wxDateSpan&  wxDateSpan.SetMonths ( int n)
+wxDateSpan.SetWeeks,0,0,1,wxDateSpan,						wxDateSpan&  wxDateSpan.SetWeeks ( int n)
+wxDateSpan.SetYears,0,0,1,wxDateSpan,						wxDateSpan&  wxDateSpan.SetYears ( int n)
+wxDateSpan.Subtract,0,0,1,wxDateSpan,						wxDateSpan wxDateSpan.Subtract (  wxDateSpan & other)
+wxDateSpan.Subtract,0,0,1,wxDateSpan,						wxDateSpan&  wxDateSpan.Subtract (  wxDateSpan & other)
+wxDateSpan.Week,1,0,0,wxDateSpan,						static wxDateSpan wxDateSpan.Week ( )
+wxDateSpan.Weeks,1,0,1,wxDateSpan,						static wxDateSpan wxDateSpan.Weeks ( int weeks)
+wxDateSpan.Year,1,0,0,wxDateSpan,						static wxDateSpan wxDateSpan.Year ( )
+wxDateSpan.Years,1,0,1,wxDateSpan,						static wxDateSpan wxDateSpan.Years ( int years)
+[INHERITS]

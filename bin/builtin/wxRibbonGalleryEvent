@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/ribbon/gallery.h>
+[METHODS]
+wxRibbonGalleryEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonGalleryEvent.GetGallery,0,1,0,wxRibbonGallery,						wxRibbonGallery* wxRibbonGalleryEvent.GetGallery ( )
+wxRibbonGalleryEvent.GetGalleryItem,0,1,0,wxRibbonGalleryItem,						wxRibbonGalleryItem* wxRibbonGalleryEvent.GetGalleryItem ( )
+wxRibbonGalleryEvent.SetGallery,0,0,1,void,						void wxRibbonGalleryEvent.SetGallery ( wxRibbonGallery * gallery)
+wxRibbonGalleryEvent.SetGalleryItem,0,0,1,void,						void wxRibbonGalleryEvent.SetGalleryItem ( wxRibbonGalleryItem * item)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/itemattr.h>
+[METHODS]
+wxItemAttr.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxItemAttr.GetBackgroundColour,0,0,0,wxColour,						wxColour&  wxItemAttr.GetBackgroundColour ( )
+wxItemAttr.GetFont,0,0,0,wxFont,						wxFont&  wxItemAttr.GetFont ( )
+wxItemAttr.GetTextColour,0,0,0,wxColour,						wxColour&  wxItemAttr.GetTextColour ( )
+wxItemAttr.HasBackgroundColour,0,0,0,bool,						bool wxItemAttr.HasBackgroundColour ( )
+wxItemAttr.HasColours,0,0,0,bool,						bool wxItemAttr.HasColours ( )
+wxItemAttr.HasFont,0,0,0,bool,						bool wxItemAttr.HasFont ( )
+wxItemAttr.HasTextColour,0,0,0,bool,						bool wxItemAttr.HasTextColour ( )
+wxItemAttr.IsDefault,0,0,0,bool,						bool wxItemAttr.IsDefault ( )
+wxItemAttr.operator!=,0,0,1,bool,						bool wxItemAttr.operator!= (  wxItemAttr & other)
+wxItemAttr.operator==,0,0,1,bool,						bool wxItemAttr.operator== (  wxItemAttr & other)
+wxItemAttr.SetBackgroundColour,0,0,1,void,						void wxItemAttr.SetBackgroundColour (  wxColour & colour)
+wxItemAttr.SetFont,0,0,1,void,						void wxItemAttr.SetFont (  wxFont & font)
+wxItemAttr.SetTextColour,0,0,1,void,						void wxItemAttr.SetTextColour (  wxColour & colour)
+[INHERITS]

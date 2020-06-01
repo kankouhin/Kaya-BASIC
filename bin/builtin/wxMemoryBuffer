@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/buffer.h>
+[METHODS]
+wxMemoryBuffer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMemoryBuffer.AppendByte,0,0,1,void,						void wxMemoryBuffer.AppendByte ( char data)
+wxMemoryBuffer.AppendData,0,0,2,void,						void wxMemoryBuffer.AppendData (  void * data,     size_t len    )
+wxMemoryBuffer.Clear,0,0,0,void,						void wxMemoryBuffer.Clear ( )
+wxMemoryBuffer.GetAppendBuf,0,1,1,void,						void* wxMemoryBuffer.GetAppendBuf ( size_t sizeNeeded)
+wxMemoryBuffer.GetBufSize,0,0,0,size_t,						size_t wxMemoryBuffer.GetBufSize ( )
+wxMemoryBuffer.GetData,0,1,0,void,						void* wxMemoryBuffer.GetData ( )
+wxMemoryBuffer.GetDataLen,0,0,0,size_t,						size_t wxMemoryBuffer.GetDataLen ( )
+wxMemoryBuffer.GetWriteBuf,0,1,1,void,						void* wxMemoryBuffer.GetWriteBuf ( size_t sizeNeeded)
+wxMemoryBuffer.IsEmpty,0,0,0,bool,						bool wxMemoryBuffer.IsEmpty ( )
+wxMemoryBuffer.SetBufSize,0,0,1,void,						void wxMemoryBuffer.SetBufSize ( size_t size)
+wxMemoryBuffer.SetDataLen,0,0,1,void,						void wxMemoryBuffer.SetDataLen ( size_t size)
+wxMemoryBuffer.UngetAppendBuf,0,0,1,void,						void wxMemoryBuffer.UngetAppendBuf ( size_t sizeUsed)
+wxMemoryBuffer.UngetWriteBuf,0,0,1,void,						void wxMemoryBuffer.UngetWriteBuf ( size_t sizeUsed)
+[INHERITS]

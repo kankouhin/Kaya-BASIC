@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/glcanvas.h>
+[METHODS]
+wxGLContextAttrs.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGLContextAttrs.CompatibilityProfile,0,0,0,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.CompatibilityProfile ( )
+wxGLContextAttrs.CoreProfile,0,0,0,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.CoreProfile ( )
+wxGLContextAttrs.DebugCtx,0,0,0,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.DebugCtx ( )
+wxGLContextAttrs.EndList,0,0,0,void,						void wxGLContextAttrs.EndList ( )
+wxGLContextAttrs.ES2,0,0,0,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.ES2 ( )
+wxGLContextAttrs.ForwardCompatible,0,0,0,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.ForwardCompatible ( )
+wxGLContextAttrs.LoseOnReset,0,0,0,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.LoseOnReset ( )
+wxGLContextAttrs.MajorVersion,0,0,1,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.MajorVersion ( int val)
+wxGLContextAttrs.MinorVersion,0,0,1,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.MinorVersion ( int val)
+wxGLContextAttrs.NoResetNotify,0,0,0,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.NoResetNotify ( )
+wxGLContextAttrs.OGLVersion,0,0,2,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.OGLVersion ( int vmayor,     int vminor    )
+wxGLContextAttrs.PlatformDefaults,0,0,0,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.PlatformDefaults ( )
+wxGLContextAttrs.ReleaseFlush,0,0,1,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.ReleaseFlush ( int val = 1)
+wxGLContextAttrs.ResetIsolation,0,0,0,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.ResetIsolation ( )
+wxGLContextAttrs.Robust,0,0,0,wxGLContextAttrs,						wxGLContextAttrs&  wxGLContextAttrs.Robust ( )
+[INHERITS]
+wxGLAttribsBase

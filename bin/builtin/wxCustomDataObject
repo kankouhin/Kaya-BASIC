@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/dataobj.h>
+[METHODS]
+wxCustomDataObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCustomDataObject.Alloc,0,1,1,void,						void* wxCustomDataObject.Alloc ( size_t size)
+wxCustomDataObject.Free,0,0,0,void,						void wxCustomDataObject.Free ( )
+wxCustomDataObject.GetData,0,1,0,void,						void* wxCustomDataObject.GetData ( )
+wxCustomDataObject.GetSize,0,0,0,size_t,						size_t wxCustomDataObject.GetSize ( )
+wxCustomDataObject.SetData,0,0,2,bool,						bool wxCustomDataObject.SetData ( size_t size,      void * data    )
+wxCustomDataObject.TakeData,0,0,2,void,						void wxCustomDataObject.TakeData ( size_t size,     void * data    )
+[INHERITS]
+wxDataObjectSimple
+wxDataObject

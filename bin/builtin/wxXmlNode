@@ -1,0 +1,37 @@
+[CONSTS]
+[HEADER]
+<wx/xml/xml.h>
+[METHODS]
+wxXmlNode.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxXmlNode.AddAttribute,0,0,2,void,						void wxXmlNode.AddAttribute (  wxString & name,      wxString & value    )
+wxXmlNode.AddAttribute,0,0,1,void,						void wxXmlNode.AddAttribute ( wxXmlAttribute * attr)
+wxXmlNode.AddChild,0,0,1,void,						void wxXmlNode.AddChild ( wxXmlNode * child)
+wxXmlNode.DeleteAttribute,0,0,1,bool,						bool wxXmlNode.DeleteAttribute (  wxString & name)
+wxXmlNode.GetAttribute,0,0,2,bool,						bool wxXmlNode.GetAttribute (  wxString & attrName,     wxString * value    )
+wxXmlNode.GetAttribute,0,0,2,wxString,						wxString wxXmlNode.GetAttribute (  wxString & attrName,      wxString & defaultVal = wxEmptyString    )
+wxXmlNode.GetAttributes,0,1,0,wxXmlAttribute,						wxXmlAttribute* wxXmlNode.GetAttributes ( )
+wxXmlNode.GetChildren,0,1,0,wxXmlNode,						wxXmlNode* wxXmlNode.GetChildren ( )
+wxXmlNode.GetContent,0,0,0,wxString,						wxString&  wxXmlNode.GetContent ( )
+wxXmlNode.GetDepth,0,0,1,int,						int wxXmlNode.GetDepth ( wxXmlNode * grandparent = NULL)
+wxXmlNode.GetLineNumber,0,0,0,int,						int wxXmlNode.GetLineNumber ( )
+wxXmlNode.GetName,0,0,0,wxString,						wxString&  wxXmlNode.GetName ( )
+wxXmlNode.GetNext,0,1,0,wxXmlNode,						wxXmlNode* wxXmlNode.GetNext ( )
+wxXmlNode.GetNoConversion,0,0,0,bool,						bool wxXmlNode.GetNoConversion ( )
+wxXmlNode.GetNodeContent,0,0,0,wxString,						wxString wxXmlNode.GetNodeContent ( )
+wxXmlNode.GetParent,0,1,0,wxXmlNode,						wxXmlNode* wxXmlNode.GetParent ( )
+wxXmlNode.GetType,0,0,0,wxXmlNodeType,						wxXmlNodeType wxXmlNode.GetType ( )
+wxXmlNode.HasAttribute,0,0,1,bool,						bool wxXmlNode.HasAttribute (  wxString & attrName)
+wxXmlNode.InsertChild,0,0,2,bool,						bool wxXmlNode.InsertChild ( wxXmlNode * child,     wxXmlNode * followingNode    )
+wxXmlNode.InsertChildAfter,0,0,2,bool,						bool wxXmlNode.InsertChildAfter ( wxXmlNode * child,     wxXmlNode * precedingNode    )
+wxXmlNode.IsWhitespaceOnly,0,0,0,bool,						bool wxXmlNode.IsWhitespaceOnly ( )
+wxXmlNode.operator=,0,0,1,wxXmlNode,						wxXmlNode&  wxXmlNode.operator= (  wxXmlNode & node)
+wxXmlNode.RemoveChild,0,0,1,bool,						bool wxXmlNode.RemoveChild ( wxXmlNode * child)
+wxXmlNode.SetAttributes,0,0,1,void,						void wxXmlNode.SetAttributes ( wxXmlAttribute * attr)
+wxXmlNode.SetChildren,0,0,1,void,						void wxXmlNode.SetChildren ( wxXmlNode * child)
+wxXmlNode.SetContent,0,0,1,void,						void wxXmlNode.SetContent (  wxString & con)
+wxXmlNode.SetName,0,0,1,void,						void wxXmlNode.SetName (  wxString & name)
+wxXmlNode.SetNext,0,0,1,void,						void wxXmlNode.SetNext ( wxXmlNode * next)
+wxXmlNode.SetNoConversion,0,0,1,void,						void wxXmlNode.SetNoConversion ( bool noconversion)
+wxXmlNode.SetParent,0,0,1,void,						void wxXmlNode.SetParent ( wxXmlNode * parent)
+wxXmlNode.SetType,0,0,1,void,						void wxXmlNode.SetType ( wxXmlNodeType type)
+[INHERITS]

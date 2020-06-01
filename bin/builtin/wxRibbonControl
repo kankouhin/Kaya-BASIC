@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/ribbon/control.h>
+[METHODS]
+wxRibbonControl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonControl.DoGetNextLargerSize,0,0,2,wxSize,						wxSize wxRibbonControl.DoGetNextLargerSize ( wxOrientation direction,     wxSize relative_to    )
+wxRibbonControl.DoGetNextSmallerSize,0,0,2,wxSize,						wxSize wxRibbonControl.DoGetNextSmallerSize ( wxOrientation direction,     wxSize relative_to    )
+wxRibbonControl.GetAncestorRibbonBar,0,1,0,wxRibbonBar,						wxRibbonBar* wxRibbonControl.GetAncestorRibbonBar ( )
+wxRibbonControl.GetArtProvider,0,1,0,wxRibbonArtProvider,						wxRibbonArtProvider* wxRibbonControl.GetArtProvider ( )
+wxRibbonControl.GetBestSizeForParentSize,0,0,1,wxSize,						wxSize wxRibbonControl.GetBestSizeForParentSize (  wxSize & parentSize)
+wxRibbonControl.GetNextLargerSize,0,0,1,wxSize,						wxSize wxRibbonControl.GetNextLargerSize ( wxOrientation direction)
+wxRibbonControl.GetNextLargerSize,0,0,2,wxSize,						wxSize wxRibbonControl.GetNextLargerSize ( wxOrientation direction,     wxSize relative_to    )
+wxRibbonControl.GetNextSmallerSize,0,0,1,wxSize,						wxSize wxRibbonControl.GetNextSmallerSize ( wxOrientation direction)
+wxRibbonControl.GetNextSmallerSize,0,0,2,wxSize,						wxSize wxRibbonControl.GetNextSmallerSize ( wxOrientation direction,     wxSize relative_to    )
+wxRibbonControl.IsSizingContinuous,0,0,0,bool,						bool wxRibbonControl.IsSizingContinuous ( )
+wxRibbonControl.Realise,0,0,0,bool,						bool wxRibbonControl.Realise ( )
+wxRibbonControl.Realize,0,0,0,bool,						bool wxRibbonControl.Realize ( )
+wxRibbonControl.SetArtProvider,0,0,1,void,						void wxRibbonControl.SetArtProvider ( wxRibbonArtProvider * art)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

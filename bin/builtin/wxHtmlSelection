@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlcell.h>
+[METHODS]
+wxHtmlSelection.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlSelection.AreFromToCharacterPosSet,0,0,0,bool,						bool wxHtmlSelection.AreFromToCharacterPosSet ( )
+wxHtmlSelection.ClearFromToCharacterPos,0,0,0,void,						void wxHtmlSelection.ClearFromToCharacterPos ( )
+wxHtmlSelection.GetFromCell,0,1,0,wxHtmlCell,						wxHtmlCell* wxHtmlSelection.GetFromCell ( )
+wxHtmlSelection.GetFromCharacterPos,0,0,0,wxCoord,						wxCoord wxHtmlSelection.GetFromCharacterPos ( )
+wxHtmlSelection.GetFromPos,0,0,0,wxPoint,						wxPoint&  wxHtmlSelection.GetFromPos ( )
+wxHtmlSelection.GetToCell,0,1,0,wxHtmlCell,						wxHtmlCell* wxHtmlSelection.GetToCell ( )
+wxHtmlSelection.GetToCharacterPos,0,0,0,wxCoord,						wxCoord wxHtmlSelection.GetToCharacterPos ( )
+wxHtmlSelection.GetToPos,0,0,0,wxPoint,						wxPoint&  wxHtmlSelection.GetToPos ( )
+wxHtmlSelection.IsEmpty,0,0,0,bool,						bool wxHtmlSelection.IsEmpty ( )
+wxHtmlSelection.Set,0,0,4,void,						void wxHtmlSelection.Set (  wxPoint & fromPos,      wxHtmlCell * fromCell,      wxPoint & toPos,      wxHtmlCell * toCell    )
+wxHtmlSelection.Set,0,0,2,void,						void wxHtmlSelection.Set (  wxHtmlCell * fromCell,      wxHtmlCell * toCell    )
+wxHtmlSelection.SetFromCharacterPos,0,0,1,void,						void wxHtmlSelection.SetFromCharacterPos ( wxCoord pos)
+wxHtmlSelection.SetToCharacterPos,0,0,1,void,						void wxHtmlSelection.SetToCharacterPos ( wxCoord pos)
+[INHERITS]

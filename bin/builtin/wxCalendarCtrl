@@ -1,0 +1,41 @@
+[CONSTS]
+wxCAL_SUNDAY_FIRST
+wxCAL_MONDAY_FIRST
+wxCAL_SHOW_HOLIDAYS
+wxCAL_NO_YEAR_CHANGE
+wxCAL_NO_MONTH_CHANGE
+wxCAL_SHOW_SURROUNDING_WEEKS
+wxCAL_SEQUENTIAL_MONTH_SELECTION
+wxCAL_SHOW_WEEK_NUMBERS
+[HEADER]
+<wx/calctrl.h>
+[METHODS]
+wxCalendarCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCalendarCtrl.Create,0,0,7,bool,						bool wxCalendarCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxDateTime & date = wxDefaultDateTime,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxCAL_SHOW_HOLIDAYS,      wxString & name = wxCalendarNameStr    )
+wxCalendarCtrl.EnableHolidayDisplay,0,0,1,void,						void wxCalendarCtrl.EnableHolidayDisplay ( bool display = true)
+wxCalendarCtrl.EnableMonthChange,0,0,1,bool,						bool wxCalendarCtrl.EnableMonthChange ( bool enable = true)
+wxCalendarCtrl.EnableYearChange,0,0,1,void,						void wxCalendarCtrl.EnableYearChange ( bool enable = true)
+wxCalendarCtrl.GetAttr,0,1,1,wxCalendarDateAttr,						wxCalendarDateAttr* wxCalendarCtrl.GetAttr ( size_t day)
+wxCalendarCtrl.GetDate,0,0,0,wxDateTime,						wxDateTime wxCalendarCtrl.GetDate ( )
+wxCalendarCtrl.GetDateRange,0,0,2,bool,						bool wxCalendarCtrl.GetDateRange ( wxDateTime * lowerdate,     wxDateTime * upperdate    )
+wxCalendarCtrl.GetHeaderColourBg,0,0,0,wxColour,						wxColour&  wxCalendarCtrl.GetHeaderColourBg ( )
+wxCalendarCtrl.GetHeaderColourFg,0,0,0,wxColour,						wxColour&  wxCalendarCtrl.GetHeaderColourFg ( )
+wxCalendarCtrl.GetHighlightColourBg,0,0,0,wxColour,						wxColour&  wxCalendarCtrl.GetHighlightColourBg ( )
+wxCalendarCtrl.GetHighlightColourFg,0,0,0,wxColour,						wxColour&  wxCalendarCtrl.GetHighlightColourFg ( )
+wxCalendarCtrl.GetHolidayColourBg,0,0,0,wxColour,						wxColour&  wxCalendarCtrl.GetHolidayColourBg ( )
+wxCalendarCtrl.GetHolidayColourFg,0,0,0,wxColour,						wxColour&  wxCalendarCtrl.GetHolidayColourFg ( )
+wxCalendarCtrl.HitTest,0,0,3,wxCalendarHitTestResult,						wxCalendarHitTestResult wxCalendarCtrl.HitTest (  wxPoint & pos,     wxDateTime * date = NULL,     wxDateTime.WeekDay * wd = NULL    )
+wxCalendarCtrl.Mark,0,0,2,void,						void wxCalendarCtrl.Mark ( size_t day,     bool mark    )
+wxCalendarCtrl.ResetAttr,0,0,1,void,						void wxCalendarCtrl.ResetAttr ( size_t day)
+wxCalendarCtrl.SetAttr,0,0,2,void,						void wxCalendarCtrl.SetAttr ( size_t day,     wxCalendarDateAttr * attr    )
+wxCalendarCtrl.SetDate,0,0,1,bool,						bool wxCalendarCtrl.SetDate (  wxDateTime & date)
+wxCalendarCtrl.SetDateRange,0,0,2,bool,						bool wxCalendarCtrl.SetDateRange (  wxDateTime & lowerdate = wxDefaultDateTime,      wxDateTime & upperdate = wxDefaultDateTime    )
+wxCalendarCtrl.SetHeaderColours,0,0,2,void,						void wxCalendarCtrl.SetHeaderColours (  wxColour & colFg,      wxColour & colBg    )
+wxCalendarCtrl.SetHighlightColours,0,0,2,void,						void wxCalendarCtrl.SetHighlightColours (  wxColour & colFg,      wxColour & colBg    )
+wxCalendarCtrl.SetHoliday,0,0,1,void,						void wxCalendarCtrl.SetHoliday ( size_t day)
+wxCalendarCtrl.SetHolidayColours,0,0,2,void,						void wxCalendarCtrl.SetHolidayColours (  wxColour & colFg,      wxColour & colBg    )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

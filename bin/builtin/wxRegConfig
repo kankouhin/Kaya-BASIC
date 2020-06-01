@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/msw/regconf.h>
+[METHODS]
+wxRegConfig.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+[INHERITS]
+wxConfigBase
+wxObject

@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/taskbarbutton.h>
+[METHODS]
+wxTaskBarJumpList.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTaskBarJumpList.AddCustomCategory,0,0,1,void,						void wxTaskBarJumpList.AddCustomCategory ( wxTaskBarJumpListCategory * category)
+wxTaskBarJumpList.DeleteCustomCategory,0,0,1,void,						void wxTaskBarJumpList.DeleteCustomCategory (  wxString & title)
+wxTaskBarJumpList.GetCustomCategories,0,0,0,wxTaskBarJumpListCategories,						wxTaskBarJumpListCategories&  wxTaskBarJumpList.GetCustomCategories ( )
+wxTaskBarJumpList.GetFrequentCategory,0,0,0,wxTaskBarJumpListCategory,						wxTaskBarJumpListCategory&  wxTaskBarJumpList.GetFrequentCategory ( )
+wxTaskBarJumpList.GetRecentCategory,0,0,0,wxTaskBarJumpListCategory,						wxTaskBarJumpListCategory&  wxTaskBarJumpList.GetRecentCategory ( )
+wxTaskBarJumpList.GetTasks,0,0,0,wxTaskBarJumpListCategory,						wxTaskBarJumpListCategory&  wxTaskBarJumpList.GetTasks ( )
+wxTaskBarJumpList.HideFrequentCategory,0,0,0,void,						void wxTaskBarJumpList.HideFrequentCategory ( )
+wxTaskBarJumpList.HideRecentCategory,0,0,0,void,						void wxTaskBarJumpList.HideRecentCategory ( )
+wxTaskBarJumpList.RemoveCustomCategory,0,1,1,wxTaskBarJumpListCategory,						wxTaskBarJumpListCategory* wxTaskBarJumpList.RemoveCustomCategory (  wxString & title)
+wxTaskBarJumpList.ShowFrequentCategory,0,0,1,void,						void wxTaskBarJumpList.ShowFrequentCategory ( bool shown = true)
+wxTaskBarJumpList.ShowRecentCategory,0,0,1,void,						void wxTaskBarJumpList.ShowRecentCategory ( bool shown = true)
+[INHERITS]

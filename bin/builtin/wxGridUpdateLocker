@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridUpdateLocker.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridUpdateLocker.Create,0,0,1,void,						void wxGridUpdateLocker.Create ( wxGrid * grid)
+[INHERITS]

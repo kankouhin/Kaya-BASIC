@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextDrawingHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextDrawingHandler.GetName,0,0,0,wxString,						wxString wxRichTextDrawingHandler.GetName ( )
+wxRichTextDrawingHandler.GetVirtualAttributes,0,0,2,bool,						bool wxRichTextDrawingHandler.GetVirtualAttributes ( wxRichTextAttr & attr,     wxRichTextObject * obj    )
+wxRichTextDrawingHandler.GetVirtualSubobjectAttributes,0,0,3,int,						int wxRichTextDrawingHandler.GetVirtualSubobjectAttributes ( wxRichTextObject * obj,     wxArrayInt & positions,     wxRichTextAttrArray & attributes    )
+wxRichTextDrawingHandler.GetVirtualSubobjectAttributesCount,0,0,1,int,						int wxRichTextDrawingHandler.GetVirtualSubobjectAttributesCount ( wxRichTextObject * obj)
+wxRichTextDrawingHandler.GetVirtualText,0,0,2,bool,						bool wxRichTextDrawingHandler.GetVirtualText (  wxRichTextPlainText * obj,     wxString & text    )
+wxRichTextDrawingHandler.HasVirtualAttributes,0,0,1,bool,						bool wxRichTextDrawingHandler.HasVirtualAttributes ( wxRichTextObject * obj)
+wxRichTextDrawingHandler.HasVirtualText,0,0,1,bool,						bool wxRichTextDrawingHandler.HasVirtualText (  wxRichTextPlainText * obj)
+wxRichTextDrawingHandler.SetName,0,0,1,void,						void wxRichTextDrawingHandler.SetName (  wxString & name)
+wxRichTextDrawingHandler.m_name,0,0,-1,wxString,						wxString wxRichTextDrawingHandler.m_name
+[INHERITS]
+wxObject

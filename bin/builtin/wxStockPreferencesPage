@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/preferences.h>
+[METHODS]
+wxStockPreferencesPage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStockPreferencesPage.Kind,0,0,-1,enum,						enum wxStockPreferencesPage.Kind
+wxStockPreferencesPage.GetKind,0,0,0,Kind,						Kind wxStockPreferencesPage.GetKind ( )
+wxStockPreferencesPage.GetLargeIcon,0,0,0,wxBitmap,						wxBitmap wxStockPreferencesPage.GetLargeIcon ( )
+wxStockPreferencesPage.GetName,0,0,0,wxString,						wxString wxStockPreferencesPage.GetName ( )
+[INHERITS]
+wxPreferencesPage

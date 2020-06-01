@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/print.h>
+[METHODS]
+wxPreviewControlBar.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPreviewControlBar.CreateButtons,0,0,0,void,						void wxPreviewControlBar.CreateButtons ( )
+wxPreviewControlBar.GetPrintPreview,0,1,0,wxPrintPreviewBase,						wxPrintPreviewBase* wxPreviewControlBar.GetPrintPreview ( )
+wxPreviewControlBar.GetZoomControl,0,0,0,int,						int wxPreviewControlBar.GetZoomControl ( )
+wxPreviewControlBar.SetZoomControl,0,0,1,void,						void wxPreviewControlBar.SetZoomControl ( int percent)
+[INHERITS]
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject

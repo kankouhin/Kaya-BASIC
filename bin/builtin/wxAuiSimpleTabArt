@@ -1,0 +1,40 @@
+[CONSTS]
+[HEADER]
+<wx/aui/auibook.h>
+[METHODS]
+wxAuiSimpleTabArt.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiSimpleTabArt.Clone,0,1,0,wxAuiTabArt,						wxAuiTabArt* wxAuiSimpleTabArt.Clone ( )
+wxAuiSimpleTabArt.DrawBackground,0,0,3,void,						void wxAuiSimpleTabArt.DrawBackground ( wxDC & dc,     wxWindow * wnd,      wxRect & rect    )
+wxAuiSimpleTabArt.DrawButton,0,0,7,void,						void wxAuiSimpleTabArt.DrawButton ( wxDC & dc,     wxWindow * wnd,      wxRect & in_rect,     int bitmap_id,     int button_state,     int orientation,     wxRect * out_rect    )
+wxAuiSimpleTabArt.DrawTab,0,0,8,void,						void wxAuiSimpleTabArt.DrawTab ( wxDC & dc,     wxWindow * wnd,      wxAuiNotebookPage & page,      wxRect & rect,     int close_button_state,     wxRect * out_tab_rect,     wxRect * out_button_rect,     int * x_extent    )
+wxAuiSimpleTabArt.GetBestTabCtrlSize,0,0,3,int,						int wxAuiSimpleTabArt.GetBestTabCtrlSize ( wxWindow * ,      wxAuiNotebookPageArray & ,      wxSize &     )
+wxAuiSimpleTabArt.GetIndentSize,0,0,0,int,						int wxAuiSimpleTabArt.GetIndentSize ( )
+wxAuiSimpleTabArt.GetTabSize,0,0,7,wxSize,						wxSize wxAuiSimpleTabArt.GetTabSize ( wxDC & dc,     wxWindow * wnd,      wxString & caption,      wxBitmap & bitmap,     bool active,     int close_button_state,     int * x_extent    )
+wxAuiSimpleTabArt.SetActiveColour,0,0,1,void,						void wxAuiSimpleTabArt.SetActiveColour (  wxColour & colour)
+wxAuiSimpleTabArt.SetColour,0,0,1,void,						void wxAuiSimpleTabArt.SetColour (  wxColour & colour)
+wxAuiSimpleTabArt.SetFlags,0,0,1,void,						void wxAuiSimpleTabArt.SetFlags ( unsigned int flags)
+wxAuiSimpleTabArt.SetMeasuringFont,0,0,1,void,						void wxAuiSimpleTabArt.SetMeasuringFont (  wxFont & font)
+wxAuiSimpleTabArt.SetNormalFont,0,0,1,void,						void wxAuiSimpleTabArt.SetNormalFont (  wxFont & font)
+wxAuiSimpleTabArt.SetSelectedFont,0,0,1,void,						void wxAuiSimpleTabArt.SetSelectedFont (  wxFont & font)
+wxAuiSimpleTabArt.SetSizingInfo,0,0,2,void,						void wxAuiSimpleTabArt.SetSizingInfo (  wxSize & tab_ctrl_size,     size_t tab_count    )
+wxAuiSimpleTabArt.ShowDropDown,0,0,3,int,						int wxAuiSimpleTabArt.ShowDropDown ( wxWindow * wnd,      wxAuiNotebookPageArray & items,     int activeIdx    )
+wxAuiSimpleTabArt.m_activeCloseBmp,0,0,-1,wxBitmap,						wxBitmap wxAuiSimpleTabArt.m_activeCloseBmp
+wxAuiSimpleTabArt.m_activeLeftBmp,0,0,-1,wxBitmap,						wxBitmap wxAuiSimpleTabArt.m_activeLeftBmp
+wxAuiSimpleTabArt.m_activeRightBmp,0,0,-1,wxBitmap,						wxBitmap wxAuiSimpleTabArt.m_activeRightBmp
+wxAuiSimpleTabArt.m_activeWindowListBmp,0,0,-1,wxBitmap,						wxBitmap wxAuiSimpleTabArt.m_activeWindowListBmp
+wxAuiSimpleTabArt.m_bkBrush,0,0,-1,wxBrush,						wxBrush wxAuiSimpleTabArt.m_bkBrush
+wxAuiSimpleTabArt.m_disabledCloseBmp,0,0,-1,wxBitmap,						wxBitmap wxAuiSimpleTabArt.m_disabledCloseBmp
+wxAuiSimpleTabArt.m_disabledLeftBmp,0,0,-1,wxBitmap,						wxBitmap wxAuiSimpleTabArt.m_disabledLeftBmp
+wxAuiSimpleTabArt.m_disabledRightBmp,0,0,-1,wxBitmap,						wxBitmap wxAuiSimpleTabArt.m_disabledRightBmp
+wxAuiSimpleTabArt.m_disabledWindowListBmp,0,0,-1,wxBitmap,						wxBitmap wxAuiSimpleTabArt.m_disabledWindowListBmp
+wxAuiSimpleTabArt.m_fixedTabWidth,0,0,-1,int,						int wxAuiSimpleTabArt.m_fixedTabWidth
+wxAuiSimpleTabArt.m_flags,0,0,-1,int,						unsigned int wxAuiSimpleTabArt.m_flags
+wxAuiSimpleTabArt.m_measuringFont,0,0,-1,wxFont,						wxFont wxAuiSimpleTabArt.m_measuringFont
+wxAuiSimpleTabArt.m_normalBkBrush,0,0,-1,wxBrush,						wxBrush wxAuiSimpleTabArt.m_normalBkBrush
+wxAuiSimpleTabArt.m_normalBkPen,0,0,-1,wxPen,						wxPen wxAuiSimpleTabArt.m_normalBkPen
+wxAuiSimpleTabArt.m_normalFont,0,0,-1,wxFont,						wxFont wxAuiSimpleTabArt.m_normalFont
+wxAuiSimpleTabArt.m_selectedBkBrush,0,0,-1,wxBrush,						wxBrush wxAuiSimpleTabArt.m_selectedBkBrush
+wxAuiSimpleTabArt.m_selectedBkPen,0,0,-1,wxPen,						wxPen wxAuiSimpleTabArt.m_selectedBkPen
+wxAuiSimpleTabArt.m_selectedFont,0,0,-1,wxFont,						wxFont wxAuiSimpleTabArt.m_selectedFont
+[INHERITS]
+wxAuiTabArt

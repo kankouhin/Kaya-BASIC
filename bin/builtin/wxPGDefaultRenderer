@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/property.h>
+[METHODS]
+wxPGDefaultRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGDefaultRenderer.GetImageSize,0,0,3,wxSize,						wxSize wxPGDefaultRenderer.GetImageSize (  wxPGProperty * property,     int column,     int item    )
+wxPGDefaultRenderer.Render,0,0,7,bool,						bool wxPGDefaultRenderer.Render ( wxDC & dc,      wxRect & rect,      wxPropertyGrid * propertyGrid,     wxPGProperty * property,     int column,     int item,     int flags    )
+[INHERITS]
+wxPGCellRenderer

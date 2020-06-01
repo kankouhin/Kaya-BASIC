@@ -1,0 +1,14 @@
+[CONSTS]
+wxEVT_SET_CURSOR
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxSetCursorEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSetCursorEvent.GetCursor,0,0,0,wxCursor,						wxCursor&  wxSetCursorEvent.GetCursor ( )
+wxSetCursorEvent.GetX,0,0,0,wxCoord,						wxCoord wxSetCursorEvent.GetX ( )
+wxSetCursorEvent.GetY,0,0,0,wxCoord,						wxCoord wxSetCursorEvent.GetY ( )
+wxSetCursorEvent.HasCursor,0,0,0,bool,						bool wxSetCursorEvent.HasCursor ( )
+wxSetCursorEvent.SetCursor,0,0,1,void,						void wxSetCursorEvent.SetCursor (  wxCursor & cursor)
+[INHERITS]
+wxEvent
+wxObject

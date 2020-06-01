@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/module.h>
+[METHODS]
+wxModule.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxModule.AddDependency,0,0,1,void,						void wxModule.AddDependency ( wxClassInfo * dep)
+wxModule.AddDependency,0,0,1,void,						void wxModule.AddDependency (  char * classname)
+wxModule.OnExit,0,0,0,void,						void wxModule.OnExit ( )
+wxModule.OnInit,0,0,0,bool,						bool wxModule.OnInit ( )
+[INHERITS]
+wxObject

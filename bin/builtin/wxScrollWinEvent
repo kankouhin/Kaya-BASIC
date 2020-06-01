@@ -1,0 +1,20 @@
+[CONSTS]
+wxEVT_SCROLLWIN_TOP
+wxEVT_SCROLLWIN_BOTTOM
+wxEVT_SCROLLWIN_LINEUP
+wxEVT_SCROLLWIN_LINEDOWN
+wxEVT_SCROLLWIN_PAGEUP
+wxEVT_SCROLLWIN_PAGEDOWN
+wxEVT_SCROLLWIN_THUMBTRACK
+wxEVT_SCROLLWIN_THUMBRELEASE
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxScrollWinEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxScrollWinEvent.GetOrientation,0,0,0,int,						int wxScrollWinEvent.GetOrientation ( )
+wxScrollWinEvent.GetPosition,0,0,0,int,						int wxScrollWinEvent.GetPosition ( )
+wxScrollWinEvent.SetOrientation,0,0,1,void,						void wxScrollWinEvent.SetOrientation ( int orient)
+wxScrollWinEvent.SetPosition,0,0,1,void,						void wxScrollWinEvent.SetPosition ( int pos)
+[INHERITS]
+wxEvent
+wxObject

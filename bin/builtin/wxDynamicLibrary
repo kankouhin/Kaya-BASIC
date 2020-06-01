@@ -1,0 +1,26 @@
+[CONSTS]
+wxDL_LAZY
+wxDL_NOW
+wxDL_GLOBAL
+wxDL_VERBATIM
+wxDL_DEFAULT
+wxDL_QUIET
+[HEADER]
+<wx/dynlib.h>
+[METHODS]
+wxDynamicLibrary.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDynamicLibrary.CanonicalizeName,1,0,2,wxString,						static wxString wxDynamicLibrary.CanonicalizeName (  wxString & name,     wxDynamicLibraryCategory cat = wxDL_LIBRARY    )
+wxDynamicLibrary.CanonicalizePluginName,1,0,2,wxString,						static wxString wxDynamicLibrary.CanonicalizePluginName (  wxString & name,     wxPluginCategory cat = wxDL_PLUGIN_GUI    )
+wxDynamicLibrary.Detach,0,0,0,wxDllType,						wxDllType wxDynamicLibrary.Detach ( )
+wxDynamicLibrary.GetDllExt,1,0,1,wxString,						static wxString wxDynamicLibrary.GetDllExt ( wxDynamicLibraryCategory cat = wxDL_LIBRARY)
+wxDynamicLibrary.GetModuleFromAddress,1,1,2,void,						static void* wxDynamicLibrary.GetModuleFromAddress (  void * addr,     wxString * path = NULL    )
+wxDynamicLibrary.GetProgramHandle,1,0,0,wxDllType,						static wxDllType wxDynamicLibrary.GetProgramHandle ( )
+wxDynamicLibrary.GetSymbol,0,1,2,void,						void* wxDynamicLibrary.GetSymbol (  wxString & name,     bool * success = 0    )
+wxDynamicLibrary.GetSymbolAorW,0,1,1,void,						void* wxDynamicLibrary.GetSymbolAorW (  wxString & name)
+wxDynamicLibrary.HasSymbol,0,0,1,bool,						bool wxDynamicLibrary.HasSymbol (  wxString & name)
+wxDynamicLibrary.IsLoaded,0,0,0,bool,						bool wxDynamicLibrary.IsLoaded ( )
+wxDynamicLibrary.ListLoaded,1,0,0,wxDynamicLibraryDetailsArray,						static wxDynamicLibraryDetailsArray wxDynamicLibrary.ListLoaded ( )
+wxDynamicLibrary.Load,0,0,2,bool,						bool wxDynamicLibrary.Load (  wxString & name,     int flags = wxDL_DEFAULT    )
+wxDynamicLibrary.Unload,0,0,0,void,						void wxDynamicLibrary.Unload ( )
+wxDynamicLibrary.Unload,1,0,1,void,						static void wxDynamicLibrary.Unload ( wxDllType handle)
+[INHERITS]

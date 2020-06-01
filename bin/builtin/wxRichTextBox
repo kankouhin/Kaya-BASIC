@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextBox.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextBox.CanEditProperties,0,0,0,bool,						bool wxRichTextBox.CanEditProperties ( )
+wxRichTextBox.Clone,0,1,0,wxRichTextObject,						wxRichTextObject* wxRichTextBox.Clone ( )
+wxRichTextBox.Copy,0,0,1,void,						void wxRichTextBox.Copy (  wxRichTextBox & obj)
+wxRichTextBox.Draw,0,0,7,bool,						bool wxRichTextBox.Draw ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRichTextRange & range,      wxRichTextSelection & selection,      wxRect & rect,     int descent,     int style    )
+wxRichTextBox.EditProperties,0,0,2,bool,						bool wxRichTextBox.EditProperties ( wxWindow * parent,     wxRichTextBuffer * buffer    )
+wxRichTextBox.GetPropertiesMenuLabel,0,0,0,wxString,						wxString wxRichTextBox.GetPropertiesMenuLabel ( )
+wxRichTextBox.GetXMLNodeName,0,0,0,wxString,						wxString wxRichTextBox.GetXMLNodeName ( )
+[INHERITS]
+wxRichTextParagraphLayoutBox
+wxRichTextCompositeObject
+wxRichTextObject
+wxObject

@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellAttrProvider.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellAttrProvider.GetAttr,0,1,3,wxGridCellAttr,						wxGridCellAttr* wxGridCellAttrProvider.GetAttr ( int row,     int col,     wxGridCellAttr.wxAttrKind kind    )
+wxGridCellAttrProvider.GetColumnHeaderRenderer,0,0,1,wxGridColumnHeaderRenderer,						wxGridColumnHeaderRenderer&  wxGridCellAttrProvider.GetColumnHeaderRenderer ( int col)
+wxGridCellAttrProvider.GetCornerRenderer,0,0,0,wxGridCornerHeaderRenderer,						wxGridCornerHeaderRenderer&  wxGridCellAttrProvider.GetCornerRenderer ( )
+wxGridCellAttrProvider.GetRowHeaderRenderer,0,0,1,wxGridRowHeaderRenderer,						wxGridRowHeaderRenderer&  wxGridCellAttrProvider.GetRowHeaderRenderer ( int row)
+wxGridCellAttrProvider.SetAttr,0,0,3,void,						void wxGridCellAttrProvider.SetAttr ( wxGridCellAttr * attr,     int row,     int col    )
+wxGridCellAttrProvider.SetColAttr,0,0,2,void,						void wxGridCellAttrProvider.SetColAttr ( wxGridCellAttr * attr,     int col    )
+wxGridCellAttrProvider.SetRowAttr,0,0,2,void,						void wxGridCellAttrProvider.SetRowAttr ( wxGridCellAttr * attr,     int row    )
+[INHERITS]
+wxClientDataContainer

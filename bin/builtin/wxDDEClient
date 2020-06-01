@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dde.h>
+[METHODS]
+wxDDEClient.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDDEClient.MakeConnection,0,1,3,wxConnectionBase,						wxConnectionBase* wxDDEClient.MakeConnection (  wxString & host,      wxString & service,      wxString & topic    )
+wxDDEClient.OnMakeConnection,0,1,0,wxConnectionBase,						wxConnectionBase* wxDDEClient.OnMakeConnection ( )
+wxDDEClient.ValidHost,0,0,1,bool,						bool wxDDEClient.ValidHost (  wxString & host)
+[INHERITS]
+wxObject

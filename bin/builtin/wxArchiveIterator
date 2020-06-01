@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/archive.h>
+[METHODS]
+wxArchiveIterator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxArchiveIterator.operator*,0,0,0,T,						T wxArchiveIterator.operator* ( )
+wxArchiveIterator.operator++,0,0,0,wxArchiveIterator,						wxArchiveIterator wxArchiveIterator.operator++ ( )
+wxArchiveIterator.operator++,0,0,1,wxArchiveIterator,						wxArchiveIterator wxArchiveIterator.operator++ ( int )
+[INHERITS]

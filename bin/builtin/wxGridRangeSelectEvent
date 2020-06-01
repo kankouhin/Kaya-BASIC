@@ -1,0 +1,23 @@
+[CONSTS]
+wxEVT_GRID_RANGE_SELECT
+wxEVT_GRID_RANGE_SELECT
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridRangeSelectEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridRangeSelectEvent.AltDown,0,0,0,bool,						bool wxGridRangeSelectEvent.AltDown ( )
+wxGridRangeSelectEvent.ControlDown,0,0,0,bool,						bool wxGridRangeSelectEvent.ControlDown ( )
+wxGridRangeSelectEvent.GetBottomRightCoords,0,0,0,wxGridCellCoords,						wxGridCellCoords wxGridRangeSelectEvent.GetBottomRightCoords ( )
+wxGridRangeSelectEvent.GetBottomRow,0,0,0,int,						int wxGridRangeSelectEvent.GetBottomRow ( )
+wxGridRangeSelectEvent.GetLeftCol,0,0,0,int,						int wxGridRangeSelectEvent.GetLeftCol ( )
+wxGridRangeSelectEvent.GetRightCol,0,0,0,int,						int wxGridRangeSelectEvent.GetRightCol ( )
+wxGridRangeSelectEvent.GetTopLeftCoords,0,0,0,wxGridCellCoords,						wxGridCellCoords wxGridRangeSelectEvent.GetTopLeftCoords ( )
+wxGridRangeSelectEvent.GetTopRow,0,0,0,int,						int wxGridRangeSelectEvent.GetTopRow ( )
+wxGridRangeSelectEvent.MetaDown,0,0,0,bool,						bool wxGridRangeSelectEvent.MetaDown ( )
+wxGridRangeSelectEvent.Selecting,0,0,0,bool,						bool wxGridRangeSelectEvent.Selecting ( )
+wxGridRangeSelectEvent.ShiftDown,0,0,0,bool,						bool wxGridRangeSelectEvent.ShiftDown ( )
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

@@ -1,0 +1,28 @@
+[CONSTS]
+[HEADER]
+<wx/access.h>
+[METHODS]
+wxAccessible.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAccessible.DoDefaultAction,0,0,1,wxAccStatus,						wxAccStatus wxAccessible.DoDefaultAction ( int childId)
+wxAccessible.GetChild,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.GetChild ( int childId,     wxAccessible ** child    )
+wxAccessible.GetChildCount,0,0,1,wxAccStatus,						wxAccStatus wxAccessible.GetChildCount ( int * childCount)
+wxAccessible.GetDefaultAction,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.GetDefaultAction ( int childId,     wxString * actionName    )
+wxAccessible.GetDescription,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.GetDescription ( int childId,     wxString * description    )
+wxAccessible.GetFocus,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.GetFocus ( int * childId,     wxAccessible ** child    )
+wxAccessible.GetHelpText,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.GetHelpText ( int childId,     wxString * helpText    )
+wxAccessible.GetKeyboardShortcut,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.GetKeyboardShortcut ( int childId,     wxString * shortcut    )
+wxAccessible.GetLocation,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.GetLocation ( wxRect & rect,     int elementId    )
+wxAccessible.GetName,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.GetName ( int childId,     wxString * name    )
+wxAccessible.GetParent,0,0,1,wxAccStatus,						wxAccStatus wxAccessible.GetParent ( wxAccessible ** parent)
+wxAccessible.GetRole,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.GetRole ( int childId,     wxAccRole * role    )
+wxAccessible.GetSelections,0,0,1,wxAccStatus,						wxAccStatus wxAccessible.GetSelections ( wxVariant * selections)
+wxAccessible.GetState,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.GetState ( int childId,     long * state    )
+wxAccessible.GetValue,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.GetValue ( int childId,     wxString * strValue    )
+wxAccessible.GetWindow,0,1,0,wxWindow,						wxWindow* wxAccessible.GetWindow ( )
+wxAccessible.HitTest,0,0,3,wxAccStatus,						wxAccStatus wxAccessible.HitTest (  wxPoint & pt,     int * childId,     wxAccessible ** childObject    )
+wxAccessible.Navigate,0,0,4,wxAccStatus,						wxAccStatus wxAccessible.Navigate ( wxNavDir navDir,     int fromId,     int * toId,     wxAccessible ** toObject    )
+wxAccessible.NotifyEvent,1,0,4,void,						static void wxAccessible.NotifyEvent ( int eventType,     wxWindow * window,     wxAccObject objectType,     int objectId    )
+wxAccessible.Select,0,0,2,wxAccStatus,						wxAccStatus wxAccessible.Select ( int childId,     wxAccSelectionFlags selectFlags    )
+wxAccessible.SetWindow,0,0,1,void,						void wxAccessible.SetWindow ( wxWindow * window)
+[INHERITS]
+wxObject

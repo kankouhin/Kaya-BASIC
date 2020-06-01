@@ -1,0 +1,64 @@
+[CONSTS]
+wxSL_HORIZONTAL
+wxSL_VERTICAL
+wxSL_AUTOTICKS
+wxSL_MIN_MAX_LABELS
+wxSL_VALUE_LABEL
+wxSL_LABELS
+wxSL_LEFT
+wxSL_RIGHT
+wxSL_TOP
+wxSL_BOTTOM
+wxSL_BOTH
+wxSL_SELRANGE
+wxSL_INVERSE
+wxEVT_SCROLL_TOP
+wxEVT_SCROLL_BOTTOM
+wxEVT_SCROLL_LINEUP
+wxEVT_SCROLL_LINEDOWN
+wxEVT_SCROLL_PAGEUP
+wxEVT_SCROLL_PAGEDOWN
+wxEVT_SCROLL_THUMBTRACK
+wxEVT_SCROLL_THUMBRELEASE
+wxEVT_SCROLL_CHANGED
+wxEVT_SCROLL_TOP
+wxEVT_SCROLL_BOTTOM
+wxEVT_SCROLL_LINEUP
+wxEVT_SCROLL_LINEDOWN
+wxEVT_SCROLL_PAGEUP
+wxEVT_SCROLL_PAGEDOWN
+wxEVT_SCROLL_THUMBTRACK
+wxEVT_SCROLL_THUMBRELEASE
+wxEVT_SCROLL_CHANGED
+wxEVT_SLIDER
+[HEADER]
+<wx/slider.h>
+[METHODS]
+wxSlider.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSlider.ClearSel,0,0,0,void,						void wxSlider.ClearSel ( )
+wxSlider.ClearTicks,0,0,0,void,						void wxSlider.ClearTicks ( )
+wxSlider.Create,0,0,10,bool,						bool wxSlider.Create ( wxWindow * parent,     wxWindowID id,     int value,     int minValue,     int maxValue,      wxPoint & point = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxSL_HORIZONTAL,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxSliderNameStr    )
+wxSlider.GetLineSize,0,0,0,int,						int wxSlider.GetLineSize ( )
+wxSlider.GetMax,0,0,0,int,						int wxSlider.GetMax ( )
+wxSlider.GetMin,0,0,0,int,						int wxSlider.GetMin ( )
+wxSlider.GetPageSize,0,0,0,int,						int wxSlider.GetPageSize ( )
+wxSlider.GetSelEnd,0,0,0,int,						int wxSlider.GetSelEnd ( )
+wxSlider.GetSelStart,0,0,0,int,						int wxSlider.GetSelStart ( )
+wxSlider.GetThumbLength,0,0,0,int,						int wxSlider.GetThumbLength ( )
+wxSlider.GetTickFreq,0,0,0,int,						int wxSlider.GetTickFreq ( )
+wxSlider.GetValue,0,0,0,int,						int wxSlider.GetValue ( )
+wxSlider.SetLineSize,0,0,1,void,						void wxSlider.SetLineSize ( int lineSize)
+wxSlider.SetMax,0,0,1,void,						void wxSlider.SetMax ( int maxValue)
+wxSlider.SetMin,0,0,1,void,						void wxSlider.SetMin ( int minValue)
+wxSlider.SetPageSize,0,0,1,void,						void wxSlider.SetPageSize ( int pageSize)
+wxSlider.SetRange,0,0,2,void,						void wxSlider.SetRange ( int minValue,     int maxValue    )
+wxSlider.SetSelection,0,0,2,void,						void wxSlider.SetSelection ( int startPos,     int endPos    )
+wxSlider.SetThumbLength,0,0,1,void,						void wxSlider.SetThumbLength ( int len)
+wxSlider.SetTick,0,0,1,void,						void wxSlider.SetTick ( int tickPos)
+wxSlider.SetTickFreq,0,0,1,void,						void wxSlider.SetTickFreq ( int freq)
+wxSlider.SetValue,0,0,1,void,						void wxSlider.SetValue ( int value)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/calctrl.h>
+[METHODS]
+wxCalendarEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCalendarEvent.GetWeekDay,0,0,0,wxDateTime.WeekDay,						wxDateTime.WeekDay wxCalendarEvent.GetWeekDay ( )
+wxCalendarEvent.SetWeekDay,0,0,1,void,						void wxCalendarEvent.SetWeekDay ( wxDateTime.WeekDay day)
+[INHERITS]
+wxDateEvent
+wxCommandEvent
+wxEvent
+wxObject

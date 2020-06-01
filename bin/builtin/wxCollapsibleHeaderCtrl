@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/collheaderctrl.h>
+[METHODS]
+wxCollapsibleHeaderCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCollapsibleHeaderCtrl.Create,0,0,8,bool,						bool wxCollapsibleHeaderCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxBORDER_NONE,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxCollapsibleHeaderCtrlNameStr    )
+wxCollapsibleHeaderCtrl.IsCollapsed,0,0,0,bool,						bool wxCollapsibleHeaderCtrl.IsCollapsed ( )
+wxCollapsibleHeaderCtrl.SetCollapsed,0,0,1,void,						void wxCollapsibleHeaderCtrl.SetCollapsed ( bool collapsed = true)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

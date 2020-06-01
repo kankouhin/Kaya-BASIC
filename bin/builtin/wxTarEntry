@@ -1,0 +1,34 @@
+[CONSTS]
+[HEADER]
+<wx/tarstrm.h>
+[METHODS]
+wxTarEntry.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTarEntry.GetAccessTime,0,0,0,wxDateTime,						wxDateTime wxTarEntry.GetAccessTime ( )
+wxTarEntry.GetCreateTime,0,0,0,wxDateTime,						wxDateTime wxTarEntry.GetCreateTime ( )
+wxTarEntry.GetDevMajor,0,0,0,int,						int wxTarEntry.GetDevMajor ( )
+wxTarEntry.GetDevMinor,0,0,0,int,						int wxTarEntry.GetDevMinor ( )
+wxTarEntry.GetGroupId,0,0,0,int,						int wxTarEntry.GetGroupId ( )
+wxTarEntry.GetGroupName,0,0,0,wxString,						wxString wxTarEntry.GetGroupName ( )
+wxTarEntry.GetInternalName,0,0,0,wxString,						wxString wxTarEntry.GetInternalName ( )
+wxTarEntry.GetInternalName,1,0,3,wxString,						static wxString wxTarEntry.GetInternalName (  wxString & name,     wxPathFormat format = wxPATH_NATIVE,     bool * pIsDir = NULL    )
+wxTarEntry.GetLinkName,0,0,0,wxString,						wxString wxTarEntry.GetLinkName ( )
+wxTarEntry.GetMode,0,0,0,int,						int wxTarEntry.GetMode ( )
+wxTarEntry.GetSize,0,0,0,wxFileOffset,						wxFileOffset wxTarEntry.GetSize ( )
+wxTarEntry.GetTypeFlag,0,0,0,int,						int wxTarEntry.GetTypeFlag ( )
+wxTarEntry.GetUserId,0,0,0,int,						int wxTarEntry.GetUserId ( )
+wxTarEntry.GetUserName,0,0,0,wxString,						wxString wxTarEntry.GetUserName ( )
+wxTarEntry.SetAccessTime,0,0,1,void,						void wxTarEntry.SetAccessTime (  wxDateTime & dt)
+wxTarEntry.SetCreateTime,0,0,1,void,						void wxTarEntry.SetCreateTime (  wxDateTime & dt)
+wxTarEntry.SetDevMajor,0,0,1,void,						void wxTarEntry.SetDevMajor ( int dev)
+wxTarEntry.SetDevMinor,0,0,1,void,						void wxTarEntry.SetDevMinor ( int dev)
+wxTarEntry.SetGroupId,0,0,1,void,						void wxTarEntry.SetGroupId ( int id)
+wxTarEntry.SetGroupName,0,0,1,void,						void wxTarEntry.SetGroupName (  wxString & group)
+wxTarEntry.SetLinkName,0,0,1,void,						void wxTarEntry.SetLinkName (  wxString & link)
+wxTarEntry.SetMode,0,0,1,void,						void wxTarEntry.SetMode ( int mode)
+wxTarEntry.SetSize,0,0,1,void,						void wxTarEntry.SetSize ( wxFileOffset size)
+wxTarEntry.SetTypeFlag,0,0,1,void,						void wxTarEntry.SetTypeFlag ( int type)
+wxTarEntry.SetUserId,0,0,1,void,						void wxTarEntry.SetUserId ( int id)
+wxTarEntry.SetUserName,0,0,1,void,						void wxTarEntry.SetUserName (  wxString & user)
+[INHERITS]
+wxArchiveEntry
+wxObject

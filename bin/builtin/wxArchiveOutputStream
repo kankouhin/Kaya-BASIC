@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/archive.h>
+[METHODS]
+wxArchiveOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxArchiveOutputStream.Close,0,0,0,bool,						bool wxArchiveOutputStream.Close ( )
+wxArchiveOutputStream.CloseEntry,0,0,0,bool,						bool wxArchiveOutputStream.CloseEntry ( )
+wxArchiveOutputStream.CopyArchiveMetaData,0,0,1,bool,						bool wxArchiveOutputStream.CopyArchiveMetaData ( wxArchiveInputStream & stream)
+wxArchiveOutputStream.CopyEntry,0,0,2,bool,						bool wxArchiveOutputStream.CopyEntry ( wxArchiveEntry * entry,     wxArchiveInputStream & stream    )
+wxArchiveOutputStream.PutNextDirEntry,0,0,2,bool,						bool wxArchiveOutputStream.PutNextDirEntry (  wxString & name,      wxDateTime & dt = wxDateTime.Now()    )
+wxArchiveOutputStream.PutNextEntry,0,0,1,bool,						bool wxArchiveOutputStream.PutNextEntry ( wxArchiveEntry * entry)
+wxArchiveOutputStream.PutNextEntry,0,0,3,bool,						bool wxArchiveOutputStream.PutNextEntry (  wxString & name,      wxDateTime & dt = wxDateTime.Now(),     wxFileOffset size = wxInvalidOffset    )
+[INHERITS]
+wxFilterOutputStream
+wxOutputStream
+wxStreamBase

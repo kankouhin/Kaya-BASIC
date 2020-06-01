@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/vscroll.h>
+[METHODS]
+wxVarVScrollHelper.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxVarVScrollHelper.EstimateTotalHeight,0,0,0,wxCoord,						wxCoord wxVarVScrollHelper.EstimateTotalHeight ( )
+wxVarVScrollHelper.GetRowCount,0,0,0,size_t,						size_t wxVarVScrollHelper.GetRowCount ( )
+wxVarVScrollHelper.GetVisibleRowsBegin,0,0,0,size_t,						size_t wxVarVScrollHelper.GetVisibleRowsBegin ( )
+wxVarVScrollHelper.GetVisibleRowsEnd,0,0,0,size_t,						size_t wxVarVScrollHelper.GetVisibleRowsEnd ( )
+wxVarVScrollHelper.IsRowVisible,0,0,1,bool,						bool wxVarVScrollHelper.IsRowVisible ( size_t row)
+wxVarVScrollHelper.OnGetRowHeight,0,0,1,wxCoord,						wxCoord wxVarVScrollHelper.OnGetRowHeight ( size_t row)
+wxVarVScrollHelper.OnGetRowsHeightHint,0,0,2,void,						void wxVarVScrollHelper.OnGetRowsHeightHint ( size_t rowMin,     size_t rowMax    )
+wxVarVScrollHelper.RefreshRow,0,0,1,void,						void wxVarVScrollHelper.RefreshRow ( size_t row)
+wxVarVScrollHelper.RefreshRows,0,0,2,void,						void wxVarVScrollHelper.RefreshRows ( size_t from,     size_t to    )
+wxVarVScrollHelper.ScrollRowPages,0,0,1,bool,						bool wxVarVScrollHelper.ScrollRowPages ( int pages)
+wxVarVScrollHelper.ScrollRows,0,0,1,bool,						bool wxVarVScrollHelper.ScrollRows ( int rows)
+wxVarVScrollHelper.ScrollToRow,0,0,1,bool,						bool wxVarVScrollHelper.ScrollToRow ( size_t row)
+wxVarVScrollHelper.SetRowCount,0,0,1,void,						void wxVarVScrollHelper.SetRowCount ( size_t rowCount)
+[INHERITS]
+wxVarScrollHelperBase

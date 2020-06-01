@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/apptrait.h>
+[METHODS]
+wxAppTraits.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAppTraits.CreateConfig,0,1,0,wxConfigBase,						wxConfigBase* wxAppTraits.CreateConfig ( )
+wxAppTraits.CreateEventLoop,0,1,0,wxEventLoopBase,						wxEventLoopBase* wxAppTraits.CreateEventLoop ( )
+wxAppTraits.CreateFontMapper,0,1,0,wxFontMapper,						wxFontMapper* wxAppTraits.CreateFontMapper ( )
+wxAppTraits.CreateLogTarget,0,1,0,wxLog,						wxLog* wxAppTraits.CreateLogTarget ( )
+wxAppTraits.CreateMessageOutput,0,1,0,wxMessageOutput,						wxMessageOutput* wxAppTraits.CreateMessageOutput ( )
+wxAppTraits.CreateRenderer,0,1,0,wxRendererNative,						wxRendererNative* wxAppTraits.CreateRenderer ( )
+wxAppTraits.GetDesktopEnvironment,0,0,0,wxString,						wxString wxAppTraits.GetDesktopEnvironment ( )
+wxAppTraits.GetStandardPaths,0,0,0,wxStandardPaths,						wxStandardPaths&  wxAppTraits.GetStandardPaths ( )
+wxAppTraits.GetToolkitVersion,0,0,3,wxPortId,						wxPortId wxAppTraits.GetToolkitVersion ( int * major = NULL,     int * minor = NULL,     int * micro = NULL    )
+wxAppTraits.HasStderr,0,0,0,bool,						bool wxAppTraits.HasStderr ( )
+wxAppTraits.IsUsingUniversalWidgets,0,0,0,bool,						bool wxAppTraits.IsUsingUniversalWidgets ( )
+wxAppTraits.ShowAssertDialog,0,0,1,bool,						bool wxAppTraits.ShowAssertDialog (  wxString & msg)
+[INHERITS]

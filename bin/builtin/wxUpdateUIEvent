@@ -1,0 +1,29 @@
+[CONSTS]
+wxEVT_UPDATE_UI
+wxEVT_UPDATE_UI
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxUpdateUIEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxUpdateUIEvent.CanUpdate,1,0,1,bool,						static bool wxUpdateUIEvent.CanUpdate ( wxWindow * window)
+wxUpdateUIEvent.Check,0,0,1,void,						void wxUpdateUIEvent.Check ( bool check)
+wxUpdateUIEvent.Enable,0,0,1,void,						void wxUpdateUIEvent.Enable ( bool enable)
+wxUpdateUIEvent.GetChecked,0,0,0,bool,						bool wxUpdateUIEvent.GetChecked ( )
+wxUpdateUIEvent.GetEnabled,0,0,0,bool,						bool wxUpdateUIEvent.GetEnabled ( )
+wxUpdateUIEvent.GetMode,1,0,0,wxUpdateUIMode,						static wxUpdateUIMode wxUpdateUIEvent.GetMode ( )
+wxUpdateUIEvent.GetSetChecked,0,0,0,bool,						bool wxUpdateUIEvent.GetSetChecked ( )
+wxUpdateUIEvent.GetSetEnabled,0,0,0,bool,						bool wxUpdateUIEvent.GetSetEnabled ( )
+wxUpdateUIEvent.GetSetShown,0,0,0,bool,						bool wxUpdateUIEvent.GetSetShown ( )
+wxUpdateUIEvent.GetSetText,0,0,0,bool,						bool wxUpdateUIEvent.GetSetText ( )
+wxUpdateUIEvent.GetShown,0,0,0,bool,						bool wxUpdateUIEvent.GetShown ( )
+wxUpdateUIEvent.GetText,0,0,0,wxString,						wxString wxUpdateUIEvent.GetText ( )
+wxUpdateUIEvent.GetUpdateInterval,1,0,0,long,						static long wxUpdateUIEvent.GetUpdateInterval ( )
+wxUpdateUIEvent.ResetUpdateTime,1,0,0,void,						static void wxUpdateUIEvent.ResetUpdateTime ( )
+wxUpdateUIEvent.SetMode,1,0,1,void,						static void wxUpdateUIEvent.SetMode ( wxUpdateUIMode mode)
+wxUpdateUIEvent.SetText,0,0,1,void,						void wxUpdateUIEvent.SetText (  wxString & text)
+wxUpdateUIEvent.SetUpdateInterval,1,0,1,void,						static void wxUpdateUIEvent.SetUpdateInterval ( long updateInterval)
+wxUpdateUIEvent.Show,0,0,1,void,						void wxUpdateUIEvent.Show ( bool show)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

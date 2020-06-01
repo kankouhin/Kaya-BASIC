@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/sckipc.h>
+[METHODS]
+wxTCPServer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTCPServer.Create,0,0,1,bool,						bool wxTCPServer.Create (  wxString & service)
+wxTCPServer.OnAcceptConnection,0,1,1,wxConnectionBase,						wxConnectionBase* wxTCPServer.OnAcceptConnection (  wxString & topic)
+[INHERITS]
+wxObject

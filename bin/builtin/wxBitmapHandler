@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/bitmap.h>
+[METHODS]
+wxBitmapHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBitmapHandler.Create,0,0,6,bool,						bool wxBitmapHandler.Create ( wxBitmap * bitmap,      void * data,     wxBitmapType type,     int width,     int height,     int depth = 1    )
+wxBitmapHandler.GetExtension,0,0,0,wxString,						wxString&  wxBitmapHandler.GetExtension ( )
+wxBitmapHandler.GetName,0,0,0,wxString,						wxString&  wxBitmapHandler.GetName ( )
+wxBitmapHandler.GetType,0,0,0,wxBitmapType,						wxBitmapType wxBitmapHandler.GetType ( )
+wxBitmapHandler.LoadFile,0,0,5,bool,						bool wxBitmapHandler.LoadFile ( wxBitmap * bitmap,      wxString & name,     wxBitmapType type,     int desiredWidth,     int desiredHeight    )
+wxBitmapHandler.SaveFile,0,0,4,bool,						bool wxBitmapHandler.SaveFile (  wxBitmap * bitmap,      wxString & name,     wxBitmapType type,      wxPalette * palette = NULL    )
+wxBitmapHandler.SetExtension,0,0,1,void,						void wxBitmapHandler.SetExtension (  wxString & extension)
+wxBitmapHandler.SetName,0,0,1,void,						void wxBitmapHandler.SetName (  wxString & name)
+wxBitmapHandler.SetType,0,0,1,void,						void wxBitmapHandler.SetType ( wxBitmapType type)
+[INHERITS]
+wxObject

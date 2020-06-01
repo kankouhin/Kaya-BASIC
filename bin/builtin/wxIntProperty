@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxIntProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxIntProperty.AddSpinStepValue,0,0,1,wxVariant,						wxVariant wxIntProperty.AddSpinStepValue ( long stepScale)
+wxIntProperty.DoGetValidator,0,1,0,wxValidator,						wxValidator* wxIntProperty.DoGetValidator ( )
+wxIntProperty.GetClassValidator,1,1,0,wxValidator,						static wxValidator* wxIntProperty.GetClassValidator ( )
+wxIntProperty.IntToValue,0,0,3,bool,						bool wxIntProperty.IntToValue ( wxVariant & variant,     int number,     int argFlags = 0    )
+wxIntProperty.StringToValue,0,0,3,bool,						bool wxIntProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags = 0    )
+wxIntProperty.ValidateValue,0,0,2,bool,						bool wxIntProperty.ValidateValue ( wxVariant & value,     wxPGValidationInfo & validationInfo    )
+wxIntProperty.ValueToString,0,0,2,wxString,						wxString wxIntProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+[INHERITS]
+wxNumericProperty
+wxPGProperty
+wxObject

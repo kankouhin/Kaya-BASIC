@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/thread.h>
+[METHODS]
+wxMutex.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMutex.Lock,0,0,0,wxMutexError,						wxMutexError wxMutex.Lock ( )
+wxMutex.LockTimeout,0,0,1,wxMutexError,						wxMutexError wxMutex.LockTimeout ( unsigned long msec)
+wxMutex.TryLock,0,0,0,wxMutexError,						wxMutexError wxMutex.TryLock ( )
+wxMutex.Unlock,0,0,0,wxMutexError,						wxMutexError wxMutex.Unlock ( )
+[INHERITS]

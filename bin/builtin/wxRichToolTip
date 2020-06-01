@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/richtooltip.h>
+[METHODS]
+wxRichToolTip.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichToolTip.SetBackgroundColour,0,0,2,void,						void wxRichToolTip.SetBackgroundColour (  wxColour & col,      wxColour & colEnd = wxColour()    )
+wxRichToolTip.SetIcon,0,0,1,void,						void wxRichToolTip.SetIcon ( int icon = wxICON_INFORMATION)
+wxRichToolTip.SetIcon,0,0,1,void,						void wxRichToolTip.SetIcon (  wxIcon & icon)
+wxRichToolTip.SetTimeout,0,0,2,void,						void wxRichToolTip.SetTimeout ( unsigned millisecondsTimeout,     unsigned millisecondsDelay = 0    )
+wxRichToolTip.SetTipKind,0,0,1,void,						void wxRichToolTip.SetTipKind ( wxTipKind tipKind)
+wxRichToolTip.SetTitleFont,0,0,1,void,						void wxRichToolTip.SetTitleFont (  wxFont & font)
+wxRichToolTip.ShowFor,0,0,2,void,						void wxRichToolTip.ShowFor ( wxWindow * win,      wxRect * rect = NULL    )
+[INHERITS]

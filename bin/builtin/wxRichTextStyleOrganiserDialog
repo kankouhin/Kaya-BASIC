@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextstyledlg.h>
+[METHODS]
+wxRichTextStyleOrganiserDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextStyleOrganiserDialog.ApplyStyle,0,0,1,bool,						bool wxRichTextStyleOrganiserDialog.ApplyStyle ( wxRichTextCtrl * ctrl = NULL)
+wxRichTextStyleOrganiserDialog.Create,0,0,9,bool,						bool wxRichTextStyleOrganiserDialog.Create ( int flags,     wxRichTextStyleSheet * sheet,     wxRichTextCtrl * ctrl,     wxWindow * parent,     wxWindowID id = wxID_ANY,      wxString & caption = wxGetTranslation(&quot;Style Organiser&quot;),      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxSize(400, 300),     long style = wxDEFAULT_DIALOG_STYLE|wxRESIZE_BORDER|wxSYSTEM_MENU|wxCLOSE_BOX    )
+wxRichTextStyleOrganiserDialog.GetFlags,0,0,0,int,						int wxRichTextStyleOrganiserDialog.GetFlags ( )
+wxRichTextStyleOrganiserDialog.GetRestartNumbering,0,0,0,bool,						bool wxRichTextStyleOrganiserDialog.GetRestartNumbering ( )
+wxRichTextStyleOrganiserDialog.GetRichTextCtrl,0,1,0,wxRichTextCtrl,						wxRichTextCtrl* wxRichTextStyleOrganiserDialog.GetRichTextCtrl ( )
+wxRichTextStyleOrganiserDialog.GetSelectedStyle,0,0,0,wxString,						wxString wxRichTextStyleOrganiserDialog.GetSelectedStyle ( )
+wxRichTextStyleOrganiserDialog.GetSelectedStyleDefinition,0,1,0,wxRichTextStyleDefinition,						wxRichTextStyleDefinition* wxRichTextStyleOrganiserDialog.GetSelectedStyleDefinition ( )
+wxRichTextStyleOrganiserDialog.GetStyleSheet,0,1,0,wxRichTextStyleSheet,						wxRichTextStyleSheet* wxRichTextStyleOrganiserDialog.GetStyleSheet ( )
+wxRichTextStyleOrganiserDialog.SetFlags,0,0,1,void,						void wxRichTextStyleOrganiserDialog.SetFlags ( int flags)
+wxRichTextStyleOrganiserDialog.SetRestartNumbering,0,0,1,void,						void wxRichTextStyleOrganiserDialog.SetRestartNumbering ( bool restartNumbering)
+wxRichTextStyleOrganiserDialog.SetRichTextCtrl,0,0,1,void,						void wxRichTextStyleOrganiserDialog.SetRichTextCtrl ( wxRichTextCtrl * ctrl)
+wxRichTextStyleOrganiserDialog.SetShowToolTips,1,0,1,void,						static void wxRichTextStyleOrganiserDialog.SetShowToolTips ( bool show)
+wxRichTextStyleOrganiserDialog.SetStyleSheet,0,0,1,void,						void wxRichTextStyleOrganiserDialog.SetStyleSheet ( wxRichTextStyleSheet * sheet)
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

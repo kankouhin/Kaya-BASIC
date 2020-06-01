@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/taskbarbutton.h>
+[METHODS]
+wxThumbBarButton.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxThumbBarButton.Create,0,0,8,bool,						bool wxThumbBarButton.Create ( int id,      wxIcon & icon,      wxString & tooltip = wxString(),     bool enable = true,     bool dismissOnClick = false,     bool hasBackground = true,     bool shown = true,     bool interactive = true    )
+wxThumbBarButton.Disable,0,0,0,void,						void wxThumbBarButton.Disable ( )
+wxThumbBarButton.DisableDimissOnClick,0,0,0,void,						void wxThumbBarButton.DisableDimissOnClick ( )
+wxThumbBarButton.Enable,0,0,1,void,						void wxThumbBarButton.Enable ( bool enable = true)
+wxThumbBarButton.EnableDismissOnClick,0,0,1,void,						void wxThumbBarButton.EnableDismissOnClick ( bool enable = true)
+wxThumbBarButton.GetIcon,0,0,0,wxIcon,						wxIcon&  wxThumbBarButton.GetIcon ( )
+wxThumbBarButton.GetID,0,0,0,int,						int wxThumbBarButton.GetID ( )
+wxThumbBarButton.GetTooltip,0,0,0,wxString,						wxString&  wxThumbBarButton.GetTooltip ( )
+wxThumbBarButton.HasBackground,0,0,0,bool,						bool wxThumbBarButton.HasBackground ( )
+wxThumbBarButton.Hide,0,0,0,void,						void wxThumbBarButton.Hide ( )
+wxThumbBarButton.IsDismissOnClick,0,0,0,bool,						bool wxThumbBarButton.IsDismissOnClick ( )
+wxThumbBarButton.IsEnable,0,0,0,bool,						bool wxThumbBarButton.IsEnable ( )
+wxThumbBarButton.IsInteractive,0,0,0,bool,						bool wxThumbBarButton.IsInteractive ( )
+wxThumbBarButton.IsShown,0,0,0,bool,						bool wxThumbBarButton.IsShown ( )
+wxThumbBarButton.SetHasBackground,0,0,1,void,						void wxThumbBarButton.SetHasBackground ( bool has = true)
+wxThumbBarButton.SetInteractive,0,0,1,void,						void wxThumbBarButton.SetInteractive ( bool interactive = true)
+wxThumbBarButton.Show,0,0,1,void,						void wxThumbBarButton.Show ( bool shown = true)
+[INHERITS]

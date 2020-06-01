@@ -1,0 +1,33 @@
+[CONSTS]
+wxEVT_GRID_CELL_CHANGING
+wxEVT_GRID_CELL_CHANGED
+wxEVT_GRID_CELL_LEFT_CLICK
+wxEVT_GRID_CELL_LEFT_DCLICK
+wxEVT_GRID_CELL_RIGHT_CLICK
+wxEVT_GRID_CELL_RIGHT_DCLICK
+wxEVT_GRID_EDITOR_HIDDEN
+wxEVT_GRID_EDITOR_SHOWN
+wxEVT_GRID_LABEL_LEFT_CLICK
+wxEVT_GRID_LABEL_LEFT_DCLICK
+wxEVT_GRID_LABEL_RIGHT_CLICK
+wxEVT_GRID_LABEL_RIGHT_DCLICK
+wxEVT_GRID_SELECT_CELL
+wxEVT_GRID_COL_MOVE
+wxEVT_GRID_COL_SORT
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridEvent.AltDown,0,0,0,bool,						bool wxGridEvent.AltDown ( )
+wxGridEvent.ControlDown,0,0,0,bool,						bool wxGridEvent.ControlDown ( )
+wxGridEvent.GetCol,0,0,0,int,						int wxGridEvent.GetCol ( )
+wxGridEvent.GetPosition,0,0,0,wxPoint,						wxPoint wxGridEvent.GetPosition ( )
+wxGridEvent.GetRow,0,0,0,int,						int wxGridEvent.GetRow ( )
+wxGridEvent.MetaDown,0,0,0,bool,						bool wxGridEvent.MetaDown ( )
+wxGridEvent.Selecting,0,0,0,bool,						bool wxGridEvent.Selecting ( )
+wxGridEvent.ShiftDown,0,0,0,bool,						bool wxGridEvent.ShiftDown ( )
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

@@ -1,0 +1,34 @@
+[CONSTS]
+[HEADER]
+<wx/cmndata.h>
+[METHODS]
+wxPrintDialogData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPrintDialogData.EnableHelp,0,0,1,void,						void wxPrintDialogData.EnableHelp ( bool flag)
+wxPrintDialogData.EnablePageNumbers,0,0,1,void,						void wxPrintDialogData.EnablePageNumbers ( bool flag)
+wxPrintDialogData.EnablePrintToFile,0,0,1,void,						void wxPrintDialogData.EnablePrintToFile ( bool flag)
+wxPrintDialogData.EnableSelection,0,0,1,void,						void wxPrintDialogData.EnableSelection ( bool flag)
+wxPrintDialogData.GetAllPages,0,0,0,bool,						bool wxPrintDialogData.GetAllPages ( )
+wxPrintDialogData.GetCollate,0,0,0,bool,						bool wxPrintDialogData.GetCollate ( )
+wxPrintDialogData.GetFromPage,0,0,0,int,						int wxPrintDialogData.GetFromPage ( )
+wxPrintDialogData.GetMaxPage,0,0,0,int,						int wxPrintDialogData.GetMaxPage ( )
+wxPrintDialogData.GetMinPage,0,0,0,int,						int wxPrintDialogData.GetMinPage ( )
+wxPrintDialogData.GetNoCopies,0,0,0,int,						int wxPrintDialogData.GetNoCopies ( )
+wxPrintDialogData.GetPrintData,0,0,0,wxPrintData,						wxPrintData&  wxPrintDialogData.GetPrintData ( )
+wxPrintDialogData.GetPrintToFile,0,0,0,bool,						bool wxPrintDialogData.GetPrintToFile ( )
+wxPrintDialogData.GetSelection,0,0,0,bool,						bool wxPrintDialogData.GetSelection ( )
+wxPrintDialogData.GetToPage,0,0,0,int,						int wxPrintDialogData.GetToPage ( )
+wxPrintDialogData.IsOk,0,0,0,bool,						bool wxPrintDialogData.IsOk ( )
+wxPrintDialogData.operator=,0,0,1,void,						void wxPrintDialogData.operator= (  wxPrintData & data)
+wxPrintDialogData.operator=,0,0,1,void,						void wxPrintDialogData.operator= (  wxPrintDialogData & data)
+wxPrintDialogData.SetCollate,0,0,1,void,						void wxPrintDialogData.SetCollate ( bool flag)
+wxPrintDialogData.SetFromPage,0,0,1,void,						void wxPrintDialogData.SetFromPage ( int page)
+wxPrintDialogData.SetMaxPage,0,0,1,void,						void wxPrintDialogData.SetMaxPage ( int page)
+wxPrintDialogData.SetMinPage,0,0,1,void,						void wxPrintDialogData.SetMinPage ( int page)
+wxPrintDialogData.SetNoCopies,0,0,1,void,						void wxPrintDialogData.SetNoCopies ( int n)
+wxPrintDialogData.SetPrintData,0,0,1,void,						void wxPrintDialogData.SetPrintData (  wxPrintData & printData)
+wxPrintDialogData.SetPrintToFile,0,0,1,void,						void wxPrintDialogData.SetPrintToFile ( bool flag)
+wxPrintDialogData.SetSelection,0,0,1,void,						void wxPrintDialogData.SetSelection ( bool flag)
+wxPrintDialogData.SetSetupDialog,0,0,1,void,						void wxPrintDialogData.SetSetupDialog ( bool flag)
+wxPrintDialogData.SetToPage,0,0,1,void,						void wxPrintDialogData.SetToPage ( int page)
+[INHERITS]
+wxObject

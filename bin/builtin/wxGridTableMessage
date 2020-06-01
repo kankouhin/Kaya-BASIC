@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridTableMessage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridTableMessage.GetCommandInt,0,0,0,int,						int wxGridTableMessage.GetCommandInt ( )
+wxGridTableMessage.GetCommandInt2,0,0,0,int,						int wxGridTableMessage.GetCommandInt2 ( )
+wxGridTableMessage.GetId,0,0,0,int,						int wxGridTableMessage.GetId ( )
+wxGridTableMessage.GetTableObject,0,1,0,wxGridTableBase,						wxGridTableBase* wxGridTableMessage.GetTableObject ( )
+wxGridTableMessage.SetCommandInt,0,0,1,void,						void wxGridTableMessage.SetCommandInt ( int comInt1)
+wxGridTableMessage.SetCommandInt2,0,0,1,void,						void wxGridTableMessage.SetCommandInt2 ( int comInt2)
+wxGridTableMessage.SetId,0,0,1,void,						void wxGridTableMessage.SetId ( int id)
+wxGridTableMessage.SetTableObject,0,0,1,void,						void wxGridTableMessage.SetTableObject ( wxGridTableBase * table)
+[INHERITS]

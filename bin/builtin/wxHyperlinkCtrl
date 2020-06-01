@@ -1,0 +1,26 @@
+[CONSTS]
+wxHL_ALIGN_LEFT
+wxHL_ALIGN_RIGHT
+wxHL_ALIGN_CENTRE
+wxHL_CONTEXTMENU
+wxHL_DEFAULT_STYLE
+[HEADER]
+<wx/hyperlink.h>
+[METHODS]
+wxHyperlinkCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHyperlinkCtrl.Create,0,0,8,bool,						bool wxHyperlinkCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxString & url,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxHL_DEFAULT_STYLE,      wxString & name = wxHyperlinkCtrlNameStr    )
+wxHyperlinkCtrl.GetHoverColour,0,0,0,wxColour,						wxColour wxHyperlinkCtrl.GetHoverColour ( )
+wxHyperlinkCtrl.GetNormalColour,0,0,0,wxColour,						wxColour wxHyperlinkCtrl.GetNormalColour ( )
+wxHyperlinkCtrl.GetURL,0,0,0,wxString,						wxString wxHyperlinkCtrl.GetURL ( )
+wxHyperlinkCtrl.GetVisited,0,0,0,bool,						bool wxHyperlinkCtrl.GetVisited ( )
+wxHyperlinkCtrl.GetVisitedColour,0,0,0,wxColour,						wxColour wxHyperlinkCtrl.GetVisitedColour ( )
+wxHyperlinkCtrl.SetHoverColour,0,0,1,void,						void wxHyperlinkCtrl.SetHoverColour (  wxColour & colour)
+wxHyperlinkCtrl.SetNormalColour,0,0,1,void,						void wxHyperlinkCtrl.SetNormalColour (  wxColour & colour)
+wxHyperlinkCtrl.SetURL,0,0,1,void,						void wxHyperlinkCtrl.SetURL (  wxString & url)
+wxHyperlinkCtrl.SetVisited,0,0,1,void,						void wxHyperlinkCtrl.SetVisited ( bool visited = true)
+wxHyperlinkCtrl.SetVisitedColour,0,0,1,void,						void wxHyperlinkCtrl.SetVisitedColour (  wxColour & colour)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

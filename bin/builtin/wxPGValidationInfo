@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/propgrid.h>
+[METHODS]
+wxPGValidationInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGValidationInfo.GetFailureBehavior,0,0,0,wxPGVFBFlags,						wxPGVFBFlags wxPGValidationInfo.GetFailureBehavior ( )
+wxPGValidationInfo.GetFailureMessage,0,0,0,wxString,						wxString&  wxPGValidationInfo.GetFailureMessage ( )
+wxPGValidationInfo.GetValue,0,0,0,wxVariant,						wxVariant&  wxPGValidationInfo.GetValue ( )
+wxPGValidationInfo.SetFailureBehavior,0,0,1,void,						void wxPGValidationInfo.SetFailureBehavior ( wxPGVFBFlags failureBehavior)
+wxPGValidationInfo.SetFailureMessage,0,0,1,void,						void wxPGValidationInfo.SetFailureMessage (  wxString & message)
+[INHERITS]

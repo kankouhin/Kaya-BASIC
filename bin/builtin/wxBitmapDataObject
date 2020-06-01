@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dataobj.h>
+[METHODS]
+wxBitmapDataObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBitmapDataObject.GetBitmap,0,0,0,wxBitmap,						wxBitmap wxBitmapDataObject.GetBitmap ( )
+wxBitmapDataObject.SetBitmap,0,0,1,void,						void wxBitmapDataObject.SetBitmap (  wxBitmap & bitmap)
+[INHERITS]
+wxDataObjectSimple
+wxDataObject

@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/wrapsizer.h>
+[METHODS]
+wxWrapSizer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWrapSizer.CalcMin,0,0,0,wxSize,						wxSize wxWrapSizer.CalcMin ( )
+wxWrapSizer.InformFirstDirection,0,0,3,bool,						bool wxWrapSizer.InformFirstDirection ( int direction,     int size,     int availableOtherDir    )
+wxWrapSizer.IsSpaceItem,0,0,1,bool,						bool wxWrapSizer.IsSpaceItem ( wxSizerItem * item)
+wxWrapSizer.RepositionChildren,0,0,1,void,						void wxWrapSizer.RepositionChildren (  wxSize & minSize)
+[INHERITS]
+wxBoxSizer
+wxSizer
+wxObject

@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/cmdproc.h>
+[METHODS]
+wxCommand.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCommand.CanUndo,0,0,0,bool,						bool wxCommand.CanUndo ( )
+wxCommand.Do,0,0,0,bool,						bool wxCommand.Do ( )
+wxCommand.GetName,0,0,0,wxString,						wxString wxCommand.GetName ( )
+wxCommand.Undo,0,0,0,bool,						bool wxCommand.Undo ( )
+[INHERITS]
+wxObject

@@ -1,0 +1,38 @@
+[CONSTS]
+[HEADER]
+<wx/gbsizer.h>
+[METHODS]
+wxGridBagSizer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridBagSizer.Add,0,1,6,wxSizerItem,						wxSizerItem* wxGridBagSizer.Add ( wxWindow * window,      wxGBPosition & pos,      wxGBSpan & span = wxDefaultSpan,     int flag = 0,     int border = 0,     wxObject * userData = NULL    )
+wxGridBagSizer.Add,0,1,6,wxSizerItem,						wxSizerItem* wxGridBagSizer.Add ( wxSizer * sizer,      wxGBPosition & pos,      wxGBSpan & span = wxDefaultSpan,     int flag = 0,     int border = 0,     wxObject * userData = NULL    )
+wxGridBagSizer.Add,0,1,1,wxSizerItem,						wxSizerItem* wxGridBagSizer.Add ( wxGBSizerItem * item)
+wxGridBagSizer.Add,0,1,7,wxSizerItem,						wxSizerItem* wxGridBagSizer.Add ( int width,     int height,      wxGBPosition & pos,      wxGBSpan & span = wxDefaultSpan,     int flag = 0,     int border = 0,     wxObject * userData = NULL    )
+wxGridBagSizer.CalcMin,0,0,0,wxSize,						wxSize wxGridBagSizer.CalcMin ( )
+wxGridBagSizer.CheckForIntersection,0,0,2,bool,						bool wxGridBagSizer.CheckForIntersection ( wxGBSizerItem * item,     wxGBSizerItem * excludeItem = NULL    )
+wxGridBagSizer.CheckForIntersection,0,0,3,bool,						bool wxGridBagSizer.CheckForIntersection (  wxGBPosition & pos,      wxGBSpan & span,     wxGBSizerItem * excludeItem = NULL    )
+wxGridBagSizer.FindItem,0,1,1,wxGBSizerItem,						wxGBSizerItem* wxGridBagSizer.FindItem ( wxWindow * window)
+wxGridBagSizer.FindItem,0,1,1,wxGBSizerItem,						wxGBSizerItem* wxGridBagSizer.FindItem ( wxSizer * sizer)
+wxGridBagSizer.FindItemAtPoint,0,1,1,wxGBSizerItem,						wxGBSizerItem* wxGridBagSizer.FindItemAtPoint (  wxPoint & pt)
+wxGridBagSizer.FindItemAtPosition,0,1,1,wxGBSizerItem,						wxGBSizerItem* wxGridBagSizer.FindItemAtPosition (  wxGBPosition & pos)
+wxGridBagSizer.FindItemWithData,0,1,1,wxGBSizerItem,						wxGBSizerItem* wxGridBagSizer.FindItemWithData (  wxObject * userData)
+wxGridBagSizer.GetCellSize,0,0,2,wxSize,						wxSize wxGridBagSizer.GetCellSize ( int row,     int col    )
+wxGridBagSizer.GetEmptyCellSize,0,0,0,wxSize,						wxSize wxGridBagSizer.GetEmptyCellSize ( )
+wxGridBagSizer.GetItemPosition,0,0,1,wxGBPosition,						wxGBPosition wxGridBagSizer.GetItemPosition ( wxWindow * window)
+wxGridBagSizer.GetItemPosition,0,0,1,wxGBPosition,						wxGBPosition wxGridBagSizer.GetItemPosition ( wxSizer * sizer)
+wxGridBagSizer.GetItemPosition,0,0,1,wxGBPosition,						wxGBPosition wxGridBagSizer.GetItemPosition ( size_t index)
+wxGridBagSizer.GetItemSpan,0,0,1,wxGBSpan,						wxGBSpan wxGridBagSizer.GetItemSpan ( wxWindow * window)
+wxGridBagSizer.GetItemSpan,0,0,1,wxGBSpan,						wxGBSpan wxGridBagSizer.GetItemSpan ( wxSizer * sizer)
+wxGridBagSizer.GetItemSpan,0,0,1,wxGBSpan,						wxGBSpan wxGridBagSizer.GetItemSpan ( size_t index)
+wxGridBagSizer.RepositionChildren,0,0,1,void,						void wxGridBagSizer.RepositionChildren (  wxSize & minSize)
+wxGridBagSizer.SetEmptyCellSize,0,0,1,void,						void wxGridBagSizer.SetEmptyCellSize (  wxSize & sz)
+wxGridBagSizer.SetItemPosition,0,0,2,bool,						bool wxGridBagSizer.SetItemPosition ( wxWindow * window,      wxGBPosition & pos    )
+wxGridBagSizer.SetItemPosition,0,0,2,bool,						bool wxGridBagSizer.SetItemPosition ( wxSizer * sizer,      wxGBPosition & pos    )
+wxGridBagSizer.SetItemPosition,0,0,2,bool,						bool wxGridBagSizer.SetItemPosition ( size_t index,      wxGBPosition & pos    )
+wxGridBagSizer.SetItemSpan,0,0,2,bool,						bool wxGridBagSizer.SetItemSpan ( wxWindow * window,      wxGBSpan & span    )
+wxGridBagSizer.SetItemSpan,0,0,2,bool,						bool wxGridBagSizer.SetItemSpan ( wxSizer * sizer,      wxGBSpan & span    )
+wxGridBagSizer.SetItemSpan,0,0,2,bool,						bool wxGridBagSizer.SetItemSpan ( size_t index,      wxGBSpan & span    )
+[INHERITS]
+wxFlexGridSizer
+wxGridSizer
+wxSizer
+wxObject

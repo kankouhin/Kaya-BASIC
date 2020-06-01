@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxEventBlocker.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxEventBlocker.Block,0,0,1,void,						void wxEventBlocker.Block ( wxEventType eventType)
+[INHERITS]
+wxEvtHandler
+wxObject

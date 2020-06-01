@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/taskbarbutton.h>
+[METHODS]
+wxTaskBarButton.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTaskBarButton.AppendSeparatorInThumbBar,0,0,0,bool,						bool wxTaskBarButton.AppendSeparatorInThumbBar ( )
+wxTaskBarButton.AppendThumbBarButton,0,0,1,bool,						bool wxTaskBarButton.AppendThumbBarButton ( wxThumbBarButton * button)
+wxTaskBarButton.Hide,0,0,0,void,						void wxTaskBarButton.Hide ( )
+wxTaskBarButton.InsertThumbBarButton,0,0,2,bool,						bool wxTaskBarButton.InsertThumbBarButton ( size_t pos,     wxThumbBarButton * button    )
+wxTaskBarButton.PulseProgress,0,0,0,void,						void wxTaskBarButton.PulseProgress ( )
+wxTaskBarButton.RemoveThumbBarButton,0,1,1,wxThumbBarButton,						wxThumbBarButton* wxTaskBarButton.RemoveThumbBarButton ( wxThumbBarButton * button)
+wxTaskBarButton.RemoveThumbBarButton,0,1,1,wxThumbBarButton,						wxThumbBarButton* wxTaskBarButton.RemoveThumbBarButton ( int id)
+wxTaskBarButton.SetOverlayIcon,0,0,2,void,						void wxTaskBarButton.SetOverlayIcon (  wxIcon & icon,      wxString & description = wxString()    )
+wxTaskBarButton.SetProgressRange,0,0,1,void,						void wxTaskBarButton.SetProgressRange ( int range)
+wxTaskBarButton.SetProgressState,0,0,1,void,						void wxTaskBarButton.SetProgressState ( wxTaskBarButtonState state)
+wxTaskBarButton.SetProgressValue,0,0,1,void,						void wxTaskBarButton.SetProgressValue ( int value)
+wxTaskBarButton.SetThumbnailClip,0,0,1,void,						void wxTaskBarButton.SetThumbnailClip (  wxRect & rect)
+wxTaskBarButton.SetThumbnailContents,0,0,1,void,						void wxTaskBarButton.SetThumbnailContents (  wxWindow * child)
+wxTaskBarButton.SetThumbnailTooltip,0,0,1,void,						void wxTaskBarButton.SetThumbnailTooltip (  wxString & tooltip)
+wxTaskBarButton.Show,0,0,1,void,						void wxTaskBarButton.Show ( bool show = true)
+[INHERITS]

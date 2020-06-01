@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/preferences.h>
+[METHODS]
+wxPreferencesEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPreferencesEditor.AddPage,0,0,1,void,						void wxPreferencesEditor.AddPage ( wxPreferencesPage * page)
+wxPreferencesEditor.Dismiss,0,0,0,void,						void wxPreferencesEditor.Dismiss ( )
+wxPreferencesEditor.ShouldApplyChangesImmediately,1,0,0,bool,						static bool wxPreferencesEditor.ShouldApplyChangesImmediately ( )
+wxPreferencesEditor.Show,0,0,1,void,						void wxPreferencesEditor.Show ( wxWindow * parent)
+wxPreferencesEditor.ShownModally,1,0,0,bool,						static bool wxPreferencesEditor.ShownModally ( )
+[INHERITS]

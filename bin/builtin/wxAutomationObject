@@ -1,0 +1,24 @@
+[CONSTS]
+[HEADER]
+<wx/msw/ole/automtn.h>
+[METHODS]
+wxAutomationObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAutomationObject.CallMethod,0,0,3,wxVariant,						wxVariant wxAutomationObject.CallMethod (  wxString & method,     int noArgs,     wxVariant args[]    )
+wxAutomationObject.CallMethod,0,0,2,wxVariant,						wxVariant wxAutomationObject.CallMethod (  wxString & method,      ...    )
+wxAutomationObject.CreateInstance,0,0,1,bool,						bool wxAutomationObject.CreateInstance (  wxString & progId)
+wxAutomationObject.GetConvertVariantFlags,0,0,0,long,						long wxAutomationObject.GetConvertVariantFlags ( )
+wxAutomationObject.GetDispatchPtr,0,1,0,WXIDISPATCH,						WXIDISPATCH* wxAutomationObject.GetDispatchPtr ( )
+wxAutomationObject.GetInstance,0,0,2,bool,						bool wxAutomationObject.GetInstance (  wxString & progId,     int flags = wxAutomationInstance_CreateIfNeeded    )
+wxAutomationObject.GetLCID,0,0,0,WXLCID,						WXLCID wxAutomationObject.GetLCID ( )
+wxAutomationObject.GetObject,0,0,4,bool,						bool wxAutomationObject.GetObject ( wxAutomationObject & obj,      wxString & property,     int noArgs = 0,     wxVariant args[] = NULL    )
+wxAutomationObject.GetProperty,0,0,3,wxVariant,						wxVariant wxAutomationObject.GetProperty (  wxString & property,     int noArgs,     wxVariant args[]    )
+wxAutomationObject.GetProperty,0,0,2,wxVariant,						wxVariant wxAutomationObject.GetProperty (  wxString & property,      ...    )
+wxAutomationObject.Invoke,0,0,6,bool,						bool wxAutomationObject.Invoke (  wxString & member,     int action,     wxVariant & retValue,     int noArgs,     wxVariant args[],      wxVariant * ptrArgs[] = 0    )
+wxAutomationObject.IsOk,0,0,0,bool,						bool wxAutomationObject.IsOk ( )
+wxAutomationObject.PutProperty,0,0,3,bool,						bool wxAutomationObject.PutProperty (  wxString & property,     int noArgs,     wxVariant args[]    )
+wxAutomationObject.PutProperty,0,0,2,bool,						bool wxAutomationObject.PutProperty (  wxString & property,      ...    )
+wxAutomationObject.SetConvertVariantFlags,0,0,1,void,						void wxAutomationObject.SetConvertVariantFlags ( long flags)
+wxAutomationObject.SetDispatchPtr,0,0,1,void,						void wxAutomationObject.SetDispatchPtr ( WXIDISPATCH * dispatchPtr)
+wxAutomationObject.SetLCID,0,0,1,void,						void wxAutomationObject.SetLCID ( WXLCID lcid)
+[INHERITS]
+wxObject

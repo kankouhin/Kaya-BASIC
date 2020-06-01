@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/caret.h>
+[METHODS]
+wxCaret.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCaret.Create,0,0,3,bool,						bool wxCaret.Create ( wxWindow * window,     int width,     int height    )
+wxCaret.Create,0,0,2,bool,						bool wxCaret.Create ( wxWindow * window,      wxSize & size    )
+wxCaret.GetBlinkTime,1,0,0,int,						static int wxCaret.GetBlinkTime ( )
+wxCaret.GetPosition,0,0,2,void,						void wxCaret.GetPosition ( int * x,     int * y    )
+wxCaret.GetPosition,0,0,0,wxPoint,						wxPoint wxCaret.GetPosition ( )
+wxCaret.GetSize,0,0,2,void,						void wxCaret.GetSize ( int * width,     int * height    )
+wxCaret.GetSize,0,0,0,wxSize,						wxSize wxCaret.GetSize ( )
+wxCaret.GetWindow,0,1,0,wxWindow,						wxWindow* wxCaret.GetWindow ( )
+wxCaret.Hide,0,0,0,void,						void wxCaret.Hide ( )
+wxCaret.IsOk,0,0,0,bool,						bool wxCaret.IsOk ( )
+wxCaret.IsVisible,0,0,0,bool,						bool wxCaret.IsVisible ( )
+wxCaret.Move,0,0,2,void,						void wxCaret.Move ( int x,     int y    )
+wxCaret.Move,0,0,1,void,						void wxCaret.Move (  wxPoint & pt)
+wxCaret.SetBlinkTime,1,0,1,void,						static void wxCaret.SetBlinkTime ( int milliseconds)
+wxCaret.SetSize,0,0,2,void,						void wxCaret.SetSize ( int width,     int height    )
+wxCaret.SetSize,0,0,1,void,						void wxCaret.SetSize (  wxSize & size)
+wxCaret.Show,0,0,1,void,						void wxCaret.Show ( bool show = true)
+[INHERITS]

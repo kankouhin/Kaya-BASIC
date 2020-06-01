@@ -1,0 +1,19 @@
+[CONSTS]
+wxEVT_SPLITTER_SASH_POS_CHANGING
+wxEVT_SPLITTER_SASH_POS_CHANGED
+wxEVT_SPLITTER_UNSPLIT
+wxEVT_SPLITTER_DOUBLECLICKED
+[HEADER]
+<wx/splitter.h>
+[METHODS]
+wxSplitterEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSplitterEvent.GetSashPosition,0,0,0,int,						int wxSplitterEvent.GetSashPosition ( )
+wxSplitterEvent.GetWindowBeingRemoved,0,1,0,wxWindow,						wxWindow* wxSplitterEvent.GetWindowBeingRemoved ( )
+wxSplitterEvent.GetX,0,0,0,int,						int wxSplitterEvent.GetX ( )
+wxSplitterEvent.GetY,0,0,0,int,						int wxSplitterEvent.GetY ( )
+wxSplitterEvent.SetSashPosition,0,0,1,void,						void wxSplitterEvent.SetSashPosition ( int pos)
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

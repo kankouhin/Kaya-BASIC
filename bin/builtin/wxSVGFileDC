@@ -1,0 +1,24 @@
+[CONSTS]
+[HEADER]
+<wx/dcsvg.h>
+[METHODS]
+wxSVGFileDC.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSVGFileDC.Clear,0,0,0,void,						void wxSVGFileDC.Clear ( )
+wxSVGFileDC.CrossHair,0,0,2,void,						void wxSVGFileDC.CrossHair ( wxCoord x,     wxCoord y    )
+wxSVGFileDC.DestroyClippingRegion,0,0,0,void,						void wxSVGFileDC.DestroyClippingRegion ( )
+wxSVGFileDC.EndDoc,0,0,0,void,						void wxSVGFileDC.EndDoc ( )
+wxSVGFileDC.EndPage,0,0,0,void,						void wxSVGFileDC.EndPage ( )
+wxSVGFileDC.FloodFill,0,0,4,bool,						bool wxSVGFileDC.FloodFill ( wxCoord x,     wxCoord y,      wxColour & colour,     wxFloodFillStyle style = wxFLOOD_SURFACE    )
+wxSVGFileDC.GetDepth,0,0,0,int,						int wxSVGFileDC.GetDepth ( )
+wxSVGFileDC.GetLogicalFunction,0,0,0,wxRasterOperationMode,						wxRasterOperationMode wxSVGFileDC.GetLogicalFunction ( )
+wxSVGFileDC.GetPixel,0,0,3,bool,						bool wxSVGFileDC.GetPixel ( wxCoord x,     wxCoord y,     wxColour * colour    )
+wxSVGFileDC.SetBitmapHandler,0,0,1,void,						void wxSVGFileDC.SetBitmapHandler ( wxSVGBitmapHandler * handler)
+wxSVGFileDC.SetClippingRegion,0,0,4,void,						void wxSVGFileDC.SetClippingRegion ( wxCoord x,     wxCoord y,     wxCoord width,     wxCoord height    )
+wxSVGFileDC.SetLogicalFunction,0,0,1,void,						void wxSVGFileDC.SetLogicalFunction ( wxRasterOperationMode function)
+wxSVGFileDC.SetPalette,0,0,1,void,						void wxSVGFileDC.SetPalette (  wxPalette & palette)
+wxSVGFileDC.SetShapeRenderingMode,0,0,1,void,						void wxSVGFileDC.SetShapeRenderingMode ( wxSVGShapeRenderingMode renderingMode)
+wxSVGFileDC.StartDoc,0,0,1,bool,						bool wxSVGFileDC.StartDoc (  wxString & message)
+wxSVGFileDC.StartPage,0,0,0,void,						void wxSVGFileDC.StartPage ( )
+[INHERITS]
+wxDC
+wxObject

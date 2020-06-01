@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/cmdline.h>
+[METHODS]
+wxCmdLineArgs.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCmdLineArgs.begin,0,0,0,_iterator,						_iterator wxCmdLineArgs.begin ( )
+wxCmdLineArgs.end,0,0,0,_iterator,						_iterator wxCmdLineArgs.end ( )
+wxCmdLineArgs.size,0,0,0,size_t,						size_t wxCmdLineArgs.size ( )
+[INHERITS]

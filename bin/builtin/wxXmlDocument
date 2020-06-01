@@ -1,0 +1,32 @@
+[CONSTS]
+[HEADER]
+<wx/xml/xml.h>
+[METHODS]
+wxXmlDocument.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxXmlDocument.AppendToProlog,0,0,1,void,						void wxXmlDocument.AppendToProlog ( wxXmlNode * node)
+wxXmlDocument.DetachDocumentNode,0,1,0,wxXmlNode,						wxXmlNode* wxXmlDocument.DetachDocumentNode ( )
+wxXmlDocument.DetachRoot,0,1,0,wxXmlNode,						wxXmlNode* wxXmlDocument.DetachRoot ( )
+wxXmlDocument.GetDoctype,0,0,0,wxXmlDoctype,						wxXmlDoctype&  wxXmlDocument.GetDoctype ( )
+wxXmlDocument.GetDocumentNode,0,1,0,wxXmlNode,						wxXmlNode* wxXmlDocument.GetDocumentNode ( )
+wxXmlDocument.GetEncoding,0,0,0,wxString,						wxString wxXmlDocument.GetEncoding ( )
+wxXmlDocument.GetEOL,0,0,0,wxString,						wxString wxXmlDocument.GetEOL ( )
+wxXmlDocument.GetFileEncoding,0,0,0,wxString,						wxString&  wxXmlDocument.GetFileEncoding ( )
+wxXmlDocument.GetFileType,0,0,0,wxTextFileType,						wxTextFileType wxXmlDocument.GetFileType ( )
+wxXmlDocument.GetLibraryVersionInfo,1,0,0,wxVersionInfo,						static wxVersionInfo wxXmlDocument.GetLibraryVersionInfo ( )
+wxXmlDocument.GetRoot,0,1,0,wxXmlNode,						wxXmlNode* wxXmlDocument.GetRoot ( )
+wxXmlDocument.GetVersion,0,0,0,wxString,						wxString&  wxXmlDocument.GetVersion ( )
+wxXmlDocument.IsOk,0,0,0,bool,						bool wxXmlDocument.IsOk ( )
+wxXmlDocument.Load,0,0,3,bool,						bool wxXmlDocument.Load (  wxString & filename,      wxString & encoding = &quot;UTF-8&quot;,     int flags = wxXMLDOC_NONE    )
+wxXmlDocument.Load,0,0,3,bool,						bool wxXmlDocument.Load ( wxInputStream & stream,      wxString & encoding = &quot;UTF-8&quot;,     int flags = wxXMLDOC_NONE    )
+wxXmlDocument.operator=,0,0,1,wxXmlDocument,						wxXmlDocument&  wxXmlDocument.operator= (  wxXmlDocument & doc)
+wxXmlDocument.Save,0,0,2,bool,						bool wxXmlDocument.Save (  wxString & filename,     int indentstep = 2    )
+wxXmlDocument.Save,0,0,2,bool,						bool wxXmlDocument.Save ( wxOutputStream & stream,     int indentstep = 2    )
+wxXmlDocument.SetDoctype,0,0,1,void,						void wxXmlDocument.SetDoctype (  wxXmlDoctype & doctype)
+wxXmlDocument.SetDocumentNode,0,0,1,void,						void wxXmlDocument.SetDocumentNode ( wxXmlNode * node)
+wxXmlDocument.SetEncoding,0,0,1,void,						void wxXmlDocument.SetEncoding (  wxString & enc)
+wxXmlDocument.SetFileEncoding,0,0,1,void,						void wxXmlDocument.SetFileEncoding (  wxString & encoding)
+wxXmlDocument.SetFileType,0,0,1,void,						void wxXmlDocument.SetFileType ( wxTextFileType fileType)
+wxXmlDocument.SetRoot,0,0,1,void,						void wxXmlDocument.SetRoot ( wxXmlNode * node)
+wxXmlDocument.SetVersion,0,0,1,void,						void wxXmlDocument.SetVersion (  wxString & version)
+[INHERITS]
+wxObject

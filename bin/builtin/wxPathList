@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/filefn.h>
+[METHODS]
+wxPathList.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPathList.Add,0,0,1,bool,						bool wxPathList.Add (  wxString & path)
+wxPathList.Add,0,0,1,void,						void wxPathList.Add (  wxArrayString & arr)
+wxPathList.AddEnvList,0,0,1,void,						void wxPathList.AddEnvList (  wxString & env_variable)
+wxPathList.EnsureFileAccessible,0,0,1,bool,						bool wxPathList.EnsureFileAccessible (  wxString & filename)
+wxPathList.FindAbsoluteValidPath,0,0,1,wxString,						wxString wxPathList.FindAbsoluteValidPath (  wxString & file)
+wxPathList.FindValidPath,0,0,1,wxString,						wxString wxPathList.FindValidPath (  wxString & file)
+[INHERITS]
+wxArrayString

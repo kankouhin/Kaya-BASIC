@@ -1,0 +1,33 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextstyles.h>
+[METHODS]
+wxRichTextStyleSheet.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextStyleSheet.AddCharacterStyle,0,0,1,bool,						bool wxRichTextStyleSheet.AddCharacterStyle ( wxRichTextCharacterStyleDefinition * def)
+wxRichTextStyleSheet.AddListStyle,0,0,1,bool,						bool wxRichTextStyleSheet.AddListStyle ( wxRichTextListStyleDefinition * def)
+wxRichTextStyleSheet.AddParagraphStyle,0,0,1,bool,						bool wxRichTextStyleSheet.AddParagraphStyle ( wxRichTextParagraphStyleDefinition * def)
+wxRichTextStyleSheet.AddStyle,0,0,1,bool,						bool wxRichTextStyleSheet.AddStyle ( wxRichTextStyleDefinition * def)
+wxRichTextStyleSheet.DeleteStyles,0,0,0,void,						void wxRichTextStyleSheet.DeleteStyles ( )
+wxRichTextStyleSheet.FindCharacterStyle,0,1,2,wxRichTextCharacterStyleDefinition,						wxRichTextCharacterStyleDefinition* wxRichTextStyleSheet.FindCharacterStyle (  wxString & name,     bool recurse = true    )
+wxRichTextStyleSheet.FindListStyle,0,1,2,wxRichTextListStyleDefinition,						wxRichTextListStyleDefinition* wxRichTextStyleSheet.FindListStyle (  wxString & name,     bool recurse = true    )
+wxRichTextStyleSheet.FindParagraphStyle,0,1,2,wxRichTextParagraphStyleDefinition,						wxRichTextParagraphStyleDefinition* wxRichTextStyleSheet.FindParagraphStyle (  wxString & name,     bool recurse = true    )
+wxRichTextStyleSheet.FindStyle,0,1,1,wxRichTextStyleDefinition,						wxRichTextStyleDefinition* wxRichTextStyleSheet.FindStyle (  wxString & name)
+wxRichTextStyleSheet.GetCharacterStyle,0,1,1,wxRichTextCharacterStyleDefinition,						wxRichTextCharacterStyleDefinition* wxRichTextStyleSheet.GetCharacterStyle ( size_t n)
+wxRichTextStyleSheet.GetCharacterStyleCount,0,0,0,size_t,						size_t wxRichTextStyleSheet.GetCharacterStyleCount ( )
+wxRichTextStyleSheet.GetDescription,0,0,0,wxString,						wxString&  wxRichTextStyleSheet.GetDescription ( )
+wxRichTextStyleSheet.GetListStyle,0,1,1,wxRichTextListStyleDefinition,						wxRichTextListStyleDefinition* wxRichTextStyleSheet.GetListStyle ( size_t n)
+wxRichTextStyleSheet.GetListStyleCount,0,0,0,size_t,						size_t wxRichTextStyleSheet.GetListStyleCount ( )
+wxRichTextStyleSheet.GetName,0,0,0,wxString,						wxString&  wxRichTextStyleSheet.GetName ( )
+wxRichTextStyleSheet.GetParagraphStyle,0,1,1,wxRichTextParagraphStyleDefinition,						wxRichTextParagraphStyleDefinition* wxRichTextStyleSheet.GetParagraphStyle ( size_t n)
+wxRichTextStyleSheet.GetParagraphStyleCount,0,0,0,size_t,						size_t wxRichTextStyleSheet.GetParagraphStyleCount ( )
+wxRichTextStyleSheet.GetProperties,0,0,0,wxRichTextProperties,						wxRichTextProperties&  wxRichTextStyleSheet.GetProperties ( )
+wxRichTextStyleSheet.GetProperties,0,0,0,wxRichTextProperties,						wxRichTextProperties&  wxRichTextStyleSheet.GetProperties ( )
+wxRichTextStyleSheet.RemoveCharacterStyle,0,0,2,bool,						bool wxRichTextStyleSheet.RemoveCharacterStyle ( wxRichTextStyleDefinition * def,     bool deleteStyle = false    )
+wxRichTextStyleSheet.RemoveListStyle,0,0,2,bool,						bool wxRichTextStyleSheet.RemoveListStyle ( wxRichTextStyleDefinition * def,     bool deleteStyle = false    )
+wxRichTextStyleSheet.RemoveParagraphStyle,0,0,2,bool,						bool wxRichTextStyleSheet.RemoveParagraphStyle ( wxRichTextStyleDefinition * def,     bool deleteStyle = false    )
+wxRichTextStyleSheet.RemoveStyle,0,0,2,bool,						bool wxRichTextStyleSheet.RemoveStyle ( wxRichTextStyleDefinition * def,     bool deleteStyle = false    )
+wxRichTextStyleSheet.SetDescription,0,0,1,void,						void wxRichTextStyleSheet.SetDescription (  wxString & descr)
+wxRichTextStyleSheet.SetName,0,0,1,void,						void wxRichTextStyleSheet.SetName (  wxString & name)
+wxRichTextStyleSheet.SetProperties,0,0,1,void,						void wxRichTextStyleSheet.SetProperties (  wxRichTextProperties & props)
+[INHERITS]
+wxObject

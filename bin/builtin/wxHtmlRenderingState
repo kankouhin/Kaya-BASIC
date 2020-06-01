@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlcell.h>
+[METHODS]
+wxHtmlRenderingState.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlRenderingState.GetBgColour,0,0,0,wxColour,						wxColour&  wxHtmlRenderingState.GetBgColour ( )
+wxHtmlRenderingState.GetBgMode,0,0,0,int,						int wxHtmlRenderingState.GetBgMode ( )
+wxHtmlRenderingState.GetFgColour,0,0,0,wxColour,						wxColour&  wxHtmlRenderingState.GetFgColour ( )
+wxHtmlRenderingState.GetSelectionState,0,0,0,wxHtmlSelectionState,						wxHtmlSelectionState wxHtmlRenderingState.GetSelectionState ( )
+wxHtmlRenderingState.SetBgColour,0,0,1,void,						void wxHtmlRenderingState.SetBgColour (  wxColour & c)
+wxHtmlRenderingState.SetBgMode,0,0,1,void,						void wxHtmlRenderingState.SetBgMode ( int m)
+wxHtmlRenderingState.SetFgColour,0,0,1,void,						void wxHtmlRenderingState.SetFgColour (  wxColour & c)
+wxHtmlRenderingState.SetSelectionState,0,0,1,void,						void wxHtmlRenderingState.SetSelectionState ( wxHtmlSelectionState s)
+[INHERITS]

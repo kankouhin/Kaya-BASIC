@@ -1,0 +1,31 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextprint.h>
+[METHODS]
+wxRichTextPrinting.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextPrinting.GetFooterText,0,0,2,wxString,						wxString wxRichTextPrinting.GetFooterText ( wxRichTextOddEvenPage page = wxRICHTEXT_PAGE_EVEN,     wxRichTextPageLocation location = wxRICHTEXT_PAGE_CENTRE    )
+wxRichTextPrinting.GetHeaderFooterData,0,0,0,wxRichTextHeaderFooterData,						wxRichTextHeaderFooterData&  wxRichTextPrinting.GetHeaderFooterData ( )
+wxRichTextPrinting.GetHeaderText,0,0,2,wxString,						wxString wxRichTextPrinting.GetHeaderText ( wxRichTextOddEvenPage page = wxRICHTEXT_PAGE_EVEN,     wxRichTextPageLocation location = wxRICHTEXT_PAGE_CENTRE    )
+wxRichTextPrinting.GetPageSetupData,0,1,0,wxPageSetupDialogData,						wxPageSetupDialogData* wxRichTextPrinting.GetPageSetupData ( )
+wxRichTextPrinting.GetParentWindow,0,1,0,wxWindow,						wxWindow* wxRichTextPrinting.GetParentWindow ( )
+wxRichTextPrinting.GetPreviewRect,0,0,0,wxRect,						wxRect&  wxRichTextPrinting.GetPreviewRect ( )
+wxRichTextPrinting.GetPrintData,0,1,0,wxPrintData,						wxPrintData* wxRichTextPrinting.GetPrintData ( )
+wxRichTextPrinting.GetTitle,0,0,0,wxString,						wxString&  wxRichTextPrinting.GetTitle ( )
+wxRichTextPrinting.PageSetup,0,0,0,void,						void wxRichTextPrinting.PageSetup ( )
+wxRichTextPrinting.PreviewBuffer,0,0,1,bool,						bool wxRichTextPrinting.PreviewBuffer (  wxRichTextBuffer & buffer)
+wxRichTextPrinting.PreviewFile,0,0,1,bool,						bool wxRichTextPrinting.PreviewFile (  wxString & richTextFile)
+wxRichTextPrinting.PrintBuffer,0,0,2,bool,						bool wxRichTextPrinting.PrintBuffer (  wxRichTextBuffer & buffer,     bool showPrintDialog = true    )
+wxRichTextPrinting.PrintFile,0,0,2,bool,						bool wxRichTextPrinting.PrintFile (  wxString & richTextFile,     bool showPrintDialog = true    )
+wxRichTextPrinting.SetFooterText,0,0,3,void,						void wxRichTextPrinting.SetFooterText (  wxString & text,     wxRichTextOddEvenPage page = wxRICHTEXT_PAGE_ALL,     wxRichTextPageLocation location = wxRICHTEXT_PAGE_CENTRE    )
+wxRichTextPrinting.SetHeaderFooterData,0,0,1,void,						void wxRichTextPrinting.SetHeaderFooterData (  wxRichTextHeaderFooterData & data)
+wxRichTextPrinting.SetHeaderFooterFont,0,0,1,void,						void wxRichTextPrinting.SetHeaderFooterFont (  wxFont & font)
+wxRichTextPrinting.SetHeaderFooterTextColour,0,0,1,void,						void wxRichTextPrinting.SetHeaderFooterTextColour (  wxColour & colour)
+wxRichTextPrinting.SetHeaderText,0,0,3,void,						void wxRichTextPrinting.SetHeaderText (  wxString & text,     wxRichTextOddEvenPage page = wxRICHTEXT_PAGE_ALL,     wxRichTextPageLocation location = wxRICHTEXT_PAGE_CENTRE    )
+wxRichTextPrinting.SetPageSetupData,0,0,1,void,						void wxRichTextPrinting.SetPageSetupData (  wxPageSetupDialogData & pageSetupData)
+wxRichTextPrinting.SetParentWindow,0,0,1,void,						void wxRichTextPrinting.SetParentWindow ( wxWindow * parent)
+wxRichTextPrinting.SetPreviewRect,0,0,1,void,						void wxRichTextPrinting.SetPreviewRect (  wxRect & rect)
+wxRichTextPrinting.SetPrintData,0,0,1,void,						void wxRichTextPrinting.SetPrintData (  wxPrintData & printData)
+wxRichTextPrinting.SetShowOnFirstPage,0,0,1,void,						void wxRichTextPrinting.SetShowOnFirstPage ( bool show)
+wxRichTextPrinting.SetTitle,0,0,1,void,						void wxRichTextPrinting.SetTitle (  wxString & title)
+[INHERITS]
+wxObject

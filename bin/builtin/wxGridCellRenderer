@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellRenderer.Clone,0,1,0,wxGridCellRenderer,						wxGridCellRenderer* wxGridCellRenderer.Clone ( )
+wxGridCellRenderer.Draw,0,0,7,void,						void wxGridCellRenderer.Draw ( wxGrid & grid,     wxGridCellAttr & attr,     wxDC & dc,      wxRect & rect,     int row,     int col,     bool isSelected    )
+wxGridCellRenderer.GetBestHeight,0,0,6,int,						int wxGridCellRenderer.GetBestHeight ( wxGrid & grid,     wxGridCellAttr & attr,     wxDC & dc,     int row,     int col,     int width    )
+wxGridCellRenderer.GetBestSize,0,0,5,wxSize,						wxSize wxGridCellRenderer.GetBestSize ( wxGrid & grid,     wxGridCellAttr & attr,     wxDC & dc,     int row,     int col    )
+wxGridCellRenderer.GetBestWidth,0,0,6,int,						int wxGridCellRenderer.GetBestWidth ( wxGrid & grid,     wxGridCellAttr & attr,     wxDC & dc,     int row,     int col,     int height    )
+[INHERITS]
+wxClientDataContainer
+wxRefCounter

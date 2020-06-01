@@ -1,0 +1,12 @@
+[CONSTS]
+wxEVT_GESTURE_PAN
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxPanGestureEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPanGestureEvent.GetDelta,0,0,0,wxPoint,						wxPoint wxPanGestureEvent.GetDelta ( )
+wxPanGestureEvent.SetDelta,0,0,1,void,						void wxPanGestureEvent.SetDelta (  wxPoint & delta)
+[INHERITS]
+wxGestureEvent
+wxEvent
+wxObject

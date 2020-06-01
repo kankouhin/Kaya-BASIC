@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/brush.h>
+[METHODS]
+wxBrush.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBrush.GetColour,0,0,0,wxColour,						wxColour wxBrush.GetColour ( )
+wxBrush.GetStipple,0,1,0,wxBitmap,						wxBitmap* wxBrush.GetStipple ( )
+wxBrush.GetStyle,0,0,0,wxBrushStyle,						wxBrushStyle wxBrush.GetStyle ( )
+wxBrush.IsHatch,0,0,0,bool,						bool wxBrush.IsHatch ( )
+wxBrush.IsNonTransparent,0,0,0,bool,						bool wxBrush.IsNonTransparent ( )
+wxBrush.IsOk,0,0,0,bool,						bool wxBrush.IsOk ( )
+wxBrush.IsTransparent,0,0,0,bool,						bool wxBrush.IsTransparent ( )
+wxBrush.operator!=,0,0,1,bool,						bool wxBrush.operator!= (  wxBrush & brush)
+wxBrush.operator==,0,0,1,bool,						bool wxBrush.operator== (  wxBrush & brush)
+wxBrush.SetColour,0,0,1,void,						void wxBrush.SetColour (  wxColour & colour)
+wxBrush.SetColour,0,0,3,void,						void wxBrush.SetColour ( unsigned char red,     unsigned char green,     unsigned char blue    )
+wxBrush.SetStipple,0,0,1,void,						void wxBrush.SetStipple (  wxBitmap & bitmap)
+wxBrush.SetStyle,0,0,1,void,						void wxBrush.SetStyle ( wxBrushStyle style)
+[INHERITS]
+wxGDIObject
+wxObject

@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/mimetype.h>
+[METHODS]
+wxFileType.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileType.ExpandCommand,1,0,2,wxString,						static wxString wxFileType.ExpandCommand (  wxString & command,      MessageParameters & params    )
+wxFileType.GetAllCommands,0,0,3,size_t,						size_t wxFileType.GetAllCommands ( wxArrayString * verbs,     wxArrayString * commands,      wxFileType.MessageParameters & params    )
+wxFileType.GetDescription,0,0,1,bool,						bool wxFileType.GetDescription ( wxString * desc)
+wxFileType.GetExpandedCommand,0,0,2,wxString,						wxString wxFileType.GetExpandedCommand (  wxString & verb,      wxFileType.MessageParameters & params    )
+wxFileType.GetExtensions,0,0,1,bool,						bool wxFileType.GetExtensions ( wxArrayString & extensions)
+wxFileType.GetIcon,0,0,1,bool,						bool wxFileType.GetIcon ( wxIconLocation * iconLoc)
+wxFileType.GetMimeType,0,0,1,bool,						bool wxFileType.GetMimeType ( wxString * mimeType)
+wxFileType.GetMimeTypes,0,0,1,bool,						bool wxFileType.GetMimeTypes ( wxArrayString & mimeTypes)
+wxFileType.GetOpenCommand,0,0,2,bool,						bool wxFileType.GetOpenCommand ( wxString * command,      MessageParameters & params    )
+wxFileType.GetOpenCommand,0,0,1,wxString,						wxString wxFileType.GetOpenCommand (  wxString & filename)
+wxFileType.GetPrintCommand,0,0,2,bool,						bool wxFileType.GetPrintCommand ( wxString * command,      MessageParameters & params    )
+[INHERITS]

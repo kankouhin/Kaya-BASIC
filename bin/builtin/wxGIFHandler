@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/imaggif.h>
+[METHODS]
+wxGIFHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGIFHandler.DoCanRead,0,0,1,bool,						bool wxGIFHandler.DoCanRead ( wxInputStream & stream)
+wxGIFHandler.DoGetImageCount,0,0,1,int,						int wxGIFHandler.DoGetImageCount ( wxInputStream & stream)
+wxGIFHandler.LoadFile,0,0,4,bool,						bool wxGIFHandler.LoadFile ( wxImage * image,     wxInputStream & stream,     bool verbose = true,     int index = -1    )
+wxGIFHandler.SaveAnimation,0,0,4,bool,						bool wxGIFHandler.SaveAnimation (  wxImageArray & images,     wxOutputStream * stream,     bool verbose = true,     int delayMilliSecs = 1000    )
+wxGIFHandler.SaveFile,0,0,3,bool,						bool wxGIFHandler.SaveFile ( wxImage * image,     wxOutputStream & stream,     bool verbose = true    )
+[INHERITS]
+wxImageHandler
+wxObject

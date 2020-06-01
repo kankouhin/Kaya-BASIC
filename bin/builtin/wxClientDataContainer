@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/clntdata.h>
+[METHODS]
+wxClientDataContainer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxClientDataContainer.GetClientData,0,1,0,void,						void* wxClientDataContainer.GetClientData ( )
+wxClientDataContainer.GetClientObject,0,1,0,wxClientData,						wxClientData* wxClientDataContainer.GetClientObject ( )
+wxClientDataContainer.SetClientData,0,0,1,void,						void wxClientDataContainer.SetClientData ( void * data)
+wxClientDataContainer.SetClientObject,0,0,1,void,						void wxClientDataContainer.SetClientObject ( wxClientData * data)
+[INHERITS]

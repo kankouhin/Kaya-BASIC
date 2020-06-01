@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridStringTable.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridStringTable.AppendCols,0,0,1,bool,						bool wxGridStringTable.AppendCols ( size_t numCols = 1)
+wxGridStringTable.AppendRows,0,0,1,bool,						bool wxGridStringTable.AppendRows ( size_t numRows = 1)
+wxGridStringTable.Clear,0,0,0,void,						void wxGridStringTable.Clear ( )
+wxGridStringTable.DeleteCols,0,0,2,bool,						bool wxGridStringTable.DeleteCols ( size_t pos = 0,     size_t numCols = 1    )
+wxGridStringTable.DeleteRows,0,0,2,bool,						bool wxGridStringTable.DeleteRows ( size_t pos = 0,     size_t numRows = 1    )
+wxGridStringTable.GetColLabelValue,0,0,1,wxString,						wxString wxGridStringTable.GetColLabelValue ( int col)
+wxGridStringTable.GetCornerLabelValue,0,0,0,wxString,						wxString wxGridStringTable.GetCornerLabelValue ( )
+wxGridStringTable.GetNumberCols,0,0,0,int,						int wxGridStringTable.GetNumberCols ( )
+wxGridStringTable.GetNumberRows,0,0,0,int,						int wxGridStringTable.GetNumberRows ( )
+wxGridStringTable.GetRowLabelValue,0,0,1,wxString,						wxString wxGridStringTable.GetRowLabelValue ( int row)
+wxGridStringTable.GetValue,0,0,2,wxString,						wxString wxGridStringTable.GetValue ( int row,     int col    )
+wxGridStringTable.InsertCols,0,0,2,bool,						bool wxGridStringTable.InsertCols ( size_t pos = 0,     size_t numCols = 1    )
+wxGridStringTable.InsertRows,0,0,2,bool,						bool wxGridStringTable.InsertRows ( size_t pos = 0,     size_t numRows = 1    )
+wxGridStringTable.SetColLabelValue,0,0,2,void,						void wxGridStringTable.SetColLabelValue ( int col,      wxString &     )
+wxGridStringTable.SetCornerLabelValue,0,0,1,void,						void wxGridStringTable.SetCornerLabelValue (  wxString & )
+wxGridStringTable.SetRowLabelValue,0,0,2,void,						void wxGridStringTable.SetRowLabelValue ( int row,      wxString &     )
+wxGridStringTable.SetValue,0,0,3,void,						void wxGridStringTable.SetValue ( int row,     int col,      wxString & s    )
+[INHERITS]

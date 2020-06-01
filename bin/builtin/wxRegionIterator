@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/region.h>
+[METHODS]
+wxRegionIterator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRegionIterator.GetH,0,0,0,wxCoord,						wxCoord wxRegionIterator.GetH ( )
+wxRegionIterator.GetHeight,0,0,0,wxCoord,						wxCoord wxRegionIterator.GetHeight ( )
+wxRegionIterator.GetRect,0,0,0,wxRect,						wxRect wxRegionIterator.GetRect ( )
+wxRegionIterator.GetW,0,0,0,wxCoord,						wxCoord wxRegionIterator.GetW ( )
+wxRegionIterator.GetWidth,0,0,0,wxCoord,						wxCoord wxRegionIterator.GetWidth ( )
+wxRegionIterator.GetX,0,0,0,wxCoord,						wxCoord wxRegionIterator.GetX ( )
+wxRegionIterator.GetY,0,0,0,wxCoord,						wxCoord wxRegionIterator.GetY ( )
+wxRegionIterator.HaveRects,0,0,0,bool,						bool wxRegionIterator.HaveRects ( )
+wxRegionIterator.operator++,0,0,0,wxRegionIterator,						wxRegionIterator&  wxRegionIterator.operator++ ( )
+wxRegionIterator.Reset,0,0,0,void,						void wxRegionIterator.Reset ( )
+wxRegionIterator.Reset,0,0,1,void,						void wxRegionIterator.Reset (  wxRegion & region)
+[INHERITS]
+wxObject

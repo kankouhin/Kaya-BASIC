@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/msgout.h>
+[METHODS]
+wxMessageOutput.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMessageOutput.Get,1,1,0,wxMessageOutput,						static wxMessageOutput* wxMessageOutput.Get ( )
+wxMessageOutput.Output,0,0,1,void,						void wxMessageOutput.Output (  wxString & str)
+wxMessageOutput.Printf,0,0,2,void,						void wxMessageOutput.Printf (  wxString & format,      ...    )
+wxMessageOutput.Set,1,1,1,wxMessageOutput,						static wxMessageOutput* wxMessageOutput.Set ( wxMessageOutput * msgout)
+[INHERITS]

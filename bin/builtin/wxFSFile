@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/filesys.h>
+[METHODS]
+wxFSFile.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFSFile.DetachStream,0,1,0,wxInputStream,						wxInputStream* wxFSFile.DetachStream ( )
+wxFSFile.GetAnchor,0,0,0,wxString,						wxString&  wxFSFile.GetAnchor ( )
+wxFSFile.GetLocation,0,0,0,wxString,						wxString&  wxFSFile.GetLocation ( )
+wxFSFile.GetMimeType,0,0,0,wxString,						wxString&  wxFSFile.GetMimeType ( )
+wxFSFile.GetModificationTime,0,0,0,wxDateTime,						wxDateTime wxFSFile.GetModificationTime ( )
+wxFSFile.GetStream,0,1,0,wxInputStream,						wxInputStream* wxFSFile.GetStream ( )
+[INHERITS]
+wxObject

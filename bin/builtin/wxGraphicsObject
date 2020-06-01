@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/graphics.h>
+[METHODS]
+wxGraphicsObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGraphicsObject.GetRenderer,0,1,0,wxGraphicsRenderer,						wxGraphicsRenderer* wxGraphicsObject.GetRenderer ( )
+wxGraphicsObject.IsNull,0,0,0,bool,						bool wxGraphicsObject.IsNull ( )
+[INHERITS]
+wxObject

@@ -1,0 +1,33 @@
+[CONSTS]
+[HEADER]
+<wx/txtstrm.h>
+[METHODS]
+wxTextInputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextInputStream.GetChar,0,0,0,wxChar,						wxChar wxTextInputStream.GetChar ( )
+wxTextInputStream.GetInputStream,0,0,0,wxInputStream,						wxInputStream&  wxTextInputStream.GetInputStream ( )
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( wxString & word)
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( char & c)
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( wchar_t & wc)
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( wxInt16 & i)
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( wxInt32 & i)
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( wxInt64 & i)
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( wxUint16 & i)
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( wxUint32 & i)
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( wxUint64 & i)
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( double & i)
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( float & f)
+wxTextInputStream.operator<<,0,0,1,wxTextInputStream,						wxTextInputStream&  wxTextInputStream.operator<< ( __wxTextInputManip func)
+wxTextInputStream.Read16,0,0,1,wxUint16,						wxUint16 wxTextInputStream.Read16 ( int base = 10)
+wxTextInputStream.Read16S,0,0,1,wxInt16,						wxInt16 wxTextInputStream.Read16S ( int base = 10)
+wxTextInputStream.Read32,0,0,1,wxUint32,						wxUint32 wxTextInputStream.Read32 ( int base = 10)
+wxTextInputStream.Read32S,0,0,1,wxInt32,						wxInt32 wxTextInputStream.Read32S ( int base = 10)
+wxTextInputStream.Read64,0,0,1,wxUint64,						wxUint64 wxTextInputStream.Read64 ( int base = 10)
+wxTextInputStream.Read64S,0,0,1,wxInt64,						wxInt64 wxTextInputStream.Read64S ( int base = 10)
+wxTextInputStream.Read8,0,0,1,wxUint8,						wxUint8 wxTextInputStream.Read8 ( int base = 10)
+wxTextInputStream.Read8S,0,0,1,wxInt8,						wxInt8 wxTextInputStream.Read8S ( int base = 10)
+wxTextInputStream.ReadDouble,0,0,0,double,						double wxTextInputStream.ReadDouble ( )
+wxTextInputStream.ReadLine,0,0,0,wxString,						wxString wxTextInputStream.ReadLine ( )
+wxTextInputStream.ReadString,0,0,0,wxString,						wxString wxTextInputStream.ReadString ( )
+wxTextInputStream.ReadWord,0,0,0,wxString,						wxString wxTextInputStream.ReadWord ( )
+wxTextInputStream.SetStringSeparators,0,0,1,void,						void wxTextInputStream.SetStringSeparators (  wxString & sep)
+[INHERITS]

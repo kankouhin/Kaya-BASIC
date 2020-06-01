@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/imagtga.h>
+[METHODS]
+wxTGAHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTGAHandler.DoCanRead,0,0,1,bool,						bool wxTGAHandler.DoCanRead ( wxInputStream & stream)
+wxTGAHandler.LoadFile,0,0,4,bool,						bool wxTGAHandler.LoadFile ( wxImage * image,     wxInputStream & stream,     bool verbose = true,     int index = -1    )
+wxTGAHandler.SaveFile,0,0,3,bool,						bool wxTGAHandler.SaveFile ( wxImage * image,     wxOutputStream & stream,     bool verbose = true    )
+[INHERITS]
+wxImageHandler
+wxObject

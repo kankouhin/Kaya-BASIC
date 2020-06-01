@@ -1,15 +1,17 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/ctrlsub.h>
-FindString,0,0,2,int,						int FindString (  wxString & string,     bool caseSensitive = false    )
-GetCount,0,0,0,int,						unsigned int GetCount ( )
-GetSelection,0,0,0,int,						int GetSelection ( )
-GetString,0,0,1,wxString,						wxString GetString ( unsigned int n)
-GetStrings,0,0,0,wxArrayString,						wxArrayString GetStrings ( )
-GetStringSelection,0,0,0,wxString,						wxString GetStringSelection ( )
-IsEmpty,0,0,0,bool,						bool IsEmpty ( )
-Select,0,0,1,void,						void Select ( int n)
-SetSelection,0,0,1,void,						void SetSelection ( int n)
-SetString,0,0,2,void,						void SetString ( unsigned int n,      wxString & string    )
-SetStringSelection,0,0,1,bool,						bool SetStringSelection (  wxString & string)
+[METHODS]
+wxItemContainerImmutable.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxItemContainerImmutable.FindString,0,0,2,int,						int wxItemContainerImmutable.FindString (  wxString & string,     bool caseSensitive = false    )
+wxItemContainerImmutable.GetCount,0,0,0,int,						unsigned int wxItemContainerImmutable.GetCount ( )
+wxItemContainerImmutable.GetSelection,0,0,0,int,						int wxItemContainerImmutable.GetSelection ( )
+wxItemContainerImmutable.GetString,0,0,1,wxString,						wxString wxItemContainerImmutable.GetString ( unsigned int n)
+wxItemContainerImmutable.GetStrings,0,0,0,wxArrayString,						wxArrayString wxItemContainerImmutable.GetStrings ( )
+wxItemContainerImmutable.GetStringSelection,0,0,0,wxString,						wxString wxItemContainerImmutable.GetStringSelection ( )
+wxItemContainerImmutable.IsEmpty,0,0,0,bool,						bool wxItemContainerImmutable.IsEmpty ( )
+wxItemContainerImmutable.Select,0,0,1,void,						void wxItemContainerImmutable.Select ( int n)
+wxItemContainerImmutable.SetSelection,0,0,1,void,						void wxItemContainerImmutable.SetSelection ( int n)
+wxItemContainerImmutable.SetString,0,0,2,void,						void wxItemContainerImmutable.SetString ( unsigned int n,      wxString & string    )
+wxItemContainerImmutable.SetStringSelection,0,0,1,bool,						bool wxItemContainerImmutable.SetStringSelection (  wxString & string)
 [INHERITS]

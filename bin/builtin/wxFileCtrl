@@ -1,0 +1,29 @@
+[CONSTS]
+wxFC_DEFAULT_STYLE
+wxFC_OPEN
+wxFC_SAVE
+wxFC_MULTIPLE
+wxFC_NOSHOWHIDDEN
+[HEADER]
+<wx/filectrl.h>
+[METHODS]
+wxFileCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileCtrl.Create,0,0,9,bool,						bool wxFileCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxString & defaultDirectory = wxEmptyString,      wxString & defaultFilename = wxEmptyString,      wxString & wildCard = wxFileSelectorDefaultWildcardStr,     long style = wxFC_DEFAULT_STYLE,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,      wxString & name = wxFileCtrlNameStr    )
+wxFileCtrl.GetDirectory,0,0,0,wxString,						wxString wxFileCtrl.GetDirectory ( )
+wxFileCtrl.GetFilename,0,0,0,wxString,						wxString wxFileCtrl.GetFilename ( )
+wxFileCtrl.GetFilenames,0,0,1,void,						void wxFileCtrl.GetFilenames ( wxArrayString & filenames)
+wxFileCtrl.GetFilterIndex,0,0,0,int,						int wxFileCtrl.GetFilterIndex ( )
+wxFileCtrl.GetPath,0,0,0,wxString,						wxString wxFileCtrl.GetPath ( )
+wxFileCtrl.GetPaths,0,0,1,void,						void wxFileCtrl.GetPaths ( wxArrayString & paths)
+wxFileCtrl.GetWildcard,0,0,0,wxString,						wxString wxFileCtrl.GetWildcard ( )
+wxFileCtrl.SetDirectory,0,0,1,bool,						bool wxFileCtrl.SetDirectory (  wxString & directory)
+wxFileCtrl.SetFilename,0,0,1,bool,						bool wxFileCtrl.SetFilename (  wxString & filename)
+wxFileCtrl.SetFilterIndex,0,0,1,void,						void wxFileCtrl.SetFilterIndex ( int filterIndex)
+wxFileCtrl.SetPath,0,0,1,bool,						bool wxFileCtrl.SetPath (  wxString & path)
+wxFileCtrl.SetWildcard,0,0,1,void,						void wxFileCtrl.SetWildcard (  wxString & wildCard)
+wxFileCtrl.ShowHidden,0,0,1,void,						void wxFileCtrl.ShowHidden ( bool show)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

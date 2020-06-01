@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/uiaction.h>
+[METHODS]
+wxUIActionSimulator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxUIActionSimulator.Char,0,0,2,bool,						bool wxUIActionSimulator.Char ( int keycode,     int modifiers = wxMOD_NONE    )
+wxUIActionSimulator.KeyDown,0,0,2,bool,						bool wxUIActionSimulator.KeyDown ( int keycode,     int modifiers = wxMOD_NONE    )
+wxUIActionSimulator.KeyUp,0,0,2,bool,						bool wxUIActionSimulator.KeyUp ( int keycode,     int modifiers = wxMOD_NONE    )
+wxUIActionSimulator.MouseClick,0,0,1,bool,						bool wxUIActionSimulator.MouseClick ( int button = wxMOUSE_BTN_LEFT)
+wxUIActionSimulator.MouseDblClick,0,0,1,bool,						bool wxUIActionSimulator.MouseDblClick ( int button = wxMOUSE_BTN_LEFT)
+wxUIActionSimulator.MouseDown,0,0,1,bool,						bool wxUIActionSimulator.MouseDown ( int button = wxMOUSE_BTN_LEFT)
+wxUIActionSimulator.MouseDragDrop,0,0,5,bool,						bool wxUIActionSimulator.MouseDragDrop ( long x1,     long y1,     long x2,     long y2,     int button = wxMOUSE_BTN_LEFT    )
+wxUIActionSimulator.MouseMove,0,0,2,bool,						bool wxUIActionSimulator.MouseMove ( long x,     long y    )
+wxUIActionSimulator.MouseMove,0,0,1,bool,						bool wxUIActionSimulator.MouseMove (  wxPoint & point)
+wxUIActionSimulator.MouseUp,0,0,1,bool,						bool wxUIActionSimulator.MouseUp ( int button = wxMOUSE_BTN_LEFT)
+wxUIActionSimulator.Select,0,0,1,bool,						bool wxUIActionSimulator.Select (  wxString & text)
+wxUIActionSimulator.Text,0,0,1,bool,						bool wxUIActionSimulator.Text (  wxString & text)
+[INHERITS]

@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewItem.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewItem.GetID,0,1,0,void,						void* wxDataViewItem.GetID ( )
+wxDataViewItem.IsOk,0,0,0,bool,						bool wxDataViewItem.IsOk ( )
+[INHERITS]

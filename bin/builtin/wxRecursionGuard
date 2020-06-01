@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/recguard.h>
+[METHODS]
+wxRecursionGuard.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRecursionGuard.IsInside,0,0,0,bool,						bool wxRecursionGuard.IsInside ( )
+[INHERITS]

@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/dcbuffer.h>
+[METHODS]
+wxBufferedDC.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBufferedDC.GetStyle,0,0,0,int,						int wxBufferedDC.GetStyle ( )
+wxBufferedDC.Init,0,0,3,void,						void wxBufferedDC.Init ( wxDC * dc,      wxSize & area,     int style = wxBUFFER_CLIENT_AREA    )
+wxBufferedDC.Init,0,0,3,void,						void wxBufferedDC.Init ( wxDC * dc,     wxBitmap & buffer = wxNullBitmap,     int style = wxBUFFER_CLIENT_AREA    )
+wxBufferedDC.SetStyle,0,0,1,void,						void wxBufferedDC.SetStyle ( int style)
+wxBufferedDC.UnMask,0,0,0,void,						void wxBufferedDC.UnMask ( )
+[INHERITS]
+wxMemoryDC
+wxDC
+wxObject

@@ -1,0 +1,19 @@
+[CONSTS]
+wxCLRP_DEFAULT_STYLE
+wxCLRP_USE_TEXTCTRL
+wxCLRP_SHOW_LABEL
+wxCLRP_SHOW_ALPHA
+[HEADER]
+<wx/clrpicker.h>
+[METHODS]
+wxColourPickerCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxColourPickerCtrl.Create,0,0,8,bool,						bool wxColourPickerCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxColour & colour = *wxBLACK,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxCLRP_DEFAULT_STYLE,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxColourPickerCtrlNameStr    )
+wxColourPickerCtrl.GetColour,0,0,0,wxColour,						wxColour wxColourPickerCtrl.GetColour ( )
+wxColourPickerCtrl.SetColour,0,0,1,void,						void wxColourPickerCtrl.SetColour (  wxColour & col)
+wxColourPickerCtrl.SetColour,0,0,1,void,						void wxColourPickerCtrl.SetColour (  wxString & colname)
+[INHERITS]
+wxPickerBase
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

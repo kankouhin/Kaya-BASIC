@@ -1,0 +1,53 @@
+[CONSTS]
+[HEADER]
+<wx/msw/registry.h>
+[METHODS]
+wxRegKey.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRegKey.AccessMode,0,0,-1,enum,						enum wxRegKey.AccessMode
+wxRegKey.StdKey,0,0,-1,enum,						enum wxRegKey.StdKey
+wxRegKey.ValueType,0,0,-1,enum,						enum wxRegKey.ValueType
+wxRegKey.WOW64ViewMode,0,0,-1,enum,						enum wxRegKey.WOW64ViewMode
+wxRegKey.Close,0,0,0,void,						void wxRegKey.Close ( )
+wxRegKey.Copy,0,0,1,bool,						bool wxRegKey.Copy (  wxString & szNewName)
+wxRegKey.Copy,0,0,1,bool,						bool wxRegKey.Copy ( wxRegKey & keyDst)
+wxRegKey.CopyValue,0,0,3,bool,						bool wxRegKey.CopyValue (  wxString & szValue,     wxRegKey & keyDst,      wxString & szNewName = wxEmptyString    )
+wxRegKey.Create,0,0,1,bool,						bool wxRegKey.Create ( bool bOkIfExists = true)
+wxRegKey.DeleteKey,0,0,1,void,						void wxRegKey.DeleteKey (  wxString & szKey)
+wxRegKey.DeleteSelf,0,0,0,void,						void wxRegKey.DeleteSelf ( )
+wxRegKey.DeleteValue,0,0,1,void,						void wxRegKey.DeleteValue (  wxString & szKey)
+wxRegKey.Exists,0,0,0,bool,						bool wxRegKey.Exists ( )
+wxRegKey.Export,0,0,1,bool,						bool wxRegKey.Export (  wxString & filename)
+wxRegKey.Export,0,0,1,bool,						bool wxRegKey.Export ( wxOutputStream & ostr)
+wxRegKey.GetFirstKey,0,0,2,bool,						bool wxRegKey.GetFirstKey ( wxString & strKeyName,     long & lIndex    )
+wxRegKey.GetFirstValue,0,0,2,bool,						bool wxRegKey.GetFirstValue ( wxString & strValueName,     long & lIndex    )
+wxRegKey.GetKeyInfo,0,0,4,bool,						bool wxRegKey.GetKeyInfo ( size_t * pnSubKeys,     size_t * pnMaxKeyLen,     size_t * pnValues,     size_t * pnMaxValueLen    )
+wxRegKey.GetName,0,0,1,wxString,						wxString wxRegKey.GetName ( bool bShortPrefix = true)
+wxRegKey.GetNextKey,0,0,2,bool,						bool wxRegKey.GetNextKey ( wxString & strKeyName,     long & lIndex    )
+wxRegKey.GetNextValue,0,0,2,bool,						bool wxRegKey.GetNextValue ( wxString & strValueName,     long & lIndex    )
+wxRegKey.GetValueType,0,0,1,ValueType,						ValueType wxRegKey.GetValueType (  wxString & szValue)
+wxRegKey.GetView,0,0,0,WOW64ViewMode,						WOW64ViewMode wxRegKey.GetView ( )
+wxRegKey.HasSubKey,0,0,1,bool,						bool wxRegKey.HasSubKey (  wxString & szKey)
+wxRegKey.HasSubkeys,0,0,0,bool,						bool wxRegKey.HasSubkeys ( )
+wxRegKey.HasValue,0,0,1,bool,						bool wxRegKey.HasValue (  wxString & szValue)
+wxRegKey.HasValues,0,0,0,bool,						bool wxRegKey.HasValues ( )
+wxRegKey.IsEmpty,0,0,0,bool,						bool wxRegKey.IsEmpty ( )
+wxRegKey.IsNumericValue,0,0,1,bool,						bool wxRegKey.IsNumericValue (  wxString & szValue)
+wxRegKey.IsOpened,0,0,0,bool,						bool wxRegKey.IsOpened ( )
+wxRegKey.Open,0,0,1,bool,						bool wxRegKey.Open ( AccessMode mode = Write)
+wxRegKey.operator=,0,0,1,wxRegKey,						wxRegKey&  wxRegKey.operator= (  wxString & strValue)
+wxRegKey.QueryDefaultValue,0,0,0,wxString,						wxString wxRegKey.QueryDefaultValue ( )
+wxRegKey.QueryRawValue,0,0,2,bool,						bool wxRegKey.QueryRawValue (  wxString & szValue,     wxString & strValue    )
+wxRegKey.QueryValue,0,0,3,bool,						bool wxRegKey.QueryValue (  wxString & szValue,     wxString & strValue,     bool raw    )
+wxRegKey.QueryValue,0,0,2,bool,						bool wxRegKey.QueryValue (  wxString & szValue,     long * plValue    )
+wxRegKey.QueryValue,0,0,2,bool,						bool wxRegKey.QueryValue (  wxString & szValue,     wxMemoryBuffer & buf    )
+wxRegKey.Rename,0,0,1,bool,						bool wxRegKey.Rename (  wxString & szNewName)
+wxRegKey.RenameValue,0,0,2,bool,						bool wxRegKey.RenameValue (  wxString & szValueOld,      wxString & szValueNew    )
+wxRegKey.ReserveMemoryForName,0,0,1,void,						void wxRegKey.ReserveMemoryForName ( size_t bytes)
+wxRegKey.SetHkey,0,0,1,void,						void wxRegKey.SetHkey ( WXHKEY hKey)
+wxRegKey.SetName,0,0,1,void,						void wxRegKey.SetName (  wxString & strKey)
+wxRegKey.SetName,0,0,2,void,						void wxRegKey.SetName ( StdKey keyParent,      wxString & strKey    )
+wxRegKey.SetName,0,0,2,void,						void wxRegKey.SetName (  wxRegKey & keyParent,      wxString & strKey    )
+wxRegKey.SetValue,0,0,2,bool,						bool wxRegKey.SetValue (  wxString & szValue,     long lValue    )
+wxRegKey.SetValue,0,0,2,bool,						bool wxRegKey.SetValue (  wxString & szValue,      wxString & strValue    )
+wxRegKey.SetValue,0,0,2,bool,						bool wxRegKey.SetValue (  wxString & szValue,      wxMemoryBuffer & buf    )
+[INHERITS]

@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/settings.h>
+[METHODS]
+wxSystemAppearance.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSystemAppearance.GetName,0,0,0,wxString,						wxString wxSystemAppearance.GetName ( )
+wxSystemAppearance.IsDark,0,0,0,bool,						bool wxSystemAppearance.IsDark ( )
+wxSystemAppearance.IsUsingDarkBackground,0,0,0,bool,						bool wxSystemAppearance.IsUsingDarkBackground ( )
+[INHERITS]

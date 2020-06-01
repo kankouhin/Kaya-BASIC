@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlwin.h>
+[METHODS]
+wxHtmlCellEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlCellEvent.GetCell,0,1,0,wxHtmlCell,						wxHtmlCell* wxHtmlCellEvent.GetCell ( )
+wxHtmlCellEvent.GetLinkClicked,0,0,0,bool,						bool wxHtmlCellEvent.GetLinkClicked ( )
+wxHtmlCellEvent.GetMouseEvent,0,0,0,wxMouseEvent,						wxMouseEvent wxHtmlCellEvent.GetMouseEvent ( )
+wxHtmlCellEvent.GetPoint,0,0,0,wxPoint,						wxPoint wxHtmlCellEvent.GetPoint ( )
+wxHtmlCellEvent.SetLinkClicked,0,0,1,void,						void wxHtmlCellEvent.SetLinkClicked ( bool linkclicked)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

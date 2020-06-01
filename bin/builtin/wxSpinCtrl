@@ -1,0 +1,26 @@
+[CONSTS]
+wxSP_ARROW_KEYS
+wxSP_WRAP
+wxTE_PROCESS_ENTER
+wxALIGN_LEFT
+wxALIGN_CENTRE_HORIZONTAL
+wxALIGN_RIGHT
+[HEADER]
+<wx/spinctrl.h>
+[METHODS]
+wxSpinCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSpinCtrl.Create,0,0,10,bool,						bool wxSpinCtrl.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxString & value = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxSP_ARROW_KEYS,     int min = 0,     int max = 100,     int initial = 0,      wxString & name = &quot;wxSpinCtrl&quot;    )
+wxSpinCtrl.GetBase,0,0,0,int,						int wxSpinCtrl.GetBase ( )
+wxSpinCtrl.GetMax,0,0,0,int,						int wxSpinCtrl.GetMax ( )
+wxSpinCtrl.GetMin,0,0,0,int,						int wxSpinCtrl.GetMin ( )
+wxSpinCtrl.GetValue,0,0,0,int,						int wxSpinCtrl.GetValue ( )
+wxSpinCtrl.SetBase,0,0,1,bool,						bool wxSpinCtrl.SetBase ( int base)
+wxSpinCtrl.SetRange,0,0,2,void,						void wxSpinCtrl.SetRange ( int minVal,     int maxVal    )
+wxSpinCtrl.SetSelection,0,0,2,void,						void wxSpinCtrl.SetSelection ( long from,     long to    )
+wxSpinCtrl.SetValue,0,0,1,void,						void wxSpinCtrl.SetValue (  wxString & text)
+wxSpinCtrl.SetValue,0,0,1,void,						void wxSpinCtrl.SetValue ( int value)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

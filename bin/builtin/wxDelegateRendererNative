@@ -1,0 +1,26 @@
+[CONSTS]
+[HEADER]
+<wx/renderer.h>
+[METHODS]
+wxDelegateRendererNative.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDelegateRendererNative.DrawCheckBox,0,0,4,void,						void wxDelegateRendererNative.DrawCheckBox ( wxWindow * win,     wxDC & dc,      wxRect & rect,     int flags = 0    )
+wxDelegateRendererNative.DrawCheckMark,0,0,4,void,						void wxDelegateRendererNative.DrawCheckMark ( wxWindow * win,     wxDC & dc,      wxRect & rect,     int flags = 0    )
+wxDelegateRendererNative.DrawComboBoxDropButton,0,0,4,void,						void wxDelegateRendererNative.DrawComboBoxDropButton ( wxWindow * win,     wxDC & dc,      wxRect & rect,     int flags = 0    )
+wxDelegateRendererNative.DrawDropArrow,0,0,4,void,						void wxDelegateRendererNative.DrawDropArrow ( wxWindow * win,     wxDC & dc,      wxRect & rect,     int flags = 0    )
+wxDelegateRendererNative.DrawFocusRect,0,0,4,void,						void wxDelegateRendererNative.DrawFocusRect ( wxWindow * win,     wxDC & dc,      wxRect & rect,     int flags = 0    )
+wxDelegateRendererNative.DrawHeaderButton,0,0,6,int,						int wxDelegateRendererNative.DrawHeaderButton ( wxWindow * win,     wxDC & dc,      wxRect & rect,     int flags = 0,     wxHeaderSortIconType sortArrow = wxHDR_SORT_ICON_NONE,     wxHeaderButtonParams * params = NULL    )
+wxDelegateRendererNative.DrawHeaderButtonContents,0,0,6,int,						int wxDelegateRendererNative.DrawHeaderButtonContents ( wxWindow * win,     wxDC & dc,      wxRect & rect,     int flags = 0,     wxHeaderSortIconType sortArrow = wxHDR_SORT_ICON_NONE,     wxHeaderButtonParams * params = NULL    )
+wxDelegateRendererNative.DrawItemSelectionRect,0,0,4,void,						void wxDelegateRendererNative.DrawItemSelectionRect ( wxWindow * win,     wxDC & dc,      wxRect & rect,     int flags = 0    )
+wxDelegateRendererNative.DrawPushButton,0,0,4,void,						void wxDelegateRendererNative.DrawPushButton ( wxWindow * win,     wxDC & dc,      wxRect & rect,     int flags = 0    )
+wxDelegateRendererNative.DrawSplitterBorder,0,0,4,void,						void wxDelegateRendererNative.DrawSplitterBorder ( wxWindow * win,     wxDC & dc,      wxRect & rect,     int flags = 0    )
+wxDelegateRendererNative.DrawSplitterSash,0,0,6,void,						void wxDelegateRendererNative.DrawSplitterSash ( wxWindow * win,     wxDC & dc,      wxSize & size,     wxCoord position,     wxOrientation orient,     int flags = 0    )
+wxDelegateRendererNative.DrawTreeItemButton,0,0,4,void,						void wxDelegateRendererNative.DrawTreeItemButton ( wxWindow * win,     wxDC & dc,      wxRect & rect,     int flags = 0    )
+wxDelegateRendererNative.GetCheckBoxSize,0,0,1,wxSize,						wxSize wxDelegateRendererNative.GetCheckBoxSize ( wxWindow * win)
+wxDelegateRendererNative.GetCheckMarkSize,0,0,1,wxSize,						wxSize wxDelegateRendererNative.GetCheckMarkSize ( wxWindow * win)
+wxDelegateRendererNative.GetExpanderSize,0,0,1,wxSize,						wxSize wxDelegateRendererNative.GetExpanderSize ( wxWindow * win)
+wxDelegateRendererNative.GetHeaderButtonHeight,0,0,1,int,						int wxDelegateRendererNative.GetHeaderButtonHeight ( wxWindow * win)
+wxDelegateRendererNative.GetHeaderButtonMargin,0,0,1,int,						int wxDelegateRendererNative.GetHeaderButtonMargin ( wxWindow * win)
+wxDelegateRendererNative.GetSplitterParams,0,0,1,wxSplitterRenderParams,						wxSplitterRenderParams wxDelegateRendererNative.GetSplitterParams (  wxWindow * win)
+wxDelegateRendererNative.GetVersion,0,0,0,wxRendererVersion,						wxRendererVersion wxDelegateRendererNative.GetVersion ( )
+[INHERITS]
+wxRendererNative

@@ -1,11 +1,13 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/print.h>
-CreateCanvas,0,0,0,void,						void CreateCanvas ( )
-CreateControlBar,0,0,0,void,						void CreateControlBar ( )
-Initialize,0,0,0,void,						void Initialize ( )
-InitializeWithModality,0,0,1,void,						void InitializeWithModality ( wxPreviewFrameModalityKind kind)
-OnCloseWindow,0,0,1,void,						void OnCloseWindow ( wxCloseEvent & event)
+[METHODS]
+wxPreviewFrame.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPreviewFrame.CreateCanvas,0,0,0,void,						void wxPreviewFrame.CreateCanvas ( )
+wxPreviewFrame.CreateControlBar,0,0,0,void,						void wxPreviewFrame.CreateControlBar ( )
+wxPreviewFrame.Initialize,0,0,0,void,						void wxPreviewFrame.Initialize ( )
+wxPreviewFrame.InitializeWithModality,0,0,1,void,						void wxPreviewFrame.InitializeWithModality ( wxPreviewFrameModalityKind kind)
+wxPreviewFrame.OnCloseWindow,0,0,1,void,						void wxPreviewFrame.OnCloseWindow ( wxCloseEvent & event)
 [INHERITS]
 wxFrame
 wxTopLevelWindow

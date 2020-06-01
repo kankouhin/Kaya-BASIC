@@ -1,0 +1,31 @@
+[CONSTS]
+[HEADER]
+<wx/uri.h>
+[METHODS]
+wxURI.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxURI.BuildUnescapedURI,0,0,0,wxString,						wxString wxURI.BuildUnescapedURI ( )
+wxURI.BuildURI,0,0,0,wxString,						wxString wxURI.BuildURI ( )
+wxURI.Create,0,0,1,bool,						bool wxURI.Create (  wxString & uri)
+wxURI.GetFragment,0,0,0,wxString,						wxString&  wxURI.GetFragment ( )
+wxURI.GetHostType,0,0,0,wxURIHostType,						wxURIHostType wxURI.GetHostType ( )
+wxURI.GetPassword,0,0,0,wxString,						wxString wxURI.GetPassword ( )
+wxURI.GetPath,0,0,0,wxString,						wxString&  wxURI.GetPath ( )
+wxURI.GetPort,0,0,0,wxString,						wxString&  wxURI.GetPort ( )
+wxURI.GetQuery,0,0,0,wxString,						wxString&  wxURI.GetQuery ( )
+wxURI.GetScheme,0,0,0,wxString,						wxString&  wxURI.GetScheme ( )
+wxURI.GetServer,0,0,0,wxString,						wxString&  wxURI.GetServer ( )
+wxURI.GetUser,0,0,0,wxString,						wxString wxURI.GetUser ( )
+wxURI.GetUserInfo,0,0,0,wxString,						wxString&  wxURI.GetUserInfo ( )
+wxURI.HasFragment,0,0,0,bool,						bool wxURI.HasFragment ( )
+wxURI.HasPath,0,0,0,bool,						bool wxURI.HasPath ( )
+wxURI.HasPort,0,0,0,bool,						bool wxURI.HasPort ( )
+wxURI.HasQuery,0,0,0,bool,						bool wxURI.HasQuery ( )
+wxURI.HasScheme,0,0,0,bool,						bool wxURI.HasScheme ( )
+wxURI.HasServer,0,0,0,bool,						bool wxURI.HasServer ( )
+wxURI.HasUserInfo,0,0,0,bool,						bool wxURI.HasUserInfo ( )
+wxURI.IsReference,0,0,0,bool,						bool wxURI.IsReference ( )
+wxURI.operator==,0,0,1,bool,						bool wxURI.operator== (  wxURI & uricomp)
+wxURI.Resolve,0,0,2,void,						void wxURI.Resolve (  wxURI & base,     int flags = wxURI_STRICT    )
+wxURI.Unescape,1,0,1,wxString,						static wxString wxURI.Unescape (  wxString & uri)
+[INHERITS]
+wxObject

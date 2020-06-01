@@ -1,0 +1,33 @@
+[CONSTS]
+wxRA_SPECIFY_ROWS
+wxRA_SPECIFY_COLS
+wxEVT_RADIOBOX
+[HEADER]
+<wx/radiobox.h>
+[METHODS]
+wxRadioBox.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRadioBox.Create,0,0,11,bool,						bool wxRadioBox.Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     int n = 0,      wxString choices[] = NULL,     int majorDimension = 0,     long style = wxRA_SPECIFY_COLS,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxRadioBoxNameStr    )
+wxRadioBox.Create,0,0,10,bool,						bool wxRadioBox.Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     int majorDimension = 0,     long style = wxRA_SPECIFY_COLS,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxRadioBoxNameStr    )
+wxRadioBox.Enable,0,0,2,bool,						bool wxRadioBox.Enable ( unsigned int n,     bool enable = true    )
+wxRadioBox.FindString,0,0,2,int,						int wxRadioBox.FindString (  wxString & string,     bool bCase = false    )
+wxRadioBox.GetColumnCount,0,0,0,int,						unsigned int wxRadioBox.GetColumnCount ( )
+wxRadioBox.GetCount,0,0,0,int,						unsigned int wxRadioBox.GetCount ( )
+wxRadioBox.GetItemFromPoint,0,0,1,int,						int wxRadioBox.GetItemFromPoint (  wxPoint & pt)
+wxRadioBox.GetItemHelpText,0,0,1,wxString,						wxString wxRadioBox.GetItemHelpText ( unsigned int item)
+wxRadioBox.GetItemToolTip,0,1,1,wxToolTip,						wxToolTip* wxRadioBox.GetItemToolTip ( unsigned int item)
+wxRadioBox.GetRowCount,0,0,0,int,						unsigned int wxRadioBox.GetRowCount ( )
+wxRadioBox.GetSelection,0,0,0,int,						int wxRadioBox.GetSelection ( )
+wxRadioBox.GetString,0,0,1,wxString,						wxString wxRadioBox.GetString ( unsigned int n)
+wxRadioBox.IsItemEnabled,0,0,1,bool,						bool wxRadioBox.IsItemEnabled ( unsigned int n)
+wxRadioBox.IsItemShown,0,0,1,bool,						bool wxRadioBox.IsItemShown ( unsigned int n)
+wxRadioBox.SetItemHelpText,0,0,2,void,						void wxRadioBox.SetItemHelpText ( unsigned int item,      wxString & helptext    )
+wxRadioBox.SetItemToolTip,0,0,2,void,						void wxRadioBox.SetItemToolTip ( unsigned int item,      wxString & text    )
+wxRadioBox.SetSelection,0,0,1,void,						void wxRadioBox.SetSelection ( int n)
+wxRadioBox.SetString,0,0,2,void,						void wxRadioBox.SetString ( unsigned int n,      wxString & string    )
+wxRadioBox.Show,0,0,2,bool,						bool wxRadioBox.Show ( unsigned int item,     bool show = true    )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxItemContainerImmutable

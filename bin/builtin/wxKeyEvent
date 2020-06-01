@@ -1,0 +1,24 @@
+[CONSTS]
+wxEVT_KEY_DOWN
+wxEVT_KEY_UP
+wxEVT_CHAR
+wxEVT_CHAR_HOOK
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxKeyEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxKeyEvent.DoAllowNextEvent,0,0,0,void,						void wxKeyEvent.DoAllowNextEvent ( )
+wxKeyEvent.GetKeyCode,0,0,0,int,						int wxKeyEvent.GetKeyCode ( )
+wxKeyEvent.GetPosition,0,0,0,wxPoint,						wxPoint wxKeyEvent.GetPosition ( )
+wxKeyEvent.GetPosition,0,0,2,void,						void wxKeyEvent.GetPosition ( wxCoord * x,     wxCoord * y    )
+wxKeyEvent.GetRawKeyCode,0,0,0,wxUint32,						wxUint32 wxKeyEvent.GetRawKeyCode ( )
+wxKeyEvent.GetRawKeyFlags,0,0,0,wxUint32,						wxUint32 wxKeyEvent.GetRawKeyFlags ( )
+wxKeyEvent.GetUnicodeKey,0,0,0,wxChar,						wxChar wxKeyEvent.GetUnicodeKey ( )
+wxKeyEvent.GetX,0,0,0,wxCoord,						wxCoord wxKeyEvent.GetX ( )
+wxKeyEvent.GetY,0,0,0,wxCoord,						wxCoord wxKeyEvent.GetY ( )
+wxKeyEvent.IsKeyInCategory,0,0,1,bool,						bool wxKeyEvent.IsKeyInCategory ( int category)
+wxKeyEvent.IsNextEventAllowed,0,0,0,bool,						bool wxKeyEvent.IsNextEventAllowed ( )
+[INHERITS]
+wxEvent
+wxObject
+wxKeyboardState

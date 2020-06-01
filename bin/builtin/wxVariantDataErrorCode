@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/msw/ole/oleutils.h>
+[METHODS]
+wxVariantDataErrorCode.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxVariantDataErrorCode.Clone,0,1,0,wxVariantData,						wxVariantData* wxVariantDataErrorCode.Clone ( )
+wxVariantDataErrorCode.Eq,0,0,1,bool,						bool wxVariantDataErrorCode.Eq ( wxVariantData & data)
+wxVariantDataErrorCode.GetAsAny,0,0,1,bool,						bool wxVariantDataErrorCode.GetAsAny ( wxAny * any)
+wxVariantDataErrorCode.GetType,0,0,0,wxString,						wxString wxVariantDataErrorCode.GetType ( )
+wxVariantDataErrorCode.GetValue,0,0,0,SCODE,						SCODE wxVariantDataErrorCode.GetValue ( )
+wxVariantDataErrorCode.SetValue,0,0,1,void,						void wxVariantDataErrorCode.SetValue ( SCODE value)
+wxVariantDataErrorCode.Write,0,0,1,bool,						bool wxVariantDataErrorCode.Write ( wxString & str)
+[INHERITS]
+wxVariantData

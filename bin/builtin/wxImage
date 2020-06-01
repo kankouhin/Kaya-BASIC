@@ -1,0 +1,126 @@
+[CONSTS]
+wxIMAGE_OPTION_FILENAME
+wxIMAGE_OPTION_GIF_COMMENT
+wxIMAGE_OPTION_MAX_WIDTH
+wxIMAGE_OPTION_ORIGINAL_WIDTH
+wxIMAGE_OPTION_QUALITY
+wxIMAGE_OPTION_RESOLUTIONUNIT
+wxIMAGE_OPTION_RESOLUTION
+wxIMAGE_OPTION_PNG_FORMAT
+wxIMAGE_OPTION_PNG_BITDEPTH
+wxIMAGE_OPTION_PNG_FILTER
+wxIMAGE_OPTION_PNG_COMPRESSION_LEVEL
+wxIMAGE_OPTION_PNG_COMPRESSION_MEM_LEVEL
+wxIMAGE_OPTION_PNG_COMPRESSION_STRATEGY
+wxIMAGE_OPTION_PNG_COMPRESSION_BUFFER_SIZE
+wxIMAGE_OPTION_TIFF_BITSPERSAMPLE
+wxIMAGE_OPTION_TIFF_SAMPLESPERPIXEL
+wxIMAGE_OPTION_TIFF_COMPRESSION
+wxIMAGE_OPTION_TIFF_PHOTOMETRIC
+wxIMAGE_OPTION_GIF_TRANSPARENCY
+[HEADER]
+<wx/image.h>
+[METHODS]
+wxImage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxImage.AddHandler,1,0,1,void,						static void wxImage.AddHandler ( wxImageHandler * handler)
+wxImage.Blur,0,0,1,wxImage,						wxImage wxImage.Blur ( int blurRadius)
+wxImage.BlurHorizontal,0,0,1,wxImage,						wxImage wxImage.BlurHorizontal ( int blurRadius)
+wxImage.BlurVertical,0,0,1,wxImage,						wxImage wxImage.BlurVertical ( int blurRadius)
+wxImage.CanRead,1,0,1,bool,						static bool wxImage.CanRead (  wxString & filename)
+wxImage.CanRead,1,0,1,bool,						static bool wxImage.CanRead ( wxInputStream & stream)
+wxImage.CleanUpHandlers,1,0,0,void,						static void wxImage.CleanUpHandlers ( )
+wxImage.Clear,0,0,1,void,						void wxImage.Clear ( unsigned char value = 0)
+wxImage.ClearAlpha,0,0,0,void,						void wxImage.ClearAlpha ( )
+wxImage.ComputeHistogram,0,0,1,long,						unsigned long wxImage.ComputeHistogram ( wxImageHistogram & histogram)
+wxImage.ConvertAlphaToMask,0,0,1,bool,						bool wxImage.ConvertAlphaToMask ( unsigned char threshold = wxIMAGE_ALPHA_THRESHOLD)
+wxImage.ConvertAlphaToMask,0,0,4,bool,						bool wxImage.ConvertAlphaToMask ( unsigned char mr,     unsigned char mg,     unsigned char mb,     unsigned char threshold = wxIMAGE_ALPHA_THRESHOLD    )
+wxImage.ConvertToDisabled,0,0,1,wxImage,						wxImage wxImage.ConvertToDisabled ( unsigned char brightness = 255)
+wxImage.ConvertToGreyscale,0,0,3,wxImage,						wxImage wxImage.ConvertToGreyscale ( double weight_r,     double weight_g,     double weight_b    )
+wxImage.ConvertToGreyscale,0,0,0,wxImage,						wxImage wxImage.ConvertToGreyscale ( )
+wxImage.ConvertToMono,0,0,3,wxImage,						wxImage wxImage.ConvertToMono ( unsigned char r,     unsigned char g,     unsigned char b    )
+wxImage.Copy,0,0,0,wxImage,						wxImage wxImage.Copy ( )
+wxImage.Create,0,0,3,bool,						bool wxImage.Create ( int width,     int height,     bool clear = true    )
+wxImage.Create,0,0,2,bool,						bool wxImage.Create (  wxSize & sz,     bool clear = true    )
+wxImage.Create,0,0,4,bool,						bool wxImage.Create ( int width,     int height,     unsigned char * data,     bool static_data = false    )
+wxImage.Create,0,0,3,bool,						bool wxImage.Create (  wxSize & sz,     unsigned char * data,     bool static_data = false    )
+wxImage.Create,0,0,5,bool,						bool wxImage.Create ( int width,     int height,     unsigned char * data,     unsigned char * alpha,     bool static_data = false    )
+wxImage.Create,0,0,4,bool,						bool wxImage.Create (  wxSize & sz,     unsigned char * data,     unsigned char * alpha,     bool static_data = false    )
+wxImage.Destroy,0,0,0,void,						void wxImage.Destroy ( )
+wxImage.FindFirstUnusedColour,0,0,6,bool,						bool wxImage.FindFirstUnusedColour ( unsigned char * r,     unsigned char * g,     unsigned char * b,     unsigned char startR = 1,     unsigned char startG = 0,     unsigned char startB = 0    )
+wxImage.FindHandler,1,1,1,wxImageHandler,						static wxImageHandler* wxImage.FindHandler (  wxString & name)
+wxImage.FindHandler,1,1,2,wxImageHandler,						static wxImageHandler* wxImage.FindHandler (  wxString & extension,     wxBitmapType imageType    )
+wxImage.FindHandler,1,1,1,wxImageHandler,						static wxImageHandler* wxImage.FindHandler ( wxBitmapType imageType)
+wxImage.FindHandlerMime,1,1,1,wxImageHandler,						static wxImageHandler* wxImage.FindHandlerMime (  wxString & mimetype)
+wxImage.GetAlpha,0,1,0,char,						unsigned char* wxImage.GetAlpha ( )
+wxImage.GetAlpha,0,0,2,char,						unsigned char wxImage.GetAlpha ( int x,     int y    )
+wxImage.GetBlue,0,0,2,char,						unsigned char wxImage.GetBlue ( int x,     int y    )
+wxImage.GetData,0,1,0,char,						unsigned char* wxImage.GetData ( )
+wxImage.GetDefaultLoadFlags,1,0,0,int,						static int wxImage.GetDefaultLoadFlags ( )
+wxImage.GetGreen,0,0,2,char,						unsigned char wxImage.GetGreen ( int x,     int y    )
+wxImage.GetHandlers,1,0,0,wxList,						static wxList&  wxImage.GetHandlers ( )
+wxImage.GetHeight,0,0,0,int,						int wxImage.GetHeight ( )
+wxImage.GetImageCount,1,0,2,int,						static int wxImage.GetImageCount (  wxString & filename,     wxBitmapType type = wxBITMAP_TYPE_ANY    )
+wxImage.GetImageCount,1,0,2,int,						static int wxImage.GetImageCount ( wxInputStream & stream,     wxBitmapType type = wxBITMAP_TYPE_ANY    )
+wxImage.GetImageExtWildcard,1,0,0,wxString,						static wxString wxImage.GetImageExtWildcard ( )
+wxImage.GetLoadFlags,0,0,0,int,						int wxImage.GetLoadFlags ( )
+wxImage.GetMaskBlue,0,0,0,char,						unsigned char wxImage.GetMaskBlue ( )
+wxImage.GetMaskGreen,0,0,0,char,						unsigned char wxImage.GetMaskGreen ( )
+wxImage.GetMaskRed,0,0,0,char,						unsigned char wxImage.GetMaskRed ( )
+wxImage.GetOption,0,0,1,wxString,						wxString wxImage.GetOption (  wxString & name)
+wxImage.GetOptionInt,0,0,1,int,						int wxImage.GetOptionInt (  wxString & name)
+wxImage.GetOrFindMaskColour,0,0,3,bool,						bool wxImage.GetOrFindMaskColour ( unsigned char * r,     unsigned char * g,     unsigned char * b    )
+wxImage.GetPalette,0,0,0,wxPalette,						wxPalette&  wxImage.GetPalette ( )
+wxImage.GetRed,0,0,2,char,						unsigned char wxImage.GetRed ( int x,     int y    )
+wxImage.GetSize,0,0,0,wxSize,						wxSize wxImage.GetSize ( )
+wxImage.GetSubImage,0,0,1,wxImage,						wxImage wxImage.GetSubImage (  wxRect & rect)
+wxImage.GetType,0,0,0,wxBitmapType,						wxBitmapType wxImage.GetType ( )
+wxImage.GetWidth,0,0,0,int,						int wxImage.GetWidth ( )
+wxImage.HasAlpha,0,0,0,bool,						bool wxImage.HasAlpha ( )
+wxImage.HasMask,0,0,0,bool,						bool wxImage.HasMask ( )
+wxImage.HasOption,0,0,1,bool,						bool wxImage.HasOption (  wxString & name)
+wxImage.HSVtoRGB,1,0,1,wxImage.RGBValue,						static wxImage.RGBValue wxImage.HSVtoRGB (  wxImage.HSVValue & hsv)
+wxImage.InitAlpha,0,0,0,void,						void wxImage.InitAlpha ( )
+wxImage.InitStandardHandlers,1,0,0,void,						static void wxImage.InitStandardHandlers ( )
+wxImage.InsertHandler,1,0,1,void,						static void wxImage.InsertHandler ( wxImageHandler * handler)
+wxImage.IsOk,0,0,0,bool,						bool wxImage.IsOk ( )
+wxImage.IsTransparent,0,0,3,bool,						bool wxImage.IsTransparent ( int x,     int y,     unsigned char threshold = wxIMAGE_ALPHA_THRESHOLD    )
+wxImage.LoadFile,0,0,3,bool,						bool wxImage.LoadFile ( wxInputStream & stream,     wxBitmapType type = wxBITMAP_TYPE_ANY,     int index = -1    )
+wxImage.LoadFile,0,0,3,bool,						bool wxImage.LoadFile (  wxString & name,     wxBitmapType type = wxBITMAP_TYPE_ANY,     int index = -1    )
+wxImage.LoadFile,0,0,3,bool,						bool wxImage.LoadFile (  wxString & name,      wxString & mimetype,     int index = -1    )
+wxImage.LoadFile,0,0,3,bool,						bool wxImage.LoadFile ( wxInputStream & stream,      wxString & mimetype,     int index = -1    )
+wxImage.Mirror,0,0,1,wxImage,						wxImage wxImage.Mirror ( bool horizontally = true)
+wxImage.operator=,0,0,1,wxImage,						wxImage&  wxImage.operator= (  wxImage & image)
+wxImage.Paste,0,0,3,void,						void wxImage.Paste (  wxImage & image,     int x,     int y    )
+wxImage.RemoveHandler,1,0,1,bool,						static bool wxImage.RemoveHandler (  wxString & name)
+wxImage.Replace,0,0,6,void,						void wxImage.Replace ( unsigned char r1,     unsigned char g1,     unsigned char b1,     unsigned char r2,     unsigned char g2,     unsigned char b2    )
+wxImage.Rescale,0,0,3,wxImage,						wxImage&  wxImage.Rescale ( int width,     int height,     wxImageResizeQuality quality = wxIMAGE_QUALITY_NORMAL    )
+wxImage.Resize,0,0,5,wxImage,						wxImage&  wxImage.Resize (  wxSize & size,      wxPoint & pos,     int red = -1,     int green = -1,     int blue = -1    )
+wxImage.RGBtoHSV,1,0,1,wxImage.HSVValue,						static wxImage.HSVValue wxImage.RGBtoHSV (  wxImage.RGBValue & rgb)
+wxImage.Rotate,0,0,4,wxImage,						wxImage wxImage.Rotate ( double angle,      wxPoint & rotationCentre,     bool interpolating = true,     wxPoint * offsetAfterRotation = NULL    )
+wxImage.Rotate180,0,0,0,wxImage,						wxImage wxImage.Rotate180 ( )
+wxImage.Rotate90,0,0,1,wxImage,						wxImage wxImage.Rotate90 ( bool clockwise = true)
+wxImage.RotateHue,0,0,1,void,						void wxImage.RotateHue ( double angle)
+wxImage.SaveFile,0,0,2,bool,						bool wxImage.SaveFile ( wxOutputStream & stream,      wxString & mimetype    )
+wxImage.SaveFile,0,0,2,bool,						bool wxImage.SaveFile (  wxString & name,     wxBitmapType type    )
+wxImage.SaveFile,0,0,2,bool,						bool wxImage.SaveFile (  wxString & name,      wxString & mimetype    )
+wxImage.SaveFile,0,0,1,bool,						bool wxImage.SaveFile (  wxString & name)
+wxImage.SaveFile,0,0,2,bool,						bool wxImage.SaveFile ( wxOutputStream & stream,     wxBitmapType type    )
+wxImage.Scale,0,0,3,wxImage,						wxImage wxImage.Scale ( int width,     int height,     wxImageResizeQuality quality = wxIMAGE_QUALITY_NORMAL    )
+wxImage.SetAlpha,0,0,2,void,						void wxImage.SetAlpha ( unsigned char * alpha = NULL,     bool static_data = false    )
+wxImage.SetAlpha,0,0,3,void,						void wxImage.SetAlpha ( int x,     int y,     unsigned char alpha    )
+wxImage.SetData,0,0,2,void,						void wxImage.SetData ( unsigned char * data,     bool static_data = false    )
+wxImage.SetData,0,0,4,void,						void wxImage.SetData ( unsigned char * data,     int new_width,     int new_height,     bool static_data = false    )
+wxImage.SetDefaultLoadFlags,1,0,1,void,						static void wxImage.SetDefaultLoadFlags ( int flags)
+wxImage.SetLoadFlags,0,0,1,void,						void wxImage.SetLoadFlags ( int flags)
+wxImage.SetMask,0,0,1,void,						void wxImage.SetMask ( bool hasMask = true)
+wxImage.SetMaskColour,0,0,3,void,						void wxImage.SetMaskColour ( unsigned char red,     unsigned char green,     unsigned char blue    )
+wxImage.SetMaskFromImage,0,0,4,bool,						bool wxImage.SetMaskFromImage (  wxImage & mask,     unsigned char mr,     unsigned char mg,     unsigned char mb    )
+wxImage.SetOption,0,0,2,void,						void wxImage.SetOption (  wxString & name,      wxString & value    )
+wxImage.SetOption,0,0,2,void,						void wxImage.SetOption (  wxString & name,     int value    )
+wxImage.SetPalette,0,0,1,void,						void wxImage.SetPalette (  wxPalette & palette)
+wxImage.SetRGB,0,0,5,void,						void wxImage.SetRGB ( int x,     int y,     unsigned char r,     unsigned char g,     unsigned char b    )
+wxImage.SetRGB,0,0,4,void,						void wxImage.SetRGB (  wxRect & rect,     unsigned char red,     unsigned char green,     unsigned char blue    )
+wxImage.SetType,0,0,1,void,						void wxImage.SetType ( wxBitmapType type)
+wxImage.Size,0,0,5,wxImage,						wxImage wxImage.Size (  wxSize & size,      wxPoint & pos,     int red = -1,     int green = -1,     int blue = -1    )
+[INHERITS]
+wxObject

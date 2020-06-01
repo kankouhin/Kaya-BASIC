@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/tipwin.h>
+[METHODS]
+wxTipWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTipWindow.SetBoundingRect,0,0,1,void,						void wxTipWindow.SetBoundingRect (  wxRect & rectBound)
+wxTipWindow.SetTipWindowPtr,0,0,1,void,						void wxTipWindow.SetTipWindowPtr ( wxTipWindow ** windowPtr)
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

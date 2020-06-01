@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/laywin.h>
+[METHODS]
+wxSashLayoutWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSashLayoutWindow.Create,0,0,6,bool,						bool wxSashLayoutWindow.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxCLIP_CHILDREN|wxSW_3D,      wxString & name = &quot;layoutWindow&quot;    )
+wxSashLayoutWindow.GetAlignment,0,0,0,wxLayoutAlignment,						wxLayoutAlignment wxSashLayoutWindow.GetAlignment ( )
+wxSashLayoutWindow.GetOrientation,0,0,0,wxLayoutOrientation,						wxLayoutOrientation wxSashLayoutWindow.GetOrientation ( )
+wxSashLayoutWindow.OnCalculateLayout,0,0,1,void,						void wxSashLayoutWindow.OnCalculateLayout ( wxCalculateLayoutEvent & event)
+wxSashLayoutWindow.OnQueryLayoutInfo,0,0,1,void,						void wxSashLayoutWindow.OnQueryLayoutInfo ( wxQueryLayoutInfoEvent & event)
+wxSashLayoutWindow.SetAlignment,0,0,1,void,						void wxSashLayoutWindow.SetAlignment ( wxLayoutAlignment alignment)
+wxSashLayoutWindow.SetDefaultSize,0,0,1,void,						void wxSashLayoutWindow.SetDefaultSize (  wxSize & size)
+wxSashLayoutWindow.SetOrientation,0,0,1,void,						void wxSashLayoutWindow.SetOrientation ( wxLayoutOrientation orientation)
+[INHERITS]
+wxSashWindow
+wxWindow
+wxEvtHandler
+wxObject

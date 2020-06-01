@@ -1,0 +1,32 @@
+[CONSTS]
+[HEADER]
+<wx/stream.h>
+[METHODS]
+wxStreamBuffer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStreamBuffer.BufMode,0,0,-1,enum,						enum wxStreamBuffer.BufMode
+wxStreamBuffer.FillBuffer,0,0,0,bool,						bool wxStreamBuffer.FillBuffer ( )
+wxStreamBuffer.Fixed,0,0,1,void,						void wxStreamBuffer.Fixed ( bool fixed)
+wxStreamBuffer.Flushable,0,0,1,void,						void wxStreamBuffer.Flushable ( bool flushable)
+wxStreamBuffer.FlushBuffer,0,0,0,bool,						bool wxStreamBuffer.FlushBuffer ( )
+wxStreamBuffer.GetBufferEnd,0,1,0,void,						void* wxStreamBuffer.GetBufferEnd ( )
+wxStreamBuffer.GetBufferPos,0,1,0,void,						void* wxStreamBuffer.GetBufferPos ( )
+wxStreamBuffer.GetBufferSize,0,0,0,size_t,						size_t wxStreamBuffer.GetBufferSize ( )
+wxStreamBuffer.GetBufferStart,0,1,0,void,						void* wxStreamBuffer.GetBufferStart ( )
+wxStreamBuffer.GetChar,0,0,0,char,						char wxStreamBuffer.GetChar ( )
+wxStreamBuffer.GetDataLeft,0,0,0,size_t,						size_t wxStreamBuffer.GetDataLeft ( )
+wxStreamBuffer.GetIntPosition,0,0,0,size_t,						size_t wxStreamBuffer.GetIntPosition ( )
+wxStreamBuffer.GetLastAccess,0,0,0,size_t,						size_t wxStreamBuffer.GetLastAccess ( )
+wxStreamBuffer.PutChar,0,0,1,void,						void wxStreamBuffer.PutChar ( char c)
+wxStreamBuffer.Read,0,0,2,size_t,						size_t wxStreamBuffer.Read ( void * buffer,     size_t size    )
+wxStreamBuffer.Read,0,0,1,size_t,						size_t wxStreamBuffer.Read ( wxStreamBuffer * buffer)
+wxStreamBuffer.ResetBuffer,0,0,0,void,						void wxStreamBuffer.ResetBuffer ( )
+wxStreamBuffer.Seek,0,0,2,wxFileOffset,						wxFileOffset wxStreamBuffer.Seek ( wxFileOffset pos,     wxSeekMode mode    )
+wxStreamBuffer.SetBufferIO,0,0,3,void,						void wxStreamBuffer.SetBufferIO ( void * start,     void * end,     bool takeOwnership = false    )
+wxStreamBuffer.SetBufferIO,0,0,1,void,						void wxStreamBuffer.SetBufferIO ( size_t bufsize)
+wxStreamBuffer.SetIntPosition,0,0,1,void,						void wxStreamBuffer.SetIntPosition ( size_t pos)
+wxStreamBuffer.Stream,0,1,0,wxStreamBase,						wxStreamBase* wxStreamBuffer.Stream ( )
+wxStreamBuffer.Tell,0,0,0,wxFileOffset,						wxFileOffset wxStreamBuffer.Tell ( )
+wxStreamBuffer.Truncate,0,0,0,void,						void wxStreamBuffer.Truncate ( )
+wxStreamBuffer.Write,0,0,2,size_t,						size_t wxStreamBuffer.Write (  void * buffer,     size_t size    )
+wxStreamBuffer.Write,0,0,1,size_t,						size_t wxStreamBuffer.Write ( wxStreamBuffer * buffer)
+[INHERITS]

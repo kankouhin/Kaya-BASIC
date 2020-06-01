@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/mstream.h>
+[METHODS]
+wxMemoryOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMemoryOutputStream.CopyTo,0,0,2,size_t,						size_t wxMemoryOutputStream.CopyTo ( void * buffer,     size_t len    )
+wxMemoryOutputStream.GetOutputStreamBuffer,0,1,0,wxStreamBuffer,						wxStreamBuffer* wxMemoryOutputStream.GetOutputStreamBuffer ( )
+[INHERITS]
+wxOutputStream
+wxStreamBase

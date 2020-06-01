@@ -1,0 +1,12 @@
+[CONSTS]
+wxEVT_GESTURE_ROTATE
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxRotateGestureEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRotateGestureEvent.GetRotationAngle,0,0,0,double,						double wxRotateGestureEvent.GetRotationAngle ( )
+wxRotateGestureEvent.SetRotationAngle,0,0,1,void,						void wxRotateGestureEvent.SetRotationAngle ( double rotationAngle)
+[INHERITS]
+wxGestureEvent
+wxEvent
+wxObject

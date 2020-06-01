@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/brush.h>
+[METHODS]
+wxBrushList.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBrushList.FindOrCreateBrush,0,1,2,wxBrush,						wxBrush* wxBrushList.FindOrCreateBrush (  wxColour & colour,     wxBrushStyle style = wxBRUSHSTYLE_SOLID    )
+[INHERITS]

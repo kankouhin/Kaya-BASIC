@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/print.h>
+[METHODS]
+wxPrintAbortDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPrintAbortDialog.SetProgress,0,0,4,void,						void wxPrintAbortDialog.SetProgress ( int currentPage,     int totalPages,     int currentCopy,     int totalCopies    )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

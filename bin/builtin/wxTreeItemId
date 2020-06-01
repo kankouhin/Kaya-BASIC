@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/treebase.h>
+[METHODS]
+wxTreeItemId.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTreeItemId.GetID,0,1,0,void,						void* wxTreeItemId.GetID ( )
+wxTreeItemId.IsOk,0,0,0,bool,						bool wxTreeItemId.IsOk ( )
+wxTreeItemId.Unset,0,0,0,void,						void wxTreeItemId.Unset ( )
+[INHERITS]

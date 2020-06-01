@@ -1,0 +1,40 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextformatdlg.h>
+[METHODS]
+wxRichTextFormattingDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextFormattingDialog.ApplyStyle,0,0,3,bool,						bool wxRichTextFormattingDialog.ApplyStyle ( wxRichTextCtrl * ctrl,      wxRichTextRange & range,     int flags = wxRICHTEXT_SETSTYLE_WITH_UNDO|wxRICHTEXT_SETSTYLE_OPTIMIZE    )
+wxRichTextFormattingDialog.Create,0,0,7,bool,						bool wxRichTextFormattingDialog.Create ( long flags,     wxWindow * parent,      wxString & title = wxGetTranslation(&quot;Formatting&quot;),     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & sz = wxDefaultSize,     long style = wxDEFAULT_DIALOG_STYLE    )
+wxRichTextFormattingDialog.GetAttributes,0,0,0,wxTextAttr,						wxTextAttr&  wxRichTextFormattingDialog.GetAttributes ( )
+wxRichTextFormattingDialog.GetAttributes,0,0,0,wxTextAttr,						wxTextAttr&  wxRichTextFormattingDialog.GetAttributes ( )
+wxRichTextFormattingDialog.GetColourData,1,0,0,wxColourData,						static wxColourData wxRichTextFormattingDialog.GetColourData ( )
+wxRichTextFormattingDialog.GetDialog,1,1,1,wxRichTextFormattingDialog,						static wxRichTextFormattingDialog* wxRichTextFormattingDialog.GetDialog ( wxWindow * win)
+wxRichTextFormattingDialog.GetDialogAttributes,1,1,1,wxTextAttr,						static wxTextAttr* wxRichTextFormattingDialog.GetDialogAttributes ( wxWindow * win)
+wxRichTextFormattingDialog.GetDialogStyleDefinition,1,1,1,wxRichTextStyleDefinition,						static wxRichTextStyleDefinition* wxRichTextFormattingDialog.GetDialogStyleDefinition ( wxWindow * win)
+wxRichTextFormattingDialog.GetFormattingDialogFactory,1,1,0,wxRichTextFormattingDialogFactory,						static wxRichTextFormattingDialogFactory* wxRichTextFormattingDialog.GetFormattingDialogFactory ( )
+wxRichTextFormattingDialog.GetImageList,0,1,0,wxImageList,						wxImageList* wxRichTextFormattingDialog.GetImageList ( )
+wxRichTextFormattingDialog.GetLastPage,1,0,0,int,						static int wxRichTextFormattingDialog.GetLastPage ( )
+wxRichTextFormattingDialog.GetOptions,0,0,0,int,						int wxRichTextFormattingDialog.GetOptions ( )
+wxRichTextFormattingDialog.GetRestoreLastPage,1,0,0,bool,						static bool wxRichTextFormattingDialog.GetRestoreLastPage ( )
+wxRichTextFormattingDialog.GetStyle,0,0,2,bool,						bool wxRichTextFormattingDialog.GetStyle ( wxRichTextCtrl * ctrl,      wxRichTextRange & range    )
+wxRichTextFormattingDialog.GetStyleDefinition,0,1,0,wxRichTextStyleDefinition,						wxRichTextStyleDefinition* wxRichTextFormattingDialog.GetStyleDefinition ( )
+wxRichTextFormattingDialog.GetStyleSheet,0,1,0,wxRichTextStyleSheet,						wxRichTextStyleSheet* wxRichTextFormattingDialog.GetStyleSheet ( )
+wxRichTextFormattingDialog.HasOption,0,0,1,bool,						bool wxRichTextFormattingDialog.HasOption ( int option)
+wxRichTextFormattingDialog.SetAttributes,0,0,1,void,						void wxRichTextFormattingDialog.SetAttributes (  wxTextAttr & attr)
+wxRichTextFormattingDialog.SetColourData,1,0,1,void,						static void wxRichTextFormattingDialog.SetColourData (  wxColourData & colourData)
+wxRichTextFormattingDialog.SetFormattingDialogFactory,1,0,1,void,						static void wxRichTextFormattingDialog.SetFormattingDialogFactory ( wxRichTextFormattingDialogFactory * factory)
+wxRichTextFormattingDialog.SetImageList,0,0,1,void,						void wxRichTextFormattingDialog.SetImageList ( wxImageList * imageList)
+wxRichTextFormattingDialog.SetLastPage,1,0,1,void,						static void wxRichTextFormattingDialog.SetLastPage ( int lastPage)
+wxRichTextFormattingDialog.SetOptions,0,0,1,void,						void wxRichTextFormattingDialog.SetOptions ( int options)
+wxRichTextFormattingDialog.SetRestoreLastPage,1,0,1,void,						static void wxRichTextFormattingDialog.SetRestoreLastPage ( bool b)
+wxRichTextFormattingDialog.SetStyle,0,0,2,bool,						bool wxRichTextFormattingDialog.SetStyle (  wxTextAttr & style,     bool update = true    )
+wxRichTextFormattingDialog.SetStyleDefinition,0,0,3,bool,						bool wxRichTextFormattingDialog.SetStyleDefinition (  wxRichTextStyleDefinition & styleDef,     wxRichTextStyleSheet * sheet,     bool update = true    )
+wxRichTextFormattingDialog.UpdateDisplay,0,0,0,bool,						bool wxRichTextFormattingDialog.UpdateDisplay ( )
+[INHERITS]
+wxPropertySheetDialog
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

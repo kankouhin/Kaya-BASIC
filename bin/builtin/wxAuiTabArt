@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/aui/auibook.h>
+[METHODS]
+wxAuiTabArt.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiTabArt.Clone,0,1,0,wxAuiTabArt,						wxAuiTabArt* wxAuiTabArt.Clone ( )
+wxAuiTabArt.DrawBackground,0,0,3,void,						void wxAuiTabArt.DrawBackground ( wxDC & dc,     wxWindow * wnd,      wxRect & rect    )
+wxAuiTabArt.DrawButton,0,0,7,void,						void wxAuiTabArt.DrawButton ( wxDC & dc,     wxWindow * wnd,      wxRect & in_rect,     int bitmap_id,     int button_state,     int orientation,     wxRect * out_rect    )
+wxAuiTabArt.DrawTab,0,0,8,void,						void wxAuiTabArt.DrawTab ( wxDC & dc,     wxWindow * wnd,      wxAuiNotebookPage & page,      wxRect & rect,     int close_button_state,     wxRect * out_tab_rect,     wxRect * out_button_rect,     int * x_extent    )
+wxAuiTabArt.GetBestTabCtrlSize,0,0,3,int,						int wxAuiTabArt.GetBestTabCtrlSize ( wxWindow * ,      wxAuiNotebookPageArray & ,      wxSize &     )
+wxAuiTabArt.GetIndentSize,0,0,0,int,						int wxAuiTabArt.GetIndentSize ( )
+wxAuiTabArt.GetTabSize,0,0,7,wxSize,						wxSize wxAuiTabArt.GetTabSize ( wxDC & dc,     wxWindow * wnd,      wxString & caption,      wxBitmap & bitmap,     bool active,     int close_button_state,     int * x_extent    )
+wxAuiTabArt.SetActiveColour,0,0,1,void,						void wxAuiTabArt.SetActiveColour (  wxColour & colour)
+wxAuiTabArt.SetColour,0,0,1,void,						void wxAuiTabArt.SetColour (  wxColour & colour)
+wxAuiTabArt.SetFlags,0,0,1,void,						void wxAuiTabArt.SetFlags ( unsigned int flags)
+wxAuiTabArt.SetMeasuringFont,0,0,1,void,						void wxAuiTabArt.SetMeasuringFont (  wxFont & font)
+wxAuiTabArt.SetNormalFont,0,0,1,void,						void wxAuiTabArt.SetNormalFont (  wxFont & font)
+wxAuiTabArt.SetSelectedFont,0,0,1,void,						void wxAuiTabArt.SetSelectedFont (  wxFont & font)
+wxAuiTabArt.SetSizingInfo,0,0,2,void,						void wxAuiTabArt.SetSizingInfo (  wxSize & tab_ctrl_size,     size_t tab_count    )
+[INHERITS]

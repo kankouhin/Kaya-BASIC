@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/gdicmn.h>
+[METHODS]
+wxColourDatabase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxColourDatabase.AddColour,0,0,2,void,						void wxColourDatabase.AddColour (  wxString & colourName,      wxColour & colour    )
+wxColourDatabase.Find,0,0,1,wxColour,						wxColour wxColourDatabase.Find (  wxString & colourName)
+wxColourDatabase.FindName,0,0,1,wxString,						wxString wxColourDatabase.FindName (  wxColour & colour)
+[INHERITS]

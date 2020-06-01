@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/hyperlink.h>
+[METHODS]
+wxHyperlinkEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHyperlinkEvent.GetURL,0,0,0,wxString,						wxString wxHyperlinkEvent.GetURL ( )
+wxHyperlinkEvent.SetURL,0,0,1,void,						void wxHyperlinkEvent.SetURL (  wxString & url)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

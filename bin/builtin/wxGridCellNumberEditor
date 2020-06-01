@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellNumberEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellNumberEditor.GetString,0,0,0,wxString,						wxString wxGridCellNumberEditor.GetString ( )
+wxGridCellNumberEditor.HasRange,0,0,0,bool,						bool wxGridCellNumberEditor.HasRange ( )
+wxGridCellNumberEditor.SetParameters,0,0,1,void,						void wxGridCellNumberEditor.SetParameters (  wxString & params)
+[INHERITS]
+wxGridCellTextEditor
+wxGridCellEditor
+wxClientDataContainer
+wxRefCounter

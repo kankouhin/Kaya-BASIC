@@ -1,0 +1,36 @@
+[CONSTS]
+[HEADER]
+<wx/zipstrm.h>
+[METHODS]
+wxZipEntry.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxZipEntry.Clone,0,1,0,wxZipEntry,						wxZipEntry* wxZipEntry.Clone ( )
+wxZipEntry.GetComment,0,0,0,wxString,						wxString wxZipEntry.GetComment ( )
+wxZipEntry.GetCompressedSize,0,0,0,wxFileOffset,						wxFileOffset wxZipEntry.GetCompressedSize ( )
+wxZipEntry.GetCrc,0,0,0,wxUint32,						wxUint32 wxZipEntry.GetCrc ( )
+wxZipEntry.GetExternalAttributes,0,0,0,wxUint32,						wxUint32 wxZipEntry.GetExternalAttributes ( )
+wxZipEntry.GetExtra,0,1,0,char,						char* wxZipEntry.GetExtra ( )
+wxZipEntry.GetExtraLen,0,0,0,size_t,						size_t wxZipEntry.GetExtraLen ( )
+wxZipEntry.GetFlags,0,0,0,int,						int wxZipEntry.GetFlags ( )
+wxZipEntry.GetInternalName,0,0,3,wxString,						wxString wxZipEntry.GetInternalName (  wxString & name,     wxPathFormat format = wxPATH_NATIVE,     bool * pIsDir = NULL    )
+wxZipEntry.GetInternalName,0,0,0,wxString,						wxString wxZipEntry.GetInternalName ( )
+wxZipEntry.GetLocalExtra,0,1,0,char,						char* wxZipEntry.GetLocalExtra ( )
+wxZipEntry.GetLocalExtraLen,0,0,0,size_t,						size_t wxZipEntry.GetLocalExtraLen ( )
+wxZipEntry.GetMethod,0,0,0,int,						int wxZipEntry.GetMethod ( )
+wxZipEntry.GetMode,0,0,0,int,						int wxZipEntry.GetMode ( )
+wxZipEntry.GetSystemMadeBy,0,0,0,int,						int wxZipEntry.GetSystemMadeBy ( )
+wxZipEntry.IsMadeByUnix,0,0,0,bool,						bool wxZipEntry.IsMadeByUnix ( )
+wxZipEntry.IsText,0,0,0,bool,						bool wxZipEntry.IsText ( )
+wxZipEntry.operator=,0,0,1,wxZipEntry,						wxZipEntry&  wxZipEntry.operator= (  wxZipEntry & entry)
+wxZipEntry.SetComment,0,0,1,void,						void wxZipEntry.SetComment (  wxString & comment)
+wxZipEntry.SetExternalAttributes,0,0,1,void,						void wxZipEntry.SetExternalAttributes ( wxUint32 attr)
+wxZipEntry.SetExtra,0,0,2,void,						void wxZipEntry.SetExtra (  char * extra,     size_t len    )
+wxZipEntry.SetIsText,0,0,1,void,						void wxZipEntry.SetIsText ( bool isText = true)
+wxZipEntry.SetLocalExtra,0,0,2,void,						void wxZipEntry.SetLocalExtra (  char * extra,     size_t len    )
+wxZipEntry.SetMethod,0,0,1,void,						void wxZipEntry.SetMethod ( int method)
+wxZipEntry.SetMode,0,0,1,void,						void wxZipEntry.SetMode ( int mode)
+wxZipEntry.SetNotifier,0,0,1,void,						void wxZipEntry.SetNotifier ( wxZipNotifier & notifier)
+wxZipEntry.SetSystemMadeBy,0,0,1,void,						void wxZipEntry.SetSystemMadeBy ( int system)
+wxZipEntry.UnsetNotifier,0,0,0,void,						void wxZipEntry.UnsetNotifier ( )
+[INHERITS]
+wxArchiveEntry
+wxObject

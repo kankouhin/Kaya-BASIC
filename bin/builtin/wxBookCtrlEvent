@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/bookctrl.h>
+[METHODS]
+wxBookCtrlEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBookCtrlEvent.GetOldSelection,0,0,0,int,						int wxBookCtrlEvent.GetOldSelection ( )
+wxBookCtrlEvent.GetSelection,0,0,0,int,						int wxBookCtrlEvent.GetSelection ( )
+wxBookCtrlEvent.SetOldSelection,0,0,1,void,						void wxBookCtrlEvent.SetOldSelection ( int page)
+wxBookCtrlEvent.SetSelection,0,0,1,void,						void wxBookCtrlEvent.SetSelection ( int page)
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

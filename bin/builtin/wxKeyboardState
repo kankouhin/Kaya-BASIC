@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/kbdstate.h>
+[METHODS]
+wxKeyboardState.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxKeyboardState.AltDown,0,0,0,bool,						bool wxKeyboardState.AltDown ( )
+wxKeyboardState.CmdDown,0,0,0,bool,						bool wxKeyboardState.CmdDown ( )
+wxKeyboardState.ControlDown,0,0,0,bool,						bool wxKeyboardState.ControlDown ( )
+wxKeyboardState.GetModifiers,0,0,0,int,						int wxKeyboardState.GetModifiers ( )
+wxKeyboardState.HasAnyModifiers,0,0,0,bool,						bool wxKeyboardState.HasAnyModifiers ( )
+wxKeyboardState.HasModifiers,0,0,0,bool,						bool wxKeyboardState.HasModifiers ( )
+wxKeyboardState.MetaDown,0,0,0,bool,						bool wxKeyboardState.MetaDown ( )
+wxKeyboardState.RawControlDown,0,0,0,bool,						bool wxKeyboardState.RawControlDown ( )
+wxKeyboardState.SetAltDown,0,0,1,void,						void wxKeyboardState.SetAltDown ( bool down)
+wxKeyboardState.SetControlDown,0,0,1,void,						void wxKeyboardState.SetControlDown ( bool down)
+wxKeyboardState.SetMetaDown,0,0,1,void,						void wxKeyboardState.SetMetaDown ( bool down)
+wxKeyboardState.SetRawControlDown,0,0,1,void,						void wxKeyboardState.SetRawControlDown ( bool down)
+wxKeyboardState.SetShiftDown,0,0,1,void,						void wxKeyboardState.SetShiftDown ( bool down)
+wxKeyboardState.ShiftDown,0,0,0,bool,						bool wxKeyboardState.ShiftDown ( )
+[INHERITS]

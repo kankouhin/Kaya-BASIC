@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dcmemory.h>
+[METHODS]
+wxMemoryDC.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMemoryDC.SelectObject,0,0,1,void,						void wxMemoryDC.SelectObject ( wxBitmap & bitmap)
+wxMemoryDC.SelectObjectAsSource,0,0,1,void,						void wxMemoryDC.SelectObjectAsSource (  wxBitmap & bitmap)
+[INHERITS]
+wxDC
+wxObject

@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/tokenzr.h>
+[METHODS]
+wxStringTokenizer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStringTokenizer.CountTokens,0,0,0,size_t,						size_t wxStringTokenizer.CountTokens ( )
+wxStringTokenizer.GetLastDelimiter,0,0,0,wxChar,						wxChar wxStringTokenizer.GetLastDelimiter ( )
+wxStringTokenizer.GetNextToken,0,0,0,wxString,						wxString wxStringTokenizer.GetNextToken ( )
+wxStringTokenizer.GetPosition,0,0,0,size_t,						size_t wxStringTokenizer.GetPosition ( )
+wxStringTokenizer.GetString,0,0,0,wxString,						wxString wxStringTokenizer.GetString ( )
+wxStringTokenizer.HasMoreTokens,0,0,0,bool,						bool wxStringTokenizer.HasMoreTokens ( )
+wxStringTokenizer.SetString,0,0,3,void,						void wxStringTokenizer.SetString (  wxString & str,      wxString & delims = wxDEFAULT_DELIMITERS,     wxStringTokenizerMode mode = wxTOKEN_DEFAULT    )
+[INHERITS]
+wxObject

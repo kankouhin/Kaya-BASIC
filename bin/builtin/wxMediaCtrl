@@ -1,0 +1,29 @@
+[CONSTS]
+[HEADER]
+<wx/mediactrl.h>
+[METHODS]
+wxMediaCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMediaCtrl.Create,0,0,9,bool,						bool wxMediaCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxString & fileName = wxEmptyString,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & szBackend = wxEmptyString,      wxValidator & validator = wxDefaultValidator,      wxString & name = &quot;mediaCtrl&quot;    )
+wxMediaCtrl.GetBestSize,0,0,0,wxSize,						wxSize wxMediaCtrl.GetBestSize ( )
+wxMediaCtrl.GetPlaybackRate,0,0,0,double,						double wxMediaCtrl.GetPlaybackRate ( )
+wxMediaCtrl.GetState,0,0,0,wxMediaState,						wxMediaState wxMediaCtrl.GetState ( )
+wxMediaCtrl.GetVolume,0,0,0,double,						double wxMediaCtrl.GetVolume ( )
+wxMediaCtrl.Length,0,0,0,wxFileOffset,						wxFileOffset wxMediaCtrl.Length ( )
+wxMediaCtrl.Load,0,0,1,bool,						bool wxMediaCtrl.Load (  wxString & fileName)
+wxMediaCtrl.Load,0,0,1,bool,						bool wxMediaCtrl.Load (  wxURI & uri)
+wxMediaCtrl.Load,0,0,2,bool,						bool wxMediaCtrl.Load (  wxURI & uri,      wxURI & proxy    )
+wxMediaCtrl.LoadURI,0,0,1,bool,						bool wxMediaCtrl.LoadURI (  wxString & uri)
+wxMediaCtrl.LoadURIWithProxy,0,0,2,bool,						bool wxMediaCtrl.LoadURIWithProxy (  wxString & uri,      wxString & proxy    )
+wxMediaCtrl.Pause,0,0,0,bool,						bool wxMediaCtrl.Pause ( )
+wxMediaCtrl.Play,0,0,0,bool,						bool wxMediaCtrl.Play ( )
+wxMediaCtrl.Seek,0,0,2,wxFileOffset,						wxFileOffset wxMediaCtrl.Seek ( wxFileOffset where,     wxSeekMode mode = wxFromStart    )
+wxMediaCtrl.SetPlaybackRate,0,0,1,bool,						bool wxMediaCtrl.SetPlaybackRate ( double dRate)
+wxMediaCtrl.SetVolume,0,0,1,bool,						bool wxMediaCtrl.SetVolume ( double dVolume)
+wxMediaCtrl.ShowPlayerControls,0,0,1,bool,						bool wxMediaCtrl.ShowPlayerControls ( wxMediaCtrlPlayerControls flags = wxMEDIACTRLPLAYERCONTROLS_DEFAULT)
+wxMediaCtrl.Stop,0,0,0,bool,						bool wxMediaCtrl.Stop ( )
+wxMediaCtrl.Tell,0,0,0,wxFileOffset,						wxFileOffset wxMediaCtrl.Tell ( )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

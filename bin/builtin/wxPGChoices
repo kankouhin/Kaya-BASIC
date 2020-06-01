@@ -1,0 +1,47 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/property.h>
+[METHODS]
+wxPGChoices.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGChoices.ValArrItem,0,0,-1,long,						typedef long wxPGChoices.ValArrItem
+wxPGChoices.Add,0,0,3,void,						void wxPGChoices.Add ( size_t count,      wxString * labels,      long * values = NULL    )
+wxPGChoices.Add,0,0,2,void,						void wxPGChoices.Add (  wxChar ** labels,      long * values = NULL    )
+wxPGChoices.Add,0,0,2,void,						void wxPGChoices.Add (  wxArrayString & arr,      wxArrayInt & arrint    )
+wxPGChoices.Add,0,0,2,wxPGChoiceEntry,						wxPGChoiceEntry&  wxPGChoices.Add (  wxString & label,     int value = wxPG_INVALID_VALUE    )
+wxPGChoices.Add,0,0,3,wxPGChoiceEntry,						wxPGChoiceEntry&  wxPGChoices.Add (  wxString & label,      wxBitmap & bitmap,     int value = wxPG_INVALID_VALUE    )
+wxPGChoices.Add,0,0,1,wxPGChoiceEntry,						wxPGChoiceEntry&  wxPGChoices.Add (  wxPGChoiceEntry & entry)
+wxPGChoices.AddAsSorted,0,0,2,wxPGChoiceEntry,						wxPGChoiceEntry&  wxPGChoices.AddAsSorted (  wxString & label,     int value = wxPG_INVALID_VALUE    )
+wxPGChoices.AllocExclusive,0,0,0,void,						void wxPGChoices.AllocExclusive ( )
+wxPGChoices.Assign,0,0,1,void,						void wxPGChoices.Assign (  wxPGChoices & a)
+wxPGChoices.AssignData,0,0,1,void,						void wxPGChoices.AssignData ( wxPGChoicesData * data)
+wxPGChoices.Clear,0,0,0,void,						void wxPGChoices.Clear ( )
+wxPGChoices.Copy,0,0,0,wxPGChoices,						wxPGChoices wxPGChoices.Copy ( )
+wxPGChoices.EnsureData,0,0,0,void,						void wxPGChoices.EnsureData ( )
+wxPGChoices.ExtractData,0,1,0,wxPGChoicesData,						wxPGChoicesData* wxPGChoices.ExtractData ( )
+wxPGChoices.Free,0,0,0,void,						void wxPGChoices.Free ( )
+wxPGChoices.GetCount,0,0,0,int,						unsigned int wxPGChoices.GetCount ( )
+wxPGChoices.GetData,0,1,0,wxPGChoicesData,						wxPGChoicesData* wxPGChoices.GetData ( )
+wxPGChoices.GetDataPtr,0,1,0,wxPGChoicesData,						wxPGChoicesData* wxPGChoices.GetDataPtr ( )
+wxPGChoices.GetId,0,0,0,wxPGChoicesId,						wxPGChoicesId wxPGChoices.GetId ( )
+wxPGChoices.GetIndicesForStrings,0,0,2,wxArrayInt,						wxArrayInt wxPGChoices.GetIndicesForStrings (  wxArrayString & strings,     wxArrayString * unmatched = NULL    )
+wxPGChoices.GetLabel,0,0,1,wxString,						wxString&  wxPGChoices.GetLabel ( unsigned int ind)
+wxPGChoices.GetLabels,0,0,0,wxArrayString,						wxArrayString wxPGChoices.GetLabels ( )
+wxPGChoices.GetValue,0,0,1,int,						int wxPGChoices.GetValue ( unsigned int ind)
+wxPGChoices.GetValuesForStrings,0,0,1,wxArrayInt,						wxArrayInt wxPGChoices.GetValuesForStrings (  wxArrayString & strings)
+wxPGChoices.Index,0,0,1,int,						int wxPGChoices.Index (  wxString & label)
+wxPGChoices.Index,0,0,1,int,						int wxPGChoices.Index ( int val)
+wxPGChoices.Init,0,0,0,void,						void wxPGChoices.Init ( )
+wxPGChoices.Insert,0,0,3,wxPGChoiceEntry,						wxPGChoiceEntry&  wxPGChoices.Insert (  wxString & label,     int index,     int value = wxPG_INVALID_VALUE    )
+wxPGChoices.Insert,0,0,2,wxPGChoiceEntry,						wxPGChoiceEntry&  wxPGChoices.Insert (  wxPGChoiceEntry & entry,     int index    )
+wxPGChoices.IsOk,0,0,0,bool,						bool wxPGChoices.IsOk ( )
+wxPGChoices.Item,0,0,1,wxPGChoiceEntry,						wxPGChoiceEntry&  wxPGChoices.Item ( unsigned int i)
+wxPGChoices.Item,0,0,1,wxPGChoiceEntry,						wxPGChoiceEntry&  wxPGChoices.Item ( unsigned int i)
+wxPGChoices.operator=,0,0,1,void,						void wxPGChoices.operator= (  wxPGChoices & a)
+wxPGChoices.operator[],0,0,1,wxPGChoiceEntry,						wxPGChoiceEntry&  wxPGChoices.operator[] ( unsigned int i)
+wxPGChoices.operator[],0,0,1,wxPGChoiceEntry,						wxPGChoiceEntry&  wxPGChoices.operator[] ( unsigned int i)
+wxPGChoices.RemoveAt,0,0,2,void,						void wxPGChoices.RemoveAt ( size_t nIndex,     size_t count = 1    )
+wxPGChoices.Set,0,0,3,void,						void wxPGChoices.Set ( size_t count,      wxString * labels,      long * values = NULL    )
+wxPGChoices.Set,0,0,2,void,						void wxPGChoices.Set (  wxChar ** labels,      long * values = NULL    )
+wxPGChoices.Set,0,0,2,void,						void wxPGChoices.Set (  wxArrayString & labels,      wxArrayInt & values = wxArrayInt()    )
+wxPGChoices.m_data,0,1,-1,wxPGChoicesData,						wxPGChoicesData* wxPGChoices.m_data
+[INHERITS]

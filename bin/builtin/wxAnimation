@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/animate.h>
+[METHODS]
+wxAnimation.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAnimation.GetDelay,0,0,1,int,						int wxAnimation.GetDelay ( unsigned int i)
+wxAnimation.GetFrame,0,0,1,wxImage,						wxImage wxAnimation.GetFrame ( unsigned int i)
+wxAnimation.GetFrameCount,0,0,0,int,						unsigned int wxAnimation.GetFrameCount ( )
+wxAnimation.GetSize,0,0,0,wxSize,						wxSize wxAnimation.GetSize ( )
+wxAnimation.IsOk,0,0,0,bool,						bool wxAnimation.IsOk ( )
+wxAnimation.Load,0,0,2,bool,						bool wxAnimation.Load ( wxInputStream & stream,     wxAnimationType type = wxANIMATION_TYPE_ANY    )
+wxAnimation.LoadFile,0,0,2,bool,						bool wxAnimation.LoadFile (  wxString & name,     wxAnimationType type = wxANIMATION_TYPE_ANY    )
+wxAnimation.operator=,0,0,1,wxAnimation,						wxAnimation&  wxAnimation.operator= (  wxAnimation & brush)
+[INHERITS]
+wxObject

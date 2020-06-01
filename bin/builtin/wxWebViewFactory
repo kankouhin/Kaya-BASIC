@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/webview.h>
+[METHODS]
+wxWebViewFactory.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWebViewFactory.Create,0,1,0,wxWebView,						wxWebView* wxWebViewFactory.Create ( )
+wxWebViewFactory.Create,0,1,7,wxWebView,						wxWebView* wxWebViewFactory.Create ( wxWindow * parent,     wxWindowID id,      wxString & url = wxWebViewDefaultURLStr,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxWebViewNameStr    )
+[INHERITS]
+wxObject

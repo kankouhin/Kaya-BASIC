@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/sizer.h>
+[METHODS]
+wxFlexGridSizer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFlexGridSizer.AddGrowableCol,0,0,2,void,						void wxFlexGridSizer.AddGrowableCol ( size_t idx,     int proportion = 0    )
+wxFlexGridSizer.AddGrowableRow,0,0,2,void,						void wxFlexGridSizer.AddGrowableRow ( size_t idx,     int proportion = 0    )
+wxFlexGridSizer.CalcMin,0,0,0,wxSize,						wxSize wxFlexGridSizer.CalcMin ( )
+wxFlexGridSizer.GetColWidths,0,0,0,wxArrayInt,						wxArrayInt&  wxFlexGridSizer.GetColWidths ( )
+wxFlexGridSizer.GetFlexibleDirection,0,0,0,int,						int wxFlexGridSizer.GetFlexibleDirection ( )
+wxFlexGridSizer.GetNonFlexibleGrowMode,0,0,0,wxFlexSizerGrowMode,						wxFlexSizerGrowMode wxFlexGridSizer.GetNonFlexibleGrowMode ( )
+wxFlexGridSizer.GetRowHeights,0,0,0,wxArrayInt,						wxArrayInt&  wxFlexGridSizer.GetRowHeights ( )
+wxFlexGridSizer.IsColGrowable,0,0,1,bool,						bool wxFlexGridSizer.IsColGrowable ( size_t idx)
+wxFlexGridSizer.IsRowGrowable,0,0,1,bool,						bool wxFlexGridSizer.IsRowGrowable ( size_t idx)
+wxFlexGridSizer.RemoveGrowableCol,0,0,1,void,						void wxFlexGridSizer.RemoveGrowableCol ( size_t idx)
+wxFlexGridSizer.RemoveGrowableRow,0,0,1,void,						void wxFlexGridSizer.RemoveGrowableRow ( size_t idx)
+wxFlexGridSizer.RepositionChildren,0,0,1,void,						void wxFlexGridSizer.RepositionChildren (  wxSize & minSize)
+wxFlexGridSizer.SetFlexibleDirection,0,0,1,void,						void wxFlexGridSizer.SetFlexibleDirection ( int direction)
+wxFlexGridSizer.SetNonFlexibleGrowMode,0,0,1,void,						void wxFlexGridSizer.SetNonFlexibleGrowMode ( wxFlexSizerGrowMode mode)
+[INHERITS]
+wxGridSizer
+wxSizer
+wxObject

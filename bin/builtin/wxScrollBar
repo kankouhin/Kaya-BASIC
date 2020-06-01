@@ -1,0 +1,38 @@
+[CONSTS]
+wxSB_HORIZONTAL
+wxSB_VERTICAL
+wxEVT_SCROLL_TOP
+wxEVT_SCROLL_BOTTOM
+wxEVT_SCROLL_LINEUP
+wxEVT_SCROLL_LINEDOWN
+wxEVT_SCROLL_PAGEUP
+wxEVT_SCROLL_PAGEDOWN
+wxEVT_SCROLL_THUMBTRACK
+wxEVT_SCROLL_THUMBRELEASE
+wxEVT_SCROLL_CHANGED
+wxEVT_SCROLL_TOP
+wxEVT_SCROLL_BOTTOM
+wxEVT_SCROLL_LINEUP
+wxEVT_SCROLL_LINEDOWN
+wxEVT_SCROLL_PAGEUP
+wxEVT_SCROLL_PAGEDOWN
+wxEVT_SCROLL_THUMBTRACK
+wxEVT_SCROLL_THUMBRELEASE
+wxEVT_SCROLL_CHANGED
+[HEADER]
+<wx/scrolbar.h>
+[METHODS]
+wxScrollBar.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxScrollBar.Create,0,0,7,bool,						bool wxScrollBar.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxSB_HORIZONTAL,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxScrollBarNameStr    )
+wxScrollBar.GetPageSize,0,0,0,int,						int wxScrollBar.GetPageSize ( )
+wxScrollBar.GetRange,0,0,0,int,						int wxScrollBar.GetRange ( )
+wxScrollBar.GetThumbPosition,0,0,0,int,						int wxScrollBar.GetThumbPosition ( )
+wxScrollBar.GetThumbSize,0,0,0,int,						int wxScrollBar.GetThumbSize ( )
+wxScrollBar.IsVertical,0,0,0,bool,						bool wxScrollBar.IsVertical ( )
+wxScrollBar.SetScrollbar,0,0,5,void,						void wxScrollBar.SetScrollbar ( int position,     int thumbSize,     int range,     int pageSize,     bool refresh = true    )
+wxScrollBar.SetThumbPosition,0,0,1,void,						void wxScrollBar.SetThumbPosition ( int viewStart)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

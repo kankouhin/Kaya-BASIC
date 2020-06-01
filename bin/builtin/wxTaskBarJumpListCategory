@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/taskbarbutton.h>
+[METHODS]
+wxTaskBarJumpListCategory.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTaskBarJumpListCategory.Append,0,1,1,wxTaskBarJumpListItem,						wxTaskBarJumpListItem* wxTaskBarJumpListCategory.Append ( wxTaskBarJumpListItem * item)
+wxTaskBarJumpListCategory.Delete,0,0,1,void,						void wxTaskBarJumpListCategory.Delete ( wxTaskBarJumpListItem * item)
+wxTaskBarJumpListCategory.FindItemByPosition,0,1,1,wxTaskBarJumpListItem,						wxTaskBarJumpListItem* wxTaskBarJumpListCategory.FindItemByPosition ( size_t pos)
+wxTaskBarJumpListCategory.GetItems,0,0,0,wxTaskBarJumpListItems,						wxTaskBarJumpListItems&  wxTaskBarJumpListCategory.GetItems ( )
+wxTaskBarJumpListCategory.GetTitle,0,0,0,wxString,						wxString&  wxTaskBarJumpListCategory.GetTitle ( )
+wxTaskBarJumpListCategory.Insert,0,1,2,wxTaskBarJumpListItem,						wxTaskBarJumpListItem* wxTaskBarJumpListCategory.Insert ( size_t pos,     wxTaskBarJumpListItem * item    )
+wxTaskBarJumpListCategory.Prepend,0,1,1,wxTaskBarJumpListItem,						wxTaskBarJumpListItem* wxTaskBarJumpListCategory.Prepend ( wxTaskBarJumpListItem * item)
+wxTaskBarJumpListCategory.Remove,0,1,1,wxTaskBarJumpListItem,						wxTaskBarJumpListItem* wxTaskBarJumpListCategory.Remove ( wxTaskBarJumpListItem * item)
+wxTaskBarJumpListCategory.SetTitle,0,0,1,void,						void wxTaskBarJumpListCategory.SetTitle (  wxString & title)
+[INHERITS]

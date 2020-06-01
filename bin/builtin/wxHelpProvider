@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/cshelp.h>
+[METHODS]
+wxHelpProvider.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHelpProvider.AddHelp,0,0,2,void,						void wxHelpProvider.AddHelp ( wxWindow * window,      wxString & text    )
+wxHelpProvider.AddHelp,0,0,2,void,						void wxHelpProvider.AddHelp ( wxWindowID id,      wxString & text    )
+wxHelpProvider.Get,1,1,0,wxHelpProvider,						static wxHelpProvider* wxHelpProvider.Get ( )
+wxHelpProvider.GetHelp,0,0,1,wxString,						wxString wxHelpProvider.GetHelp (  wxWindow * window)
+wxHelpProvider.RemoveHelp,0,0,1,void,						void wxHelpProvider.RemoveHelp ( wxWindow * window)
+wxHelpProvider.Set,1,1,1,wxHelpProvider,						static wxHelpProvider* wxHelpProvider.Set ( wxHelpProvider * helpProvider)
+wxHelpProvider.ShowHelp,0,0,1,bool,						bool wxHelpProvider.ShowHelp ( wxWindow * window)
+wxHelpProvider.ShowHelpAtPoint,0,0,3,bool,						bool wxHelpProvider.ShowHelpAtPoint ( wxWindow * window,      wxPoint & point,     wxHelpEvent.Origin origin    )
+[INHERITS]

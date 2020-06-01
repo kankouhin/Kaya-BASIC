@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/fs_arc.h>
+[METHODS]
+wxArchiveFSHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxArchiveFSHandler.Cleanup,0,0,0,void,						void wxArchiveFSHandler.Cleanup ( )
+[INHERITS]
+wxFileSystemHandler
+wxObject

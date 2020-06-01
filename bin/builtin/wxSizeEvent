@@ -1,0 +1,13 @@
+[CONSTS]
+wxEVT_SIZE
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxSizeEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSizeEvent.GetRect,0,0,0,wxRect,						wxRect wxSizeEvent.GetRect ( )
+wxSizeEvent.GetSize,0,0,0,wxSize,						wxSize wxSizeEvent.GetSize ( )
+wxSizeEvent.SetRect,0,0,1,void,						void wxSizeEvent.SetRect ( wxRect rect)
+wxSizeEvent.SetSize,0,0,1,void,						void wxSizeEvent.SetSize ( wxSize size)
+[INHERITS]
+wxEvent
+wxObject

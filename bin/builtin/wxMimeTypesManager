@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/mimetype.h>
+[METHODS]
+wxMimeTypesManager.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMimeTypesManager.AddFallbacks,0,0,1,void,						void wxMimeTypesManager.AddFallbacks (  wxFileTypeInfo * fallbacks)
+wxMimeTypesManager.Associate,0,1,1,wxFileType,						wxFileType* wxMimeTypesManager.Associate (  wxFileTypeInfo & ftInfo)
+wxMimeTypesManager.EnumAllFileTypes,0,0,1,size_t,						size_t wxMimeTypesManager.EnumAllFileTypes ( wxArrayString & mimetypes)
+wxMimeTypesManager.GetFileTypeFromExtension,0,1,1,wxFileType,						wxFileType* wxMimeTypesManager.GetFileTypeFromExtension (  wxString & extension)
+wxMimeTypesManager.GetFileTypeFromMimeType,0,1,1,wxFileType,						wxFileType* wxMimeTypesManager.GetFileTypeFromMimeType (  wxString & mimeType)
+wxMimeTypesManager.IsOfType,1,0,2,bool,						static bool wxMimeTypesManager.IsOfType (  wxString & mimeType,      wxString & wildcard    )
+wxMimeTypesManager.Unassociate,0,0,1,bool,						bool wxMimeTypesManager.Unassociate ( wxFileType * ft)
+[INHERITS]

@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/withimages.h>
+[METHODS]
+wxWithImages.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWithImages.AssignImageList,0,0,1,void,						void wxWithImages.AssignImageList ( wxImageList * imageList)
+wxWithImages.GetImage,0,0,1,wxIcon,						wxIcon wxWithImages.GetImage ( int iconIndex)
+wxWithImages.GetImageList,0,1,0,wxImageList,						wxImageList* wxWithImages.GetImageList ( )
+wxWithImages.HasImageList,0,0,0,bool,						bool wxWithImages.HasImageList ( )
+wxWithImages.SetImageList,0,0,1,void,						void wxWithImages.SetImageList ( wxImageList * imageList)
+[INHERITS]

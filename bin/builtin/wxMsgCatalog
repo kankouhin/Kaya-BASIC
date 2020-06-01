@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/translation.h>
+[METHODS]
+wxMsgCatalog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMsgCatalog.CreateFromData,1,1,2,wxMsgCatalog,						static wxMsgCatalog* wxMsgCatalog.CreateFromData (  wxScopedCharBuffer & data,      wxString & domain    )
+wxMsgCatalog.CreateFromFile,1,1,2,wxMsgCatalog,						static wxMsgCatalog* wxMsgCatalog.CreateFromFile (  wxString & filename,      wxString & domain    )
+[INHERITS]

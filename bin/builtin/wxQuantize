@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/quantize.h>
+[METHODS]
+wxQuantize.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxQuantize.DoQuantize,1,0,6,void,						static void wxQuantize.DoQuantize ( unsigned int w,     unsigned int h,     unsigned char ** in_rows,     unsigned char ** out_rows,     unsigned char * palette,     int desiredNoColours    )
+wxQuantize.Quantize,1,0,6,bool,						static bool wxQuantize.Quantize (  wxImage & src,     wxImage & dest,     wxPalette ** pPalette,     int desiredNoColours = 236,     unsigned char ** eightBitData = 0,     int flags = wxQUANTIZE_INCLUDE_WINDOWS_COLOURS|wxQUANTIZE_FILL_DESTINATION_IMAGE|wxQUANTIZE_RETURN_8BIT_DATA    )
+wxQuantize.Quantize,1,0,5,bool,						static bool wxQuantize.Quantize (  wxImage & src,     wxImage & dest,     int desiredNoColours = 236,     unsigned char ** eightBitData = 0,     int flags = wxQUANTIZE_INCLUDE_WINDOWS_COLOURS|wxQUANTIZE_FILL_DESTINATION_IMAGE|wxQUANTIZE_RETURN_8BIT_DATA    )
+[INHERITS]
+wxObject

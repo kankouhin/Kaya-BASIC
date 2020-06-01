@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/convauto.h>
+[METHODS]
+wxConvAuto.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxConvAuto.DetectBOM,1,0,2,wxBOM,						static wxBOM wxConvAuto.DetectBOM (  char * src,     size_t srcLen    )
+wxConvAuto.DisableFallbackEncoding,1,0,0,void,						static void wxConvAuto.DisableFallbackEncoding ( )
+wxConvAuto.GetBOM,0,0,0,wxBOM,						wxBOM wxConvAuto.GetBOM ( )
+wxConvAuto.GetBOMChars,0,1,2,char,						char* wxConvAuto.GetBOMChars ( wxBOM bom,     size_t * count    )
+wxConvAuto.GetFallbackEncoding,1,0,0,wxFontEncoding,						static wxFontEncoding wxConvAuto.GetFallbackEncoding ( )
+wxConvAuto.SetFallbackEncoding,1,0,1,void,						static void wxConvAuto.SetFallbackEncoding ( wxFontEncoding enc)
+[INHERITS]
+wxMBConv

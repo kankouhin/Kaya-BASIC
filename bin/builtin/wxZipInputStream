@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/zipstrm.h>
+[METHODS]
+wxZipInputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxZipInputStream.CloseEntry,0,0,0,bool,						bool wxZipInputStream.CloseEntry ( )
+wxZipInputStream.GetComment,0,0,0,wxString,						wxString wxZipInputStream.GetComment ( )
+wxZipInputStream.GetNextEntry,0,1,0,wxZipEntry,						wxZipEntry* wxZipInputStream.GetNextEntry ( )
+wxZipInputStream.GetTotalEntries,0,0,0,int,						int wxZipInputStream.GetTotalEntries ( )
+wxZipInputStream.OpenEntry,0,0,1,bool,						bool wxZipInputStream.OpenEntry ( wxZipEntry & entry)
+[INHERITS]
+wxArchiveInputStream
+wxFilterInputStream
+wxInputStream
+wxStreamBase

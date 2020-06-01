@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/filehistory.h>
+[METHODS]
+wxFileHistory.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileHistory.AddFilesToMenu,0,0,0,void,						void wxFileHistory.AddFilesToMenu ( )
+wxFileHistory.AddFilesToMenu,0,0,1,void,						void wxFileHistory.AddFilesToMenu ( wxMenu * menu)
+wxFileHistory.AddFileToHistory,0,0,1,void,						void wxFileHistory.AddFileToHistory (  wxString & filename)
+wxFileHistory.GetBaseId,0,0,0,wxWindowID,						wxWindowID wxFileHistory.GetBaseId ( )
+wxFileHistory.GetCount,0,0,0,size_t,						size_t wxFileHistory.GetCount ( )
+wxFileHistory.GetHistoryFile,0,0,1,wxString,						wxString wxFileHistory.GetHistoryFile ( size_t index)
+wxFileHistory.GetMaxFiles,0,0,0,int,						int wxFileHistory.GetMaxFiles ( )
+wxFileHistory.GetMenus,0,0,0,wxList,						wxList&  wxFileHistory.GetMenus ( )
+wxFileHistory.Load,0,0,1,void,						void wxFileHistory.Load (  wxConfigBase & config)
+wxFileHistory.RemoveFileFromHistory,0,0,1,void,						void wxFileHistory.RemoveFileFromHistory ( size_t i)
+wxFileHistory.RemoveMenu,0,0,1,void,						void wxFileHistory.RemoveMenu ( wxMenu * menu)
+wxFileHistory.Save,0,0,1,void,						void wxFileHistory.Save ( wxConfigBase & config)
+wxFileHistory.SetBaseId,0,0,1,void,						void wxFileHistory.SetBaseId ( wxWindowID baseId)
+wxFileHistory.UseMenu,0,0,1,void,						void wxFileHistory.UseMenu ( wxMenu * menu)
+[INHERITS]
+wxObject

@@ -1,0 +1,33 @@
+[CONSTS]
+[HEADER]
+<wx/graphics.h>
+[METHODS]
+wxGraphicsPath.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGraphicsPath.AddArc,0,0,6,void,						void wxGraphicsPath.AddArc ( wxDouble x,     wxDouble y,     wxDouble r,     wxDouble startAngle,     wxDouble endAngle,     bool clockwise    )
+wxGraphicsPath.AddArc,0,0,5,void,						void wxGraphicsPath.AddArc (  wxPoint2DDouble & c,     wxDouble r,     wxDouble startAngle,     wxDouble endAngle,     bool clockwise    )
+wxGraphicsPath.AddArcToPoint,0,0,5,void,						void wxGraphicsPath.AddArcToPoint ( wxDouble x1,     wxDouble y1,     wxDouble x2,     wxDouble y2,     wxDouble r    )
+wxGraphicsPath.AddCircle,0,0,3,void,						void wxGraphicsPath.AddCircle ( wxDouble x,     wxDouble y,     wxDouble r    )
+wxGraphicsPath.AddCurveToPoint,0,0,6,void,						void wxGraphicsPath.AddCurveToPoint ( wxDouble cx1,     wxDouble cy1,     wxDouble cx2,     wxDouble cy2,     wxDouble x,     wxDouble y    )
+wxGraphicsPath.AddCurveToPoint,0,0,3,void,						void wxGraphicsPath.AddCurveToPoint (  wxPoint2DDouble & c1,      wxPoint2DDouble & c2,      wxPoint2DDouble & e    )
+wxGraphicsPath.AddEllipse,0,0,4,void,						void wxGraphicsPath.AddEllipse ( wxDouble x,     wxDouble y,     wxDouble w,     wxDouble h    )
+wxGraphicsPath.AddLineToPoint,0,0,2,void,						void wxGraphicsPath.AddLineToPoint ( wxDouble x,     wxDouble y    )
+wxGraphicsPath.AddLineToPoint,0,0,1,void,						void wxGraphicsPath.AddLineToPoint (  wxPoint2DDouble & p)
+wxGraphicsPath.AddPath,0,0,1,void,						void wxGraphicsPath.AddPath (  wxGraphicsPath & path)
+wxGraphicsPath.AddQuadCurveToPoint,0,0,4,void,						void wxGraphicsPath.AddQuadCurveToPoint ( wxDouble cx,     wxDouble cy,     wxDouble x,     wxDouble y    )
+wxGraphicsPath.AddRectangle,0,0,4,void,						void wxGraphicsPath.AddRectangle ( wxDouble x,     wxDouble y,     wxDouble w,     wxDouble h    )
+wxGraphicsPath.AddRoundedRectangle,0,0,5,void,						void wxGraphicsPath.AddRoundedRectangle ( wxDouble x,     wxDouble y,     wxDouble w,     wxDouble h,     wxDouble radius    )
+wxGraphicsPath.CloseSubpath,0,0,0,void,						void wxGraphicsPath.CloseSubpath ( )
+wxGraphicsPath.Contains,0,0,2,bool,						bool wxGraphicsPath.Contains (  wxPoint2DDouble & c,     wxPolygonFillMode fillStyle = wxODDEVEN_RULE    )
+wxGraphicsPath.Contains,0,0,3,bool,						bool wxGraphicsPath.Contains ( wxDouble x,     wxDouble y,     wxPolygonFillMode fillStyle = wxODDEVEN_RULE    )
+wxGraphicsPath.GetBox,0,0,0,wxRect2DDouble,						wxRect2DDouble wxGraphicsPath.GetBox ( )
+wxGraphicsPath.GetBox,0,0,4,void,						void wxGraphicsPath.GetBox ( wxDouble * x,     wxDouble * y,     wxDouble * w,     wxDouble * h    )
+wxGraphicsPath.GetCurrentPoint,0,0,2,void,						void wxGraphicsPath.GetCurrentPoint ( wxDouble * x,     wxDouble * y    )
+wxGraphicsPath.GetCurrentPoint,0,0,0,wxPoint2DDouble,						wxPoint2DDouble wxGraphicsPath.GetCurrentPoint ( )
+wxGraphicsPath.GetNativePath,0,1,0,void,						void* wxGraphicsPath.GetNativePath ( )
+wxGraphicsPath.MoveToPoint,0,0,2,void,						void wxGraphicsPath.MoveToPoint ( wxDouble x,     wxDouble y    )
+wxGraphicsPath.MoveToPoint,0,0,1,void,						void wxGraphicsPath.MoveToPoint (  wxPoint2DDouble & p)
+wxGraphicsPath.Transform,0,0,1,void,						void wxGraphicsPath.Transform (  wxGraphicsMatrix & matrix)
+wxGraphicsPath.UnGetNativePath,0,0,1,void,						void wxGraphicsPath.UnGetNativePath ( void * p)
+[INHERITS]
+wxGraphicsObject
+wxObject

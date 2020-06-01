@@ -1,0 +1,16 @@
+[CONSTS]
+wxEVT_HELP
+wxEVT_HELP
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxHelpEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHelpEvent.Origin,0,0,-1,enum,						enum wxHelpEvent.Origin
+wxHelpEvent.GetOrigin,0,0,0,wxHelpEvent.Origin,						wxHelpEvent.Origin wxHelpEvent.GetOrigin ( )
+wxHelpEvent.GetPosition,0,0,0,wxPoint,						wxPoint&  wxHelpEvent.GetPosition ( )
+wxHelpEvent.SetOrigin,0,0,1,void,						void wxHelpEvent.SetOrigin ( wxHelpEvent.Origin origin)
+wxHelpEvent.SetPosition,0,0,1,void,						void wxHelpEvent.SetPosition (  wxPoint & pt)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

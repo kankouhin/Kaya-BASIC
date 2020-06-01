@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/thread.h>
+[METHODS]
+wxThreadHelper.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxThreadHelper.Create,0,0,1,wxThreadError,						wxThreadError wxThreadHelper.Create ( unsigned int stackSize = 0)
+wxThreadHelper.CreateThread,0,0,2,wxThreadError,						wxThreadError wxThreadHelper.CreateThread ( wxThreadKind kind = wxTHREAD_JOINABLE,     unsigned int stackSize = 0    )
+wxThreadHelper.Entry,0,0,0,ExitCode,						ExitCode wxThreadHelper.Entry ( )
+wxThreadHelper.GetThread,0,1,0,wxThread,						wxThread* wxThreadHelper.GetThread ( )
+wxThreadHelper.GetThreadKind,0,0,0,wxThreadKind,						wxThreadKind wxThreadHelper.GetThreadKind ( )
+wxThreadHelper.OnDelete,0,0,0,void,						void wxThreadHelper.OnDelete ( )
+wxThreadHelper.OnExit,0,0,0,void,						void wxThreadHelper.OnExit ( )
+wxThreadHelper.OnKill,0,0,0,void,						void wxThreadHelper.OnKill ( )
+[INHERITS]

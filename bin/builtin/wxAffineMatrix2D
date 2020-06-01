@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/affinematrix2d.h>
+[METHODS]
+wxAffineMatrix2D.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAffineMatrix2D.Concat,0,0,1,void,						void wxAffineMatrix2D.Concat (  wxAffineMatrix2DBase & t)
+wxAffineMatrix2D.Get,0,0,2,void,						void wxAffineMatrix2D.Get ( wxMatrix2D * mat2D,     wxPoint2DDouble * tr    )
+wxAffineMatrix2D.Invert,0,0,0,bool,						bool wxAffineMatrix2D.Invert ( )
+wxAffineMatrix2D.IsEqual,0,0,1,void,						void wxAffineMatrix2D.IsEqual (  wxAffineMatrix2DBase & t)
+wxAffineMatrix2D.IsIdentity,0,0,0,bool,						bool wxAffineMatrix2D.IsIdentity ( )
+wxAffineMatrix2D.Mirror,0,0,1,void,						void wxAffineMatrix2D.Mirror ( int direction = wxHORIZONTAL)
+wxAffineMatrix2D.operator!=,0,0,1,bool,						bool wxAffineMatrix2D.operator!= (  wxAffineMatrix2DBase & t)
+wxAffineMatrix2D.operator==,0,0,1,bool,						bool wxAffineMatrix2D.operator== (  wxAffineMatrix2DBase & t)
+wxAffineMatrix2D.Rotate,0,0,1,void,						void wxAffineMatrix2D.Rotate ( wxDouble cRadians)
+wxAffineMatrix2D.Scale,0,0,2,void,						void wxAffineMatrix2D.Scale ( wxDouble xScale,     wxDouble yScale    )
+wxAffineMatrix2D.Set,0,0,2,void,						void wxAffineMatrix2D.Set (  wxMatrix2D & mat2D,      wxPoint2DDouble & tr    )
+wxAffineMatrix2D.TransformDistance,0,0,1,wxPoint2DDouble,						wxPoint2DDouble wxAffineMatrix2D.TransformDistance (  wxPoint2DDouble & p)
+wxAffineMatrix2D.TransformDistance,0,0,2,void,						void wxAffineMatrix2D.TransformDistance ( wxDouble * dx,     wxDouble * dy    )
+wxAffineMatrix2D.TransformPoint,0,0,1,wxPoint2DDouble,						wxPoint2DDouble wxAffineMatrix2D.TransformPoint (  wxPoint2DDouble & p)
+wxAffineMatrix2D.TransformPoint,0,0,2,void,						void wxAffineMatrix2D.TransformPoint ( wxDouble * x,     wxDouble * y    )
+wxAffineMatrix2D.Translate,0,0,2,void,						void wxAffineMatrix2D.Translate ( wxDouble dx,     wxDouble dy    )
+[INHERITS]
+wxAffineMatrix2DBase

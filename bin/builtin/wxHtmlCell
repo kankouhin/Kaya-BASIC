@@ -1,0 +1,32 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlcell.h>
+[METHODS]
+wxHtmlCell.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlCell.AdjustPagebreak,0,0,2,bool,						bool wxHtmlCell.AdjustPagebreak ( int * pagebreak,     int pageHeight    )
+wxHtmlCell.ConvertToText,0,0,1,wxString,						wxString wxHtmlCell.ConvertToText ( wxHtmlSelection * sel)
+wxHtmlCell.Draw,0,0,6,void,						void wxHtmlCell.Draw ( wxDC & dc,     int x,     int y,     int view_y1,     int view_y2,     wxHtmlRenderingInfo & info    )
+wxHtmlCell.DrawInvisible,0,0,4,void,						void wxHtmlCell.DrawInvisible ( wxDC & dc,     int x,     int y,     wxHtmlRenderingInfo & info    )
+wxHtmlCell.Find,0,1,2,wxHtmlCell,						wxHtmlCell* wxHtmlCell.Find ( int condition,      void * param    )
+wxHtmlCell.FindCellByPos,0,1,3,wxHtmlCell,						wxHtmlCell* wxHtmlCell.FindCellByPos ( wxCoord x,     wxCoord y,     unsigned flags = wxHTML_FIND_EXACT    )
+wxHtmlCell.GetDescent,0,0,0,int,						int wxHtmlCell.GetDescent ( )
+wxHtmlCell.GetFirstChild,0,1,0,wxHtmlCell,						wxHtmlCell* wxHtmlCell.GetFirstChild ( )
+wxHtmlCell.GetHeight,0,0,0,int,						int wxHtmlCell.GetHeight ( )
+wxHtmlCell.GetId,0,0,0,wxString,						wxString&  wxHtmlCell.GetId ( )
+wxHtmlCell.GetLink,0,1,2,wxHtmlLinkInfo,						wxHtmlLinkInfo* wxHtmlCell.GetLink ( int x = 0,     int y = 0    )
+wxHtmlCell.GetMouseCursor,0,0,1,wxCursor,						wxCursor wxHtmlCell.GetMouseCursor ( wxHtmlWindowInterface * window)
+wxHtmlCell.GetMouseCursorAt,0,0,2,wxCursor,						wxCursor wxHtmlCell.GetMouseCursorAt ( wxHtmlWindowInterface * window,      wxPoint & rePos    )
+wxHtmlCell.GetNext,0,1,0,wxHtmlCell,						wxHtmlCell* wxHtmlCell.GetNext ( )
+wxHtmlCell.GetParent,0,1,0,wxHtmlContainerCell,						wxHtmlContainerCell* wxHtmlCell.GetParent ( )
+wxHtmlCell.GetPosX,0,0,0,int,						int wxHtmlCell.GetPosX ( )
+wxHtmlCell.GetPosY,0,0,0,int,						int wxHtmlCell.GetPosY ( )
+wxHtmlCell.GetWidth,0,0,0,int,						int wxHtmlCell.GetWidth ( )
+wxHtmlCell.Layout,0,0,1,void,						void wxHtmlCell.Layout ( int w)
+wxHtmlCell.ProcessMouseClick,0,0,3,bool,						bool wxHtmlCell.ProcessMouseClick ( wxHtmlWindowInterface * window,      wxPoint & pos,      wxMouseEvent & event    )
+wxHtmlCell.SetId,0,0,1,void,						void wxHtmlCell.SetId (  wxString & id)
+wxHtmlCell.SetLink,0,0,1,void,						void wxHtmlCell.SetLink (  wxHtmlLinkInfo & link)
+wxHtmlCell.SetNext,0,0,1,void,						void wxHtmlCell.SetNext ( wxHtmlCell * cell)
+wxHtmlCell.SetParent,0,0,1,void,						void wxHtmlCell.SetParent ( wxHtmlContainerCell * p)
+wxHtmlCell.SetPos,0,0,2,void,						void wxHtmlCell.SetPos ( int x,     int y    )
+[INHERITS]
+wxObject

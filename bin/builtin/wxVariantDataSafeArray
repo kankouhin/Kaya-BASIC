@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/msw/ole/oleutils.h>
+[METHODS]
+wxVariantDataSafeArray.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxVariantDataSafeArray.Clone,0,1,0,wxVariantData,						wxVariantData* wxVariantDataSafeArray.Clone ( )
+wxVariantDataSafeArray.Eq,0,0,1,bool,						bool wxVariantDataSafeArray.Eq ( wxVariantData & data)
+wxVariantDataSafeArray.GetAsAny,0,0,1,bool,						bool wxVariantDataSafeArray.GetAsAny ( wxAny * any)
+wxVariantDataSafeArray.GetType,0,0,0,wxString,						wxString wxVariantDataSafeArray.GetType ( )
+wxVariantDataSafeArray.GetValue,0,1,0,SAFEARRAY,						SAFEARRAY* wxVariantDataSafeArray.GetValue ( )
+wxVariantDataSafeArray.SetValue,0,0,1,void,						void wxVariantDataSafeArray.SetValue ( SAFEARRAY * value)
+wxVariantDataSafeArray.Write,0,0,1,bool,						bool wxVariantDataSafeArray.Write ( wxString & str)
+[INHERITS]
+wxVariantData

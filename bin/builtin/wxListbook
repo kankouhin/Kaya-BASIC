@@ -1,0 +1,21 @@
+[CONSTS]
+wxLB_DEFAULT
+wxLB_TOP
+wxLB_LEFT
+wxLB_RIGHT
+wxLB_BOTTOM
+wxEVT_LISTBOOK_PAGE_CHANGED
+wxEVT_LISTBOOK_PAGE_CHANGING
+[HEADER]
+<wx/listbook.h>
+[METHODS]
+wxListbook.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxListbook.Create,0,0,6,bool,						bool wxListbook.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxEmptyString    )
+wxListbook.GetListView,0,1,0,wxListView,						wxListView* wxListbook.GetListView ( )
+[INHERITS]
+wxBookCtrlBase
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxWithImages

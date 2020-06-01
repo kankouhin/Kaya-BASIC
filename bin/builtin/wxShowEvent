@@ -1,0 +1,12 @@
+[CONSTS]
+wxEVT_SHOW
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxShowEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxShowEvent.GetShow,0,0,0,bool,						bool wxShowEvent.GetShow ( )
+wxShowEvent.IsShown,0,0,0,bool,						bool wxShowEvent.IsShown ( )
+wxShowEvent.SetShow,0,0,1,void,						void wxShowEvent.SetShow ( bool show)
+[INHERITS]
+wxEvent
+wxObject

@@ -1,0 +1,12 @@
+[CONSTS]
+wxEVT_GESTURE_ZOOM
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxZoomGestureEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxZoomGestureEvent.GetZoomFactor,0,0,0,double,						double wxZoomGestureEvent.GetZoomFactor ( )
+wxZoomGestureEvent.SetZoomFactor,0,0,1,void,						void wxZoomGestureEvent.SetZoomFactor ( double zoomFactor)
+[INHERITS]
+wxGestureEvent
+wxEvent
+wxObject

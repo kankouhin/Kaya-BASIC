@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/any.h>
+[METHODS]
+wxAnyValueType.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAnyValueType.CheckType,0,0,0,bool,						bool wxAnyValueType.CheckType ( )
+wxAnyValueType.ConvertValue,0,0,3,bool,						bool wxAnyValueType.ConvertValue (  wxAnyValueBuffer & src,     wxAnyValueType * dstType,     wxAnyValueBuffer & dst    )
+wxAnyValueType.CopyBuffer,0,0,2,void,						void wxAnyValueType.CopyBuffer (  wxAnyValueBuffer & src,     wxAnyValueBuffer & dst    )
+wxAnyValueType.DeleteValue,0,0,1,void,						void wxAnyValueType.DeleteValue ( wxAnyValueBuffer & buf)
+wxAnyValueType.IsSameType,0,0,1,bool,						bool wxAnyValueType.IsSameType (  wxAnyValueType * otherType)
+[INHERITS]

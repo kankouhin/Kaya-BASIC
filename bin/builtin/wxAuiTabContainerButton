@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/aui/auibook.h>
+[METHODS]
+wxAuiTabContainerButton.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiTabContainerButton.bitmap,0,0,-1,wxBitmap,						wxBitmap wxAuiTabContainerButton.bitmap
+wxAuiTabContainerButton.curState,0,0,-1,int,						int wxAuiTabContainerButton.curState
+wxAuiTabContainerButton.disBitmap,0,0,-1,wxBitmap,						wxBitmap wxAuiTabContainerButton.disBitmap
+wxAuiTabContainerButton.id,0,0,-1,int,						int wxAuiTabContainerButton.id
+wxAuiTabContainerButton.location,0,0,-1,int,						int wxAuiTabContainerButton.location
+wxAuiTabContainerButton.rect,0,0,-1,wxRect,						wxRect wxAuiTabContainerButton.rect
+[INHERITS]

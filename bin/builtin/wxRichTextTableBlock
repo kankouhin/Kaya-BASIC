@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextTableBlock.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextTableBlock.ColEnd,0,0,0,int,						int&  wxRichTextTableBlock.ColEnd ( )
+wxRichTextTableBlock.ColEnd,0,0,0,int,						int wxRichTextTableBlock.ColEnd ( )
+wxRichTextTableBlock.ColStart,0,0,0,int,						int&  wxRichTextTableBlock.ColStart ( )
+wxRichTextTableBlock.ColStart,0,0,0,int,						int wxRichTextTableBlock.ColStart ( )
+wxRichTextTableBlock.ComputeBlockForSelection,0,0,3,bool,						bool wxRichTextTableBlock.ComputeBlockForSelection ( wxRichTextTable * table,     wxRichTextCtrl * ctrl,     bool requireCellSelection = true    )
+wxRichTextTableBlock.Copy,0,0,1,void,						void wxRichTextTableBlock.Copy (  wxRichTextTableBlock & block)
+wxRichTextTableBlock.GetFocusedCell,1,1,1,wxRichTextCell,						static wxRichTextCell* wxRichTextTableBlock.GetFocusedCell ( wxRichTextCtrl * ctrl)
+wxRichTextTableBlock.Init,0,0,0,void,						void wxRichTextTableBlock.Init ( )
+wxRichTextTableBlock.IsWholeTable,0,0,1,bool,						bool wxRichTextTableBlock.IsWholeTable ( wxRichTextTable * table)
+wxRichTextTableBlock.operator=,0,0,1,void,						void wxRichTextTableBlock.operator= (  wxRichTextTableBlock & block)
+wxRichTextTableBlock.operator==,0,0,1,bool,						bool wxRichTextTableBlock.operator== (  wxRichTextTableBlock & block)
+wxRichTextTableBlock.RowEnd,0,0,0,int,						int&  wxRichTextTableBlock.RowEnd ( )
+wxRichTextTableBlock.RowEnd,0,0,0,int,						int wxRichTextTableBlock.RowEnd ( )
+wxRichTextTableBlock.RowStart,0,0,0,int,						int&  wxRichTextTableBlock.RowStart ( )
+wxRichTextTableBlock.RowStart,0,0,0,int,						int wxRichTextTableBlock.RowStart ( )
+wxRichTextTableBlock.m_colEnd,0,0,-1,int,						int wxRichTextTableBlock.m_colEnd
+wxRichTextTableBlock.m_colStart,0,0,-1,int,						int wxRichTextTableBlock.m_colStart
+wxRichTextTableBlock.m_rowEnd,0,0,-1,int,						int wxRichTextTableBlock.m_rowEnd
+wxRichTextTableBlock.m_rowStart,0,0,-1,int,						int wxRichTextTableBlock.m_rowStart
+[INHERITS]

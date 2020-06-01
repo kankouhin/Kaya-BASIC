@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlcell.h>
+[METHODS]
+wxHtmlWordWithTabsCell.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+[INHERITS]
+wxHtmlWordCell
+wxHtmlCell
+wxObject

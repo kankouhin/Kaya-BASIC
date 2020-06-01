@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/translation.h>
+[METHODS]
+wxTranslationsLoader.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTranslationsLoader.GetAvailableTranslations,0,0,1,wxArrayString,						wxArrayString wxTranslationsLoader.GetAvailableTranslations (  wxString & domain)
+wxTranslationsLoader.LoadCatalog,0,1,2,wxMsgCatalog,						wxMsgCatalog* wxTranslationsLoader.LoadCatalog (  wxString & domain,      wxString & lang    )
+[INHERITS]

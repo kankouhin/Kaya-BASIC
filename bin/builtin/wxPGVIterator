@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/propgridpagestate.h>
+[METHODS]
+wxPGVIterator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGVIterator.AtEnd,0,0,0,bool,						bool wxPGVIterator.AtEnd ( )
+wxPGVIterator.GetProperty,0,1,0,wxPGProperty,						wxPGProperty* wxPGVIterator.GetProperty ( )
+wxPGVIterator.Next,0,0,0,void,						void wxPGVIterator.Next ( )
+wxPGVIterator.operator=,0,0,1,wxPGVIterator,						wxPGVIterator&  wxPGVIterator.operator= (  wxPGVIterator & it)
+wxPGVIterator.UnRef,0,0,0,void,						void wxPGVIterator.UnRef ( )
+[INHERITS]

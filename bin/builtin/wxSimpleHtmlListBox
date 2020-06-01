@@ -1,0 +1,23 @@
+[CONSTS]
+wxHLB_DEFAULT_STYLE
+wxHLB_MULTIPLE
+wxEVT_LISTBOX
+wxEVT_LISTBOX_DCLICK
+[HEADER]
+<wx/htmllbox.h>
+[METHODS]
+wxSimpleHtmlListBox.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSimpleHtmlListBox.Create,0,0,9,bool,						bool wxSimpleHtmlListBox.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     int n = 0,      wxString choices[] = NULL,     long style = wxHLB_DEFAULT_STYLE,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxSimpleHtmlListBoxNameStr    )
+wxSimpleHtmlListBox.Create,0,0,8,bool,						bool wxSimpleHtmlListBox.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     long style = wxHLB_DEFAULT_STYLE,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxSimpleHtmlListBoxNameStr    )
+[INHERITS]
+wxHtmlListBox
+wxVListBox
+wxVScrolledWindow
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject
+wxVarVScrollHelper
+wxVarScrollHelperBase
+wxItemContainer
+wxItemContainerImmutable

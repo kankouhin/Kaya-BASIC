@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/colourdata.h>
+[METHODS]
+wxColourData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxColourData.FromString,0,0,1,bool,						bool wxColourData.FromString (  wxString & str)
+wxColourData.GetChooseAlpha,0,0,0,bool,						bool wxColourData.GetChooseAlpha ( )
+wxColourData.GetChooseFull,0,0,0,bool,						bool wxColourData.GetChooseFull ( )
+wxColourData.GetColour,0,0,0,wxColour,						wxColour&  wxColourData.GetColour ( )
+wxColourData.GetCustomColour,0,0,1,wxColour,						wxColour wxColourData.GetCustomColour ( int i)
+wxColourData.operator=,0,0,1,wxColourData,						wxColourData&  wxColourData.operator= (  wxColourData & data)
+wxColourData.SetChooseAlpha,0,0,1,void,						void wxColourData.SetChooseAlpha ( bool flag)
+wxColourData.SetChooseFull,0,0,1,void,						void wxColourData.SetChooseFull ( bool flag)
+wxColourData.SetColour,0,0,1,void,						void wxColourData.SetColour (  wxColour & colour)
+wxColourData.SetCustomColour,0,0,2,void,						void wxColourData.SetCustomColour ( int i,      wxColour & colour    )
+wxColourData.ToString,0,0,0,wxString,						wxString wxColourData.ToString ( )
+[INHERITS]
+wxObject

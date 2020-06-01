@@ -1,0 +1,31 @@
+[CONSTS]
+wxWIZARD_EX_HELPBUTTON
+[HEADER]
+<wx/wizard.h>
+[METHODS]
+wxWizard.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWizard.Create,0,0,6,bool,						bool wxWizard.Create ( wxWindow * parent,     int id = wxID_ANY,      wxString & title = wxEmptyString,      wxBitmap & bitmap = wxNullBitmap,      wxPoint & pos = wxDefaultPosition,     long style = wxDEFAULT_DIALOG_STYLE    )
+wxWizard.FitToPage,0,0,1,void,						void wxWizard.FitToPage (  wxWizardPage * firstPage)
+wxWizard.GetBitmap,0,0,0,wxBitmap,						wxBitmap&  wxWizard.GetBitmap ( )
+wxWizard.GetBitmapBackgroundColour,0,0,0,wxColour,						wxColour&  wxWizard.GetBitmapBackgroundColour ( )
+wxWizard.GetBitmapPlacement,0,0,0,int,						int wxWizard.GetBitmapPlacement ( )
+wxWizard.GetCurrentPage,0,1,0,wxWizardPage,						wxWizardPage* wxWizard.GetCurrentPage ( )
+wxWizard.GetMinimumBitmapWidth,0,0,0,int,						int wxWizard.GetMinimumBitmapWidth ( )
+wxWizard.GetPageAreaSizer,0,1,0,wxSizer,						wxSizer* wxWizard.GetPageAreaSizer ( )
+wxWizard.GetPageSize,0,0,0,wxSize,						wxSize wxWizard.GetPageSize ( )
+wxWizard.HasNextPage,0,0,1,bool,						bool wxWizard.HasNextPage ( wxWizardPage * page)
+wxWizard.HasPrevPage,0,0,1,bool,						bool wxWizard.HasPrevPage ( wxWizardPage * page)
+wxWizard.RunWizard,0,0,1,bool,						bool wxWizard.RunWizard ( wxWizardPage * firstPage)
+wxWizard.SetBitmap,0,0,1,void,						void wxWizard.SetBitmap (  wxBitmap & bitmap)
+wxWizard.SetBitmapBackgroundColour,0,0,1,void,						void wxWizard.SetBitmapBackgroundColour (  wxColour & colour)
+wxWizard.SetBitmapPlacement,0,0,1,void,						void wxWizard.SetBitmapPlacement ( int placement)
+wxWizard.SetBorder,0,0,1,void,						void wxWizard.SetBorder ( int border)
+wxWizard.SetMinimumBitmapWidth,0,0,1,void,						void wxWizard.SetMinimumBitmapWidth ( int width)
+wxWizard.SetPageSize,0,0,1,void,						void wxWizard.SetPageSize (  wxSize & sizePage)
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

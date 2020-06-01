@@ -1,0 +1,32 @@
+[CONSTS]
+[HEADER]
+<wx/ipc.h>
+[METHODS]
+wxConnection.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxConnection.Advise,0,0,4,bool,						bool wxConnection.Advise (  wxString & item,      void * data,     size_t size,     wxIPCFormat format = wxIPC_PRIVATE    )
+wxConnection.Advise,0,0,2,bool,						bool wxConnection.Advise (  wxString & item,      char * data    )
+wxConnection.Advise,0,0,2,bool,						bool wxConnection.Advise (  wxString & item,      wchar_t * data    )
+wxConnection.Advise,0,0,2,bool,						bool wxConnection.Advise (  wxString & item,      wxString data    )
+wxConnection.Disconnect,0,0,0,bool,						bool wxConnection.Disconnect ( )
+wxConnection.Execute,0,0,3,bool,						bool wxConnection.Execute (  void * data,     size_t size,     wxIPCFormat format = wxIPC_PRIVATE    )
+wxConnection.Execute,0,0,1,bool,						bool wxConnection.Execute (  char * data)
+wxConnection.Execute,0,0,1,bool,						bool wxConnection.Execute (  wchar_t * data)
+wxConnection.Execute,0,0,1,bool,						bool wxConnection.Execute (  wxString data)
+wxConnection.GetTextFromData,1,0,3,wxString,						static wxString wxConnection.GetTextFromData (  void * data,     size_t size,     wxIPCFormat format    )
+wxConnection.IsTextFormat,1,0,1,bool,						static bool wxConnection.IsTextFormat ( wxIPCFormat format)
+wxConnection.OnAdvise,0,0,5,bool,						bool wxConnection.OnAdvise (  wxString & topic,      wxString & item,      void * data,     size_t size,     wxIPCFormat format    )
+wxConnection.OnDisconnect,0,0,0,bool,						bool wxConnection.OnDisconnect ( )
+wxConnection.OnExec,0,0,2,bool,						bool wxConnection.OnExec (  wxString & topic,      wxString & data    )
+wxConnection.OnPoke,0,0,5,bool,						bool wxConnection.OnPoke (  wxString & topic,      wxString & item,      void * data,     size_t size,     wxIPCFormat format    )
+wxConnection.OnRequest,0,1,4,void,						void* wxConnection.OnRequest (  wxString & topic,      wxString & item,     size_t * size,     wxIPCFormat format    )
+wxConnection.OnStartAdvise,0,0,2,bool,						bool wxConnection.OnStartAdvise (  wxString & topic,      wxString & item    )
+wxConnection.OnStopAdvise,0,0,2,bool,						bool wxConnection.OnStopAdvise (  wxString & topic,      wxString & item    )
+wxConnection.Poke,0,0,4,bool,						bool wxConnection.Poke (  wxString & item,      void * data,     size_t size,     wxIPCFormat format = wxIPC_PRIVATE    )
+wxConnection.Poke,0,0,2,bool,						bool wxConnection.Poke (  wxString & item,      char * data    )
+wxConnection.Poke,0,0,2,bool,						bool wxConnection.Poke (  wxString & item,      wchar_t * data    )
+wxConnection.Poke,0,0,2,bool,						bool wxConnection.Poke (  wxString & item,      wxString data    )
+wxConnection.Request,0,1,3,void,						void* wxConnection.Request (  wxString & item,     size_t * size,     wxIPCFormat format = wxIPC_TEXT    )
+wxConnection.StartAdvise,0,0,1,bool,						bool wxConnection.StartAdvise (  wxString & item)
+wxConnection.StopAdvise,0,0,1,bool,						bool wxConnection.StopAdvise (  wxString & item)
+[INHERITS]
+wxObject

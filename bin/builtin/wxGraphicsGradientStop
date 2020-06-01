@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/graphics.h>
+[METHODS]
+wxGraphicsGradientStop.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGraphicsGradientStop.GetColour,0,0,0,wxColour,						wxColour&  wxGraphicsGradientStop.GetColour ( )
+wxGraphicsGradientStop.GetPosition,0,0,0,float,						float wxGraphicsGradientStop.GetPosition ( )
+wxGraphicsGradientStop.SetColour,0,0,1,void,						void wxGraphicsGradientStop.SetColour (  wxColour & col)
+wxGraphicsGradientStop.SetPosition,0,0,1,void,						void wxGraphicsGradientStop.SetPosition ( float pos)
+[INHERITS]

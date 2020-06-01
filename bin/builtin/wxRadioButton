@@ -1,0 +1,16 @@
+[CONSTS]
+wxRB_GROUP
+wxRB_SINGLE
+wxEVT_RADIOBUTTON
+[HEADER]
+<wx/radiobut.h>
+[METHODS]
+wxRadioButton.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRadioButton.Create,0,0,8,bool,						bool wxRadioButton.Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxRadioButtonNameStr    )
+wxRadioButton.GetValue,0,0,0,bool,						bool wxRadioButton.GetValue ( )
+wxRadioButton.SetValue,0,0,1,void,						void wxRadioButton.SetValue ( bool value)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

@@ -1,0 +1,10 @@
+[CONSTS]
+wxEVT_ERASE_BACKGROUND
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxEraseEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxEraseEvent.GetDC,0,1,0,wxDC,						wxDC* wxEraseEvent.GetDC ( )
+[INHERITS]
+wxEvent
+wxObject

@@ -4,16 +4,18 @@ wxCHK_3STATE
 wxCHK_ALLOW_3RD_STATE_FOR_USER
 wxALIGN_RIGHT
 wxEVT_CHECKBOX
-[METHODS]
+[HEADER]
 <wx/checkbox.h>
-Create,0,0,8,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxCheckBoxNameStr    )
-Get3StateValue,0,0,0,wxCheckBoxState,						wxCheckBoxState Get3StateValue ( )
-GetValue,0,0,0,bool,						bool GetValue ( )
-Is3rdStateAllowedForUser,0,0,0,bool,						bool Is3rdStateAllowedForUser ( )
-Is3State,0,0,0,bool,						bool Is3State ( )
-IsChecked,0,0,0,bool,						bool IsChecked ( )
-Set3StateValue,0,0,1,void,						void Set3StateValue ( wxCheckBoxState state)
-SetValue,0,0,1,void,						void SetValue ( bool state)
+[METHODS]
+wxCheckBox.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCheckBox.Create,0,0,8,bool,						bool wxCheckBox.Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxCheckBoxNameStr    )
+wxCheckBox.Get3StateValue,0,0,0,wxCheckBoxState,						wxCheckBoxState wxCheckBox.Get3StateValue ( )
+wxCheckBox.GetValue,0,0,0,bool,						bool wxCheckBox.GetValue ( )
+wxCheckBox.Is3rdStateAllowedForUser,0,0,0,bool,						bool wxCheckBox.Is3rdStateAllowedForUser ( )
+wxCheckBox.Is3State,0,0,0,bool,						bool wxCheckBox.Is3State ( )
+wxCheckBox.IsChecked,0,0,0,bool,						bool wxCheckBox.IsChecked ( )
+wxCheckBox.Set3StateValue,0,0,1,void,						void wxCheckBox.Set3StateValue ( wxCheckBoxState state)
+wxCheckBox.SetValue,0,0,1,void,						void wxCheckBox.SetValue ( bool state)
 [INHERITS]
 wxControl
 wxWindow

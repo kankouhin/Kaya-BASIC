@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewModelNotifier.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewModelNotifier.Cleared,0,0,0,bool,						bool wxDataViewModelNotifier.Cleared ( )
+wxDataViewModelNotifier.GetOwner,0,1,0,wxDataViewModel,						wxDataViewModel* wxDataViewModelNotifier.GetOwner ( )
+wxDataViewModelNotifier.ItemAdded,0,0,2,bool,						bool wxDataViewModelNotifier.ItemAdded (  wxDataViewItem & parent,      wxDataViewItem & item    )
+wxDataViewModelNotifier.ItemChanged,0,0,1,bool,						bool wxDataViewModelNotifier.ItemChanged (  wxDataViewItem & item)
+wxDataViewModelNotifier.ItemDeleted,0,0,2,bool,						bool wxDataViewModelNotifier.ItemDeleted (  wxDataViewItem & parent,      wxDataViewItem & item    )
+wxDataViewModelNotifier.ItemsAdded,0,0,2,bool,						bool wxDataViewModelNotifier.ItemsAdded (  wxDataViewItem & parent,      wxDataViewItemArray & items    )
+wxDataViewModelNotifier.ItemsChanged,0,0,1,bool,						bool wxDataViewModelNotifier.ItemsChanged (  wxDataViewItemArray & items)
+wxDataViewModelNotifier.ItemsDeleted,0,0,2,bool,						bool wxDataViewModelNotifier.ItemsDeleted (  wxDataViewItem & parent,      wxDataViewItemArray & items    )
+wxDataViewModelNotifier.Resort,0,0,0,void,						void wxDataViewModelNotifier.Resort ( )
+wxDataViewModelNotifier.SetOwner,0,0,1,void,						void wxDataViewModelNotifier.SetOwner ( wxDataViewModel * owner)
+wxDataViewModelNotifier.ValueChanged,0,0,2,bool,						bool wxDataViewModelNotifier.ValueChanged (  wxDataViewItem & item,     unsigned int col    )
+[INHERITS]

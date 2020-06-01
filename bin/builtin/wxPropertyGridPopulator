@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/propgrid.h>
+[METHODS]
+wxPropertyGridPopulator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPropertyGridPopulator.Add,0,1,5,wxPGProperty,						wxPGProperty* wxPropertyGridPopulator.Add (  wxString & propClass,      wxString & propLabel,      wxString & propName,      wxString * propValue,     wxPGChoices * pChoices = NULL    )
+wxPropertyGridPopulator.AddAttribute,0,0,3,bool,						bool wxPropertyGridPopulator.AddAttribute (  wxString & name,      wxString & type,      wxString & value    )
+wxPropertyGridPopulator.AddChildren,0,0,1,void,						void wxPropertyGridPopulator.AddChildren ( wxPGProperty * property)
+wxPropertyGridPopulator.DoScanForChildren,0,0,0,void,						void wxPropertyGridPopulator.DoScanForChildren ( )
+wxPropertyGridPopulator.GetCurParent,0,1,0,wxPGProperty,						wxPGProperty* wxPropertyGridPopulator.GetCurParent ( )
+wxPropertyGridPopulator.GetState,0,1,0,wxPropertyGridPageState,						wxPropertyGridPageState* wxPropertyGridPopulator.GetState ( )
+wxPropertyGridPopulator.GetState,0,1,0,wxPropertyGridPageState,						wxPropertyGridPageState* wxPropertyGridPopulator.GetState ( )
+wxPropertyGridPopulator.ParseChoices,0,0,2,wxPGChoices,						wxPGChoices wxPropertyGridPopulator.ParseChoices (  wxString & choicesString,      wxString & idString    )
+wxPropertyGridPopulator.ProcessError,0,0,1,void,						void wxPropertyGridPopulator.ProcessError (  wxString & msg)
+wxPropertyGridPopulator.SetGrid,0,0,1,void,						void wxPropertyGridPopulator.SetGrid ( wxPropertyGrid * pg)
+wxPropertyGridPopulator.SetState,0,0,1,void,						void wxPropertyGridPopulator.SetState ( wxPropertyGridPageState * state)
+wxPropertyGridPopulator.ToLongPCT,1,0,3,bool,						static bool wxPropertyGridPopulator.ToLongPCT (  wxString & s,     long * pval,     long max    )
+[INHERITS]

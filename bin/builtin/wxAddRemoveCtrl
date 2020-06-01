@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/addremovectrl.h>
+[METHODS]
+wxAddRemoveCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAddRemoveCtrl.Create,0,0,6,bool,						bool wxAddRemoveCtrl.Create ( wxWindow * parent,     wxWindowID winid = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxAddRemoveCtrlNameStr    )
+wxAddRemoveCtrl.SetAdaptor,0,0,1,void,						void wxAddRemoveCtrl.SetAdaptor ( wxAddRemoveAdaptor * adaptor)
+wxAddRemoveCtrl.SetButtonsToolTips,0,0,2,void,						void wxAddRemoveCtrl.SetButtonsToolTips (  wxString & addtip,      wxString & removetip    )
+[INHERITS]
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject

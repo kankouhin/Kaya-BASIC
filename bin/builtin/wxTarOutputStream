@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/tarstrm.h>
+[METHODS]
+wxTarOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTarOutputStream.Close,0,0,0,bool,						bool wxTarOutputStream.Close ( )
+wxTarOutputStream.CloseEntry,0,0,0,bool,						bool wxTarOutputStream.CloseEntry ( )
+wxTarOutputStream.CopyArchiveMetaData,0,0,1,bool,						bool wxTarOutputStream.CopyArchiveMetaData ( wxTarInputStream & s)
+wxTarOutputStream.CopyEntry,0,0,2,bool,						bool wxTarOutputStream.CopyEntry ( wxTarEntry * entry,     wxTarInputStream & inputStream    )
+wxTarOutputStream.GetBlockingFactor,0,0,0,int,						int wxTarOutputStream.GetBlockingFactor ( )
+wxTarOutputStream.PutNextDirEntry,0,0,2,bool,						bool wxTarOutputStream.PutNextDirEntry (  wxString & name,      wxDateTime & dt = wxDateTime.Now()    )
+wxTarOutputStream.PutNextEntry,0,0,1,bool,						bool wxTarOutputStream.PutNextEntry ( wxTarEntry * entry)
+wxTarOutputStream.PutNextEntry,0,0,3,bool,						bool wxTarOutputStream.PutNextEntry (  wxString & name,      wxDateTime & dt = wxDateTime.Now(),     wxFileOffset size = wxInvalidOffset    )
+wxTarOutputStream.SetBlockingFactor,0,0,1,void,						void wxTarOutputStream.SetBlockingFactor ( int factor)
+[INHERITS]
+wxArchiveOutputStream
+wxFilterOutputStream
+wxOutputStream
+wxStreamBase

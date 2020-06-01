@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextObjectAddress.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextObjectAddress.Copy,0,0,1,void,						void wxRichTextObjectAddress.Copy (  wxRichTextObjectAddress & address)
+wxRichTextObjectAddress.Create,0,0,2,bool,						bool wxRichTextObjectAddress.Create ( wxRichTextParagraphLayoutBox * topLevelContainer,     wxRichTextObject * obj    )
+wxRichTextObjectAddress.GetAddress,0,0,0,wxArrayInt,						wxArrayInt&  wxRichTextObjectAddress.GetAddress ( )
+wxRichTextObjectAddress.GetAddress,0,0,0,wxArrayInt,						wxArrayInt&  wxRichTextObjectAddress.GetAddress ( )
+wxRichTextObjectAddress.GetObject,0,1,1,wxRichTextObject,						wxRichTextObject* wxRichTextObjectAddress.GetObject ( wxRichTextParagraphLayoutBox * topLevelContainer)
+wxRichTextObjectAddress.Init,0,0,0,void,						void wxRichTextObjectAddress.Init ( )
+wxRichTextObjectAddress.operator=,0,0,1,void,						void wxRichTextObjectAddress.operator= (  wxRichTextObjectAddress & address)
+wxRichTextObjectAddress.SetAddress,0,0,1,void,						void wxRichTextObjectAddress.SetAddress (  wxArrayInt & address)
+wxRichTextObjectAddress.m_address,0,0,-1,wxArrayInt,						wxArrayInt wxRichTextObjectAddress.m_address
+[INHERITS]

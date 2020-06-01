@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/clipbrd.h>
+[METHODS]
+wxClipboard.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxClipboard.AddData,0,0,1,bool,						bool wxClipboard.AddData ( wxDataObject * data)
+wxClipboard.Clear,0,0,0,void,						void wxClipboard.Clear ( )
+wxClipboard.Close,0,0,0,void,						void wxClipboard.Close ( )
+wxClipboard.Flush,0,0,0,bool,						bool wxClipboard.Flush ( )
+wxClipboard.Get,1,1,0,wxClipboard,						static wxClipboard* wxClipboard.Get ( )
+wxClipboard.GetData,0,0,1,bool,						bool wxClipboard.GetData ( wxDataObject & data)
+wxClipboard.IsOpened,0,0,0,bool,						bool wxClipboard.IsOpened ( )
+wxClipboard.IsSupported,0,0,1,bool,						bool wxClipboard.IsSupported (  wxDataFormat & format)
+wxClipboard.IsUsingPrimarySelection,0,0,0,bool,						bool wxClipboard.IsUsingPrimarySelection ( )
+wxClipboard.Open,0,0,0,bool,						bool wxClipboard.Open ( )
+wxClipboard.SetData,0,0,1,bool,						bool wxClipboard.SetData ( wxDataObject * data)
+wxClipboard.UsePrimarySelection,0,0,1,void,						void wxClipboard.UsePrimarySelection ( bool primary = false)
+[INHERITS]
+wxObject

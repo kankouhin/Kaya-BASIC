@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridHeaderLabelsRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridHeaderLabelsRenderer.DrawBorder,0,0,3,void,						void wxGridHeaderLabelsRenderer.DrawBorder (  wxGrid & grid,     wxDC & dc,     wxRect & rect    )
+wxGridHeaderLabelsRenderer.DrawLabel,0,0,7,void,						void wxGridHeaderLabelsRenderer.DrawLabel (  wxGrid & grid,     wxDC & dc,      wxString & value,      wxRect & rect,     int horizAlign,     int vertAlign,     int textOrientation    )
+[INHERITS]

@@ -1,0 +1,18 @@
+[CONSTS]
+wxCP_DEFAULT_STYLE
+wxCP_NO_TLW_RESIZE
+[HEADER]
+<wx/collpane.h>
+[METHODS]
+wxCollapsiblePane.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCollapsiblePane.Collapse,0,0,1,void,						void wxCollapsiblePane.Collapse ( bool collapse = true)
+wxCollapsiblePane.Create,0,0,8,bool,						bool wxCollapsiblePane.Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxCP_DEFAULT_STYLE,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxCollapsiblePaneNameStr    )
+wxCollapsiblePane.Expand,0,0,0,void,						void wxCollapsiblePane.Expand ( )
+wxCollapsiblePane.GetPane,0,1,0,wxWindow,						wxWindow* wxCollapsiblePane.GetPane ( )
+wxCollapsiblePane.IsCollapsed,0,0,0,bool,						bool wxCollapsiblePane.IsCollapsed ( )
+wxCollapsiblePane.IsExpanded,0,0,0,bool,						bool wxCollapsiblePane.IsExpanded ( )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/aui/auibar.h>
+[METHODS]
+wxAuiToolBarEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiToolBarEvent.GetClickPoint,0,0,0,wxPoint,						wxPoint wxAuiToolBarEvent.GetClickPoint ( )
+wxAuiToolBarEvent.GetItemRect,0,0,0,wxRect,						wxRect wxAuiToolBarEvent.GetItemRect ( )
+wxAuiToolBarEvent.GetToolId,0,0,0,int,						int wxAuiToolBarEvent.GetToolId ( )
+wxAuiToolBarEvent.IsDropDownClicked,0,0,0,bool,						bool wxAuiToolBarEvent.IsDropDownClicked ( )
+wxAuiToolBarEvent.SetClickPoint,0,0,1,void,						void wxAuiToolBarEvent.SetClickPoint (  wxPoint & p)
+wxAuiToolBarEvent.SetDropDownClicked,0,0,1,void,						void wxAuiToolBarEvent.SetDropDownClicked ( bool c)
+wxAuiToolBarEvent.SetItemRect,0,0,1,void,						void wxAuiToolBarEvent.SetItemRect (  wxRect & r)
+wxAuiToolBarEvent.SetToolId,0,0,1,void,						void wxAuiToolBarEvent.SetToolId ( int toolId)
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

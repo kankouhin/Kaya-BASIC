@@ -1,0 +1,32 @@
+[CONSTS]
+wxSW_3D
+wxSW_3DSASH
+wxSW_3DBORDER
+wxSW_BORDER
+wxEVT_SASH_DRAGGED
+wxEVT_SASH_DRAGGED_RANGE
+[HEADER]
+<wx/sashwin.h>
+[METHODS]
+wxSashWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSashWindow.GetDefaultBorderSize,0,0,0,int,						int wxSashWindow.GetDefaultBorderSize ( )
+wxSashWindow.GetEdgeMargin,0,0,1,int,						int wxSashWindow.GetEdgeMargin ( wxSashEdgePosition edge)
+wxSashWindow.GetExtraBorderSize,0,0,0,int,						int wxSashWindow.GetExtraBorderSize ( )
+wxSashWindow.GetMaximumSizeX,0,0,0,int,						int wxSashWindow.GetMaximumSizeX ( )
+wxSashWindow.GetMaximumSizeY,0,0,0,int,						int wxSashWindow.GetMaximumSizeY ( )
+wxSashWindow.GetMinimumSizeX,0,0,0,int,						int wxSashWindow.GetMinimumSizeX ( )
+wxSashWindow.GetMinimumSizeY,0,0,0,int,						int wxSashWindow.GetMinimumSizeY ( )
+wxSashWindow.GetSashVisible,0,0,1,bool,						bool wxSashWindow.GetSashVisible ( wxSashEdgePosition edge)
+wxSashWindow.SashHitTest,0,0,3,wxSashEdgePosition,						wxSashEdgePosition wxSashWindow.SashHitTest ( int x,     int y,     int tolerance = 2    )
+wxSashWindow.SetDefaultBorderSize,0,0,1,void,						void wxSashWindow.SetDefaultBorderSize ( int width)
+wxSashWindow.SetExtraBorderSize,0,0,1,void,						void wxSashWindow.SetExtraBorderSize ( int width)
+wxSashWindow.SetMaximumSizeX,0,0,1,void,						void wxSashWindow.SetMaximumSizeX ( int min)
+wxSashWindow.SetMaximumSizeY,0,0,1,void,						void wxSashWindow.SetMaximumSizeY ( int min)
+wxSashWindow.SetMinimumSizeX,0,0,1,void,						void wxSashWindow.SetMinimumSizeX ( int min)
+wxSashWindow.SetMinimumSizeY,0,0,1,void,						void wxSashWindow.SetMinimumSizeY ( int min)
+wxSashWindow.SetSashVisible,0,0,2,void,						void wxSashWindow.SetSashVisible ( wxSashEdgePosition edge,     bool visible    )
+wxSashWindow.SizeWindows,0,0,0,void,						void wxSashWindow.SizeWindows ( )
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

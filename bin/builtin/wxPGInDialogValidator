@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxPGInDialogValidator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGInDialogValidator.DoValidate,0,0,3,bool,						bool wxPGInDialogValidator.DoValidate ( wxPropertyGrid * propGrid,     wxValidator * validator,      wxString & value    )
+[INHERITS]

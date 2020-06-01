@@ -1,0 +1,44 @@
+[CONSTS]
+[HEADER]
+<wx/ribbon/toolbar.h>
+[METHODS]
+wxRibbonToolBar.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonToolBar.AddDropdownTool,0,1,3,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.AddDropdownTool ( int tool_id,      wxBitmap & bitmap,      wxString & help_string = wxEmptyString    )
+wxRibbonToolBar.AddHybridTool,0,1,3,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.AddHybridTool ( int tool_id,      wxBitmap & bitmap,      wxString & help_string = wxEmptyString    )
+wxRibbonToolBar.AddSeparator,0,1,0,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.AddSeparator ( )
+wxRibbonToolBar.AddToggleTool,0,1,3,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.AddToggleTool ( int tool_id,      wxBitmap & bitmap,      wxString & help_string    )
+wxRibbonToolBar.AddTool,0,1,4,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.AddTool ( int tool_id,      wxBitmap & bitmap,      wxString & help_string,     wxRibbonButtonKind kind = wxRIBBON_BUTTON_NORMAL    )
+wxRibbonToolBar.AddTool,0,1,6,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.AddTool ( int tool_id,      wxBitmap & bitmap,      wxBitmap & bitmap_disabled = wxNullBitmap,      wxString & help_string = wxEmptyString,     wxRibbonButtonKind kind = wxRIBBON_BUTTON_NORMAL,     wxObject * client_data = NULL    )
+wxRibbonToolBar.ClearTools,0,0,0,void,						void wxRibbonToolBar.ClearTools ( )
+wxRibbonToolBar.Create,0,0,5,bool,						bool wxRibbonToolBar.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0    )
+wxRibbonToolBar.DeleteTool,0,0,1,bool,						bool wxRibbonToolBar.DeleteTool ( int tool_id)
+wxRibbonToolBar.DeleteToolByPos,0,0,1,bool,						bool wxRibbonToolBar.DeleteToolByPos ( size_t pos)
+wxRibbonToolBar.EnableTool,0,0,2,void,						void wxRibbonToolBar.EnableTool ( int tool_id,     bool enable = true    )
+wxRibbonToolBar.FindById,0,1,1,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.FindById ( int tool_id)
+wxRibbonToolBar.GetToolByPos,0,1,1,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.GetToolByPos ( size_t pos)
+wxRibbonToolBar.GetToolClientData,0,1,1,wxObject,						wxObject* wxRibbonToolBar.GetToolClientData ( int tool_id)
+wxRibbonToolBar.GetToolEnabled,0,0,1,bool,						bool wxRibbonToolBar.GetToolEnabled ( int tool_id)
+wxRibbonToolBar.GetToolHelpString,0,0,1,wxString,						wxString wxRibbonToolBar.GetToolHelpString ( int tool_id)
+wxRibbonToolBar.GetToolId,0,0,1,int,						int wxRibbonToolBar.GetToolId (  wxRibbonToolBarToolBase * tool)
+wxRibbonToolBar.GetToolKind,0,0,1,wxRibbonButtonKind,						wxRibbonButtonKind wxRibbonToolBar.GetToolKind ( int tool_id)
+wxRibbonToolBar.GetToolPos,0,0,1,int,						int wxRibbonToolBar.GetToolPos ( int tool_id)
+wxRibbonToolBar.GetToolState,0,0,1,bool,						bool wxRibbonToolBar.GetToolState ( int tool_id)
+wxRibbonToolBar.InsertDropdownTool,0,1,4,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.InsertDropdownTool ( size_t pos,     int tool_id,      wxBitmap & bitmap,      wxString & help_string = wxEmptyString    )
+wxRibbonToolBar.InsertHybridTool,0,1,4,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.InsertHybridTool ( size_t pos,     int tool_id,      wxBitmap & bitmap,      wxString & help_string = wxEmptyString    )
+wxRibbonToolBar.InsertSeparator,0,1,1,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.InsertSeparator ( size_t pos)
+wxRibbonToolBar.InsertToggleTool,0,1,4,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.InsertToggleTool ( size_t pos,     int tool_id,      wxBitmap & bitmap,      wxString & help_string = wxEmptyString    )
+wxRibbonToolBar.InsertTool,0,1,5,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.InsertTool ( size_t pos,     int tool_id,      wxBitmap & bitmap,      wxString & help_string,     wxRibbonButtonKind kind = wxRIBBON_BUTTON_NORMAL    )
+wxRibbonToolBar.InsertTool,0,1,7,wxRibbonToolBarToolBase,						wxRibbonToolBarToolBase* wxRibbonToolBar.InsertTool ( size_t pos,     int tool_id,      wxBitmap & bitmap,      wxBitmap & bitmap_disabled = wxNullBitmap,      wxString & help_string = wxEmptyString,     wxRibbonButtonKind kind = wxRIBBON_BUTTON_NORMAL,     wxObject * client_data = NULL    )
+wxRibbonToolBar.Realize,0,0,0,bool,						bool wxRibbonToolBar.Realize ( )
+wxRibbonToolBar.SetRows,0,0,2,void,						void wxRibbonToolBar.SetRows ( int nMin,     int nMax = -1    )
+wxRibbonToolBar.SetToolClientData,0,0,2,void,						void wxRibbonToolBar.SetToolClientData ( int tool_id,     wxObject * clientData    )
+wxRibbonToolBar.SetToolDisabledBitmap,0,0,2,void,						void wxRibbonToolBar.SetToolDisabledBitmap ( int tool_id,      wxBitmap & bitmap    )
+wxRibbonToolBar.SetToolHelpString,0,0,2,void,						void wxRibbonToolBar.SetToolHelpString ( int tool_id,      wxString & helpString    )
+wxRibbonToolBar.SetToolNormalBitmap,0,0,2,void,						void wxRibbonToolBar.SetToolNormalBitmap ( int tool_id,      wxBitmap & bitmap    )
+wxRibbonToolBar.ToggleTool,0,0,2,void,						void wxRibbonToolBar.ToggleTool ( int tool_id,     bool checked    )
+[INHERITS]
+wxRibbonControl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

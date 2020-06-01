@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/thread.h>
+[METHODS]
+wxSemaphore.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSemaphore.Post,0,0,0,wxSemaError,						wxSemaError wxSemaphore.Post ( )
+wxSemaphore.TryWait,0,0,0,wxSemaError,						wxSemaError wxSemaphore.TryWait ( )
+wxSemaphore.Wait,0,0,0,wxSemaError,						wxSemaError wxSemaphore.Wait ( )
+wxSemaphore.WaitTimeout,0,0,1,wxSemaError,						wxSemaError wxSemaphore.WaitTimeout ( unsigned long timeout_millis)
+[INHERITS]

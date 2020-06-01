@@ -1,0 +1,34 @@
+[CONSTS]
+[HEADER]
+<wx/fontutil.h>
+[METHODS]
+wxNativeFontInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxNativeFontInfo.FromString,0,0,1,bool,						bool wxNativeFontInfo.FromString (  wxString & s)
+wxNativeFontInfo.FromUserString,0,0,1,bool,						bool wxNativeFontInfo.FromUserString (  wxString & s)
+wxNativeFontInfo.GetEncoding,0,0,0,wxFontEncoding,						wxFontEncoding wxNativeFontInfo.GetEncoding ( )
+wxNativeFontInfo.GetFaceName,0,0,0,wxString,						wxString wxNativeFontInfo.GetFaceName ( )
+wxNativeFontInfo.GetFamily,0,0,0,wxFontFamily,						wxFontFamily wxNativeFontInfo.GetFamily ( )
+wxNativeFontInfo.GetFractionalPointSize,0,0,0,float,						float wxNativeFontInfo.GetFractionalPointSize ( )
+wxNativeFontInfo.GetNumericWeight,0,0,0,int,						int wxNativeFontInfo.GetNumericWeight ( )
+wxNativeFontInfo.GetPixelSize,0,0,0,wxSize,						wxSize wxNativeFontInfo.GetPixelSize ( )
+wxNativeFontInfo.GetPointSize,0,0,0,int,						int wxNativeFontInfo.GetPointSize ( )
+wxNativeFontInfo.GetStyle,0,0,0,wxFontStyle,						wxFontStyle wxNativeFontInfo.GetStyle ( )
+wxNativeFontInfo.GetUnderlined,0,0,0,bool,						bool wxNativeFontInfo.GetUnderlined ( )
+wxNativeFontInfo.GetWeight,0,0,0,wxFontWeight,						wxFontWeight wxNativeFontInfo.GetWeight ( )
+wxNativeFontInfo.Init,0,0,0,void,						void wxNativeFontInfo.Init ( )
+wxNativeFontInfo.InitFromFont,0,0,1,void,						void wxNativeFontInfo.InitFromFont (  wxFont & font)
+wxNativeFontInfo.operator=,0,0,1,wxNativeFontInfo,						wxNativeFontInfo&  wxNativeFontInfo.operator= (  wxNativeFontInfo & info)
+wxNativeFontInfo.SetEncoding,0,0,1,void,						void wxNativeFontInfo.SetEncoding ( wxFontEncoding encoding)
+wxNativeFontInfo.SetFaceName,0,0,1,bool,						bool wxNativeFontInfo.SetFaceName (  wxString & facename)
+wxNativeFontInfo.SetFaceName,0,0,1,void,						void wxNativeFontInfo.SetFaceName (  wxArrayString & facenames)
+wxNativeFontInfo.SetFamily,0,0,1,void,						void wxNativeFontInfo.SetFamily ( wxFontFamily family)
+wxNativeFontInfo.SetFractionalPointSize,0,0,1,void,						void wxNativeFontInfo.SetFractionalPointSize ( float pointsize)
+wxNativeFontInfo.SetNumericWeight,0,0,1,void,						void wxNativeFontInfo.SetNumericWeight ( int weight)
+wxNativeFontInfo.SetPixelSize,0,0,1,void,						void wxNativeFontInfo.SetPixelSize (  wxSize & pixelSize)
+wxNativeFontInfo.SetPointSize,0,0,1,void,						void wxNativeFontInfo.SetPointSize ( int pointsize)
+wxNativeFontInfo.SetStyle,0,0,1,void,						void wxNativeFontInfo.SetStyle ( wxFontStyle style)
+wxNativeFontInfo.SetUnderlined,0,0,1,void,						void wxNativeFontInfo.SetUnderlined ( bool underlined)
+wxNativeFontInfo.SetWeight,0,0,1,void,						void wxNativeFontInfo.SetWeight ( wxFontWeight weight)
+wxNativeFontInfo.ToString,0,0,0,wxString,						wxString wxNativeFontInfo.ToString ( )
+wxNativeFontInfo.ToUserString,0,0,0,wxString,						wxString wxNativeFontInfo.ToUserString ( )
+[INHERITS]

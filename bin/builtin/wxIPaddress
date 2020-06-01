@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/socket.h>
+[METHODS]
+wxIPaddress.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxIPaddress.AnyAddress,0,0,0,bool,						bool wxIPaddress.AnyAddress ( )
+wxIPaddress.BroadcastAddress,0,0,0,bool,						bool wxIPaddress.BroadcastAddress ( )
+wxIPaddress.Hostname,0,0,1,bool,						bool wxIPaddress.Hostname (  wxString & hostname)
+wxIPaddress.Hostname,0,0,0,wxString,						wxString wxIPaddress.Hostname ( )
+wxIPaddress.IPAddress,0,0,0,wxString,						wxString wxIPaddress.IPAddress ( )
+wxIPaddress.IsLocalHost,0,0,0,bool,						bool wxIPaddress.IsLocalHost ( )
+wxIPaddress.LocalHost,0,0,0,bool,						bool wxIPaddress.LocalHost ( )
+wxIPaddress.Service,0,0,1,bool,						bool wxIPaddress.Service (  wxString & service)
+wxIPaddress.Service,0,0,1,bool,						bool wxIPaddress.Service ( unsigned short service)
+wxIPaddress.Service,0,0,0,short,						unsigned short wxIPaddress.Service ( )
+[INHERITS]
+wxSockAddress
+wxObject

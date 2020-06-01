@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/stream.h>
+[METHODS]
+wxWrapperInputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWrapperInputStream.InitParentStream,0,0,1,void,						void wxWrapperInputStream.InitParentStream ( wxInputStream & stream)
+wxWrapperInputStream.InitParentStream,0,0,1,void,						void wxWrapperInputStream.InitParentStream ( wxInputStream * stream)
+[INHERITS]
+wxFilterInputStream
+wxInputStream
+wxStreamBase

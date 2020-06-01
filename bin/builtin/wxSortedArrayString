@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/arrstr.h>
+[METHODS]
+wxSortedArrayString.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSortedArrayString.Add,0,0,2,size_t,						size_t wxSortedArrayString.Add (  wxString & str,     size_t copies = 1    )
+wxSortedArrayString.Index,0,0,3,int,						int wxSortedArrayString.Index (  wxString & str,     bool bCase = true,     bool bFromEnd = false    )
+wxSortedArrayString.Insert,0,0,3,void,						void wxSortedArrayString.Insert (  wxString & str,     size_t nIndex,     size_t copies = 1    )
+wxSortedArrayString.Sort,0,0,1,void,						void wxSortedArrayString.Sort ( bool reverseOrder = false)
+wxSortedArrayString.Sort,0,0,1,void,						void wxSortedArrayString.Sort ( CompareFunction compareFunction)
+[INHERITS]

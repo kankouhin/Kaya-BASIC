@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/aui/framemanager.h>
+[METHODS]
+wxAuiManagerEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiManagerEvent.CanVeto,0,0,0,bool,						bool wxAuiManagerEvent.CanVeto ( )
+wxAuiManagerEvent.GetButton,0,0,0,int,						int wxAuiManagerEvent.GetButton ( )
+wxAuiManagerEvent.GetDC,0,1,0,wxDC,						wxDC* wxAuiManagerEvent.GetDC ( )
+wxAuiManagerEvent.GetManager,0,1,0,wxAuiManager,						wxAuiManager* wxAuiManagerEvent.GetManager ( )
+wxAuiManagerEvent.GetPane,0,1,0,wxAuiPaneInfo,						wxAuiPaneInfo* wxAuiManagerEvent.GetPane ( )
+wxAuiManagerEvent.GetVeto,0,0,0,bool,						bool wxAuiManagerEvent.GetVeto ( )
+wxAuiManagerEvent.SetButton,0,0,1,void,						void wxAuiManagerEvent.SetButton ( int button)
+wxAuiManagerEvent.SetCanVeto,0,0,1,void,						void wxAuiManagerEvent.SetCanVeto ( bool can_veto)
+wxAuiManagerEvent.SetDC,0,0,1,void,						void wxAuiManagerEvent.SetDC ( wxDC * pdc)
+wxAuiManagerEvent.SetManager,0,0,1,void,						void wxAuiManagerEvent.SetManager ( wxAuiManager * manager)
+wxAuiManagerEvent.SetPane,0,0,1,void,						void wxAuiManagerEvent.SetPane ( wxAuiPaneInfo * pane)
+wxAuiManagerEvent.Veto,0,0,1,void,						void wxAuiManagerEvent.Veto ( bool veto = true)
+[INHERITS]
+wxEvent
+wxObject

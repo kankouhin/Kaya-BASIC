@@ -1,0 +1,33 @@
+[CONSTS]
+[HEADER]
+<wx/intl.h>
+[METHODS]
+wxLocale.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxLocale.AddCatalog,0,0,1,bool,						bool wxLocale.AddCatalog (  wxString & domain)
+wxLocale.AddCatalog,0,0,2,bool,						bool wxLocale.AddCatalog (  wxString & domain,     wxLanguage msgIdLanguage    )
+wxLocale.AddCatalog,0,0,3,bool,						bool wxLocale.AddCatalog (  wxString & domain,     wxLanguage msgIdLanguage,      wxString & msgIdCharset    )
+wxLocale.AddCatalogLookupPathPrefix,1,0,1,void,						static void wxLocale.AddCatalogLookupPathPrefix (  wxString & prefix)
+wxLocale.AddLanguage,1,0,1,void,						static void wxLocale.AddLanguage (  wxLanguageInfo & info)
+wxLocale.FindLanguageInfo,1,1,1,wxLanguageInfo,						static  wxLanguageInfo* wxLocale.FindLanguageInfo (  wxString & locale)
+wxLocale.GetCanonicalName,0,0,0,wxString,						wxString wxLocale.GetCanonicalName ( )
+wxLocale.GetHeaderValue,0,0,2,wxString,						wxString wxLocale.GetHeaderValue (  wxString & header,      wxString & domain = wxEmptyString    )
+wxLocale.GetInfo,1,0,2,wxString,						static wxString wxLocale.GetInfo ( wxLocaleInfo index,     wxLocaleCategory cat = wxLOCALE_CAT_DEFAULT    )
+wxLocale.GetLanguage,0,0,0,int,						int wxLocale.GetLanguage ( )
+wxLocale.GetLanguageCanonicalName,1,0,1,wxString,						static wxString wxLocale.GetLanguageCanonicalName ( int lang)
+wxLocale.GetLanguageInfo,1,1,1,wxLanguageInfo,						static  wxLanguageInfo* wxLocale.GetLanguageInfo ( int lang)
+wxLocale.GetLanguageName,1,0,1,wxString,						static wxString wxLocale.GetLanguageName ( int lang)
+wxLocale.GetLocale,0,0,0,wxString,						wxString&  wxLocale.GetLocale ( )
+wxLocale.GetName,0,0,0,wxString,						wxString&  wxLocale.GetName ( )
+wxLocale.GetOSInfo,1,0,2,wxString,						static wxString wxLocale.GetOSInfo ( wxLocaleInfo index,     wxLocaleCategory cat = wxLOCALE_CAT_DEFAULT    )
+wxLocale.GetString,0,0,2,wxString,						wxString&  wxLocale.GetString (  wxString & origString,      wxString & domain = wxEmptyString    )
+wxLocale.GetString,0,0,4,wxString,						wxString&  wxLocale.GetString (  wxString & origString,      wxString & origString2,     unsigned n,      wxString & domain = wxEmptyString    )
+wxLocale.GetSysName,0,0,0,wxString,						wxString wxLocale.GetSysName ( )
+wxLocale.GetSystemEncoding,1,0,0,wxFontEncoding,						static wxFontEncoding wxLocale.GetSystemEncoding ( )
+wxLocale.GetSystemEncodingName,1,0,0,wxString,						static wxString wxLocale.GetSystemEncodingName ( )
+wxLocale.GetSystemLanguage,1,0,0,int,						static int wxLocale.GetSystemLanguage ( )
+wxLocale.Init,0,0,2,bool,						bool wxLocale.Init ( int language = wxLANGUAGE_DEFAULT,     int flags = wxLOCALE_LOAD_DEFAULT    )
+wxLocale.Init,0,0,4,bool,						bool wxLocale.Init (  wxString & name,      wxString & shortName = wxEmptyString,      wxString & locale = wxEmptyString,     bool bLoadDefault = true    )
+wxLocale.IsAvailable,1,0,1,bool,						static bool wxLocale.IsAvailable ( int lang)
+wxLocale.IsLoaded,0,0,1,bool,						bool wxLocale.IsLoaded (  wxString & domain)
+wxLocale.IsOk,0,0,0,bool,						bool wxLocale.IsOk ( )
+[INHERITS]

@@ -1,0 +1,28 @@
+[CONSTS]
+[HEADER]
+<wx/sizer.h>
+[METHODS]
+wxSizerFlags.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSizerFlags.Align,0,0,1,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Align ( int alignment)
+wxSizerFlags.Border,0,0,2,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Border ( int direction,     int borderinpixels    )
+wxSizerFlags.Border,0,0,1,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Border ( int direction = wxALL)
+wxSizerFlags.Bottom,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Bottom ( )
+wxSizerFlags.Center,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Center ( )
+wxSizerFlags.CenterHorizontal,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.CenterHorizontal ( )
+wxSizerFlags.CenterVertical,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.CenterVertical ( )
+wxSizerFlags.Centre,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Centre ( )
+wxSizerFlags.CentreHorizontal,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.CentreHorizontal ( )
+wxSizerFlags.CentreVertical,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.CentreVertical ( )
+wxSizerFlags.DoubleBorder,0,0,1,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.DoubleBorder ( int direction = wxALL)
+wxSizerFlags.DoubleHorzBorder,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.DoubleHorzBorder ( )
+wxSizerFlags.Expand,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Expand ( )
+wxSizerFlags.FixedMinSize,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.FixedMinSize ( )
+wxSizerFlags.GetDefaultBorder,1,0,0,int,						static int wxSizerFlags.GetDefaultBorder ( )
+wxSizerFlags.Left,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Left ( )
+wxSizerFlags.Proportion,0,0,1,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Proportion ( int proportion)
+wxSizerFlags.ReserveSpaceEvenIfHidden,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.ReserveSpaceEvenIfHidden ( )
+wxSizerFlags.Right,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Right ( )
+wxSizerFlags.Shaped,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Shaped ( )
+wxSizerFlags.Top,0,0,0,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.Top ( )
+wxSizerFlags.TripleBorder,0,0,1,wxSizerFlags,						wxSizerFlags&  wxSizerFlags.TripleBorder ( int direction = wxALL)
+[INHERITS]

@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/ribbon/buttonbar.h>
+[METHODS]
+wxRibbonButtonBarEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonButtonBarEvent.GetBar,0,1,0,wxRibbonButtonBar,						wxRibbonButtonBar* wxRibbonButtonBarEvent.GetBar ( )
+wxRibbonButtonBarEvent.GetButton,0,1,0,wxRibbonButtonBarButtonBase,						wxRibbonButtonBarButtonBase* wxRibbonButtonBarEvent.GetButton ( )
+wxRibbonButtonBarEvent.PopupMenu,0,0,1,bool,						bool wxRibbonButtonBarEvent.PopupMenu ( wxMenu * menu)
+wxRibbonButtonBarEvent.SetBar,0,0,1,void,						void wxRibbonButtonBarEvent.SetBar ( wxRibbonButtonBar * bar)
+wxRibbonButtonBarEvent.SetButton,0,0,1,void,						void wxRibbonButtonBarEvent.SetButton ( wxRibbonButtonBarButtonBase * bar)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

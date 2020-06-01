@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/pen.h>
+[METHODS]
+wxPenInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPenInfo.Cap,0,0,1,wxPenInfo,						wxPenInfo&  wxPenInfo.Cap ( wxPenCap cap)
+wxPenInfo.Colour,0,0,1,wxPenInfo,						wxPenInfo&  wxPenInfo.Colour (  wxColour & col)
+wxPenInfo.Dashes,0,0,2,wxPenInfo,						wxPenInfo&  wxPenInfo.Dashes ( int nb_dashes,      wxDash * dash    )
+wxPenInfo.GetCap,0,0,0,wxPenCap,						wxPenCap wxPenInfo.GetCap ( )
+wxPenInfo.GetColour,0,0,0,wxColour,						wxColour wxPenInfo.GetColour ( )
+wxPenInfo.GetDash,0,1,0,wxDash,						wxDash* wxPenInfo.GetDash ( )
+wxPenInfo.GetDashCount,0,0,0,int,						int wxPenInfo.GetDashCount ( )
+wxPenInfo.GetDashes,0,0,1,int,						int wxPenInfo.GetDashes ( wxDash ** ptr)
+wxPenInfo.GetJoin,0,0,0,wxPenJoin,						wxPenJoin wxPenInfo.GetJoin ( )
+wxPenInfo.GetStipple,0,0,0,wxBitmap,						wxBitmap wxPenInfo.GetStipple ( )
+wxPenInfo.GetStyle,0,0,0,wxPenStyle,						wxPenStyle wxPenInfo.GetStyle ( )
+wxPenInfo.GetWidth,0,0,0,int,						int wxPenInfo.GetWidth ( )
+wxPenInfo.IsTransparent,0,0,0,bool,						bool wxPenInfo.IsTransparent ( )
+wxPenInfo.Join,0,0,1,wxPenInfo,						wxPenInfo&  wxPenInfo.Join ( wxPenJoin join)
+wxPenInfo.Stipple,0,0,1,wxPenInfo,						wxPenInfo&  wxPenInfo.Stipple (  wxBitmap & stipple)
+wxPenInfo.Style,0,0,1,wxPenInfo,						wxPenInfo&  wxPenInfo.Style ( wxPenStyle style)
+wxPenInfo.Width,0,0,1,wxPenInfo,						wxPenInfo&  wxPenInfo.Width ( int width)
+[INHERITS]

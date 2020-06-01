@@ -1,0 +1,34 @@
+[CONSTS]
+wxNB_TOP
+wxNB_LEFT
+wxNB_RIGHT
+wxNB_BOTTOM
+wxNB_FIXEDWIDTH
+wxNB_MULTILINE
+wxNB_NOPAGETHEME
+wxEVT_NOTEBOOK_PAGE_CHANGED
+wxEVT_NOTEBOOK_PAGE_CHANGING
+[HEADER]
+<wx/notebook.h>
+[METHODS]
+wxNotebook.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxNotebook.ChangeSelection,0,0,1,int,						int wxNotebook.ChangeSelection ( size_t page)
+wxNotebook.Create,0,0,6,bool,						bool wxNotebook.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxNotebookNameStr    )
+wxNotebook.GetPageImage,0,0,1,int,						int wxNotebook.GetPageImage ( size_t nPage)
+wxNotebook.GetPageText,0,0,1,wxString,						wxString wxNotebook.GetPageText ( size_t nPage)
+wxNotebook.GetRowCount,0,0,0,int,						int wxNotebook.GetRowCount ( )
+wxNotebook.GetSelection,0,0,0,int,						int wxNotebook.GetSelection ( )
+wxNotebook.GetThemeBackgroundColour,0,0,0,wxColour,						wxColour wxNotebook.GetThemeBackgroundColour ( )
+wxNotebook.InsertPage,0,0,5,bool,						bool wxNotebook.InsertPage ( size_t index,     wxWindow * page,      wxString & text,     bool select = false,     int imageId = NO_IMAGE    )
+wxNotebook.OnSelChange,0,0,1,void,						void wxNotebook.OnSelChange ( wxBookCtrlEvent & event)
+wxNotebook.SetPadding,0,0,1,void,						void wxNotebook.SetPadding (  wxSize & padding)
+wxNotebook.SetPageImage,0,0,2,bool,						bool wxNotebook.SetPageImage ( size_t page,     int image    )
+wxNotebook.SetPageText,0,0,2,bool,						bool wxNotebook.SetPageText ( size_t page,      wxString & text    )
+wxNotebook.SetSelection,0,0,1,int,						int wxNotebook.SetSelection ( size_t page)
+[INHERITS]
+wxBookCtrlBase
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxWithImages

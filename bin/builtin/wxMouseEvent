@@ -1,0 +1,87 @@
+[CONSTS]
+wxEVT_LEFT_DOWN
+wxEVT_LEFT_UP
+wxEVT_LEFT_DCLICK
+wxEVT_MIDDLE_DOWN
+wxEVT_MIDDLE_UP
+wxEVT_MIDDLE_DCLICK
+wxEVT_RIGHT_DOWN
+wxEVT_RIGHT_UP
+wxEVT_RIGHT_DCLICK
+wxEVT_AUX1_DOWN
+wxEVT_AUX1_UP
+wxEVT_AUX1_DCLICK
+wxEVT_AUX2_DOWN
+wxEVT_AUX2_UP
+wxEVT_AUX2_DCLICK
+wxEVT_MOTION
+wxEVT_ENTER_WINDOW
+wxEVT_LEAVE_WINDOW
+wxEVT_MOUSEWHEEL
+wxEVT_MAGNIFY
+wxEVT_ENTER_WINDOW
+wxEVT_LEAVE_WINDOW
+wxEVT_LEFT_DOWN
+wxEVT_LEFT_UP
+wxEVT_LEFT_DCLICK
+wxEVT_MIDDLE_DOWN
+wxEVT_MIDDLE_UP
+wxEVT_MIDDLE_DCLICK
+wxEVT_RIGHT_DOWN
+wxEVT_RIGHT_UP
+wxEVT_RIGHT_DCLICK
+wxEVT_AUX1_DOWN
+wxEVT_AUX1_UP
+wxEVT_AUX1_DCLICK
+wxEVT_AUX2_DOWN
+wxEVT_AUX2_UP
+wxEVT_AUX2_DCLICK
+wxEVT_MOTION
+wxEVT_MOUSEWHEEL
+wxEVT_MAGNIFY
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxMouseEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMouseEvent.Aux1DClick,0,0,0,bool,						bool wxMouseEvent.Aux1DClick ( )
+wxMouseEvent.Aux1Down,0,0,0,bool,						bool wxMouseEvent.Aux1Down ( )
+wxMouseEvent.Aux1Up,0,0,0,bool,						bool wxMouseEvent.Aux1Up ( )
+wxMouseEvent.Aux2DClick,0,0,0,bool,						bool wxMouseEvent.Aux2DClick ( )
+wxMouseEvent.Aux2Down,0,0,0,bool,						bool wxMouseEvent.Aux2Down ( )
+wxMouseEvent.Aux2Up,0,0,0,bool,						bool wxMouseEvent.Aux2Up ( )
+wxMouseEvent.Button,0,0,1,bool,						bool wxMouseEvent.Button ( wxMouseButton but)
+wxMouseEvent.ButtonDClick,0,0,1,bool,						bool wxMouseEvent.ButtonDClick ( wxMouseButton but = wxMOUSE_BTN_ANY)
+wxMouseEvent.ButtonDown,0,0,1,bool,						bool wxMouseEvent.ButtonDown ( wxMouseButton but = wxMOUSE_BTN_ANY)
+wxMouseEvent.ButtonUp,0,0,1,bool,						bool wxMouseEvent.ButtonUp ( wxMouseButton but = wxMOUSE_BTN_ANY)
+wxMouseEvent.Dragging,0,0,0,bool,						bool wxMouseEvent.Dragging ( )
+wxMouseEvent.Entering,0,0,0,bool,						bool wxMouseEvent.Entering ( )
+wxMouseEvent.GetButton,0,0,0,int,						int wxMouseEvent.GetButton ( )
+wxMouseEvent.GetClickCount,0,0,0,int,						int wxMouseEvent.GetClickCount ( )
+wxMouseEvent.GetColumnsPerAction,0,0,0,int,						int wxMouseEvent.GetColumnsPerAction ( )
+wxMouseEvent.GetLinesPerAction,0,0,0,int,						int wxMouseEvent.GetLinesPerAction ( )
+wxMouseEvent.GetLogicalPosition,0,0,1,wxPoint,						wxPoint wxMouseEvent.GetLogicalPosition (  wxDC & dc)
+wxMouseEvent.GetMagnification,0,0,0,float,						float wxMouseEvent.GetMagnification ( )
+wxMouseEvent.GetWheelAxis,0,0,0,wxMouseWheelAxis,						wxMouseWheelAxis wxMouseEvent.GetWheelAxis ( )
+wxMouseEvent.GetWheelDelta,0,0,0,int,						int wxMouseEvent.GetWheelDelta ( )
+wxMouseEvent.GetWheelRotation,0,0,0,int,						int wxMouseEvent.GetWheelRotation ( )
+wxMouseEvent.IsButton,0,0,0,bool,						bool wxMouseEvent.IsButton ( )
+wxMouseEvent.IsPageScroll,0,0,0,bool,						bool wxMouseEvent.IsPageScroll ( )
+wxMouseEvent.IsWheelInverted,0,0,0,bool,						bool wxMouseEvent.IsWheelInverted ( )
+wxMouseEvent.Leaving,0,0,0,bool,						bool wxMouseEvent.Leaving ( )
+wxMouseEvent.LeftDClick,0,0,0,bool,						bool wxMouseEvent.LeftDClick ( )
+wxMouseEvent.LeftDown,0,0,0,bool,						bool wxMouseEvent.LeftDown ( )
+wxMouseEvent.LeftUp,0,0,0,bool,						bool wxMouseEvent.LeftUp ( )
+wxMouseEvent.Magnify,0,0,0,bool,						bool wxMouseEvent.Magnify ( )
+wxMouseEvent.MetaDown,0,0,0,bool,						bool wxMouseEvent.MetaDown ( )
+wxMouseEvent.MiddleDClick,0,0,0,bool,						bool wxMouseEvent.MiddleDClick ( )
+wxMouseEvent.MiddleDown,0,0,0,bool,						bool wxMouseEvent.MiddleDown ( )
+wxMouseEvent.MiddleUp,0,0,0,bool,						bool wxMouseEvent.MiddleUp ( )
+wxMouseEvent.Moving,0,0,0,bool,						bool wxMouseEvent.Moving ( )
+wxMouseEvent.RightDClick,0,0,0,bool,						bool wxMouseEvent.RightDClick ( )
+wxMouseEvent.RightDown,0,0,0,bool,						bool wxMouseEvent.RightDown ( )
+wxMouseEvent.RightUp,0,0,0,bool,						bool wxMouseEvent.RightUp ( )
+[INHERITS]
+wxEvent
+wxObject
+wxMouseState
+wxKeyboardState

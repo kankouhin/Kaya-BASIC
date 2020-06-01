@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/vscroll.h>
+[METHODS]
+wxVarScrollHelperBase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxVarScrollHelperBase.CalcScrolledPosition,0,0,1,int,						int wxVarScrollHelperBase.CalcScrolledPosition ( int coord)
+wxVarScrollHelperBase.CalcUnscrolledPosition,0,0,1,int,						int wxVarScrollHelperBase.CalcUnscrolledPosition ( int coord)
+wxVarScrollHelperBase.EnablePhysicalScrolling,0,0,1,void,						void wxVarScrollHelperBase.EnablePhysicalScrolling ( bool scrolling = true)
+wxVarScrollHelperBase.EstimateTotalSize,0,0,0,wxCoord,						wxCoord wxVarScrollHelperBase.EstimateTotalSize ( )
+wxVarScrollHelperBase.GetNonOrientationTargetSize,0,0,0,int,						int wxVarScrollHelperBase.GetNonOrientationTargetSize ( )
+wxVarScrollHelperBase.GetOrientation,0,0,0,wxOrientation,						wxOrientation wxVarScrollHelperBase.GetOrientation ( )
+wxVarScrollHelperBase.GetOrientationTargetSize,0,0,0,int,						int wxVarScrollHelperBase.GetOrientationTargetSize ( )
+wxVarScrollHelperBase.GetTargetWindow,0,1,0,wxWindow,						wxWindow* wxVarScrollHelperBase.GetTargetWindow ( )
+wxVarScrollHelperBase.GetVisibleBegin,0,0,0,size_t,						size_t wxVarScrollHelperBase.GetVisibleBegin ( )
+wxVarScrollHelperBase.GetVisibleEnd,0,0,0,size_t,						size_t wxVarScrollHelperBase.GetVisibleEnd ( )
+wxVarScrollHelperBase.IsVisible,0,0,1,bool,						bool wxVarScrollHelperBase.IsVisible ( size_t unit)
+wxVarScrollHelperBase.OnGetUnitSize,0,0,1,wxCoord,						wxCoord wxVarScrollHelperBase.OnGetUnitSize ( size_t unit)
+wxVarScrollHelperBase.OnGetUnitsSizeHint,0,0,2,void,						void wxVarScrollHelperBase.OnGetUnitsSizeHint ( size_t unitMin,     size_t unitMax    )
+wxVarScrollHelperBase.RefreshAll,0,0,0,void,						void wxVarScrollHelperBase.RefreshAll ( )
+wxVarScrollHelperBase.SetTargetWindow,0,0,1,void,						void wxVarScrollHelperBase.SetTargetWindow ( wxWindow * target)
+wxVarScrollHelperBase.UpdateScrollbar,0,0,0,void,						void wxVarScrollHelperBase.UpdateScrollbar ( )
+wxVarScrollHelperBase.VirtualHitTest,0,0,1,int,						int wxVarScrollHelperBase.VirtualHitTest ( wxCoord coord)
+[INHERITS]

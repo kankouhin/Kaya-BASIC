@@ -4,10 +4,12 @@ wxBU_TOP
 wxBU_RIGHT
 wxBU_BOTTOM
 wxEVT_BUTTON
-[METHODS]
+[HEADER]
 <wx/bmpbuttn.h>
-Create,0,0,8,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxBitmap & bitmap,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxButtonNameStr    )
-NewCloseButton,1,1,2,wxBitmapButton,						static wxBitmapButton* NewCloseButton ( wxWindow * parent,     wxWindowID winid    )
+[METHODS]
+wxBitmapButton.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBitmapButton.Create,0,0,8,bool,						bool wxBitmapButton.Create ( wxWindow * parent,     wxWindowID id,      wxBitmap & bitmap,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxButtonNameStr    )
+wxBitmapButton.NewCloseButton,1,1,2,wxBitmapButton,						static wxBitmapButton* wxBitmapButton.NewCloseButton ( wxWindow * parent,     wxWindowID winid    )
 [INHERITS]
 wxButton
 wxAnyButton

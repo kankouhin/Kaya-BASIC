@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/mdi.h>
+[METHODS]
+wxMDIClientWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMDIClientWindow.CreateClient,0,0,2,bool,						bool wxMDIClientWindow.CreateClient ( wxMDIParentFrame * parent,     long style = 0    )
+[INHERITS]
+wxWindow
+wxEvtHandler
+wxObject

@@ -1,0 +1,28 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextDrawingContext.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextDrawingContext.ApplyVirtualAttributes,0,0,2,bool,						bool wxRichTextDrawingContext.ApplyVirtualAttributes ( wxRichTextAttr & attr,     wxRichTextObject * obj    )
+wxRichTextDrawingContext.EnableDelayedImageLoading,0,0,1,void,						void wxRichTextDrawingContext.EnableDelayedImageLoading ( bool b)
+wxRichTextDrawingContext.EnableImages,0,0,1,void,						void wxRichTextDrawingContext.EnableImages ( bool b)
+wxRichTextDrawingContext.EnableVirtualAttributes,0,0,1,void,						void wxRichTextDrawingContext.EnableVirtualAttributes ( bool b)
+wxRichTextDrawingContext.GetDelayedImageLoading,0,0,0,bool,						bool wxRichTextDrawingContext.GetDelayedImageLoading ( )
+wxRichTextDrawingContext.GetImagesEnabled,0,0,0,bool,						bool wxRichTextDrawingContext.GetImagesEnabled ( )
+wxRichTextDrawingContext.GetLayingOut,0,0,0,bool,						bool wxRichTextDrawingContext.GetLayingOut ( )
+wxRichTextDrawingContext.GetVirtualAttributes,0,0,1,wxRichTextAttr,						wxRichTextAttr wxRichTextDrawingContext.GetVirtualAttributes ( wxRichTextObject * obj)
+wxRichTextDrawingContext.GetVirtualAttributesEnabled,0,0,0,bool,						bool wxRichTextDrawingContext.GetVirtualAttributesEnabled ( )
+wxRichTextDrawingContext.GetVirtualSubobjectAttributes,0,0,3,int,						int wxRichTextDrawingContext.GetVirtualSubobjectAttributes ( wxRichTextObject * obj,     wxArrayInt & positions,     wxRichTextAttrArray & attributes    )
+wxRichTextDrawingContext.GetVirtualSubobjectAttributesCount,0,0,1,int,						int wxRichTextDrawingContext.GetVirtualSubobjectAttributesCount ( wxRichTextObject * obj)
+wxRichTextDrawingContext.GetVirtualText,0,0,2,bool,						bool wxRichTextDrawingContext.GetVirtualText (  wxRichTextPlainText * obj,     wxString & text    )
+wxRichTextDrawingContext.HasVirtualAttributes,0,0,1,bool,						bool wxRichTextDrawingContext.HasVirtualAttributes ( wxRichTextObject * obj)
+wxRichTextDrawingContext.HasVirtualText,0,0,1,bool,						bool wxRichTextDrawingContext.HasVirtualText (  wxRichTextPlainText * obj)
+wxRichTextDrawingContext.Init,0,0,0,void,						void wxRichTextDrawingContext.Init ( )
+wxRichTextDrawingContext.SetLayingOut,0,0,1,void,						void wxRichTextDrawingContext.SetLayingOut ( bool b)
+wxRichTextDrawingContext.m_buffer,0,1,-1,wxRichTextBuffer,						wxRichTextBuffer* wxRichTextDrawingContext.m_buffer
+wxRichTextDrawingContext.m_enableDelayedImageLoading,0,0,-1,bool,						bool wxRichTextDrawingContext.m_enableDelayedImageLoading
+wxRichTextDrawingContext.m_enableImages,0,0,-1,bool,						bool wxRichTextDrawingContext.m_enableImages
+wxRichTextDrawingContext.m_enableVirtualAttributes,0,0,-1,bool,						bool wxRichTextDrawingContext.m_enableVirtualAttributes
+wxRichTextDrawingContext.m_layingOut,0,0,-1,bool,						bool wxRichTextDrawingContext.m_layingOut
+[INHERITS]
+wxObject

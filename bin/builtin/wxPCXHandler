@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/imagpcx.h>
+[METHODS]
+wxPCXHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPCXHandler.DoCanRead,0,0,1,bool,						bool wxPCXHandler.DoCanRead ( wxInputStream & stream)
+wxPCXHandler.LoadFile,0,0,4,bool,						bool wxPCXHandler.LoadFile ( wxImage * image,     wxInputStream & stream,     bool verbose = true,     int index = -1    )
+wxPCXHandler.SaveFile,0,0,3,bool,						bool wxPCXHandler.SaveFile ( wxImage * image,     wxOutputStream & stream,     bool verbose = true    )
+[INHERITS]
+wxImageHandler
+wxObject

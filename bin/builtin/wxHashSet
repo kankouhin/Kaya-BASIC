@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/hashset.h>
+[METHODS]
+wxHashSet.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHashSet.begin,0,0,0,_iterator,						_iterator wxHashSet.begin ( )
+wxHashSet.begin,0,0,0,iterator,						iterator wxHashSet.begin ( )
+wxHashSet.clear,0,0,0,void,						void wxHashSet.clear ( )
+wxHashSet.count,0,0,1,size_type,						size_type wxHashSet.count (  key_type & key)
+wxHashSet.empty,0,0,0,bool,						bool wxHashSet.empty ( )
+wxHashSet.end,0,0,0,_iterator,						_iterator wxHashSet.end ( )
+wxHashSet.end,0,0,0,iterator,						iterator wxHashSet.end ( )
+wxHashSet.erase,0,0,1,size_type,						size_type wxHashSet.erase (  key_type & key)
+wxHashSet.erase,0,0,1,void,						void wxHashSet.erase ( iterator it)
+wxHashSet.erase,0,0,1,void,						void wxHashSet.erase ( _iterator it)
+wxHashSet.find,0,0,1,iterator,						iterator wxHashSet.find (  key_type & key)
+wxHashSet.find,0,0,1,_iterator,						_iterator wxHashSet.find (  key_type & key)
+wxHashSet.insert,0,0,1,Insert_Result,						Insert_Result wxHashSet.insert (  value_type & v)
+wxHashSet.size,0,0,0,size_type,						size_type wxHashSet.size ( )
+[INHERITS]

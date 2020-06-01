@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextstyles.h>
+[METHODS]
+wxRichTextListStyleDefinition.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextListStyleDefinition.CombineWithParagraphStyle,0,0,3,wxRichTextAttr,						wxRichTextAttr wxRichTextListStyleDefinition.CombineWithParagraphStyle ( int indent,      wxRichTextAttr & paraStyle,     wxRichTextStyleSheet * styleSheet = NULL    )
+wxRichTextListStyleDefinition.FindLevelForIndent,0,0,1,int,						int wxRichTextListStyleDefinition.FindLevelForIndent ( int indent)
+wxRichTextListStyleDefinition.GetCombinedStyle,0,0,2,wxRichTextAttr,						wxRichTextAttr wxRichTextListStyleDefinition.GetCombinedStyle ( int indent,     wxRichTextStyleSheet * styleSheet = NULL    )
+wxRichTextListStyleDefinition.GetCombinedStyleForLevel,0,0,2,wxRichTextAttr,						wxRichTextAttr wxRichTextListStyleDefinition.GetCombinedStyleForLevel ( int level,     wxRichTextStyleSheet * styleSheet = NULL    )
+wxRichTextListStyleDefinition.GetLevelAttributes,0,1,1,wxRichTextAttr,						wxRichTextAttr* wxRichTextListStyleDefinition.GetLevelAttributes ( int level)
+wxRichTextListStyleDefinition.GetLevelCount,0,0,0,int,						int wxRichTextListStyleDefinition.GetLevelCount ( )
+wxRichTextListStyleDefinition.IsNumbered,0,0,1,bool,						bool wxRichTextListStyleDefinition.IsNumbered ( int level)
+wxRichTextListStyleDefinition.SetLevelAttributes,0,0,2,void,						void wxRichTextListStyleDefinition.SetLevelAttributes ( int level,      wxRichTextAttr & attr    )
+[INHERITS]
+wxRichTextParagraphStyleDefinition
+wxRichTextStyleDefinition
+wxObject

@@ -1,0 +1,16 @@
+[CONSTS]
+wxEVT_MOVE
+wxEVT_MOVE_START
+wxEVT_MOVING
+wxEVT_MOVE_END
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxMoveEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMoveEvent.GetPosition,0,0,0,wxPoint,						wxPoint wxMoveEvent.GetPosition ( )
+wxMoveEvent.GetRect,0,0,0,wxRect,						wxRect wxMoveEvent.GetRect ( )
+wxMoveEvent.SetPosition,0,0,1,void,						void wxMoveEvent.SetPosition (  wxPoint & pos)
+wxMoveEvent.SetRect,0,0,1,void,						void wxMoveEvent.SetRect (  wxRect & rect)
+[INHERITS]
+wxEvent
+wxObject

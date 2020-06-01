@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/aui/framemanager.h>
+[METHODS]
+wxAuiDockUIPart.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiDockUIPart.button,0,1,-1,wxAuiPaneButton,						wxAuiPaneButton* wxAuiDockUIPart.button
+wxAuiDockUIPart.cont_sizer,0,1,-1,wxSizer,						wxSizer* wxAuiDockUIPart.cont_sizer
+wxAuiDockUIPart.dock,0,1,-1,wxAuiDockInfo,						wxAuiDockInfo* wxAuiDockUIPart.dock
+wxAuiDockUIPart.orientation,0,0,-1,int,						int wxAuiDockUIPart.orientation
+wxAuiDockUIPart.pane,0,1,-1,wxAuiPaneInfo,						wxAuiPaneInfo* wxAuiDockUIPart.pane
+wxAuiDockUIPart.rect,0,0,-1,wxRect,						wxRect wxAuiDockUIPart.rect
+wxAuiDockUIPart.sizer_item,0,1,-1,wxSizerItem,						wxSizerItem* wxAuiDockUIPart.sizer_item
+wxAuiDockUIPart.type,0,0,-1,int,						int wxAuiDockUIPart.type
+[INHERITS]

@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/aui/framemanager.h>
+[METHODS]
+wxAuiDockInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiDockInfo.IsHorizontal,0,0,0,bool,						bool wxAuiDockInfo.IsHorizontal ( )
+wxAuiDockInfo.IsOk,0,0,0,bool,						bool wxAuiDockInfo.IsOk ( )
+wxAuiDockInfo.IsVertical,0,0,0,bool,						bool wxAuiDockInfo.IsVertical ( )
+wxAuiDockInfo.operator=,0,0,1,wxAuiDockInfo,						wxAuiDockInfo&  wxAuiDockInfo.operator= (  wxAuiDockInfo & c)
+wxAuiDockInfo.dock_direction,0,0,-1,int,						int wxAuiDockInfo.dock_direction
+wxAuiDockInfo.dock_layer,0,0,-1,int,						int wxAuiDockInfo.dock_layer
+wxAuiDockInfo.dock_row,0,0,-1,int,						int wxAuiDockInfo.dock_row
+wxAuiDockInfo.fixed,0,0,-1,bool,						bool wxAuiDockInfo.fixed
+wxAuiDockInfo.min_size,0,0,-1,int,						int wxAuiDockInfo.min_size
+wxAuiDockInfo.panes,0,0,-1,wxAuiPaneInfoPtrArray,						wxAuiPaneInfoPtrArray wxAuiDockInfo.panes
+wxAuiDockInfo.rect,0,0,-1,wxRect,						wxRect wxAuiDockInfo.rect
+wxAuiDockInfo.reserved1,0,0,-1,bool,						bool wxAuiDockInfo.reserved1
+wxAuiDockInfo.resizable,0,0,-1,bool,						bool wxAuiDockInfo.resizable
+wxAuiDockInfo.size,0,0,-1,int,						int wxAuiDockInfo.size
+wxAuiDockInfo.toolbar,0,0,-1,bool,						bool wxAuiDockInfo.toolbar
+[INHERITS]

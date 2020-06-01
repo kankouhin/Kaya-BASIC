@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/translation.h>
+[METHODS]
+wxResourceTranslationsLoader.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxResourceTranslationsLoader.GetModule,0,0,0,WXHINSTANCE,						WXHINSTANCE wxResourceTranslationsLoader.GetModule ( )
+wxResourceTranslationsLoader.GetResourceType,0,0,0,wxString,						wxString wxResourceTranslationsLoader.GetResourceType ( )
+[INHERITS]
+wxTranslationsLoader

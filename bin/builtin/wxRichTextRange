@@ -1,0 +1,26 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextRange.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextRange.Contains,0,0,1,bool,						bool wxRichTextRange.Contains ( long pos)
+wxRichTextRange.FromInternal,0,0,0,wxRichTextRange,						wxRichTextRange wxRichTextRange.FromInternal ( )
+wxRichTextRange.GetEnd,0,0,0,long,						long wxRichTextRange.GetEnd ( )
+wxRichTextRange.GetLength,0,0,0,long,						long wxRichTextRange.GetLength ( )
+wxRichTextRange.GetStart,0,0,0,long,						long wxRichTextRange.GetStart ( )
+wxRichTextRange.IsOutside,0,0,1,bool,						bool wxRichTextRange.IsOutside (  wxRichTextRange & range)
+wxRichTextRange.IsWithin,0,0,1,bool,						bool wxRichTextRange.IsWithin (  wxRichTextRange & range)
+wxRichTextRange.LimitTo,0,0,1,bool,						bool wxRichTextRange.LimitTo (  wxRichTextRange & range)
+wxRichTextRange.operator!=,0,0,1,bool,						bool wxRichTextRange.operator!= (  wxRichTextRange & range)
+wxRichTextRange.operator+,0,0,1,wxRichTextRange,						wxRichTextRange wxRichTextRange.operator+ (  wxRichTextRange & range)
+wxRichTextRange.operator-,0,0,1,wxRichTextRange,						wxRichTextRange wxRichTextRange.operator- (  wxRichTextRange & range)
+wxRichTextRange.operator=,0,0,1,void,						void wxRichTextRange.operator= (  wxRichTextRange & range)
+wxRichTextRange.operator==,0,0,1,bool,						bool wxRichTextRange.operator== (  wxRichTextRange & range)
+wxRichTextRange.SetEnd,0,0,1,void,						void wxRichTextRange.SetEnd ( long end)
+wxRichTextRange.SetRange,0,0,2,void,						void wxRichTextRange.SetRange ( long start,     long end    )
+wxRichTextRange.SetStart,0,0,1,void,						void wxRichTextRange.SetStart ( long start)
+wxRichTextRange.Swap,0,0,0,void,						void wxRichTextRange.Swap ( )
+wxRichTextRange.ToInternal,0,0,0,wxRichTextRange,						wxRichTextRange wxRichTextRange.ToInternal ( )
+wxRichTextRange.m_end,0,0,-1,long,						long wxRichTextRange.m_end
+wxRichTextRange.m_start,0,0,-1,long,						long wxRichTextRange.m_start
+[INHERITS]

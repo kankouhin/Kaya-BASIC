@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/iconbndl.h>
+[METHODS]
+wxIconBundle.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxIconBundle.AddIcon,0,0,2,void,						void wxIconBundle.AddIcon (  wxString & file,     wxBitmapType type = wxBITMAP_TYPE_ANY    )
+wxIconBundle.AddIcon,0,0,2,void,						void wxIconBundle.AddIcon ( wxInputStream & stream,     wxBitmapType type = wxBITMAP_TYPE_ANY    )
+wxIconBundle.AddIcon,0,0,2,void,						void wxIconBundle.AddIcon (  wxString & resourceName,     WXHINSTANCE module    )
+wxIconBundle.AddIcon,0,0,1,void,						void wxIconBundle.AddIcon (  wxIcon & icon)
+wxIconBundle.GetIcon,0,0,2,wxIcon,						wxIcon wxIconBundle.GetIcon (  wxSize & size,     int flags = FALLBACK_SYSTEM    )
+wxIconBundle.GetIcon,0,0,2,wxIcon,						wxIcon wxIconBundle.GetIcon ( wxCoord size = wxDefaultCoord,     int flags = FALLBACK_SYSTEM    )
+wxIconBundle.GetIconByIndex,0,0,1,wxIcon,						wxIcon wxIconBundle.GetIconByIndex ( size_t n)
+wxIconBundle.GetIconCount,0,0,0,size_t,						size_t wxIconBundle.GetIconCount ( )
+wxIconBundle.GetIconOfExactSize,0,0,1,wxIcon,						wxIcon wxIconBundle.GetIconOfExactSize (  wxSize & size)
+wxIconBundle.IsEmpty,0,0,0,bool,						bool wxIconBundle.IsEmpty ( )
+wxIconBundle.operator=,0,0,1,wxIconBundle,						wxIconBundle&  wxIconBundle.operator= (  wxIconBundle & ic)
+[INHERITS]
+wxGDIObject
+wxObject

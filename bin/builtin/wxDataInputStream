@@ -1,0 +1,24 @@
+[CONSTS]
+[HEADER]
+<wx/datstrm.h>
+[METHODS]
+wxDataInputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataInputStream.BigEndianOrdered,0,0,1,void,						void wxDataInputStream.BigEndianOrdered ( bool be_order)
+wxDataInputStream.GetConv,0,1,0,wxMBConv,						wxMBConv* wxDataInputStream.GetConv ( )
+wxDataInputStream.Read16,0,0,0,wxUint16,						wxUint16 wxDataInputStream.Read16 ( )
+wxDataInputStream.Read16,0,0,2,void,						void wxDataInputStream.Read16 ( wxUint16 * buffer,     size_t size    )
+wxDataInputStream.Read32,0,0,0,wxUint32,						wxUint32 wxDataInputStream.Read32 ( )
+wxDataInputStream.Read32,0,0,2,void,						void wxDataInputStream.Read32 ( wxUint32 * buffer,     size_t size    )
+wxDataInputStream.Read64,0,0,0,wxUint64,						wxUint64 wxDataInputStream.Read64 ( )
+wxDataInputStream.Read64,0,0,2,void,						void wxDataInputStream.Read64 ( wxUint64 * buffer,     size_t size    )
+wxDataInputStream.Read8,0,0,0,wxUint8,						wxUint8 wxDataInputStream.Read8 ( )
+wxDataInputStream.Read8,0,0,2,void,						void wxDataInputStream.Read8 ( wxUint8 * buffer,     size_t size    )
+wxDataInputStream.ReadDouble,0,0,0,double,						double wxDataInputStream.ReadDouble ( )
+wxDataInputStream.ReadDouble,0,0,2,void,						void wxDataInputStream.ReadDouble ( double * buffer,     size_t size    )
+wxDataInputStream.ReadFloat,0,0,0,float,						float wxDataInputStream.ReadFloat ( )
+wxDataInputStream.ReadFloat,0,0,2,void,						void wxDataInputStream.ReadFloat ( float * buffer,     size_t size    )
+wxDataInputStream.ReadString,0,0,0,wxString,						wxString wxDataInputStream.ReadString ( )
+wxDataInputStream.SetConv,0,0,1,void,						void wxDataInputStream.SetConv (  wxMBConv & conv)
+wxDataInputStream.UseBasicPrecisions,0,0,0,void,						void wxDataInputStream.UseBasicPrecisions ( )
+wxDataInputStream.UseExtendedPrecision,0,0,0,void,						void wxDataInputStream.UseExtendedPrecision ( )
+[INHERITS]

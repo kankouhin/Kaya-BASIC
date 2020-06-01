@@ -1,0 +1,34 @@
+[CONSTS]
+[HEADER]
+<wx/region.h>
+[METHODS]
+wxRegion.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRegion.Clear,0,0,0,void,						void wxRegion.Clear ( )
+wxRegion.Contains,0,0,2,wxRegionContain,						wxRegionContain wxRegion.Contains ( wxCoord x,     wxCoord y    )
+wxRegion.Contains,0,0,1,wxRegionContain,						wxRegionContain wxRegion.Contains (  wxPoint & pt)
+wxRegion.Contains,0,0,4,wxRegionContain,						wxRegionContain wxRegion.Contains ( wxCoord x,     wxCoord y,     wxCoord width,     wxCoord height    )
+wxRegion.Contains,0,0,1,wxRegionContain,						wxRegionContain wxRegion.Contains (  wxRect & rect)
+wxRegion.ConvertToBitmap,0,0,0,wxBitmap,						wxBitmap wxRegion.ConvertToBitmap ( )
+wxRegion.GetBox,0,0,4,void,						void wxRegion.GetBox ( wxCoord & x,     wxCoord & y,     wxCoord & width,     wxCoord & height    )
+wxRegion.GetBox,0,0,0,wxRect,						wxRect wxRegion.GetBox ( )
+wxRegion.Intersect,0,0,4,bool,						bool wxRegion.Intersect ( wxCoord x,     wxCoord y,     wxCoord width,     wxCoord height    )
+wxRegion.Intersect,0,0,1,bool,						bool wxRegion.Intersect (  wxRect & rect)
+wxRegion.Intersect,0,0,1,bool,						bool wxRegion.Intersect (  wxRegion & region)
+wxRegion.IsEmpty,0,0,0,bool,						bool wxRegion.IsEmpty ( )
+wxRegion.IsEqual,0,0,1,bool,						bool wxRegion.IsEqual (  wxRegion & region)
+wxRegion.Offset,0,0,2,bool,						bool wxRegion.Offset ( wxCoord x,     wxCoord y    )
+wxRegion.Offset,0,0,1,bool,						bool wxRegion.Offset (  wxPoint & pt)
+wxRegion.operator=,0,0,1,wxRegion,						wxRegion&  wxRegion.operator= (  wxRegion & region)
+wxRegion.Subtract,0,0,1,bool,						bool wxRegion.Subtract (  wxRect & rect)
+wxRegion.Subtract,0,0,1,bool,						bool wxRegion.Subtract (  wxRegion & region)
+wxRegion.Union,0,0,4,bool,						bool wxRegion.Union ( wxCoord x,     wxCoord y,     wxCoord width,     wxCoord height    )
+wxRegion.Union,0,0,1,bool,						bool wxRegion.Union (  wxRect & rect)
+wxRegion.Union,0,0,1,bool,						bool wxRegion.Union (  wxRegion & region)
+wxRegion.Union,0,0,1,bool,						bool wxRegion.Union (  wxBitmap & bmp)
+wxRegion.Union,0,0,3,bool,						bool wxRegion.Union (  wxBitmap & bmp,      wxColour & transColour,     int tolerance = 0    )
+wxRegion.Xor,0,0,4,bool,						bool wxRegion.Xor ( wxCoord x,     wxCoord y,     wxCoord width,     wxCoord height    )
+wxRegion.Xor,0,0,1,bool,						bool wxRegion.Xor (  wxRect & rect)
+wxRegion.Xor,0,0,1,bool,						bool wxRegion.Xor (  wxRegion & region)
+[INHERITS]
+wxGDIObject
+wxObject

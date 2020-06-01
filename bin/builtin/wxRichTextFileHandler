@@ -1,0 +1,34 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextFileHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextFileHandler.CanHandle,0,0,1,bool,						bool wxRichTextFileHandler.CanHandle (  wxString & filename)
+wxRichTextFileHandler.CanLoad,0,0,0,bool,						bool wxRichTextFileHandler.CanLoad ( )
+wxRichTextFileHandler.CanSave,0,0,0,bool,						bool wxRichTextFileHandler.CanSave ( )
+wxRichTextFileHandler.DoLoadFile,0,0,2,bool,						bool wxRichTextFileHandler.DoLoadFile ( wxRichTextBuffer * buffer,     wxInputStream & stream    )
+wxRichTextFileHandler.DoSaveFile,0,0,2,bool,						bool wxRichTextFileHandler.DoSaveFile ( wxRichTextBuffer * buffer,     wxOutputStream & stream    )
+wxRichTextFileHandler.GetEncoding,0,0,0,wxString,						wxString&  wxRichTextFileHandler.GetEncoding ( )
+wxRichTextFileHandler.GetExtension,0,0,0,wxString,						wxString wxRichTextFileHandler.GetExtension ( )
+wxRichTextFileHandler.GetFlags,0,0,0,int,						int wxRichTextFileHandler.GetFlags ( )
+wxRichTextFileHandler.GetName,0,0,0,wxString,						wxString wxRichTextFileHandler.GetName ( )
+wxRichTextFileHandler.GetType,0,0,0,int,						int wxRichTextFileHandler.GetType ( )
+wxRichTextFileHandler.IsVisible,0,0,0,bool,						bool wxRichTextFileHandler.IsVisible ( )
+wxRichTextFileHandler.LoadFile,0,0,2,bool,						bool wxRichTextFileHandler.LoadFile ( wxRichTextBuffer * buffer,     wxInputStream & stream    )
+wxRichTextFileHandler.LoadFile,0,0,2,bool,						bool wxRichTextFileHandler.LoadFile ( wxRichTextBuffer * buffer,      wxString & filename    )
+wxRichTextFileHandler.SaveFile,0,0,2,bool,						bool wxRichTextFileHandler.SaveFile ( wxRichTextBuffer * buffer,     wxOutputStream & stream    )
+wxRichTextFileHandler.SaveFile,0,0,2,bool,						bool wxRichTextFileHandler.SaveFile ( wxRichTextBuffer * buffer,      wxString & filename    )
+wxRichTextFileHandler.SetEncoding,0,0,1,void,						void wxRichTextFileHandler.SetEncoding (  wxString & encoding)
+wxRichTextFileHandler.SetExtension,0,0,1,void,						void wxRichTextFileHandler.SetExtension (  wxString & ext)
+wxRichTextFileHandler.SetFlags,0,0,1,void,						void wxRichTextFileHandler.SetFlags ( int flags)
+wxRichTextFileHandler.SetName,0,0,1,void,						void wxRichTextFileHandler.SetName (  wxString & name)
+wxRichTextFileHandler.SetType,0,0,1,void,						void wxRichTextFileHandler.SetType ( int type)
+wxRichTextFileHandler.SetVisible,0,0,1,void,						void wxRichTextFileHandler.SetVisible ( bool visible)
+wxRichTextFileHandler.m_encoding,0,0,-1,wxString,						wxString wxRichTextFileHandler.m_encoding
+wxRichTextFileHandler.m_extension,0,0,-1,wxString,						wxString wxRichTextFileHandler.m_extension
+wxRichTextFileHandler.m_flags,0,0,-1,int,						int wxRichTextFileHandler.m_flags
+wxRichTextFileHandler.m_name,0,0,-1,wxString,						wxString wxRichTextFileHandler.m_name
+wxRichTextFileHandler.m_type,0,0,-1,int,						int wxRichTextFileHandler.m_type
+wxRichTextFileHandler.m_visible,0,0,-1,bool,						bool wxRichTextFileHandler.m_visible
+[INHERITS]
+wxObject

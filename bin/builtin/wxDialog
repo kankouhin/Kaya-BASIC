@@ -1,0 +1,65 @@
+[CONSTS]
+wxCAPTION
+wxDEFAULT_DIALOG_STYLE
+wxRESIZE_BORDER
+wxSYSTEM_MENU
+wxCLOSE_BOX
+wxMAXIMIZE_BOX
+wxMINIMIZE_BOX
+wxTHICK_FRAME
+wxSTAY_ON_TOP
+wxNO_3D
+wxDIALOG_NO_PARENT
+wxDIALOG_EX_CONTEXTHELP
+wxDIALOG_EX_METAL
+wxEVT_INIT_DIALOG
+[HEADER]
+<wx/dialog.h>
+[METHODS]
+wxDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDialog.AddMainButtonId,0,0,1,void,						void wxDialog.AddMainButtonId ( wxWindowID id)
+wxDialog.CanDoLayoutAdaptation,0,0,0,bool,						bool wxDialog.CanDoLayoutAdaptation ( )
+wxDialog.Centre,0,0,1,void,						void wxDialog.Centre ( int direction = wxBOTH)
+wxDialog.Create,0,0,7,bool,						bool wxDialog.Create ( wxWindow * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDEFAULT_DIALOG_STYLE,      wxString & name = wxDialogNameStr    )
+wxDialog.CreateButtonSizer,0,1,1,wxSizer,						wxSizer* wxDialog.CreateButtonSizer ( long flags)
+wxDialog.CreateSeparatedButtonSizer,0,1,1,wxSizer,						wxSizer* wxDialog.CreateSeparatedButtonSizer ( long flags)
+wxDialog.CreateSeparatedSizer,0,1,1,wxSizer,						wxSizer* wxDialog.CreateSeparatedSizer ( wxSizer * sizer)
+wxDialog.CreateStdDialogButtonSizer,0,1,1,wxStdDialogButtonSizer,						wxStdDialogButtonSizer* wxDialog.CreateStdDialogButtonSizer ( long flags)
+wxDialog.CreateTextSizer,0,1,2,wxSizer,						wxSizer* wxDialog.CreateTextSizer (  wxString & message,     int widthMax = -1    )
+wxDialog.DoLayoutAdaptation,0,0,0,bool,						bool wxDialog.DoLayoutAdaptation ( )
+wxDialog.EnableLayoutAdaptation,1,0,1,void,						static void wxDialog.EnableLayoutAdaptation ( bool enable)
+wxDialog.EndModal,0,0,1,void,						void wxDialog.EndModal ( int retCode)
+wxDialog.GetAffirmativeId,0,0,0,int,						int wxDialog.GetAffirmativeId ( )
+wxDialog.GetContentWindow,0,1,0,wxWindow,						wxWindow* wxDialog.GetContentWindow ( )
+wxDialog.GetEscapeId,0,0,0,int,						int wxDialog.GetEscapeId ( )
+wxDialog.GetLayoutAdaptationDone,0,0,0,bool,						bool wxDialog.GetLayoutAdaptationDone ( )
+wxDialog.GetLayoutAdaptationLevel,0,0,0,int,						int wxDialog.GetLayoutAdaptationLevel ( )
+wxDialog.GetLayoutAdaptationMode,0,0,0,wxDialogLayoutAdaptationMode,						wxDialogLayoutAdaptationMode wxDialog.GetLayoutAdaptationMode ( )
+wxDialog.GetLayoutAdapter,1,1,0,wxDialogLayoutAdapter,						static wxDialogLayoutAdapter* wxDialog.GetLayoutAdapter ( )
+wxDialog.GetMainButtonIds,0,0,0,wxArrayInt,						wxArrayInt&  wxDialog.GetMainButtonIds ( )
+wxDialog.GetReturnCode,0,0,0,int,						int wxDialog.GetReturnCode ( )
+wxDialog.GetToolBar,0,1,0,wxToolBar,						wxToolBar* wxDialog.GetToolBar ( )
+wxDialog.Iconize,0,0,1,void,						void wxDialog.Iconize ( bool iconize = true)
+wxDialog.IsIconized,0,0,0,bool,						bool wxDialog.IsIconized ( )
+wxDialog.IsLayoutAdaptationEnabled,1,0,0,bool,						static bool wxDialog.IsLayoutAdaptationEnabled ( )
+wxDialog.IsMainButtonId,0,0,1,bool,						bool wxDialog.IsMainButtonId ( wxWindowID id)
+wxDialog.IsModal,0,0,0,bool,						bool wxDialog.IsModal ( )
+wxDialog.SetAffirmativeId,0,0,1,void,						void wxDialog.SetAffirmativeId ( int id)
+wxDialog.SetEscapeId,0,0,1,void,						void wxDialog.SetEscapeId ( int id)
+wxDialog.SetIcon,0,0,1,void,						void wxDialog.SetIcon (  wxIcon & icon)
+wxDialog.SetIcons,0,0,1,void,						void wxDialog.SetIcons (  wxIconBundle & icons)
+wxDialog.SetLayoutAdaptationDone,0,0,1,void,						void wxDialog.SetLayoutAdaptationDone ( bool done)
+wxDialog.SetLayoutAdaptationLevel,0,0,1,void,						void wxDialog.SetLayoutAdaptationLevel ( int level)
+wxDialog.SetLayoutAdaptationMode,0,0,1,void,						void wxDialog.SetLayoutAdaptationMode ( wxDialogLayoutAdaptationMode mode)
+wxDialog.SetLayoutAdapter,1,1,1,wxDialogLayoutAdapter,						static wxDialogLayoutAdapter* wxDialog.SetLayoutAdapter ( wxDialogLayoutAdapter * adapter)
+wxDialog.SetReturnCode,0,0,1,void,						void wxDialog.SetReturnCode ( int retCode)
+wxDialog.Show,0,0,1,bool,						bool wxDialog.Show ( bool show = 1)
+wxDialog.ShowModal,0,0,0,int,						int wxDialog.ShowModal ( )
+wxDialog.ShowWindowModal,0,0,0,void,						void wxDialog.ShowWindowModal ( )
+wxDialog.ShowWindowModalThenDo,0,0,1,void,						void wxDialog.ShowWindowModalThenDo (  Functor & onEndModal)
+[INHERITS]
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

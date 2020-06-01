@@ -1,0 +1,24 @@
+[CONSTS]
+[HEADER]
+<wx/headercol.h>
+[METHODS]
+wxSettableHeaderColumn.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSettableHeaderColumn.ChangeFlag,0,0,2,void,						void wxSettableHeaderColumn.ChangeFlag ( int flag,     bool set    )
+wxSettableHeaderColumn.ClearFlag,0,0,1,void,						void wxSettableHeaderColumn.ClearFlag ( int flag)
+wxSettableHeaderColumn.SetAlignment,0,0,1,void,						void wxSettableHeaderColumn.SetAlignment ( wxAlignment align)
+wxSettableHeaderColumn.SetBitmap,0,0,1,void,						void wxSettableHeaderColumn.SetBitmap (  wxBitmap & bitmap)
+wxSettableHeaderColumn.SetFlag,0,0,1,void,						void wxSettableHeaderColumn.SetFlag ( int flag)
+wxSettableHeaderColumn.SetFlags,0,0,1,void,						void wxSettableHeaderColumn.SetFlags ( int flags)
+wxSettableHeaderColumn.SetHidden,0,0,1,void,						void wxSettableHeaderColumn.SetHidden ( bool hidden)
+wxSettableHeaderColumn.SetMinWidth,0,0,1,void,						void wxSettableHeaderColumn.SetMinWidth ( int minWidth)
+wxSettableHeaderColumn.SetReorderable,0,0,1,void,						void wxSettableHeaderColumn.SetReorderable ( bool reorderable)
+wxSettableHeaderColumn.SetResizeable,0,0,1,void,						void wxSettableHeaderColumn.SetResizeable ( bool resizable)
+wxSettableHeaderColumn.SetSortable,0,0,1,void,						void wxSettableHeaderColumn.SetSortable ( bool sortable)
+wxSettableHeaderColumn.SetSortOrder,0,0,1,void,						void wxSettableHeaderColumn.SetSortOrder ( bool ascending)
+wxSettableHeaderColumn.SetTitle,0,0,1,void,						void wxSettableHeaderColumn.SetTitle (  wxString & title)
+wxSettableHeaderColumn.SetWidth,0,0,1,void,						void wxSettableHeaderColumn.SetWidth ( int width)
+wxSettableHeaderColumn.ToggleFlag,0,0,1,void,						void wxSettableHeaderColumn.ToggleFlag ( int flag)
+wxSettableHeaderColumn.ToggleSortOrder,0,0,0,void,						void wxSettableHeaderColumn.ToggleSortOrder ( )
+wxSettableHeaderColumn.UnsetAsSortKey,0,0,0,void,						void wxSettableHeaderColumn.UnsetAsSortKey ( )
+[INHERITS]
+wxHeaderColumn

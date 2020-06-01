@@ -1,0 +1,76 @@
+[CONSTS]
+wxAUI_NB_DEFAULT_STYLE
+wxAUI_NB_TAB_SPLIT
+wxAUI_NB_TAB_MOVE
+wxAUI_NB_TAB_EXTERNAL_MOVE
+wxAUI_NB_TAB_FIXED_WIDTH
+wxAUI_NB_SCROLL_BUTTONS
+wxAUI_NB_WINDOWLIST_BUTTON
+wxAUI_NB_CLOSE_BUTTON
+wxAUI_NB_CLOSE_ON_ACTIVE_TAB
+wxAUI_NB_CLOSE_ON_ALL_TABS
+wxAUI_NB_MIDDLE_CLICK_CLOSE
+wxAUI_NB_TOP
+wxAUI_NB_BOTTOM
+wxEVT_AUINOTEBOOK_PAGE_CLOSE
+wxEVT_AUINOTEBOOK_PAGE_CLOSED
+wxEVT_AUINOTEBOOK_PAGE_CHANGED
+wxEVT_AUINOTEBOOK_PAGE_CHANGING
+wxEVT_AUINOTEBOOK_BUTTON
+wxEVT_AUINOTEBOOK_BEGIN_DRAG
+wxEVT_AUINOTEBOOK_END_DRAG
+wxEVT_AUINOTEBOOK_DRAG_MOTION
+wxEVT_AUINOTEBOOK_ALLOW_DND
+wxEVT_AUINOTEBOOK_DRAG_DONE
+wxEVT_AUINOTEBOOK_TAB_MIDDLE_DOWN
+wxEVT_AUINOTEBOOK_TAB_MIDDLE_UP
+wxEVT_AUINOTEBOOK_TAB_RIGHT_DOWN
+wxEVT_AUINOTEBOOK_TAB_RIGHT_UP
+wxEVT_AUINOTEBOOK_BG_DCLICK
+[HEADER]
+<wx/aui/auibook.h>
+[METHODS]
+wxAuiNotebook.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiNotebook.AddPage,0,0,4,bool,						bool wxAuiNotebook.AddPage ( wxWindow * page,      wxString & caption,     bool select = false,      wxBitmap & bitmap = wxNullBitmap    )
+wxAuiNotebook.AddPage,0,0,4,bool,						bool wxAuiNotebook.AddPage ( wxWindow * page,      wxString & text,     bool select,     int imageId    )
+wxAuiNotebook.AdvanceSelection,0,0,1,void,						void wxAuiNotebook.AdvanceSelection ( bool forward = true)
+wxAuiNotebook.ChangeSelection,0,0,1,int,						int wxAuiNotebook.ChangeSelection ( size_t n)
+wxAuiNotebook.Create,0,0,5,bool,						bool wxAuiNotebook.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0    )
+wxAuiNotebook.DeleteAllPages,0,0,0,bool,						bool wxAuiNotebook.DeleteAllPages ( )
+wxAuiNotebook.DeletePage,0,0,1,bool,						bool wxAuiNotebook.DeletePage ( size_t page)
+wxAuiNotebook.GetArtProvider,0,1,0,wxAuiTabArt,						wxAuiTabArt* wxAuiNotebook.GetArtProvider ( )
+wxAuiNotebook.GetCurrentPage,0,1,0,wxWindow,						wxWindow* wxAuiNotebook.GetCurrentPage ( )
+wxAuiNotebook.GetHeightForPageHeight,0,0,1,int,						int wxAuiNotebook.GetHeightForPageHeight ( int pageHeight)
+wxAuiNotebook.GetPage,0,1,1,wxWindow,						wxWindow* wxAuiNotebook.GetPage ( size_t page_idx)
+wxAuiNotebook.GetPageBitmap,0,0,1,wxBitmap,						wxBitmap wxAuiNotebook.GetPageBitmap ( size_t page)
+wxAuiNotebook.GetPageCount,0,0,0,size_t,						size_t wxAuiNotebook.GetPageCount ( )
+wxAuiNotebook.GetPageImage,0,0,1,int,						int wxAuiNotebook.GetPageImage ( size_t nPage)
+wxAuiNotebook.GetPageIndex,0,0,1,int,						int wxAuiNotebook.GetPageIndex ( wxWindow * page_wnd)
+wxAuiNotebook.GetPageText,0,0,1,wxString,						wxString wxAuiNotebook.GetPageText ( size_t page)
+wxAuiNotebook.GetPageToolTip,0,0,1,wxString,						wxString wxAuiNotebook.GetPageToolTip ( size_t pageIdx)
+wxAuiNotebook.GetSelection,0,0,0,int,						int wxAuiNotebook.GetSelection ( )
+wxAuiNotebook.GetTabCtrlHeight,0,0,0,int,						int wxAuiNotebook.GetTabCtrlHeight ( )
+wxAuiNotebook.InsertPage,0,0,5,bool,						bool wxAuiNotebook.InsertPage ( size_t page_idx,     wxWindow * page,      wxString & caption,     bool select = false,      wxBitmap & bitmap = wxNullBitmap    )
+wxAuiNotebook.InsertPage,0,0,5,bool,						bool wxAuiNotebook.InsertPage ( size_t index,     wxWindow * page,      wxString & text,     bool select,     int imageId    )
+wxAuiNotebook.RemovePage,0,0,1,bool,						bool wxAuiNotebook.RemovePage ( size_t page)
+wxAuiNotebook.SetArtProvider,0,0,1,void,						void wxAuiNotebook.SetArtProvider ( wxAuiTabArt * art)
+wxAuiNotebook.SetFont,0,0,1,bool,						bool wxAuiNotebook.SetFont (  wxFont & font)
+wxAuiNotebook.SetMeasuringFont,0,0,1,void,						void wxAuiNotebook.SetMeasuringFont (  wxFont & font)
+wxAuiNotebook.SetNormalFont,0,0,1,void,						void wxAuiNotebook.SetNormalFont (  wxFont & font)
+wxAuiNotebook.SetPageBitmap,0,0,2,bool,						bool wxAuiNotebook.SetPageBitmap ( size_t page,      wxBitmap & bitmap    )
+wxAuiNotebook.SetPageImage,0,0,2,bool,						bool wxAuiNotebook.SetPageImage ( size_t n,     int imageId    )
+wxAuiNotebook.SetPageText,0,0,2,bool,						bool wxAuiNotebook.SetPageText ( size_t page,      wxString & text    )
+wxAuiNotebook.SetPageToolTip,0,0,2,bool,						bool wxAuiNotebook.SetPageToolTip ( size_t page,      wxString & text    )
+wxAuiNotebook.SetSelectedFont,0,0,1,void,						void wxAuiNotebook.SetSelectedFont (  wxFont & font)
+wxAuiNotebook.SetSelection,0,0,1,int,						int wxAuiNotebook.SetSelection ( size_t new_page)
+wxAuiNotebook.SetTabCtrlHeight,0,0,1,void,						void wxAuiNotebook.SetTabCtrlHeight ( int height)
+wxAuiNotebook.SetUniformBitmapSize,0,0,1,void,						void wxAuiNotebook.SetUniformBitmapSize (  wxSize & size)
+wxAuiNotebook.ShowWindowMenu,0,0,0,bool,						bool wxAuiNotebook.ShowWindowMenu ( )
+wxAuiNotebook.Split,0,0,2,void,						void wxAuiNotebook.Split ( size_t page,     int direction    )
+[INHERITS]
+wxBookCtrlBase
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxWithImages

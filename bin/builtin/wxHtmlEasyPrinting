@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmprint.h>
+[METHODS]
+wxHtmlEasyPrinting.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlEasyPrinting.PromptMode,0,0,-1,enum,						enum wxHtmlEasyPrinting.PromptMode
+wxHtmlEasyPrinting.CheckFit,0,0,2,bool,						bool wxHtmlEasyPrinting.CheckFit (  wxSize & pageArea,      wxSize & docArea    )
+wxHtmlEasyPrinting.GetName,0,0,0,wxString,						wxString&  wxHtmlEasyPrinting.GetName ( )
+wxHtmlEasyPrinting.GetPageSetupData,0,1,0,wxPageSetupDialogData,						wxPageSetupDialogData* wxHtmlEasyPrinting.GetPageSetupData ( )
+wxHtmlEasyPrinting.GetParentWindow,0,1,0,wxWindow,						wxWindow* wxHtmlEasyPrinting.GetParentWindow ( )
+wxHtmlEasyPrinting.GetPrintData,0,1,0,wxPrintData,						wxPrintData* wxHtmlEasyPrinting.GetPrintData ( )
+wxHtmlEasyPrinting.PageSetup,0,0,0,void,						void wxHtmlEasyPrinting.PageSetup ( )
+wxHtmlEasyPrinting.PreviewFile,0,0,1,bool,						bool wxHtmlEasyPrinting.PreviewFile (  wxString & htmlfile)
+wxHtmlEasyPrinting.PreviewText,0,0,2,bool,						bool wxHtmlEasyPrinting.PreviewText (  wxString & htmltext,      wxString & basepath = wxEmptyString    )
+wxHtmlEasyPrinting.PrintFile,0,0,1,bool,						bool wxHtmlEasyPrinting.PrintFile (  wxString & htmlfile)
+wxHtmlEasyPrinting.PrintText,0,0,2,bool,						bool wxHtmlEasyPrinting.PrintText (  wxString & htmltext,      wxString & basepath = wxEmptyString    )
+wxHtmlEasyPrinting.SetFonts,0,0,3,void,						void wxHtmlEasyPrinting.SetFonts (  wxString & normal_face,      wxString & fixed_face,      int * sizes = NULL    )
+wxHtmlEasyPrinting.SetFooter,0,0,2,void,						void wxHtmlEasyPrinting.SetFooter (  wxString & footer,     int pg = wxPAGE_ALL    )
+wxHtmlEasyPrinting.SetHeader,0,0,2,void,						void wxHtmlEasyPrinting.SetHeader (  wxString & header,     int pg = wxPAGE_ALL    )
+wxHtmlEasyPrinting.SetName,0,0,1,void,						void wxHtmlEasyPrinting.SetName (  wxString & name)
+wxHtmlEasyPrinting.SetParentWindow,0,0,1,void,						void wxHtmlEasyPrinting.SetParentWindow ( wxWindow * window)
+wxHtmlEasyPrinting.SetPromptMode,0,0,1,void,						void wxHtmlEasyPrinting.SetPromptMode ( PromptMode promptMode)
+wxHtmlEasyPrinting.SetStandardFonts,0,0,3,void,						void wxHtmlEasyPrinting.SetStandardFonts ( int size = -1,      wxString & normal_face = wxEmptyString,      wxString & fixed_face = wxEmptyString    )
+[INHERITS]
+wxObject

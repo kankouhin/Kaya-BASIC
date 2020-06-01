@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/modalhook.h>
+[METHODS]
+wxModalDialogHook.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxModalDialogHook.Enter,0,0,1,int,						int wxModalDialogHook.Enter ( wxDialog * dialog)
+wxModalDialogHook.Exit,0,0,1,void,						void wxModalDialogHook.Exit ( wxDialog * dialog)
+wxModalDialogHook.Register,0,0,0,void,						void wxModalDialogHook.Register ( )
+wxModalDialogHook.Unregister,0,0,0,void,						void wxModalDialogHook.Unregister ( )
+[INHERITS]

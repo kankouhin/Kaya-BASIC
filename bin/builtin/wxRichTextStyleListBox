@@ -1,0 +1,32 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextstyles.h>
+[METHODS]
+wxRichTextStyleListBox.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextStyleListBox.wxRichTextStyleType,0,0,-1,enum,						enum wxRichTextStyleListBox.wxRichTextStyleType
+wxRichTextStyleListBox.ApplyStyle,0,0,1,void,						void wxRichTextStyleListBox.ApplyStyle ( int i)
+wxRichTextStyleListBox.ConvertTenthsMMToPixels,0,0,2,int,						int wxRichTextStyleListBox.ConvertTenthsMMToPixels ( wxDC & dc,     int units    )
+wxRichTextStyleListBox.Create,0,0,5,bool,						bool wxRichTextStyleListBox.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0    )
+wxRichTextStyleListBox.CreateHTML,0,0,1,wxString,						wxString wxRichTextStyleListBox.CreateHTML ( wxRichTextStyleDefinition * def)
+wxRichTextStyleListBox.GetApplyOnSelection,0,0,0,bool,						bool wxRichTextStyleListBox.GetApplyOnSelection ( )
+wxRichTextStyleListBox.GetRichTextCtrl,0,1,0,wxRichTextCtrl,						wxRichTextCtrl* wxRichTextStyleListBox.GetRichTextCtrl ( )
+wxRichTextStyleListBox.GetStyle,0,1,1,wxRichTextStyleDefinition,						wxRichTextStyleDefinition* wxRichTextStyleListBox.GetStyle ( size_t i)
+wxRichTextStyleListBox.GetStyleSheet,0,1,0,wxRichTextStyleSheet,						wxRichTextStyleSheet* wxRichTextStyleListBox.GetStyleSheet ( )
+wxRichTextStyleListBox.GetStyleType,0,0,0,wxRichTextStyleListBox.wxRichTextStyleType,						wxRichTextStyleListBox.wxRichTextStyleType wxRichTextStyleListBox.GetStyleType ( )
+wxRichTextStyleListBox.OnGetItem,0,0,1,wxString,						wxString wxRichTextStyleListBox.OnGetItem ( size_t n)
+wxRichTextStyleListBox.OnLeftDown,0,0,1,void,						void wxRichTextStyleListBox.OnLeftDown ( wxMouseEvent & event)
+wxRichTextStyleListBox.SetApplyOnSelection,0,0,1,void,						void wxRichTextStyleListBox.SetApplyOnSelection ( bool applyOnSelection)
+wxRichTextStyleListBox.SetRichTextCtrl,0,0,1,void,						void wxRichTextStyleListBox.SetRichTextCtrl ( wxRichTextCtrl * ctrl)
+wxRichTextStyleListBox.SetStyleSheet,0,0,1,void,						void wxRichTextStyleListBox.SetStyleSheet ( wxRichTextStyleSheet * styleSheet)
+wxRichTextStyleListBox.SetStyleType,0,0,1,void,						void wxRichTextStyleListBox.SetStyleType ( wxRichTextStyleListBox.wxRichTextStyleType styleType)
+wxRichTextStyleListBox.UpdateStyles,0,0,0,void,						void wxRichTextStyleListBox.UpdateStyles ( )
+[INHERITS]
+wxHtmlListBox
+wxVListBox
+wxVScrolledWindow
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject
+wxVarVScrollHelper
+wxVarScrollHelperBase

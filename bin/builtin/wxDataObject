@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/dataobj.h>
+[METHODS]
+wxDataObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataObject.Direction,0,0,-1,enum,						enum wxDataObject.Direction
+wxDataObject.GetAllFormats,0,0,2,void,						void wxDataObject.GetAllFormats ( wxDataFormat * formats,     Direction dir = Get    )
+wxDataObject.GetDataHere,0,0,2,bool,						bool wxDataObject.GetDataHere (  wxDataFormat & format,     void * buf    )
+wxDataObject.GetDataSize,0,0,1,size_t,						size_t wxDataObject.GetDataSize (  wxDataFormat & format)
+wxDataObject.GetFormatCount,0,0,1,size_t,						size_t wxDataObject.GetFormatCount ( Direction dir = Get)
+wxDataObject.GetPreferredFormat,0,0,1,wxDataFormat,						wxDataFormat wxDataObject.GetPreferredFormat ( Direction dir = Get)
+wxDataObject.IsSupported,0,0,2,bool,						bool wxDataObject.IsSupported (  wxDataFormat & format,     Direction dir = Get    )
+wxDataObject.SetData,0,0,3,bool,						bool wxDataObject.SetData (  wxDataFormat & format,     size_t len,      void * buf    )
+[INHERITS]

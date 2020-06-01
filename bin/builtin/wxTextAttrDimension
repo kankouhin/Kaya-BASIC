@@ -1,0 +1,28 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxTextAttrDimension.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextAttrDimension.Apply,0,0,2,bool,						bool wxTextAttrDimension.Apply (  wxTextAttrDimension & dim,      wxTextAttrDimension * compareWith = NULL    )
+wxTextAttrDimension.CollectCommonAttributes,0,0,3,void,						void wxTextAttrDimension.CollectCommonAttributes (  wxTextAttrDimension & attr,     wxTextAttrDimension & clashingAttr,     wxTextAttrDimension & absentAttr    )
+wxTextAttrDimension.EqPartial,0,0,2,bool,						bool wxTextAttrDimension.EqPartial (  wxTextAttrDimension & dim,     bool weakTest = true    )
+wxTextAttrDimension.GetFlags,0,0,0,wxTextAttrDimensionFlags,						wxTextAttrDimensionFlags wxTextAttrDimension.GetFlags ( )
+wxTextAttrDimension.GetPosition,0,0,0,wxTextBoxAttrPosition,						wxTextBoxAttrPosition wxTextAttrDimension.GetPosition ( )
+wxTextAttrDimension.GetUnits,0,0,0,wxTextAttrUnits,						wxTextAttrUnits wxTextAttrDimension.GetUnits ( )
+wxTextAttrDimension.GetValue,0,0,0,int,						int wxTextAttrDimension.GetValue ( )
+wxTextAttrDimension.GetValueMM,0,0,0,float,						float wxTextAttrDimension.GetValueMM ( )
+wxTextAttrDimension.IsValid,0,0,0,bool,						bool wxTextAttrDimension.IsValid ( )
+wxTextAttrDimension.operator==,0,0,1,bool,						bool wxTextAttrDimension.operator== (  wxTextAttrDimension & dim)
+wxTextAttrDimension.Reset,0,0,0,void,						void wxTextAttrDimension.Reset ( )
+wxTextAttrDimension.SetFlags,0,0,1,void,						void wxTextAttrDimension.SetFlags ( wxTextAttrDimensionFlags flags)
+wxTextAttrDimension.SetPosition,0,0,1,void,						void wxTextAttrDimension.SetPosition ( wxTextBoxAttrPosition pos)
+wxTextAttrDimension.SetUnits,0,0,1,void,						void wxTextAttrDimension.SetUnits ( wxTextAttrUnits units)
+wxTextAttrDimension.SetValid,0,0,1,void,						void wxTextAttrDimension.SetValid ( bool b)
+wxTextAttrDimension.SetValue,0,0,1,void,						void wxTextAttrDimension.SetValue ( int value)
+wxTextAttrDimension.SetValue,0,0,2,void,						void wxTextAttrDimension.SetValue ( int value,     wxTextAttrDimensionFlags flags    )
+wxTextAttrDimension.SetValue,0,0,2,void,						void wxTextAttrDimension.SetValue ( int value,     wxTextAttrUnits units    )
+wxTextAttrDimension.SetValue,0,0,1,void,						void wxTextAttrDimension.SetValue (  wxTextAttrDimension & dim)
+wxTextAttrDimension.SetValueMM,0,0,1,void,						void wxTextAttrDimension.SetValueMM ( float value)
+wxTextAttrDimension.m_flags,0,0,-1,wxTextAttrDimensionFlags,						wxTextAttrDimensionFlags wxTextAttrDimension.m_flags
+wxTextAttrDimension.m_value,0,0,-1,int,						int wxTextAttrDimension.m_value
+[INHERITS]

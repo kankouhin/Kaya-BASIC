@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/power.h>
+[METHODS]
+wxPowerEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPowerEvent.IsVetoed,0,0,0,bool,						bool wxPowerEvent.IsVetoed ( )
+wxPowerEvent.Veto,0,0,0,void,						void wxPowerEvent.Veto ( )
+[INHERITS]
+wxEvent
+wxObject

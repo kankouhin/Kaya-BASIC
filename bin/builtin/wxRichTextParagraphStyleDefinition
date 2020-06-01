@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextstyles.h>
+[METHODS]
+wxRichTextParagraphStyleDefinition.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextParagraphStyleDefinition.GetNextStyle,0,0,0,wxString,						wxString&  wxRichTextParagraphStyleDefinition.GetNextStyle ( )
+wxRichTextParagraphStyleDefinition.SetNextStyle,0,0,1,void,						void wxRichTextParagraphStyleDefinition.SetNextStyle (  wxString & name)
+[INHERITS]
+wxRichTextStyleDefinition
+wxObject

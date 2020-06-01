@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellFloatEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellFloatEditor.SetParameters,0,0,1,void,						void wxGridCellFloatEditor.SetParameters (  wxString & params)
+[INHERITS]
+wxGridCellTextEditor
+wxGridCellEditor
+wxClientDataContainer
+wxRefCounter

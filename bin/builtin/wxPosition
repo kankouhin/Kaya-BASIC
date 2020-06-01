@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/position.h>
+[METHODS]
+wxPosition.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPosition.GetCol,0,0,0,int,						int wxPosition.GetCol ( )
+wxPosition.GetColumn,0,0,0,int,						int wxPosition.GetColumn ( )
+wxPosition.GetRow,0,0,0,int,						int wxPosition.GetRow ( )
+wxPosition.operator!=,0,0,1,bool,						bool wxPosition.operator!= (  wxPosition & pos)
+wxPosition.operator+,0,0,1,wxPosition,						wxPosition wxPosition.operator+ (  wxPosition & pos)
+wxPosition.operator+,0,0,1,wxPosition,						wxPosition wxPosition.operator+ (  wxSize & size)
+wxPosition.operator+=,0,0,1,wxPosition,						wxPosition&  wxPosition.operator+= (  wxPosition & pos)
+wxPosition.operator+=,0,0,1,wxPosition,						wxPosition&  wxPosition.operator+= (  wxSize & size)
+wxPosition.operator-,0,0,1,wxPosition,						wxPosition wxPosition.operator- (  wxPosition & pos)
+wxPosition.operator-,0,0,1,wxPosition,						wxPosition wxPosition.operator- (  wxSize & size)
+wxPosition.operator-=,0,0,1,wxPosition,						wxPosition&  wxPosition.operator-= (  wxPosition & pos)
+wxPosition.operator-=,0,0,1,wxPosition,						wxPosition&  wxPosition.operator-= (  wxSize & size)
+wxPosition.operator==,0,0,1,bool,						bool wxPosition.operator== (  wxPosition & pos)
+wxPosition.SetCol,0,0,1,void,						void wxPosition.SetCol ( int column)
+wxPosition.SetColumn,0,0,1,void,						void wxPosition.SetColumn ( int column)
+wxPosition.SetRow,0,0,1,void,						void wxPosition.SetRow ( int row)
+[INHERITS]

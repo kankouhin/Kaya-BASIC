@@ -1,0 +1,32 @@
+[CONSTS]
+[HEADER]
+<wx/cmndata.h>
+[METHODS]
+wxPrintData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPrintData.GetBin,0,0,0,wxPrintBin,						wxPrintBin wxPrintData.GetBin ( )
+wxPrintData.GetCollate,0,0,0,bool,						bool wxPrintData.GetCollate ( )
+wxPrintData.GetColour,0,0,0,bool,						bool wxPrintData.GetColour ( )
+wxPrintData.GetDuplex,0,0,0,wxDuplexMode,						wxDuplexMode wxPrintData.GetDuplex ( )
+wxPrintData.GetFilename,0,0,0,wxString,						wxString wxPrintData.GetFilename ( )
+wxPrintData.GetNoCopies,0,0,0,int,						int wxPrintData.GetNoCopies ( )
+wxPrintData.GetOrientation,0,0,0,wxPrintOrientation,						wxPrintOrientation wxPrintData.GetOrientation ( )
+wxPrintData.GetPaperId,0,0,0,wxPaperSize,						wxPaperSize wxPrintData.GetPaperId ( )
+wxPrintData.GetPrinterName,0,0,0,wxString,						wxString&  wxPrintData.GetPrinterName ( )
+wxPrintData.GetPrintMode,0,0,0,wxPrintMode,						wxPrintMode wxPrintData.GetPrintMode ( )
+wxPrintData.GetQuality,0,0,0,wxPrintQuality,						wxPrintQuality wxPrintData.GetQuality ( )
+wxPrintData.IsOk,0,0,0,bool,						bool wxPrintData.IsOk ( )
+wxPrintData.operator=,0,0,1,wxPrintData,						wxPrintData&  wxPrintData.operator= (  wxPrintData & data)
+wxPrintData.SetBin,0,0,1,void,						void wxPrintData.SetBin ( wxPrintBin flag)
+wxPrintData.SetCollate,0,0,1,void,						void wxPrintData.SetCollate ( bool flag)
+wxPrintData.SetColour,0,0,1,void,						void wxPrintData.SetColour ( bool flag)
+wxPrintData.SetDuplex,0,0,1,void,						void wxPrintData.SetDuplex ( wxDuplexMode mode)
+wxPrintData.SetFilename,0,0,1,void,						void wxPrintData.SetFilename (  wxString & filename)
+wxPrintData.SetNoCopies,0,0,1,void,						void wxPrintData.SetNoCopies ( int n)
+wxPrintData.SetOrientation,0,0,1,void,						void wxPrintData.SetOrientation ( wxPrintOrientation orientation)
+wxPrintData.SetPaperId,0,0,1,void,						void wxPrintData.SetPaperId ( wxPaperSize paperId)
+wxPrintData.SetPaperSize,0,0,1,void,						void wxPrintData.SetPaperSize (  wxSize & size)
+wxPrintData.SetPrinterName,0,0,1,void,						void wxPrintData.SetPrinterName (  wxString & printerName)
+wxPrintData.SetPrintMode,0,0,1,void,						void wxPrintData.SetPrintMode ( wxPrintMode printMode)
+wxPrintData.SetQuality,0,0,1,void,						void wxPrintData.SetQuality ( wxPrintQuality quality)
+[INHERITS]
+wxObject

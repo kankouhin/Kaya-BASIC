@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellDateRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellDateRenderer.SetParameters,0,0,1,void,						void wxGridCellDateRenderer.SetParameters (  wxString & params)
+[INHERITS]
+wxGridCellStringRenderer
+wxGridCellRenderer
+wxClientDataContainer
+wxRefCounter

@@ -1,0 +1,54 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/manager.h>
+[METHODS]
+wxPropertyGridManager.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPropertyGridManager.AddPage,0,1,3,wxPropertyGridPage,						wxPropertyGridPage* wxPropertyGridManager.AddPage (  wxString & label = wxEmptyString,      wxBitmap & bmp = wxPG_NULL_BITMAP,     wxPropertyGridPage * pageObj = NULL    )
+wxPropertyGridManager.Clear,0,0,0,void,						void wxPropertyGridManager.Clear ( )
+wxPropertyGridManager.ClearPage,0,0,1,void,						void wxPropertyGridManager.ClearPage ( int page)
+wxPropertyGridManager.CommitChangesFromEditor,0,0,1,bool,						bool wxPropertyGridManager.CommitChangesFromEditor ( wxUint32 flags = 0)
+wxPropertyGridManager.Create,0,0,6,bool,						bool wxPropertyGridManager.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxPGMAN_DEFAULT_STYLE,      wxString & name = wxPropertyGridManagerNameStr    )
+wxPropertyGridManager.CreatePropertyGrid,0,1,0,wxPropertyGrid,						wxPropertyGrid* wxPropertyGridManager.CreatePropertyGrid ( )
+wxPropertyGridManager.EnableCategories,0,0,1,bool,						bool wxPropertyGridManager.EnableCategories ( bool enable)
+wxPropertyGridManager.EnsureVisible,0,0,1,bool,						bool wxPropertyGridManager.EnsureVisible ( wxPGPropArg id)
+wxPropertyGridManager.GetColumnCount,0,0,1,int,						int wxPropertyGridManager.GetColumnCount ( int page = -1)
+wxPropertyGridManager.GetCurrentPage,0,1,0,wxPropertyGridPage,						wxPropertyGridPage* wxPropertyGridManager.GetCurrentPage ( )
+wxPropertyGridManager.GetDescBoxHeight,0,0,0,int,						int wxPropertyGridManager.GetDescBoxHeight ( )
+wxPropertyGridManager.GetGrid,0,1,0,wxPropertyGrid,						wxPropertyGrid* wxPropertyGridManager.GetGrid ( )
+wxPropertyGridManager.GetPage,0,1,1,wxPropertyGridPage,						wxPropertyGridPage* wxPropertyGridManager.GetPage ( unsigned int ind)
+wxPropertyGridManager.GetPage,0,1,1,wxPropertyGridPage,						wxPropertyGridPage* wxPropertyGridManager.GetPage (  wxString & name)
+wxPropertyGridManager.GetPageByName,0,0,1,int,						int wxPropertyGridManager.GetPageByName (  wxString & name)
+wxPropertyGridManager.GetPageByState,0,0,1,int,						int wxPropertyGridManager.GetPageByState (  wxPropertyGridPageState * pstate)
+wxPropertyGridManager.GetPageCount,0,0,0,size_t,						size_t wxPropertyGridManager.GetPageCount ( )
+wxPropertyGridManager.GetPageName,0,0,1,wxString,						wxString&  wxPropertyGridManager.GetPageName ( int index)
+wxPropertyGridManager.GetPageRoot,0,1,1,wxPGProperty,						wxPGProperty* wxPropertyGridManager.GetPageRoot ( int index)
+wxPropertyGridManager.GetSelectedPage,0,0,0,int,						int wxPropertyGridManager.GetSelectedPage ( )
+wxPropertyGridManager.GetSelectedProperty,0,1,0,wxPGProperty,						wxPGProperty* wxPropertyGridManager.GetSelectedProperty ( )
+wxPropertyGridManager.GetSelection,0,1,0,wxPGProperty,						wxPGProperty* wxPropertyGridManager.GetSelection ( )
+wxPropertyGridManager.GetToolBar,0,1,0,wxToolBar,						wxToolBar* wxPropertyGridManager.GetToolBar ( )
+wxPropertyGridManager.GetVIterator,0,0,1,wxPGVIterator,						wxPGVIterator wxPropertyGridManager.GetVIterator ( int flags)
+wxPropertyGridManager.InsertPage,0,1,4,wxPropertyGridPage,						wxPropertyGridPage* wxPropertyGridManager.InsertPage ( int index,      wxString & label,      wxBitmap & bmp = wxNullBitmap,     wxPropertyGridPage * pageObj = NULL    )
+wxPropertyGridManager.IsAnyModified,0,0,0,bool,						bool wxPropertyGridManager.IsAnyModified ( )
+wxPropertyGridManager.IsFrozen,0,0,0,bool,						bool wxPropertyGridManager.IsFrozen ( )
+wxPropertyGridManager.IsPageModified,0,0,1,bool,						bool wxPropertyGridManager.IsPageModified ( size_t index)
+wxPropertyGridManager.IsPropertySelected,0,0,1,bool,						bool wxPropertyGridManager.IsPropertySelected ( wxPGPropArg id)
+wxPropertyGridManager.RemovePage,0,0,1,bool,						bool wxPropertyGridManager.RemovePage ( int page)
+wxPropertyGridManager.SelectPage,0,0,1,void,						void wxPropertyGridManager.SelectPage ( int index)
+wxPropertyGridManager.SelectPage,0,0,1,void,						void wxPropertyGridManager.SelectPage (  wxString & label)
+wxPropertyGridManager.SelectPage,0,0,1,void,						void wxPropertyGridManager.SelectPage ( wxPropertyGridPage * page)
+wxPropertyGridManager.SelectProperty,0,0,2,bool,						bool wxPropertyGridManager.SelectProperty ( wxPGPropArg id,     bool focus = false    )
+wxPropertyGridManager.SetColumnCount,0,0,2,void,						void wxPropertyGridManager.SetColumnCount ( int colCount,     int page = -1    )
+wxPropertyGridManager.SetColumnTitle,0,0,2,void,						void wxPropertyGridManager.SetColumnTitle ( int idx,      wxString & title    )
+wxPropertyGridManager.SetDescBoxHeight,0,0,2,void,						void wxPropertyGridManager.SetDescBoxHeight ( int ht,     bool refresh = true    )
+wxPropertyGridManager.SetDescription,0,0,2,void,						void wxPropertyGridManager.SetDescription (  wxString & label,      wxString & content    )
+wxPropertyGridManager.SetPageSplitterLeft,0,0,2,void,						void wxPropertyGridManager.SetPageSplitterLeft ( int page,     bool subProps = false    )
+wxPropertyGridManager.SetPageSplitterPosition,0,0,3,void,						void wxPropertyGridManager.SetPageSplitterPosition ( int page,     int pos,     int column = 0    )
+wxPropertyGridManager.SetSplitterLeft,0,0,2,void,						void wxPropertyGridManager.SetSplitterLeft ( bool subProps = false,     bool allPages = true    )
+wxPropertyGridManager.SetSplitterPosition,0,0,2,void,						void wxPropertyGridManager.SetSplitterPosition ( int pos,     int column = 0    )
+wxPropertyGridManager.ShowHeader,0,0,1,void,						void wxPropertyGridManager.ShowHeader ( bool show = true)
+[INHERITS]
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject
+wxPropertyGridInterface

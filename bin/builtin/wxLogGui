@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/log.h>
+[METHODS]
+wxLogGui.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxLogGui.Clear,0,0,0,void,						void wxLogGui.Clear ( )
+wxLogGui.DoShowMultipleLogMessages,0,0,5,void,						void wxLogGui.DoShowMultipleLogMessages (  wxArrayString & messages,      wxArrayInt & severities,      wxArrayLong & times,      wxString & title,     int style    )
+wxLogGui.DoShowSingleLogMessage,0,0,3,void,						void wxLogGui.DoShowSingleLogMessage (  wxString & message,      wxString & title,     int style    )
+wxLogGui.Flush,0,0,0,void,						void wxLogGui.Flush ( )
+wxLogGui.GetSeverityIcon,0,0,0,int,						int wxLogGui.GetSeverityIcon ( )
+wxLogGui.GetTitle,0,0,0,wxString,						wxString wxLogGui.GetTitle ( )
+wxLogGui.m_aMessages,0,0,-1,wxArrayString,						wxArrayString wxLogGui.m_aMessages
+wxLogGui.m_aSeverity,0,0,-1,wxArrayInt,						wxArrayInt wxLogGui.m_aSeverity
+wxLogGui.m_aTimes,0,0,-1,wxArrayLong,						wxArrayLong wxLogGui.m_aTimes
+wxLogGui.m_bErrors,0,0,-1,bool,						bool wxLogGui.m_bErrors
+wxLogGui.m_bHasMessages,0,0,-1,bool,						bool wxLogGui.m_bHasMessages
+wxLogGui.m_bWarnings,0,0,-1,bool,						bool wxLogGui.m_bWarnings
+[INHERITS]
+wxLog

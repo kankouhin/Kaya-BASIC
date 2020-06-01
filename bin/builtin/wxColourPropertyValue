@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/advprops.h>
+[METHODS]
+wxColourPropertyValue.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxColourPropertyValue.Init,0,0,2,void,						void wxColourPropertyValue.Init ( wxUint32 type,      wxColour & colour    )
+wxColourPropertyValue.operator=,0,0,1,void,						void wxColourPropertyValue.operator= (  wxColourPropertyValue & cpv)
+wxColourPropertyValue.m_colour,0,0,-1,wxColour,						wxColour wxColourPropertyValue.m_colour
+wxColourPropertyValue.m_type,0,0,-1,wxUint32,						wxUint32 wxColourPropertyValue.m_type
+[INHERITS]
+wxObject

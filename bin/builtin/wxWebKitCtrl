@@ -1,0 +1,37 @@
+[CONSTS]
+[HEADER]
+<wx/html/webkit.h>
+[METHODS]
+wxWebKitCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWebKitCtrl.CanDecreaseTextSize,0,0,0,bool,						bool wxWebKitCtrl.CanDecreaseTextSize ( )
+wxWebKitCtrl.CanGetPageSource,0,0,0,bool,						bool wxWebKitCtrl.CanGetPageSource ( )
+wxWebKitCtrl.CanGoBack,0,0,0,bool,						bool wxWebKitCtrl.CanGoBack ( )
+wxWebKitCtrl.CanGoForward,0,0,0,bool,						bool wxWebKitCtrl.CanGoForward ( )
+wxWebKitCtrl.CanIncreaseTextSize,0,0,0,bool,						bool wxWebKitCtrl.CanIncreaseTextSize ( )
+wxWebKitCtrl.Create,0,0,8,bool,						bool wxWebKitCtrl.Create ( wxWindow * parent,     wxWindowID winid,      wxString & strURL,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxWebKitCtrlNameStr    )
+wxWebKitCtrl.DecreaseTextSize,0,0,0,void,						void wxWebKitCtrl.DecreaseTextSize ( )
+wxWebKitCtrl.GetPageSource,0,0,0,wxString,						wxString wxWebKitCtrl.GetPageSource ( )
+wxWebKitCtrl.GetPageTitle,0,0,0,wxString,						wxString wxWebKitCtrl.GetPageTitle ( )
+wxWebKitCtrl.GetPageURL,0,0,0,wxString,						wxString wxWebKitCtrl.GetPageURL ( )
+wxWebKitCtrl.GetScrollPos,0,0,0,int,						int wxWebKitCtrl.GetScrollPos ( )
+wxWebKitCtrl.GetSelection,0,0,0,wxString,						wxString wxWebKitCtrl.GetSelection ( )
+wxWebKitCtrl.GetTitle,0,0,0,wxString,						wxString wxWebKitCtrl.GetTitle ( )
+wxWebKitCtrl.GoBack,0,0,0,bool,						bool wxWebKitCtrl.GoBack ( )
+wxWebKitCtrl.GoForward,0,0,0,bool,						bool wxWebKitCtrl.GoForward ( )
+wxWebKitCtrl.IncreaseTextSize,0,0,0,void,						void wxWebKitCtrl.IncreaseTextSize ( )
+wxWebKitCtrl.IsEditable,0,0,0,bool,						bool wxWebKitCtrl.IsEditable ( )
+wxWebKitCtrl.LoadURL,0,0,1,void,						void wxWebKitCtrl.LoadURL (  wxString & url)
+wxWebKitCtrl.MakeEditable,0,0,1,void,						void wxWebKitCtrl.MakeEditable ( bool enable = true)
+wxWebKitCtrl.Print,0,0,1,void,						void wxWebKitCtrl.Print ( bool showPrompt = false)
+wxWebKitCtrl.Reload,0,0,0,void,						void wxWebKitCtrl.Reload ( )
+wxWebKitCtrl.RunScript,0,0,1,wxString,						wxString wxWebKitCtrl.RunScript (  wxString & javascript)
+wxWebKitCtrl.SetPageSource,0,0,2,void,						void wxWebKitCtrl.SetPageSource (  wxString & source,      wxString & baseUrl = wxEmptyString    )
+wxWebKitCtrl.SetPageTitle,0,0,1,void,						void wxWebKitCtrl.SetPageTitle (  wxString & title)
+wxWebKitCtrl.SetScrollPos,0,0,1,void,						void wxWebKitCtrl.SetScrollPos ( int pos)
+wxWebKitCtrl.SetTitle,0,0,1,void,						void wxWebKitCtrl.SetTitle (  wxString & title)
+wxWebKitCtrl.Stop,0,0,0,void,						void wxWebKitCtrl.Stop ( )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

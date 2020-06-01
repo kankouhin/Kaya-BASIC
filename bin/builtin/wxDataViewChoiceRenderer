@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewChoiceRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewChoiceRenderer.GetChoice,0,0,1,wxString,						wxString wxDataViewChoiceRenderer.GetChoice ( size_t index)
+wxDataViewChoiceRenderer.GetChoices,0,0,0,wxArrayString,						wxArrayString&  wxDataViewChoiceRenderer.GetChoices ( )
+[INHERITS]
+wxDataViewRenderer
+wxObject

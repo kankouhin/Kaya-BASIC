@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/property.h>
+[METHODS]
+wxPGCellData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGCellData.SetBgCol,0,0,1,void,						void wxPGCellData.SetBgCol (  wxColour & col)
+wxPGCellData.SetBitmap,0,0,1,void,						void wxPGCellData.SetBitmap (  wxBitmap & bitmap)
+wxPGCellData.SetFgCol,0,0,1,void,						void wxPGCellData.SetFgCol (  wxColour & col)
+wxPGCellData.SetFont,0,0,1,void,						void wxPGCellData.SetFont (  wxFont & font)
+wxPGCellData.SetText,0,0,1,void,						void wxPGCellData.SetText (  wxString & text)
+wxPGCellData.m_bgCol,0,0,-1,wxColour,						wxColour wxPGCellData.m_bgCol
+wxPGCellData.m_bitmap,0,0,-1,wxBitmap,						wxBitmap wxPGCellData.m_bitmap
+wxPGCellData.m_fgCol,0,0,-1,wxColour,						wxColour wxPGCellData.m_fgCol
+wxPGCellData.m_font,0,0,-1,wxFont,						wxFont wxPGCellData.m_font
+wxPGCellData.m_hasValidText,0,0,-1,bool,						bool wxPGCellData.m_hasValidText
+wxPGCellData.m_text,0,0,-1,wxString,						wxString wxPGCellData.m_text
+[INHERITS]

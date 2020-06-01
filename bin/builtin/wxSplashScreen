@@ -1,10 +1,12 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/splash.h>
-GetSplashStyle,0,0,0,long,						long GetSplashStyle ( )
-GetSplashWindow,0,1,0,wxSplashScreenWindow,						wxSplashScreenWindow* GetSplashWindow ( )
-GetTimeout,0,0,0,int,						int GetTimeout ( )
-OnCloseWindow,0,0,1,void,						void OnCloseWindow ( wxCloseEvent & event)
+[METHODS]
+wxSplashScreen.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSplashScreen.GetSplashStyle,0,0,0,long,						long wxSplashScreen.GetSplashStyle ( )
+wxSplashScreen.GetSplashWindow,0,1,0,wxSplashScreenWindow,						wxSplashScreenWindow* wxSplashScreen.GetSplashWindow ( )
+wxSplashScreen.GetTimeout,0,0,0,int,						int wxSplashScreen.GetTimeout ( )
+wxSplashScreen.OnCloseWindow,0,0,1,void,						void wxSplashScreen.OnCloseWindow ( wxCloseEvent & event)
 [INHERITS]
 wxFrame
 wxTopLevelWindow

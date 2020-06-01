@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/spinctrl.h>
+[METHODS]
+wxSpinDoubleEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSpinDoubleEvent.GetValue,0,0,0,double,						double wxSpinDoubleEvent.GetValue ( )
+wxSpinDoubleEvent.SetValue,0,0,1,void,						void wxSpinDoubleEvent.SetValue ( double value)
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

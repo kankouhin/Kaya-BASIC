@@ -1,18 +1,18 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/object.h>
-AllocExclusive,0,0,0,void,						void AllocExclusive ( )
-CloneRefData,0,1,1,wxObjectRefData,						wxObjectRefData* CloneRefData (  wxObjectRefData * data)
-CreateRefData,0,1,0,wxObjectRefData,						wxObjectRefData* CreateRefData ( )
-GetClassInfo,0,1,0,wxClassInfo,						wxClassInfo* GetClassInfo ( )
-GetRefData,0,1,0,wxObjectRefData,						wxObjectRefData* GetRefData ( )
-IsKindOf,0,0,1,bool,						bool IsKindOf (  wxClassInfo * info)
-IsSameAs,0,0,1,bool,						bool IsSameAs (  wxObject & obj)
-delete,0,0,1,operator,						void operator delete ( void * buf)
-new,0,0,3,operator,						void* operator new ( size_t size,      wxString & filename = NULL,     int lineNum = 0    )
-Ref,0,0,1,void,						void Ref (  wxObject & clone)
-SetRefData,0,0,1,void,						void SetRefData ( wxObjectRefData * data)
-UnRef,0,0,0,void,						void UnRef ( )
-UnShare,0,0,0,void,						void UnShare ( )
-,0,1,0,wxObjectRefData,						wxObjectRefData* m_refData
+[METHODS]
+wxObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxObject.AllocExclusive,0,0,0,void,						void wxObject.AllocExclusive ( )
+wxObject.CloneRefData,0,1,1,wxObjectRefData,						wxObjectRefData* wxObject.CloneRefData (  wxObjectRefData * data)
+wxObject.CreateRefData,0,1,0,wxObjectRefData,						wxObjectRefData* wxObject.CreateRefData ( )
+wxObject.GetClassInfo,0,1,0,wxClassInfo,						wxClassInfo* wxObject.GetClassInfo ( )
+wxObject.GetRefData,0,1,0,wxObjectRefData,						wxObjectRefData* wxObject.GetRefData ( )
+wxObject.IsKindOf,0,0,1,bool,						bool wxObject.IsKindOf (  wxClassInfo * info)
+wxObject.IsSameAs,0,0,1,bool,						bool wxObject.IsSameAs (  wxObject & obj)
+wxObject.Ref,0,0,1,void,						void wxObject.Ref (  wxObject & clone)
+wxObject.SetRefData,0,0,1,void,						void wxObject.SetRefData ( wxObjectRefData * data)
+wxObject.UnRef,0,0,0,void,						void wxObject.UnRef ( )
+wxObject.UnShare,0,0,0,void,						void wxObject.UnShare ( )
+wxObject.m_refData,0,1,-1,wxObjectRefData,						wxObjectRefData* wxObject.m_refData
 [INHERITS]

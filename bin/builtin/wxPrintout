@@ -1,0 +1,36 @@
+[CONSTS]
+[HEADER]
+<wx/print.h>
+[METHODS]
+wxPrintout.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPrintout.FitThisSizeToPage,0,0,1,void,						void wxPrintout.FitThisSizeToPage (  wxSize & imageSize)
+wxPrintout.FitThisSizeToPageMargins,0,0,2,void,						void wxPrintout.FitThisSizeToPageMargins (  wxSize & imageSize,      wxPageSetupDialogData & pageSetupData    )
+wxPrintout.FitThisSizeToPaper,0,0,1,void,						void wxPrintout.FitThisSizeToPaper (  wxSize & imageSize)
+wxPrintout.GetDC,0,1,0,wxDC,						wxDC* wxPrintout.GetDC ( )
+wxPrintout.GetLogicalPageMarginsRect,0,0,1,wxRect,						wxRect wxPrintout.GetLogicalPageMarginsRect (  wxPageSetupDialogData & pageSetupData)
+wxPrintout.GetLogicalPageRect,0,0,0,wxRect,						wxRect wxPrintout.GetLogicalPageRect ( )
+wxPrintout.GetLogicalPaperRect,0,0,0,wxRect,						wxRect wxPrintout.GetLogicalPaperRect ( )
+wxPrintout.GetPageInfo,0,0,4,void,						void wxPrintout.GetPageInfo ( int * minPage,     int * maxPage,     int * pageFrom,     int * pageTo    )
+wxPrintout.GetPageSizeMM,0,0,2,void,						void wxPrintout.GetPageSizeMM ( int * w,     int * h    )
+wxPrintout.GetPageSizePixels,0,0,2,void,						void wxPrintout.GetPageSizePixels ( int * w,     int * h    )
+wxPrintout.GetPaperRectPixels,0,0,0,wxRect,						wxRect wxPrintout.GetPaperRectPixels ( )
+wxPrintout.GetPPIPrinter,0,0,2,void,						void wxPrintout.GetPPIPrinter ( int * w,     int * h    )
+wxPrintout.GetPPIScreen,0,0,2,void,						void wxPrintout.GetPPIScreen ( int * w,     int * h    )
+wxPrintout.GetPreview,0,1,0,wxPrintPreview,						wxPrintPreview* wxPrintout.GetPreview ( )
+wxPrintout.GetTitle,0,0,0,wxString,						wxString wxPrintout.GetTitle ( )
+wxPrintout.HasPage,0,0,1,bool,						bool wxPrintout.HasPage ( int pageNum)
+wxPrintout.IsPreview,0,0,0,bool,						bool wxPrintout.IsPreview ( )
+wxPrintout.MapScreenSizeToDevice,0,0,0,void,						void wxPrintout.MapScreenSizeToDevice ( )
+wxPrintout.MapScreenSizeToPage,0,0,0,void,						void wxPrintout.MapScreenSizeToPage ( )
+wxPrintout.MapScreenSizeToPageMargins,0,0,1,void,						void wxPrintout.MapScreenSizeToPageMargins (  wxPageSetupDialogData & pageSetupData)
+wxPrintout.MapScreenSizeToPaper,0,0,0,void,						void wxPrintout.MapScreenSizeToPaper ( )
+wxPrintout.OffsetLogicalOrigin,0,0,2,void,						void wxPrintout.OffsetLogicalOrigin ( wxCoord xoff,     wxCoord yoff    )
+wxPrintout.OnBeginDocument,0,0,2,bool,						bool wxPrintout.OnBeginDocument ( int startPage,     int endPage    )
+wxPrintout.OnBeginPrinting,0,0,0,void,						void wxPrintout.OnBeginPrinting ( )
+wxPrintout.OnEndDocument,0,0,0,void,						void wxPrintout.OnEndDocument ( )
+wxPrintout.OnEndPrinting,0,0,0,void,						void wxPrintout.OnEndPrinting ( )
+wxPrintout.OnPreparePrinting,0,0,0,void,						void wxPrintout.OnPreparePrinting ( )
+wxPrintout.OnPrintPage,0,0,1,bool,						bool wxPrintout.OnPrintPage ( int pageNum)
+wxPrintout.SetLogicalOrigin,0,0,2,void,						void wxPrintout.SetLogicalOrigin ( wxCoord x,     wxCoord y    )
+[INHERITS]
+wxObject

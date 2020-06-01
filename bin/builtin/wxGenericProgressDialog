@@ -1,0 +1,29 @@
+[CONSTS]
+wxPD_APP_MODAL
+wxPD_AUTO_HIDE
+wxPD_SMOOTH
+wxPD_CAN_ABORT
+wxPD_CAN_SKIP
+wxPD_ELAPSED_TIME
+wxPD_ESTIMATED_TIME
+wxPD_REMAINING_TIME
+[HEADER]
+<wx/progdlg.h>
+[METHODS]
+wxGenericProgressDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGenericProgressDialog.GetMessage,0,0,0,wxString,						wxString wxGenericProgressDialog.GetMessage ( )
+wxGenericProgressDialog.GetRange,0,0,0,int,						int wxGenericProgressDialog.GetRange ( )
+wxGenericProgressDialog.GetValue,0,0,0,int,						int wxGenericProgressDialog.GetValue ( )
+wxGenericProgressDialog.Pulse,0,0,2,bool,						bool wxGenericProgressDialog.Pulse (  wxString & newmsg = wxEmptyString,     bool * skip = NULL    )
+wxGenericProgressDialog.Resume,0,0,0,void,						void wxGenericProgressDialog.Resume ( )
+wxGenericProgressDialog.SetRange,0,0,1,void,						void wxGenericProgressDialog.SetRange ( int maximum)
+wxGenericProgressDialog.Update,0,0,3,bool,						bool wxGenericProgressDialog.Update ( int value,      wxString & newmsg = wxEmptyString,     bool * skip = NULL    )
+wxGenericProgressDialog.WasCancelled,0,0,0,bool,						bool wxGenericProgressDialog.WasCancelled ( )
+wxGenericProgressDialog.WasSkipped,0,0,0,bool,						bool wxGenericProgressDialog.WasSkipped ( )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

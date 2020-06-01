@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/persist/treebook.h>
+[METHODS]
+wxPersistentTreeBookCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPersistentTreeBookCtrl.Restore,0,0,0,bool,						bool wxPersistentTreeBookCtrl.Restore ( )
+wxPersistentTreeBookCtrl.Save,0,0,0,void,						void wxPersistentTreeBookCtrl.Save ( )
+[INHERITS]
+wxPersistentBookCtrl
+wxPersistentWindow< wxBookCtrlBase <
+wxPersistentObject

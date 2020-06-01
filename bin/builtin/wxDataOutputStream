@@ -1,0 +1,24 @@
+[CONSTS]
+[HEADER]
+<wx/datstrm.h>
+[METHODS]
+wxDataOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataOutputStream.BigEndianOrdered,0,0,1,void,						void wxDataOutputStream.BigEndianOrdered ( bool be_order)
+wxDataOutputStream.GetConv,0,1,0,wxMBConv,						wxMBConv* wxDataOutputStream.GetConv ( )
+wxDataOutputStream.SetConv,0,0,1,void,						void wxDataOutputStream.SetConv (  wxMBConv & conv)
+wxDataOutputStream.UseBasicPrecisions,0,0,0,void,						void wxDataOutputStream.UseBasicPrecisions ( )
+wxDataOutputStream.UseExtendedPrecision,0,0,0,void,						void wxDataOutputStream.UseExtendedPrecision ( )
+wxDataOutputStream.Write16,0,0,1,void,						void wxDataOutputStream.Write16 ( wxUint16 i16)
+wxDataOutputStream.Write16,0,0,2,void,						void wxDataOutputStream.Write16 (  wxUint16 * buffer,     size_t size    )
+wxDataOutputStream.Write32,0,0,1,void,						void wxDataOutputStream.Write32 ( wxUint32 i32)
+wxDataOutputStream.Write32,0,0,2,void,						void wxDataOutputStream.Write32 (  wxUint32 * buffer,     size_t size    )
+wxDataOutputStream.Write64,0,0,1,void,						void wxDataOutputStream.Write64 ( wxUint64 i64)
+wxDataOutputStream.Write64,0,0,2,void,						void wxDataOutputStream.Write64 (  wxUint64 * buffer,     size_t size    )
+wxDataOutputStream.Write8,0,0,1,void,						void wxDataOutputStream.Write8 ( wxUint8 i8)
+wxDataOutputStream.Write8,0,0,2,void,						void wxDataOutputStream.Write8 (  wxUint8 * buffer,     size_t size    )
+wxDataOutputStream.WriteDouble,0,0,1,void,						void wxDataOutputStream.WriteDouble ( double d)
+wxDataOutputStream.WriteDouble,0,0,2,void,						void wxDataOutputStream.WriteDouble (  double * buffer,     size_t size    )
+wxDataOutputStream.WriteFloat,0,0,1,void,						void wxDataOutputStream.WriteFloat ( float f)
+wxDataOutputStream.WriteFloat,0,0,2,void,						void wxDataOutputStream.WriteFloat (  float * buffer,     size_t size    )
+wxDataOutputStream.WriteString,0,0,1,void,						void wxDataOutputStream.WriteString (  wxString & string)
+[INHERITS]

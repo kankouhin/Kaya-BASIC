@@ -1,18 +1,20 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/icon.h>
-ConvertToDisabled,0,0,1,wxIcon,						wxIcon ConvertToDisabled ( unsigned char brightness = 255)
-CopyFromBitmap,0,0,1,void,						void CopyFromBitmap (  wxBitmap & bmp)
-CreateFromHICON,0,0,1,bool,						bool CreateFromHICON ( WXHICON icon)
-GetDepth,0,0,0,int,						int GetDepth ( )
-GetHeight,0,0,0,int,						int GetHeight ( )
-GetWidth,0,0,0,int,						int GetWidth ( )
-IsOk,0,0,0,bool,						bool IsOk ( )
-LoadFile,0,0,4,bool,						bool LoadFile (  wxString & name,     wxBitmapType type = wxICON_DEFAULT_TYPE,     int desiredWidth = -1,     int desiredHeight = -1    )
-operator=,0,0,1,wxIcon,						wxIcon&  operator= (  wxIcon & icon)
-SetDepth,0,0,1,void,						void SetDepth ( int depth)
-SetHeight,0,0,1,void,						void SetHeight ( int height)
-SetWidth,0,0,1,void,						void SetWidth ( int width)
+[METHODS]
+wxIcon.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxIcon.ConvertToDisabled,0,0,1,wxIcon,						wxIcon wxIcon.ConvertToDisabled ( unsigned char brightness = 255)
+wxIcon.CopyFromBitmap,0,0,1,void,						void wxIcon.CopyFromBitmap (  wxBitmap & bmp)
+wxIcon.CreateFromHICON,0,0,1,bool,						bool wxIcon.CreateFromHICON ( WXHICON icon)
+wxIcon.GetDepth,0,0,0,int,						int wxIcon.GetDepth ( )
+wxIcon.GetHeight,0,0,0,int,						int wxIcon.GetHeight ( )
+wxIcon.GetWidth,0,0,0,int,						int wxIcon.GetWidth ( )
+wxIcon.IsOk,0,0,0,bool,						bool wxIcon.IsOk ( )
+wxIcon.LoadFile,0,0,4,bool,						bool wxIcon.LoadFile (  wxString & name,     wxBitmapType type = wxICON_DEFAULT_TYPE,     int desiredWidth = -1,     int desiredHeight = -1    )
+wxIcon.operator=,0,0,1,wxIcon,						wxIcon&  wxIcon.operator= (  wxIcon & icon)
+wxIcon.SetDepth,0,0,1,void,						void wxIcon.SetDepth ( int depth)
+wxIcon.SetHeight,0,0,1,void,						void wxIcon.SetHeight ( int height)
+wxIcon.SetWidth,0,0,1,void,						void wxIcon.SetWidth ( int width)
 [INHERITS]
 wxGDIObject
 wxObject

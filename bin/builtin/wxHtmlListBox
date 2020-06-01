@@ -1,0 +1,22 @@
+[CONSTS]
+[HEADER]
+<wx/htmllbox.h>
+[METHODS]
+wxHtmlListBox.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlListBox.Create,0,0,6,bool,						bool wxHtmlListBox.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxHtmlListBoxNameStr    )
+wxHtmlListBox.GetFileSystem,0,0,0,wxFileSystem,						wxFileSystem&  wxHtmlListBox.GetFileSystem ( )
+wxHtmlListBox.GetFileSystem,0,0,0,wxFileSystem,						wxFileSystem&  wxHtmlListBox.GetFileSystem ( )
+wxHtmlListBox.GetSelectedTextBgColour,0,0,1,wxColour,						wxColour wxHtmlListBox.GetSelectedTextBgColour (  wxColour & colBg)
+wxHtmlListBox.GetSelectedTextColour,0,0,1,wxColour,						wxColour wxHtmlListBox.GetSelectedTextColour (  wxColour & colFg)
+wxHtmlListBox.OnGetItem,0,0,1,wxString,						wxString wxHtmlListBox.OnGetItem ( size_t n)
+wxHtmlListBox.OnGetItemMarkup,0,0,1,wxString,						wxString wxHtmlListBox.OnGetItemMarkup ( size_t n)
+wxHtmlListBox.OnLinkClicked,0,0,2,void,						void wxHtmlListBox.OnLinkClicked ( size_t n,      wxHtmlLinkInfo & link    )
+[INHERITS]
+wxVListBox
+wxVScrolledWindow
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject
+wxVarVScrollHelper
+wxVarScrollHelperBase

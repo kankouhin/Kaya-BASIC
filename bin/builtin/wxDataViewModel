@@ -1,0 +1,35 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewModel.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewModel.AddNotifier,0,0,1,void,						void wxDataViewModel.AddNotifier ( wxDataViewModelNotifier * notifier)
+wxDataViewModel.ChangeValue,0,0,3,bool,						bool wxDataViewModel.ChangeValue (  wxVariant & variant,      wxDataViewItem & item,     unsigned int col    )
+wxDataViewModel.Cleared,0,0,0,bool,						bool wxDataViewModel.Cleared ( )
+wxDataViewModel.Compare,0,0,4,int,						int wxDataViewModel.Compare (  wxDataViewItem & item1,      wxDataViewItem & item2,     unsigned int column,     bool ascending    )
+wxDataViewModel.DoCompareValues,0,0,2,int,						int wxDataViewModel.DoCompareValues (  wxVariant & value1,      wxVariant & value2    )
+wxDataViewModel.GetAttr,0,0,3,bool,						bool wxDataViewModel.GetAttr (  wxDataViewItem & item,     unsigned int col,     wxDataViewItemAttr & attr    )
+wxDataViewModel.GetChildren,0,0,2,int,						unsigned int wxDataViewModel.GetChildren (  wxDataViewItem & item,     wxDataViewItemArray & children    )
+wxDataViewModel.GetColumnCount,0,0,0,int,						unsigned int wxDataViewModel.GetColumnCount ( )
+wxDataViewModel.GetColumnType,0,0,1,wxString,						wxString wxDataViewModel.GetColumnType ( unsigned int col)
+wxDataViewModel.GetParent,0,0,1,wxDataViewItem,						wxDataViewItem wxDataViewModel.GetParent (  wxDataViewItem & item)
+wxDataViewModel.GetValue,0,0,3,void,						void wxDataViewModel.GetValue ( wxVariant & variant,      wxDataViewItem & item,     unsigned int col    )
+wxDataViewModel.HasContainerColumns,0,0,1,bool,						bool wxDataViewModel.HasContainerColumns (  wxDataViewItem & item)
+wxDataViewModel.HasDefaultCompare,0,0,0,bool,						bool wxDataViewModel.HasDefaultCompare ( )
+wxDataViewModel.HasValue,0,0,2,bool,						bool wxDataViewModel.HasValue (  wxDataViewItem & item,     unsigned col    )
+wxDataViewModel.IsContainer,0,0,1,bool,						bool wxDataViewModel.IsContainer (  wxDataViewItem & item)
+wxDataViewModel.IsEnabled,0,0,2,bool,						bool wxDataViewModel.IsEnabled (  wxDataViewItem & item,     unsigned int col    )
+wxDataViewModel.IsListModel,0,0,0,bool,						bool wxDataViewModel.IsListModel ( )
+wxDataViewModel.IsVirtualListModel,0,0,0,bool,						bool wxDataViewModel.IsVirtualListModel ( )
+wxDataViewModel.ItemAdded,0,0,2,bool,						bool wxDataViewModel.ItemAdded (  wxDataViewItem & parent,      wxDataViewItem & item    )
+wxDataViewModel.ItemChanged,0,0,1,bool,						bool wxDataViewModel.ItemChanged (  wxDataViewItem & item)
+wxDataViewModel.ItemDeleted,0,0,2,bool,						bool wxDataViewModel.ItemDeleted (  wxDataViewItem & parent,      wxDataViewItem & item    )
+wxDataViewModel.ItemsAdded,0,0,2,bool,						bool wxDataViewModel.ItemsAdded (  wxDataViewItem & parent,      wxDataViewItemArray & items    )
+wxDataViewModel.ItemsChanged,0,0,1,bool,						bool wxDataViewModel.ItemsChanged (  wxDataViewItemArray & items)
+wxDataViewModel.ItemsDeleted,0,0,2,bool,						bool wxDataViewModel.ItemsDeleted (  wxDataViewItem & parent,      wxDataViewItemArray & items    )
+wxDataViewModel.RemoveNotifier,0,0,1,void,						void wxDataViewModel.RemoveNotifier ( wxDataViewModelNotifier * notifier)
+wxDataViewModel.Resort,0,0,0,void,						void wxDataViewModel.Resort ( )
+wxDataViewModel.SetValue,0,0,3,bool,						bool wxDataViewModel.SetValue (  wxVariant & variant,      wxDataViewItem & item,     unsigned int col    )
+wxDataViewModel.ValueChanged,0,0,2,bool,						bool wxDataViewModel.ValueChanged (  wxDataViewItem & item,     unsigned int col    )
+[INHERITS]
+wxRefCounter

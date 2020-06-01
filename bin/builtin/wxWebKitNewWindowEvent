@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/html/webkit.h>
+[METHODS]
+wxWebKitNewWindowEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWebKitNewWindowEvent.GetTargetName,0,0,0,wxString,						wxString wxWebKitNewWindowEvent.GetTargetName ( )
+wxWebKitNewWindowEvent.GetURL,0,0,0,wxString,						wxString wxWebKitNewWindowEvent.GetURL ( )
+wxWebKitNewWindowEvent.SetTargetName,0,0,1,void,						void wxWebKitNewWindowEvent.SetTargetName (  wxString & name)
+wxWebKitNewWindowEvent.SetURL,0,0,1,void,						void wxWebKitNewWindowEvent.SetURL (  wxString & url)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

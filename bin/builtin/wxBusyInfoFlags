@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/busyinfo.h>
+[METHODS]
+wxBusyInfoFlags.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBusyInfoFlags.Background,0,0,1,wxBusyInfoFlags,						wxBusyInfoFlags&  wxBusyInfoFlags.Background (  wxColour & background)
+wxBusyInfoFlags.Foreground,0,0,1,wxBusyInfoFlags,						wxBusyInfoFlags&  wxBusyInfoFlags.Foreground (  wxColour & foreground)
+wxBusyInfoFlags.Icon,0,0,1,wxBusyInfoFlags,						wxBusyInfoFlags&  wxBusyInfoFlags.Icon (  wxIcon & icon)
+wxBusyInfoFlags.Label,0,0,1,wxBusyInfoFlags,						wxBusyInfoFlags&  wxBusyInfoFlags.Label (  wxString & label)
+wxBusyInfoFlags.Parent,0,0,1,wxBusyInfoFlags,						wxBusyInfoFlags&  wxBusyInfoFlags.Parent ( wxWindow * parent)
+wxBusyInfoFlags.Text,0,0,1,wxBusyInfoFlags,						wxBusyInfoFlags&  wxBusyInfoFlags.Text (  wxString & text)
+wxBusyInfoFlags.Title,0,0,1,wxBusyInfoFlags,						wxBusyInfoFlags&  wxBusyInfoFlags.Title (  wxString & title)
+wxBusyInfoFlags.Transparency,0,0,1,wxBusyInfoFlags,						wxBusyInfoFlags&  wxBusyInfoFlags.Transparency ( wxByte alpha)
+[INHERITS]

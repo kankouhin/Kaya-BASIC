@@ -1,0 +1,11 @@
+[CONSTS]
+wxEVT_CREATE
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxWindowCreateEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWindowCreateEvent.GetWindow,0,1,0,wxWindow,						wxWindow* wxWindowCreateEvent.GetWindow ( )
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

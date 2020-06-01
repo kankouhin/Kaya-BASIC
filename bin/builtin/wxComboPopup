@@ -1,0 +1,24 @@
+[CONSTS]
+[HEADER]
+<wx/combo.h>
+[METHODS]
+wxComboPopup.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxComboPopup.Create,0,0,1,bool,						bool wxComboPopup.Create ( wxWindow * parent)
+wxComboPopup.DestroyPopup,0,0,0,void,						void wxComboPopup.DestroyPopup ( )
+wxComboPopup.Dismiss,0,0,0,void,						void wxComboPopup.Dismiss ( )
+wxComboPopup.FindItem,0,0,2,bool,						bool wxComboPopup.FindItem (  wxString & item,     wxString * trueItem = NULL    )
+wxComboPopup.GetAdjustedSize,0,0,3,wxSize,						wxSize wxComboPopup.GetAdjustedSize ( int minWidth,     int prefHeight,     int maxHeight    )
+wxComboPopup.GetComboCtrl,0,1,0,wxComboCtrl,						wxComboCtrl* wxComboPopup.GetComboCtrl ( )
+wxComboPopup.GetControl,0,1,0,wxWindow,						wxWindow* wxComboPopup.GetControl ( )
+wxComboPopup.GetStringValue,0,0,0,wxString,						wxString wxComboPopup.GetStringValue ( )
+wxComboPopup.Init,0,0,0,void,						void wxComboPopup.Init ( )
+wxComboPopup.IsCreated,0,0,0,bool,						bool wxComboPopup.IsCreated ( )
+wxComboPopup.LazyCreate,0,0,0,bool,						bool wxComboPopup.LazyCreate ( )
+wxComboPopup.OnComboDoubleClick,0,0,0,void,						void wxComboPopup.OnComboDoubleClick ( )
+wxComboPopup.OnComboKeyEvent,0,0,1,void,						void wxComboPopup.OnComboKeyEvent ( wxKeyEvent & event)
+wxComboPopup.OnDismiss,0,0,0,void,						void wxComboPopup.OnDismiss ( )
+wxComboPopup.OnPopup,0,0,0,void,						void wxComboPopup.OnPopup ( )
+wxComboPopup.PaintComboControl,0,0,2,void,						void wxComboPopup.PaintComboControl ( wxDC & dc,      wxRect & rect    )
+wxComboPopup.SetStringValue,0,0,1,void,						void wxComboPopup.SetStringValue (  wxString & value)
+wxComboPopup.m_combo,0,1,-1,wxComboCtrl,						wxComboCtrl* wxComboPopup.m_combo
+[INHERITS]

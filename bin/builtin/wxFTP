@@ -1,0 +1,36 @@
+[CONSTS]
+[HEADER]
+<wx/protocol/ftp.h>
+[METHODS]
+wxFTP.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFTP.TransferMode,0,0,-1,enum,						enum wxFTP.TransferMode
+wxFTP.Abort,0,0,0,bool,						bool wxFTP.Abort ( )
+wxFTP.ChDir,0,0,1,bool,						bool wxFTP.ChDir (  wxString & dir)
+wxFTP.CheckCommand,0,0,2,bool,						bool wxFTP.CheckCommand (  wxString & command,     char ret    )
+wxFTP.Close,0,0,0,bool,						bool wxFTP.Close ( )
+wxFTP.Connect,0,0,1,bool,						bool wxFTP.Connect (  wxString & host)
+wxFTP.Connect,0,0,2,bool,						bool wxFTP.Connect (  wxString & host,     unsigned short port    )
+wxFTP.FileExists,0,0,1,bool,						bool wxFTP.FileExists (  wxString & filename)
+wxFTP.GetDirList,0,0,2,bool,						bool wxFTP.GetDirList ( wxArrayString & files,      wxString & wildcard = wxEmptyString    )
+wxFTP.GetFileSize,0,0,1,int,						int wxFTP.GetFileSize (  wxString & filename)
+wxFTP.GetFilesList,0,0,2,bool,						bool wxFTP.GetFilesList ( wxArrayString & files,      wxString & wildcard = wxEmptyString    )
+wxFTP.GetInputStream,0,1,1,wxInputStream,						wxInputStream* wxFTP.GetInputStream (  wxString & path)
+wxFTP.GetLastResult,0,0,0,wxString,						wxString&  wxFTP.GetLastResult ( )
+wxFTP.GetOutputStream,0,1,1,wxOutputStream,						wxOutputStream* wxFTP.GetOutputStream (  wxString & file)
+wxFTP.MkDir,0,0,1,bool,						bool wxFTP.MkDir (  wxString & dir)
+wxFTP.Pwd,0,0,0,wxString,						wxString wxFTP.Pwd ( )
+wxFTP.Rename,0,0,2,bool,						bool wxFTP.Rename (  wxString & src,      wxString & dst    )
+wxFTP.RmDir,0,0,1,bool,						bool wxFTP.RmDir (  wxString & dir)
+wxFTP.RmFile,0,0,1,bool,						bool wxFTP.RmFile (  wxString & path)
+wxFTP.SendCommand,0,0,1,char,						char wxFTP.SendCommand (  wxString & command)
+wxFTP.SetAscii,0,0,0,bool,						bool wxFTP.SetAscii ( )
+wxFTP.SetBinary,0,0,0,bool,						bool wxFTP.SetBinary ( )
+wxFTP.SetPassive,0,0,1,void,						void wxFTP.SetPassive ( bool pasv)
+wxFTP.SetPassword,0,0,1,void,						void wxFTP.SetPassword (  wxString & passwd)
+wxFTP.SetTransferMode,0,0,1,bool,						bool wxFTP.SetTransferMode ( TransferMode mode)
+wxFTP.SetUser,0,0,1,void,						void wxFTP.SetUser (  wxString & user)
+[INHERITS]
+wxProtocol
+wxSocketClient
+wxSocketBase
+wxObject

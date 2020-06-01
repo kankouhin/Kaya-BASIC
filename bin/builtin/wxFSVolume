@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/volume.h>
+[METHODS]
+wxFSVolume.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFSVolume.CancelSearch,1,0,0,void,						static void wxFSVolume.CancelSearch ( )
+wxFSVolume.Create,0,0,1,bool,						bool wxFSVolume.Create (  wxString & name)
+wxFSVolume.GetDisplayName,0,0,0,wxString,						wxString wxFSVolume.GetDisplayName ( )
+wxFSVolume.GetFlags,0,0,0,int,						int wxFSVolume.GetFlags ( )
+wxFSVolume.GetIcon,0,0,1,wxIcon,						wxIcon wxFSVolume.GetIcon ( wxFSIconType type)
+wxFSVolume.GetKind,0,0,0,wxFSVolumeKind,						wxFSVolumeKind wxFSVolume.GetKind ( )
+wxFSVolume.GetName,0,0,0,wxString,						wxString wxFSVolume.GetName ( )
+wxFSVolume.GetVolumes,1,0,2,wxArrayString,						static wxArrayString wxFSVolume.GetVolumes ( int flagsSet = wxFS_VOL_MOUNTED,     int flagsUnset = 0    )
+wxFSVolume.IsOk,0,0,0,bool,						bool wxFSVolume.IsOk ( )
+wxFSVolume.IsWritable,0,0,0,bool,						bool wxFSVolume.IsWritable ( )
+[INHERITS]

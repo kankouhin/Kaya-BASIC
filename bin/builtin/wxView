@@ -1,0 +1,28 @@
+[CONSTS]
+[HEADER]
+<wx/docview.h>
+[METHODS]
+wxView.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxView.Activate,0,0,1,void,						void wxView.Activate ( bool activate)
+wxView.Close,0,0,1,bool,						bool wxView.Close ( bool deleteWindow = true)
+wxView.GetDocument,0,1,0,wxDocument,						wxDocument* wxView.GetDocument ( )
+wxView.GetDocumentManager,0,1,0,wxDocManager,						wxDocManager* wxView.GetDocumentManager ( )
+wxView.GetFrame,0,1,0,wxWindow,						wxWindow* wxView.GetFrame ( )
+wxView.GetViewName,0,0,0,wxString,						wxString wxView.GetViewName ( )
+wxView.OnActivateView,0,0,3,void,						void wxView.OnActivateView ( bool activate,     wxView * activeView,     wxView * deactiveView    )
+wxView.OnChangeFilename,0,0,0,void,						void wxView.OnChangeFilename ( )
+wxView.OnClose,0,0,1,bool,						bool wxView.OnClose ( bool deleteWindow)
+wxView.OnClosingDocument,0,0,0,void,						void wxView.OnClosingDocument ( )
+wxView.OnCreate,0,0,2,bool,						bool wxView.OnCreate ( wxDocument * doc,     long flags    )
+wxView.OnCreatePrintout,0,1,0,wxPrintout,						wxPrintout* wxView.OnCreatePrintout ( )
+wxView.OnDraw,0,0,1,void,						void wxView.OnDraw ( wxDC * dc)
+wxView.OnUpdate,0,0,2,void,						void wxView.OnUpdate ( wxView * sender,     wxObject * hint = 0    )
+wxView.SetDocument,0,0,1,void,						void wxView.SetDocument ( wxDocument * doc)
+wxView.SetFrame,0,0,1,void,						void wxView.SetFrame ( wxWindow * frame)
+wxView.SetViewName,0,0,1,void,						void wxView.SetViewName (  wxString & name)
+wxView.m_viewDocument,0,1,-1,wxDocument,						wxDocument* wxView.m_viewDocument
+wxView.m_viewFrame,0,1,-1,wxFrame,						wxFrame* wxView.m_viewFrame
+wxView.m_viewTypeName,0,0,-1,wxString,						wxString wxView.m_viewTypeName
+[INHERITS]
+wxEvtHandler
+wxObject

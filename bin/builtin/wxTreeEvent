@@ -1,14 +1,16 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/treectrl.h>
-GetItem,0,0,0,wxTreeItemId,						wxTreeItemId GetItem ( )
-GetKeyCode,0,0,0,int,						int GetKeyCode ( )
-GetKeyEvent,0,0,0,wxKeyEvent,						wxKeyEvent&  GetKeyEvent ( )
-GetLabel,0,0,0,wxString,						wxString&  GetLabel ( )
-GetOldItem,0,0,0,wxTreeItemId,						wxTreeItemId GetOldItem ( )
-GetPoint,0,0,0,wxPoint,						wxPoint GetPoint ( )
-IsEditCancelled,0,0,0,bool,						bool IsEditCancelled ( )
-SetToolTip,0,0,1,void,						void SetToolTip (  wxString & tooltip)
+[METHODS]
+wxTreeEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTreeEvent.GetItem,0,0,0,wxTreeItemId,						wxTreeItemId wxTreeEvent.GetItem ( )
+wxTreeEvent.GetKeyCode,0,0,0,int,						int wxTreeEvent.GetKeyCode ( )
+wxTreeEvent.GetKeyEvent,0,0,0,wxKeyEvent,						wxKeyEvent&  wxTreeEvent.GetKeyEvent ( )
+wxTreeEvent.GetLabel,0,0,0,wxString,						wxString&  wxTreeEvent.GetLabel ( )
+wxTreeEvent.GetOldItem,0,0,0,wxTreeItemId,						wxTreeItemId wxTreeEvent.GetOldItem ( )
+wxTreeEvent.GetPoint,0,0,0,wxPoint,						wxPoint wxTreeEvent.GetPoint ( )
+wxTreeEvent.IsEditCancelled,0,0,0,bool,						bool wxTreeEvent.IsEditCancelled ( )
+wxTreeEvent.SetToolTip,0,0,1,void,						void wxTreeEvent.SetToolTip (  wxString & tooltip)
 [INHERITS]
 wxNotifyEvent
 wxCommandEvent

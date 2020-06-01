@@ -1,0 +1,21 @@
+[CONSTS]
+wxCHB_DEFAULT
+wxCHB_TOP
+wxCHB_LEFT
+wxCHB_RIGHT
+wxCHB_BOTTOM
+wxEVT_CHOICEBOOK_PAGE_CHANGED
+wxEVT_CHOICEBOOK_PAGE_CHANGING
+[HEADER]
+<wx/choicebk.h>
+[METHODS]
+wxChoicebook.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxChoicebook.Create,0,0,6,bool,						bool wxChoicebook.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxEmptyString    )
+wxChoicebook.GetChoiceCtrl,0,1,0,wxChoice,						wxChoice* wxChoicebook.GetChoiceCtrl ( )
+[INHERITS]
+wxBookCtrlBase
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxWithImages

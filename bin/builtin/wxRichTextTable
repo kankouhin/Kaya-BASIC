@@ -1,0 +1,47 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextTable.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextTable.AcceptsFocus,0,0,0,bool,						bool wxRichTextTable.AcceptsFocus ( )
+wxRichTextTable.AddColumns,0,0,3,bool,						bool wxRichTextTable.AddColumns ( int startCol,     int noCols = 1,      wxRichTextAttr & attr = wxRichTextAttr()    )
+wxRichTextTable.AddRows,0,0,3,bool,						bool wxRichTextTable.AddRows ( int startRow,     int noRows = 1,      wxRichTextAttr & attr = wxRichTextAttr()    )
+wxRichTextTable.CalculateRange,0,0,2,void,						void wxRichTextTable.CalculateRange ( long start,     long & end    )
+wxRichTextTable.CanEditProperties,0,0,0,bool,						bool wxRichTextTable.CanEditProperties ( )
+wxRichTextTable.ClearTable,0,0,0,void,						void wxRichTextTable.ClearTable ( )
+wxRichTextTable.Clone,0,1,0,wxRichTextObject,						wxRichTextObject* wxRichTextTable.Clone ( )
+wxRichTextTable.Copy,0,0,1,void,						void wxRichTextTable.Copy (  wxRichTextTable & obj)
+wxRichTextTable.CreateTable,0,0,2,bool,						bool wxRichTextTable.CreateTable ( int rows,     int cols    )
+wxRichTextTable.DeleteColumns,0,0,2,bool,						bool wxRichTextTable.DeleteColumns ( int startCol,     int noCols = 1    )
+wxRichTextTable.DeleteRange,0,0,1,bool,						bool wxRichTextTable.DeleteRange (  wxRichTextRange & range)
+wxRichTextTable.DeleteRows,0,0,2,bool,						bool wxRichTextTable.DeleteRows ( int startRow,     int noRows = 1    )
+wxRichTextTable.Draw,0,0,7,bool,						bool wxRichTextTable.Draw ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRichTextRange & range,      wxRichTextSelection & selection,      wxRect & rect,     int descent,     int style    )
+wxRichTextTable.EditProperties,0,0,2,bool,						bool wxRichTextTable.EditProperties ( wxWindow * parent,     wxRichTextBuffer * buffer    )
+wxRichTextTable.FindPosition,0,0,6,bool,						bool wxRichTextTable.FindPosition ( wxDC & dc,     wxRichTextDrawingContext & context,     long index,     wxPoint & pt,     int * height,     bool forceLineStart    )
+wxRichTextTable.GetCell,0,1,2,wxRichTextCell,						wxRichTextCell* wxRichTextTable.GetCell ( int row,     int col    )
+wxRichTextTable.GetCell,0,1,1,wxRichTextCell,						wxRichTextCell* wxRichTextTable.GetCell ( long pos)
+wxRichTextTable.GetCellRowColumnPosition,0,0,3,bool,						bool wxRichTextTable.GetCellRowColumnPosition ( long pos,     int & row,     int & col    )
+wxRichTextTable.GetCells,0,0,0,wxRichTextObjectPtrArrayArray,						wxRichTextObjectPtrArrayArray&  wxRichTextTable.GetCells ( )
+wxRichTextTable.GetCells,0,0,0,wxRichTextObjectPtrArrayArray,						wxRichTextObjectPtrArrayArray&  wxRichTextTable.GetCells ( )
+wxRichTextTable.GetColumnCount,0,0,0,int,						int wxRichTextTable.GetColumnCount ( )
+wxRichTextTable.GetFocusedCell,0,0,0,wxPosition,						wxPosition wxRichTextTable.GetFocusedCell ( )
+wxRichTextTable.GetPropertiesMenuLabel,0,0,0,wxString,						wxString wxRichTextTable.GetPropertiesMenuLabel ( )
+wxRichTextTable.GetRangeSize,0,0,9,bool,						bool wxRichTextTable.GetRangeSize (  wxRichTextRange & range,     wxSize & size,     int & descent,     wxDC & dc,     wxRichTextDrawingContext & context,     int flags,      wxPoint & position = wxPoint(0, 0),      wxSize & parentSize = wxDefaultSize,     wxArrayInt * partialExtents = NULL    )
+wxRichTextTable.GetRowCount,0,0,0,int,						int wxRichTextTable.GetRowCount ( )
+wxRichTextTable.GetSelection,0,0,2,wxRichTextSelection,						wxRichTextSelection wxRichTextTable.GetSelection ( long start,     long end    )
+wxRichTextTable.GetTextForRange,0,0,1,wxString,						wxString wxRichTextTable.GetTextForRange (  wxRichTextRange & range)
+wxRichTextTable.GetXMLNodeName,0,0,0,wxString,						wxString wxRichTextTable.GetXMLNodeName ( )
+wxRichTextTable.HandlesChildSelections,0,0,0,bool,						bool wxRichTextTable.HandlesChildSelections ( )
+wxRichTextTable.HitTest,0,0,7,int,						int wxRichTextTable.HitTest ( wxDC & dc,     wxRichTextDrawingContext & context,      wxPoint & pt,     long & textPosition,     wxRichTextObject ** obj,     wxRichTextObject ** contextObj,     int flags = 0    )
+wxRichTextTable.ImportFromXML,0,0,4,bool,						bool wxRichTextTable.ImportFromXML ( wxRichTextBuffer * buffer,     wxXmlNode * node,     wxRichTextXMLHandler * handler,     bool * recurse    )
+wxRichTextTable.Layout,0,0,5,bool,						bool wxRichTextTable.Layout ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRect & rect,      wxRect & parentRect,     int style    )
+wxRichTextTable.SetCellStyle,0,0,3,bool,						bool wxRichTextTable.SetCellStyle (  wxRichTextSelection & selection,      wxRichTextAttr & style,     int flags = wxRICHTEXT_SETSTYLE_WITH_UNDO    )
+wxRichTextTable.m_cells,0,0,-1,wxRichTextObjectPtrArrayArray,						wxRichTextObjectPtrArrayArray wxRichTextTable.m_cells
+wxRichTextTable.m_colCount,0,0,-1,int,						int wxRichTextTable.m_colCount
+wxRichTextTable.m_rowCount,0,0,-1,int,						int wxRichTextTable.m_rowCount
+[INHERITS]
+wxRichTextBox
+wxRichTextParagraphLayoutBox
+wxRichTextCompositeObject
+wxRichTextObject
+wxObject

@@ -62,23 +62,25 @@ wxART_CMN_DIALOG
 wxART_HELP_BROWSER
 wxART_MESSAGE_BOX
 wxART_OTHER
-[METHODS]
+[HEADER]
 <wx/artprov.h>
-CreateBitmap,0,0,wxBitmap,						wxBitmap CreateBitmap (  wxArtID & id,      wxArtClient & client,      wxSize & size    )
-CreateIconBundle,0,0,wxIconBundle,						wxIconBundle CreateIconBundle (  wxArtID & id,      wxArtClient & client    )
-Delete,1,0,bool,						static bool Delete ( wxArtProvider * provider)
-GetBitmap,1,0,wxBitmap,						static wxBitmap GetBitmap (  wxArtID & id,      wxArtClient & client = wxART_OTHER,      wxSize & size = wxDefaultSize    )
-GetIcon,1,0,wxIcon,						static wxIcon GetIcon (  wxArtID & id,      wxArtClient & client = wxART_OTHER,      wxSize & size = wxDefaultSize    )
-GetIconBundle,1,0,wxIconBundle,						static wxIconBundle GetIconBundle (  wxArtID & id,      wxArtClient & client = wxART_OTHER    )
-GetMessageBoxIcon,1,0,wxIcon,						static wxIcon GetMessageBoxIcon ( int flags)
-GetMessageBoxIconId,1,0,wxArtID,						static wxArtID GetMessageBoxIconId ( int flags)
-GetNativeSizeHint,1,0,wxSize,						static wxSize GetNativeSizeHint (  wxArtClient & client)
-GetSizeHint,1,0,wxSize,						static wxSize GetSizeHint (  wxArtClient & client,     bool platform_default = false    )
-HasNativeProvider,1,0,bool,						static bool HasNativeProvider ( )
-Insert,1,0,void,						static void Insert ( wxArtProvider * provider)
-Pop,1,0,bool,						static bool Pop ( )
-Push,1,0,void,						static void Push ( wxArtProvider * provider)
-PushBack,1,0,void,						static void PushBack ( wxArtProvider * provider)
-Remove,1,0,bool,						static bool Remove ( wxArtProvider * provider)
+[METHODS]
+wxArtProvider.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxArtProvider.CreateBitmap,0,0,3,wxBitmap,						wxBitmap wxArtProvider.CreateBitmap (  wxArtID & id,      wxArtClient & client,      wxSize & size    )
+wxArtProvider.CreateIconBundle,0,0,2,wxIconBundle,						wxIconBundle wxArtProvider.CreateIconBundle (  wxArtID & id,      wxArtClient & client    )
+wxArtProvider.Delete,1,0,1,bool,						static bool wxArtProvider.Delete ( wxArtProvider * provider)
+wxArtProvider.GetBitmap,1,0,3,wxBitmap,						static wxBitmap wxArtProvider.GetBitmap (  wxArtID & id,      wxArtClient & client = wxART_OTHER,      wxSize & size = wxDefaultSize    )
+wxArtProvider.GetIcon,1,0,3,wxIcon,						static wxIcon wxArtProvider.GetIcon (  wxArtID & id,      wxArtClient & client = wxART_OTHER,      wxSize & size = wxDefaultSize    )
+wxArtProvider.GetIconBundle,1,0,2,wxIconBundle,						static wxIconBundle wxArtProvider.GetIconBundle (  wxArtID & id,      wxArtClient & client = wxART_OTHER    )
+wxArtProvider.GetMessageBoxIcon,1,0,1,wxIcon,						static wxIcon wxArtProvider.GetMessageBoxIcon ( int flags)
+wxArtProvider.GetMessageBoxIconId,1,0,1,wxArtID,						static wxArtID wxArtProvider.GetMessageBoxIconId ( int flags)
+wxArtProvider.GetNativeSizeHint,1,0,1,wxSize,						static wxSize wxArtProvider.GetNativeSizeHint (  wxArtClient & client)
+wxArtProvider.GetSizeHint,1,0,2,wxSize,						static wxSize wxArtProvider.GetSizeHint (  wxArtClient & client,     bool platform_default = false    )
+wxArtProvider.HasNativeProvider,1,0,0,bool,						static bool wxArtProvider.HasNativeProvider ( )
+wxArtProvider.Insert,1,0,1,void,						static void wxArtProvider.Insert ( wxArtProvider * provider)
+wxArtProvider.Pop,1,0,0,bool,						static bool wxArtProvider.Pop ( )
+wxArtProvider.Push,1,0,1,void,						static void wxArtProvider.Push ( wxArtProvider * provider)
+wxArtProvider.PushBack,1,0,1,void,						static void wxArtProvider.PushBack ( wxArtProvider * provider)
+wxArtProvider.Remove,1,0,1,bool,						static bool wxArtProvider.Remove ( wxArtProvider * provider)
 [INHERITS]
 wxObject

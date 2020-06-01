@@ -1,0 +1,26 @@
+[CONSTS]
+[HEADER]
+<wx/gdicmn.h>
+[METHODS]
+wxRealPoint.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRealPoint.operator!=,0,0,2,bool,						bool wxRealPoint.operator!= (  wxRealPoint & p1,      wxRealPoint & p2    )
+wxRealPoint.operator*,0,0,2,wxSize,						wxSize wxRealPoint.operator* (  wxRealPoint & sz,     int factor    )
+wxRealPoint.operator*,0,0,2,wxSize,						wxSize wxRealPoint.operator* ( int factor,      wxSize & sz    )
+wxRealPoint.operator*=,0,0,1,wxSize,						wxSize&  wxRealPoint.operator*= ( int factor)
+wxRealPoint.operator+,0,0,2,wxRealPoint,						wxRealPoint wxRealPoint.operator+ (  wxRealPoint & p1,      wxRealPoint & p2    )
+wxRealPoint.operator+,0,0,2,wxRealPoint,						wxRealPoint wxRealPoint.operator+ (  wxRealPoint & pt,      wxSize & sz    )
+wxRealPoint.operator+,0,0,2,wxRealPoint,						wxRealPoint wxRealPoint.operator+ (  wxSize & sz,      wxRealPoint & pt    )
+wxRealPoint.operator+=,0,0,1,wxRealPoint,						wxRealPoint&  wxRealPoint.operator+= (  wxRealPoint & pt)
+wxRealPoint.operator+=,0,0,1,wxRealPoint,						wxRealPoint&  wxRealPoint.operator+= (  wxSize & sz)
+wxRealPoint.operator-,0,0,2,wxRealPoint,						wxRealPoint wxRealPoint.operator- (  wxRealPoint & p1,      wxRealPoint & p2    )
+wxRealPoint.operator-,0,0,2,wxRealPoint,						wxRealPoint wxRealPoint.operator- (  wxRealPoint & pt,      wxSize & sz    )
+wxRealPoint.operator-,0,0,2,wxRealPoint,						wxRealPoint wxRealPoint.operator- (  wxSize & sz,      wxRealPoint & pt    )
+wxRealPoint.operator-=,0,0,1,wxRealPoint,						wxRealPoint&  wxRealPoint.operator-= (  wxRealPoint & pt)
+wxRealPoint.operator-=,0,0,1,wxRealPoint,						wxRealPoint&  wxRealPoint.operator-= (  wxSize & sz)
+wxRealPoint.operator/,0,0,2,wxSize,						wxSize wxRealPoint.operator/ (  wxRealPoint & sz,     int factor    )
+wxRealPoint.operator/=,0,0,1,wxSize,						wxSize&  wxRealPoint.operator/= ( int factor)
+wxRealPoint.operator=,0,0,1,wxRealPoint,						wxRealPoint&  wxRealPoint.operator= (  wxRealPoint & pt)
+wxRealPoint.operator==,0,0,2,bool,						bool wxRealPoint.operator== (  wxRealPoint & p1,      wxRealPoint & p2    )
+wxRealPoint.x,0,0,-1,double,						double wxRealPoint.x
+wxRealPoint.y,0,0,-1,double,						double wxRealPoint.y
+[INHERITS]

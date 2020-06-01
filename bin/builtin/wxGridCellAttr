@@ -1,0 +1,44 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellAttr.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellAttr.wxAttrKind,0,0,-1,enum,						enum wxGridCellAttr.wxAttrKind
+wxGridCellAttr.Clone,0,1,0,wxGridCellAttr,						wxGridCellAttr* wxGridCellAttr.Clone ( )
+wxGridCellAttr.DecRef,0,0,0,void,						void wxGridCellAttr.DecRef ( )
+wxGridCellAttr.GetAlignment,0,0,2,void,						void wxGridCellAttr.GetAlignment ( int * hAlign,     int * vAlign    )
+wxGridCellAttr.GetBackgroundColour,0,0,0,wxColour,						wxColour&  wxGridCellAttr.GetBackgroundColour ( )
+wxGridCellAttr.GetEditor,0,1,3,wxGridCellEditor,						wxGridCellEditor* wxGridCellAttr.GetEditor (  wxGrid * grid,     int row,     int col    )
+wxGridCellAttr.GetFont,0,0,0,wxFont,						wxFont&  wxGridCellAttr.GetFont ( )
+wxGridCellAttr.GetKind,0,0,0,wxAttrKind,						wxAttrKind wxGridCellAttr.GetKind ( )
+wxGridCellAttr.GetNonDefaultAlignment,0,0,2,void,						void wxGridCellAttr.GetNonDefaultAlignment ( int * hAlign,     int * vAlign    )
+wxGridCellAttr.GetOverflow,0,0,0,bool,						bool wxGridCellAttr.GetOverflow ( )
+wxGridCellAttr.GetRenderer,0,1,3,wxGridCellRenderer,						wxGridCellRenderer* wxGridCellAttr.GetRenderer (  wxGrid * grid,     int row,     int col    )
+wxGridCellAttr.GetSize,0,0,2,void,						void wxGridCellAttr.GetSize ( int * num_rows,     int * num_cols    )
+wxGridCellAttr.GetTextColour,0,0,0,wxColour,						wxColour&  wxGridCellAttr.GetTextColour ( )
+wxGridCellAttr.HasAlignment,0,0,0,bool,						bool wxGridCellAttr.HasAlignment ( )
+wxGridCellAttr.HasBackgroundColour,0,0,0,bool,						bool wxGridCellAttr.HasBackgroundColour ( )
+wxGridCellAttr.HasEditor,0,0,0,bool,						bool wxGridCellAttr.HasEditor ( )
+wxGridCellAttr.HasFont,0,0,0,bool,						bool wxGridCellAttr.HasFont ( )
+wxGridCellAttr.HasOverflowMode,0,0,0,bool,						bool wxGridCellAttr.HasOverflowMode ( )
+wxGridCellAttr.HasReadWriteMode,0,0,0,bool,						bool wxGridCellAttr.HasReadWriteMode ( )
+wxGridCellAttr.HasRenderer,0,0,0,bool,						bool wxGridCellAttr.HasRenderer ( )
+wxGridCellAttr.HasSize,0,0,0,bool,						bool wxGridCellAttr.HasSize ( )
+wxGridCellAttr.HasTextColour,0,0,0,bool,						bool wxGridCellAttr.HasTextColour ( )
+wxGridCellAttr.IncRef,0,0,0,void,						void wxGridCellAttr.IncRef ( )
+wxGridCellAttr.IsReadOnly,0,0,0,bool,						bool wxGridCellAttr.IsReadOnly ( )
+wxGridCellAttr.MergeWith,0,0,1,void,						void wxGridCellAttr.MergeWith ( wxGridCellAttr * mergefrom)
+wxGridCellAttr.SetAlignment,0,0,2,void,						void wxGridCellAttr.SetAlignment ( int hAlign,     int vAlign    )
+wxGridCellAttr.SetBackgroundColour,0,0,1,void,						void wxGridCellAttr.SetBackgroundColour (  wxColour & colBack)
+wxGridCellAttr.SetDefAttr,0,0,1,void,						void wxGridCellAttr.SetDefAttr ( wxGridCellAttr * defAttr)
+wxGridCellAttr.SetEditor,0,0,1,void,						void wxGridCellAttr.SetEditor ( wxGridCellEditor * editor)
+wxGridCellAttr.SetFont,0,0,1,void,						void wxGridCellAttr.SetFont (  wxFont & font)
+wxGridCellAttr.SetKind,0,0,1,void,						void wxGridCellAttr.SetKind ( wxAttrKind kind)
+wxGridCellAttr.SetOverflow,0,0,1,void,						void wxGridCellAttr.SetOverflow ( bool allow = true)
+wxGridCellAttr.SetReadOnly,0,0,1,void,						void wxGridCellAttr.SetReadOnly ( bool isReadOnly = true)
+wxGridCellAttr.SetRenderer,0,0,1,void,						void wxGridCellAttr.SetRenderer ( wxGridCellRenderer * renderer)
+wxGridCellAttr.SetSize,0,0,2,void,						void wxGridCellAttr.SetSize ( int num_rows,     int num_cols    )
+wxGridCellAttr.SetTextColour,0,0,1,void,						void wxGridCellAttr.SetTextColour (  wxColour & colText)
+[INHERITS]
+wxClientDataContainer
+wxRefCounter

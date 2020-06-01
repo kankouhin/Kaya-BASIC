@@ -1,0 +1,30 @@
+[CONSTS]
+[HEADER]
+<wx/dde.h>
+[METHODS]
+wxDDEConnection.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDDEConnection.Advise,0,0,4,bool,						bool wxDDEConnection.Advise (  wxString & item,      void * data,     size_t size,     wxIPCFormat format = wxIPC_PRIVATE    )
+wxDDEConnection.Advise,0,0,2,bool,						bool wxDDEConnection.Advise (  wxString & item,      char * data    )
+wxDDEConnection.Advise,0,0,2,bool,						bool wxDDEConnection.Advise (  wxString & item,      wchar_t * data    )
+wxDDEConnection.Advise,0,0,2,bool,						bool wxDDEConnection.Advise (  wxString & item,      wxString data    )
+wxDDEConnection.Disconnect,0,0,0,bool,						bool wxDDEConnection.Disconnect ( )
+wxDDEConnection.Execute,0,0,3,bool,						bool wxDDEConnection.Execute (  void * data,     size_t size,     wxIPCFormat format = wxIPC_PRIVATE    )
+wxDDEConnection.Execute,0,0,1,bool,						bool wxDDEConnection.Execute (  char * data)
+wxDDEConnection.Execute,0,0,1,bool,						bool wxDDEConnection.Execute (  wchar_t * data)
+wxDDEConnection.Execute,0,0,1,bool,						bool wxDDEConnection.Execute (  wxString data)
+wxDDEConnection.OnAdvise,0,0,5,bool,						bool wxDDEConnection.OnAdvise (  wxString & topic,      wxString & item,      void * data,     size_t size,     wxIPCFormat format    )
+wxDDEConnection.OnDisconnect,0,0,0,bool,						bool wxDDEConnection.OnDisconnect ( )
+wxDDEConnection.OnExecute,0,0,4,bool,						bool wxDDEConnection.OnExecute (  wxString & topic,      void * data,     size_t size,     wxIPCFormat format    )
+wxDDEConnection.OnPoke,0,0,5,bool,						bool wxDDEConnection.OnPoke (  wxString & topic,      wxString & item,      void * data,     size_t size,     wxIPCFormat format    )
+wxDDEConnection.OnRequest,0,1,4,void,						void* wxDDEConnection.OnRequest (  wxString & topic,      wxString & item,     size_t * size,     wxIPCFormat format    )
+wxDDEConnection.OnStartAdvise,0,0,2,bool,						bool wxDDEConnection.OnStartAdvise (  wxString & topic,      wxString & item    )
+wxDDEConnection.OnStopAdvise,0,0,2,bool,						bool wxDDEConnection.OnStopAdvise (  wxString & topic,      wxString & item    )
+wxDDEConnection.Poke,0,0,4,bool,						bool wxDDEConnection.Poke (  wxString & item,      void * data,     size_t size,     wxIPCFormat format = wxIPC_PRIVATE    )
+wxDDEConnection.Poke,0,0,2,bool,						bool wxDDEConnection.Poke (  wxString & item,      char * data    )
+wxDDEConnection.Poke,0,0,2,bool,						bool wxDDEConnection.Poke (  wxString & item,      wchar_t * data    )
+wxDDEConnection.Poke,0,0,2,bool,						bool wxDDEConnection.Poke (  wxString & item,      wxString data    )
+wxDDEConnection.Request,0,1,3,void,						void* wxDDEConnection.Request (  wxString & item,     size_t * size,     wxIPCFormat format = wxIPC_TEXT    )
+wxDDEConnection.StartAdvise,0,0,1,bool,						bool wxDDEConnection.StartAdvise (  wxString & item)
+wxDDEConnection.StopAdvise,0,0,1,bool,						bool wxDDEConnection.StopAdvise (  wxString & item)
+[INHERITS]
+wxObject

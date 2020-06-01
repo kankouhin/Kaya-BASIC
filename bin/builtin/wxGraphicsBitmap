@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/graphics.h>
+[METHODS]
+wxGraphicsBitmap.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGraphicsBitmap.ConvertToImage,0,0,0,wxImage,						wxImage wxGraphicsBitmap.ConvertToImage ( )
+wxGraphicsBitmap.GetNativeBitmap,0,1,0,void,						void* wxGraphicsBitmap.GetNativeBitmap ( )
+[INHERITS]
+wxGraphicsObject
+wxObject

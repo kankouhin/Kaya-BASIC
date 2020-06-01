@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/tipdlg.h>
+[METHODS]
+wxTipProvider.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTipProvider.GetCurrentTip,0,0,0,size_t,						size_t wxTipProvider.GetCurrentTip ( )
+wxTipProvider.GetTip,0,0,0,wxString,						wxString wxTipProvider.GetTip ( )
+[INHERITS]

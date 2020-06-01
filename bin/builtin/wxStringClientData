@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/clntdata.h>
+[METHODS]
+wxStringClientData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStringClientData.GetData,0,0,0,wxString,						wxString&  wxStringClientData.GetData ( )
+wxStringClientData.SetData,0,0,1,void,						void wxStringClientData.SetData (  wxString & data)
+[INHERITS]
+wxClientData

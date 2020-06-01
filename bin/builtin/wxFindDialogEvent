@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/fdrepdlg.h>
+[METHODS]
+wxFindDialogEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFindDialogEvent.GetDialog,0,1,0,wxFindReplaceDialog,						wxFindReplaceDialog* wxFindDialogEvent.GetDialog ( )
+wxFindDialogEvent.GetFindString,0,0,0,wxString,						wxString wxFindDialogEvent.GetFindString ( )
+wxFindDialogEvent.GetFlags,0,0,0,int,						int wxFindDialogEvent.GetFlags ( )
+wxFindDialogEvent.GetReplaceString,0,0,0,wxString,						wxString&  wxFindDialogEvent.GetReplaceString ( )
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

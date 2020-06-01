@@ -1,0 +1,10 @@
+[CONSTS]
+wxEVT_PRESS_AND_TAP
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxPressAndTapEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+[INHERITS]
+wxGestureEvent
+wxEvent
+wxObject

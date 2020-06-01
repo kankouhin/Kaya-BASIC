@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/dataobj.h>
+[METHODS]
+wxURLDataObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxURLDataObject.GetURL,0,0,0,wxString,						wxString wxURLDataObject.GetURL ( )
+wxURLDataObject.SetURL,0,0,1,void,						void wxURLDataObject.SetURL (  wxString & url)
+[INHERITS]
+wxDataObject

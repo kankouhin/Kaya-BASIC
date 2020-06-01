@@ -1,11 +1,13 @@
 [CONSTS]
 wxLI_HORIZONTAL
 wxLI_VERTICAL
-[METHODS]
+[HEADER]
 <wx/statline.h>
-Create,0,0,6,bool,						bool Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxLI_HORIZONTAL,      wxString & name = wxStaticLineNameStr    )
-GetDefaultSize,1,0,0,int,						static int GetDefaultSize ( )
-IsVertical,0,0,0,bool,						bool IsVertical ( )
+[METHODS]
+wxStaticLine.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStaticLine.Create,0,0,6,bool,						bool wxStaticLine.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxLI_HORIZONTAL,      wxString & name = wxStaticLineNameStr    )
+wxStaticLine.GetDefaultSize,1,0,0,int,						static int wxStaticLine.GetDefaultSize ( )
+wxStaticLine.IsVertical,0,0,0,bool,						bool wxStaticLine.IsVertical ( )
 [INHERITS]
 wxControl
 wxWindow

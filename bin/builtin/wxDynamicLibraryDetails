@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dynlib.h>
+[METHODS]
+wxDynamicLibraryDetails.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDynamicLibraryDetails.GetAddress,0,0,2,bool,						bool wxDynamicLibraryDetails.GetAddress ( void * addr,     size_t * len    )
+wxDynamicLibraryDetails.GetName,0,0,0,wxString,						wxString wxDynamicLibraryDetails.GetName ( )
+wxDynamicLibraryDetails.GetPath,0,0,0,wxString,						wxString wxDynamicLibraryDetails.GetPath ( )
+wxDynamicLibraryDetails.GetVersion,0,0,0,wxString,						wxString wxDynamicLibraryDetails.GetVersion ( )
+[INHERITS]

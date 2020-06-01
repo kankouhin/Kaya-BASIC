@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/preferences.h>
+[METHODS]
+wxPreferencesPage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPreferencesPage.CreateWindow,0,1,1,wxWindow,						wxWindow* wxPreferencesPage.CreateWindow ( wxWindow * parent)
+wxPreferencesPage.GetLargeIcon,0,0,0,wxBitmap,						wxBitmap wxPreferencesPage.GetLargeIcon ( )
+wxPreferencesPage.GetName,0,0,0,wxString,						wxString wxPreferencesPage.GetName ( )
+[INHERITS]

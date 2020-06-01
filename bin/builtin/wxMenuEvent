@@ -1,10 +1,12 @@
 [CONSTS]
 wxEVT_MENU
-[METHODS]
+[HEADER]
 <wx/event.h>
-GetMenu,0,1,0,wxMenu,						wxMenu* GetMenu ( )
-GetMenuId,0,0,0,int,						int GetMenuId ( )
-IsPopup,0,0,0,bool,						bool IsPopup ( )
+[METHODS]
+wxMenuEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMenuEvent.GetMenu,0,1,0,wxMenu,						wxMenu* wxMenuEvent.GetMenu ( )
+wxMenuEvent.GetMenuId,0,0,0,int,						int wxMenuEvent.GetMenuId ( )
+wxMenuEvent.IsPopup,0,0,0,bool,						bool wxMenuEvent.IsPopup ( )
 [INHERITS]
 wxEvent
 wxObject

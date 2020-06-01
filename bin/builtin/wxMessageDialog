@@ -1,0 +1,49 @@
+[CONSTS]
+wxOK
+wxCANCEL
+wxYES_NO
+wxHELP
+wxNO_DEFAULT
+wxCANCEL_DEFAULT
+wxYES_DEFAULT
+wxOK_DEFAULT
+wxICON_NONE
+wxICON_ERROR
+wxICON_WARNING
+wxICON_QUESTION
+wxICON_INFORMATION
+wxICON_EXCLAMATION
+wxICON_HAND
+wxICON_AUTH_NEEDED
+wxSTAY_ON_TOP
+wxCENTRE
+[HEADER]
+<wx/msgdlg.h>
+[METHODS]
+wxMessageDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMessageDialog.GetCancelLabel,0,0,0,wxString,						wxString wxMessageDialog.GetCancelLabel ( )
+wxMessageDialog.GetCaption,0,0,0,wxString,						wxString wxMessageDialog.GetCaption ( )
+wxMessageDialog.GetEffectiveIcon,0,0,0,long,						long wxMessageDialog.GetEffectiveIcon ( )
+wxMessageDialog.GetExtendedMessage,0,0,0,wxString,						wxString wxMessageDialog.GetExtendedMessage ( )
+wxMessageDialog.GetHelpLabel,0,0,0,wxString,						wxString wxMessageDialog.GetHelpLabel ( )
+wxMessageDialog.GetMessage,0,0,0,wxString,						wxString wxMessageDialog.GetMessage ( )
+wxMessageDialog.GetMessageDialogStyle,0,0,0,long,						long wxMessageDialog.GetMessageDialogStyle ( )
+wxMessageDialog.GetNoLabel,0,0,0,wxString,						wxString wxMessageDialog.GetNoLabel ( )
+wxMessageDialog.GetOKLabel,0,0,0,wxString,						wxString wxMessageDialog.GetOKLabel ( )
+wxMessageDialog.GetYesLabel,0,0,0,wxString,						wxString wxMessageDialog.GetYesLabel ( )
+wxMessageDialog.HasCustomLabels,0,0,0,bool,						bool wxMessageDialog.HasCustomLabels ( )
+wxMessageDialog.SetExtendedMessage,0,0,1,void,						void wxMessageDialog.SetExtendedMessage (  wxString & extendedMessage)
+wxMessageDialog.SetHelpLabel,0,0,1,bool,						bool wxMessageDialog.SetHelpLabel (  ButtonLabel & help)
+wxMessageDialog.SetMessage,0,0,1,void,						void wxMessageDialog.SetMessage (  wxString & message)
+wxMessageDialog.SetOKCancelLabels,0,0,2,bool,						bool wxMessageDialog.SetOKCancelLabels (  ButtonLabel & ok,      ButtonLabel & cancel    )
+wxMessageDialog.SetOKLabel,0,0,1,bool,						bool wxMessageDialog.SetOKLabel (  ButtonLabel & ok)
+wxMessageDialog.SetYesNoCancelLabels,0,0,3,bool,						bool wxMessageDialog.SetYesNoCancelLabels (  ButtonLabel & yes,      ButtonLabel & no,      ButtonLabel & cancel    )
+wxMessageDialog.SetYesNoLabels,0,0,2,bool,						bool wxMessageDialog.SetYesNoLabels (  ButtonLabel & yes,      ButtonLabel & no    )
+wxMessageDialog.ShowModal,0,0,0,int,						int wxMessageDialog.ShowModal ( )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

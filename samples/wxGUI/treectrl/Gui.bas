@@ -4,7 +4,7 @@ Dim f As wxFrame Ptr
 Dim m_treeCtrl As wxTreeCtrl Ptr
 
 Sub OnItemSelectChanging(ByRef event As wxTreeEvent)
-	Dim item As wxTreeItemId = event.GetItem ' event.getitem also OK, because wxTreeEvent class defined.
+	Dim item As wxTreeItemId = event.GetItem ' NOT need () after sub name, and also Case-Insensitive.
 	f.SetTitle( "treectrl demo " + m_treeCtrl.GetItemText( item ) )
 End Sub
 
@@ -15,7 +15,6 @@ Sub Main
 	images.Add( wxArtProvider.GetIcon(wxART_FOLDER, wxART_OTHER, wxSize(16,16)) )
 	images.Add( wxArtProvider.GetIcon(wxART_FOLDER_OPEN, wxART_OTHER, wxSize(16,16)) )
 	images.Add( wxArtProvider.GetIcon(wxART_NORMAL_FILE, wxART_OTHER, wxSize(16,16)) )
-
 	images.Add( wxArtProvider.GetIcon(wxART_CUT, wxART_OTHER, wxSize(16,16)) )
 
 	m_treeCtrl = New wxTreeCtrl( f )

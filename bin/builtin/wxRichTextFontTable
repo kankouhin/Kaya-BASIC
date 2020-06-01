@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextFontTable.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextFontTable.Clear,0,0,0,void,						void wxRichTextFontTable.Clear ( )
+wxRichTextFontTable.FindFont,0,0,1,wxFont,						wxFont wxRichTextFontTable.FindFont (  wxRichTextAttr & fontSpec)
+wxRichTextFontTable.IsOk,0,0,0,bool,						bool wxRichTextFontTable.IsOk ( )
+wxRichTextFontTable.operator!=,0,0,1,bool,						bool wxRichTextFontTable.operator!= (  wxRichTextFontTable & table)
+wxRichTextFontTable.operator=,0,0,1,void,						void wxRichTextFontTable.operator= (  wxRichTextFontTable & table)
+wxRichTextFontTable.operator==,0,0,1,bool,						bool wxRichTextFontTable.operator== (  wxRichTextFontTable & table)
+wxRichTextFontTable.SetFontScale,0,0,1,void,						void wxRichTextFontTable.SetFontScale ( double fontScale)
+wxRichTextFontTable.m_fontScale,0,0,-1,double,						double wxRichTextFontTable.m_fontScale
+[INHERITS]
+wxObject

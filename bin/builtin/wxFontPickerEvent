@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/fontpicker.h>
+[METHODS]
+wxFontPickerEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFontPickerEvent.GetFont,0,0,0,wxFont,						wxFont wxFontPickerEvent.GetFont ( )
+wxFontPickerEvent.SetFont,0,0,1,void,						void wxFontPickerEvent.SetFont (  wxFont & f)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

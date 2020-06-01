@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/gbsizer.h>
+[METHODS]
+wxGBPosition.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGBPosition.GetCol,0,0,0,int,						int wxGBPosition.GetCol ( )
+wxGBPosition.GetRow,0,0,0,int,						int wxGBPosition.GetRow ( )
+wxGBPosition.operator!=,0,0,1,bool,						bool wxGBPosition.operator!= (  wxGBPosition & p)
+wxGBPosition.operator==,0,0,1,bool,						bool wxGBPosition.operator== (  wxGBPosition & p)
+wxGBPosition.SetCol,0,0,1,void,						void wxGBPosition.SetCol ( int col)
+wxGBPosition.SetRow,0,0,1,void,						void wxGBPosition.SetRow ( int row)
+[INHERITS]

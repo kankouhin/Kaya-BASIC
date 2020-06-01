@@ -1,0 +1,19 @@
+[CONSTS]
+wxEVT_QUERY_LAYOUT_INFO
+[HEADER]
+<wx/laywin.h>
+[METHODS]
+wxQueryLayoutInfoEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxQueryLayoutInfoEvent.GetAlignment,0,0,0,wxLayoutAlignment,						wxLayoutAlignment wxQueryLayoutInfoEvent.GetAlignment ( )
+wxQueryLayoutInfoEvent.GetFlags,0,0,0,int,						int wxQueryLayoutInfoEvent.GetFlags ( )
+wxQueryLayoutInfoEvent.GetOrientation,0,0,0,wxLayoutOrientation,						wxLayoutOrientation wxQueryLayoutInfoEvent.GetOrientation ( )
+wxQueryLayoutInfoEvent.GetRequestedLength,0,0,0,int,						int wxQueryLayoutInfoEvent.GetRequestedLength ( )
+wxQueryLayoutInfoEvent.GetSize,0,0,0,wxSize,						wxSize wxQueryLayoutInfoEvent.GetSize ( )
+wxQueryLayoutInfoEvent.SetAlignment,0,0,1,void,						void wxQueryLayoutInfoEvent.SetAlignment ( wxLayoutAlignment alignment)
+wxQueryLayoutInfoEvent.SetFlags,0,0,1,void,						void wxQueryLayoutInfoEvent.SetFlags ( int flags)
+wxQueryLayoutInfoEvent.SetOrientation,0,0,1,void,						void wxQueryLayoutInfoEvent.SetOrientation ( wxLayoutOrientation orientation)
+wxQueryLayoutInfoEvent.SetRequestedLength,0,0,1,void,						void wxQueryLayoutInfoEvent.SetRequestedLength ( int length)
+wxQueryLayoutInfoEvent.SetSize,0,0,1,void,						void wxQueryLayoutInfoEvent.SetSize (  wxSize & size)
+[INHERITS]
+wxEvent
+wxObject

@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxFileProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileProperty.DisplayEditorDialog,0,0,2,bool,						bool wxFileProperty.DisplayEditorDialog ( wxPropertyGrid * pg,     wxVariant & value    )
+wxFileProperty.DoGetValidator,0,1,0,wxValidator,						wxValidator* wxFileProperty.DoGetValidator ( )
+wxFileProperty.DoSetAttribute,0,0,2,bool,						bool wxFileProperty.DoSetAttribute (  wxString & name,     wxVariant & value    )
+wxFileProperty.GetClassValidator,1,1,0,wxValidator,						static wxValidator* wxFileProperty.GetClassValidator ( )
+wxFileProperty.GetFileName,0,0,0,wxFileName,						wxFileName wxFileProperty.GetFileName ( )
+wxFileProperty.OnSetValue,0,0,0,void,						void wxFileProperty.OnSetValue ( )
+wxFileProperty.StringToValue,0,0,3,bool,						bool wxFileProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags = 0    )
+wxFileProperty.ValueToString,0,0,2,wxString,						wxString wxFileProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+wxFileProperty.m_basePath,0,0,-1,wxString,						wxString wxFileProperty.m_basePath
+wxFileProperty.m_indFilter,0,0,-1,int,						int wxFileProperty.m_indFilter
+wxFileProperty.m_initialPath,0,0,-1,wxString,						wxString wxFileProperty.m_initialPath
+wxFileProperty.m_wildcard,0,0,-1,wxString,						wxString wxFileProperty.m_wildcard
+[INHERITS]
+wxEditorDialogProperty
+wxPGProperty
+wxObject

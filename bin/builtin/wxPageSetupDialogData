@@ -1,0 +1,39 @@
+[CONSTS]
+[HEADER]
+<wx/cmndata.h>
+[METHODS]
+wxPageSetupDialogData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPageSetupDialogData.EnableHelp,0,0,1,void,						void wxPageSetupDialogData.EnableHelp ( bool flag)
+wxPageSetupDialogData.EnableMargins,0,0,1,void,						void wxPageSetupDialogData.EnableMargins ( bool flag)
+wxPageSetupDialogData.EnableOrientation,0,0,1,void,						void wxPageSetupDialogData.EnableOrientation ( bool flag)
+wxPageSetupDialogData.EnablePaper,0,0,1,void,						void wxPageSetupDialogData.EnablePaper ( bool flag)
+wxPageSetupDialogData.EnablePrinter,0,0,1,void,						void wxPageSetupDialogData.EnablePrinter ( bool flag)
+wxPageSetupDialogData.GetDefaultInfo,0,0,0,bool,						bool wxPageSetupDialogData.GetDefaultInfo ( )
+wxPageSetupDialogData.GetDefaultMinMargins,0,0,0,bool,						bool wxPageSetupDialogData.GetDefaultMinMargins ( )
+wxPageSetupDialogData.GetEnableHelp,0,0,0,bool,						bool wxPageSetupDialogData.GetEnableHelp ( )
+wxPageSetupDialogData.GetEnableMargins,0,0,0,bool,						bool wxPageSetupDialogData.GetEnableMargins ( )
+wxPageSetupDialogData.GetEnableOrientation,0,0,0,bool,						bool wxPageSetupDialogData.GetEnableOrientation ( )
+wxPageSetupDialogData.GetEnablePaper,0,0,0,bool,						bool wxPageSetupDialogData.GetEnablePaper ( )
+wxPageSetupDialogData.GetEnablePrinter,0,0,0,bool,						bool wxPageSetupDialogData.GetEnablePrinter ( )
+wxPageSetupDialogData.GetMarginBottomRight,0,0,0,wxPoint,						wxPoint wxPageSetupDialogData.GetMarginBottomRight ( )
+wxPageSetupDialogData.GetMarginTopLeft,0,0,0,wxPoint,						wxPoint wxPageSetupDialogData.GetMarginTopLeft ( )
+wxPageSetupDialogData.GetMinMarginBottomRight,0,0,0,wxPoint,						wxPoint wxPageSetupDialogData.GetMinMarginBottomRight ( )
+wxPageSetupDialogData.GetMinMarginTopLeft,0,0,0,wxPoint,						wxPoint wxPageSetupDialogData.GetMinMarginTopLeft ( )
+wxPageSetupDialogData.GetPaperId,0,0,0,wxPaperSize,						wxPaperSize wxPageSetupDialogData.GetPaperId ( )
+wxPageSetupDialogData.GetPaperSize,0,0,0,wxSize,						wxSize wxPageSetupDialogData.GetPaperSize ( )
+wxPageSetupDialogData.GetPrintData,0,0,0,wxPrintData,						wxPrintData&  wxPageSetupDialogData.GetPrintData ( )
+wxPageSetupDialogData.GetPrintData,0,0,0,wxPrintData,						wxPrintData&  wxPageSetupDialogData.GetPrintData ( )
+wxPageSetupDialogData.IsOk,0,0,0,bool,						bool wxPageSetupDialogData.IsOk ( )
+wxPageSetupDialogData.operator=,0,0,1,wxPageSetupDialogData,						wxPageSetupDialogData&  wxPageSetupDialogData.operator= (  wxPrintData & data)
+wxPageSetupDialogData.operator=,0,0,1,wxPageSetupDialogData,						wxPageSetupDialogData&  wxPageSetupDialogData.operator= (  wxPageSetupDialogData & data)
+wxPageSetupDialogData.SetDefaultInfo,0,0,1,void,						void wxPageSetupDialogData.SetDefaultInfo ( bool flag)
+wxPageSetupDialogData.SetDefaultMinMargins,0,0,1,void,						void wxPageSetupDialogData.SetDefaultMinMargins ( bool flag)
+wxPageSetupDialogData.SetMarginBottomRight,0,0,1,void,						void wxPageSetupDialogData.SetMarginBottomRight (  wxPoint & pt)
+wxPageSetupDialogData.SetMarginTopLeft,0,0,1,void,						void wxPageSetupDialogData.SetMarginTopLeft (  wxPoint & pt)
+wxPageSetupDialogData.SetMinMarginBottomRight,0,0,1,void,						void wxPageSetupDialogData.SetMinMarginBottomRight (  wxPoint & pt)
+wxPageSetupDialogData.SetMinMarginTopLeft,0,0,1,void,						void wxPageSetupDialogData.SetMinMarginTopLeft (  wxPoint & pt)
+wxPageSetupDialogData.SetPaperId,0,0,1,void,						void wxPageSetupDialogData.SetPaperId ( wxPaperSize id)
+wxPageSetupDialogData.SetPaperSize,0,0,1,void,						void wxPageSetupDialogData.SetPaperSize (  wxSize & size)
+wxPageSetupDialogData.SetPrintData,0,0,1,void,						void wxPageSetupDialogData.SetPrintData (  wxPrintData & printData)
+[INHERITS]
+wxObject

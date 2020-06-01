@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/memory.h>
+[METHODS]
+wxDebugContext.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDebugContext.Check,1,0,1,int,						static int wxDebugContext.Check ( bool checkAll = false)
+wxDebugContext.Dump,1,0,0,bool,						static bool wxDebugContext.Dump ( )
+wxDebugContext.GetCheckPrevious,1,0,0,bool,						static bool wxDebugContext.GetCheckPrevious ( )
+wxDebugContext.GetDebugMode,1,0,0,bool,						static bool wxDebugContext.GetDebugMode ( )
+wxDebugContext.GetLevel,1,0,0,int,						static int wxDebugContext.GetLevel ( )
+wxDebugContext.PrintClasses,1,0,0,bool,						static bool wxDebugContext.PrintClasses ( )
+wxDebugContext.PrintStatistics,1,0,1,bool,						static bool wxDebugContext.PrintStatistics ( bool detailed = true)
+wxDebugContext.SetCheckpoint,1,0,1,void,						static void wxDebugContext.SetCheckpoint ( bool all = false)
+wxDebugContext.SetCheckPrevious,1,0,1,void,						static void wxDebugContext.SetCheckPrevious ( bool check)
+wxDebugContext.SetDebugMode,1,0,1,void,						static void wxDebugContext.SetDebugMode ( bool debug)
+wxDebugContext.SetLevel,1,0,1,void,						static void wxDebugContext.SetLevel ( int level)
+wxDebugContext.SetShutdownNotifyFunction,1,0,1,void,						static void wxDebugContext.SetShutdownNotifyFunction ( wxShutdownNotifyFunction func)
+[INHERITS]

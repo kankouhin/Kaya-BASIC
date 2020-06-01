@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/strconv.h>
+[METHODS]
+wxCSConv.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCSConv.IsOk,0,0,0,bool,						bool wxCSConv.IsOk ( )
+[INHERITS]
+wxMBConv

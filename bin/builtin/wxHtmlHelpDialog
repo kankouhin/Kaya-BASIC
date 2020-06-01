@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/html/helpdlg.h>
+[METHODS]
+wxHtmlHelpDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlHelpDialog.AddToolbarButtons,0,0,2,void,						void wxHtmlHelpDialog.AddToolbarButtons ( wxToolBar * toolBar,     int style    )
+wxHtmlHelpDialog.Create,0,0,4,bool,						bool wxHtmlHelpDialog.Create ( wxWindow * parent,     wxWindowID id,      wxString & title = wxEmptyString,     int style = wxHF_DEFAULT_STYLE    )
+wxHtmlHelpDialog.GetController,0,1,0,wxHtmlHelpController,						wxHtmlHelpController* wxHtmlHelpDialog.GetController ( )
+wxHtmlHelpDialog.SetController,0,0,1,void,						void wxHtmlHelpDialog.SetController ( wxHtmlHelpController * controller)
+wxHtmlHelpDialog.SetTitleFormat,0,0,1,void,						void wxHtmlHelpDialog.SetTitleFormat (  wxString & format)
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

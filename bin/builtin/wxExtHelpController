@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/generic/helpext.h>
+[METHODS]
+wxExtHelpController.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxExtHelpController.DisplayBlock,0,0,1,bool,						bool wxExtHelpController.DisplayBlock ( long blockNo)
+wxExtHelpController.DisplayContents,0,0,0,bool,						bool wxExtHelpController.DisplayContents ( )
+wxExtHelpController.DisplayHelp,0,0,1,bool,						bool wxExtHelpController.DisplayHelp (  wxString & relativeURL)
+wxExtHelpController.DisplaySection,0,0,1,bool,						bool wxExtHelpController.DisplaySection ( int sectionNo)
+wxExtHelpController.DisplaySection,0,0,1,bool,						bool wxExtHelpController.DisplaySection (  wxString & section)
+wxExtHelpController.GetFrameParameters,0,1,3,wxFrame,						wxFrame* wxExtHelpController.GetFrameParameters ( wxSize * size = NULL,     wxPoint * pos = NULL,     bool * newFrameEachTime = NULL    )
+wxExtHelpController.Initialize,0,0,1,bool,						bool wxExtHelpController.Initialize (  wxString & dir)
+wxExtHelpController.KeywordSearch,0,0,2,bool,						bool wxExtHelpController.KeywordSearch (  wxString & k,     wxHelpSearchMode mode = wxHELP_SEARCH_ALL    )
+wxExtHelpController.LoadFile,0,0,1,bool,						bool wxExtHelpController.LoadFile (  wxString & file = wxEmptyString)
+wxExtHelpController.OnQuit,0,0,0,void,						void wxExtHelpController.OnQuit ( )
+wxExtHelpController.Quit,0,0,0,bool,						bool wxExtHelpController.Quit ( )
+wxExtHelpController.SetFrameParameters,0,0,4,void,						void wxExtHelpController.SetFrameParameters (  wxString & titleFormat,      wxSize & size,      wxPoint & pos = wxDefaultPosition,     bool newFrameEachTime = false    )
+wxExtHelpController.SetViewer,0,0,2,void,						void wxExtHelpController.SetViewer (  wxString & viewer = wxEmptyString,     long flags = wxHELP_NETSCAPE    )
+[INHERITS]
+wxHelpControllerBase
+wxObject

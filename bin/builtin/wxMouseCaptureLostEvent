@@ -1,0 +1,9 @@
+[CONSTS]
+wxEVT_MOUSE_CAPTURE_LOST
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxMouseCaptureLostEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+[INHERITS]
+wxEvent
+wxObject

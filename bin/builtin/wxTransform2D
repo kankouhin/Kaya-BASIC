@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/geometry.h>
+[METHODS]
+wxTransform2D.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTransform2D.InverseTransform,0,0,1,void,						void wxTransform2D.InverseTransform ( wxPoint2DInt * pt)
+wxTransform2D.InverseTransform,0,0,1,void,						void wxTransform2D.InverseTransform ( wxRect2DInt * r)
+wxTransform2D.InverseTransform,0,0,1,wxPoint2DInt,						wxPoint2DInt wxTransform2D.InverseTransform (  wxPoint2DInt & pt)
+wxTransform2D.InverseTransform,0,0,1,wxRect2DInt,						wxRect2DInt wxTransform2D.InverseTransform (  wxRect2DInt & r)
+wxTransform2D.Transform,0,0,1,void,						void wxTransform2D.Transform ( wxPoint2DInt * pt)
+wxTransform2D.Transform,0,0,1,void,						void wxTransform2D.Transform ( wxRect2DInt * r)
+wxTransform2D.Transform,0,0,1,wxPoint2DInt,						wxPoint2DInt wxTransform2D.Transform (  wxPoint2DInt & pt)
+wxTransform2D.Transform,0,0,1,wxRect2DInt,						wxRect2DInt wxTransform2D.Transform (  wxRect2DInt & r)
+[INHERITS]

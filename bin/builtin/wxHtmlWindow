@@ -1,0 +1,47 @@
+[CONSTS]
+wxHW_SCROLLBAR_NEVER
+wxHW_SCROLLBAR_AUTO
+wxHW_NO_SELECTION
+[HEADER]
+<wx/html/htmlwin.h>
+[METHODS]
+wxHtmlWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlWindow.AddFilter,1,0,1,void,						static void wxHtmlWindow.AddFilter ( wxHtmlFilter * filter)
+wxHtmlWindow.AppendToPage,0,0,1,bool,						bool wxHtmlWindow.AppendToPage (  wxString & source)
+wxHtmlWindow.GetDefaultHTMLCursor,1,0,1,wxCursor,						static wxCursor wxHtmlWindow.GetDefaultHTMLCursor ( HTMLCursor type)
+wxHtmlWindow.GetInternalRepresentation,0,1,0,wxHtmlContainerCell,						wxHtmlContainerCell* wxHtmlWindow.GetInternalRepresentation ( )
+wxHtmlWindow.GetOpenedAnchor,0,0,0,wxString,						wxString wxHtmlWindow.GetOpenedAnchor ( )
+wxHtmlWindow.GetOpenedPage,0,0,0,wxString,						wxString wxHtmlWindow.GetOpenedPage ( )
+wxHtmlWindow.GetOpenedPageTitle,0,0,0,wxString,						wxString wxHtmlWindow.GetOpenedPageTitle ( )
+wxHtmlWindow.GetParser,0,1,0,wxHtmlWinParser,						wxHtmlWinParser* wxHtmlWindow.GetParser ( )
+wxHtmlWindow.GetRelatedFrame,0,1,0,wxFrame,						wxFrame* wxHtmlWindow.GetRelatedFrame ( )
+wxHtmlWindow.HistoryBack,0,0,0,bool,						bool wxHtmlWindow.HistoryBack ( )
+wxHtmlWindow.HistoryCanBack,0,0,0,bool,						bool wxHtmlWindow.HistoryCanBack ( )
+wxHtmlWindow.HistoryCanForward,0,0,0,bool,						bool wxHtmlWindow.HistoryCanForward ( )
+wxHtmlWindow.HistoryClear,0,0,0,void,						void wxHtmlWindow.HistoryClear ( )
+wxHtmlWindow.HistoryForward,0,0,0,bool,						bool wxHtmlWindow.HistoryForward ( )
+wxHtmlWindow.LoadFile,0,0,1,bool,						bool wxHtmlWindow.LoadFile (  wxFileName & filename)
+wxHtmlWindow.LoadPage,0,0,1,bool,						bool wxHtmlWindow.LoadPage (  wxString & location)
+wxHtmlWindow.OnCellClicked,0,0,4,bool,						bool wxHtmlWindow.OnCellClicked ( wxHtmlCell * cell,     wxCoord x,     wxCoord y,      wxMouseEvent & event    )
+wxHtmlWindow.OnCellMouseHover,0,0,3,void,						void wxHtmlWindow.OnCellMouseHover ( wxHtmlCell * cell,     wxCoord x,     wxCoord y    )
+wxHtmlWindow.OnLinkClicked,0,0,1,void,						void wxHtmlWindow.OnLinkClicked (  wxHtmlLinkInfo & link)
+wxHtmlWindow.OnOpeningURL,0,0,3,wxHtmlOpeningStatus,						wxHtmlOpeningStatus wxHtmlWindow.OnOpeningURL ( wxHtmlURLType type,      wxString & url,     wxString * redirect    )
+wxHtmlWindow.OnSetTitle,0,0,1,void,						void wxHtmlWindow.OnSetTitle (  wxString & title)
+wxHtmlWindow.ReadCustomization,0,0,2,void,						void wxHtmlWindow.ReadCustomization ( wxConfigBase * cfg,     wxString path = wxEmptyString    )
+wxHtmlWindow.SelectAll,0,0,0,void,						void wxHtmlWindow.SelectAll ( )
+wxHtmlWindow.SelectionToText,0,0,0,wxString,						wxString wxHtmlWindow.SelectionToText ( )
+wxHtmlWindow.SelectLine,0,0,1,void,						void wxHtmlWindow.SelectLine (  wxPoint & pos)
+wxHtmlWindow.SelectWord,0,0,1,void,						void wxHtmlWindow.SelectWord (  wxPoint & pos)
+wxHtmlWindow.SetBorders,0,0,1,void,						void wxHtmlWindow.SetBorders ( int b)
+wxHtmlWindow.SetDefaultHTMLCursor,1,0,2,void,						static void wxHtmlWindow.SetDefaultHTMLCursor ( HTMLCursor type,      wxCursor & cursor    )
+wxHtmlWindow.SetFonts,0,0,3,void,						void wxHtmlWindow.SetFonts (  wxString & normal_face,      wxString & fixed_face,      int * sizes = NULL    )
+wxHtmlWindow.SetPage,0,0,1,bool,						bool wxHtmlWindow.SetPage (  wxString & source)
+wxHtmlWindow.SetRelatedFrame,0,0,2,void,						void wxHtmlWindow.SetRelatedFrame ( wxFrame * frame,      wxString & format    )
+wxHtmlWindow.SetRelatedStatusBar,0,0,1,void,						void wxHtmlWindow.SetRelatedStatusBar ( int index)
+wxHtmlWindow.SetRelatedStatusBar,0,0,2,void,						void wxHtmlWindow.SetRelatedStatusBar ( wxStatusBar * statusbar,     int index = 0    )
+wxHtmlWindow.SetStandardFonts,0,0,3,void,						void wxHtmlWindow.SetStandardFonts ( int size = -1,      wxString & normal_face = wxEmptyString,      wxString & fixed_face = wxEmptyString    )
+wxHtmlWindow.ToText,0,0,0,wxString,						wxString wxHtmlWindow.ToText ( )
+wxHtmlWindow.WriteCustomization,0,0,2,void,						void wxHtmlWindow.WriteCustomization ( wxConfigBase * cfg,     wxString path = wxEmptyString    )
+[INHERITS]
+wxScrolled< T <
+wxHtmlWindowInterface

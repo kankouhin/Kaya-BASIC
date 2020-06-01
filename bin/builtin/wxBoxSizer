@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/sizer.h>
+[METHODS]
+wxBoxSizer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBoxSizer.AddSpacer,0,1,1,wxSizerItem,						wxSizerItem* wxBoxSizer.AddSpacer ( int size)
+wxBoxSizer.CalcMin,0,0,0,wxSize,						wxSize wxBoxSizer.CalcMin ( )
+wxBoxSizer.GetOrientation,0,0,0,int,						int wxBoxSizer.GetOrientation ( )
+wxBoxSizer.RepositionChildren,0,0,1,void,						void wxBoxSizer.RepositionChildren (  wxSize & minSize)
+wxBoxSizer.SetOrientation,0,0,1,void,						void wxBoxSizer.SetOrientation ( int orient)
+[INHERITS]
+wxSizer
+wxObject

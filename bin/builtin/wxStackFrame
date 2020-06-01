@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/stackwalk.h>
+[METHODS]
+wxStackFrame.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStackFrame.GetAddress,0,1,0,void,						void* wxStackFrame.GetAddress ( )
+wxStackFrame.GetFileName,0,0,0,wxString,						wxString wxStackFrame.GetFileName ( )
+wxStackFrame.GetLevel,0,0,0,size_t,						size_t wxStackFrame.GetLevel ( )
+wxStackFrame.GetLine,0,0,0,size_t,						size_t wxStackFrame.GetLine ( )
+wxStackFrame.GetModule,0,0,0,wxString,						wxString wxStackFrame.GetModule ( )
+wxStackFrame.GetName,0,0,0,wxString,						wxString wxStackFrame.GetName ( )
+wxStackFrame.GetOffset,0,0,0,size_t,						size_t wxStackFrame.GetOffset ( )
+wxStackFrame.GetParam,0,0,4,bool,						bool wxStackFrame.GetParam ( size_t n,     wxString * type,     wxString * name,     wxString * value    )
+wxStackFrame.GetParamCount,0,0,0,size_t,						size_t wxStackFrame.GetParamCount ( )
+wxStackFrame.HasSourceLocation,0,0,0,bool,						bool wxStackFrame.HasSourceLocation ( )
+[INHERITS]

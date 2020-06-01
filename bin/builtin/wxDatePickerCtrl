@@ -1,0 +1,20 @@
+[CONSTS]
+wxDP_SPIN
+wxDP_DROPDOWN
+wxDP_DEFAULT
+wxDP_ALLOWNONE
+wxDP_SHOWCENTURY
+[HEADER]
+<wx/datectrl.h>
+[METHODS]
+wxDatePickerCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDatePickerCtrl.Create,0,0,8,bool,						bool wxDatePickerCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxDateTime & dt = wxDefaultDateTime,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxDP_DEFAULT|wxDP_SHOWCENTURY,      wxValidator & validator = wxDefaultValidator,      wxString & name = &quot;datectrl&quot;    )
+wxDatePickerCtrl.GetRange,0,0,2,bool,						bool wxDatePickerCtrl.GetRange ( wxDateTime * dt1,     wxDateTime * dt2    )
+wxDatePickerCtrl.GetValue,0,0,0,wxDateTime,						wxDateTime wxDatePickerCtrl.GetValue ( )
+wxDatePickerCtrl.SetRange,0,0,2,void,						void wxDatePickerCtrl.SetRange (  wxDateTime & dt1,      wxDateTime & dt2    )
+wxDatePickerCtrl.SetValue,0,0,1,void,						void wxDatePickerCtrl.SetValue (  wxDateTime & dt)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

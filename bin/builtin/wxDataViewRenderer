@@ -1,0 +1,29 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewRenderer.CancelEditing,0,0,0,void,						void wxDataViewRenderer.CancelEditing ( )
+wxDataViewRenderer.CreateEditorCtrl,0,1,3,wxWindow,						wxWindow* wxDataViewRenderer.CreateEditorCtrl ( wxWindow * parent,     wxRect labelRect,      wxVariant & value    )
+wxDataViewRenderer.DisableEllipsize,0,0,0,void,						void wxDataViewRenderer.DisableEllipsize ( )
+wxDataViewRenderer.EnableEllipsize,0,0,1,void,						void wxDataViewRenderer.EnableEllipsize ( wxEllipsizeMode mode = wxELLIPSIZE_MIDDLE)
+wxDataViewRenderer.FinishEditing,0,0,0,bool,						bool wxDataViewRenderer.FinishEditing ( )
+wxDataViewRenderer.GetAccessibleDescription,0,0,0,wxString,						wxString wxDataViewRenderer.GetAccessibleDescription ( )
+wxDataViewRenderer.GetAlignment,0,0,0,int,						int wxDataViewRenderer.GetAlignment ( )
+wxDataViewRenderer.GetEditorCtrl,0,1,0,wxWindow,						wxWindow* wxDataViewRenderer.GetEditorCtrl ( )
+wxDataViewRenderer.GetEllipsizeMode,0,0,0,wxEllipsizeMode,						wxEllipsizeMode wxDataViewRenderer.GetEllipsizeMode ( )
+wxDataViewRenderer.GetMode,0,0,0,wxDataViewCellMode,						wxDataViewCellMode wxDataViewRenderer.GetMode ( )
+wxDataViewRenderer.GetOwner,0,1,0,wxDataViewColumn,						wxDataViewColumn* wxDataViewRenderer.GetOwner ( )
+wxDataViewRenderer.GetValue,0,0,1,bool,						bool wxDataViewRenderer.GetValue ( wxVariant & value)
+wxDataViewRenderer.GetValueFromEditorCtrl,0,0,2,bool,						bool wxDataViewRenderer.GetValueFromEditorCtrl ( wxWindow * editor,     wxVariant & value    )
+wxDataViewRenderer.GetVariantType,0,0,0,wxString,						wxString wxDataViewRenderer.GetVariantType ( )
+wxDataViewRenderer.GetView,0,1,0,wxDataViewCtrl,						wxDataViewCtrl* wxDataViewRenderer.GetView ( )
+wxDataViewRenderer.HasEditorCtrl,0,0,0,bool,						bool wxDataViewRenderer.HasEditorCtrl ( )
+wxDataViewRenderer.SetAlignment,0,0,1,void,						void wxDataViewRenderer.SetAlignment ( int align)
+wxDataViewRenderer.SetOwner,0,0,1,void,						void wxDataViewRenderer.SetOwner ( wxDataViewColumn * owner)
+wxDataViewRenderer.SetValue,0,0,1,bool,						bool wxDataViewRenderer.SetValue (  wxVariant & value)
+wxDataViewRenderer.SetValueAdjuster,0,0,1,void,						void wxDataViewRenderer.SetValueAdjuster ( wxDataViewValueAdjuster * transformer)
+wxDataViewRenderer.StartEditing,0,0,2,bool,						bool wxDataViewRenderer.StartEditing (  wxDataViewItem & item,     wxRect labelRect    )
+wxDataViewRenderer.Validate,0,0,1,bool,						bool wxDataViewRenderer.Validate ( wxVariant & value)
+[INHERITS]
+wxObject

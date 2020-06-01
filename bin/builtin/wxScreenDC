@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/dcscreen.h>
+[METHODS]
+wxScreenDC.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxScreenDC.EndDrawingOnTop,1,0,0,bool,						static bool wxScreenDC.EndDrawingOnTop ( )
+wxScreenDC.StartDrawingOnTop,1,0,1,bool,						static bool wxScreenDC.StartDrawingOnTop ( wxWindow * window)
+wxScreenDC.StartDrawingOnTop,1,0,1,bool,						static bool wxScreenDC.StartDrawingOnTop ( wxRect * rect = NULL)
+[INHERITS]
+wxDC
+wxObject

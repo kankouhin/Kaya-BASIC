@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/fdrepdlg.h>
+[METHODS]
+wxFindReplaceData.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFindReplaceData.GetFindString,0,0,0,wxString,						wxString&  wxFindReplaceData.GetFindString ( )
+wxFindReplaceData.GetFlags,0,0,0,int,						int wxFindReplaceData.GetFlags ( )
+wxFindReplaceData.GetReplaceString,0,0,0,wxString,						wxString&  wxFindReplaceData.GetReplaceString ( )
+wxFindReplaceData.SetFindString,0,0,1,void,						void wxFindReplaceData.SetFindString (  wxString & str)
+wxFindReplaceData.SetFlags,0,0,1,void,						void wxFindReplaceData.SetFlags ( wxUint32 flags)
+wxFindReplaceData.SetReplaceString,0,0,1,void,						void wxFindReplaceData.SetReplaceString (  wxString & str)
+[INHERITS]
+wxObject

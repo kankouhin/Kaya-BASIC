@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/log.h>
+[METHODS]
+wxLogChain.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxLogChain.DetachOldLog,0,0,0,void,						void wxLogChain.DetachOldLog ( )
+wxLogChain.GetOldLog,0,1,0,wxLog,						wxLog* wxLogChain.GetOldLog ( )
+wxLogChain.IsPassingMessages,0,0,0,bool,						bool wxLogChain.IsPassingMessages ( )
+wxLogChain.PassMessages,0,0,1,void,						void wxLogChain.PassMessages ( bool passMessages)
+wxLogChain.SetLog,0,0,1,void,						void wxLogChain.SetLog ( wxLog * logger)
+[INHERITS]
+wxLog

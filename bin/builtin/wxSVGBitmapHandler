@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/dcsvg.h>
+[METHODS]
+wxSVGBitmapHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSVGBitmapHandler.ProcessBitmap,0,0,4,bool,						bool wxSVGBitmapHandler.ProcessBitmap (  wxBitmap & bitmap,     wxCoord x,     wxCoord y,     wxOutputStream & stream    )
+[INHERITS]

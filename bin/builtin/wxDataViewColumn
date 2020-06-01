@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewColumn.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewColumn.GetModelColumn,0,0,0,int,						unsigned int wxDataViewColumn.GetModelColumn ( )
+wxDataViewColumn.GetOwner,0,1,0,wxDataViewCtrl,						wxDataViewCtrl* wxDataViewColumn.GetOwner ( )
+wxDataViewColumn.GetRenderer,0,1,0,wxDataViewRenderer,						wxDataViewRenderer* wxDataViewColumn.GetRenderer ( )
+[INHERITS]
+wxSettableHeaderColumn
+wxHeaderColumn

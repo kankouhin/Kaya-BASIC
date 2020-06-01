@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextCommand.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextCommand.AddAction,0,0,1,void,						void wxRichTextCommand.AddAction ( wxRichTextAction * action)
+wxRichTextCommand.ClearActions,0,0,0,void,						void wxRichTextCommand.ClearActions ( )
+wxRichTextCommand.Do,0,0,0,bool,						bool wxRichTextCommand.Do ( )
+wxRichTextCommand.GetActions,0,0,0,wxList,						wxList&  wxRichTextCommand.GetActions ( )
+wxRichTextCommand.Undo,0,0,0,bool,						bool wxRichTextCommand.Undo ( )
+wxRichTextCommand.m_actions,0,0,-1,wxList,						wxList wxRichTextCommand.m_actions
+[INHERITS]
+wxCommand
+wxObject

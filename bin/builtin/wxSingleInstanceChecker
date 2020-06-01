@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/snglinst.h>
+[METHODS]
+wxSingleInstanceChecker.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSingleInstanceChecker.Create,0,0,2,bool,						bool wxSingleInstanceChecker.Create (  wxString & name,      wxString & path = wxEmptyString    )
+wxSingleInstanceChecker.CreateDefault,0,0,0,bool,						bool wxSingleInstanceChecker.CreateDefault ( )
+wxSingleInstanceChecker.IsAnotherRunning,0,0,0,bool,						bool wxSingleInstanceChecker.IsAnotherRunning ( )
+[INHERITS]

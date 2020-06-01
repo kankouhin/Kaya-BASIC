@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextPlainTextHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextPlainTextHandler.CanLoad,0,0,0,bool,						bool wxRichTextPlainTextHandler.CanLoad ( )
+wxRichTextPlainTextHandler.CanSave,0,0,0,bool,						bool wxRichTextPlainTextHandler.CanSave ( )
+wxRichTextPlainTextHandler.DoLoadFile,0,0,2,bool,						bool wxRichTextPlainTextHandler.DoLoadFile ( wxRichTextBuffer * buffer,     wxInputStream & stream    )
+wxRichTextPlainTextHandler.DoSaveFile,0,0,2,bool,						bool wxRichTextPlainTextHandler.DoSaveFile ( wxRichTextBuffer * buffer,     wxOutputStream & stream    )
+[INHERITS]
+wxRichTextFileHandler
+wxObject

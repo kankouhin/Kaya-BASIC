@@ -1,0 +1,31 @@
+[CONSTS]
+[HEADER]
+<wx/geometry.h>
+[METHODS]
+wxPoint2DInt.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPoint2DInt.GetCrossProduct,0,0,1,wxInt32,						wxInt32 wxPoint2DInt.GetCrossProduct (  wxPoint2DInt & vec)
+wxPoint2DInt.GetDistance,0,0,1,wxDouble,						wxDouble wxPoint2DInt.GetDistance (  wxPoint2DInt & pt)
+wxPoint2DInt.GetDistanceSquare,0,0,1,wxDouble,						wxDouble wxPoint2DInt.GetDistanceSquare (  wxPoint2DInt & pt)
+wxPoint2DInt.GetDotProduct,0,0,1,wxInt32,						wxInt32 wxPoint2DInt.GetDotProduct (  wxPoint2DInt & vec)
+wxPoint2DInt.GetFloor,0,0,2,void,						void wxPoint2DInt.GetFloor ( wxInt32 * x,     wxInt32 * y    )
+wxPoint2DInt.GetRounded,0,0,2,void,						void wxPoint2DInt.GetRounded ( wxInt32 * x,     wxInt32 * y    )
+wxPoint2DInt.GetVectorAngle,0,0,0,wxDouble,						wxDouble wxPoint2DInt.GetVectorAngle ( )
+wxPoint2DInt.GetVectorLength,0,0,0,wxDouble,						wxDouble wxPoint2DInt.GetVectorLength ( )
+wxPoint2DInt.Normalize,0,0,0,void,						void wxPoint2DInt.Normalize ( )
+wxPoint2DInt.operator!=,0,0,1,bool,						bool wxPoint2DInt.operator!= (  wxPoint2DInt & pt)
+wxPoint2DInt.operator*=,0,0,1,wxPoint2DInt,						wxPoint2DInt&  wxPoint2DInt.operator*= (  wxPoint2DInt & pt)
+wxPoint2DInt.operator*=,0,0,1,wxPoint2DInt,						wxPoint2DInt&  wxPoint2DInt.operator*= ( wxDouble n)
+wxPoint2DInt.operator*=,0,0,1,wxPoint2DInt,						wxPoint2DInt&  wxPoint2DInt.operator*= ( wxInt32 n)
+wxPoint2DInt.operator+=,0,0,1,wxPoint2DInt,						wxPoint2DInt&  wxPoint2DInt.operator+= (  wxPoint2DInt & pt)
+wxPoint2DInt.operator-,0,0,0,wxPoint2DInt,						wxPoint2DInt wxPoint2DInt.operator- ( )
+wxPoint2DInt.operator-=,0,0,1,wxPoint2DInt,						wxPoint2DInt&  wxPoint2DInt.operator-= (  wxPoint2DInt & pt)
+wxPoint2DInt.operator/=,0,0,1,wxPoint2DInt,						wxPoint2DInt&  wxPoint2DInt.operator/= (  wxPoint2DInt & pt)
+wxPoint2DInt.operator/=,0,0,1,wxPoint2DInt,						wxPoint2DInt&  wxPoint2DInt.operator/= ( wxDouble n)
+wxPoint2DInt.operator/=,0,0,1,wxPoint2DInt,						wxPoint2DInt&  wxPoint2DInt.operator/= ( wxInt32 n)
+wxPoint2DInt.operator=,0,0,1,wxPoint2DInt,						wxPoint2DInt&  wxPoint2DInt.operator= (  wxPoint2DInt & pt)
+wxPoint2DInt.operator==,0,0,1,bool,						bool wxPoint2DInt.operator== (  wxPoint2DInt & pt)
+wxPoint2DInt.SetVectorAngle,0,0,1,void,						void wxPoint2DInt.SetVectorAngle ( wxDouble degrees)
+wxPoint2DInt.SetVectorLength,0,0,1,void,						void wxPoint2DInt.SetVectorLength ( wxDouble length)
+wxPoint2DInt.m_x,0,0,-1,wxInt32,						wxInt32 wxPoint2DInt.m_x
+wxPoint2DInt.m_y,0,0,-1,wxInt32,						wxInt32 wxPoint2DInt.m_y
+[INHERITS]

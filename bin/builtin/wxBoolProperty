@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxBoolProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBoolProperty.DoSetAttribute,0,0,2,bool,						bool wxBoolProperty.DoSetAttribute (  wxString & name,     wxVariant & value    )
+wxBoolProperty.IntToValue,0,0,3,bool,						bool wxBoolProperty.IntToValue ( wxVariant & variant,     int number,     int argFlags = 0    )
+wxBoolProperty.StringToValue,0,0,3,bool,						bool wxBoolProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags = 0    )
+wxBoolProperty.ValueToString,0,0,2,wxString,						wxString wxBoolProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+[INHERITS]
+wxPGProperty
+wxObject

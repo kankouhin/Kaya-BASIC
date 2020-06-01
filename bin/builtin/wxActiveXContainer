@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/msw/ole/activex.h>
+[METHODS]
+wxActiveXContainer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxActiveXContainer.QueryClientSiteInterface,0,0,3,bool,						bool wxActiveXContainer.QueryClientSiteInterface ( REFIID iid,     void ** _interface,      char *& desc    )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

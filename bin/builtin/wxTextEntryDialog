@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/textdlg.h>
+[METHODS]
+wxTextEntryDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextEntryDialog.Create,0,0,6,bool,						bool wxTextEntryDialog.Create ( wxWindow * parent,      wxString & message,      wxString & caption = wxGetTextFromUserPromptStr,      wxString & value = wxEmptyString,     long style = wxTextEntryDialogStyle,      wxPoint & pos = wxDefaultPosition    )
+wxTextEntryDialog.ForceUpper,0,0,0,void,						void wxTextEntryDialog.ForceUpper ( )
+wxTextEntryDialog.GetValue,0,0,0,wxString,						wxString wxTextEntryDialog.GetValue ( )
+wxTextEntryDialog.SetMaxLength,0,0,1,void,						void wxTextEntryDialog.SetMaxLength ( unsigned long len)
+wxTextEntryDialog.SetTextValidator,0,0,1,void,						void wxTextEntryDialog.SetTextValidator (  wxTextValidator & validator)
+wxTextEntryDialog.SetTextValidator,0,0,1,void,						void wxTextEntryDialog.SetTextValidator ( wxTextValidatorStyle style = wxFILTER_NONE)
+wxTextEntryDialog.SetValue,0,0,1,void,						void wxTextEntryDialog.SetValue (  wxString & value)
+wxTextEntryDialog.ShowModal,0,0,0,int,						int wxTextEntryDialog.ShowModal ( )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

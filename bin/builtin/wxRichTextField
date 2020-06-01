@@ -1,0 +1,27 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextField.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextField.AcceptsFocus,0,0,0,bool,						bool wxRichTextField.AcceptsFocus ( )
+wxRichTextField.CalculateRange,0,0,2,void,						void wxRichTextField.CalculateRange ( long start,     long & end    )
+wxRichTextField.CanEditProperties,0,0,0,bool,						bool wxRichTextField.CanEditProperties ( )
+wxRichTextField.Clone,0,1,0,wxRichTextObject,						wxRichTextObject* wxRichTextField.Clone ( )
+wxRichTextField.Copy,0,0,1,void,						void wxRichTextField.Copy (  wxRichTextField & obj)
+wxRichTextField.Draw,0,0,7,bool,						bool wxRichTextField.Draw ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRichTextRange & range,      wxRichTextSelection & selection,      wxRect & rect,     int descent,     int style    )
+wxRichTextField.EditProperties,0,0,2,bool,						bool wxRichTextField.EditProperties ( wxWindow * parent,     wxRichTextBuffer * buffer    )
+wxRichTextField.GetFieldType,0,0,0,wxString,						wxString wxRichTextField.GetFieldType ( )
+wxRichTextField.GetPropertiesMenuLabel,0,0,0,wxString,						wxString wxRichTextField.GetPropertiesMenuLabel ( )
+wxRichTextField.GetRangeSize,0,0,9,bool,						bool wxRichTextField.GetRangeSize (  wxRichTextRange & range,     wxSize & size,     int & descent,     wxDC & dc,     wxRichTextDrawingContext & context,     int flags,      wxPoint & position = wxPoint(0, 0),      wxSize & parentSize = wxDefaultSize,     wxArrayInt * partialExtents = NULL    )
+wxRichTextField.GetXMLNodeName,0,0,0,wxString,						wxString wxRichTextField.GetXMLNodeName ( )
+wxRichTextField.IsAtomic,0,0,0,bool,						bool wxRichTextField.IsAtomic ( )
+wxRichTextField.IsEmpty,0,0,0,bool,						bool wxRichTextField.IsEmpty ( )
+wxRichTextField.IsTopLevel,0,0,0,bool,						bool wxRichTextField.IsTopLevel ( )
+wxRichTextField.Layout,0,0,5,bool,						bool wxRichTextField.Layout ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRect & rect,      wxRect & parentRect,     int style    )
+wxRichTextField.SetFieldType,0,0,1,void,						void wxRichTextField.SetFieldType (  wxString & fieldType)
+wxRichTextField.UpdateField,0,0,1,bool,						bool wxRichTextField.UpdateField ( wxRichTextBuffer * buffer)
+[INHERITS]
+wxRichTextParagraphLayoutBox
+wxRichTextCompositeObject
+wxRichTextObject
+wxObject

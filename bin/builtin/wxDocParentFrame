@@ -1,8 +1,10 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/docview.h>
-Create,0,0,8,bool,						bool Create ( wxDocManager * manager,     wxFrame * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 541072960,      wxString & name = wxFrameNameStr    )
-GetDocumentManager,0,1,0,wxDocManager,						wxDocManager* GetDocumentManager ( )
+[METHODS]
+wxDocParentFrame.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDocParentFrame.Create,0,0,8,bool,						bool wxDocParentFrame.Create ( wxDocManager * manager,     wxFrame * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 541072960,      wxString & name = wxFrameNameStr    )
+wxDocParentFrame.GetDocumentManager,0,1,0,wxDocManager,						wxDocManager* wxDocParentFrame.GetDocumentManager ( )
 [INHERITS]
 wxFrame
 wxTopLevelWindow

@@ -1,0 +1,45 @@
+[CONSTS]
+wxLIST_STATE_FOCUSED
+wxLIST_STATE_SELECTED
+wxLIST_STATE_DONTCARE
+wxLIST_STATE_DROPHILITED
+wxLIST_STATE_CUT
+wxLIST_MASK_STATE
+wxLIST_MASK_TEXT
+wxLIST_MASK_IMAGE
+wxLIST_MASK_DATA
+wxLIST_MASK_WIDTH
+wxLIST_MASK_FORMAT
+[HEADER]
+<wx/listctrl.h>
+[METHODS]
+wxListItem.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxListItem.Clear,0,0,0,void,						void wxListItem.Clear ( )
+wxListItem.GetAlign,0,0,0,wxListColumnFormat,						wxListColumnFormat wxListItem.GetAlign ( )
+wxListItem.GetBackgroundColour,0,0,0,wxColour,						wxColour wxListItem.GetBackgroundColour ( )
+wxListItem.GetColumn,0,0,0,int,						int wxListItem.GetColumn ( )
+wxListItem.GetData,0,0,0,wxUIntPtr,						wxUIntPtr wxListItem.GetData ( )
+wxListItem.GetFont,0,0,0,wxFont,						wxFont wxListItem.GetFont ( )
+wxListItem.GetId,0,0,0,long,						long wxListItem.GetId ( )
+wxListItem.GetImage,0,0,0,int,						int wxListItem.GetImage ( )
+wxListItem.GetMask,0,0,0,long,						long wxListItem.GetMask ( )
+wxListItem.GetState,0,0,0,long,						long wxListItem.GetState ( )
+wxListItem.GetText,0,0,0,wxString,						wxString&  wxListItem.GetText ( )
+wxListItem.GetTextColour,0,0,0,wxColour,						wxColour wxListItem.GetTextColour ( )
+wxListItem.GetWidth,0,0,0,int,						int wxListItem.GetWidth ( )
+wxListItem.SetAlign,0,0,1,void,						void wxListItem.SetAlign ( wxListColumnFormat align)
+wxListItem.SetBackgroundColour,0,0,1,void,						void wxListItem.SetBackgroundColour (  wxColour & colBack)
+wxListItem.SetColumn,0,0,1,void,						void wxListItem.SetColumn ( int col)
+wxListItem.SetData,0,0,1,void,						void wxListItem.SetData ( long data)
+wxListItem.SetData,0,0,1,void,						void wxListItem.SetData ( void * data)
+wxListItem.SetFont,0,0,1,void,						void wxListItem.SetFont (  wxFont & font)
+wxListItem.SetId,0,0,1,void,						void wxListItem.SetId ( long id)
+wxListItem.SetImage,0,0,1,void,						void wxListItem.SetImage ( int image)
+wxListItem.SetMask,0,0,1,void,						void wxListItem.SetMask ( long mask)
+wxListItem.SetState,0,0,1,void,						void wxListItem.SetState ( long state)
+wxListItem.SetStateMask,0,0,1,void,						void wxListItem.SetStateMask ( long stateMask)
+wxListItem.SetText,0,0,1,void,						void wxListItem.SetText (  wxString & text)
+wxListItem.SetTextColour,0,0,1,void,						void wxListItem.SetTextColour (  wxColour & colText)
+wxListItem.SetWidth,0,0,1,void,						void wxListItem.SetWidth ( int width)
+[INHERITS]
+wxObject

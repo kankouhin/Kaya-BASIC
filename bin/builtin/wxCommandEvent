@@ -27,21 +27,23 @@ wxEVT_COMMAND_RIGHT_CLICK
 wxEVT_COMMAND_SET_FOCUS
 wxEVT_COMMAND_KILL_FOCUS
 wxEVT_COMMAND_ENTER
-[METHODS]
+[HEADER]
 <wx/event.h>
-GetClientData,0,1,0,void,						void* GetClientData ( )
-GetClientObject,0,1,0,wxClientData,						wxClientData* GetClientObject ( )
-GetExtraLong,0,0,0,long,						long GetExtraLong ( )
-GetInt,0,0,0,int,						int GetInt ( )
-GetSelection,0,0,0,int,						int GetSelection ( )
-GetString,0,0,0,wxString,						wxString GetString ( )
-IsChecked,0,0,0,bool,						bool IsChecked ( )
-IsSelection,0,0,0,bool,						bool IsSelection ( )
-SetClientData,0,0,1,void,						void SetClientData ( void * clientData)
-SetClientObject,0,0,1,void,						void SetClientObject ( wxClientData * clientObject)
-SetExtraLong,0,0,1,void,						void SetExtraLong ( long extraLong)
-SetInt,0,0,1,void,						void SetInt ( int intCommand)
-SetString,0,0,1,void,						void SetString (  wxString & string)
+[METHODS]
+wxCommandEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCommandEvent.GetClientData,0,1,0,void,						void* wxCommandEvent.GetClientData ( )
+wxCommandEvent.GetClientObject,0,1,0,wxClientData,						wxClientData* wxCommandEvent.GetClientObject ( )
+wxCommandEvent.GetExtraLong,0,0,0,long,						long wxCommandEvent.GetExtraLong ( )
+wxCommandEvent.GetInt,0,0,0,int,						int wxCommandEvent.GetInt ( )
+wxCommandEvent.GetSelection,0,0,0,int,						int wxCommandEvent.GetSelection ( )
+wxCommandEvent.GetString,0,0,0,wxString,						wxString wxCommandEvent.GetString ( )
+wxCommandEvent.IsChecked,0,0,0,bool,						bool wxCommandEvent.IsChecked ( )
+wxCommandEvent.IsSelection,0,0,0,bool,						bool wxCommandEvent.IsSelection ( )
+wxCommandEvent.SetClientData,0,0,1,void,						void wxCommandEvent.SetClientData ( void * clientData)
+wxCommandEvent.SetClientObject,0,0,1,void,						void wxCommandEvent.SetClientObject ( wxClientData * clientObject)
+wxCommandEvent.SetExtraLong,0,0,1,void,						void wxCommandEvent.SetExtraLong ( long extraLong)
+wxCommandEvent.SetInt,0,0,1,void,						void wxCommandEvent.SetInt ( int intCommand)
+wxCommandEvent.SetString,0,0,1,void,						void wxCommandEvent.SetString (  wxString & string)
 [INHERITS]
 wxEvent
 wxObject

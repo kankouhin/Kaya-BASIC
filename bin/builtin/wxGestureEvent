@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxGestureEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGestureEvent.GetPosition,0,0,0,wxPoint,						wxPoint&  wxGestureEvent.GetPosition ( )
+wxGestureEvent.IsGestureEnd,0,0,0,bool,						bool wxGestureEvent.IsGestureEnd ( )
+wxGestureEvent.IsGestureStart,0,0,0,bool,						bool wxGestureEvent.IsGestureStart ( )
+wxGestureEvent.SetGestureEnd,0,0,1,void,						void wxGestureEvent.SetGestureEnd ( bool isEnd = true)
+wxGestureEvent.SetGestureStart,0,0,1,void,						void wxGestureEvent.SetGestureStart ( bool isStart = true)
+wxGestureEvent.SetPosition,0,0,1,void,						void wxGestureEvent.SetPosition (  wxPoint & pos)
+[INHERITS]
+wxEvent
+wxObject

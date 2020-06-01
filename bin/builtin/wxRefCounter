@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/object.h>
+[METHODS]
+wxRefCounter.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRefCounter.DecRef,0,0,0,void,						void wxRefCounter.DecRef ( )
+wxRefCounter.GetRefCount,0,0,0,int,						int wxRefCounter.GetRefCount ( )
+wxRefCounter.IncRef,0,0,0,void,						void wxRefCounter.IncRef ( )
+[INHERITS]

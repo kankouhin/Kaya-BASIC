@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxThreadEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxThreadEvent.Clone,0,1,0,wxEvent,						wxEvent* wxThreadEvent.Clone ( )
+wxThreadEvent.GetEventCategory,0,0,0,wxEventCategory,						wxEventCategory wxThreadEvent.GetEventCategory ( )
+wxThreadEvent.GetExtraLong,0,0,0,long,						long wxThreadEvent.GetExtraLong ( )
+wxThreadEvent.GetInt,0,0,0,int,						int wxThreadEvent.GetInt ( )
+wxThreadEvent.GetPayload,0,0,0,T,						T wxThreadEvent.GetPayload ( )
+wxThreadEvent.GetString,0,0,0,wxString,						wxString wxThreadEvent.GetString ( )
+wxThreadEvent.SetExtraLong,0,0,1,void,						void wxThreadEvent.SetExtraLong ( long extraLong)
+wxThreadEvent.SetInt,0,0,1,void,						void wxThreadEvent.SetInt ( int intCommand)
+wxThreadEvent.SetPayload,0,0,1,void,						void wxThreadEvent.SetPayload (  T & payload)
+wxThreadEvent.SetString,0,0,1,void,						void wxThreadEvent.SetString (  wxString & string)
+[INHERITS]
+wxEvent
+wxObject

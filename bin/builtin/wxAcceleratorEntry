@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/accel.h>
+[METHODS]
+wxAcceleratorEntry.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAcceleratorEntry.FromString,0,0,1,bool,						bool wxAcceleratorEntry.FromString (  wxString & str)
+wxAcceleratorEntry.GetCommand,0,0,0,int,						int wxAcceleratorEntry.GetCommand ( )
+wxAcceleratorEntry.GetFlags,0,0,0,int,						int wxAcceleratorEntry.GetFlags ( )
+wxAcceleratorEntry.GetKeyCode,0,0,0,int,						int wxAcceleratorEntry.GetKeyCode ( )
+wxAcceleratorEntry.GetMenuItem,0,1,0,wxMenuItem,						wxMenuItem* wxAcceleratorEntry.GetMenuItem ( )
+wxAcceleratorEntry.IsOk,0,0,0,bool,						bool wxAcceleratorEntry.IsOk ( )
+wxAcceleratorEntry.operator!=,0,0,1,bool,						bool wxAcceleratorEntry.operator!= (  wxAcceleratorEntry & entry)
+wxAcceleratorEntry.operator=,0,0,1,wxAcceleratorEntry,						wxAcceleratorEntry&  wxAcceleratorEntry.operator= (  wxAcceleratorEntry & entry)
+wxAcceleratorEntry.operator==,0,0,1,bool,						bool wxAcceleratorEntry.operator== (  wxAcceleratorEntry & entry)
+wxAcceleratorEntry.Set,0,0,4,void,						void wxAcceleratorEntry.Set ( int flags,     int keyCode,     int cmd,     wxMenuItem * item = NULL    )
+wxAcceleratorEntry.ToRawString,0,0,0,wxString,						wxString wxAcceleratorEntry.ToRawString ( )
+wxAcceleratorEntry.ToString,0,0,0,wxString,						wxString wxAcceleratorEntry.ToString ( )
+[INHERITS]

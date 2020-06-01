@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/iconloc.h>
+[METHODS]
+wxIconLocation.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxIconLocation.GetFileName,0,0,0,wxString,						wxString&  wxIconLocation.GetFileName ( )
+wxIconLocation.IsOk,0,0,0,bool,						bool wxIconLocation.IsOk ( )
+wxIconLocation.SetFileName,0,0,1,void,						void wxIconLocation.SetFileName (  wxString & filename)
+[INHERITS]

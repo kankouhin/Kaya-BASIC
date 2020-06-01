@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/archive.h>
+[METHODS]
+wxArchiveEntry.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxArchiveEntry.Clone,0,1,0,wxArchiveEntry,						wxArchiveEntry* wxArchiveEntry.Clone ( )
+wxArchiveEntry.GetDateTime,0,0,0,wxDateTime,						wxDateTime wxArchiveEntry.GetDateTime ( )
+wxArchiveEntry.GetInternalFormat,0,0,0,wxPathFormat,						wxPathFormat wxArchiveEntry.GetInternalFormat ( )
+wxArchiveEntry.GetInternalName,0,0,0,wxString,						wxString wxArchiveEntry.GetInternalName ( )
+wxArchiveEntry.GetName,0,0,1,wxString,						wxString wxArchiveEntry.GetName ( wxPathFormat format = wxPATH_NATIVE)
+wxArchiveEntry.GetOffset,0,0,0,wxFileOffset,						wxFileOffset wxArchiveEntry.GetOffset ( )
+wxArchiveEntry.GetSize,0,0,0,wxFileOffset,						wxFileOffset wxArchiveEntry.GetSize ( )
+wxArchiveEntry.IsDir,0,0,0,bool,						bool wxArchiveEntry.IsDir ( )
+wxArchiveEntry.IsReadOnly,0,0,0,bool,						bool wxArchiveEntry.IsReadOnly ( )
+wxArchiveEntry.SetDateTime,0,0,1,void,						void wxArchiveEntry.SetDateTime (  wxDateTime & dt)
+wxArchiveEntry.SetIsDir,0,0,1,void,						void wxArchiveEntry.SetIsDir ( bool isDir = true)
+wxArchiveEntry.SetIsReadOnly,0,0,1,void,						void wxArchiveEntry.SetIsReadOnly ( bool isReadOnly = true)
+wxArchiveEntry.SetName,0,0,2,void,						void wxArchiveEntry.SetName (  wxString & name,     wxPathFormat format = wxPATH_NATIVE    )
+wxArchiveEntry.SetNotifier,0,0,1,void,						void wxArchiveEntry.SetNotifier ( wxArchiveNotifier & notifier)
+wxArchiveEntry.SetSize,0,0,1,void,						void wxArchiveEntry.SetSize ( wxFileOffset size)
+wxArchiveEntry.UnsetNotifier,0,0,0,void,						void wxArchiveEntry.UnsetNotifier ( )
+[INHERITS]
+wxObject

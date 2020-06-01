@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/addremovectrl.h>
+[METHODS]
+wxAddRemoveAdaptor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAddRemoveAdaptor.CanAdd,0,0,0,bool,						bool wxAddRemoveAdaptor.CanAdd ( )
+wxAddRemoveAdaptor.CanRemove,0,0,0,bool,						bool wxAddRemoveAdaptor.CanRemove ( )
+wxAddRemoveAdaptor.GetItemsCtrl,0,1,0,wxWindow,						wxWindow* wxAddRemoveAdaptor.GetItemsCtrl ( )
+wxAddRemoveAdaptor.OnAdd,0,0,0,void,						void wxAddRemoveAdaptor.OnAdd ( )
+wxAddRemoveAdaptor.OnRemove,0,0,0,void,						void wxAddRemoveAdaptor.OnRemove ( )
+[INHERITS]

@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/mousestate.h>
+[METHODS]
+wxMouseState.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMouseState.Aux1IsDown,0,0,0,bool,						bool wxMouseState.Aux1IsDown ( )
+wxMouseState.Aux2IsDown,0,0,0,bool,						bool wxMouseState.Aux2IsDown ( )
+wxMouseState.GetPosition,0,0,0,wxPoint,						wxPoint wxMouseState.GetPosition ( )
+wxMouseState.GetPosition,0,0,2,void,						void wxMouseState.GetPosition ( int * x,     int * y    )
+wxMouseState.GetX,0,0,0,wxCoord,						wxCoord wxMouseState.GetX ( )
+wxMouseState.GetY,0,0,0,wxCoord,						wxCoord wxMouseState.GetY ( )
+wxMouseState.LeftIsDown,0,0,0,bool,						bool wxMouseState.LeftIsDown ( )
+wxMouseState.MiddleIsDown,0,0,0,bool,						bool wxMouseState.MiddleIsDown ( )
+wxMouseState.RightIsDown,0,0,0,bool,						bool wxMouseState.RightIsDown ( )
+wxMouseState.SetAux1Down,0,0,1,void,						void wxMouseState.SetAux1Down ( bool down)
+wxMouseState.SetAux2Down,0,0,1,void,						void wxMouseState.SetAux2Down ( bool down)
+wxMouseState.SetLeftDown,0,0,1,void,						void wxMouseState.SetLeftDown ( bool down)
+wxMouseState.SetMiddleDown,0,0,1,void,						void wxMouseState.SetMiddleDown ( bool down)
+wxMouseState.SetPosition,0,0,1,void,						void wxMouseState.SetPosition (  wxPoint & pos)
+wxMouseState.SetRightDown,0,0,1,void,						void wxMouseState.SetRightDown ( bool down)
+wxMouseState.SetState,0,0,1,void,						void wxMouseState.SetState (  wxMouseState & state)
+wxMouseState.SetX,0,0,1,void,						void wxMouseState.SetX ( wxCoord x)
+wxMouseState.SetY,0,0,1,void,						void wxMouseState.SetY ( wxCoord y)
+[INHERITS]
+wxKeyboardState

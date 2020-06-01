@@ -1,0 +1,34 @@
+[CONSTS]
+[HEADER]
+<wx/textfile.h>
+[METHODS]
+wxTextFile.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextFile.AddLine,0,0,2,void,						void wxTextFile.AddLine (  wxString & str,     wxTextFileType type = typeDefault    )
+wxTextFile.Clear,0,0,0,void,						void wxTextFile.Clear ( )
+wxTextFile.Close,0,0,0,bool,						bool wxTextFile.Close ( )
+wxTextFile.Create,0,0,0,bool,						bool wxTextFile.Create ( )
+wxTextFile.Create,0,0,1,bool,						bool wxTextFile.Create (  wxString & strFile)
+wxTextFile.Eof,0,0,0,bool,						bool wxTextFile.Eof ( )
+wxTextFile.Exists,0,0,0,bool,						bool wxTextFile.Exists ( )
+wxTextFile.GetCurrentLine,0,0,0,size_t,						size_t wxTextFile.GetCurrentLine ( )
+wxTextFile.GetEOL,1,1,1,wxChar,						static  wxChar* wxTextFile.GetEOL ( wxTextFileType type = typeDefault)
+wxTextFile.GetFirstLine,0,0,0,wxString,						wxString&  wxTextFile.GetFirstLine ( )
+wxTextFile.GetLastLine,0,0,0,wxString,						wxString&  wxTextFile.GetLastLine ( )
+wxTextFile.GetLine,0,0,1,wxString,						wxString&  wxTextFile.GetLine ( size_t n)
+wxTextFile.GetLine,0,0,1,wxString,						wxString&  wxTextFile.GetLine ( size_t n)
+wxTextFile.GetLineCount,0,0,0,size_t,						size_t wxTextFile.GetLineCount ( )
+wxTextFile.GetLineType,0,0,1,wxTextFileType,						wxTextFileType wxTextFile.GetLineType ( size_t n)
+wxTextFile.GetName,0,0,0,wxString,						wxString&  wxTextFile.GetName ( )
+wxTextFile.GetNextLine,0,0,0,wxString,						wxString&  wxTextFile.GetNextLine ( )
+wxTextFile.GetPrevLine,0,0,0,wxString,						wxString&  wxTextFile.GetPrevLine ( )
+wxTextFile.GoToLine,0,0,1,void,						void wxTextFile.GoToLine ( size_t n)
+wxTextFile.GuessType,0,0,0,wxTextFileType,						wxTextFileType wxTextFile.GuessType ( )
+wxTextFile.InsertLine,0,0,3,void,						void wxTextFile.InsertLine (  wxString & str,     size_t n,     wxTextFileType type = typeDefault    )
+wxTextFile.IsOpened,0,0,0,bool,						bool wxTextFile.IsOpened ( )
+wxTextFile.Open,0,0,1,bool,						bool wxTextFile.Open (  wxMBConv & conv = wxConvAuto())
+wxTextFile.Open,0,0,2,bool,						bool wxTextFile.Open (  wxString & strFile,      wxMBConv & conv = wxConvAuto()    )
+wxTextFile.operator[],0,0,1,wxString,						wxString&  wxTextFile.operator[] ( size_t n)
+wxTextFile.RemoveLine,0,0,1,void,						void wxTextFile.RemoveLine ( size_t n)
+wxTextFile.Write,0,0,2,bool,						bool wxTextFile.Write ( wxTextFileType typeNew = wxTextFileType_None,      wxMBConv & conv = wxConvAuto()    )
+wxTextFile.typeDefault,0,0,-1,wxTextFileType,						wxTextFileType wxTextFile.typeDefault
+[INHERITS]

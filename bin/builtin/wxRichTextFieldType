@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextFieldType.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextFieldType.CanEditProperties,0,0,1,bool,						bool wxRichTextFieldType.CanEditProperties ( wxRichTextField * obj)
+wxRichTextFieldType.Copy,0,0,1,void,						void wxRichTextFieldType.Copy (  wxRichTextFieldType & fieldType)
+wxRichTextFieldType.Draw,0,0,8,bool,						bool wxRichTextFieldType.Draw ( wxRichTextField * obj,     wxDC & dc,     wxRichTextDrawingContext & context,      wxRichTextRange & range,      wxRichTextSelection & selection,      wxRect & rect,     int descent,     int style    )
+wxRichTextFieldType.EditProperties,0,0,3,bool,						bool wxRichTextFieldType.EditProperties ( wxRichTextField * obj,     wxWindow * parent,     wxRichTextBuffer * buffer    )
+wxRichTextFieldType.GetName,0,0,0,wxString,						wxString wxRichTextFieldType.GetName ( )
+wxRichTextFieldType.GetPropertiesMenuLabel,0,0,1,wxString,						wxString wxRichTextFieldType.GetPropertiesMenuLabel ( wxRichTextField * obj)
+wxRichTextFieldType.GetRangeSize,0,0,10,bool,						bool wxRichTextFieldType.GetRangeSize ( wxRichTextField * obj,      wxRichTextRange & range,     wxSize & size,     int & descent,     wxDC & dc,     wxRichTextDrawingContext & context,     int flags,      wxPoint & position = wxPoint(0, 0),      wxSize & parentSize = wxDefaultSize,     wxArrayInt * partialExtents = NULL    )
+wxRichTextFieldType.IsTopLevel,0,0,1,bool,						bool wxRichTextFieldType.IsTopLevel ( wxRichTextField * obj)
+wxRichTextFieldType.Layout,0,0,6,bool,						bool wxRichTextFieldType.Layout ( wxRichTextField * obj,     wxDC & dc,     wxRichTextDrawingContext & context,      wxRect & rect,      wxRect & parentRect,     int style    )
+wxRichTextFieldType.SetName,0,0,1,void,						void wxRichTextFieldType.SetName (  wxString & name)
+wxRichTextFieldType.UpdateField,0,0,2,bool,						bool wxRichTextFieldType.UpdateField ( wxRichTextBuffer * buffer,     wxRichTextField * obj    )
+wxRichTextFieldType.m_name,0,0,-1,wxString,						wxString wxRichTextFieldType.m_name
+[INHERITS]
+wxObject

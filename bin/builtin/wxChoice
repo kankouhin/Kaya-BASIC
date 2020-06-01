@@ -1,0 +1,26 @@
+[CONSTS]
+wxCB_SORT
+wxEVT_CHOICE
+[HEADER]
+<wx/choice.h>
+[METHODS]
+wxChoice.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxChoice.Create,0,0,9,bool,						bool wxChoice.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     int n = 0,      wxString choices[] = NULL,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxChoiceNameStr    )
+wxChoice.Create,0,0,8,bool,						bool wxChoice.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos,      wxSize & size,      wxArrayString & choices,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxChoiceNameStr    )
+wxChoice.FindString,0,0,2,int,						int wxChoice.FindString (  wxString & string,     bool caseSensitive = false    )
+wxChoice.GetColumns,0,0,0,int,						int wxChoice.GetColumns ( )
+wxChoice.GetCount,0,0,0,int,						unsigned int wxChoice.GetCount ( )
+wxChoice.GetCurrentSelection,0,0,0,int,						int wxChoice.GetCurrentSelection ( )
+wxChoice.GetSelection,0,0,0,int,						int wxChoice.GetSelection ( )
+wxChoice.GetString,0,0,1,wxString,						wxString wxChoice.GetString ( unsigned int n)
+wxChoice.IsSorted,0,0,0,bool,						bool wxChoice.IsSorted ( )
+wxChoice.SetColumns,0,0,1,void,						void wxChoice.SetColumns ( int n = 1)
+wxChoice.SetSelection,0,0,1,void,						void wxChoice.SetSelection ( int n)
+wxChoice.SetString,0,0,2,void,						void wxChoice.SetString ( unsigned int n,      wxString & string    )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxItemContainer
+wxItemContainerImmutable

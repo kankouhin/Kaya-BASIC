@@ -1,0 +1,31 @@
+[CONSTS]
+[HEADER]
+<wx/unichar.h>
+[METHODS]
+wxUniChar.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxUniChar.value_type,0,0,-1,wxUint32,						typedef wxUint32 wxUniChar.value_type
+wxUniChar.GetAsChar,0,0,1,bool,						bool wxUniChar.GetAsChar ( char * c)
+wxUniChar.GetValue,0,0,0,value_type,						value_type wxUniChar.GetValue ( )
+wxUniChar.HighSurrogate,0,0,0,wxUint16,						wxUint16 wxUniChar.HighSurrogate ( )
+wxUniChar.HighSurrogate,1,0,1,wxUint16,						static wxUint16 wxUniChar.HighSurrogate ( wxUint32 value)
+wxUniChar.IsAscii,0,0,0,bool,						bool wxUniChar.IsAscii ( )
+wxUniChar.IsBMP,0,0,0,bool,						bool wxUniChar.IsBMP ( )
+wxUniChar.IsBMP,1,0,1,bool,						static bool wxUniChar.IsBMP ( wxUint32 value)
+wxUniChar.IsSupplementary,0,0,0,bool,						bool wxUniChar.IsSupplementary ( )
+wxUniChar.IsSupplementary,1,0,1,bool,						static bool wxUniChar.IsSupplementary ( wxUint32 value)
+wxUniChar.LowSurrogate,0,0,0,wxUint16,						wxUint16 wxUniChar.LowSurrogate ( )
+wxUniChar.LowSurrogate,1,0,1,wxUint16,						static wxUint16 wxUniChar.LowSurrogate ( wxUint32 value)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= (  wxUniChar & c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= (  wxUniCharRef & c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= ( char c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= ( unsigned char c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= ( wchar_t c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= ( int c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= ( unsigned int c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= ( long int c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= ( unsigned long int c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= ( short int c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= ( unsigned short int c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= ( wxLongLong_t c)
+wxUniChar.operator=,0,0,1,wxUniChar,						wxUniChar&  wxUniChar.operator= ( wxULongLong_t c)
+[INHERITS]

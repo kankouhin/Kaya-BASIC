@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/numdlg.h>
+[METHODS]
+wxNumberEntryDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxNumberEntryDialog.Create,0,0,8,bool,						bool wxNumberEntryDialog.Create ( wxWindow * parent,      wxString & message,      wxString & prompt,      wxString & caption,     long value,     long min,     long max,      wxPoint & pos = wxDefaultPosition    )
+wxNumberEntryDialog.GetValue,0,0,0,long,						long wxNumberEntryDialog.GetValue ( )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

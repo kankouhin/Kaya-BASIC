@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxTextAttrDimensions.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextAttrDimensions.Apply,0,0,2,bool,						bool wxTextAttrDimensions.Apply (  wxTextAttrDimensions & dims,      wxTextAttrDimensions * compareWith = NULL    )
+wxTextAttrDimensions.CollectCommonAttributes,0,0,3,void,						void wxTextAttrDimensions.CollectCommonAttributes (  wxTextAttrDimensions & attr,     wxTextAttrDimensions & clashingAttr,     wxTextAttrDimensions & absentAttr    )
+wxTextAttrDimensions.EqPartial,0,0,2,bool,						bool wxTextAttrDimensions.EqPartial (  wxTextAttrDimensions & dims,     bool weakTest = true    )
+wxTextAttrDimensions.GetBottom,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrDimensions.GetBottom ( )
+wxTextAttrDimensions.GetBottom,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrDimensions.GetBottom ( )
+wxTextAttrDimensions.GetLeft,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrDimensions.GetLeft ( )
+wxTextAttrDimensions.GetLeft,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrDimensions.GetLeft ( )
+wxTextAttrDimensions.GetRight,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrDimensions.GetRight ( )
+wxTextAttrDimensions.GetRight,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrDimensions.GetRight ( )
+wxTextAttrDimensions.GetTop,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrDimensions.GetTop ( )
+wxTextAttrDimensions.GetTop,0,0,0,wxTextAttrDimension,						wxTextAttrDimension&  wxTextAttrDimensions.GetTop ( )
+wxTextAttrDimensions.IsValid,0,0,0,bool,						bool wxTextAttrDimensions.IsValid ( )
+wxTextAttrDimensions.operator==,0,0,1,bool,						bool wxTextAttrDimensions.operator== (  wxTextAttrDimensions & dims)
+wxTextAttrDimensions.RemoveStyle,0,0,1,bool,						bool wxTextAttrDimensions.RemoveStyle (  wxTextAttrDimensions & attr)
+wxTextAttrDimensions.Reset,0,0,0,void,						void wxTextAttrDimensions.Reset ( )
+wxTextAttrDimensions.m_bottom,0,0,-1,wxTextAttrDimension,						wxTextAttrDimension wxTextAttrDimensions.m_bottom
+wxTextAttrDimensions.m_left,0,0,-1,wxTextAttrDimension,						wxTextAttrDimension wxTextAttrDimensions.m_left
+wxTextAttrDimensions.m_right,0,0,-1,wxTextAttrDimension,						wxTextAttrDimension wxTextAttrDimensions.m_right
+wxTextAttrDimensions.m_top,0,0,-1,wxTextAttrDimension,						wxTextAttrDimension wxTextAttrDimensions.m_top
+[INHERITS]

@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/versioninfo.h>
+[METHODS]
+wxVersionInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxVersionInfo.GetCopyright,0,0,0,wxString,						wxString&  wxVersionInfo.GetCopyright ( )
+wxVersionInfo.GetDescription,0,0,0,wxString,						wxString&  wxVersionInfo.GetDescription ( )
+wxVersionInfo.GetMajor,0,0,0,int,						int wxVersionInfo.GetMajor ( )
+wxVersionInfo.GetMicro,0,0,0,int,						int wxVersionInfo.GetMicro ( )
+wxVersionInfo.GetMinor,0,0,0,int,						int wxVersionInfo.GetMinor ( )
+wxVersionInfo.GetName,0,0,0,wxString,						wxString&  wxVersionInfo.GetName ( )
+wxVersionInfo.GetVersionString,0,0,0,wxString,						wxString wxVersionInfo.GetVersionString ( )
+wxVersionInfo.HasCopyright,0,0,0,bool,						bool wxVersionInfo.HasCopyright ( )
+wxVersionInfo.HasDescription,0,0,0,bool,						bool wxVersionInfo.HasDescription ( )
+wxVersionInfo.ToString,0,0,0,wxString,						wxString wxVersionInfo.ToString ( )
+[INHERITS]

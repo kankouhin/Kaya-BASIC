@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextAttr.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextAttr.Apply,0,0,2,bool,						bool wxRichTextAttr.Apply (  wxRichTextAttr & style,      wxRichTextAttr * compareWith = NULL    )
+wxRichTextAttr.CollectCommonAttributes,0,0,3,void,						void wxRichTextAttr.CollectCommonAttributes (  wxRichTextAttr & attr,     wxRichTextAttr & clashingAttr,     wxRichTextAttr & absentAttr    )
+wxRichTextAttr.Copy,0,0,1,void,						void wxRichTextAttr.Copy (  wxRichTextAttr & attr)
+wxRichTextAttr.EqPartial,0,0,2,bool,						bool wxRichTextAttr.EqPartial (  wxRichTextAttr & attr,     bool weakTest = true    )
+wxRichTextAttr.GetTextBoxAttr,0,0,0,wxTextBoxAttr,						wxTextBoxAttr&  wxRichTextAttr.GetTextBoxAttr ( )
+wxRichTextAttr.GetTextBoxAttr,0,0,0,wxTextBoxAttr,						wxTextBoxAttr&  wxRichTextAttr.GetTextBoxAttr ( )
+wxRichTextAttr.IsDefault,0,0,0,bool,						bool wxRichTextAttr.IsDefault ( )
+wxRichTextAttr.operator=,0,0,1,void,						void wxRichTextAttr.operator= (  wxRichTextAttr & attr)
+wxRichTextAttr.operator=,0,0,1,void,						void wxRichTextAttr.operator= (  wxTextAttr & attr)
+wxRichTextAttr.operator==,0,0,1,bool,						bool wxRichTextAttr.operator== (  wxRichTextAttr & attr)
+wxRichTextAttr.RemoveStyle,0,0,1,bool,						bool wxRichTextAttr.RemoveStyle (  wxRichTextAttr & attr)
+wxRichTextAttr.SetTextBoxAttr,0,0,1,void,						void wxRichTextAttr.SetTextBoxAttr (  wxTextBoxAttr & attr)
+wxRichTextAttr.m_textBoxAttr,0,0,-1,wxTextBoxAttr,						wxTextBoxAttr wxRichTextAttr.m_textBoxAttr
+[INHERITS]
+wxTextAttr

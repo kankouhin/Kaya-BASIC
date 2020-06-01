@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/editors.h>
+[METHODS]
+wxPGTextCtrlAndButtonEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGTextCtrlAndButtonEditor.CreateControls,0,0,4,wxPGWindowList,						wxPGWindowList wxPGTextCtrlAndButtonEditor.CreateControls ( wxPropertyGrid * propgrid,     wxPGProperty * property,      wxPoint & pos,      wxSize & size    )
+wxPGTextCtrlAndButtonEditor.GetName,0,0,0,wxString,						wxString wxPGTextCtrlAndButtonEditor.GetName ( )
+[INHERITS]
+wxPGTextCtrlEditor
+wxPGEditor
+wxObject

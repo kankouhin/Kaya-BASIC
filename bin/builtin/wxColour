@@ -1,0 +1,34 @@
+[CONSTS]
+[HEADER]
+<wx/colour.h>
+[METHODS]
+wxColour.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxColour.Alpha,0,0,0,char,						unsigned char wxColour.Alpha ( )
+wxColour.AlphaBlend,1,0,3,char,						static unsigned char wxColour.AlphaBlend ( unsigned char fg,     unsigned char bg,     double alpha    )
+wxColour.Blue,0,0,0,char,						unsigned char wxColour.Blue ( )
+wxColour.ChangeLightness,1,0,4,void,						static void wxColour.ChangeLightness ( unsigned char * r,     unsigned char * g,     unsigned char * b,     int ialpha    )
+wxColour.ChangeLightness,0,0,1,wxColour,						wxColour wxColour.ChangeLightness ( int ialpha)
+wxColour.GetAsString,0,0,1,wxString,						wxString wxColour.GetAsString ( long flags = wxC2S_NAME|wxC2S_CSS_SYNTAX)
+wxColour.GetLuminance,0,0,0,double,						double wxColour.GetLuminance ( )
+wxColour.GetPixel,0,0,0,wxIntPtr,						wxIntPtr wxColour.GetPixel ( )
+wxColour.GetRGB,0,0,0,wxUint32,						wxUint32 wxColour.GetRGB ( )
+wxColour.GetRGBA,0,0,0,wxUint32,						wxUint32 wxColour.GetRGBA ( )
+wxColour.Green,0,0,0,char,						unsigned char wxColour.Green ( )
+wxColour.IsOk,0,0,0,bool,						bool wxColour.IsOk ( )
+wxColour.IsSolid,0,0,0,bool,						bool wxColour.IsSolid ( )
+wxColour.MakeDisabled,1,0,4,void,						static void wxColour.MakeDisabled ( unsigned char * r,     unsigned char * g,     unsigned char * b,     unsigned char brightness = 255    )
+wxColour.MakeDisabled,0,0,1,wxColour,						wxColour&  wxColour.MakeDisabled ( unsigned char brightness = 255)
+wxColour.MakeGrey,1,0,3,void,						static void wxColour.MakeGrey ( unsigned char * r,     unsigned char * g,     unsigned char * b    )
+wxColour.MakeGrey,1,0,6,void,						static void wxColour.MakeGrey ( unsigned char * r,     unsigned char * g,     unsigned char * b,     double weight_r,     double weight_g,     double weight_b    )
+wxColour.MakeMono,1,0,4,void,						static void wxColour.MakeMono ( unsigned char * r,     unsigned char * g,     unsigned char * b,     bool on    )
+wxColour.operator!=,0,0,1,bool,						bool wxColour.operator!= (  wxColour & colour)
+wxColour.operator=,0,0,1,wxColour,						wxColour&  wxColour.operator= (  wxColour & colour)
+wxColour.operator==,0,0,1,bool,						bool wxColour.operator== (  wxColour & colour)
+wxColour.Red,0,0,0,char,						unsigned char wxColour.Red ( )
+wxColour.Set,0,0,4,void,						void wxColour.Set ( unsigned char red,     unsigned char green,     unsigned char blue,     unsigned char alpha = wxALPHA_OPAQUE    )
+wxColour.Set,0,0,1,void,						void wxColour.Set ( unsigned long RGB)
+wxColour.Set,0,0,1,bool,						bool wxColour.Set (  wxString & str)
+wxColour.SetRGB,0,0,1,void,						void wxColour.SetRGB ( wxUint32 colRGB)
+wxColour.SetRGBA,0,0,1,void,						void wxColour.SetRGBA ( wxUint32 colRGBA)
+[INHERITS]
+wxObject

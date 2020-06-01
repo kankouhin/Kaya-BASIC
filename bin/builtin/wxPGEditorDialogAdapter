@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/editors.h>
+[METHODS]
+wxPGEditorDialogAdapter.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGEditorDialogAdapter.DoShowDialog,0,0,2,bool,						bool wxPGEditorDialogAdapter.DoShowDialog ( wxPropertyGrid * propGrid,     wxPGProperty * property    )
+wxPGEditorDialogAdapter.GetValue,0,0,0,wxVariant,						wxVariant&  wxPGEditorDialogAdapter.GetValue ( )
+wxPGEditorDialogAdapter.SetValue,0,0,1,void,						void wxPGEditorDialogAdapter.SetValue ( wxVariant value)
+wxPGEditorDialogAdapter.ShowDialog,0,0,2,bool,						bool wxPGEditorDialogAdapter.ShowDialog ( wxPropertyGrid * propGrid,     wxPGProperty * property    )
+wxPGEditorDialogAdapter.m_clientData,0,1,-1,void,						void* wxPGEditorDialogAdapter.m_clientData
+[INHERITS]
+wxObject

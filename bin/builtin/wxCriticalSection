@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/thread.h>
+[METHODS]
+wxCriticalSection.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCriticalSection.Enter,0,0,0,void,						void wxCriticalSection.Enter ( )
+wxCriticalSection.Leave,0,0,0,void,						void wxCriticalSection.Leave ( )
+wxCriticalSection.TryEnter,0,0,0,bool,						bool wxCriticalSection.TryEnter ( )
+[INHERITS]

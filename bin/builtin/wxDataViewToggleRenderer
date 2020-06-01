@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewToggleRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewToggleRenderer.GetDefaultType,1,0,0,wxString,						static wxString wxDataViewToggleRenderer.GetDefaultType ( )
+wxDataViewToggleRenderer.ShowAsRadio,0,0,0,void,						void wxDataViewToggleRenderer.ShowAsRadio ( )
+[INHERITS]
+wxDataViewRenderer
+wxObject

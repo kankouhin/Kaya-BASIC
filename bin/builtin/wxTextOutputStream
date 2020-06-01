@@ -1,0 +1,30 @@
+[CONSTS]
+[HEADER]
+<wx/txtstrm.h>
+[METHODS]
+wxTextOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextOutputStream.Flush,0,0,0,void,						void wxTextOutputStream.Flush ( )
+wxTextOutputStream.GetMode,0,0,0,wxEOL,						wxEOL wxTextOutputStream.GetMode ( )
+wxTextOutputStream.GetOutputStream,0,0,0,wxOutputStream,						wxOutputStream&  wxTextOutputStream.GetOutputStream ( )
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< (  wxString & string)
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< ( char c)
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< ( wchar_t wc)
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< ( wxInt16 c)
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< ( wxInt32 c)
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< ( wxInt64 c)
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< ( wxUint16 c)
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< ( wxUint32 c)
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< ( wxUint64 c)
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< ( double f)
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< ( float f)
+wxTextOutputStream.operator<<,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.operator<< ( __wxTextOutputManip func)
+wxTextOutputStream.PutChar,0,0,1,wxTextOutputStream,						wxTextOutputStream&  wxTextOutputStream.PutChar ( wxChar c)
+wxTextOutputStream.SetMode,0,0,1,void,						void wxTextOutputStream.SetMode ( wxEOL mode = wxEOL_NATIVE)
+wxTextOutputStream.Write,0,0,1,void,						void wxTextOutputStream.Write (  T & i)
+wxTextOutputStream.Write16,0,0,1,void,						void wxTextOutputStream.Write16 ( wxUint16 i16)
+wxTextOutputStream.Write32,0,0,1,void,						void wxTextOutputStream.Write32 ( wxUint32 i32)
+wxTextOutputStream.Write64,0,0,1,void,						void wxTextOutputStream.Write64 ( wxUint64 i64)
+wxTextOutputStream.Write8,0,0,1,void,						void wxTextOutputStream.Write8 ( wxUint8 i8)
+wxTextOutputStream.WriteDouble,0,0,1,void,						void wxTextOutputStream.WriteDouble ( double f)
+wxTextOutputStream.WriteString,0,0,1,void,						void wxTextOutputStream.WriteString (  wxString & string)
+[INHERITS]

@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/ribbon/toolbar.h>
+[METHODS]
+wxRibbonToolBarEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonToolBarEvent.GetBar,0,1,0,wxRibbonToolBar,						wxRibbonToolBar* wxRibbonToolBarEvent.GetBar ( )
+wxRibbonToolBarEvent.PopupMenu,0,0,1,bool,						bool wxRibbonToolBarEvent.PopupMenu ( wxMenu * menu)
+wxRibbonToolBarEvent.SetBar,0,0,1,void,						void wxRibbonToolBarEvent.SetBar ( wxRibbonToolBar * bar)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

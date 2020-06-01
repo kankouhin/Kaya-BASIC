@@ -1,0 +1,20 @@
+[CONSTS]
+wxDD_DEFAULT_STYLE
+wxDD_DIR_MUST_EXIST
+wxDD_CHANGE_DIR
+[HEADER]
+<wx/dirdlg.h>
+[METHODS]
+wxDirDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDirDialog.GetMessage,0,0,0,wxString,						wxString wxDirDialog.GetMessage ( )
+wxDirDialog.GetPath,0,0,0,wxString,						wxString wxDirDialog.GetPath ( )
+wxDirDialog.SetMessage,0,0,1,void,						void wxDirDialog.SetMessage (  wxString & message)
+wxDirDialog.SetPath,0,0,1,void,						void wxDirDialog.SetPath (  wxString & path)
+wxDirDialog.ShowModal,0,0,0,int,						int wxDirDialog.ShowModal ( )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

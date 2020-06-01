@@ -1,0 +1,21 @@
+[CONSTS]
+wxEVT_NOTIFICATION_MESSAGE_CLICK(id,  func)
+wxEVT_NOTIFICATION_MESSAGE_DISMISSED(id,  func)
+wxEVT_NOTIFICATION_MESSAGE_ACTION(id,  func)
+[HEADER]
+<wx/notifmsg.h>
+[METHODS]
+wxNotificationMessage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxNotificationMessage.AddAction,0,0,2,bool,						bool wxNotificationMessage.AddAction ( wxWindowID actionid,      wxString & label = wxString()    )
+wxNotificationMessage.Close,0,0,0,bool,						bool wxNotificationMessage.Close ( )
+wxNotificationMessage.MSWUseToasts,1,0,2,bool,						static bool wxNotificationMessage.MSWUseToasts (  wxString & shortcutPath = wxString(),      wxString & appId = wxString()    )
+wxNotificationMessage.SetFlags,0,0,1,void,						void wxNotificationMessage.SetFlags ( int flags)
+wxNotificationMessage.SetIcon,0,0,1,void,						void wxNotificationMessage.SetIcon (  wxIcon & icon)
+wxNotificationMessage.SetMessage,0,0,1,void,						void wxNotificationMessage.SetMessage (  wxString & message)
+wxNotificationMessage.SetParent,0,0,1,void,						void wxNotificationMessage.SetParent ( wxWindow * parent)
+wxNotificationMessage.SetTitle,0,0,1,void,						void wxNotificationMessage.SetTitle (  wxString & title)
+wxNotificationMessage.Show,0,0,1,bool,						bool wxNotificationMessage.Show ( int timeout = Timeout_Auto)
+wxNotificationMessage.UseTaskBarIcon,1,1,1,wxTaskBarIcon,						static wxTaskBarIcon* wxNotificationMessage.UseTaskBarIcon ( wxTaskBarIcon * icon)
+[INHERITS]
+wxEvtHandler
+wxObject

@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/statbmp.h>
+[METHODS]
+wxStaticBitmap.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStaticBitmap.ScaleMode,0,0,-1,enum,						enum wxStaticBitmap.ScaleMode
+wxStaticBitmap.Create,0,0,7,bool,						bool wxStaticBitmap.Create ( wxWindow * parent,     wxWindowID id,      wxBitmap & label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxStaticBitmapNameStr    )
+wxStaticBitmap.GetBitmap,0,0,0,wxBitmap,						wxBitmap wxStaticBitmap.GetBitmap ( )
+wxStaticBitmap.GetIcon,0,0,0,wxIcon,						wxIcon wxStaticBitmap.GetIcon ( )
+wxStaticBitmap.GetScaleMode,0,0,0,ScaleMode,						ScaleMode wxStaticBitmap.GetScaleMode ( )
+wxStaticBitmap.SetBitmap,0,0,1,void,						void wxStaticBitmap.SetBitmap (  wxBitmap & label)
+wxStaticBitmap.SetIcon,0,0,1,void,						void wxStaticBitmap.SetIcon (  wxIcon & label)
+wxStaticBitmap.SetScaleMode,0,0,1,void,						void wxStaticBitmap.SetScaleMode ( ScaleMode scaleMode)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

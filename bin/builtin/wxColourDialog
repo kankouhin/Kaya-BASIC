@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/colordlg.h>
+[METHODS]
+wxColourDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxColourDialog.Create,0,0,2,bool,						bool wxColourDialog.Create ( wxWindow * parent,      wxColourData * data = NULL    )
+wxColourDialog.GetColourData,0,0,0,wxColourData,						wxColourData&  wxColourDialog.GetColourData ( )
+wxColourDialog.ShowModal,0,0,0,int,						int wxColourDialog.ShowModal ( )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

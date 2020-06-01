@@ -1,0 +1,27 @@
+[CONSTS]
+[HEADER]
+<wx/grid.h>
+[METHODS]
+wxGridCellEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridCellEditor.ApplyEdit,0,0,3,void,						void wxGridCellEditor.ApplyEdit ( int row,     int col,     wxGrid * grid    )
+wxGridCellEditor.BeginEdit,0,0,3,void,						void wxGridCellEditor.BeginEdit ( int row,     int col,     wxGrid * grid    )
+wxGridCellEditor.Clone,0,1,0,wxGridCellEditor,						wxGridCellEditor* wxGridCellEditor.Clone ( )
+wxGridCellEditor.Create,0,0,3,void,						void wxGridCellEditor.Create ( wxWindow * parent,     wxWindowID id,     wxEvtHandler * evtHandler    )
+wxGridCellEditor.Destroy,0,0,0,void,						void wxGridCellEditor.Destroy ( )
+wxGridCellEditor.EndEdit,0,0,5,bool,						bool wxGridCellEditor.EndEdit ( int row,     int col,      wxGrid * grid,      wxString & oldval,     wxString * newval    )
+wxGridCellEditor.GetControl,0,1,0,wxControl,						wxControl* wxGridCellEditor.GetControl ( )
+wxGridCellEditor.GetValue,0,0,0,wxString,						wxString wxGridCellEditor.GetValue ( )
+wxGridCellEditor.GetWindow,0,1,0,wxWindow,						wxWindow* wxGridCellEditor.GetWindow ( )
+wxGridCellEditor.HandleReturn,0,0,1,void,						void wxGridCellEditor.HandleReturn ( wxKeyEvent & event)
+wxGridCellEditor.IsCreated,0,0,0,bool,						bool wxGridCellEditor.IsCreated ( )
+wxGridCellEditor.PaintBackground,0,0,3,void,						void wxGridCellEditor.PaintBackground ( wxDC & dc,      wxRect & rectCell,      wxGridCellAttr & attr    )
+wxGridCellEditor.Reset,0,0,0,void,						void wxGridCellEditor.Reset ( )
+wxGridCellEditor.SetControl,0,0,1,void,						void wxGridCellEditor.SetControl ( wxControl * control)
+wxGridCellEditor.SetSize,0,0,1,void,						void wxGridCellEditor.SetSize (  wxRect & rect)
+wxGridCellEditor.SetWindow,0,0,1,void,						void wxGridCellEditor.SetWindow ( wxWindow * window)
+wxGridCellEditor.Show,0,0,2,void,						void wxGridCellEditor.Show ( bool show,     wxGridCellAttr * attr = NULL    )
+wxGridCellEditor.StartingClick,0,0,0,void,						void wxGridCellEditor.StartingClick ( )
+wxGridCellEditor.StartingKey,0,0,1,void,						void wxGridCellEditor.StartingKey ( wxKeyEvent & event)
+[INHERITS]
+wxClientDataContainer
+wxRefCounter

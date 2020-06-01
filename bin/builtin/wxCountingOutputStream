@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/stream.h>
+[METHODS]
+wxCountingOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCountingOutputStream.GetLength,0,0,0,wxFileOffset,						wxFileOffset wxCountingOutputStream.GetLength ( )
+[INHERITS]
+wxOutputStream
+wxStreamBase

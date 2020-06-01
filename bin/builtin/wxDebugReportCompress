@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/debugrpt.h>
+[METHODS]
+wxDebugReportCompress.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDebugReportCompress.GetCompressedFileName,0,0,0,wxString,						wxString&  wxDebugReportCompress.GetCompressedFileName ( )
+wxDebugReportCompress.SetCompressedFileBaseName,0,0,1,void,						void wxDebugReportCompress.SetCompressedFileBaseName (  wxString & name)
+wxDebugReportCompress.SetCompressedFileDirectory,0,0,1,void,						void wxDebugReportCompress.SetCompressedFileDirectory (  wxString & dir)
+[INHERITS]
+wxDebugReport

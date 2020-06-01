@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/valgen.h>
+[METHODS]
+wxGenericValidator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGenericValidator.Clone,0,1,0,wxObject,						wxObject* wxGenericValidator.Clone ( )
+wxGenericValidator.TransferFromWindow,0,0,0,bool,						bool wxGenericValidator.TransferFromWindow ( )
+wxGenericValidator.TransferToWindow,0,0,0,bool,						bool wxGenericValidator.TransferToWindow ( )
+[INHERITS]
+wxValidator
+wxEvtHandler
+wxObject

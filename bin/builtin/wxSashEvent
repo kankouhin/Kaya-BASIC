@@ -1,0 +1,17 @@
+[CONSTS]
+wxEVT_SASH_DRAGGED
+wxEVT_SASH_DRAGGED_RANGE
+[HEADER]
+<wx/sashwin.h>
+[METHODS]
+wxSashEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSashEvent.GetDragRect,0,0,0,wxRect,						wxRect wxSashEvent.GetDragRect ( )
+wxSashEvent.GetDragStatus,0,0,0,wxSashDragStatus,						wxSashDragStatus wxSashEvent.GetDragStatus ( )
+wxSashEvent.GetEdge,0,0,0,wxSashEdgePosition,						wxSashEdgePosition wxSashEvent.GetEdge ( )
+wxSashEvent.SetDragRect,0,0,1,void,						void wxSashEvent.SetDragRect (  wxRect & rect)
+wxSashEvent.SetDragStatus,0,0,1,void,						void wxSashEvent.SetDragStatus ( wxSashDragStatus status)
+wxSashEvent.SetEdge,0,0,1,void,						void wxSashEvent.SetEdge ( wxSashEdgePosition edge)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

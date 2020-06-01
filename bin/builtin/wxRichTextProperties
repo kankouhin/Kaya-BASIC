@@ -1,0 +1,37 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextProperties.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextProperties.Clear,0,0,0,void,						void wxRichTextProperties.Clear ( )
+wxRichTextProperties.Copy,0,0,1,void,						void wxRichTextProperties.Copy (  wxRichTextProperties & props)
+wxRichTextProperties.Find,0,0,1,int,						int wxRichTextProperties.Find (  wxString & name)
+wxRichTextProperties.FindOrCreateProperty,0,1,1,wxVariant,						wxVariant* wxRichTextProperties.FindOrCreateProperty (  wxString & name)
+wxRichTextProperties.GetCount,0,0,0,size_t,						size_t wxRichTextProperties.GetCount ( )
+wxRichTextProperties.GetProperties,0,0,0,wxRichTextVariantArray,						wxRichTextVariantArray&  wxRichTextProperties.GetProperties ( )
+wxRichTextProperties.GetProperties,0,0,0,wxRichTextVariantArray,						wxRichTextVariantArray&  wxRichTextProperties.GetProperties ( )
+wxRichTextProperties.GetProperty,0,0,1,wxVariant,						wxVariant&  wxRichTextProperties.GetProperty (  wxString & name)
+wxRichTextProperties.GetPropertyBool,0,0,1,bool,						bool wxRichTextProperties.GetPropertyBool (  wxString & name)
+wxRichTextProperties.GetPropertyDouble,0,0,1,double,						double wxRichTextProperties.GetPropertyDouble (  wxString & name)
+wxRichTextProperties.GetPropertyLong,0,0,1,long,						long wxRichTextProperties.GetPropertyLong (  wxString & name)
+wxRichTextProperties.GetPropertyNames,0,0,0,wxArrayString,						wxArrayString wxRichTextProperties.GetPropertyNames ( )
+wxRichTextProperties.GetPropertyString,0,0,1,wxString,						wxString wxRichTextProperties.GetPropertyString (  wxString & name)
+wxRichTextProperties.HasProperty,0,0,1,bool,						bool wxRichTextProperties.HasProperty (  wxString & name)
+wxRichTextProperties.MergeProperties,0,0,1,void,						void wxRichTextProperties.MergeProperties (  wxRichTextProperties & properties)
+wxRichTextProperties.operator=,0,0,1,void,						void wxRichTextProperties.operator= (  wxRichTextProperties & props)
+wxRichTextProperties.operator==,0,0,1,bool,						bool wxRichTextProperties.operator== (  wxRichTextProperties & props)
+wxRichTextProperties.operator[],0,0,1,wxVariant,						wxVariant&  wxRichTextProperties.operator[] ( size_t idx)
+wxRichTextProperties.operator[],0,0,1,wxVariant,						wxVariant&  wxRichTextProperties.operator[] ( size_t idx)
+wxRichTextProperties.Remove,0,0,1,bool,						bool wxRichTextProperties.Remove (  wxString & name)
+wxRichTextProperties.RemoveProperties,0,0,1,void,						void wxRichTextProperties.RemoveProperties (  wxRichTextProperties & properties)
+wxRichTextProperties.SetProperties,0,0,1,void,						void wxRichTextProperties.SetProperties (  wxRichTextVariantArray & props)
+wxRichTextProperties.SetProperty,0,0,1,void,						void wxRichTextProperties.SetProperty (  wxVariant & variant)
+wxRichTextProperties.SetProperty,0,0,2,void,						void wxRichTextProperties.SetProperty (  wxString & name,      wxVariant & variant    )
+wxRichTextProperties.SetProperty,0,0,2,void,						void wxRichTextProperties.SetProperty (  wxString & name,      wxString & value    )
+wxRichTextProperties.SetProperty,0,0,2,void,						void wxRichTextProperties.SetProperty (  wxString & name,      wxChar * value    )
+wxRichTextProperties.SetProperty,0,0,2,void,						void wxRichTextProperties.SetProperty (  wxString & name,     long value    )
+wxRichTextProperties.SetProperty,0,0,2,void,						void wxRichTextProperties.SetProperty (  wxString & name,     double value    )
+wxRichTextProperties.SetProperty,0,0,2,void,						void wxRichTextProperties.SetProperty (  wxString & name,     bool value    )
+wxRichTextProperties.m_properties,0,0,-1,wxRichTextVariantArray,						wxRichTextVariantArray wxRichTextProperties.m_properties
+[INHERITS]
+wxObject

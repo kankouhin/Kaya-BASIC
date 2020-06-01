@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/property.h>
+[METHODS]
+wxPGRootProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGRootProperty.StringToValue,0,0,3,bool,						bool wxPGRootProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags    )
+[INHERITS]
+wxPGProperty
+wxObject

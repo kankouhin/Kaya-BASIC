@@ -1,0 +1,29 @@
+[CONSTS]
+[HEADER]
+<wx/longlong.h>
+[METHODS]
+wxLongLong.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxLongLong.Abs,0,0,0,wxLongLong,						wxLongLong wxLongLong.Abs ( )
+wxLongLong.Abs,0,0,0,wxLongLong,						wxLongLong&  wxLongLong.Abs ( )
+wxLongLong.Assign,0,0,1,wxLongLong,						wxLongLong wxLongLong.Assign ( double d)
+wxLongLong.GetHi,0,0,0,long,						long wxLongLong.GetHi ( )
+wxLongLong.GetLo,0,0,0,long,						unsigned long wxLongLong.GetLo ( )
+wxLongLong.GetValue,0,0,0,wxLongLong_t,						wxLongLong_t wxLongLong.GetValue ( )
+wxLongLong.operator+,0,0,1,wxLongLong,						wxLongLong wxLongLong.operator+ (  wxLongLong & ll)
+wxLongLong.operator+,0,0,1,wxLongLong,						wxLongLong&  wxLongLong.operator+ (  wxLongLong & ll)
+wxLongLong.operator++,0,0,0,wxLongLong,						wxLongLong wxLongLong.operator++ ( )
+wxLongLong.operator++,0,0,1,wxLongLong,						wxLongLong wxLongLong.operator++ ( int )
+wxLongLong.operator-,0,0,1,wxLongLong,						wxLongLong wxLongLong.operator- (  wxLongLong & ll)
+wxLongLong.operator-,0,0,1,wxLongLong,						wxLongLong&  wxLongLong.operator- (  wxLongLong & ll)
+wxLongLong.operator-,0,0,0,wxLongLong,						wxLongLong wxLongLong.operator- ( )
+wxLongLong.operator--,0,0,0,wxLongLong,						wxLongLong wxLongLong.operator-- ( )
+wxLongLong.operator--,0,0,1,wxLongLong,						wxLongLong wxLongLong.operator-- ( int )
+wxLongLong.operator=,0,0,1,wxLongLong,						wxLongLong&  wxLongLong.operator= (  wxULongLong & ll)
+wxLongLong.operator=,0,0,1,wxLongLong,						wxLongLong&  wxLongLong.operator= ( wxLongLong_t ll)
+wxLongLong.operator=,0,0,1,wxLongLong,						wxLongLong&  wxLongLong.operator= ( wxULongLong_t ll)
+wxLongLong.operator=,0,0,1,wxLongLong,						wxLongLong&  wxLongLong.operator= ( long l)
+wxLongLong.operator=,0,0,1,wxLongLong,						wxLongLong&  wxLongLong.operator= ( unsigned long l)
+wxLongLong.ToDouble,0,0,0,double,						double wxLongLong.ToDouble ( )
+wxLongLong.ToLong,0,0,0,long,						long wxLongLong.ToLong ( )
+wxLongLong.ToString,0,0,0,wxString,						wxString wxLongLong.ToString ( )
+[INHERITS]

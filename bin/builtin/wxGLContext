@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/glcanvas.h>
+[METHODS]
+wxGLContext.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGLContext.IsOK,0,0,0,bool,						bool wxGLContext.IsOK ( )
+wxGLContext.SetCurrent,0,0,1,bool,						bool wxGLContext.SetCurrent (  wxGLCanvas & win)
+[INHERITS]
+wxObject

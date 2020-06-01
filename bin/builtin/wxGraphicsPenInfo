@@ -1,0 +1,38 @@
+[CONSTS]
+[HEADER]
+<wx/graphics.h>
+[METHODS]
+wxGraphicsPenInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGraphicsPenInfo.Cap,0,0,1,wxGraphicsPenInfo,						wxGraphicsPenInfo&  wxGraphicsPenInfo.Cap ( wxPenCap cap)
+wxGraphicsPenInfo.Colour,0,0,1,wxGraphicsPenInfo,						wxGraphicsPenInfo&  wxGraphicsPenInfo.Colour (  wxColour & col)
+wxGraphicsPenInfo.Dashes,0,0,2,wxGraphicsPenInfo,						wxGraphicsPenInfo&  wxGraphicsPenInfo.Dashes ( int nb_dashes,      wxDash * dash    )
+wxGraphicsPenInfo.GetCap,0,0,0,wxPenCap,						wxPenCap wxGraphicsPenInfo.GetCap ( )
+wxGraphicsPenInfo.GetColour,0,0,0,wxColour,						wxColour wxGraphicsPenInfo.GetColour ( )
+wxGraphicsPenInfo.GetDash,0,1,0,wxDash,						wxDash* wxGraphicsPenInfo.GetDash ( )
+wxGraphicsPenInfo.GetDashCount,0,0,0,int,						int wxGraphicsPenInfo.GetDashCount ( )
+wxGraphicsPenInfo.GetDashes,0,0,1,int,						int wxGraphicsPenInfo.GetDashes ( wxDash ** ptr)
+wxGraphicsPenInfo.GetEndX,0,0,0,wxDouble,						wxDouble wxGraphicsPenInfo.GetEndX ( )
+wxGraphicsPenInfo.GetEndY,0,0,0,wxDouble,						wxDouble wxGraphicsPenInfo.GetEndY ( )
+wxGraphicsPenInfo.GetGradientType,0,0,0,wxGradientType,						wxGradientType wxGraphicsPenInfo.GetGradientType ( )
+wxGraphicsPenInfo.GetJoin,0,0,0,wxPenJoin,						wxPenJoin wxGraphicsPenInfo.GetJoin ( )
+wxGraphicsPenInfo.GetRadius,0,0,0,wxDouble,						wxDouble wxGraphicsPenInfo.GetRadius ( )
+wxGraphicsPenInfo.GetStartX,0,0,0,wxDouble,						wxDouble wxGraphicsPenInfo.GetStartX ( )
+wxGraphicsPenInfo.GetStartY,0,0,0,wxDouble,						wxDouble wxGraphicsPenInfo.GetStartY ( )
+wxGraphicsPenInfo.GetStipple,0,0,0,wxBitmap,						wxBitmap wxGraphicsPenInfo.GetStipple ( )
+wxGraphicsPenInfo.GetStops,0,0,0,wxGraphicsGradientStops,						wxGraphicsGradientStops&  wxGraphicsPenInfo.GetStops ( )
+wxGraphicsPenInfo.GetStyle,0,0,0,wxPenStyle,						wxPenStyle wxGraphicsPenInfo.GetStyle ( )
+wxGraphicsPenInfo.GetWidth,0,0,0,wxDouble,						wxDouble wxGraphicsPenInfo.GetWidth ( )
+wxGraphicsPenInfo.GetX1,0,0,0,wxDouble,						wxDouble wxGraphicsPenInfo.GetX1 ( )
+wxGraphicsPenInfo.GetX2,0,0,0,wxDouble,						wxDouble wxGraphicsPenInfo.GetX2 ( )
+wxGraphicsPenInfo.GetY1,0,0,0,wxDouble,						wxDouble wxGraphicsPenInfo.GetY1 ( )
+wxGraphicsPenInfo.GetY2,0,0,0,wxDouble,						wxDouble wxGraphicsPenInfo.GetY2 ( )
+wxGraphicsPenInfo.IsTransparent,0,0,0,bool,						bool wxGraphicsPenInfo.IsTransparent ( )
+wxGraphicsPenInfo.Join,0,0,1,wxGraphicsPenInfo,						wxGraphicsPenInfo&  wxGraphicsPenInfo.Join ( wxPenJoin join)
+wxGraphicsPenInfo.LinearGradient,0,0,7,wxGraphicsPenInfo,						wxGraphicsPenInfo&  wxGraphicsPenInfo.LinearGradient ( wxDouble x1,     wxDouble y1,     wxDouble x2,     wxDouble y2,      wxColour & c1,      wxColour & c2,      wxGraphicsMatrix & matrix = wxNullGraphicsMatrix    )
+wxGraphicsPenInfo.LinearGradient,0,0,6,wxGraphicsPenInfo,						wxGraphicsPenInfo&  wxGraphicsPenInfo.LinearGradient ( wxDouble x1,     wxDouble y1,     wxDouble x2,     wxDouble y2,      wxGraphicsGradientStops & stops,      wxGraphicsMatrix & matrix = wxNullGraphicsMatrix    )
+wxGraphicsPenInfo.RadialGradient,0,0,8,wxGraphicsPenInfo,						wxGraphicsPenInfo&  wxGraphicsPenInfo.RadialGradient ( wxDouble startX,     wxDouble startY,     wxDouble endX,     wxDouble endY,     wxDouble radius,      wxColour & oColor,      wxColour & cColor,      wxGraphicsMatrix & matrix = wxNullGraphicsMatrix    )
+wxGraphicsPenInfo.RadialGradient,0,0,7,wxGraphicsPenInfo,						wxGraphicsPenInfo&  wxGraphicsPenInfo.RadialGradient ( wxDouble startX,     wxDouble startY,     wxDouble endX,     wxDouble endY,     wxDouble radius,      wxGraphicsGradientStops & stops,      wxGraphicsMatrix & matrix = wxNullGraphicsMatrix    )
+wxGraphicsPenInfo.Stipple,0,0,1,wxGraphicsPenInfo,						wxGraphicsPenInfo&  wxGraphicsPenInfo.Stipple (  wxBitmap & stipple)
+wxGraphicsPenInfo.Style,0,0,1,wxGraphicsPenInfo,						wxGraphicsPenInfo&  wxGraphicsPenInfo.Style ( wxPenStyle style)
+wxGraphicsPenInfo.Width,0,0,1,wxGraphicsPenInfo,						wxGraphicsPenInfo&  wxGraphicsPenInfo.Width ( wxDouble width)
+[INHERITS]

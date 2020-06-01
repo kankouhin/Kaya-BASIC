@@ -1,0 +1,43 @@
+[CONSTS]
+[HEADER]
+<wx/html/winpars.h>
+[METHODS]
+wxHtmlWinParser.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlWinParser.AddModule,1,0,1,void,						static void wxHtmlWinParser.AddModule ( wxHtmlTagsModule * module)
+wxHtmlWinParser.CloseContainer,0,1,0,wxHtmlContainerCell,						wxHtmlContainerCell* wxHtmlWinParser.CloseContainer ( )
+wxHtmlWinParser.CreateCurrentFont,0,1,0,wxFont,						wxFont* wxHtmlWinParser.CreateCurrentFont ( )
+wxHtmlWinParser.GetActualColor,0,0,0,wxColour,						wxColour&  wxHtmlWinParser.GetActualColor ( )
+wxHtmlWinParser.GetAlign,0,0,0,int,						int wxHtmlWinParser.GetAlign ( )
+wxHtmlWinParser.GetCharHeight,0,0,0,int,						int wxHtmlWinParser.GetCharHeight ( )
+wxHtmlWinParser.GetCharWidth,0,0,0,int,						int wxHtmlWinParser.GetCharWidth ( )
+wxHtmlWinParser.GetContainer,0,1,0,wxHtmlContainerCell,						wxHtmlContainerCell* wxHtmlWinParser.GetContainer ( )
+wxHtmlWinParser.GetDC,0,1,0,wxDC,						wxDC* wxHtmlWinParser.GetDC ( )
+wxHtmlWinParser.GetEncodingConverter,0,1,0,wxEncodingConverter,						wxEncodingConverter* wxHtmlWinParser.GetEncodingConverter ( )
+wxHtmlWinParser.GetFontBold,0,0,0,int,						int wxHtmlWinParser.GetFontBold ( )
+wxHtmlWinParser.GetFontFace,0,0,0,wxString,						wxString wxHtmlWinParser.GetFontFace ( )
+wxHtmlWinParser.GetFontFixed,0,0,0,int,						int wxHtmlWinParser.GetFontFixed ( )
+wxHtmlWinParser.GetFontItalic,0,0,0,int,						int wxHtmlWinParser.GetFontItalic ( )
+wxHtmlWinParser.GetFontSize,0,0,0,int,						int wxHtmlWinParser.GetFontSize ( )
+wxHtmlWinParser.GetFontUnderlined,0,0,0,int,						int wxHtmlWinParser.GetFontUnderlined ( )
+wxHtmlWinParser.GetInputEncoding,0,0,0,wxFontEncoding,						wxFontEncoding wxHtmlWinParser.GetInputEncoding ( )
+wxHtmlWinParser.GetLink,0,0,0,wxHtmlLinkInfo,						wxHtmlLinkInfo&  wxHtmlWinParser.GetLink ( )
+wxHtmlWinParser.GetLinkColor,0,0,0,wxColour,						wxColour&  wxHtmlWinParser.GetLinkColor ( )
+wxHtmlWinParser.GetOutputEncoding,0,0,0,wxFontEncoding,						wxFontEncoding wxHtmlWinParser.GetOutputEncoding ( )
+wxHtmlWinParser.GetWindowInterface,0,1,0,wxHtmlWindowInterface,						wxHtmlWindowInterface* wxHtmlWinParser.GetWindowInterface ( )
+wxHtmlWinParser.OpenContainer,0,1,0,wxHtmlContainerCell,						wxHtmlContainerCell* wxHtmlWinParser.OpenContainer ( )
+wxHtmlWinParser.SetActualColor,0,0,1,void,						void wxHtmlWinParser.SetActualColor (  wxColour & clr)
+wxHtmlWinParser.SetAlign,0,0,1,void,						void wxHtmlWinParser.SetAlign ( int a)
+wxHtmlWinParser.SetContainer,0,1,1,wxHtmlContainerCell,						wxHtmlContainerCell* wxHtmlWinParser.SetContainer ( wxHtmlContainerCell * c)
+wxHtmlWinParser.SetDC,0,0,2,void,						void wxHtmlWinParser.SetDC ( wxDC * dc,     double pixel_scale = 1.0e+0    )
+wxHtmlWinParser.SetFontBold,0,0,1,void,						void wxHtmlWinParser.SetFontBold ( int x)
+wxHtmlWinParser.SetFontFace,0,0,1,void,						void wxHtmlWinParser.SetFontFace (  wxString & face)
+wxHtmlWinParser.SetFontFixed,0,0,1,void,						void wxHtmlWinParser.SetFontFixed ( int x)
+wxHtmlWinParser.SetFontItalic,0,0,1,void,						void wxHtmlWinParser.SetFontItalic ( int x)
+wxHtmlWinParser.SetFonts,0,0,3,void,						void wxHtmlWinParser.SetFonts (  wxString & normal_face,      wxString & fixed_face,      int * sizes = 0    )
+wxHtmlWinParser.SetFontSize,0,0,1,void,						void wxHtmlWinParser.SetFontSize ( int s)
+wxHtmlWinParser.SetFontUnderlined,0,0,1,void,						void wxHtmlWinParser.SetFontUnderlined ( int x)
+wxHtmlWinParser.SetInputEncoding,0,0,1,void,						void wxHtmlWinParser.SetInputEncoding ( wxFontEncoding enc)
+wxHtmlWinParser.SetLink,0,0,1,void,						void wxHtmlWinParser.SetLink (  wxHtmlLinkInfo & link)
+wxHtmlWinParser.SetLinkColor,0,0,1,void,						void wxHtmlWinParser.SetLinkColor (  wxColour & clr)
+[INHERITS]
+wxHtmlParser

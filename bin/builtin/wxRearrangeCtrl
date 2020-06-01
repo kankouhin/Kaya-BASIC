@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/rearrangectrl.h>
+[METHODS]
+wxRearrangeCtrl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRearrangeCtrl.Create,0,0,9,bool,						bool wxRearrangeCtrl.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos,      wxSize & size,      wxArrayInt & order,      wxArrayString & items,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxRearrangeListNameStr    )
+wxRearrangeCtrl.GetList,0,1,0,wxRearrangeList,						wxRearrangeList* wxRearrangeCtrl.GetList ( )
+[INHERITS]
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject

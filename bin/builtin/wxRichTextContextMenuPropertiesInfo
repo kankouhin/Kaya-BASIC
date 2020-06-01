@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextctrl.h>
+[METHODS]
+wxRichTextContextMenuPropertiesInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextContextMenuPropertiesInfo.AddItem,0,0,2,bool,						bool wxRichTextContextMenuPropertiesInfo.AddItem (  wxString & label,     wxRichTextObject * obj    )
+wxRichTextContextMenuPropertiesInfo.AddItems,0,0,3,int,						int wxRichTextContextMenuPropertiesInfo.AddItems ( wxRichTextCtrl * ctrl,     wxRichTextObject * container,     wxRichTextObject * obj    )
+wxRichTextContextMenuPropertiesInfo.AddMenuItems,0,0,2,int,						int wxRichTextContextMenuPropertiesInfo.AddMenuItems ( wxMenu * menu,     int startCmd = wxID_RICHTEXT_PROPERTIES1    )
+wxRichTextContextMenuPropertiesInfo.Clear,0,0,0,void,						void wxRichTextContextMenuPropertiesInfo.Clear ( )
+wxRichTextContextMenuPropertiesInfo.GetCount,0,0,0,int,						int wxRichTextContextMenuPropertiesInfo.GetCount ( )
+wxRichTextContextMenuPropertiesInfo.GetLabel,0,0,1,wxString,						wxString wxRichTextContextMenuPropertiesInfo.GetLabel ( int n)
+wxRichTextContextMenuPropertiesInfo.GetLabels,0,0,0,wxArrayString,						wxArrayString&  wxRichTextContextMenuPropertiesInfo.GetLabels ( )
+wxRichTextContextMenuPropertiesInfo.GetLabels,0,0,0,wxArrayString,						wxArrayString&  wxRichTextContextMenuPropertiesInfo.GetLabels ( )
+wxRichTextContextMenuPropertiesInfo.GetObject,0,1,1,wxRichTextObject,						wxRichTextObject* wxRichTextContextMenuPropertiesInfo.GetObject ( int n)
+wxRichTextContextMenuPropertiesInfo.GetObjects,0,0,0,wxRichTextObjectPtrArray,						wxRichTextObjectPtrArray&  wxRichTextContextMenuPropertiesInfo.GetObjects ( )
+wxRichTextContextMenuPropertiesInfo.GetObjects,0,0,0,wxRichTextObjectPtrArray,						wxRichTextObjectPtrArray&  wxRichTextContextMenuPropertiesInfo.GetObjects ( )
+wxRichTextContextMenuPropertiesInfo.Init,0,0,0,void,						void wxRichTextContextMenuPropertiesInfo.Init ( )
+wxRichTextContextMenuPropertiesInfo.m_labels,0,0,-1,wxArrayString,						wxArrayString wxRichTextContextMenuPropertiesInfo.m_labels
+wxRichTextContextMenuPropertiesInfo.m_objects,0,0,-1,wxRichTextObjectPtrArray,						wxRichTextObjectPtrArray wxRichTextContextMenuPropertiesInfo.m_objects
+[INHERITS]

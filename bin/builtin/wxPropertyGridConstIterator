@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/propgridpagestate.h>
+[METHODS]
+wxPropertyGridConstIterator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPropertyGridConstIterator.operator=,0,0,1,wxPropertyGridConstIterator,						wxPropertyGridConstIterator&  wxPropertyGridConstIterator.operator= (  wxPropertyGridIterator & it)
+[INHERITS]
+wxPropertyGridIteratorBase

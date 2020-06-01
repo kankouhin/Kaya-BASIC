@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/headercol.h>
+[METHODS]
+wxHeaderColumn.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHeaderColumn.GetAlignment,0,0,0,wxAlignment,						wxAlignment wxHeaderColumn.GetAlignment ( )
+wxHeaderColumn.GetBitmap,0,0,0,wxBitmap,						wxBitmap wxHeaderColumn.GetBitmap ( )
+wxHeaderColumn.GetFlags,0,0,0,int,						int wxHeaderColumn.GetFlags ( )
+wxHeaderColumn.GetMinWidth,0,0,0,int,						int wxHeaderColumn.GetMinWidth ( )
+wxHeaderColumn.GetTitle,0,0,0,wxString,						wxString wxHeaderColumn.GetTitle ( )
+wxHeaderColumn.GetWidth,0,0,0,int,						int wxHeaderColumn.GetWidth ( )
+wxHeaderColumn.HasFlag,0,0,1,bool,						bool wxHeaderColumn.HasFlag ( int flag)
+wxHeaderColumn.IsHidden,0,0,0,bool,						bool wxHeaderColumn.IsHidden ( )
+wxHeaderColumn.IsReorderable,0,0,0,bool,						bool wxHeaderColumn.IsReorderable ( )
+wxHeaderColumn.IsResizeable,0,0,0,bool,						bool wxHeaderColumn.IsResizeable ( )
+wxHeaderColumn.IsShown,0,0,0,bool,						bool wxHeaderColumn.IsShown ( )
+wxHeaderColumn.IsSortable,0,0,0,bool,						bool wxHeaderColumn.IsSortable ( )
+wxHeaderColumn.IsSortKey,0,0,0,bool,						bool wxHeaderColumn.IsSortKey ( )
+wxHeaderColumn.IsSortOrderAscending,0,0,0,bool,						bool wxHeaderColumn.IsSortOrderAscending ( )
+[INHERITS]

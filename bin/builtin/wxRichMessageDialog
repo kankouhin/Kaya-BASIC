@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/richmsgdlg.h>
+[METHODS]
+wxRichMessageDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichMessageDialog.GetCheckBoxText,0,0,0,wxString,						wxString wxRichMessageDialog.GetCheckBoxText ( )
+wxRichMessageDialog.GetDetailedText,0,0,0,wxString,						wxString wxRichMessageDialog.GetDetailedText ( )
+wxRichMessageDialog.GetFooterIcon,0,0,0,int,						int wxRichMessageDialog.GetFooterIcon ( )
+wxRichMessageDialog.GetFooterText,0,0,0,wxString,						wxString wxRichMessageDialog.GetFooterText ( )
+wxRichMessageDialog.IsCheckBoxChecked,0,0,0,bool,						bool wxRichMessageDialog.IsCheckBoxChecked ( )
+wxRichMessageDialog.SetFooterIcon,0,0,1,void,						void wxRichMessageDialog.SetFooterIcon ( int icon)
+wxRichMessageDialog.SetFooterText,0,0,1,void,						void wxRichMessageDialog.SetFooterText (  wxString & footerText)
+wxRichMessageDialog.ShowCheckBox,0,0,2,void,						void wxRichMessageDialog.ShowCheckBox (  wxString & checkBoxText,     bool checked = false    )
+wxRichMessageDialog.ShowDetailedText,0,0,1,void,						void wxRichMessageDialog.ShowDetailedText (  wxString & detailedText)
+wxRichMessageDialog.ShowModal,0,0,0,int,						int wxRichMessageDialog.ShowModal ( )
+[INHERITS]

@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmprint.h>
+[METHODS]
+wxHtmlPrintout.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlPrintout.AddFilter,1,0,1,void,						static void wxHtmlPrintout.AddFilter ( wxHtmlFilter * filter)
+wxHtmlPrintout.SetFonts,0,0,3,void,						void wxHtmlPrintout.SetFonts (  wxString & normal_face,      wxString & fixed_face,      int * sizes = NULL    )
+wxHtmlPrintout.SetFooter,0,0,2,void,						void wxHtmlPrintout.SetFooter (  wxString & footer,     int pg = wxPAGE_ALL    )
+wxHtmlPrintout.SetHeader,0,0,2,void,						void wxHtmlPrintout.SetHeader (  wxString & header,     int pg = wxPAGE_ALL    )
+wxHtmlPrintout.SetHtmlFile,0,0,1,void,						void wxHtmlPrintout.SetHtmlFile (  wxString & htmlfile)
+wxHtmlPrintout.SetHtmlText,0,0,3,void,						void wxHtmlPrintout.SetHtmlText (  wxString & html,      wxString & basepath = wxEmptyString,     bool isdir = true    )
+wxHtmlPrintout.SetMargins,0,0,5,void,						void wxHtmlPrintout.SetMargins ( float top = 25.2,     float bottom = 25.2,     float left = 25.2,     float right = 25.2,     float spaces = 5    )
+wxHtmlPrintout.SetMargins,0,0,1,void,						void wxHtmlPrintout.SetMargins (  wxPageSetupDialogData & pageSetupData)
+[INHERITS]
+wxPrintout
+wxObject

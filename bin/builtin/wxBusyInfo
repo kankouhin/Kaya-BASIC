@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/busyinfo.h>
+[METHODS]
+wxBusyInfo.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxBusyInfo.UpdateLabel,0,0,1,void,						void wxBusyInfo.UpdateLabel (  wxString & str)
+wxBusyInfo.UpdateText,0,0,1,void,						void wxBusyInfo.UpdateText (  wxString & str)
+[INHERITS]

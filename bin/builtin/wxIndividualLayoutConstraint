@@ -1,0 +1,33 @@
+[CONSTS]
+[HEADER]
+<wx/layout.h>
+[METHODS]
+wxIndividualLayoutConstraint.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxIndividualLayoutConstraint.Above,0,0,2,void,						void wxIndividualLayoutConstraint.Above ( wxWindow * sibling,     int margin = wxLAYOUT_DEFAULT_MARGIN    )
+wxIndividualLayoutConstraint.Absolute,0,0,1,void,						void wxIndividualLayoutConstraint.Absolute ( int val)
+wxIndividualLayoutConstraint.AsIs,0,0,0,void,						void wxIndividualLayoutConstraint.AsIs ( )
+wxIndividualLayoutConstraint.Below,0,0,2,void,						void wxIndividualLayoutConstraint.Below ( wxWindow * sibling,     int margin = wxLAYOUT_DEFAULT_MARGIN    )
+wxIndividualLayoutConstraint.GetDone,0,0,0,bool,						bool wxIndividualLayoutConstraint.GetDone ( )
+wxIndividualLayoutConstraint.GetEdge,0,0,3,int,						int wxIndividualLayoutConstraint.GetEdge ( wxEdge which,     wxWindow * thisWin,     wxWindow * other    )
+wxIndividualLayoutConstraint.GetMargin,0,0,0,int,						int wxIndividualLayoutConstraint.GetMargin ( )
+wxIndividualLayoutConstraint.GetMyEdge,0,0,0,wxEdge,						wxEdge wxIndividualLayoutConstraint.GetMyEdge ( )
+wxIndividualLayoutConstraint.GetOtherEdge,0,0,0,int,						int wxIndividualLayoutConstraint.GetOtherEdge ( )
+wxIndividualLayoutConstraint.GetOtherWindow,0,1,0,wxWindow,						wxWindow* wxIndividualLayoutConstraint.GetOtherWindow ( )
+wxIndividualLayoutConstraint.GetPercent,0,0,0,int,						int wxIndividualLayoutConstraint.GetPercent ( )
+wxIndividualLayoutConstraint.GetRelationship,0,0,0,wxRelationship,						wxRelationship wxIndividualLayoutConstraint.GetRelationship ( )
+wxIndividualLayoutConstraint.GetValue,0,0,0,int,						int wxIndividualLayoutConstraint.GetValue ( )
+wxIndividualLayoutConstraint.LeftOf,0,0,2,void,						void wxIndividualLayoutConstraint.LeftOf ( wxWindow * sibling,     int margin = wxLAYOUT_DEFAULT_MARGIN    )
+wxIndividualLayoutConstraint.PercentOf,0,0,3,void,						void wxIndividualLayoutConstraint.PercentOf ( wxWindow * otherW,     wxEdge wh,     int per    )
+wxIndividualLayoutConstraint.ResetIfWin,0,0,1,bool,						bool wxIndividualLayoutConstraint.ResetIfWin ( wxWindow * otherW)
+wxIndividualLayoutConstraint.RightOf,0,0,2,void,						void wxIndividualLayoutConstraint.RightOf ( wxWindow * sibling,     int margin = wxLAYOUT_DEFAULT_MARGIN    )
+wxIndividualLayoutConstraint.SameAs,0,0,3,void,						void wxIndividualLayoutConstraint.SameAs ( wxWindow * otherW,     wxEdge edge,     int margin = wxLAYOUT_DEFAULT_MARGIN    )
+wxIndividualLayoutConstraint.SatisfyConstraint,0,0,2,bool,						bool wxIndividualLayoutConstraint.SatisfyConstraint ( wxLayoutConstraints * raints,     wxWindow * win    )
+wxIndividualLayoutConstraint.Set,0,0,5,void,						void wxIndividualLayoutConstraint.Set ( wxRelationship rel,     wxWindow * otherW,     wxEdge otherE,     int val = 0,     int margin = wxLAYOUT_DEFAULT_MARGIN    )
+wxIndividualLayoutConstraint.SetDone,0,0,1,void,						void wxIndividualLayoutConstraint.SetDone ( bool d)
+wxIndividualLayoutConstraint.SetEdge,0,0,1,void,						void wxIndividualLayoutConstraint.SetEdge ( wxEdge which)
+wxIndividualLayoutConstraint.SetMargin,0,0,1,void,						void wxIndividualLayoutConstraint.SetMargin ( int m)
+wxIndividualLayoutConstraint.SetRelationship,0,0,1,void,						void wxIndividualLayoutConstraint.SetRelationship ( wxRelationship r)
+wxIndividualLayoutConstraint.SetValue,0,0,1,void,						void wxIndividualLayoutConstraint.SetValue ( int v)
+wxIndividualLayoutConstraint.Unrained,0,0,0,void,						void wxIndividualLayoutConstraint.Unrained ( )
+[INHERITS]
+wxObject

@@ -1,0 +1,47 @@
+[CONSTS]
+[HEADER]
+<wx/aui/auibook.h>
+[METHODS]
+wxAuiTabContainer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiTabContainer.AddButton,0,0,4,void,						void wxAuiTabContainer.AddButton ( int id,     int location,      wxBitmap & normalBitmap = wxNullBitmap,      wxBitmap & disabledBitmap = wxNullBitmap    )
+wxAuiTabContainer.AddPage,0,0,2,bool,						bool wxAuiTabContainer.AddPage ( wxWindow * page,      wxAuiNotebookPage & info    )
+wxAuiTabContainer.ButtonHitTest,0,0,3,bool,						bool wxAuiTabContainer.ButtonHitTest ( int x,     int y,     wxAuiTabContainerButton ** hit    )
+wxAuiTabContainer.DoShowHide,0,0,0,void,						void wxAuiTabContainer.DoShowHide ( )
+wxAuiTabContainer.GetActivePage,0,0,0,int,						int wxAuiTabContainer.GetActivePage ( )
+wxAuiTabContainer.GetArtProvider,0,1,0,wxAuiTabArt,						wxAuiTabArt* wxAuiTabContainer.GetArtProvider ( )
+wxAuiTabContainer.GetFlags,0,0,0,int,						unsigned int wxAuiTabContainer.GetFlags ( )
+wxAuiTabContainer.GetIdxFromWindow,0,0,1,int,						int wxAuiTabContainer.GetIdxFromWindow ( wxWindow * page)
+wxAuiTabContainer.GetPage,0,0,1,wxAuiNotebookPage,						wxAuiNotebookPage&  wxAuiTabContainer.GetPage ( size_t idx)
+wxAuiTabContainer.GetPage,0,0,1,wxAuiNotebookPage,						wxAuiNotebookPage&  wxAuiTabContainer.GetPage ( size_t idx)
+wxAuiTabContainer.GetPageCount,0,0,0,size_t,						size_t wxAuiTabContainer.GetPageCount ( )
+wxAuiTabContainer.GetPages,0,0,0,wxAuiNotebookPageArray,						wxAuiNotebookPageArray&  wxAuiTabContainer.GetPages ( )
+wxAuiTabContainer.GetTabOffset,0,0,0,size_t,						size_t wxAuiTabContainer.GetTabOffset ( )
+wxAuiTabContainer.GetWindowFromIdx,0,1,1,wxWindow,						wxWindow* wxAuiTabContainer.GetWindowFromIdx ( size_t idx)
+wxAuiTabContainer.InsertPage,0,0,3,bool,						bool wxAuiTabContainer.InsertPage ( wxWindow * page,      wxAuiNotebookPage & info,     size_t idx    )
+wxAuiTabContainer.IsTabVisible,0,0,4,bool,						bool wxAuiTabContainer.IsTabVisible ( int tabPage,     int tabOffset,     wxDC * dc,     wxWindow * wnd    )
+wxAuiTabContainer.MakeTabVisible,0,0,2,void,						void wxAuiTabContainer.MakeTabVisible ( int tabPage,     wxWindow * win    )
+wxAuiTabContainer.MovePage,0,0,2,bool,						bool wxAuiTabContainer.MovePage ( wxWindow * page,     size_t newIdx    )
+wxAuiTabContainer.RemoveButton,0,0,1,void,						void wxAuiTabContainer.RemoveButton ( int id)
+wxAuiTabContainer.RemovePage,0,0,1,bool,						bool wxAuiTabContainer.RemovePage ( wxWindow * page)
+wxAuiTabContainer.Render,0,0,2,void,						void wxAuiTabContainer.Render ( wxDC * dc,     wxWindow * wnd    )
+wxAuiTabContainer.SetActiveColour,0,0,1,void,						void wxAuiTabContainer.SetActiveColour (  wxColour & colour)
+wxAuiTabContainer.SetActivePage,0,0,1,bool,						bool wxAuiTabContainer.SetActivePage ( wxWindow * page)
+wxAuiTabContainer.SetActivePage,0,0,1,bool,						bool wxAuiTabContainer.SetActivePage ( size_t page)
+wxAuiTabContainer.SetArtProvider,0,0,1,void,						void wxAuiTabContainer.SetArtProvider ( wxAuiTabArt * art)
+wxAuiTabContainer.SetColour,0,0,1,void,						void wxAuiTabContainer.SetColour (  wxColour & colour)
+wxAuiTabContainer.SetFlags,0,0,1,void,						void wxAuiTabContainer.SetFlags ( unsigned int flags)
+wxAuiTabContainer.SetMeasuringFont,0,0,1,void,						void wxAuiTabContainer.SetMeasuringFont (  wxFont & measuringFont)
+wxAuiTabContainer.SetNoneActive,0,0,0,void,						void wxAuiTabContainer.SetNoneActive ( )
+wxAuiTabContainer.SetNormalFont,0,0,1,void,						void wxAuiTabContainer.SetNormalFont (  wxFont & normalFont)
+wxAuiTabContainer.SetRect,0,0,1,void,						void wxAuiTabContainer.SetRect (  wxRect & rect)
+wxAuiTabContainer.SetSelectedFont,0,0,1,void,						void wxAuiTabContainer.SetSelectedFont (  wxFont & selectedFont)
+wxAuiTabContainer.SetTabOffset,0,0,1,void,						void wxAuiTabContainer.SetTabOffset ( size_t offset)
+wxAuiTabContainer.TabHitTest,0,0,3,bool,						bool wxAuiTabContainer.TabHitTest ( int x,     int y,     wxWindow ** hit    )
+wxAuiTabContainer.m_art,0,1,-1,wxAuiTabArt,						wxAuiTabArt* wxAuiTabContainer.m_art
+wxAuiTabContainer.m_buttons,0,0,-1,wxAuiTabContainerButtonArray,						wxAuiTabContainerButtonArray wxAuiTabContainer.m_buttons
+wxAuiTabContainer.m_flags,0,0,-1,int,						unsigned int wxAuiTabContainer.m_flags
+wxAuiTabContainer.m_pages,0,0,-1,wxAuiNotebookPageArray,						wxAuiNotebookPageArray wxAuiTabContainer.m_pages
+wxAuiTabContainer.m_rect,0,0,-1,wxRect,						wxRect wxAuiTabContainer.m_rect
+wxAuiTabContainer.m_tabCloseButtons,0,0,-1,wxAuiTabContainerButtonArray,						wxAuiTabContainerButtonArray wxAuiTabContainer.m_tabCloseButtons
+wxAuiTabContainer.m_tabOffset,0,0,-1,size_t,						size_t wxAuiTabContainer.m_tabOffset
+[INHERITS]

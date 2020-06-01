@@ -1,0 +1,40 @@
+[CONSTS]
+[HEADER]
+<wx/vlbox.h>
+[METHODS]
+wxVListBox.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxVListBox.Clear,0,0,0,void,						void wxVListBox.Clear ( )
+wxVListBox.Create,0,0,6,bool,						bool wxVListBox.Create ( wxWindow * parent,     wxWindowID id = wxID_ANY,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxVListBoxNameStr    )
+wxVListBox.DeselectAll,0,0,0,bool,						bool wxVListBox.DeselectAll ( )
+wxVListBox.GetFirstSelected,0,0,1,int,						int wxVListBox.GetFirstSelected ( unsigned long & cookie)
+wxVListBox.GetItemCount,0,0,0,size_t,						size_t wxVListBox.GetItemCount ( )
+wxVListBox.GetItemRect,0,0,1,wxRect,						wxRect wxVListBox.GetItemRect ( size_t item)
+wxVListBox.GetMargins,0,0,0,wxPoint,						wxPoint wxVListBox.GetMargins ( )
+wxVListBox.GetNextSelected,0,0,1,int,						int wxVListBox.GetNextSelected ( unsigned long & cookie)
+wxVListBox.GetSelectedCount,0,0,0,size_t,						size_t wxVListBox.GetSelectedCount ( )
+wxVListBox.GetSelection,0,0,0,int,						int wxVListBox.GetSelection ( )
+wxVListBox.GetSelectionBackground,0,0,0,wxColour,						wxColour&  wxVListBox.GetSelectionBackground ( )
+wxVListBox.HasMultipleSelection,0,0,0,bool,						bool wxVListBox.HasMultipleSelection ( )
+wxVListBox.IsCurrent,0,0,1,bool,						bool wxVListBox.IsCurrent ( size_t item)
+wxVListBox.IsSelected,0,0,1,bool,						bool wxVListBox.IsSelected ( size_t item)
+wxVListBox.OnDrawBackground,0,0,3,void,						void wxVListBox.OnDrawBackground ( wxDC & dc,      wxRect & rect,     size_t n    )
+wxVListBox.OnDrawItem,0,0,3,void,						void wxVListBox.OnDrawItem ( wxDC & dc,      wxRect & rect,     size_t n    )
+wxVListBox.OnDrawSeparator,0,0,3,void,						void wxVListBox.OnDrawSeparator ( wxDC & dc,     wxRect & rect,     size_t n    )
+wxVListBox.OnMeasureItem,0,0,1,wxCoord,						wxCoord wxVListBox.OnMeasureItem ( size_t n)
+wxVListBox.Select,0,0,2,bool,						bool wxVListBox.Select ( size_t item,     bool select = true    )
+wxVListBox.SelectAll,0,0,0,bool,						bool wxVListBox.SelectAll ( )
+wxVListBox.SelectRange,0,0,2,bool,						bool wxVListBox.SelectRange ( size_t from,     size_t to    )
+wxVListBox.SetItemCount,0,0,1,void,						void wxVListBox.SetItemCount ( size_t count)
+wxVListBox.SetMargins,0,0,1,void,						void wxVListBox.SetMargins (  wxPoint & pt)
+wxVListBox.SetMargins,0,0,2,void,						void wxVListBox.SetMargins ( wxCoord x,     wxCoord y    )
+wxVListBox.SetSelection,0,0,1,void,						void wxVListBox.SetSelection ( int selection)
+wxVListBox.SetSelectionBackground,0,0,1,void,						void wxVListBox.SetSelectionBackground (  wxColour & col)
+wxVListBox.Toggle,0,0,1,void,						void wxVListBox.Toggle ( size_t item)
+[INHERITS]
+wxVScrolledWindow
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject
+wxVarVScrollHelper
+wxVarScrollHelperBase

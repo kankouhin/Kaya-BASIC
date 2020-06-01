@@ -1,0 +1,56 @@
+[CONSTS]
+wxEVT_DATAVIEW_SELECTION_CHANGED
+wxEVT_DATAVIEW_ITEM_ACTIVATED
+wxEVT_DATAVIEW_ITEM_EDITING_STARTED
+wxEVT_DATAVIEW_ITEM_EDITING_DONE
+wxEVT_DATAVIEW_ITEM_COLLAPSING
+wxEVT_DATAVIEW_ITEM_COLLAPSED
+wxEVT_DATAVIEW_ITEM_EXPANDING
+wxEVT_DATAVIEW_ITEM_EXPANDED
+wxEVT_DATAVIEW_ITEM_VALUE_CHANGED
+wxEVT_DATAVIEW_ITEM_CONTEXT_MENU
+wxEVT_DATAVIEW_COLUMN_HEADER_CLICK
+wxEVT_DATAVIEW_COLUMN_HEADER_RIGHT_CLICK
+wxEVT_DATAVIEW_COLUMN_SORTED
+wxEVT_DATAVIEW_COLUMN_REORDERED
+wxEVT_DATAVIEW_ITEM_BEGIN_DRAG
+wxEVT_DATAVIEW_ITEM_DROP_POSSIBLE
+wxEVT_DATAVIEW_ITEM_DROP
+wxEVT_DATAVIEW_CACHE_HINT
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewEvent.GetCacheFrom,0,0,0,int,						int wxDataViewEvent.GetCacheFrom ( )
+wxDataViewEvent.GetCacheTo,0,0,0,int,						int wxDataViewEvent.GetCacheTo ( )
+wxDataViewEvent.GetColumn,0,0,0,int,						int wxDataViewEvent.GetColumn ( )
+wxDataViewEvent.GetDataBuffer,0,1,0,void,						void* wxDataViewEvent.GetDataBuffer ( )
+wxDataViewEvent.GetDataFormat,0,0,0,wxDataFormat,						wxDataFormat wxDataViewEvent.GetDataFormat ( )
+wxDataViewEvent.GetDataObject,0,1,0,wxDataObject,						wxDataObject* wxDataViewEvent.GetDataObject ( )
+wxDataViewEvent.GetDataSize,0,0,0,size_t,						size_t wxDataViewEvent.GetDataSize ( )
+wxDataViewEvent.GetDataViewColumn,0,1,0,wxDataViewColumn,						wxDataViewColumn* wxDataViewEvent.GetDataViewColumn ( )
+wxDataViewEvent.GetDragFlags,0,0,0,int,						int wxDataViewEvent.GetDragFlags ( )
+wxDataViewEvent.GetDropEffect,0,0,0,wxDragResult,						wxDragResult wxDataViewEvent.GetDropEffect ( )
+wxDataViewEvent.GetItem,0,0,0,wxDataViewItem,						wxDataViewItem wxDataViewEvent.GetItem ( )
+wxDataViewEvent.GetModel,0,1,0,wxDataViewModel,						wxDataViewModel* wxDataViewEvent.GetModel ( )
+wxDataViewEvent.GetPosition,0,0,0,wxPoint,						wxPoint wxDataViewEvent.GetPosition ( )
+wxDataViewEvent.GetValue,0,0,0,wxVariant,						wxVariant&  wxDataViewEvent.GetValue ( )
+wxDataViewEvent.IsEditCancelled,0,0,0,bool,						bool wxDataViewEvent.IsEditCancelled ( )
+wxDataViewEvent.SetCache,0,0,2,void,						void wxDataViewEvent.SetCache ( int from,     int to    )
+wxDataViewEvent.SetColumn,0,0,1,void,						void wxDataViewEvent.SetColumn ( int col)
+wxDataViewEvent.SetDataBuffer,0,0,1,void,						void wxDataViewEvent.SetDataBuffer ( void * buf)
+wxDataViewEvent.SetDataFormat,0,0,1,void,						void wxDataViewEvent.SetDataFormat (  wxDataFormat & format)
+wxDataViewEvent.SetDataObject,0,0,1,void,						void wxDataViewEvent.SetDataObject ( wxDataObject * obj)
+wxDataViewEvent.SetDataSize,0,0,1,void,						void wxDataViewEvent.SetDataSize ( size_t size)
+wxDataViewEvent.SetDataViewColumn,0,0,1,void,						void wxDataViewEvent.SetDataViewColumn ( wxDataViewColumn * col)
+wxDataViewEvent.SetDragFlags,0,0,1,void,						void wxDataViewEvent.SetDragFlags ( int flags)
+wxDataViewEvent.SetDropEffect,0,0,1,void,						void wxDataViewEvent.SetDropEffect ( wxDragResult effect)
+wxDataViewEvent.SetItem,0,0,1,void,						void wxDataViewEvent.SetItem (  wxDataViewItem & item)
+wxDataViewEvent.SetModel,0,0,1,void,						void wxDataViewEvent.SetModel ( wxDataViewModel * model)
+wxDataViewEvent.SetPosition,0,0,2,void,						void wxDataViewEvent.SetPosition ( int x,     int y    )
+wxDataViewEvent.SetValue,0,0,1,void,						void wxDataViewEvent.SetValue (  wxVariant & value)
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

@@ -1,0 +1,24 @@
+[CONSTS]
+wxEVT_JOY_BUTTON_DOWN
+wxEVT_JOY_BUTTON_UP
+wxEVT_JOY_MOVE
+wxEVT_JOY_ZMOVE
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxJoystickEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxJoystickEvent.ButtonDown,0,0,1,bool,						bool wxJoystickEvent.ButtonDown ( int button = wxJOY_BUTTON_ANY)
+wxJoystickEvent.ButtonIsDown,0,0,1,bool,						bool wxJoystickEvent.ButtonIsDown ( int button = wxJOY_BUTTON_ANY)
+wxJoystickEvent.ButtonUp,0,0,1,bool,						bool wxJoystickEvent.ButtonUp ( int button = wxJOY_BUTTON_ANY)
+wxJoystickEvent.GetButtonChange,0,0,0,int,						int wxJoystickEvent.GetButtonChange ( )
+wxJoystickEvent.GetButtonOrdinal,0,0,0,int,						int wxJoystickEvent.GetButtonOrdinal ( )
+wxJoystickEvent.GetButtonState,0,0,0,int,						int wxJoystickEvent.GetButtonState ( )
+wxJoystickEvent.GetJoystick,0,0,0,int,						int wxJoystickEvent.GetJoystick ( )
+wxJoystickEvent.GetPosition,0,0,0,wxPoint,						wxPoint wxJoystickEvent.GetPosition ( )
+wxJoystickEvent.GetZPosition,0,0,0,int,						int wxJoystickEvent.GetZPosition ( )
+wxJoystickEvent.IsButton,0,0,0,bool,						bool wxJoystickEvent.IsButton ( )
+wxJoystickEvent.IsMove,0,0,0,bool,						bool wxJoystickEvent.IsMove ( )
+wxJoystickEvent.IsZMove,0,0,0,bool,						bool wxJoystickEvent.IsZMove ( )
+[INHERITS]
+wxEvent
+wxObject

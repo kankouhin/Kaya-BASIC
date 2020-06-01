@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/headerctrl.h>
+[METHODS]
+wxHeaderCtrlEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHeaderCtrlEvent.GetColumn,0,0,0,int,						int wxHeaderCtrlEvent.GetColumn ( )
+wxHeaderCtrlEvent.GetNewOrder,0,0,0,int,						unsigned int wxHeaderCtrlEvent.GetNewOrder ( )
+wxHeaderCtrlEvent.GetWidth,0,0,0,int,						int wxHeaderCtrlEvent.GetWidth ( )
+wxHeaderCtrlEvent.SetColumn,0,0,1,void,						void wxHeaderCtrlEvent.SetColumn ( int col)
+wxHeaderCtrlEvent.SetNewOrder,0,0,1,void,						void wxHeaderCtrlEvent.SetNewOrder ( unsigned int order)
+wxHeaderCtrlEvent.SetWidth,0,0,1,void,						void wxHeaderCtrlEvent.SetWidth ( int width)
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

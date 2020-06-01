@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/ribbon/bar.h>
+[METHODS]
+wxRibbonBarEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRibbonBarEvent.GetPage,0,1,0,wxRibbonPage,						wxRibbonPage* wxRibbonBarEvent.GetPage ( )
+wxRibbonBarEvent.SetPage,0,0,1,void,						void wxRibbonBarEvent.SetPage ( wxRibbonPage * page)
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

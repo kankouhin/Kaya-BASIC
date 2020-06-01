@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextRenderer.DrawBitmapBullet,0,0,4,bool,						bool wxRichTextRenderer.DrawBitmapBullet ( wxRichTextParagraph * paragraph,     wxDC & dc,      wxRichTextAttr & attr,      wxRect & rect    )
+wxRichTextRenderer.DrawStandardBullet,0,0,4,bool,						bool wxRichTextRenderer.DrawStandardBullet ( wxRichTextParagraph * paragraph,     wxDC & dc,      wxRichTextAttr & attr,      wxRect & rect    )
+wxRichTextRenderer.DrawTextBullet,0,0,5,bool,						bool wxRichTextRenderer.DrawTextBullet ( wxRichTextParagraph * paragraph,     wxDC & dc,      wxRichTextAttr & attr,      wxRect & rect,      wxString & text    )
+wxRichTextRenderer.EnumerateStandardBulletNames,0,0,1,bool,						bool wxRichTextRenderer.EnumerateStandardBulletNames ( wxArrayString & bulletNames)
+wxRichTextRenderer.MeasureBullet,0,0,4,bool,						bool wxRichTextRenderer.MeasureBullet ( wxRichTextParagraph * paragraph,     wxDC & dc,      wxRichTextAttr & attr,     wxSize & sz    )
+[INHERITS]
+wxObject

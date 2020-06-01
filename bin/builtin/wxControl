@@ -1,20 +1,22 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/control.h>
-Command,0,0,1,void,						void Command ( wxCommandEvent & event)
-Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxControlNameStr    )
-Ellipsize,1,0,5,wxString,						static wxString Ellipsize (  wxString & label,      wxDC & dc,     wxEllipsizeMode mode,     int maxWidth,     int flags = wxELLIPSIZE_FLAGS_DEFAULT    )
-EscapeMnemonics,1,0,1,wxString,						static wxString EscapeMnemonics (  wxString & text)
-GetLabel,0,0,0,wxString,						wxString GetLabel ( )
-GetLabelText,0,0,0,wxString,						wxString GetLabelText ( )
-GetLabelText,1,0,1,wxString,						static wxString GetLabelText (  wxString & label)
-GetSizeFromText,0,0,1,wxSize,						wxSize GetSizeFromText (  wxString & text)
-GetSizeFromTextSize,0,0,2,wxSize,						wxSize GetSizeFromTextSize ( int xlen,     int ylen = -1    )
-GetSizeFromTextSize,0,0,1,wxSize,						wxSize GetSizeFromTextSize (  wxSize & tsize)
-RemoveMnemonics,1,0,1,wxString,						static wxString RemoveMnemonics (  wxString & str)
-SetLabel,0,0,1,void,						void SetLabel (  wxString & label)
-SetLabelMarkup,0,0,1,bool,						bool SetLabelMarkup (  wxString & markup)
-SetLabelText,0,0,1,void,						void SetLabelText (  wxString & text)
+[METHODS]
+wxControl.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxControl.Command,0,0,1,void,						void wxControl.Command ( wxCommandEvent & event)
+wxControl.Create,0,0,7,bool,						bool wxControl.Create ( wxWindow * parent,     wxWindowID id,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxValidator & validator = wxDefaultValidator,      wxString & name = wxControlNameStr    )
+wxControl.Ellipsize,1,0,5,wxString,						static wxString wxControl.Ellipsize (  wxString & label,      wxDC & dc,     wxEllipsizeMode mode,     int maxWidth,     int flags = wxELLIPSIZE_FLAGS_DEFAULT    )
+wxControl.EscapeMnemonics,1,0,1,wxString,						static wxString wxControl.EscapeMnemonics (  wxString & text)
+wxControl.GetLabel,0,0,0,wxString,						wxString wxControl.GetLabel ( )
+wxControl.GetLabelText,0,0,0,wxString,						wxString wxControl.GetLabelText ( )
+wxControl.GetLabelText,1,0,1,wxString,						static wxString wxControl.GetLabelText (  wxString & label)
+wxControl.GetSizeFromText,0,0,1,wxSize,						wxSize wxControl.GetSizeFromText (  wxString & text)
+wxControl.GetSizeFromTextSize,0,0,2,wxSize,						wxSize wxControl.GetSizeFromTextSize ( int xlen,     int ylen = -1    )
+wxControl.GetSizeFromTextSize,0,0,1,wxSize,						wxSize wxControl.GetSizeFromTextSize (  wxSize & tsize)
+wxControl.RemoveMnemonics,1,0,1,wxString,						static wxString wxControl.RemoveMnemonics (  wxString & str)
+wxControl.SetLabel,0,0,1,void,						void wxControl.SetLabel (  wxString & label)
+wxControl.SetLabelMarkup,0,0,1,bool,						bool wxControl.SetLabelMarkup (  wxString & markup)
+wxControl.SetLabelText,0,0,1,void,						void wxControl.SetLabelText (  wxString & text)
 [INHERITS]
 wxWindow
 wxEvtHandler

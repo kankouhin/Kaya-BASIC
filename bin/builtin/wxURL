@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/url.h>
+[METHODS]
+wxURL.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxURL.GetError,0,0,0,wxURLError,						wxURLError wxURL.GetError ( )
+wxURL.GetInputStream,0,1,0,wxInputStream,						wxInputStream* wxURL.GetInputStream ( )
+wxURL.GetProtocol,0,0,0,wxProtocol,						wxProtocol&  wxURL.GetProtocol ( )
+wxURL.IsOk,0,0,0,bool,						bool wxURL.IsOk ( )
+wxURL.SetDefaultProxy,1,0,1,void,						static void wxURL.SetDefaultProxy (  wxString & url_proxy)
+wxURL.SetProxy,0,0,1,void,						void wxURL.SetProxy (  wxString & url_proxy)
+wxURL.SetURL,0,0,1,wxURLError,						wxURLError wxURL.SetURL (  wxString & url)
+[INHERITS]
+wxURI
+wxObject

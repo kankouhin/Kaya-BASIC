@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/layout.h>
+[METHODS]
+wxLayoutConstraints.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxLayoutConstraints.AreSatisfied,0,0,0,bool,						bool wxLayoutConstraints.AreSatisfied ( )
+wxLayoutConstraints.SatisfyConstraints,0,0,2,bool,						bool wxLayoutConstraints.SatisfyConstraints ( wxWindow * win,     int * noChanges    )
+wxLayoutConstraints.bottom,0,0,-1,wxIndividualLayoutConstraint,						wxIndividualLayoutConstraint wxLayoutConstraints.bottom
+wxLayoutConstraints.centreX,0,0,-1,wxIndividualLayoutConstraint,						wxIndividualLayoutConstraint wxLayoutConstraints.centreX
+wxLayoutConstraints.centreY,0,0,-1,wxIndividualLayoutConstraint,						wxIndividualLayoutConstraint wxLayoutConstraints.centreY
+wxLayoutConstraints.height,0,0,-1,wxIndividualLayoutConstraint,						wxIndividualLayoutConstraint wxLayoutConstraints.height
+wxLayoutConstraints.left,0,0,-1,wxIndividualLayoutConstraint,						wxIndividualLayoutConstraint wxLayoutConstraints.left
+wxLayoutConstraints.right,0,0,-1,wxIndividualLayoutConstraint,						wxIndividualLayoutConstraint wxLayoutConstraints.right
+wxLayoutConstraints.top,0,0,-1,wxIndividualLayoutConstraint,						wxIndividualLayoutConstraint wxLayoutConstraints.top
+wxLayoutConstraints.width,0,0,-1,wxIndividualLayoutConstraint,						wxIndividualLayoutConstraint wxLayoutConstraints.width
+[INHERITS]
+wxObject

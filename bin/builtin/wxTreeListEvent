@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/treelist.h>
+[METHODS]
+wxTreeListEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTreeListEvent.GetColumn,0,0,0,unsigned,						unsigned wxTreeListEvent.GetColumn ( )
+wxTreeListEvent.GetItem,0,0,0,wxTreeListItem,						wxTreeListItem wxTreeListEvent.GetItem ( )
+wxTreeListEvent.GetOldCheckedState,0,0,0,wxCheckBoxState,						wxCheckBoxState wxTreeListEvent.GetOldCheckedState ( )
+[INHERITS]
+wxNotifyEvent
+wxCommandEvent
+wxEvent
+wxObject

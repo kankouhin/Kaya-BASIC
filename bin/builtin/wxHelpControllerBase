@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/help.h>
+[METHODS]
+wxHelpControllerBase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHelpControllerBase.DisplayBlock,0,0,1,bool,						bool wxHelpControllerBase.DisplayBlock ( long blockNo)
+wxHelpControllerBase.DisplayContents,0,0,0,bool,						bool wxHelpControllerBase.DisplayContents ( )
+wxHelpControllerBase.DisplayContextPopup,0,0,1,bool,						bool wxHelpControllerBase.DisplayContextPopup ( int contextId)
+wxHelpControllerBase.DisplaySection,0,0,1,bool,						bool wxHelpControllerBase.DisplaySection (  wxString & section)
+wxHelpControllerBase.DisplaySection,0,0,1,bool,						bool wxHelpControllerBase.DisplaySection ( int sectionNo)
+wxHelpControllerBase.DisplayTextPopup,0,0,2,bool,						bool wxHelpControllerBase.DisplayTextPopup (  wxString & text,      wxPoint & pos    )
+wxHelpControllerBase.GetFrameParameters,0,1,3,wxFrame,						wxFrame* wxHelpControllerBase.GetFrameParameters ( wxSize * size = NULL,     wxPoint * pos = NULL,     bool * newFrameEachTime = NULL    )
+wxHelpControllerBase.GetParentWindow,0,1,0,wxWindow,						wxWindow* wxHelpControllerBase.GetParentWindow ( )
+wxHelpControllerBase.Initialize,0,0,1,bool,						bool wxHelpControllerBase.Initialize (  wxString & file)
+wxHelpControllerBase.KeywordSearch,0,0,2,bool,						bool wxHelpControllerBase.KeywordSearch (  wxString & keyWord,     wxHelpSearchMode mode = wxHELP_SEARCH_ALL    )
+wxHelpControllerBase.LoadFile,0,0,1,bool,						bool wxHelpControllerBase.LoadFile (  wxString & file = wxEmptyString)
+wxHelpControllerBase.OnQuit,0,0,0,void,						void wxHelpControllerBase.OnQuit ( )
+wxHelpControllerBase.Quit,0,0,0,bool,						bool wxHelpControllerBase.Quit ( )
+wxHelpControllerBase.SetFrameParameters,0,0,4,void,						void wxHelpControllerBase.SetFrameParameters (  wxString & titleFormat,      wxSize & size,      wxPoint & pos = wxDefaultPosition,     bool newFrameEachTime = false    )
+wxHelpControllerBase.SetParentWindow,0,0,1,void,						void wxHelpControllerBase.SetParentWindow ( wxWindow * parentWindow)
+wxHelpControllerBase.SetViewer,0,0,2,void,						void wxHelpControllerBase.SetViewer (  wxString & viewer,     long flags = wxHELP_NETSCAPE    )
+[INHERITS]
+wxObject

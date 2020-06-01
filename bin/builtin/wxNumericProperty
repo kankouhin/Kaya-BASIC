@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxNumericProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxNumericProperty.AddSpinStepValue,0,0,1,wxVariant,						wxVariant wxNumericProperty.AddSpinStepValue ( long stepScale)
+wxNumericProperty.DoSetAttribute,0,0,2,bool,						bool wxNumericProperty.DoSetAttribute (  wxString & name,     wxVariant & value    )
+wxNumericProperty.UseSpinMotion,0,0,0,bool,						bool wxNumericProperty.UseSpinMotion ( )
+wxNumericProperty.m_maxVal,0,0,-1,wxVariant,						wxVariant wxNumericProperty.m_maxVal
+wxNumericProperty.m_minVal,0,0,-1,wxVariant,						wxVariant wxNumericProperty.m_minVal
+wxNumericProperty.m_spinMotion,0,0,-1,bool,						bool wxNumericProperty.m_spinMotion
+wxNumericProperty.m_spinStep,0,0,-1,wxVariant,						wxVariant wxNumericProperty.m_spinStep
+wxNumericProperty.m_spinWrap,0,0,-1,bool,						bool wxNumericProperty.m_spinWrap
+[INHERITS]
+wxPGProperty
+wxObject

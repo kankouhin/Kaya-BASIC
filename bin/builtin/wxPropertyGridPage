@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/manager.h>
+[METHODS]
+wxPropertyGridPage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPropertyGridPage.Clear,0,0,0,void,						void wxPropertyGridPage.Clear ( )
+wxPropertyGridPage.FitColumns,0,0,0,wxSize,						wxSize wxPropertyGridPage.FitColumns ( )
+wxPropertyGridPage.GetIndex,0,0,0,int,						int wxPropertyGridPage.GetIndex ( )
+wxPropertyGridPage.GetRoot,0,1,0,wxPGProperty,						wxPGProperty* wxPropertyGridPage.GetRoot ( )
+wxPropertyGridPage.GetSplitterPosition,0,0,1,int,						int wxPropertyGridPage.GetSplitterPosition ( int col = 0)
+wxPropertyGridPage.GetStatePtr,0,1,0,wxPropertyGridPageState,						wxPropertyGridPageState* wxPropertyGridPage.GetStatePtr ( )
+wxPropertyGridPage.GetStatePtr,0,1,0,wxPropertyGridPageState,						wxPropertyGridPageState* wxPropertyGridPage.GetStatePtr ( )
+wxPropertyGridPage.GetToolId,0,0,0,int,						int wxPropertyGridPage.GetToolId ( )
+wxPropertyGridPage.Init,0,0,0,void,						void wxPropertyGridPage.Init ( )
+wxPropertyGridPage.IsHandlingAllEvents,0,0,0,bool,						bool wxPropertyGridPage.IsHandlingAllEvents ( )
+wxPropertyGridPage.OnShow,0,0,0,void,						void wxPropertyGridPage.OnShow ( )
+wxPropertyGridPage.RefreshProperty,0,0,1,void,						void wxPropertyGridPage.RefreshProperty ( wxPGProperty * p)
+wxPropertyGridPage.SetSplitterPosition,0,0,2,void,						void wxPropertyGridPage.SetSplitterPosition ( int splitterPos,     int col = 0    )
+[INHERITS]
+wxEvtHandler
+wxObject
+wxPropertyGridInterface
+wxPropertyGridPageState

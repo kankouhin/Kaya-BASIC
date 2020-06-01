@@ -1,0 +1,19 @@
+[CONSTS]
+[HEADER]
+<wx/headerctrl.h>
+[METHODS]
+wxHeaderCtrlSimple.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHeaderCtrlSimple.AppendColumn,0,0,1,void,						void wxHeaderCtrlSimple.AppendColumn (  wxHeaderColumnSimple & col)
+wxHeaderCtrlSimple.DeleteColumn,0,0,1,void,						void wxHeaderCtrlSimple.DeleteColumn ( unsigned int idx)
+wxHeaderCtrlSimple.GetBestFittingWidth,0,0,1,int,						int wxHeaderCtrlSimple.GetBestFittingWidth ( unsigned int idx)
+wxHeaderCtrlSimple.HideColumn,0,0,1,void,						void wxHeaderCtrlSimple.HideColumn ( unsigned int idx)
+wxHeaderCtrlSimple.InsertColumn,0,0,2,void,						void wxHeaderCtrlSimple.InsertColumn (  wxHeaderColumnSimple & col,     unsigned int idx    )
+wxHeaderCtrlSimple.RemoveSortIndicator,0,0,0,void,						void wxHeaderCtrlSimple.RemoveSortIndicator ( )
+wxHeaderCtrlSimple.ShowColumn,0,0,2,void,						void wxHeaderCtrlSimple.ShowColumn ( unsigned int idx,     bool show = true    )
+wxHeaderCtrlSimple.ShowSortIndicator,0,0,2,void,						void wxHeaderCtrlSimple.ShowSortIndicator ( unsigned int idx,     bool sortOrder = true    )
+[INHERITS]
+wxHeaderCtrl
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

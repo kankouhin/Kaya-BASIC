@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/msw/ole/oleutils.h>
+[METHODS]
+wxVariantDataCurrency.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxVariantDataCurrency.Clone,0,1,0,wxVariantData,						wxVariantData* wxVariantDataCurrency.Clone ( )
+wxVariantDataCurrency.Eq,0,0,1,bool,						bool wxVariantDataCurrency.Eq ( wxVariantData & data)
+wxVariantDataCurrency.GetAsAny,0,0,1,bool,						bool wxVariantDataCurrency.GetAsAny ( wxAny * any)
+wxVariantDataCurrency.GetType,0,0,0,wxString,						wxString wxVariantDataCurrency.GetType ( )
+wxVariantDataCurrency.GetValue,0,0,0,CURRENCY,						CURRENCY wxVariantDataCurrency.GetValue ( )
+wxVariantDataCurrency.SetValue,0,0,1,void,						void wxVariantDataCurrency.SetValue ( CURRENCY value)
+wxVariantDataCurrency.Write,0,0,1,bool,						bool wxVariantDataCurrency.Write ( wxString & str)
+[INHERITS]
+wxVariantData

@@ -1,0 +1,18 @@
+[CONSTS]
+wxEL_ALLOW_NEW
+wxEL_ALLOW_EDIT
+wxEL_ALLOW_DELETE
+wxEL_NO_REORDER
+wxEL_DEFAULT_STYLE
+[HEADER]
+<wx/editlbox.h>
+[METHODS]
+wxEditableListBox.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxEditableListBox.Create,0,0,7,bool,						bool wxEditableListBox.Create ( wxWindow * parent,     wxWindowID id,      wxString & label,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxEL_DEFAULT_STYLE,      wxString & name = wxEditableListBoxNameStr    )
+wxEditableListBox.GetStrings,0,0,1,void,						void wxEditableListBox.GetStrings ( wxArrayString & strings)
+wxEditableListBox.SetStrings,0,0,1,void,						void wxEditableListBox.SetStrings (  wxArrayString & strings)
+[INHERITS]
+wxPanel
+wxWindow
+wxEvtHandler
+wxObject

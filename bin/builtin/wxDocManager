@@ -1,0 +1,62 @@
+[CONSTS]
+[HEADER]
+<wx/docview.h>
+[METHODS]
+wxDocManager.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDocManager.ActivateView,0,0,2,void,						void wxDocManager.ActivateView ( wxView * doc,     bool activate = true    )
+wxDocManager.AddDocument,0,0,1,void,						void wxDocManager.AddDocument ( wxDocument * doc)
+wxDocManager.AddFileToHistory,0,0,1,void,						void wxDocManager.AddFileToHistory (  wxString & filename)
+wxDocManager.AssociateTemplate,0,0,1,void,						void wxDocManager.AssociateTemplate ( wxDocTemplate * temp)
+wxDocManager.CloseDocument,0,0,2,bool,						bool wxDocManager.CloseDocument ( wxDocument * doc,     bool force = false    )
+wxDocManager.CloseDocuments,0,0,1,bool,						bool wxDocManager.CloseDocuments ( bool force = true)
+wxDocManager.CreateDocument,0,1,2,wxDocument,						wxDocument* wxDocManager.CreateDocument (  wxString & path,     long flags = 0    )
+wxDocManager.CreateNewDocument,0,1,0,wxDocument,						wxDocument* wxDocManager.CreateNewDocument ( )
+wxDocManager.CreatePreviewFrame,0,1,3,wxPreviewFrame,						wxPreviewFrame* wxDocManager.CreatePreviewFrame ( wxPrintPreviewBase * preview,     wxWindow * parent,      wxString & title    )
+wxDocManager.CreateView,0,1,2,wxView,						wxView* wxDocManager.CreateView ( wxDocument * doc,     long flags = 0    )
+wxDocManager.DisassociateTemplate,0,0,1,void,						void wxDocManager.DisassociateTemplate ( wxDocTemplate * temp)
+wxDocManager.FileHistoryAddFilesToMenu,0,0,0,void,						void wxDocManager.FileHistoryAddFilesToMenu ( )
+wxDocManager.FileHistoryAddFilesToMenu,0,0,1,void,						void wxDocManager.FileHistoryAddFilesToMenu ( wxMenu * menu)
+wxDocManager.FileHistoryLoad,0,0,1,void,						void wxDocManager.FileHistoryLoad (  wxConfigBase & config)
+wxDocManager.FileHistoryRemoveMenu,0,0,1,void,						void wxDocManager.FileHistoryRemoveMenu ( wxMenu * menu)
+wxDocManager.FileHistorySave,0,0,1,void,						void wxDocManager.FileHistorySave ( wxConfigBase & resourceFile)
+wxDocManager.FileHistoryUseMenu,0,0,1,void,						void wxDocManager.FileHistoryUseMenu ( wxMenu * menu)
+wxDocManager.FindDocumentByPath,0,1,1,wxDocument,						wxDocument* wxDocManager.FindDocumentByPath (  wxString & path)
+wxDocManager.FindTemplate,0,1,1,wxDocTemplate,						wxDocTemplate* wxDocManager.FindTemplate (  wxClassInfo * classinfo)
+wxDocManager.FindTemplateForPath,0,1,1,wxDocTemplate,						wxDocTemplate* wxDocManager.FindTemplateForPath (  wxString & path)
+wxDocManager.GetAnyUsableView,0,1,0,wxView,						wxView* wxDocManager.GetAnyUsableView ( )
+wxDocManager.GetCurrentDocument,0,1,0,wxDocument,						wxDocument* wxDocManager.GetCurrentDocument ( )
+wxDocManager.GetCurrentView,0,1,0,wxView,						wxView* wxDocManager.GetCurrentView ( )
+wxDocManager.GetDocuments,0,0,0,wxList,						wxList&  wxDocManager.GetDocuments ( )
+wxDocManager.GetDocumentsVector,0,0,0,wxDocVector,						wxDocVector wxDocManager.GetDocumentsVector ( )
+wxDocManager.GetFileHistory,0,1,0,wxFileHistory,						wxFileHistory* wxDocManager.GetFileHistory ( )
+wxDocManager.GetHistoryFilesCount,0,0,0,size_t,						size_t wxDocManager.GetHistoryFilesCount ( )
+wxDocManager.GetLastDirectory,0,0,0,wxString,						wxString wxDocManager.GetLastDirectory ( )
+wxDocManager.GetMaxDocsOpen,0,0,0,int,						int wxDocManager.GetMaxDocsOpen ( )
+wxDocManager.GetTemplates,0,0,0,wxList,						wxList&  wxDocManager.GetTemplates ( )
+wxDocManager.GetTemplatesVector,0,0,0,wxDocTemplateVector,						wxDocTemplateVector wxDocManager.GetTemplatesVector ( )
+wxDocManager.Initialize,0,0,0,bool,						bool wxDocManager.Initialize ( )
+wxDocManager.MakeNewDocumentName,0,0,0,wxString,						wxString wxDocManager.MakeNewDocumentName ( )
+wxDocManager.OnCreateFileHistory,0,1,0,wxFileHistory,						wxFileHistory* wxDocManager.OnCreateFileHistory ( )
+wxDocManager.OnFileClose,0,0,1,void,						void wxDocManager.OnFileClose ( wxCommandEvent & event)
+wxDocManager.OnFileCloseAll,0,0,1,void,						void wxDocManager.OnFileCloseAll ( wxCommandEvent & event)
+wxDocManager.OnFileNew,0,0,1,void,						void wxDocManager.OnFileNew ( wxCommandEvent & event)
+wxDocManager.OnFileOpen,0,0,1,void,						void wxDocManager.OnFileOpen ( wxCommandEvent & event)
+wxDocManager.OnFileRevert,0,0,1,void,						void wxDocManager.OnFileRevert ( wxCommandEvent & event)
+wxDocManager.OnFileSave,0,0,1,void,						void wxDocManager.OnFileSave ( wxCommandEvent & event)
+wxDocManager.OnFileSaveAs,0,0,1,void,						void wxDocManager.OnFileSaveAs ( wxCommandEvent & event)
+wxDocManager.OnMRUFileNotExist,0,0,2,void,						void wxDocManager.OnMRUFileNotExist ( unsigned n,      wxString & filename    )
+wxDocManager.RemoveDocument,0,0,1,void,						void wxDocManager.RemoveDocument ( wxDocument * doc)
+wxDocManager.SelectDocumentPath,0,1,5,wxDocTemplate,						wxDocTemplate* wxDocManager.SelectDocumentPath ( wxDocTemplate ** templates,     int noTemplates,     wxString & path,     long flags,     bool save = false    )
+wxDocManager.SelectDocumentType,0,1,3,wxDocTemplate,						wxDocTemplate* wxDocManager.SelectDocumentType ( wxDocTemplate ** templates,     int noTemplates,     bool sort = false    )
+wxDocManager.SelectViewType,0,1,3,wxDocTemplate,						wxDocTemplate* wxDocManager.SelectViewType ( wxDocTemplate ** templates,     int noTemplates,     bool sort = false    )
+wxDocManager.SetLastDirectory,0,0,1,void,						void wxDocManager.SetLastDirectory (  wxString & dir)
+wxDocManager.SetMaxDocsOpen,0,0,1,void,						void wxDocManager.SetMaxDocsOpen ( int n)
+wxDocManager.m_currentView,0,1,-1,wxView,						wxView* wxDocManager.m_currentView
+wxDocManager.m_defaultDocumentNameCounter,0,0,-1,int,						int wxDocManager.m_defaultDocumentNameCounter
+wxDocManager.m_docs,0,0,-1,wxList,						wxList wxDocManager.m_docs
+wxDocManager.m_fileHistory,0,1,-1,wxFileHistory,						wxFileHistory* wxDocManager.m_fileHistory
+wxDocManager.m_lastDirectory,0,0,-1,wxString,						wxString wxDocManager.m_lastDirectory
+wxDocManager.m_maxDocsOpen,0,0,-1,int,						int wxDocManager.m_maxDocsOpen
+[INHERITS]
+wxEvtHandler
+wxObject

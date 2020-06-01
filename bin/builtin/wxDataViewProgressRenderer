@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewProgressRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewProgressRenderer.GetDefaultType,1,0,0,wxString,						static wxString wxDataViewProgressRenderer.GetDefaultType ( )
+[INHERITS]
+wxDataViewRenderer
+wxObject

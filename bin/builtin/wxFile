@@ -1,0 +1,29 @@
+[CONSTS]
+[HEADER]
+<wx/file.h>
+[METHODS]
+wxFile.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFile.OpenMode,0,0,-1,enum,						enum wxFile.OpenMode
+wxFile.Access,1,0,2,bool,						static bool wxFile.Access (  wxString & name,     wxFile.OpenMode mode    )
+wxFile.Attach,0,0,1,void,						void wxFile.Attach ( int fd)
+wxFile.ClearLastError,0,0,0,void,						void wxFile.ClearLastError ( )
+wxFile.Close,0,0,0,bool,						bool wxFile.Close ( )
+wxFile.Create,0,0,3,bool,						bool wxFile.Create (  wxString & filename,     bool overwrite = false,     int access = wxS_DEFAULT    )
+wxFile.Detach,0,0,0,int,						int wxFile.Detach ( )
+wxFile.Eof,0,0,0,bool,						bool wxFile.Eof ( )
+wxFile.Exists,1,0,1,bool,						static bool wxFile.Exists (  wxString & filename)
+wxFile.fd,0,0,0,int,						int wxFile.fd ( )
+wxFile.Flush,0,0,0,bool,						bool wxFile.Flush ( )
+wxFile.GetKind,0,0,0,wxFileKind,						wxFileKind wxFile.GetKind ( )
+wxFile.GetLastError,0,0,0,int,						int wxFile.GetLastError ( )
+wxFile.IsOpened,0,0,0,bool,						bool wxFile.IsOpened ( )
+wxFile.Length,0,0,0,wxFileOffset,						wxFileOffset wxFile.Length ( )
+wxFile.Open,0,0,3,bool,						bool wxFile.Open (  wxString & filename,     wxFile.OpenMode mode = wxFile.read,     int access = wxS_DEFAULT    )
+wxFile.Read,0,0,2,ssize_t,						ssize_t wxFile.Read ( void * buffer,     size_t count    )
+wxFile.ReadAll,0,0,2,bool,						bool wxFile.ReadAll ( wxString * str,      wxMBConv & conv = wxConvAuto()    )
+wxFile.Seek,0,0,2,wxFileOffset,						wxFileOffset wxFile.Seek ( wxFileOffset ofs,     wxSeekMode mode = wxFromStart    )
+wxFile.SeekEnd,0,0,1,wxFileOffset,						wxFileOffset wxFile.SeekEnd ( wxFileOffset ofs = 0)
+wxFile.Tell,0,0,0,wxFileOffset,						wxFileOffset wxFile.Tell ( )
+wxFile.Write,0,0,2,size_t,						size_t wxFile.Write (  void * buffer,     size_t count    )
+wxFile.Write,0,0,2,bool,						bool wxFile.Write (  wxString & s,      wxMBConv & conv = wxConvUTF8    )
+[INHERITS]

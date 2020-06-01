@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmprint.h>
+[METHODS]
+wxHtmlDCRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlDCRenderer.FindNextPageBreak,0,0,1,int,						int wxHtmlDCRenderer.FindNextPageBreak ( int pos)
+wxHtmlDCRenderer.GetTotalHeight,0,0,0,int,						int wxHtmlDCRenderer.GetTotalHeight ( )
+wxHtmlDCRenderer.GetTotalWidth,0,0,0,int,						int wxHtmlDCRenderer.GetTotalWidth ( )
+wxHtmlDCRenderer.Render,0,0,4,void,						void wxHtmlDCRenderer.Render ( int x,     int y,     int from = 0,     int to = INT_MAX    )
+wxHtmlDCRenderer.SetDC,0,0,2,void,						void wxHtmlDCRenderer.SetDC ( wxDC * dc,     double pixel_scale = 1.0    )
+wxHtmlDCRenderer.SetFonts,0,0,3,void,						void wxHtmlDCRenderer.SetFonts (  wxString & normal_face,      wxString & fixed_face,      int * sizes = NULL    )
+wxHtmlDCRenderer.SetHtmlCell,0,0,1,void,						void wxHtmlDCRenderer.SetHtmlCell ( wxHtmlContainerCell & cell)
+wxHtmlDCRenderer.SetHtmlText,0,0,3,void,						void wxHtmlDCRenderer.SetHtmlText (  wxString & html,      wxString & basepath = wxEmptyString,     bool isdir = true    )
+wxHtmlDCRenderer.SetSize,0,0,2,void,						void wxHtmlDCRenderer.SetSize ( int width,     int height    )
+wxHtmlDCRenderer.SetStandardFonts,0,0,3,void,						void wxHtmlDCRenderer.SetStandardFonts ( int size = -1,      wxString & normal_face = wxEmptyString,      wxString & fixed_face = wxEmptyString    )
+[INHERITS]
+wxObject

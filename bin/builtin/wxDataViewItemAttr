@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewItemAttr.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewItemAttr.GetBackgroundColour,0,0,0,wxColour,						wxColour&  wxDataViewItemAttr.GetBackgroundColour ( )
+wxDataViewItemAttr.GetBold,0,0,0,bool,						bool wxDataViewItemAttr.GetBold ( )
+wxDataViewItemAttr.GetColour,0,0,0,wxColour,						wxColour&  wxDataViewItemAttr.GetColour ( )
+wxDataViewItemAttr.GetEffectiveFont,0,0,1,wxFont,						wxFont wxDataViewItemAttr.GetEffectiveFont (  wxFont & font)
+wxDataViewItemAttr.GetItalic,0,0,0,bool,						bool wxDataViewItemAttr.GetItalic ( )
+wxDataViewItemAttr.HasBackgroundColour,0,0,0,bool,						bool wxDataViewItemAttr.HasBackgroundColour ( )
+wxDataViewItemAttr.HasColour,0,0,0,bool,						bool wxDataViewItemAttr.HasColour ( )
+wxDataViewItemAttr.HasFont,0,0,0,bool,						bool wxDataViewItemAttr.HasFont ( )
+wxDataViewItemAttr.IsDefault,0,0,0,bool,						bool wxDataViewItemAttr.IsDefault ( )
+wxDataViewItemAttr.SetBackgroundColour,0,0,1,void,						void wxDataViewItemAttr.SetBackgroundColour (  wxColour & colour)
+wxDataViewItemAttr.SetBold,0,0,1,void,						void wxDataViewItemAttr.SetBold ( bool set)
+wxDataViewItemAttr.SetColour,0,0,1,void,						void wxDataViewItemAttr.SetColour (  wxColour & colour)
+wxDataViewItemAttr.SetItalic,0,0,1,void,						void wxDataViewItemAttr.SetItalic ( bool set)
+wxDataViewItemAttr.SetStrikethrough,0,0,1,void,						void wxDataViewItemAttr.SetStrikethrough ( bool set)
+[INHERITS]

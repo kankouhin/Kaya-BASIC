@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/tooltip.h>
+[METHODS]
+wxToolTip.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxToolTip.Enable,1,0,1,void,						static void wxToolTip.Enable ( bool flag)
+wxToolTip.GetTip,0,0,0,wxString,						wxString wxToolTip.GetTip ( )
+wxToolTip.GetWindow,0,1,0,wxWindow,						wxWindow* wxToolTip.GetWindow ( )
+wxToolTip.SetAutoPop,1,0,1,void,						static void wxToolTip.SetAutoPop ( long msecs)
+wxToolTip.SetDelay,1,0,1,void,						static void wxToolTip.SetDelay ( long msecs)
+wxToolTip.SetMaxWidth,1,0,1,void,						static void wxToolTip.SetMaxWidth ( int width)
+wxToolTip.SetReshow,1,0,1,void,						static void wxToolTip.SetReshow ( long msecs)
+wxToolTip.SetTip,0,0,1,void,						void wxToolTip.SetTip (  wxString & tip)
+[INHERITS]
+wxObject

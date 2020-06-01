@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/stream.h>
+[METHODS]
+wxStreamBase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStreamBase.GetLastError,0,0,0,wxStreamError,						wxStreamError wxStreamBase.GetLastError ( )
+wxStreamBase.GetLength,0,0,0,wxFileOffset,						wxFileOffset wxStreamBase.GetLength ( )
+wxStreamBase.GetSize,0,0,0,size_t,						size_t wxStreamBase.GetSize ( )
+wxStreamBase.IsOk,0,0,0,bool,						bool wxStreamBase.IsOk ( )
+wxStreamBase.IsSeekable,0,0,0,bool,						bool wxStreamBase.IsSeekable ( )
+wxStreamBase.OnSysSeek,0,0,2,wxFileOffset,						wxFileOffset wxStreamBase.OnSysSeek ( wxFileOffset pos,     wxSeekMode mode    )
+wxStreamBase.OnSysTell,0,0,0,wxFileOffset,						wxFileOffset wxStreamBase.OnSysTell ( )
+wxStreamBase.operator!,0,0,0,bool,						bool wxStreamBase.operator! ( )
+wxStreamBase.Reset,0,0,1,void,						void wxStreamBase.Reset ( wxStreamError error = wxSTREAM_NO_ERROR)
+[INHERITS]

@@ -1,0 +1,34 @@
+[CONSTS]
+[HEADER]
+<wx/cmdline.h>
+[METHODS]
+wxCmdLineParser.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCmdLineParser.AddLongOption,0,0,4,void,						void wxCmdLineParser.AddLongOption (  wxString & lng,      wxString & desc = wxEmptyString,     wxCmdLineParamType type = wxCMD_LINE_VAL_STRING,     int flags = 0    )
+wxCmdLineParser.AddLongSwitch,0,0,3,void,						void wxCmdLineParser.AddLongSwitch (  wxString & lng,      wxString & desc = wxEmptyString,     int flags = 0    )
+wxCmdLineParser.AddOption,0,0,5,void,						void wxCmdLineParser.AddOption (  wxString & name,      wxString & lng = wxEmptyString,      wxString & desc = wxEmptyString,     wxCmdLineParamType type = wxCMD_LINE_VAL_STRING,     int flags = 0    )
+wxCmdLineParser.AddParam,0,0,3,void,						void wxCmdLineParser.AddParam (  wxString & desc = wxEmptyString,     wxCmdLineParamType type = wxCMD_LINE_VAL_STRING,     int flags = 0    )
+wxCmdLineParser.AddSwitch,0,0,4,void,						void wxCmdLineParser.AddSwitch (  wxString & name,      wxString & lng = wxEmptyString,      wxString & desc = wxEmptyString,     int flags = 0    )
+wxCmdLineParser.AddUsageText,0,0,1,void,						void wxCmdLineParser.AddUsageText (  wxString & text)
+wxCmdLineParser.AreLongOptionsEnabled,0,0,0,bool,						bool wxCmdLineParser.AreLongOptionsEnabled ( )
+wxCmdLineParser.ConvertStringToArgs,1,0,2,wxArrayString,						static wxArrayString wxCmdLineParser.ConvertStringToArgs (  wxString & cmdline,     wxCmdLineSplitType flags = wxCMD_LINE_SPLIT_DOS    )
+wxCmdLineParser.DisableLongOptions,0,0,0,void,						void wxCmdLineParser.DisableLongOptions ( )
+wxCmdLineParser.EnableLongOptions,0,0,1,void,						void wxCmdLineParser.EnableLongOptions ( bool enable = true)
+wxCmdLineParser.Found,0,0,1,bool,						bool wxCmdLineParser.Found (  wxString & name)
+wxCmdLineParser.Found,0,0,2,bool,						bool wxCmdLineParser.Found (  wxString & name,     wxString * value    )
+wxCmdLineParser.Found,0,0,2,bool,						bool wxCmdLineParser.Found (  wxString & name,     long * value    )
+wxCmdLineParser.Found,0,0,2,bool,						bool wxCmdLineParser.Found (  wxString & name,     double * value    )
+wxCmdLineParser.Found,0,0,2,bool,						bool wxCmdLineParser.Found (  wxString & name,     wxDateTime * value    )
+wxCmdLineParser.FoundSwitch,0,0,1,wxCmdLineSwitchState,						wxCmdLineSwitchState wxCmdLineParser.FoundSwitch (  wxString & name)
+wxCmdLineParser.GetArguments,0,0,0,wxCmdLineArgs,						wxCmdLineArgs wxCmdLineParser.GetArguments ( )
+wxCmdLineParser.GetParam,0,0,1,wxString,						wxString wxCmdLineParser.GetParam ( size_t n = 0)
+wxCmdLineParser.GetParamCount,0,0,0,size_t,						size_t wxCmdLineParser.GetParamCount ( )
+wxCmdLineParser.GetUsageString,0,0,0,wxString,						wxString wxCmdLineParser.GetUsageString ( )
+wxCmdLineParser.Parse,0,0,1,int,						int wxCmdLineParser.Parse ( bool giveUsage = true)
+wxCmdLineParser.SetCmdLine,0,0,2,void,						void wxCmdLineParser.SetCmdLine ( int argc,     char ** argv    )
+wxCmdLineParser.SetCmdLine,0,0,2,void,						void wxCmdLineParser.SetCmdLine ( int argc,     wchar_t ** argv    )
+wxCmdLineParser.SetCmdLine,0,0,1,void,						void wxCmdLineParser.SetCmdLine (  wxString & cmdline)
+wxCmdLineParser.SetDesc,0,0,1,void,						void wxCmdLineParser.SetDesc (  wxCmdLineEntryDesc * desc)
+wxCmdLineParser.SetLogo,0,0,1,void,						void wxCmdLineParser.SetLogo (  wxString & logo)
+wxCmdLineParser.SetSwitchChars,0,0,1,void,						void wxCmdLineParser.SetSwitchChars (  wxString & switchChars)
+wxCmdLineParser.Usage,0,0,0,void,						void wxCmdLineParser.Usage ( )
+[INHERITS]

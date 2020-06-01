@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/aui/tabmdi.h>
+[METHODS]
+wxAuiMDIClientWindow.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiMDIClientWindow.CreateClient,0,0,2,bool,						bool wxAuiMDIClientWindow.CreateClient ( wxAuiMDIParentFrame * parent,     long style = wxVSCROLL|wxHSCROLL    )
+wxAuiMDIClientWindow.GetActiveChild,0,1,0,wxAuiMDIChildFrame,						wxAuiMDIChildFrame* wxAuiMDIClientWindow.GetActiveChild ( )
+wxAuiMDIClientWindow.SetActiveChild,0,0,1,void,						void wxAuiMDIClientWindow.SetActiveChild ( wxAuiMDIChildFrame * pChildFrame)
+wxAuiMDIClientWindow.SetSelection,0,0,1,int,						int wxAuiMDIClientWindow.SetSelection ( size_t new_page)
+[INHERITS]
+wxAuiNotebook
+wxBookCtrlBase
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxWithImages

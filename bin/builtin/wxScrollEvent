@@ -1,0 +1,31 @@
+[CONSTS]
+wxEVT_SCROLL_TOP
+wxEVT_SCROLL_BOTTOM
+wxEVT_SCROLL_LINEUP
+wxEVT_SCROLL_LINEDOWN
+wxEVT_SCROLL_PAGEUP
+wxEVT_SCROLL_PAGEDOWN
+wxEVT_SCROLL_THUMBTRACK
+wxEVT_SCROLL_THUMBRELEASE
+wxEVT_SCROLL_CHANGED
+wxEVT_SCROLL_TOP
+wxEVT_SCROLL_BOTTOM
+wxEVT_SCROLL_LINEUP
+wxEVT_SCROLL_LINEDOWN
+wxEVT_SCROLL_PAGEUP
+wxEVT_SCROLL_PAGEDOWN
+wxEVT_SCROLL_THUMBTRACK
+wxEVT_SCROLL_THUMBRELEASE
+wxEVT_SCROLL_CHANGED
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxScrollEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxScrollEvent.GetOrientation,0,0,0,int,						int wxScrollEvent.GetOrientation ( )
+wxScrollEvent.GetPosition,0,0,0,int,						int wxScrollEvent.GetPosition ( )
+wxScrollEvent.SetOrientation,0,0,1,void,						void wxScrollEvent.SetOrientation ( int orient)
+wxScrollEvent.SetPosition,0,0,1,void,						void wxScrollEvent.SetPosition ( int pos)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

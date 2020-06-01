@@ -1,0 +1,20 @@
+[CONSTS]
+wxSP_HORIZONTAL
+wxSP_VERTICAL
+wxSP_ARROW_KEYS
+wxSP_WRAP
+[HEADER]
+<wx/spinbutt.h>
+[METHODS]
+wxSpinButton.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxSpinButton.Create,0,0,6,bool,						bool wxSpinButton.Create ( wxWindow * parent,     wxWindowID id = -1,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxSP_VERTICAL,      wxString & name = &quot;wxSpinButton&quot;    )
+wxSpinButton.GetMax,0,0,0,int,						int wxSpinButton.GetMax ( )
+wxSpinButton.GetMin,0,0,0,int,						int wxSpinButton.GetMin ( )
+wxSpinButton.GetValue,0,0,0,int,						int wxSpinButton.GetValue ( )
+wxSpinButton.SetRange,0,0,2,void,						void wxSpinButton.SetRange ( int min,     int max    )
+wxSpinButton.SetValue,0,0,1,void,						void wxSpinButton.SetValue ( int value)
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

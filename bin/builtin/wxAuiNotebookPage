@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/aui/auibook.h>
+[METHODS]
+wxAuiNotebookPage.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxAuiNotebookPage.active,0,0,-1,bool,						bool wxAuiNotebookPage.active
+wxAuiNotebookPage.bitmap,0,0,-1,wxBitmap,						wxBitmap wxAuiNotebookPage.bitmap
+wxAuiNotebookPage.caption,0,0,-1,wxString,						wxString wxAuiNotebookPage.caption
+wxAuiNotebookPage.rect,0,0,-1,wxRect,						wxRect wxAuiNotebookPage.rect
+wxAuiNotebookPage.tooltip,0,0,-1,wxString,						wxString wxAuiNotebookPage.tooltip
+wxAuiNotebookPage.window,0,1,-1,wxWindow,						wxWindow* wxAuiNotebookPage.window
+[INHERITS]

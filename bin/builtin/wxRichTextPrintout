@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextprint.h>
+[METHODS]
+wxRichTextPrintout.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextPrintout.CalculateScaling,0,0,4,void,						void wxRichTextPrintout.CalculateScaling ( wxDC * dc,     wxRect & textRect,     wxRect & headerRect,     wxRect & footerRect    )
+wxRichTextPrintout.GetHeaderFooterData,0,0,0,wxRichTextHeaderFooterData,						wxRichTextHeaderFooterData&  wxRichTextPrintout.GetHeaderFooterData ( )
+wxRichTextPrintout.GetPageInfo,0,0,4,void,						void wxRichTextPrintout.GetPageInfo ( int * minPage,     int * maxPage,     int * selPageFrom,     int * selPageTo    )
+wxRichTextPrintout.GetRichTextBuffer,0,1,0,wxRichTextBuffer,						wxRichTextBuffer* wxRichTextPrintout.GetRichTextBuffer ( )
+wxRichTextPrintout.HasPage,0,0,1,bool,						bool wxRichTextPrintout.HasPage ( int page)
+wxRichTextPrintout.OnPreparePrinting,0,0,0,void,						void wxRichTextPrintout.OnPreparePrinting ( )
+wxRichTextPrintout.OnPrintPage,0,0,1,bool,						bool wxRichTextPrintout.OnPrintPage ( int page)
+wxRichTextPrintout.SetHeaderFooterData,0,0,1,void,						void wxRichTextPrintout.SetHeaderFooterData (  wxRichTextHeaderFooterData & data)
+wxRichTextPrintout.SetMargins,0,0,4,void,						void wxRichTextPrintout.SetMargins ( int top = 254,     int bottom = 254,     int left = 254,     int right = 254    )
+wxRichTextPrintout.SetRichTextBuffer,0,0,1,void,						void wxRichTextPrintout.SetRichTextBuffer ( wxRichTextBuffer * buffer)
+[INHERITS]
+wxPrintout
+wxObject

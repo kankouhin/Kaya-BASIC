@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxQueryNewPaletteEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxQueryNewPaletteEvent.GetPaletteRealized,0,0,0,bool,						bool wxQueryNewPaletteEvent.GetPaletteRealized ( )
+wxQueryNewPaletteEvent.SetPaletteRealized,0,0,1,void,						void wxQueryNewPaletteEvent.SetPaletteRealized ( bool realized)
+[INHERITS]
+wxEvent
+wxObject

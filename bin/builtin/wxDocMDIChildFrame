@@ -1,10 +1,12 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/docmdi.h>
-GetDocument,0,1,0,wxDocument,						wxDocument* GetDocument ( )
-GetView,0,1,0,wxView,						wxView* GetView ( )
-SetDocument,0,0,1,void,						void SetDocument ( wxDocument * doc)
-SetView,0,0,1,void,						void SetView ( wxView * view)
+[METHODS]
+wxDocMDIChildFrame.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDocMDIChildFrame.GetDocument,0,1,0,wxDocument,						wxDocument* wxDocMDIChildFrame.GetDocument ( )
+wxDocMDIChildFrame.GetView,0,1,0,wxView,						wxView* wxDocMDIChildFrame.GetView ( )
+wxDocMDIChildFrame.SetDocument,0,0,1,void,						void wxDocMDIChildFrame.SetDocument ( wxDocument * doc)
+wxDocMDIChildFrame.SetView,0,0,1,void,						void wxDocMDIChildFrame.SetView ( wxView * view)
 [INHERITS]
 wxMDIChildFrame
 wxFrame

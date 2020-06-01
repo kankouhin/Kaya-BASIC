@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/cmdline.h>
+[METHODS]
+wxCmdLineArg.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCmdLineArg.GetDateVal,0,0,0,wxDateTime,						wxDateTime&  wxCmdLineArg.GetDateVal ( )
+wxCmdLineArg.GetDoubleVal,0,0,0,double,						double wxCmdLineArg.GetDoubleVal ( )
+wxCmdLineArg.GetKind,0,0,0,wxCmdLineEntryType,						wxCmdLineEntryType wxCmdLineArg.GetKind ( )
+wxCmdLineArg.GetLongName,0,0,0,wxString,						wxString wxCmdLineArg.GetLongName ( )
+wxCmdLineArg.GetLongVal,0,0,0,long,						long wxCmdLineArg.GetLongVal ( )
+wxCmdLineArg.GetShortName,0,0,0,wxString,						wxString wxCmdLineArg.GetShortName ( )
+wxCmdLineArg.GetStrVal,0,0,0,wxString,						wxString&  wxCmdLineArg.GetStrVal ( )
+wxCmdLineArg.GetType,0,0,0,wxCmdLineParamType,						wxCmdLineParamType wxCmdLineArg.GetType ( )
+wxCmdLineArg.IsNegated,0,0,0,bool,						bool wxCmdLineArg.IsNegated ( )
+[INHERITS]

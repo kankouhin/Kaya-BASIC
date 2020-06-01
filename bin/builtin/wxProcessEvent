@@ -1,0 +1,11 @@
+[CONSTS]
+wxEVT_END_PROCESS
+[HEADER]
+<wx/process.h>
+[METHODS]
+wxProcessEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxProcessEvent.GetExitCode,0,0,0,int,						int wxProcessEvent.GetExitCode ( )
+wxProcessEvent.GetPid,0,0,0,int,						int wxProcessEvent.GetPid ( )
+[INHERITS]
+wxEvent
+wxObject

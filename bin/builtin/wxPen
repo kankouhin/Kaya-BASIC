@@ -1,0 +1,29 @@
+[CONSTS]
+[HEADER]
+<wx/pen.h>
+[METHODS]
+wxPen.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPen.GetCap,0,0,0,wxPenCap,						wxPenCap wxPen.GetCap ( )
+wxPen.GetColour,0,0,0,wxColour,						wxColour wxPen.GetColour ( )
+wxPen.GetDashes,0,0,1,int,						int wxPen.GetDashes ( wxDash ** dashes)
+wxPen.GetJoin,0,0,0,wxPenJoin,						wxPenJoin wxPen.GetJoin ( )
+wxPen.GetStipple,0,1,0,wxBitmap,						wxBitmap* wxPen.GetStipple ( )
+wxPen.GetStyle,0,0,0,wxPenStyle,						wxPenStyle wxPen.GetStyle ( )
+wxPen.GetWidth,0,0,0,int,						int wxPen.GetWidth ( )
+wxPen.IsNonTransparent,0,0,0,bool,						bool wxPen.IsNonTransparent ( )
+wxPen.IsOk,0,0,0,bool,						bool wxPen.IsOk ( )
+wxPen.IsTransparent,0,0,0,bool,						bool wxPen.IsTransparent ( )
+wxPen.operator!=,0,0,1,bool,						bool wxPen.operator!= (  wxPen & pen)
+wxPen.operator=,0,0,1,wxPen,						wxPen&  wxPen.operator= (  wxPen & pen)
+wxPen.operator==,0,0,1,bool,						bool wxPen.operator== (  wxPen & pen)
+wxPen.SetCap,0,0,1,void,						void wxPen.SetCap ( wxPenCap capStyle)
+wxPen.SetColour,0,0,1,void,						void wxPen.SetColour ( wxColour & colour)
+wxPen.SetColour,0,0,3,void,						void wxPen.SetColour ( unsigned char red,     unsigned char green,     unsigned char blue    )
+wxPen.SetDashes,0,0,2,void,						void wxPen.SetDashes ( int n,      wxDash * dash    )
+wxPen.SetJoin,0,0,1,void,						void wxPen.SetJoin ( wxPenJoin join_style)
+wxPen.SetStipple,0,0,1,void,						void wxPen.SetStipple (  wxBitmap & stipple)
+wxPen.SetStyle,0,0,1,void,						void wxPen.SetStyle ( wxPenStyle style)
+wxPen.SetWidth,0,0,1,void,						void wxPen.SetWidth ( int width)
+[INHERITS]
+wxGDIObject
+wxObject

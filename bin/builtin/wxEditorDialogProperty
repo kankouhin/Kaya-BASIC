@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxEditorDialogProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxEditorDialogProperty.DisplayEditorDialog,0,0,2,bool,						bool wxEditorDialogProperty.DisplayEditorDialog ( wxPropertyGrid * pg,     wxVariant & value    )
+wxEditorDialogProperty.DoSetAttribute,0,0,2,bool,						bool wxEditorDialogProperty.DoSetAttribute (  wxString & name,     wxVariant & value    )
+wxEditorDialogProperty.GetEditorDialog,0,1,0,wxPGEditorDialogAdapter,						wxPGEditorDialogAdapter* wxEditorDialogProperty.GetEditorDialog ( )
+wxEditorDialogProperty.m_dlgStyle,0,0,-1,long,						long wxEditorDialogProperty.m_dlgStyle
+wxEditorDialogProperty.m_dlgTitle,0,0,-1,wxString,						wxString wxEditorDialogProperty.m_dlgTitle
+[INHERITS]
+wxPGProperty
+wxObject

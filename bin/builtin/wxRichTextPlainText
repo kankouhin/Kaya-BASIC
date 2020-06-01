@@ -1,0 +1,31 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextPlainText.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextPlainText.CalculateRange,0,0,2,void,						void wxRichTextPlainText.CalculateRange ( long start,     long & end    )
+wxRichTextPlainText.CanMerge,0,0,2,bool,						bool wxRichTextPlainText.CanMerge ( wxRichTextObject * object,     wxRichTextDrawingContext & context    )
+wxRichTextPlainText.CanSplit,0,0,1,bool,						bool wxRichTextPlainText.CanSplit ( wxRichTextDrawingContext & context)
+wxRichTextPlainText.Clone,0,1,0,wxRichTextObject,						wxRichTextObject* wxRichTextPlainText.Clone ( )
+wxRichTextPlainText.Copy,0,0,1,void,						void wxRichTextPlainText.Copy (  wxRichTextPlainText & obj)
+wxRichTextPlainText.DeleteRange,0,0,1,bool,						bool wxRichTextPlainText.DeleteRange (  wxRichTextRange & range)
+wxRichTextPlainText.DoSplit,0,1,1,wxRichTextObject,						wxRichTextObject* wxRichTextPlainText.DoSplit ( long pos)
+wxRichTextPlainText.Draw,0,0,7,bool,						bool wxRichTextPlainText.Draw ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRichTextRange & range,      wxRichTextSelection & selection,      wxRect & rect,     int descent,     int style    )
+wxRichTextPlainText.DrawTabbedString,0,0,7,bool,						bool wxRichTextPlainText.DrawTabbedString ( wxDC & dc,      wxRichTextAttr & attr,      wxRect & rect,     wxString & str,     wxCoord & x,     wxCoord & y,     bool selected    )
+wxRichTextPlainText.Dump,0,0,1,void,						void wxRichTextPlainText.Dump ( wxTextOutputStream & stream)
+wxRichTextPlainText.GetFirstLineBreakPosition,0,0,1,long,						long wxRichTextPlainText.GetFirstLineBreakPosition ( long pos)
+wxRichTextPlainText.GetRangeSize,0,0,9,bool,						bool wxRichTextPlainText.GetRangeSize (  wxRichTextRange & range,     wxSize & size,     int & descent,     wxDC & dc,     wxRichTextDrawingContext & context,     int flags,      wxPoint & position = wxPoint(0, 0),      wxSize & parentSize = wxDefaultSize,     wxArrayInt * partialExtents = NULL    )
+wxRichTextPlainText.GetText,0,0,0,wxString,						wxString&  wxRichTextPlainText.GetText ( )
+wxRichTextPlainText.GetTextForRange,0,0,1,wxString,						wxString wxRichTextPlainText.GetTextForRange (  wxRichTextRange & range)
+wxRichTextPlainText.GetXMLNodeName,0,0,0,wxString,						wxString wxRichTextPlainText.GetXMLNodeName ( )
+wxRichTextPlainText.ImportFromXML,0,0,4,bool,						bool wxRichTextPlainText.ImportFromXML ( wxRichTextBuffer * buffer,     wxXmlNode * node,     wxRichTextXMLHandler * handler,     bool * recurse    )
+wxRichTextPlainText.IsEmpty,0,0,0,bool,						bool wxRichTextPlainText.IsEmpty ( )
+wxRichTextPlainText.Layout,0,0,5,bool,						bool wxRichTextPlainText.Layout ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRect & rect,      wxRect & parentRect,     int style    )
+wxRichTextPlainText.Merge,0,0,2,bool,						bool wxRichTextPlainText.Merge ( wxRichTextObject * object,     wxRichTextDrawingContext & context    )
+wxRichTextPlainText.SetText,0,0,1,void,						void wxRichTextPlainText.SetText (  wxString & text)
+wxRichTextPlainText.Split,0,1,1,wxRichTextObject,						wxRichTextObject* wxRichTextPlainText.Split ( wxRichTextDrawingContext & context)
+wxRichTextPlainText.UsesParagraphAttributes,0,0,0,bool,						bool wxRichTextPlainText.UsesParagraphAttributes ( )
+wxRichTextPlainText.m_text,0,0,-1,wxString,						wxString wxRichTextPlainText.m_text
+[INHERITS]
+wxRichTextObject
+wxObject

@@ -1,23 +1,25 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/event.h>
-Clone,0,1,0,wxEvent,						wxEvent* Clone ( )
-GetEventCategory,0,0,0,wxEventCategory,						wxEventCategory GetEventCategory ( )
-GetEventObject,0,1,0,wxObject,						wxObject* GetEventObject ( )
-GetEventType,0,0,0,wxEventType,						wxEventType GetEventType ( )
-GetEventUserData,0,1,0,wxObject,						wxObject* GetEventUserData ( )
-GetId,0,0,0,int,						int GetId ( )
-GetSkipped,0,0,0,bool,						bool GetSkipped ( )
-GetTimestamp,0,0,0,long,						long GetTimestamp ( )
-IsCommandEvent,0,0,0,bool,						bool IsCommandEvent ( )
-ResumePropagation,0,0,1,void,						void ResumePropagation ( int propagationLevel)
-SetEventObject,0,0,1,void,						void SetEventObject ( wxObject * object)
-SetEventType,0,0,1,void,						void SetEventType ( wxEventType type)
-SetId,0,0,1,void,						void SetId ( int id)
-SetTimestamp,0,0,1,void,						void SetTimestamp ( long timeStamp = 0)
-ShouldPropagate,0,0,0,bool,						bool ShouldPropagate ( )
-Skip,0,0,1,void,						void Skip ( bool skip = true)
-StopPropagation,0,0,0,int,						int StopPropagation ( )
-,0,0,0,int,						int m_propagationLevel
+[METHODS]
+wxEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxEvent.Clone,0,1,0,wxEvent,						wxEvent* wxEvent.Clone ( )
+wxEvent.GetEventCategory,0,0,0,wxEventCategory,						wxEventCategory wxEvent.GetEventCategory ( )
+wxEvent.GetEventObject,0,1,0,wxObject,						wxObject* wxEvent.GetEventObject ( )
+wxEvent.GetEventType,0,0,0,wxEventType,						wxEventType wxEvent.GetEventType ( )
+wxEvent.GetEventUserData,0,1,0,wxObject,						wxObject* wxEvent.GetEventUserData ( )
+wxEvent.GetId,0,0,0,int,						int wxEvent.GetId ( )
+wxEvent.GetSkipped,0,0,0,bool,						bool wxEvent.GetSkipped ( )
+wxEvent.GetTimestamp,0,0,0,long,						long wxEvent.GetTimestamp ( )
+wxEvent.IsCommandEvent,0,0,0,bool,						bool wxEvent.IsCommandEvent ( )
+wxEvent.ResumePropagation,0,0,1,void,						void wxEvent.ResumePropagation ( int propagationLevel)
+wxEvent.SetEventObject,0,0,1,void,						void wxEvent.SetEventObject ( wxObject * object)
+wxEvent.SetEventType,0,0,1,void,						void wxEvent.SetEventType ( wxEventType type)
+wxEvent.SetId,0,0,1,void,						void wxEvent.SetId ( int id)
+wxEvent.SetTimestamp,0,0,1,void,						void wxEvent.SetTimestamp ( long timeStamp = 0)
+wxEvent.ShouldPropagate,0,0,0,bool,						bool wxEvent.ShouldPropagate ( )
+wxEvent.Skip,0,0,1,void,						void wxEvent.Skip ( bool skip = true)
+wxEvent.StopPropagation,0,0,0,int,						int wxEvent.StopPropagation ( )
+wxEvent.m_propagationLevel,0,0,-1,int,						int wxEvent.m_propagationLevel
 [INHERITS]
 wxObject

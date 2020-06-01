@@ -1,0 +1,34 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxPGArrayEditorDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGArrayEditorDialog.ArrayGet,0,0,1,wxString,						wxString wxPGArrayEditorDialog.ArrayGet ( size_t index)
+wxPGArrayEditorDialog.ArrayGetCount,0,0,0,size_t,						size_t wxPGArrayEditorDialog.ArrayGetCount ( )
+wxPGArrayEditorDialog.ArrayInsert,0,0,2,bool,						bool wxPGArrayEditorDialog.ArrayInsert (  wxString & str,     int index    )
+wxPGArrayEditorDialog.ArrayRemoveAt,0,0,1,void,						void wxPGArrayEditorDialog.ArrayRemoveAt ( int index)
+wxPGArrayEditorDialog.ArraySet,0,0,2,bool,						bool wxPGArrayEditorDialog.ArraySet ( size_t index,      wxString & str    )
+wxPGArrayEditorDialog.ArraySwap,0,0,2,void,						void wxPGArrayEditorDialog.ArraySwap ( size_t first,     size_t second    )
+wxPGArrayEditorDialog.Create,0,0,6,bool,						bool wxPGArrayEditorDialog.Create ( wxWindow * parent,      wxString & message,      wxString & caption,     long style = wxAEDIALOG_STYLE,      wxPoint & pos = wxDefaultPosition,      wxSize & sz = wxDefaultSize    )
+wxPGArrayEditorDialog.EnableCustomNewAction,0,0,0,void,						void wxPGArrayEditorDialog.EnableCustomNewAction ( )
+wxPGArrayEditorDialog.GetDialogValue,0,0,0,wxVariant,						wxVariant wxPGArrayEditorDialog.GetDialogValue ( )
+wxPGArrayEditorDialog.GetSelection,0,0,0,int,						int wxPGArrayEditorDialog.GetSelection ( )
+wxPGArrayEditorDialog.GetTextCtrlValidator,0,1,0,wxValidator,						wxValidator* wxPGArrayEditorDialog.GetTextCtrlValidator ( )
+wxPGArrayEditorDialog.Init,0,0,0,void,						void wxPGArrayEditorDialog.Init ( )
+wxPGArrayEditorDialog.IsModified,0,0,0,bool,						bool wxPGArrayEditorDialog.IsModified ( )
+wxPGArrayEditorDialog.OnCustomNewAction,0,0,1,bool,						bool wxPGArrayEditorDialog.OnCustomNewAction ( wxString * resString)
+wxPGArrayEditorDialog.SetDialogValue,0,0,1,void,						void wxPGArrayEditorDialog.SetDialogValue (  wxVariant & value)
+wxPGArrayEditorDialog.SetNewButtonText,0,0,1,void,						void wxPGArrayEditorDialog.SetNewButtonText (  wxString & text)
+wxPGArrayEditorDialog.m_elb,0,1,-1,wxEditableListBox,						wxEditableListBox* wxPGArrayEditorDialog.m_elb
+wxPGArrayEditorDialog.m_elbSubPanel,0,1,-1,wxWindow,						wxWindow* wxPGArrayEditorDialog.m_elbSubPanel
+wxPGArrayEditorDialog.m_hasCustomNewAction,0,0,-1,bool,						bool wxPGArrayEditorDialog.m_hasCustomNewAction
+wxPGArrayEditorDialog.m_itemPendingAtIndex,0,0,-1,int,						int wxPGArrayEditorDialog.m_itemPendingAtIndex
+wxPGArrayEditorDialog.m_lastFocused,0,1,-1,wxWindow,						wxWindow* wxPGArrayEditorDialog.m_lastFocused
+wxPGArrayEditorDialog.m_modified,0,0,-1,bool,						bool wxPGArrayEditorDialog.m_modified
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

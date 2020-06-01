@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/translation.h>
+[METHODS]
+wxTranslations.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTranslations.AddCatalog,0,0,2,bool,						bool wxTranslations.AddCatalog (  wxString & domain,     wxLanguage msgIdLanguage = wxLANGUAGE_ENGLISH_US    )
+wxTranslations.AddCatalog,0,0,3,bool,						bool wxTranslations.AddCatalog (  wxString & domain,     wxLanguage msgIdLanguage,      wxString & msgIdCharset    )
+wxTranslations.AddStdCatalog,0,0,0,bool,						bool wxTranslations.AddStdCatalog ( )
+wxTranslations.Get,1,1,0,wxTranslations,						static wxTranslations* wxTranslations.Get ( )
+wxTranslations.GetAvailableTranslations,0,0,1,wxArrayString,						wxArrayString wxTranslations.GetAvailableTranslations (  wxString & domain)
+wxTranslations.GetBestTranslation,0,0,2,wxString,						wxString wxTranslations.GetBestTranslation (  wxString & domain,     wxLanguage msgIdLanguage    )
+wxTranslations.GetBestTranslation,0,0,2,wxString,						wxString wxTranslations.GetBestTranslation (  wxString & domain,      wxString & msgIdLanguage = &quot;en&quot;    )
+wxTranslations.GetHeaderValue,0,0,2,wxString,						wxString wxTranslations.GetHeaderValue (  wxString & header,      wxString & domain = wxEmptyString    )
+wxTranslations.GetTranslatedString,0,1,2,wxString,						wxString* wxTranslations.GetTranslatedString (  wxString & origString,      wxString & domain = wxEmptyString    )
+wxTranslations.GetTranslatedString,0,1,3,wxString,						wxString* wxTranslations.GetTranslatedString (  wxString & origString,     unsigned n,      wxString & domain = wxEmptyString    )
+wxTranslations.IsLoaded,0,0,1,bool,						bool wxTranslations.IsLoaded (  wxString & domain)
+wxTranslations.Set,1,0,1,void,						static void wxTranslations.Set ( wxTranslations * t)
+wxTranslations.SetLanguage,0,0,1,void,						void wxTranslations.SetLanguage ( wxLanguage lang)
+wxTranslations.SetLanguage,0,0,1,void,						void wxTranslations.SetLanguage (  wxString & lang)
+wxTranslations.SetLoader,0,0,1,void,						void wxTranslations.SetLoader ( wxTranslationsLoader * loader)
+[INHERITS]

@@ -1,0 +1,28 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextLine.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextLine.Clone,0,1,0,wxRichTextLine,						wxRichTextLine* wxRichTextLine.Clone ( )
+wxRichTextLine.Copy,0,0,1,void,						void wxRichTextLine.Copy (  wxRichTextLine & obj)
+wxRichTextLine.GetAbsolutePosition,0,0,0,wxPoint,						wxPoint wxRichTextLine.GetAbsolutePosition ( )
+wxRichTextLine.GetAbsoluteRange,0,0,0,wxRichTextRange,						wxRichTextRange wxRichTextLine.GetAbsoluteRange ( )
+wxRichTextLine.GetDescent,0,0,0,int,						int wxRichTextLine.GetDescent ( )
+wxRichTextLine.GetParent,0,1,0,wxRichTextParagraph,						wxRichTextParagraph* wxRichTextLine.GetParent ( )
+wxRichTextLine.GetPosition,0,0,0,wxPoint,						wxPoint wxRichTextLine.GetPosition ( )
+wxRichTextLine.GetRange,0,0,0,wxRichTextRange,						wxRichTextRange&  wxRichTextLine.GetRange ( )
+wxRichTextLine.GetRange,0,0,0,wxRichTextRange,						wxRichTextRange&  wxRichTextLine.GetRange ( )
+wxRichTextLine.GetRect,0,0,0,wxRect,						wxRect wxRichTextLine.GetRect ( )
+wxRichTextLine.GetSize,0,0,0,wxSize,						wxSize wxRichTextLine.GetSize ( )
+wxRichTextLine.Init,0,0,1,void,						void wxRichTextLine.Init ( wxRichTextParagraph * parent)
+wxRichTextLine.SetDescent,0,0,1,void,						void wxRichTextLine.SetDescent ( int descent)
+wxRichTextLine.SetPosition,0,0,1,void,						void wxRichTextLine.SetPosition (  wxPoint & pos)
+wxRichTextLine.SetRange,0,0,1,void,						void wxRichTextLine.SetRange (  wxRichTextRange & range)
+wxRichTextLine.SetRange,0,0,2,void,						void wxRichTextLine.SetRange ( long from,     long to    )
+wxRichTextLine.SetSize,0,0,1,void,						void wxRichTextLine.SetSize (  wxSize & sz)
+wxRichTextLine.m_descent,0,0,-1,int,						int wxRichTextLine.m_descent
+wxRichTextLine.m_parent,0,1,-1,wxRichTextParagraph,						wxRichTextParagraph* wxRichTextLine.m_parent
+wxRichTextLine.m_pos,0,0,-1,wxPoint,						wxPoint wxRichTextLine.m_pos
+wxRichTextLine.m_range,0,0,-1,wxRichTextRange,						wxRichTextRange wxRichTextLine.m_range
+wxRichTextLine.m_size,0,0,-1,wxSize,						wxSize wxRichTextLine.m_size
+[INHERITS]

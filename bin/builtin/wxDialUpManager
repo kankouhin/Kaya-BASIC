@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/dialup.h>
+[METHODS]
+wxDialUpManager.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDialUpManager.CancelDialing,0,0,0,bool,						bool wxDialUpManager.CancelDialing ( )
+wxDialUpManager.Create,1,1,0,wxDialUpManager,						static wxDialUpManager* wxDialUpManager.Create ( )
+wxDialUpManager.Dial,0,0,4,bool,						bool wxDialUpManager.Dial (  wxString & nameOfISP = wxEmptyString,      wxString & username = wxEmptyString,      wxString & password = wxEmptyString,     bool async = true    )
+wxDialUpManager.DisableAutoCheckOnlineStatus,0,0,0,void,						void wxDialUpManager.DisableAutoCheckOnlineStatus ( )
+wxDialUpManager.EnableAutoCheckOnlineStatus,0,0,1,bool,						bool wxDialUpManager.EnableAutoCheckOnlineStatus ( size_t nSeconds = 60)
+wxDialUpManager.GetISPNames,0,0,1,size_t,						size_t wxDialUpManager.GetISPNames ( wxArrayString & names)
+wxDialUpManager.HangUp,0,0,0,bool,						bool wxDialUpManager.HangUp ( )
+wxDialUpManager.IsAlwaysOnline,0,0,0,bool,						bool wxDialUpManager.IsAlwaysOnline ( )
+wxDialUpManager.IsDialing,0,0,0,bool,						bool wxDialUpManager.IsDialing ( )
+wxDialUpManager.IsOk,0,0,0,bool,						bool wxDialUpManager.IsOk ( )
+wxDialUpManager.IsOnline,0,0,0,bool,						bool wxDialUpManager.IsOnline ( )
+wxDialUpManager.SetConnectCommand,0,0,2,void,						void wxDialUpManager.SetConnectCommand (  wxString & commandDial = &quot;/usr/bin/pon&quot;,      wxString & commandHangup = &quot;/usr/bin/poff&quot;    )
+wxDialUpManager.SetOnlineStatus,0,0,1,void,						void wxDialUpManager.SetOnlineStatus ( bool isOnline = true)
+wxDialUpManager.SetWellKnownHost,0,0,2,void,						void wxDialUpManager.SetWellKnownHost (  wxString & hostname,     int portno = 80    )
+[INHERITS]

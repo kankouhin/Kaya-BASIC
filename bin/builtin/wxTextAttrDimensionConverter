@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxTextAttrDimensionConverter.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextAttrDimensionConverter.ConvertPixelsToTenthsMM,0,0,1,int,						int wxTextAttrDimensionConverter.ConvertPixelsToTenthsMM ( int pixels)
+wxTextAttrDimensionConverter.ConvertTenthsMMToPixels,0,0,1,int,						int wxTextAttrDimensionConverter.ConvertTenthsMMToPixels ( int units)
+wxTextAttrDimensionConverter.GetPixels,0,0,2,int,						int wxTextAttrDimensionConverter.GetPixels (  wxTextAttrDimension & dim,     int direction = wxHORIZONTAL    )
+wxTextAttrDimensionConverter.GetTenthsMM,0,0,1,int,						int wxTextAttrDimensionConverter.GetTenthsMM (  wxTextAttrDimension & dim)
+wxTextAttrDimensionConverter.m_parentSize,0,0,-1,wxSize,						wxSize wxTextAttrDimensionConverter.m_parentSize
+wxTextAttrDimensionConverter.m_ppi,0,0,-1,int,						int wxTextAttrDimensionConverter.m_ppi
+wxTextAttrDimensionConverter.m_scale,0,0,-1,double,						double wxTextAttrDimensionConverter.m_scale
+[INHERITS]

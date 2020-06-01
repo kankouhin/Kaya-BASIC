@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/dnd.h>
+[METHODS]
+wxDropSource.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDropSource.DoDragDrop,0,0,1,wxDragResult,						wxDragResult wxDropSource.DoDragDrop ( int flags = wxDrag_CopyOnly)
+wxDropSource.GetDataObject,0,1,0,wxDataObject,						wxDataObject* wxDropSource.GetDataObject ( )
+wxDropSource.GiveFeedback,0,0,1,bool,						bool wxDropSource.GiveFeedback ( wxDragResult effect)
+wxDropSource.SetCursor,0,0,2,void,						void wxDropSource.SetCursor ( wxDragResult res,      wxCursor & cursor    )
+wxDropSource.SetData,0,0,1,void,						void wxDropSource.SetData ( wxDataObject & data)
+wxDropSource.SetIcon,0,0,2,void,						void wxDropSource.SetIcon ( wxDragResult res,      wxIcon & icon    )
+[INHERITS]

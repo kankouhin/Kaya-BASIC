@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/advprops.h>
+[METHODS]
+wxCursorProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxCursorProperty.OnCustomPaint,0,0,3,void,						void wxCursorProperty.OnCustomPaint ( wxDC & dc,      wxRect & rect,     wxPGPaintData & paintdata    )
+wxCursorProperty.OnMeasureImage,0,0,1,wxSize,						wxSize wxCursorProperty.OnMeasureImage ( int item)
+[INHERITS]
+wxEnumProperty
+wxPGProperty
+wxObject

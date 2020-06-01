@@ -1,0 +1,71 @@
+[CONSTS]
+wxEVT_WEBVIEW_NAVIGATING
+wxEVT_WEBVIEW_NAVIGATED
+wxEVT_WEBVIEW_LOADED
+wxEVT_WEBVIEW_ERROR
+wxEVT_WEBVIEW_NEWWINDOW
+wxEVT_WEBVIEW_TITLE_CHANGED
+[HEADER]
+<wx/webview.h>
+[METHODS]
+wxWebView.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxWebView.CanCopy,0,0,0,bool,						bool wxWebView.CanCopy ( )
+wxWebView.CanCut,0,0,0,bool,						bool wxWebView.CanCut ( )
+wxWebView.CanGoBack,0,0,0,bool,						bool wxWebView.CanGoBack ( )
+wxWebView.CanGoForward,0,0,0,bool,						bool wxWebView.CanGoForward ( )
+wxWebView.CanPaste,0,0,0,bool,						bool wxWebView.CanPaste ( )
+wxWebView.CanRedo,0,0,0,bool,						bool wxWebView.CanRedo ( )
+wxWebView.CanSetZoomType,0,0,1,bool,						bool wxWebView.CanSetZoomType ( wxWebViewZoomType type)
+wxWebView.CanUndo,0,0,0,bool,						bool wxWebView.CanUndo ( )
+wxWebView.ClearHistory,0,0,0,void,						void wxWebView.ClearHistory ( )
+wxWebView.ClearSelection,0,0,0,void,						void wxWebView.ClearSelection ( )
+wxWebView.Copy,0,0,0,void,						void wxWebView.Copy ( )
+wxWebView.Create,0,0,7,bool,						bool wxWebView.Create ( wxWindow * parent,     wxWindowID id,      wxString & url = wxWebViewDefaultURLStr,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = 0,      wxString & name = wxWebViewNameStr    )
+wxWebView.Cut,0,0,0,void,						void wxWebView.Cut ( )
+wxWebView.DeleteSelection,0,0,0,void,						void wxWebView.DeleteSelection ( )
+wxWebView.EnableContextMenu,0,0,1,void,						void wxWebView.EnableContextMenu ( bool enable = true)
+wxWebView.EnableHistory,0,0,1,void,						void wxWebView.EnableHistory ( bool enable = true)
+wxWebView.Find,0,0,2,long,						long wxWebView.Find (  wxString & text,     wxWebViewFindFlags flags = wxWEBVIEW_FIND_DEFAULT    )
+wxWebView.GetBackwardHistory,0,0,0,<,						wxVector<wxSharedPtr<wxWebViewHistoryItem< < wxWebView.GetBackwardHistory ( )
+wxWebView.GetCurrentTitle,0,0,0,wxString,						wxString wxWebView.GetCurrentTitle ( )
+wxWebView.GetCurrentURL,0,0,0,wxString,						wxString wxWebView.GetCurrentURL ( )
+wxWebView.GetForwardHistory,0,0,0,<,						wxVector<wxSharedPtr<wxWebViewHistoryItem< < wxWebView.GetForwardHistory ( )
+wxWebView.GetNativeBackend,0,1,0,void,						void* wxWebView.GetNativeBackend ( )
+wxWebView.GetPageSource,0,0,0,wxString,						wxString wxWebView.GetPageSource ( )
+wxWebView.GetPageText,0,0,0,wxString,						wxString wxWebView.GetPageText ( )
+wxWebView.GetSelectedSource,0,0,0,wxString,						wxString wxWebView.GetSelectedSource ( )
+wxWebView.GetSelectedText,0,0,0,wxString,						wxString wxWebView.GetSelectedText ( )
+wxWebView.GetZoom,0,0,0,wxWebViewZoom,						wxWebViewZoom wxWebView.GetZoom ( )
+wxWebView.GetZoomType,0,0,0,wxWebViewZoomType,						wxWebViewZoomType wxWebView.GetZoomType ( )
+wxWebView.GoBack,0,0,0,void,						void wxWebView.GoBack ( )
+wxWebView.GoForward,0,0,0,void,						void wxWebView.GoForward ( )
+wxWebView.HasSelection,0,0,0,bool,						bool wxWebView.HasSelection ( )
+wxWebView.IsBusy,0,0,0,bool,						bool wxWebView.IsBusy ( )
+wxWebView.IsContextMenuEnabled,0,0,0,bool,						bool wxWebView.IsContextMenuEnabled ( )
+wxWebView.IsEditable,0,0,0,bool,						bool wxWebView.IsEditable ( )
+wxWebView.LoadHistoryItem,0,0,1,void,						void wxWebView.LoadHistoryItem ( wxSharedPtr< wxWebViewHistoryItem < item)
+wxWebView.LoadURL,0,0,1,void,						void wxWebView.LoadURL (  wxString & url)
+wxWebView.MSWSetEmulationLevel,1,0,1,bool,						static bool wxWebView.MSWSetEmulationLevel ( wxWebViewIE_EmulationLevel level = wxWEBVIEWIE_EMU_IE11)
+wxWebView.MSWSetModernEmulationLevel,1,0,1,bool,						static bool wxWebView.MSWSetModernEmulationLevel ( bool modernLevel = true)
+wxWebView.New,1,1,1,wxWebView,						static wxWebView* wxWebView.New (  wxString & backend = wxWebViewBackendDefault)
+wxWebView.New,1,1,8,wxWebView,						static wxWebView* wxWebView.New ( wxWindow * parent,     wxWindowID id,      wxString & url = wxWebViewDefaultURLStr,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,      wxString & backend = wxWebViewBackendDefault,     long style = 0,      wxString & name = wxWebViewNameStr    )
+wxWebView.Paste,0,0,0,void,						void wxWebView.Paste ( )
+wxWebView.Print,0,0,0,void,						void wxWebView.Print ( )
+wxWebView.Redo,0,0,0,void,						void wxWebView.Redo ( )
+wxWebView.RegisterFactory,1,0,2,void,						static void wxWebView.RegisterFactory (  wxString & backend,     wxSharedPtr< wxWebViewFactory < factory    )
+wxWebView.RegisterHandler,0,0,1,void,						void wxWebView.RegisterHandler ( wxSharedPtr< wxWebViewHandler < handler)
+wxWebView.Reload,0,0,1,void,						void wxWebView.Reload ( wxWebViewReloadFlags flags = wxWEBVIEW_RELOAD_DEFAULT)
+wxWebView.RunScript,0,0,2,bool,						bool wxWebView.RunScript (  wxString & javascript,     wxString * output = NULL    )
+wxWebView.SelectAll,0,0,0,void,						void wxWebView.SelectAll ( )
+wxWebView.SetEditable,0,0,1,void,						void wxWebView.SetEditable ( bool enable = true)
+wxWebView.SetPage,0,0,2,void,						void wxWebView.SetPage (  wxString & html,      wxString & baseUrl    )
+wxWebView.SetPage,0,0,2,void,						void wxWebView.SetPage ( wxInputStream & html,     wxString baseUrl    )
+wxWebView.SetZoom,0,0,1,void,						void wxWebView.SetZoom ( wxWebViewZoom zoom)
+wxWebView.SetZoomType,0,0,1,void,						void wxWebView.SetZoomType ( wxWebViewZoomType zoomType)
+wxWebView.Stop,0,0,0,void,						void wxWebView.Stop ( )
+wxWebView.Undo,0,0,0,void,						void wxWebView.Undo ( )
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject

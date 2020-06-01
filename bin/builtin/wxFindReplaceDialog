@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/fdrepdlg.h>
+[METHODS]
+wxFindReplaceDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFindReplaceDialog.Create,0,0,4,bool,						bool wxFindReplaceDialog.Create ( wxWindow * parent,     wxFindReplaceData * data,      wxString & title,     int style = 0    )
+wxFindReplaceDialog.GetData,0,1,0,wxFindReplaceData,						wxFindReplaceData* wxFindReplaceDialog.GetData ( )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

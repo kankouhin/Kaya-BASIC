@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/power.h>
+[METHODS]
+wxPowerResource.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPowerResource.Acquire,1,0,2,bool,						static bool wxPowerResource.Acquire ( wxPowerResourceKind kind,      wxString & reason = wxString()    )
+wxPowerResource.Release,1,0,1,void,						static void wxPowerResource.Release ( wxPowerResourceKind kind)
+[INHERITS]

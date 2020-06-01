@@ -70,7 +70,11 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 			Dim ar() As String = sLine.Split( " " )
 			className = ar(1)
 			
-			If FileExists( className ) Then
+			If "&".Instr(className) > 0 Then
+				Exit Sub
+			End If
+			
+			If FileExists(className) AndAlso loadRelationClass = False Then
 				Exit Sub
 			End If
 		End If
@@ -80,7 +84,6 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 			incFile = ar(1)
 			ar = incFile.Split("&")
 			incFile = "<" + ar(0) + ">"
-			colMembers.Add( incFile )
 		End If
 
 		If loadRelationClass Then
@@ -89,7 +92,7 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 				Call loadClassInfo( s ,False )
 			End If
 		End If
-		
+
 		If sLine.StartsWith( "<li><span class=\"style" ) Then 
 			Dim s As String = getTextSpec( sLine, "wx", ">", "<" )
 			colConsts.Add( s )
@@ -117,7 +120,7 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 			If loadRelationClass Then
 				Dim s As String = getTextSpec( sLine, "", "href=\"", "\"" )
 				Call loadClassInfo( s ,False )
-			End If			
+			End If
 		End If
 		
 		If sLine.StartsWith( "<table class=\"memname\">" ) Then
@@ -135,10 +138,10 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 				func += getText( sLine )
 				func += " "
 			Loop Until sLine.StartsWith( "</table>" )
-					
+
 			func = func.Replace( "virtual", "" )	
 			func = func.Replace( "const", "" )
-			func = func.Replace( className + "::", "" )	
+			func = func.Replace( "::", "." )
 			func = func.Trim
 			
 			Dim ar() As String = func.Split( " " )
@@ -171,12 +174,21 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 				If rt.Right(1) = "&" Then
 					rt = rt >> 1
 				End If
+
+				If fn.Len = 0 Then ' Member Data
+					fn = ar( UBound(ar) )
+					params = -1
+				End If
 				
-				func = fn + "," + isStatic.Str + "," + isPtr.Str + "," + params.Str + "," + rt + ",\t\t\t\t\t\t" + func 
+				func = fn + "," + isStatic.Str + "," + isPtr.Str + "," + params.Str + "," + rt + ",\t\t\t\t\t\t" + func	 
 				colMembers.Add( func )
 			End If
 		End If
 	Wend
+	
+	If className.Len = 0 OrElse incFile.Len = 0 Then
+		Exit Sub
+	End If
 	
 	Dim f2 As Integer = FreeFile
 	Open className For Output As #f2
@@ -193,10 +205,14 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 		End If
 	Next
 	
+	Print #f2, "[HEADER]"
+	Print #f2, incFile
+		
 	Print #f2, "[METHODS]"
+	Print #f2, className + ".MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype"
 	For Each s As String in colMembers
-		If s.Len Then
-			Print #f2, s
+		If s.StartsWith( className + "." ) Then
+			Print #f2, s	
 		End If
 	Next
 	
@@ -205,7 +221,7 @@ Sub loadClassInfo( fileName As String, loadRelationClass As Boolean = True )
 		If s.Len Then
 			Print #f2, s
 		End If
-	Next	
+	Next
 End Sub
 
 Sub Main

@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/event.h>
+[METHODS]
+wxContextMenuEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxContextMenuEvent.GetPosition,0,0,0,wxPoint,						wxPoint&  wxContextMenuEvent.GetPosition ( )
+wxContextMenuEvent.SetPosition,0,0,1,void,						void wxContextMenuEvent.SetPosition (  wxPoint & point)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/wfstream.h>
+[METHODS]
+wxFileOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileOutputStream.GetFile,0,1,0,wxFile,						wxFile* wxFileOutputStream.GetFile ( )
+wxFileOutputStream.IsOk,0,0,0,bool,						bool wxFileOutputStream.IsOk ( )
+[INHERITS]
+wxOutputStream
+wxStreamBase

@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlfilt.h>
+[METHODS]
+wxHtmlFilter.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlFilter.CanRead,0,0,1,bool,						bool wxHtmlFilter.CanRead (  wxFSFile & file)
+wxHtmlFilter.ReadFile,0,0,1,wxString,						wxString wxHtmlFilter.ReadFile (  wxFSFile & file)
+[INHERITS]
+wxObject

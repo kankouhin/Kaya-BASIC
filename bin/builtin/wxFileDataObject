@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dataobj.h>
+[METHODS]
+wxFileDataObject.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileDataObject.AddFile,0,0,1,void,						void wxFileDataObject.AddFile (  wxString & file)
+wxFileDataObject.GetFilenames,0,0,0,wxArrayString,						wxArrayString&  wxFileDataObject.GetFilenames ( )
+[INHERITS]
+wxDataObjectSimple
+wxDataObject

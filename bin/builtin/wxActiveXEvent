@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/msw/ole/activex.h>
+[METHODS]
+wxActiveXEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxActiveXEvent.GetDispatchId,0,0,1,DISPID,						DISPID wxActiveXEvent.GetDispatchId ( int idx)
+wxActiveXEvent.GetNativeParameters,0,1,0,wxActiveXEventNativeMSW,						wxActiveXEventNativeMSW* wxActiveXEvent.GetNativeParameters ( )
+wxActiveXEvent.operator[],0,0,1,wxVariant,						wxVariant wxActiveXEvent.operator[] ( size_t idx)
+wxActiveXEvent.ParamCount,0,0,0,size_t,						size_t wxActiveXEvent.ParamCount ( )
+wxActiveXEvent.ParamName,0,0,1,wxString,						wxString wxActiveXEvent.ParamName ( size_t idx)
+wxActiveXEvent.ParamType,0,0,1,wxString,						wxString wxActiveXEvent.ParamType ( size_t idx)
+[INHERITS]
+wxCommandEvent
+wxEvent
+wxObject

@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewIndexListModel.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewIndexListModel.GetItem,0,0,1,wxDataViewItem,						wxDataViewItem wxDataViewIndexListModel.GetItem ( unsigned int row)
+wxDataViewIndexListModel.Reset,0,0,1,void,						void wxDataViewIndexListModel.Reset ( unsigned int new_size)
+wxDataViewIndexListModel.RowAppended,0,0,0,void,						void wxDataViewIndexListModel.RowAppended ( )
+wxDataViewIndexListModel.RowChanged,0,0,1,void,						void wxDataViewIndexListModel.RowChanged ( unsigned int row)
+wxDataViewIndexListModel.RowDeleted,0,0,1,void,						void wxDataViewIndexListModel.RowDeleted ( unsigned int row)
+wxDataViewIndexListModel.RowInserted,0,0,1,void,						void wxDataViewIndexListModel.RowInserted ( unsigned int before)
+wxDataViewIndexListModel.RowPrepended,0,0,0,void,						void wxDataViewIndexListModel.RowPrepended ( )
+wxDataViewIndexListModel.RowsDeleted,0,0,1,void,						void wxDataViewIndexListModel.RowsDeleted (  wxArrayInt & rows)
+wxDataViewIndexListModel.RowValueChanged,0,0,2,void,						void wxDataViewIndexListModel.RowValueChanged ( unsigned int row,     unsigned int col    )
+[INHERITS]
+wxDataViewListModel
+wxDataViewModel
+wxRefCounter

@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/rearrangectrl.h>
+[METHODS]
+wxRearrangeDialog.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRearrangeDialog.AddExtraControls,0,0,1,void,						void wxRearrangeDialog.AddExtraControls ( wxWindow * win)
+wxRearrangeDialog.Create,0,0,7,bool,						bool wxRearrangeDialog.Create ( wxWindow * parent,      wxString & message,      wxString & title,      wxArrayInt & order,      wxArrayString & items,      wxPoint & pos = wxDefaultPosition,      wxString & name = wxRearrangeDialogNameStr    )
+wxRearrangeDialog.GetList,0,1,0,wxRearrangeList,						wxRearrangeList* wxRearrangeDialog.GetList ( )
+wxRearrangeDialog.GetOrder,0,0,0,wxArrayInt,						wxArrayInt wxRearrangeDialog.GetOrder ( )
+[INHERITS]
+wxDialog
+wxTopLevelWindow
+wxNonOwnedWindow
+wxWindow
+wxEvtHandler
+wxObject

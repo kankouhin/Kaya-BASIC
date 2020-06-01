@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/dnd.h>
+[METHODS]
+wxDropTarget.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDropTarget.GetData,0,0,0,bool,						bool wxDropTarget.GetData ( )
+wxDropTarget.GetDataObject,0,1,0,wxDataObject,						wxDataObject* wxDropTarget.GetDataObject ( )
+wxDropTarget.GetDefaultAction,0,0,0,wxDragResult,						wxDragResult wxDropTarget.GetDefaultAction ( )
+wxDropTarget.OnData,0,0,3,wxDragResult,						wxDragResult wxDropTarget.OnData ( wxCoord x,     wxCoord y,     wxDragResult defResult    )
+wxDropTarget.OnDragOver,0,0,3,wxDragResult,						wxDragResult wxDropTarget.OnDragOver ( wxCoord x,     wxCoord y,     wxDragResult defResult    )
+wxDropTarget.OnDrop,0,0,2,bool,						bool wxDropTarget.OnDrop ( wxCoord x,     wxCoord y    )
+wxDropTarget.OnEnter,0,0,3,wxDragResult,						wxDragResult wxDropTarget.OnEnter ( wxCoord x,     wxCoord y,     wxDragResult defResult    )
+wxDropTarget.OnLeave,0,0,0,void,						void wxDropTarget.OnLeave ( )
+wxDropTarget.SetDataObject,0,0,1,void,						void wxDropTarget.SetDataObject ( wxDataObject * data)
+wxDropTarget.SetDefaultAction,0,0,1,void,						void wxDropTarget.SetDefaultAction ( wxDragResult action)
+[INHERITS]

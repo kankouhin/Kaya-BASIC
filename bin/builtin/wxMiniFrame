@@ -9,9 +9,11 @@ wxCLOSE_BOX
 wxSTAY_ON_TOP
 wxSYSTEM_MENU
 wxRESIZE_BORDER
-[METHODS]
+[HEADER]
 <wx/minifram.h>
-Create,0,0,7,bool,						bool Create ( wxWindow * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxCAPTION|wxRESIZE_BORDER,      wxString & name = wxFrameNameStr    )
+[METHODS]
+wxMiniFrame.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMiniFrame.Create,0,0,7,bool,						bool wxMiniFrame.Create ( wxWindow * parent,     wxWindowID id,      wxString & title,      wxPoint & pos = wxDefaultPosition,      wxSize & size = wxDefaultSize,     long style = wxCAPTION|wxRESIZE_BORDER,      wxString & name = wxFrameNameStr    )
 [INHERITS]
 wxFrame
 wxTopLevelWindow

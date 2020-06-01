@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/ctrlsub.h>
+[METHODS]
+wxControlWithItems.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+[INHERITS]
+wxControl
+wxWindow
+wxEvtHandler
+wxObject
+wxItemContainer
+wxItemContainerImmutable

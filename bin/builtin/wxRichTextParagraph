@@ -1,0 +1,44 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextParagraph.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextParagraph.AllocateLine,0,1,1,wxRichTextLine,						wxRichTextLine* wxRichTextParagraph.AllocateLine ( int pos)
+wxRichTextParagraph.ApplyParagraphStyle,0,0,4,void,						void wxRichTextParagraph.ApplyParagraphStyle ( wxRichTextLine * line,      wxRichTextAttr & attr,      wxRect & rect,     wxDC & dc    )
+wxRichTextParagraph.CalculateRange,0,0,2,void,						void wxRichTextParagraph.CalculateRange ( long start,     long & end    )
+wxRichTextParagraph.ClearDefaultTabs,1,0,0,void,						static void wxRichTextParagraph.ClearDefaultTabs ( )
+wxRichTextParagraph.ClearLines,0,0,0,void,						void wxRichTextParagraph.ClearLines ( )
+wxRichTextParagraph.ClearUnusedLines,0,0,1,bool,						bool wxRichTextParagraph.ClearUnusedLines ( int lineCount)
+wxRichTextParagraph.Clone,0,1,0,wxRichTextObject,						wxRichTextObject* wxRichTextParagraph.Clone ( )
+wxRichTextParagraph.Copy,0,0,1,void,						void wxRichTextParagraph.Copy (  wxRichTextParagraph & obj)
+wxRichTextParagraph.Draw,0,0,7,bool,						bool wxRichTextParagraph.Draw ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRichTextRange & range,      wxRichTextSelection & selection,      wxRect & rect,     int descent,     int style    )
+wxRichTextParagraph.FindObjectAtPosition,0,1,1,wxRichTextObject,						wxRichTextObject* wxRichTextParagraph.FindObjectAtPosition ( long position)
+wxRichTextParagraph.FindPosition,0,0,6,bool,						bool wxRichTextParagraph.FindPosition ( wxDC & dc,     wxRichTextDrawingContext & context,     long index,     wxPoint & pt,     int * height,     bool forceLineStart    )
+wxRichTextParagraph.FindWrapPosition,0,0,6,bool,						bool wxRichTextParagraph.FindWrapPosition (  wxRichTextRange & range,     wxDC & dc,     wxRichTextDrawingContext & context,     int availableSpace,     long & wrapPosition,     wxArrayInt * partialExtents    )
+wxRichTextParagraph.GetBulletText,0,0,0,wxString,						wxString wxRichTextParagraph.GetBulletText ( )
+wxRichTextParagraph.GetCombinedAttributes,0,0,2,wxRichTextAttr,						wxRichTextAttr wxRichTextParagraph.GetCombinedAttributes (  wxRichTextAttr & contentStyle,     bool includingBoxAttr = false    )
+wxRichTextParagraph.GetCombinedAttributes,0,0,1,wxRichTextAttr,						wxRichTextAttr wxRichTextParagraph.GetCombinedAttributes ( bool includingBoxAttr = false)
+wxRichTextParagraph.GetContiguousPlainText,0,0,3,bool,						bool wxRichTextParagraph.GetContiguousPlainText ( wxString & text,      wxRichTextRange & range,     bool fromStart = true    )
+wxRichTextParagraph.GetDefaultTabs,1,0,0,wxArrayInt,						static  wxArrayInt&  wxRichTextParagraph.GetDefaultTabs ( )
+wxRichTextParagraph.GetFirstLineBreakPosition,0,0,1,long,						long wxRichTextParagraph.GetFirstLineBreakPosition ( long pos)
+wxRichTextParagraph.GetImpactedByFloatingObjects,0,0,0,int,						int wxRichTextParagraph.GetImpactedByFloatingObjects ( )
+wxRichTextParagraph.GetLines,0,0,0,wxRichTextLineList,						wxRichTextLineList&  wxRichTextParagraph.GetLines ( )
+wxRichTextParagraph.GetRangeSize,0,0,9,bool,						bool wxRichTextParagraph.GetRangeSize (  wxRichTextRange & range,     wxSize & size,     int & descent,     wxDC & dc,     wxRichTextDrawingContext & context,     int flags,      wxPoint & position = wxPoint(0, 0),      wxSize & parentSize = wxDefaultSize,     wxArrayInt * partialExtents = NULL    )
+wxRichTextParagraph.GetXMLNodeName,0,0,0,wxString,						wxString wxRichTextParagraph.GetXMLNodeName ( )
+wxRichTextParagraph.HitTest,0,0,7,int,						int wxRichTextParagraph.HitTest ( wxDC & dc,     wxRichTextDrawingContext & context,      wxPoint & pt,     long & textPosition,     wxRichTextObject ** obj,     wxRichTextObject ** contextObj,     int flags = 0    )
+wxRichTextParagraph.Init,0,0,0,void,						void wxRichTextParagraph.Init ( )
+wxRichTextParagraph.InitDefaultTabs,1,0,0,void,						static void wxRichTextParagraph.InitDefaultTabs ( )
+wxRichTextParagraph.InsertText,0,0,2,bool,						bool wxRichTextParagraph.InsertText ( long pos,      wxString & text    )
+wxRichTextParagraph.Layout,0,0,5,bool,						bool wxRichTextParagraph.Layout ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRect & rect,      wxRect & parentRect,     int style    )
+wxRichTextParagraph.LayoutFloat,0,0,6,void,						void wxRichTextParagraph.LayoutFloat ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRect & rect,      wxRect & parentRect,     int style,     wxRichTextFloatCollector * floatCollector    )
+wxRichTextParagraph.MoveFromList,0,0,1,void,						void wxRichTextParagraph.MoveFromList ( wxList & list)
+wxRichTextParagraph.MoveToList,0,0,2,void,						void wxRichTextParagraph.MoveToList ( wxRichTextObject * obj,     wxList & list    )
+wxRichTextParagraph.SetImpactedByFloatingObjects,0,0,1,void,						void wxRichTextParagraph.SetImpactedByFloatingObjects ( int i)
+wxRichTextParagraph.SplitAt,0,1,2,wxRichTextObject,						wxRichTextObject* wxRichTextParagraph.SplitAt ( long pos,     wxRichTextObject ** previousObject = NULL    )
+wxRichTextParagraph.m_cachedLines,0,0,-1,wxRichTextLineList,						wxRichTextLineList wxRichTextParagraph.m_cachedLines
+wxRichTextParagraph.m_impactedByFloatingObjects,0,0,-1,int,						int wxRichTextParagraph.m_impactedByFloatingObjects
+wxRichTextParagraph.sm_defaultTabs,0,0,-1,wxArrayInt,						wxArrayInt wxRichTextParagraph.sm_defaultTabs
+[INHERITS]
+wxRichTextCompositeObject
+wxRichTextObject
+wxObject

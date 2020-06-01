@@ -1,0 +1,11 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/editors.h>
+[METHODS]
+wxPGChoiceAndButtonEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGChoiceAndButtonEditor.CreateControls,0,0,4,wxPGWindowList,						wxPGWindowList wxPGChoiceAndButtonEditor.CreateControls ( wxPropertyGrid * propgrid,     wxPGProperty * property,      wxPoint & pos,      wxSize & size    )
+wxPGChoiceAndButtonEditor.GetName,0,0,0,wxString,						wxString wxPGChoiceAndButtonEditor.GetName ( )
+[INHERITS]
+wxPGChoiceEditor
+wxPGEditor
+wxObject

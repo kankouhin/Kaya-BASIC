@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/filesys.h>
+[METHODS]
+wxFileSystemHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileSystemHandler.CanOpen,0,0,1,bool,						bool wxFileSystemHandler.CanOpen (  wxString & location)
+wxFileSystemHandler.FindFirst,0,0,2,wxString,						wxString wxFileSystemHandler.FindFirst (  wxString & wildcard,     int flags = 0    )
+wxFileSystemHandler.FindNext,0,0,0,wxString,						wxString wxFileSystemHandler.FindNext ( )
+wxFileSystemHandler.GetAnchor,1,0,1,wxString,						static wxString wxFileSystemHandler.GetAnchor (  wxString & location)
+wxFileSystemHandler.GetLeftLocation,1,0,1,wxString,						static wxString wxFileSystemHandler.GetLeftLocation (  wxString & location)
+wxFileSystemHandler.GetMimeTypeFromExt,1,0,1,wxString,						static wxString wxFileSystemHandler.GetMimeTypeFromExt (  wxString & location)
+wxFileSystemHandler.GetProtocol,1,0,1,wxString,						static wxString wxFileSystemHandler.GetProtocol (  wxString & location)
+wxFileSystemHandler.GetRightLocation,1,0,1,wxString,						static wxString wxFileSystemHandler.GetRightLocation (  wxString & location)
+wxFileSystemHandler.OpenFile,0,1,2,wxFSFile,						wxFSFile* wxFileSystemHandler.OpenFile ( wxFileSystem & fs,      wxString & location    )
+[INHERITS]
+wxObject

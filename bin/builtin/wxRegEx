@@ -1,0 +1,18 @@
+[CONSTS]
+[HEADER]
+<wx/regex.h>
+[METHODS]
+wxRegEx.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRegEx.Compile,0,0,2,bool,						bool wxRegEx.Compile (  wxString & pattern,     int flags = wxRE_DEFAULT    )
+wxRegEx.GetMatch,0,0,3,bool,						bool wxRegEx.GetMatch ( size_t * start,     size_t * len,     size_t index = 0    )
+wxRegEx.GetMatch,0,0,2,wxString,						wxString wxRegEx.GetMatch (  wxString & text,     size_t index = 0    )
+wxRegEx.GetMatchCount,0,0,0,size_t,						size_t wxRegEx.GetMatchCount ( )
+wxRegEx.IsValid,0,0,0,bool,						bool wxRegEx.IsValid ( )
+wxRegEx.Matches,0,0,2,bool,						bool wxRegEx.Matches (  wxChar * text,     int flags = 0    )
+wxRegEx.Matches,0,0,3,bool,						bool wxRegEx.Matches (  wxChar * text,     int flags,     size_t len    )
+wxRegEx.Matches,0,0,2,bool,						bool wxRegEx.Matches (  wxString & text,     int flags = 0    )
+wxRegEx.QuoteMeta,1,0,1,wxString,						static wxString wxRegEx.QuoteMeta (  wxString & str)
+wxRegEx.Replace,0,0,3,int,						int wxRegEx.Replace ( wxString * text,      wxString & replacement,     size_t maxMatches = 0    )
+wxRegEx.ReplaceAll,0,0,2,int,						int wxRegEx.ReplaceAll ( wxString * text,      wxString & replacement    )
+wxRegEx.ReplaceFirst,0,0,2,int,						int wxRegEx.ReplaceFirst ( wxString * text,      wxString & replacement    )
+[INHERITS]

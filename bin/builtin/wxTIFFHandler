@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/imagtiff.h>
+[METHODS]
+wxTIFFHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTIFFHandler.DoCanRead,0,0,1,bool,						bool wxTIFFHandler.DoCanRead ( wxInputStream & stream)
+wxTIFFHandler.DoGetImageCount,0,0,1,int,						int wxTIFFHandler.DoGetImageCount ( wxInputStream & stream)
+wxTIFFHandler.GetLibraryVersionInfo,1,0,0,wxVersionInfo,						static wxVersionInfo wxTIFFHandler.GetLibraryVersionInfo ( )
+wxTIFFHandler.LoadFile,0,0,4,bool,						bool wxTIFFHandler.LoadFile ( wxImage * image,     wxInputStream & stream,     bool verbose = true,     int index = -1    )
+wxTIFFHandler.SaveFile,0,0,3,bool,						bool wxTIFFHandler.SaveFile ( wxImage * image,     wxOutputStream & stream,     bool verbose = true    )
+[INHERITS]
+wxImageHandler
+wxObject

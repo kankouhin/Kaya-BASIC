@@ -1,0 +1,28 @@
+[CONSTS]
+[HEADER]
+<wx/ustring.h>
+[METHODS]
+wxUString.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxUString.append,0,0,1,wxUString,						wxUString&  wxUString.append (  wxUString & s)
+wxUString.assign,0,0,1,wxUString,						wxUString&  wxUString.assign (  wxUString & str)
+wxUString.assignFromAscii,0,0,1,wxUString,						wxUString&  wxUString.assignFromAscii (  char * str)
+wxUString.assignFromAscii,0,0,2,wxUString,						wxUString&  wxUString.assignFromAscii (  char * str,     size_t n    )
+wxUString.assignFromCString,0,0,1,wxUString,						wxUString&  wxUString.assignFromCString (  char * str)
+wxUString.assignFromCString,0,0,2,wxUString,						wxUString&  wxUString.assignFromCString (  char * str,      wxMBConv & conv    )
+wxUString.assignFromUTF16,0,0,1,wxUString,						wxUString&  wxUString.assignFromUTF16 (  wxChar16 * str)
+wxUString.assignFromUTF16,0,0,2,wxUString,						wxUString&  wxUString.assignFromUTF16 (  wxChar16 * str,     size_t n    )
+wxUString.assignFromUTF8,0,0,1,wxUString,						wxUString&  wxUString.assignFromUTF8 (  char * str)
+wxUString.assignFromUTF8,0,0,2,wxUString,						wxUString&  wxUString.assignFromUTF8 (  char * str,     size_t n    )
+wxUString.FromAscii,1,0,2,wxUString,						static wxUString wxUString.FromAscii (  char * str,     size_t n    )
+wxUString.FromAscii,1,0,1,wxUString,						static wxUString wxUString.FromAscii (  char * str)
+wxUString.FromUTF16,1,0,2,wxUString,						static wxUString wxUString.FromUTF16 (  wxChar16 * str,     size_t n    )
+wxUString.FromUTF16,1,0,1,wxUString,						static wxUString wxUString.FromUTF16 (  wxChar16 * str)
+wxUString.FromUTF8,1,0,2,wxUString,						static wxUString wxUString.FromUTF8 (  char * str,     size_t n    )
+wxUString.FromUTF8,1,0,1,wxUString,						static wxUString wxUString.FromUTF8 (  char * str)
+wxUString.insert,0,0,2,wxUString,						wxUString&  wxUString.insert ( size_t pos,      wxUString & s    )
+wxUString.operator+=,0,0,1,wxUString,						wxUString&  wxUString.operator+= (  wxUString & s)
+wxUString.operator=,0,0,1,wxUString,						wxUString&  wxUString.operator= (  wxUString & s)
+wxUString.utf16_str,0,0,0,wxU16CharBuffer,						wxU16CharBuffer wxUString.utf16_str ( )
+wxUString.utf8_str,0,0,0,wxCharBuffer,						wxCharBuffer wxUString.utf8_str ( )
+wxUString.wc_str,0,0,0,wxWCharBuffer,						wxWCharBuffer wxUString.wc_str ( )
+[INHERITS]

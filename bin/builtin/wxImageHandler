@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/image.h>
+[METHODS]
+wxImageHandler.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxImageHandler.CanRead,0,0,1,bool,						bool wxImageHandler.CanRead ( wxInputStream & stream)
+wxImageHandler.CanRead,0,0,1,bool,						bool wxImageHandler.CanRead (  wxString & filename)
+wxImageHandler.DoCanRead,0,0,1,bool,						bool wxImageHandler.DoCanRead ( wxInputStream & stream)
+wxImageHandler.DoGetImageCount,0,0,1,int,						int wxImageHandler.DoGetImageCount ( wxInputStream & stream)
+wxImageHandler.GetAltExtensions,0,0,0,wxArrayString,						wxArrayString&  wxImageHandler.GetAltExtensions ( )
+wxImageHandler.GetExtension,0,0,0,wxString,						wxString&  wxImageHandler.GetExtension ( )
+wxImageHandler.GetImageCount,0,0,1,int,						int wxImageHandler.GetImageCount ( wxInputStream & stream)
+wxImageHandler.GetLibraryVersionInfo,1,0,0,wxVersionInfo,						static wxVersionInfo wxImageHandler.GetLibraryVersionInfo ( )
+wxImageHandler.GetMimeType,0,0,0,wxString,						wxString&  wxImageHandler.GetMimeType ( )
+wxImageHandler.GetName,0,0,0,wxString,						wxString&  wxImageHandler.GetName ( )
+wxImageHandler.GetType,0,0,0,wxBitmapType,						wxBitmapType wxImageHandler.GetType ( )
+wxImageHandler.LoadFile,0,0,4,bool,						bool wxImageHandler.LoadFile ( wxImage * image,     wxInputStream & stream,     bool verbose = true,     int index = -1    )
+wxImageHandler.SaveFile,0,0,3,bool,						bool wxImageHandler.SaveFile ( wxImage * image,     wxOutputStream & stream,     bool verbose = true    )
+wxImageHandler.SetAltExtensions,0,0,1,void,						void wxImageHandler.SetAltExtensions (  wxArrayString & extensions)
+wxImageHandler.SetExtension,0,0,1,void,						void wxImageHandler.SetExtension (  wxString & extension)
+wxImageHandler.SetMimeType,0,0,1,void,						void wxImageHandler.SetMimeType (  wxString & mimetype)
+wxImageHandler.SetName,0,0,1,void,						void wxImageHandler.SetName (  wxString & name)
+wxImageHandler.SetType,0,0,1,void,						void wxImageHandler.SetType ( wxBitmapType type)
+[INHERITS]
+wxObject

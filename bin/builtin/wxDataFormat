@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/dataobj.h>
+[METHODS]
+wxDataFormat.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataFormat.GetId,0,0,0,wxString,						wxString wxDataFormat.GetId ( )
+wxDataFormat.GetType,0,0,0,wxDataFormatId,						wxDataFormatId wxDataFormat.GetType ( )
+wxDataFormat.operator!=,0,0,1,bool,						bool wxDataFormat.operator!= (  wxDataFormat & format)
+wxDataFormat.operator!=,0,0,1,bool,						bool wxDataFormat.operator!= ( wxDataFormatId format)
+wxDataFormat.operator==,0,0,1,bool,						bool wxDataFormat.operator== (  wxDataFormat & format)
+wxDataFormat.operator==,0,0,1,bool,						bool wxDataFormat.operator== ( wxDataFormatId format)
+wxDataFormat.SetId,0,0,1,void,						void wxDataFormat.SetId (  wxString & format)
+wxDataFormat.SetType,0,0,1,void,						void wxDataFormat.SetType ( wxDataFormatId type)
+[INHERITS]

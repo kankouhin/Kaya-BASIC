@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/dialup.h>
+[METHODS]
+wxDialUpEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDialUpEvent.IsConnectedEvent,0,0,0,bool,						bool wxDialUpEvent.IsConnectedEvent ( )
+wxDialUpEvent.IsOwnEvent,0,0,0,bool,						bool wxDialUpEvent.IsOwnEvent ( )
+[INHERITS]
+wxEvent
+wxObject

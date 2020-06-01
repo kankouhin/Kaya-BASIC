@@ -1,0 +1,9 @@
+[CONSTS]
+[HEADER]
+<wx/metafile.h>
+[METHODS]
+wxMetafileDC.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMetafileDC.Close,0,1,0,wxMetafile,						wxMetafile* wxMetafileDC.Close ( )
+[INHERITS]
+wxDC
+wxObject

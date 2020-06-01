@@ -1,0 +1,7 @@
+[CONSTS]
+[HEADER]
+<wx/overlay.h>
+[METHODS]
+wxOverlay.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxOverlay.Reset,0,0,0,void,						void wxOverlay.Reset ( )
+[INHERITS]

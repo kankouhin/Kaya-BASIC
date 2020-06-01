@@ -1,0 +1,13 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/property.h>
+[METHODS]
+wxPGCellRenderer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGCellRenderer.DrawCaptionSelectionRect,0,0,5,void,						void wxPGCellRenderer.DrawCaptionSelectionRect ( wxDC & dc,     int x,     int y,     int w,     int h    )
+wxPGCellRenderer.DrawEditorValue,0,0,6,void,						void wxPGCellRenderer.DrawEditorValue ( wxDC & dc,      wxRect & rect,     int xOffset,      wxString & text,     wxPGProperty * property,      wxPGEditor * editor    )
+wxPGCellRenderer.DrawText,0,0,4,void,						void wxPGCellRenderer.DrawText ( wxDC & dc,      wxRect & rect,     int imageWidth,      wxString & text    )
+wxPGCellRenderer.GetImageSize,0,0,3,wxSize,						wxSize wxPGCellRenderer.GetImageSize (  wxPGProperty * property,     int column,     int item    )
+wxPGCellRenderer.PostDrawCell,0,0,4,void,						void wxPGCellRenderer.PostDrawCell ( wxDC & dc,      wxPropertyGrid * propGrid,      wxPGCell & cell,     int flags    )
+wxPGCellRenderer.PreDrawCell,0,0,4,int,						int wxPGCellRenderer.PreDrawCell ( wxDC & dc,      wxRect & rect,      wxPGCell & cell,     int flags    )
+wxPGCellRenderer.Render,0,0,7,bool,						bool wxPGCellRenderer.Render ( wxDC & dc,      wxRect & rect,      wxPropertyGrid * propertyGrid,     wxPGProperty * property,     int column,     int item,     int flags    )
+[INHERITS]

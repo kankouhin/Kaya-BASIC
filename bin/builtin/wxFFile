@@ -1,0 +1,25 @@
+[CONSTS]
+[HEADER]
+<wx/ffile.h>
+[METHODS]
+wxFFile.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFFile.Attach,0,0,2,void,						void wxFFile.Attach ( FILE * fp,      wxString & name = wxEmptyString    )
+wxFFile.Close,0,0,0,bool,						bool wxFFile.Close ( )
+wxFFile.Detach,0,1,0,FILE,						FILE* wxFFile.Detach ( )
+wxFFile.Eof,0,0,0,bool,						bool wxFFile.Eof ( )
+wxFFile.Error,0,0,0,bool,						bool wxFFile.Error ( )
+wxFFile.Flush,0,0,0,bool,						bool wxFFile.Flush ( )
+wxFFile.fp,0,1,0,FILE,						FILE* wxFFile.fp ( )
+wxFFile.GetKind,0,0,0,wxFileKind,						wxFileKind wxFFile.GetKind ( )
+wxFFile.GetName,0,0,0,wxString,						wxString&  wxFFile.GetName ( )
+wxFFile.IsOpened,0,0,0,bool,						bool wxFFile.IsOpened ( )
+wxFFile.Length,0,0,0,wxFileOffset,						wxFileOffset wxFFile.Length ( )
+wxFFile.Open,0,0,2,bool,						bool wxFFile.Open (  wxString & filename,      wxString & mode = &quot;r&quot;    )
+wxFFile.Read,0,0,2,size_t,						size_t wxFFile.Read ( void * buffer,     size_t count    )
+wxFFile.ReadAll,0,0,2,bool,						bool wxFFile.ReadAll ( wxString * str,      wxMBConv & conv = wxConvAuto()    )
+wxFFile.Seek,0,0,2,bool,						bool wxFFile.Seek ( wxFileOffset ofs,     wxSeekMode mode = wxFromStart    )
+wxFFile.SeekEnd,0,0,1,bool,						bool wxFFile.SeekEnd ( wxFileOffset ofs = 0)
+wxFFile.Tell,0,0,0,wxFileOffset,						wxFileOffset wxFFile.Tell ( )
+wxFFile.Write,0,0,2,bool,						bool wxFFile.Write (  wxString & str,      wxMBConv & conv = wxConvAuto()    )
+wxFFile.Write,0,0,2,size_t,						size_t wxFFile.Write (  void * buffer,     size_t count    )
+[INHERITS]

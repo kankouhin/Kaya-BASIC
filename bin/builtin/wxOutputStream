@@ -1,0 +1,16 @@
+[CONSTS]
+[HEADER]
+<wx/stream.h>
+[METHODS]
+wxOutputStream.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxOutputStream.Close,0,0,0,bool,						bool wxOutputStream.Close ( )
+wxOutputStream.LastWrite,0,0,0,size_t,						size_t wxOutputStream.LastWrite ( )
+wxOutputStream.OnSysWrite,0,0,2,size_t,						size_t wxOutputStream.OnSysWrite (  void * buffer,     size_t bufsize    )
+wxOutputStream.PutC,0,0,1,void,						void wxOutputStream.PutC ( char c)
+wxOutputStream.SeekO,0,0,2,wxFileOffset,						wxFileOffset wxOutputStream.SeekO ( wxFileOffset pos,     wxSeekMode mode = wxFromStart    )
+wxOutputStream.TellO,0,0,0,wxFileOffset,						wxFileOffset wxOutputStream.TellO ( )
+wxOutputStream.Write,0,0,2,wxOutputStream,						wxOutputStream&  wxOutputStream.Write (  void * buffer,     size_t size    )
+wxOutputStream.Write,0,0,1,wxOutputStream,						wxOutputStream&  wxOutputStream.Write ( wxInputStream & stream_in)
+wxOutputStream.WriteAll,0,0,2,bool,						bool wxOutputStream.WriteAll (  void * buffer,     size_t size    )
+[INHERITS]
+wxStreamBase

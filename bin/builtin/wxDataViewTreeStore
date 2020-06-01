@@ -1,0 +1,26 @@
+[CONSTS]
+[HEADER]
+<wx/dataview.h>
+[METHODS]
+wxDataViewTreeStore.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDataViewTreeStore.AppendContainer,0,0,5,wxDataViewItem,						wxDataViewItem wxDataViewTreeStore.AppendContainer (  wxDataViewItem & parent,      wxString & text,      wxIcon & icon = wxNullIcon,      wxIcon & expanded = wxNullIcon,     wxClientData * data = NULL    )
+wxDataViewTreeStore.AppendItem,0,0,4,wxDataViewItem,						wxDataViewItem wxDataViewTreeStore.AppendItem (  wxDataViewItem & parent,      wxString & text,      wxIcon & icon = wxNullIcon,     wxClientData * data = NULL    )
+wxDataViewTreeStore.DeleteAllItems,0,0,0,void,						void wxDataViewTreeStore.DeleteAllItems ( )
+wxDataViewTreeStore.DeleteChildren,0,0,1,void,						void wxDataViewTreeStore.DeleteChildren (  wxDataViewItem & item)
+wxDataViewTreeStore.DeleteItem,0,0,1,void,						void wxDataViewTreeStore.DeleteItem (  wxDataViewItem & item)
+wxDataViewTreeStore.GetChildCount,0,0,1,int,						int wxDataViewTreeStore.GetChildCount (  wxDataViewItem & parent)
+wxDataViewTreeStore.GetItemData,0,1,1,wxClientData,						wxClientData* wxDataViewTreeStore.GetItemData (  wxDataViewItem & item)
+wxDataViewTreeStore.GetItemExpandedIcon,0,0,1,wxIcon,						wxIcon&  wxDataViewTreeStore.GetItemExpandedIcon (  wxDataViewItem & item)
+wxDataViewTreeStore.GetItemIcon,0,0,1,wxIcon,						wxIcon&  wxDataViewTreeStore.GetItemIcon (  wxDataViewItem & item)
+wxDataViewTreeStore.GetItemText,0,0,1,wxString,						wxString wxDataViewTreeStore.GetItemText (  wxDataViewItem & item)
+wxDataViewTreeStore.GetNthChild,0,0,2,wxDataViewItem,						wxDataViewItem wxDataViewTreeStore.GetNthChild (  wxDataViewItem & parent,     unsigned int pos    )
+wxDataViewTreeStore.InsertContainer,0,0,6,wxDataViewItem,						wxDataViewItem wxDataViewTreeStore.InsertContainer (  wxDataViewItem & parent,      wxDataViewItem & previous,      wxString & text,      wxIcon & icon = wxNullIcon,      wxIcon & expanded = wxNullIcon,     wxClientData * data = NULL    )
+wxDataViewTreeStore.InsertItem,0,0,5,wxDataViewItem,						wxDataViewItem wxDataViewTreeStore.InsertItem (  wxDataViewItem & parent,      wxDataViewItem & previous,      wxString & text,      wxIcon & icon = wxNullIcon,     wxClientData * data = NULL    )
+wxDataViewTreeStore.PrependContainer,0,0,5,wxDataViewItem,						wxDataViewItem wxDataViewTreeStore.PrependContainer (  wxDataViewItem & parent,      wxString & text,      wxIcon & icon = wxNullIcon,      wxIcon & expanded = wxNullIcon,     wxClientData * data = NULL    )
+wxDataViewTreeStore.PrependItem,0,0,4,wxDataViewItem,						wxDataViewItem wxDataViewTreeStore.PrependItem (  wxDataViewItem & parent,      wxString & text,      wxIcon & icon = wxNullIcon,     wxClientData * data = NULL    )
+wxDataViewTreeStore.SetItemData,0,0,2,void,						void wxDataViewTreeStore.SetItemData (  wxDataViewItem & item,     wxClientData * data    )
+wxDataViewTreeStore.SetItemExpandedIcon,0,0,2,void,						void wxDataViewTreeStore.SetItemExpandedIcon (  wxDataViewItem & item,      wxIcon & icon    )
+wxDataViewTreeStore.SetItemIcon,0,0,2,void,						void wxDataViewTreeStore.SetItemIcon (  wxDataViewItem & item,      wxIcon & icon    )
+[INHERITS]
+wxDataViewModel
+wxRefCounter

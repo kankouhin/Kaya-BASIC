@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/palette.h>
+[METHODS]
+wxPalette.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPalette.Create,0,0,4,bool,						bool wxPalette.Create ( int n,      unsigned char * red,      unsigned char * green,      unsigned char * blue    )
+wxPalette.GetColoursCount,0,0,0,int,						int wxPalette.GetColoursCount ( )
+wxPalette.GetPixel,0,0,3,int,						int wxPalette.GetPixel ( unsigned char red,     unsigned char green,     unsigned char blue    )
+wxPalette.GetRGB,0,0,4,bool,						bool wxPalette.GetRGB ( int pixel,     unsigned char * red,     unsigned char * green,     unsigned char * blue    )
+wxPalette.IsOk,0,0,0,bool,						bool wxPalette.IsOk ( )
+wxPalette.operator=,0,0,1,wxPalette,						wxPalette&  wxPalette.operator= (  wxPalette & palette)
+[INHERITS]
+wxGDIObject
+wxObject

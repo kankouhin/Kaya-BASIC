@@ -1,0 +1,15 @@
+[CONSTS]
+[HEADER]
+<wx/fswatcher.h>
+[METHODS]
+wxFileSystemWatcherEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFileSystemWatcherEvent.GetChangeType,0,0,0,int,						int wxFileSystemWatcherEvent.GetChangeType ( )
+wxFileSystemWatcherEvent.GetErrorDescription,0,0,0,wxString,						wxString wxFileSystemWatcherEvent.GetErrorDescription ( )
+wxFileSystemWatcherEvent.GetNewPath,0,0,0,wxFileName,						wxFileName&  wxFileSystemWatcherEvent.GetNewPath ( )
+wxFileSystemWatcherEvent.GetPath,0,0,0,wxFileName,						wxFileName&  wxFileSystemWatcherEvent.GetPath ( )
+wxFileSystemWatcherEvent.GetWarningType,0,0,0,wxFSWWarningType,						wxFSWWarningType wxFileSystemWatcherEvent.GetWarningType ( )
+wxFileSystemWatcherEvent.IsError,0,0,0,bool,						bool wxFileSystemWatcherEvent.IsError ( )
+wxFileSystemWatcherEvent.ToString,0,0,0,wxString,						wxString wxFileSystemWatcherEvent.ToString ( )
+[INHERITS]
+wxEvent
+wxObject

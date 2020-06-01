@@ -1,0 +1,35 @@
+[CONSTS]
+[HEADER]
+<wx/valtext.h>
+[METHODS]
+wxTextValidator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextValidator.AddCharExcludes,0,0,1,void,						void wxTextValidator.AddCharExcludes (  wxString & chars)
+wxTextValidator.AddCharIncludes,0,0,1,void,						void wxTextValidator.AddCharIncludes (  wxString & chars)
+wxTextValidator.AddExclude,0,0,1,void,						void wxTextValidator.AddExclude (  wxString & exclude)
+wxTextValidator.AddInclude,0,0,1,void,						void wxTextValidator.AddInclude (  wxString & include)
+wxTextValidator.Clone,0,1,0,wxObject,						wxObject* wxTextValidator.Clone ( )
+wxTextValidator.GetCharExcludes,0,0,0,wxString,						wxString wxTextValidator.GetCharExcludes ( )
+wxTextValidator.GetCharIncludes,0,0,0,wxString,						wxString wxTextValidator.GetCharIncludes ( )
+wxTextValidator.GetExcludes,0,0,0,wxArrayString,						wxArrayString&  wxTextValidator.GetExcludes ( )
+wxTextValidator.GetIncludes,0,0,0,wxArrayString,						wxArrayString&  wxTextValidator.GetIncludes ( )
+wxTextValidator.GetStyle,0,0,0,long,						long wxTextValidator.GetStyle ( )
+wxTextValidator.HasFlag,0,0,1,bool,						bool wxTextValidator.HasFlag ( wxTextValidatorStyle style)
+wxTextValidator.IsCharExcluded,0,0,1,bool,						bool wxTextValidator.IsCharExcluded (  wxUniChar & c)
+wxTextValidator.IsCharIncluded,0,0,1,bool,						bool wxTextValidator.IsCharIncluded (  wxUniChar & c)
+wxTextValidator.IsExcluded,0,0,1,bool,						bool wxTextValidator.IsExcluded (  wxString & str)
+wxTextValidator.IsIncluded,0,0,1,bool,						bool wxTextValidator.IsIncluded (  wxString & str)
+wxTextValidator.IsValid,0,0,1,wxString,						wxString wxTextValidator.IsValid (  wxString & val)
+wxTextValidator.IsValidChar,0,0,1,bool,						bool wxTextValidator.IsValidChar (  wxUniChar & c)
+wxTextValidator.OnChar,0,0,1,void,						void wxTextValidator.OnChar ( wxKeyEvent & event)
+wxTextValidator.SetCharExcludes,0,0,1,void,						void wxTextValidator.SetCharExcludes (  wxString & chars)
+wxTextValidator.SetCharIncludes,0,0,1,void,						void wxTextValidator.SetCharIncludes (  wxString & chars)
+wxTextValidator.SetExcludes,0,0,1,void,						void wxTextValidator.SetExcludes (  wxArrayString & stringList)
+wxTextValidator.SetIncludes,0,0,1,void,						void wxTextValidator.SetIncludes (  wxArrayString & stringList)
+wxTextValidator.SetStyle,0,0,1,void,						void wxTextValidator.SetStyle ( long style)
+wxTextValidator.TransferFromWindow,0,0,0,bool,						bool wxTextValidator.TransferFromWindow ( )
+wxTextValidator.TransferToWindow,0,0,0,bool,						bool wxTextValidator.TransferToWindow ( )
+wxTextValidator.Validate,0,0,1,bool,						bool wxTextValidator.Validate ( wxWindow * parent)
+[INHERITS]
+wxValidator
+wxEvtHandler
+wxObject

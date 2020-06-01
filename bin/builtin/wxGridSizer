@@ -1,0 +1,20 @@
+[CONSTS]
+[HEADER]
+<wx/sizer.h>
+[METHODS]
+wxGridSizer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGridSizer.CalcMin,0,0,0,wxSize,						wxSize wxGridSizer.CalcMin ( )
+wxGridSizer.GetCols,0,0,0,int,						int wxGridSizer.GetCols ( )
+wxGridSizer.GetEffectiveColsCount,0,0,0,int,						int wxGridSizer.GetEffectiveColsCount ( )
+wxGridSizer.GetEffectiveRowsCount,0,0,0,int,						int wxGridSizer.GetEffectiveRowsCount ( )
+wxGridSizer.GetHGap,0,0,0,int,						int wxGridSizer.GetHGap ( )
+wxGridSizer.GetRows,0,0,0,int,						int wxGridSizer.GetRows ( )
+wxGridSizer.GetVGap,0,0,0,int,						int wxGridSizer.GetVGap ( )
+wxGridSizer.RepositionChildren,0,0,1,void,						void wxGridSizer.RepositionChildren (  wxSize & minSize)
+wxGridSizer.SetCols,0,0,1,void,						void wxGridSizer.SetCols ( int cols)
+wxGridSizer.SetHGap,0,0,1,void,						void wxGridSizer.SetHGap ( int gap)
+wxGridSizer.SetRows,0,0,1,void,						void wxGridSizer.SetRows ( int rows)
+wxGridSizer.SetVGap,0,0,1,void,						void wxGridSizer.SetVGap ( int gap)
+[INHERITS]
+wxSizer
+wxObject

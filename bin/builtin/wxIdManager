@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/windowid.h>
+[METHODS]
+wxIdManager.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxIdManager.ReserveId,1,0,1,wxWindowID,						static wxWindowID wxIdManager.ReserveId ( int count = 1)
+wxIdManager.UnreserveId,1,0,2,void,						static void wxIdManager.UnreserveId ( wxWindowID id,     int count = 1    )
+[INHERITS]

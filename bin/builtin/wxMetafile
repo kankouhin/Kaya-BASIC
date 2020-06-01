@@ -1,0 +1,10 @@
+[CONSTS]
+[HEADER]
+<wx/metafile.h>
+[METHODS]
+wxMetafile.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxMetafile.IsOk,0,0,0,bool,						bool wxMetafile.IsOk ( )
+wxMetafile.Play,0,0,1,bool,						bool wxMetafile.Play ( wxDC * dc)
+wxMetafile.SetClipboard,0,0,2,bool,						bool wxMetafile.SetClipboard ( int width = 0,     int height = 0    )
+[INHERITS]
+wxObject

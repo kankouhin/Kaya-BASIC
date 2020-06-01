@@ -1,26 +1,28 @@
 [CONSTS]
-[METHODS]
+[HEADER]
 <wx/listctrl.h>
-GetCacheFrom,0,0,0,long,						long GetCacheFrom ( )
-GetCacheTo,0,0,0,long,						long GetCacheTo ( )
-GetColumn,0,0,0,int,						int GetColumn ( )
-GetData,0,0,0,wxUIntPtr,						wxUIntPtr GetData ( )
-GetImage,0,0,0,int,						int GetImage ( )
-GetIndex,0,0,0,long,						long GetIndex ( )
-GetItem,0,0,0,wxListItem,						wxListItem&  GetItem ( )
-GetKeyCode,0,0,0,int,						int GetKeyCode ( )
-GetLabel,0,0,0,wxString,						wxString&  GetLabel ( )
-GetMask,0,0,0,long,						long GetMask ( )
-GetPoint,0,0,0,wxPoint,						wxPoint GetPoint ( )
-GetText,0,0,0,wxString,						wxString&  GetText ( )
-IsEditCancelled,0,0,0,bool,						bool IsEditCancelled ( )
-SetCacheFrom,0,0,1,void,						void SetCacheFrom ( long cacheFrom)
-SetCacheTo,0,0,1,void,						void SetCacheTo ( long cacheTo)
-SetColumn,0,0,1,void,						void SetColumn ( int col)
-SetIndex,0,0,1,void,						void SetIndex ( long index)
-SetItem,0,0,1,void,						void SetItem (  wxListItem & item)
-SetKeyCode,0,0,1,void,						void SetKeyCode ( int code)
-SetPoint,0,0,1,void,						void SetPoint (  wxPoint & point)
+[METHODS]
+wxListEvent.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxListEvent.GetCacheFrom,0,0,0,long,						long wxListEvent.GetCacheFrom ( )
+wxListEvent.GetCacheTo,0,0,0,long,						long wxListEvent.GetCacheTo ( )
+wxListEvent.GetColumn,0,0,0,int,						int wxListEvent.GetColumn ( )
+wxListEvent.GetData,0,0,0,wxUIntPtr,						wxUIntPtr wxListEvent.GetData ( )
+wxListEvent.GetImage,0,0,0,int,						int wxListEvent.GetImage ( )
+wxListEvent.GetIndex,0,0,0,long,						long wxListEvent.GetIndex ( )
+wxListEvent.GetItem,0,0,0,wxListItem,						wxListItem&  wxListEvent.GetItem ( )
+wxListEvent.GetKeyCode,0,0,0,int,						int wxListEvent.GetKeyCode ( )
+wxListEvent.GetLabel,0,0,0,wxString,						wxString&  wxListEvent.GetLabel ( )
+wxListEvent.GetMask,0,0,0,long,						long wxListEvent.GetMask ( )
+wxListEvent.GetPoint,0,0,0,wxPoint,						wxPoint wxListEvent.GetPoint ( )
+wxListEvent.GetText,0,0,0,wxString,						wxString&  wxListEvent.GetText ( )
+wxListEvent.IsEditCancelled,0,0,0,bool,						bool wxListEvent.IsEditCancelled ( )
+wxListEvent.SetCacheFrom,0,0,1,void,						void wxListEvent.SetCacheFrom ( long cacheFrom)
+wxListEvent.SetCacheTo,0,0,1,void,						void wxListEvent.SetCacheTo ( long cacheTo)
+wxListEvent.SetColumn,0,0,1,void,						void wxListEvent.SetColumn ( int col)
+wxListEvent.SetIndex,0,0,1,void,						void wxListEvent.SetIndex ( long index)
+wxListEvent.SetItem,0,0,1,void,						void wxListEvent.SetItem (  wxListItem & item)
+wxListEvent.SetKeyCode,0,0,1,void,						void wxListEvent.SetKeyCode ( int code)
+wxListEvent.SetPoint,0,0,1,void,						void wxListEvent.SetPoint (  wxPoint & point)
 [INHERITS]
 wxNotifyEvent
 wxCommandEvent

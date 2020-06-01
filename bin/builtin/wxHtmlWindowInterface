@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlwin.h>
+[METHODS]
+wxHtmlWindowInterface.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlWindowInterface.HTMLCursor,0,0,-1,enum,						enum wxHtmlWindowInterface.HTMLCursor
+wxHtmlWindowInterface.GetHTMLBackgroundColour,0,0,0,wxColour,						wxColour wxHtmlWindowInterface.GetHTMLBackgroundColour ( )
+wxHtmlWindowInterface.GetHTMLCursor,0,0,1,wxCursor,						wxCursor wxHtmlWindowInterface.GetHTMLCursor ( wxHtmlWindowInterface.HTMLCursor type)
+wxHtmlWindowInterface.GetHTMLWindow,0,1,0,wxWindow,						wxWindow* wxHtmlWindowInterface.GetHTMLWindow ( )
+wxHtmlWindowInterface.HTMLCoordsToWindow,0,0,2,wxPoint,						wxPoint wxHtmlWindowInterface.HTMLCoordsToWindow ( wxHtmlCell * cell,      wxPoint & pos    )
+wxHtmlWindowInterface.OnHTMLLinkClicked,0,0,1,void,						void wxHtmlWindowInterface.OnHTMLLinkClicked (  wxHtmlLinkInfo & link)
+wxHtmlWindowInterface.OnHTMLOpeningURL,0,0,3,wxHtmlOpeningStatus,						wxHtmlOpeningStatus wxHtmlWindowInterface.OnHTMLOpeningURL ( wxHtmlURLType type,      wxString & url,     wxString * redirect    )
+wxHtmlWindowInterface.SetHTMLBackgroundColour,0,0,1,void,						void wxHtmlWindowInterface.SetHTMLBackgroundColour (  wxColour & clr)
+wxHtmlWindowInterface.SetHTMLBackgroundImage,0,0,1,void,						void wxHtmlWindowInterface.SetHTMLBackgroundImage (  wxBitmap & bmpBg)
+wxHtmlWindowInterface.SetHTMLStatusText,0,0,1,void,						void wxHtmlWindowInterface.SetHTMLStatusText (  wxString & text)
+wxHtmlWindowInterface.SetHTMLWindowTitle,0,0,1,void,						void wxHtmlWindowInterface.SetHTMLWindowTitle (  wxString & title)
+[INHERITS]

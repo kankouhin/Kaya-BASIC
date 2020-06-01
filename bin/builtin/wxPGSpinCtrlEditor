@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/advprops.h>
+[METHODS]
+wxPGSpinCtrlEditor.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxPGSpinCtrlEditor.CreateControls,0,0,4,wxPGWindowList,						wxPGWindowList wxPGSpinCtrlEditor.CreateControls ( wxPropertyGrid * propgrid,     wxPGProperty * property,      wxPoint & pos,      wxSize & size    )
+wxPGSpinCtrlEditor.GetName,0,0,0,wxString,						wxString wxPGSpinCtrlEditor.GetName ( )
+wxPGSpinCtrlEditor.OnEvent,0,0,4,bool,						bool wxPGSpinCtrlEditor.OnEvent ( wxPropertyGrid * propgrid,     wxPGProperty * property,     wxWindow * wnd_primary,     wxEvent & event    )
+[INHERITS]
+wxPGTextCtrlEditor
+wxPGEditor
+wxObject

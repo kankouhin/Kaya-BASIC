@@ -1,0 +1,12 @@
+[CONSTS]
+[HEADER]
+<wx/sizer.h>
+[METHODS]
+wxStaticBoxSizer.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxStaticBoxSizer.CalcMin,0,0,0,wxSize,						wxSize wxStaticBoxSizer.CalcMin ( )
+wxStaticBoxSizer.GetStaticBox,0,1,0,wxStaticBox,						wxStaticBox* wxStaticBoxSizer.GetStaticBox ( )
+wxStaticBoxSizer.RepositionChildren,0,0,1,void,						void wxStaticBoxSizer.RepositionChildren (  wxSize & minSize)
+[INHERITS]
+wxBoxSizer
+wxSizer
+wxObject

@@ -1,0 +1,42 @@
+[CONSTS]
+[HEADER]
+<wx/toolbar.h>
+[METHODS]
+wxToolBarToolBase.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxToolBarToolBase.Attach,0,0,1,void,						void wxToolBarToolBase.Attach ( wxToolBarBase * tbar)
+wxToolBarToolBase.CanBeToggled,0,0,0,bool,						bool wxToolBarToolBase.CanBeToggled ( )
+wxToolBarToolBase.Detach,0,0,0,void,						void wxToolBarToolBase.Detach ( )
+wxToolBarToolBase.Enable,0,0,1,bool,						bool wxToolBarToolBase.Enable ( bool enable)
+wxToolBarToolBase.GetBitmap,0,0,0,wxBitmap,						wxBitmap&  wxToolBarToolBase.GetBitmap ( )
+wxToolBarToolBase.GetClientData,0,1,0,wxObject,						wxObject* wxToolBarToolBase.GetClientData ( )
+wxToolBarToolBase.GetControl,0,1,0,wxControl,						wxControl* wxToolBarToolBase.GetControl ( )
+wxToolBarToolBase.GetDisabledBitmap,0,0,0,wxBitmap,						wxBitmap&  wxToolBarToolBase.GetDisabledBitmap ( )
+wxToolBarToolBase.GetDropdownMenu,0,1,0,wxMenu,						wxMenu* wxToolBarToolBase.GetDropdownMenu ( )
+wxToolBarToolBase.GetId,0,0,0,int,						int wxToolBarToolBase.GetId ( )
+wxToolBarToolBase.GetKind,0,0,0,wxItemKind,						wxItemKind wxToolBarToolBase.GetKind ( )
+wxToolBarToolBase.GetLabel,0,0,0,wxString,						wxString&  wxToolBarToolBase.GetLabel ( )
+wxToolBarToolBase.GetLongHelp,0,0,0,wxString,						wxString&  wxToolBarToolBase.GetLongHelp ( )
+wxToolBarToolBase.GetNormalBitmap,0,0,0,wxBitmap,						wxBitmap&  wxToolBarToolBase.GetNormalBitmap ( )
+wxToolBarToolBase.GetShortHelp,0,0,0,wxString,						wxString&  wxToolBarToolBase.GetShortHelp ( )
+wxToolBarToolBase.GetStyle,0,0,0,int,						int wxToolBarToolBase.GetStyle ( )
+wxToolBarToolBase.GetToolBar,0,1,0,wxToolBarBase,						wxToolBarBase* wxToolBarToolBase.GetToolBar ( )
+wxToolBarToolBase.IsButton,0,0,0,bool,						bool wxToolBarToolBase.IsButton ( )
+wxToolBarToolBase.IsControl,0,0,0,bool,						bool wxToolBarToolBase.IsControl ( )
+wxToolBarToolBase.IsEnabled,0,0,0,bool,						bool wxToolBarToolBase.IsEnabled ( )
+wxToolBarToolBase.IsSeparator,0,0,0,bool,						bool wxToolBarToolBase.IsSeparator ( )
+wxToolBarToolBase.IsStretchable,0,0,0,bool,						bool wxToolBarToolBase.IsStretchable ( )
+wxToolBarToolBase.IsStretchableSpace,0,0,0,bool,						bool wxToolBarToolBase.IsStretchableSpace ( )
+wxToolBarToolBase.IsToggled,0,0,0,bool,						bool wxToolBarToolBase.IsToggled ( )
+wxToolBarToolBase.MakeStretchable,0,0,0,void,						void wxToolBarToolBase.MakeStretchable ( )
+wxToolBarToolBase.SetClientData,0,0,1,void,						void wxToolBarToolBase.SetClientData ( wxObject * clientData)
+wxToolBarToolBase.SetDisabledBitmap,0,0,1,void,						void wxToolBarToolBase.SetDisabledBitmap (  wxBitmap & bmp)
+wxToolBarToolBase.SetDropdownMenu,0,0,1,void,						void wxToolBarToolBase.SetDropdownMenu ( wxMenu * menu)
+wxToolBarToolBase.SetLabel,0,0,1,void,						void wxToolBarToolBase.SetLabel (  wxString & label)
+wxToolBarToolBase.SetLongHelp,0,0,1,bool,						bool wxToolBarToolBase.SetLongHelp (  wxString & help)
+wxToolBarToolBase.SetNormalBitmap,0,0,1,void,						void wxToolBarToolBase.SetNormalBitmap (  wxBitmap & bmp)
+wxToolBarToolBase.SetShortHelp,0,0,1,bool,						bool wxToolBarToolBase.SetShortHelp (  wxString & help)
+wxToolBarToolBase.SetToggle,0,0,1,bool,						bool wxToolBarToolBase.SetToggle ( bool toggle)
+wxToolBarToolBase.Toggle,0,0,1,bool,						bool wxToolBarToolBase.Toggle ( bool toggle)
+wxToolBarToolBase.Toggle,0,0,0,void,						void wxToolBarToolBase.Toggle ( )
+[INHERITS]
+wxObject

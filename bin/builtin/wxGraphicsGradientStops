@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/graphics.h>
+[METHODS]
+wxGraphicsGradientStops.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxGraphicsGradientStops.Add,0,0,1,void,						void wxGraphicsGradientStops.Add (  wxGraphicsGradientStop & stop)
+wxGraphicsGradientStops.Add,0,0,2,void,						void wxGraphicsGradientStops.Add ( wxColour col,     float pos    )
+wxGraphicsGradientStops.GetCount,0,0,0,size_t,						size_t wxGraphicsGradientStops.GetCount ( )
+wxGraphicsGradientStops.GetEndColour,0,0,0,wxColour,						wxColour wxGraphicsGradientStops.GetEndColour ( )
+wxGraphicsGradientStops.GetStartColour,0,0,0,wxColour,						wxColour wxGraphicsGradientStops.GetStartColour ( )
+wxGraphicsGradientStops.Item,0,0,1,wxGraphicsGradientStop,						wxGraphicsGradientStop wxGraphicsGradientStops.Item ( unsigned n)
+wxGraphicsGradientStops.SetEndColour,0,0,1,void,						void wxGraphicsGradientStops.SetEndColour ( wxColour col)
+wxGraphicsGradientStops.SetStartColour,0,0,1,void,						void wxGraphicsGradientStops.SetStartColour ( wxColour col)
+[INHERITS]

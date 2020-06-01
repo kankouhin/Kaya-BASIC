@@ -1,0 +1,14 @@
+[CONSTS]
+[HEADER]
+<wx/fontenum.h>
+[METHODS]
+wxFontEnumerator.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxFontEnumerator.EnumerateEncodings,0,0,1,bool,						bool wxFontEnumerator.EnumerateEncodings (  wxString & font = wxEmptyString)
+wxFontEnumerator.EnumerateFacenames,0,0,2,bool,						bool wxFontEnumerator.EnumerateFacenames ( wxFontEncoding encoding = wxFONTENCODING_SYSTEM,     bool fixedWidthOnly = false    )
+wxFontEnumerator.GetEncodings,1,0,1,wxArrayString,						static wxArrayString wxFontEnumerator.GetEncodings (  wxString & facename = wxEmptyString)
+wxFontEnumerator.GetFacenames,1,0,2,wxArrayString,						static wxArrayString wxFontEnumerator.GetFacenames ( wxFontEncoding encoding = wxFONTENCODING_SYSTEM,     bool fixedWidthOnly = false    )
+wxFontEnumerator.InvalidateCache,1,0,0,void,						static void wxFontEnumerator.InvalidateCache ( )
+wxFontEnumerator.IsValidFacename,1,0,1,bool,						static bool wxFontEnumerator.IsValidFacename (  wxString & facename)
+wxFontEnumerator.OnFacename,0,0,1,bool,						bool wxFontEnumerator.OnFacename (  wxString & font)
+wxFontEnumerator.OnFontEncoding,0,0,2,bool,						bool wxFontEnumerator.OnFontEncoding (  wxString & font,      wxString & encoding    )
+[INHERITS]

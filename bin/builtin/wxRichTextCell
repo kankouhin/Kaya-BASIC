@@ -1,0 +1,23 @@
+[CONSTS]
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextCell.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextCell.CanEditProperties,0,0,0,bool,						bool wxRichTextCell.CanEditProperties ( )
+wxRichTextCell.Clone,0,1,0,wxRichTextObject,						wxRichTextObject* wxRichTextCell.Clone ( )
+wxRichTextCell.Copy,0,0,1,void,						void wxRichTextCell.Copy (  wxRichTextCell & obj)
+wxRichTextCell.Draw,0,0,7,bool,						bool wxRichTextCell.Draw ( wxDC & dc,     wxRichTextDrawingContext & context,      wxRichTextRange & range,      wxRichTextSelection & selection,      wxRect & rect,     int descent,     int style    )
+wxRichTextCell.EditProperties,0,0,2,bool,						bool wxRichTextCell.EditProperties ( wxWindow * parent,     wxRichTextBuffer * buffer    )
+wxRichTextCell.GetColSpan,0,0,0,int,						int wxRichTextCell.GetColSpan ( )
+wxRichTextCell.GetPropertiesMenuLabel,0,0,0,wxString,						wxString wxRichTextCell.GetPropertiesMenuLabel ( )
+wxRichTextCell.GetRowSpan,0,0,0,int,						int wxRichTextCell.GetRowSpan ( )
+wxRichTextCell.GetXMLNodeName,0,0,0,wxString,						wxString wxRichTextCell.GetXMLNodeName ( )
+wxRichTextCell.HitTest,0,0,7,int,						int wxRichTextCell.HitTest ( wxDC & dc,     wxRichTextDrawingContext & context,      wxPoint & pt,     long & textPosition,     wxRichTextObject ** obj,     wxRichTextObject ** contextObj,     int flags = 0    )
+wxRichTextCell.SetColSpan,0,0,1,void,						void wxRichTextCell.SetColSpan ( long span)
+wxRichTextCell.SetRowSpan,0,0,1,void,						void wxRichTextCell.SetRowSpan ( long span)
+[INHERITS]
+wxRichTextBox
+wxRichTextParagraphLayoutBox
+wxRichTextCompositeObject
+wxRichTextObject
+wxObject

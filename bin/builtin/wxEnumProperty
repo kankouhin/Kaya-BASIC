@@ -1,0 +1,21 @@
+[CONSTS]
+[HEADER]
+<wx/propgrid/props.h>
+[METHODS]
+wxEnumProperty.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxEnumProperty.GetChoiceSelection,0,0,0,int,						int wxEnumProperty.GetChoiceSelection ( )
+wxEnumProperty.GetIndex,0,0,0,int,						int wxEnumProperty.GetIndex ( )
+wxEnumProperty.GetIndexForValue,0,0,1,int,						int wxEnumProperty.GetIndexForValue ( int value)
+wxEnumProperty.GetItemCount,0,0,0,size_t,						size_t wxEnumProperty.GetItemCount ( )
+wxEnumProperty.IntToValue,0,0,3,bool,						bool wxEnumProperty.IntToValue ( wxVariant & variant,     int number,     int argFlags = 0    )
+wxEnumProperty.OnSetValue,0,0,0,void,						void wxEnumProperty.OnSetValue ( )
+wxEnumProperty.ResetNextIndex,1,0,0,void,						static void wxEnumProperty.ResetNextIndex ( )
+wxEnumProperty.SetIndex,0,0,1,void,						void wxEnumProperty.SetIndex ( int index)
+wxEnumProperty.StringToValue,0,0,3,bool,						bool wxEnumProperty.StringToValue ( wxVariant & variant,      wxString & text,     int argFlags = 0    )
+wxEnumProperty.ValidateValue,0,0,2,bool,						bool wxEnumProperty.ValidateValue ( wxVariant & value,     wxPGValidationInfo & validationInfo    )
+wxEnumProperty.ValueFromInt_,0,0,3,bool,						bool wxEnumProperty.ValueFromInt_ ( wxVariant & value,     int intVal,     int argFlags    )
+wxEnumProperty.ValueFromString_,0,0,3,bool,						bool wxEnumProperty.ValueFromString_ ( wxVariant & value,      wxString & text,     int argFlags    )
+wxEnumProperty.ValueToString,0,0,2,wxString,						wxString wxEnumProperty.ValueToString ( wxVariant & value,     int argFlags = 0    )
+[INHERITS]
+wxPGProperty
+wxObject

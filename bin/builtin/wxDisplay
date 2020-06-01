@@ -1,0 +1,17 @@
+[CONSTS]
+[HEADER]
+<wx/display.h>
+[METHODS]
+wxDisplay.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxDisplay.ChangeMode,0,0,1,bool,						bool wxDisplay.ChangeMode (  wxVideoMode & mode = wxDefaultVideoMode)
+wxDisplay.GetClientArea,0,0,0,wxRect,						wxRect wxDisplay.GetClientArea ( )
+wxDisplay.GetCount,1,0,0,int,						static unsigned int wxDisplay.GetCount ( )
+wxDisplay.GetCurrentMode,0,0,0,wxVideoMode,						wxVideoMode wxDisplay.GetCurrentMode ( )
+wxDisplay.GetFromPoint,1,0,1,int,						static int wxDisplay.GetFromPoint (  wxPoint & pt)
+wxDisplay.GetFromWindow,1,0,1,int,						static int wxDisplay.GetFromWindow (  wxWindow * win)
+wxDisplay.GetGeometry,0,0,0,wxRect,						wxRect wxDisplay.GetGeometry ( )
+wxDisplay.GetModes,0,0,1,wxArrayVideoModes,						wxArrayVideoModes wxDisplay.GetModes (  wxVideoMode & mode = wxDefaultVideoMode)
+wxDisplay.GetName,0,0,0,wxString,						wxString wxDisplay.GetName ( )
+wxDisplay.GetPPI,0,0,0,wxSize,						wxSize wxDisplay.GetPPI ( )
+wxDisplay.IsPrimary,0,0,0,bool,						bool wxDisplay.IsPrimary ( )
+[INHERITS]

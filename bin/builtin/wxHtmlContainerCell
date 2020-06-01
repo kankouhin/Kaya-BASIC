@@ -1,0 +1,24 @@
+[CONSTS]
+[HEADER]
+<wx/html/htmlcell.h>
+[METHODS]
+wxHtmlContainerCell.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxHtmlContainerCell.Detach,0,0,1,void,						void wxHtmlContainerCell.Detach ( wxHtmlCell * cell)
+wxHtmlContainerCell.GetAlignHor,0,0,0,int,						int wxHtmlContainerCell.GetAlignHor ( )
+wxHtmlContainerCell.GetAlignVer,0,0,0,int,						int wxHtmlContainerCell.GetAlignVer ( )
+wxHtmlContainerCell.GetBackgroundColour,0,0,0,wxColour,						wxColour wxHtmlContainerCell.GetBackgroundColour ( )
+wxHtmlContainerCell.GetIndent,0,0,1,int,						int wxHtmlContainerCell.GetIndent ( int ind)
+wxHtmlContainerCell.GetIndentUnits,0,0,1,int,						int wxHtmlContainerCell.GetIndentUnits ( int ind)
+wxHtmlContainerCell.InsertCell,0,0,1,void,						void wxHtmlContainerCell.InsertCell ( wxHtmlCell * cell)
+wxHtmlContainerCell.SetAlign,0,0,1,void,						void wxHtmlContainerCell.SetAlign (  wxHtmlTag & tag)
+wxHtmlContainerCell.SetAlignHor,0,0,1,void,						void wxHtmlContainerCell.SetAlignHor ( int al)
+wxHtmlContainerCell.SetAlignVer,0,0,1,void,						void wxHtmlContainerCell.SetAlignVer ( int al)
+wxHtmlContainerCell.SetBackgroundColour,0,0,1,void,						void wxHtmlContainerCell.SetBackgroundColour (  wxColour & clr)
+wxHtmlContainerCell.SetBorder,0,0,3,void,						void wxHtmlContainerCell.SetBorder (  wxColour & clr1,      wxColour & clr2,     int border = 1    )
+wxHtmlContainerCell.SetIndent,0,0,3,void,						void wxHtmlContainerCell.SetIndent ( int i,     int what,     int units = wxHTML_UNITS_PIXELS    )
+wxHtmlContainerCell.SetMinHeight,0,0,2,void,						void wxHtmlContainerCell.SetMinHeight ( int h,     int align = wxHTML_ALIGN_TOP    )
+wxHtmlContainerCell.SetWidthFloat,0,0,2,void,						void wxHtmlContainerCell.SetWidthFloat ( int w,     int units    )
+wxHtmlContainerCell.SetWidthFloat,0,0,2,void,						void wxHtmlContainerCell.SetWidthFloat (  wxHtmlTag & tag,     double pixel_scale = 1.0    )
+[INHERITS]
+wxHtmlCell
+wxObject

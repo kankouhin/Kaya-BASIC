@@ -1,0 +1,8 @@
+[CONSTS]
+[HEADER]
+<wx/textcompleter.h>
+[METHODS]
+wxTextCompleterSimple.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxTextCompleterSimple.GetCompletions,0,0,2,void,						void wxTextCompleterSimple.GetCompletions (  wxString & prefix,     wxArrayString & res    )
+[INHERITS]
+wxTextCompleter

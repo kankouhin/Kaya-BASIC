@@ -1,0 +1,54 @@
+[CONSTS]
+wxRICHTEXT_FIELD_STYLE_COMPOSITE
+wxRICHTEXT_FIELD_STYLE_RECTANGLE
+wxRICHTEXT_FIELD_STYLE_NO_BORDER
+wxRICHTEXT_FIELD_STYLE_START_TAG
+wxRICHTEXT_FIELD_STYLE_END_TAG
+[HEADER]
+<wx/richtext/richtextbuffer.h>
+[METHODS]
+wxRichTextFieldTypeStandard.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+wxRichTextFieldTypeStandard.Copy,0,0,1,void,						void wxRichTextFieldTypeStandard.Copy (  wxRichTextFieldTypeStandard & field)
+wxRichTextFieldTypeStandard.Draw,0,0,8,bool,						bool wxRichTextFieldTypeStandard.Draw ( wxRichTextField * obj,     wxDC & dc,     wxRichTextDrawingContext & context,      wxRichTextRange & range,      wxRichTextSelection & selection,      wxRect & rect,     int descent,     int style    )
+wxRichTextFieldTypeStandard.GetBackgroundColour,0,0,0,wxColour,						wxColour&  wxRichTextFieldTypeStandard.GetBackgroundColour ( )
+wxRichTextFieldTypeStandard.GetBitmap,0,0,0,wxBitmap,						wxBitmap&  wxRichTextFieldTypeStandard.GetBitmap ( )
+wxRichTextFieldTypeStandard.GetBorderColour,0,0,0,wxColour,						wxColour&  wxRichTextFieldTypeStandard.GetBorderColour ( )
+wxRichTextFieldTypeStandard.GetDisplayStyle,0,0,0,int,						int wxRichTextFieldTypeStandard.GetDisplayStyle ( )
+wxRichTextFieldTypeStandard.GetFont,0,0,0,wxFont,						wxFont&  wxRichTextFieldTypeStandard.GetFont ( )
+wxRichTextFieldTypeStandard.GetHorizontalMargin,0,0,0,int,						int wxRichTextFieldTypeStandard.GetHorizontalMargin ( )
+wxRichTextFieldTypeStandard.GetHorizontalPadding,0,0,0,int,						int wxRichTextFieldTypeStandard.GetHorizontalPadding ( )
+wxRichTextFieldTypeStandard.GetLabel,0,0,0,wxString,						wxString&  wxRichTextFieldTypeStandard.GetLabel ( )
+wxRichTextFieldTypeStandard.GetRangeSize,0,0,10,bool,						bool wxRichTextFieldTypeStandard.GetRangeSize ( wxRichTextField * obj,      wxRichTextRange & range,     wxSize & size,     int & descent,     wxDC & dc,     wxRichTextDrawingContext & context,     int flags,      wxPoint & position = wxPoint(0, 0),      wxSize & parentSize = wxDefaultSize,     wxArrayInt * partialExtents = NULL    )
+wxRichTextFieldTypeStandard.GetSize,0,0,4,wxSize,						wxSize wxRichTextFieldTypeStandard.GetSize ( wxRichTextField * obj,     wxDC & dc,     wxRichTextDrawingContext & context,     int style    )
+wxRichTextFieldTypeStandard.GetTextColour,0,0,0,wxColour,						wxColour&  wxRichTextFieldTypeStandard.GetTextColour ( )
+wxRichTextFieldTypeStandard.GetVerticalMargin,0,0,0,int,						int wxRichTextFieldTypeStandard.GetVerticalMargin ( )
+wxRichTextFieldTypeStandard.GetVerticalPadding,0,0,0,int,						int wxRichTextFieldTypeStandard.GetVerticalPadding ( )
+wxRichTextFieldTypeStandard.Init,0,0,0,void,						void wxRichTextFieldTypeStandard.Init ( )
+wxRichTextFieldTypeStandard.IsTopLevel,0,0,1,bool,						bool wxRichTextFieldTypeStandard.IsTopLevel ( wxRichTextField * obj)
+wxRichTextFieldTypeStandard.Layout,0,0,6,bool,						bool wxRichTextFieldTypeStandard.Layout ( wxRichTextField * obj,     wxDC & dc,     wxRichTextDrawingContext & context,      wxRect & rect,      wxRect & parentRect,     int style    )
+wxRichTextFieldTypeStandard.operator=,0,0,1,void,						void wxRichTextFieldTypeStandard.operator= (  wxRichTextFieldTypeStandard & field)
+wxRichTextFieldTypeStandard.SetBackgroundColour,0,0,1,void,						void wxRichTextFieldTypeStandard.SetBackgroundColour (  wxColour & colour)
+wxRichTextFieldTypeStandard.SetBitmap,0,0,1,void,						void wxRichTextFieldTypeStandard.SetBitmap (  wxBitmap & bitmap)
+wxRichTextFieldTypeStandard.SetBorderColour,0,0,1,void,						void wxRichTextFieldTypeStandard.SetBorderColour (  wxColour & colour)
+wxRichTextFieldTypeStandard.SetDisplayStyle,0,0,1,void,						void wxRichTextFieldTypeStandard.SetDisplayStyle ( int displayStyle)
+wxRichTextFieldTypeStandard.SetFont,0,0,1,void,						void wxRichTextFieldTypeStandard.SetFont (  wxFont & font)
+wxRichTextFieldTypeStandard.SetHorizontalMargin,0,0,1,void,						void wxRichTextFieldTypeStandard.SetHorizontalMargin ( int margin)
+wxRichTextFieldTypeStandard.SetHorizontalPadding,0,0,1,void,						void wxRichTextFieldTypeStandard.SetHorizontalPadding ( int padding)
+wxRichTextFieldTypeStandard.SetLabel,0,0,1,void,						void wxRichTextFieldTypeStandard.SetLabel (  wxString & label)
+wxRichTextFieldTypeStandard.SetTextColour,0,0,1,void,						void wxRichTextFieldTypeStandard.SetTextColour (  wxColour & colour)
+wxRichTextFieldTypeStandard.SetVerticalMargin,0,0,1,void,						void wxRichTextFieldTypeStandard.SetVerticalMargin ( int margin)
+wxRichTextFieldTypeStandard.SetVerticalPadding,0,0,1,void,						void wxRichTextFieldTypeStandard.SetVerticalPadding ( int padding)
+wxRichTextFieldTypeStandard.m_backgroundColour,0,0,-1,wxColour,						wxColour wxRichTextFieldTypeStandard.m_backgroundColour
+wxRichTextFieldTypeStandard.m_bitmap,0,0,-1,wxBitmap,						wxBitmap wxRichTextFieldTypeStandard.m_bitmap
+wxRichTextFieldTypeStandard.m_borderColour,0,0,-1,wxColour,						wxColour wxRichTextFieldTypeStandard.m_borderColour
+wxRichTextFieldTypeStandard.m_displayStyle,0,0,-1,int,						int wxRichTextFieldTypeStandard.m_displayStyle
+wxRichTextFieldTypeStandard.m_font,0,0,-1,wxFont,						wxFont wxRichTextFieldTypeStandard.m_font
+wxRichTextFieldTypeStandard.m_horizontalMargin,0,0,-1,int,						int wxRichTextFieldTypeStandard.m_horizontalMargin
+wxRichTextFieldTypeStandard.m_horizontalPadding,0,0,-1,int,						int wxRichTextFieldTypeStandard.m_horizontalPadding
+wxRichTextFieldTypeStandard.m_label,0,0,-1,wxString,						wxString wxRichTextFieldTypeStandard.m_label
+wxRichTextFieldTypeStandard.m_textColour,0,0,-1,wxColour,						wxColour wxRichTextFieldTypeStandard.m_textColour
+wxRichTextFieldTypeStandard.m_verticalMargin,0,0,-1,int,						int wxRichTextFieldTypeStandard.m_verticalMargin
+wxRichTextFieldTypeStandard.m_verticalPadding,0,0,-1,int,						int wxRichTextFieldTypeStandard.m_verticalPadding
+[INHERITS]
+wxRichTextFieldType
+wxObject
