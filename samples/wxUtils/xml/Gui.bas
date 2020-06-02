@@ -21,6 +21,10 @@ Sub LoadDataFromXml
 	Dim p As wxTreeItemId = treeCtrl.AppendItem( Nothing, node.GetName, 0 )
 
 	Call AddChildren( p, node )
+	
+	' just for test
+	' Dim n As wxXmlNode
+	' n.GetAttributes.getnext.getname.len
 End Sub
 
 Sub Main
@@ -30,10 +34,15 @@ Sub Main
 	images.Add( wxArtProvider.GetIcon(wxART_FOLDER, wxART_OTHER, wxSize(16,16)) )
 	images.Add( wxArtProvider.GetIcon(wxART_FOLDER_OPEN, wxART_OTHER, wxSize(16,16)) )
 	images.Add( wxArtProvider.GetIcon(wxART_NORMAL_FILE, wxART_OTHER, wxSize(16,16)) )
+	
+	' just for test
+	' wxArtProvider.GetIcon(wxART_NORMAL_FILE, wxART_OTHER, wxSize(16,16)).GetClassInfo.FindClass("wxIcon")
 
 	treeCtrl = New wxTreeCtrl( f )
 	treeCtrl.SetImageList( images )
 
 	Call LoadDataFromXml
+	
+	f.SetIcon( wxIcon(sample_xpm) )
 	f.Show(TRUE)
 End Sub
