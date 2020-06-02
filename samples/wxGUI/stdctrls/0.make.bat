@@ -1,2 +1,2 @@
-bpp -w gui
+bpp -w -k gui
 pause
