@@ -1,6 +1,12 @@
 Option Explicit
 ' this sample shows how to use c/c++ libaray
-
+'
+' 1. include header file
+' 2. link the libraries
+' 3. write codes directly. 
+'    NOTE: because nothing(sub/function/const,etc...) defined like wxWidgets classes,
+'          you need write codes as same as c/c++: need () after sub name, and also Case-Sensitive.
+'
 Option CPP_FLAGS 	" -include SDL2-2.0.12/i686-w64-mingw32/include/SDL2/SDL.h "
 Option LD_FLAGS		" -LC:/DataMigration/FreeBasic/KayaBASIC/include/SDL2-2.0.12/i686-w64-mingw32/Lib -lSDL2 -lwinmm -limm32 -lSetupapi "
 
@@ -18,5 +24,5 @@ Sub Main
 		SDL_Log("Scancode #%d, \"%s\"\n", scancode, SDL_GetScancodeName( Cast(SDL_Scancode,scancode)  ))
 	Wend
 	
-	SDL_Quit() ' because SDL_Quit is not defined like wxWidgets classes. you need write codes as same as c/c++: need () after sub name, and also Case-Sensitive.
+	SDL_Quit()
 End Sub
