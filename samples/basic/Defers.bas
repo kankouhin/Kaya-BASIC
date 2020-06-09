@@ -1,5 +1,7 @@
 Option Explicit
 
+Option CPP_FLAGS " -std=c++14 "
+
 Sub Main
 	Defer ( 
 		Print "auto closed file1."
