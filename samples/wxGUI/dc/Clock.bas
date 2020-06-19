@@ -1,7 +1,7 @@
 Option Explicit
 ' wxBasic clock sample
 
-const PI As Double = 3.1415927
+const PI As Double = 3.1415927 
 
 Dim f As wxFrame Ptr
 Dim t as wxTimer ptr
