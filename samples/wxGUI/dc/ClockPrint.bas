@@ -109,20 +109,28 @@ bool Printout::HasPage(int pageNum)
 ##################################################################################################################################
 
 Sub OnPrintClick(ByRef ev As wxCommandEvent)
-	
 	Dim printer As wxPrinter
 	Dim cp As Printout( 1 )
 	
 	printer.Print( f, @cp, True)
 End Sub
 
+Sub OnPrintPreviewClick(ByRef ev As wxCommandEvent)
+	Dim preview As new wxPrintPreview(new Printout(1))
+	Dim frame As New wxPreviewFrame(preview, f, "Demo Print Preview", wxPoint(100, 100), wxSize(600, 650))
+	frame.Centre(wxBOTH)
+	frame.Initialize
+	frame.Show(True)
+End Sub
 
 Sub Main
 	f = New wxFrame(Nothing,-1,"Clock Print",wxPoint(250,150),wxSize(300,300))
 	Dim p As New wxPanel(f)
-	Dim btn As New wxButton(p, wxID_ANY, "Print", wxPoint(80,80), wxSize(80,32))
+	Dim btn As New wxButton(p, wxID_ANY, "Print", wxPoint(80,80))
+	Dim btn2 As New wxButton(p, wxID_ANY, "Print Preview", wxPoint(80,120))
 
 	btn.Bind( wxEVT_BUTTON, AddressOf OnPrintClick )
+	btn2.Bind( wxEVT_BUTTON, AddressOf OnPrintPreviewClick )
 	
 	f.SetIcon( wxIcon(sample_xpm) )
 	f.Show(TRUE)
