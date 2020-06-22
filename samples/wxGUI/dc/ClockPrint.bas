@@ -1,5 +1,8 @@
 Option Explicit
 
+Declare Sub PrintPage(dc As wxDC Ptr, page As Integer) 
+##include "wxPrintoutEx.h"
+
 const PI As Double = 3.1415927 
 Dim f As wxFrame Ptr
 
@@ -26,7 +29,7 @@ sub drawHand(theDC As wxDC Ptr, halfX As Double, halfY As Double, _
 end sub 
 
 ' draw the face of the clock 
-sub PrintPage(dc As wxDC Ptr, page As Integer) 
+sub PrintPage 
 
 	' get half the size of the window 
 	Dim dx = 500 / 2.0
@@ -57,70 +60,19 @@ sub PrintPage(dc As wxDC Ptr, page As Integer)
 	drawHand( dc, dx, dy, theSecond, 60, 0.9 )    
 end Sub
 
-##################################################################################################################################
-class Printout: public wxPrintout
-{
-public:
-    Printout(int maxPage)
-        : _maxPage(maxPage) { }
-
-    virtual bool OnPrintPage(int page) wxOVERRIDE;
-    virtual bool HasPage(int page) wxOVERRIDE;
-    virtual bool OnBeginDocument(int startPage, int endPage) wxOVERRIDE;
-    virtual void GetPageInfo(int *minPage, int *maxPage, int *selPageFrom, int *selPageTo) wxOVERRIDE;
-    
-private:
-	int _maxPage;
-};
-
-bool Printout::OnPrintPage(int page)
-{
-    wxDC *dc = GetDC();
-    if (dc)
-    {
-     	PrintPage(dc, page);
-        return true;
-    }
-    else
-        return false;
-}
-
-bool Printout::OnBeginDocument(int startPage, int endPage)
-{
-    if (!wxPrintout::OnBeginDocument(startPage, endPage))
-        return false;
-
-    return true;
-}
-
-void Printout::GetPageInfo(int *minPage, int *maxPage, int *selPageFrom, int *selPageTo)
-{
-    *minPage = 1;
-    *maxPage = _maxPage;
-    *selPageFrom = 1;
-    *selPageTo = _maxPage;
-}
-
-bool Printout::HasPage(int pageNum)
-{
-    return (pageNum >= 1 && pageNum <= _maxPage);
-}
-
-##################################################################################################################################
-
 Sub OnPrintClick(ByRef ev As wxCommandEvent)
 	Dim printer As wxPrinter
-	Dim cp As Printout( 1 )
+	Dim cp As wxPrintoutEx( 1 )
 	
 	printer.Print( f, @cp, True)
 End Sub
 
 Sub OnPrintPreviewClick(ByRef ev As wxCommandEvent)
-	Dim preview As new wxPrintPreview(new Printout(1))
-	Dim frame As New wxPreviewFrame(preview, f, "Demo Print Preview", wxPoint(100, 100), wxSize(600, 650))
+	Dim preview As new wxPrintPreview( new wxPrintoutEx(1), new wxPrintoutEx(1) )
+	Dim frame As New wxPreviewFrame(preview, f, "Print Preview", wxPoint(100, 100), wxSize(600, 650))
 	frame.Centre(wxBOTH)
 	frame.Initialize
-	frame.Show(True)
+	frame.Show
 End Sub
 
 Sub Main
