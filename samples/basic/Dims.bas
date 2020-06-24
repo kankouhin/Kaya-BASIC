@@ -17,6 +17,24 @@ Sub Main
 	Dim s2 As Double
 	Dim s3 As Decimal
 	
+	Dim v = "Hello KayaBASIC"
+	Dim v1 = 1
+	Dim v2 = @v
+	Dim v3 = @v1
+	Dim v4 = 2.0f
+	Dim v5 = 2l
+	Dim v6 = 2ll
+	Dim v7 = 2ull
+
+	Print TypeName(v)
+	Print TypeName(v1)
+	Print TypeName(v2)
+	Print TypeName(v3)
+	Print TypeName(v4)
+	Print TypeName(v5)
+	Print TypeName(v6)
+	Print TypeName(v7)
+	
 	Dim bln As Boolean
 	
 	Print i0
