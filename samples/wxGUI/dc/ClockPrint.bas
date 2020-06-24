@@ -45,14 +45,11 @@ sub PrintPage
 	' dc.Clear
 	
 	' draw 12 ticks around the face 
-	Dim i = 0.0
-	While i <= 2*PI
+	For Dim i = 0 To 2*PI Step (2*PI)/12
 		Dim x = cos( i ) * dx * 0.95 
 		Dim y = sin( i ) * dy * 0.95 
 		dc.drawRectangle( dx + x - 2, dy + y - 2, 4, 4 ) 
-		
-		i += (2*PI)/12
-	Wend
+	Next
 	
 	' draw each hand of the clock 
 	drawHand( dc, dx, dy, theHour, 12, 0.6 ) 
