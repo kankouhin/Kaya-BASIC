@@ -1,2 +1,0 @@
-..\..\bin\bpp Strings
-pause

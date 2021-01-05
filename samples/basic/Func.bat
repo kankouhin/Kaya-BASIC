@@ -1,2 +1,0 @@
-bpp Func
-pause
