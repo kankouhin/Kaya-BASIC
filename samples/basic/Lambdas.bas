@@ -45,7 +45,7 @@ Sub Main
 			, 100 )
 
 	Call test2( _
-				Function(x As Integer)
+				Function(x As Integer) As Long
 					Print x
 					Function = x * x
 				End Function
@@ -58,7 +58,7 @@ Sub Main
 			, 300 )
 
 	Call test4( _
-				Function(x As Integer)
+				Function(x As Integer) As Long
 					Print x
 					Function = x * x
 				End Function

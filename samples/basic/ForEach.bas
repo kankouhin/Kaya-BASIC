@@ -48,10 +48,17 @@ Sub Main
 		Print "> ", s
 	Next
 
+	For Each s As String Byref in col
+		Print "> ", s
+	Next
+
 	For Each idx As Integer, s As String in col
 		Print "> ", idx, " : ", s
 	Next
-	
+
+	For Each idx As Integer, s As String Byref in col
+		Print "> ", idx, " : ", s
+	Next
 	
 	'Dictionary
 	Dim dict As Integer Dictionary
@@ -83,11 +90,22 @@ Sub Main
 		Print key1 , " : ", value1
 	Next
 	
+	For Each key1 As String, value1 As Integer Byref in dict
+		Print key1 , " : ", value1
+		value1++
+	Next
+
+	print "--------------------after ++"
+	For Each key1 As String, value1 As Integer Byref in dict
+		Print key1 , " : ", value1
+	Next
+	print "-----------------------------"
+
 	For Each key1 As String,, in dict
 		Print key1
 	Next
 	
-	For Each ,, value1 As Integer in dict
+	For Each ,, value1 As Integer Byref in dict
 		Print value1
 	Next
 	
