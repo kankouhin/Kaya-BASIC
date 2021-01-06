@@ -23,7 +23,7 @@
                     "ignoreFailures": true
                 }
             ],
-            //"preLaunchTask": "KayaBASIC Build(DEBUG)"
+            "preLaunchTask": "KayaBASIC Build(DEBUG)"
         }
     ]
 }
