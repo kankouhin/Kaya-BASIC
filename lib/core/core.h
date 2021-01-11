@@ -59,6 +59,7 @@ private:
 
 
 #define TypeName(v) typeid(v).name()
+#define bpp_ref shared_ptr
 
 
 namespace bpp
@@ -72,7 +73,6 @@ void unloadlibs();
 void* getlibhandle(const string&);
 void* getprocaddr(void*, const string&);
 
-
 //DEBUG functions
 int dbg_getline();
 string dbg_getfunc();
@@ -81,8 +81,6 @@ void dbg_func(const string& s);
 void dbg_endfunc();
 int dbg_savefunc();
 void dbg_unwind(int n);
-
-	
 
 
 class object;
@@ -141,6 +139,29 @@ public:
 	}
 
 	T* operator* () { return ptr; }
+	
+	template<class cls>
+	ref<T> operator+ (cls arg) { return ptr->operator+ (arg); }
+	template<class cls>
+	ref<T> operator- (cls arg) { return ptr->operator- (arg); }
+	template<class cls>
+	ref<T> operator* (cls arg) { return ptr->operator* (arg); }
+	template<class cls>
+	ref<T> operator/ (cls arg) { return ptr->operator/ (arg); }
+	
+	template<class cls>
+	ref<T> operator+= (cls arg) { return ptr->operator+= (arg); }
+	template<class cls>
+	ref<T> operator-= (cls arg) { return ptr->operator-= (arg); }
+	template<class cls>
+	ref<T> operator*= (cls arg) { return ptr->operator*= (arg); }
+	template<class cls>
+	ref<T> operator/= (cls arg) { return ptr->operator/= (arg); }
+	
+	template<class cls>
+	ref<T> operator<< (cls arg) { return ptr->operator<< (arg); }
+	template<class cls>
+	ref<T> operator>> (cls arg) { return ptr->operator>> (arg); }
 
 	T* operator-> ()
 	{
@@ -160,7 +181,6 @@ private:
 	void check_class();
 #endif
 };
-
 
 struct rtti
 {
@@ -262,7 +282,6 @@ inline void ref<T>::check_class()
 }
 
 #endif
-
 
 
 class variant
