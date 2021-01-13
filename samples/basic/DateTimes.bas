@@ -1,12 +1,10 @@
-
 'need compile with -pro option
-
 Option Explicit
 
-Class DateTime
+Public Class DateTime
         Public Static Function Now As DateTime
+
         Public Function DateSerial(iYear As Integer, iMonth As Integer, iDay As Integer) As DateTime
-        
         Public Function Operator += (days As Integer) As DateTime
 
         Public Property Year As Integer
@@ -14,6 +12,10 @@ Class DateTime
         Public Property Day As Integer
 
         Private  timeStruct As tm
+
+        Public Static kbMonday  As Integer = 1
+        Public Static kbTuesday As Integer = 2
+        Public Static kbWednesday As Integer = 3
 End Class
 
 Property Get DateTime.Year
@@ -65,20 +67,3 @@ Function DateTime.Now
         Function = ret
 End Function
 
-
-Sub printDate( dt As DateTime )
-        Print " Year:", dt.Year, " Month:", dt.Month, " Day:", dt.Day
-End Sub
-
-Sub Main
-        Dim dt As DateTime = DateTime.Now
-        printDate dt
-
-        dt.DateSerial( 2021,1, 60 )
-        printDate dt
-
-        Dim i As Integer = 1
-        dt += i
-        printDate dt
-
-End Sub
