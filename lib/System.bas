@@ -185,11 +185,6 @@ Public Declare Sub		RmDir(Dir As String)
 Public Declare Function FreeFile As Integer
 Public Declare Function Eof(fn As Integer) As Boolean
 Public Declare Function FileLen(fn As Integer) As Long
-
-'For Internal
-Public Declare Sub FileOpen(filename As String, fm As String, fn As Integer)
-Public Declare Sub FileClose(fn As Integer)
-Public Declare Function FileGetObject(fn As Integer) As Long
 'FileSystems---------------------------------------------------------------------------------------------------
 
 

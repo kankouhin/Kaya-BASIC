@@ -6,10 +6,10 @@
         {
             "label": "KayaBASIC Build(DEBUG)",
             "type": "shell",
-            "command": "bpp",
+            "command": "del *.bpm & bpp",
             "args": [
                 "-k",
-                "-g",
+                "-pro",
                 "${fileBasenameNoExtension}"
             ],
             "problemMatcher": [],
@@ -21,9 +21,8 @@
         {
             "label": "KayaBASIC Build(RELEASE)",
             "type": "shell",
-            "command": "bpp",
+            "command": "del *.bpm & bpp",
             "args": [
-                "-g",
                 "-r",
                 "${fileBasenameNoExtension}"
             ],
