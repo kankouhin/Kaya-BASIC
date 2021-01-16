@@ -10,7 +10,7 @@ Sub compileBas(path as string, fn as string, options as string)
 			Print fn, "\t\t OK"
 		End If
 		
-		Call Shell( "cd " + path +" & del " + fn + "32_msw.exe" )
+		'Call Shell( "cd " + path +" & del " + fn + "32_msw.exe" )
 	Else
 		Print fn, "\t\t NG"
 	End If
