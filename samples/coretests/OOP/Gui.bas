@@ -1,6 +1,6 @@
 Option Explicit
 
-Using Shapes
+Using ShapesLib
 
 Dim f As wxFrame Ptr
 
@@ -85,6 +85,7 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 	 		
 	 		Dim n As String = "setWidthAndHeight"
 	 		CallByName( s, n, Call )(w,h)
+	 		
 	 		s.Draw
 	 		
 		Case 700 ' CallByName Call Function with params
@@ -95,7 +96,7 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 	 		
 	 		'return type, params type must same as function/sub
 	 		// return type,params type must same as function/Sub
-	 		/*
+	 		/* 
 	 			return type,params type must same as function/Sub
 	 		*/
 	 		Dim v As Double
