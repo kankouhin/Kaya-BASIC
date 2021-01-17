@@ -1,7 +1,7 @@
 
 Option Explicit
 
-Using DateTimes
+Using DateTimesLib
 
 Sub printDate( dt As DateTime )
         Print " Year:", dt.Year, " Month:", dt.Month, " Day:", dt.Day
