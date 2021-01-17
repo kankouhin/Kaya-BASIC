@@ -18,7 +18,7 @@ Sub compileBas(path as string, fn as string, options as string)
 			Call Shell( "cd " + path +" & del " + fn + "32_msw.exe" )
 		End If
 	Else
-		Print fn, "\t\t NG"
+		Print fn, "\t\t\t NG"
 	End If
 End Sub
 
