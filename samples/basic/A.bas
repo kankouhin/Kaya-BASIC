@@ -54,5 +54,6 @@ Sub Main
 	Call compilePath("..\\wxGUI\\bppgui", " -w " )
 	Call compilePath("..\\coretests\\comole", " -w -c " )
 	Call compilePath("..\\coretests\\OOP", " -w " )
+	Call compilePath( "..\\adv", " -pro " )
 	Call compilePath( ".", " -pro " )
 End Sub
