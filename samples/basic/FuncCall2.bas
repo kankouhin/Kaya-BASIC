@@ -1,6 +1,10 @@
 Option Explicit
 
-Function inarr(s As String, ByRef ar() As String ) As BOOLEAN
+Overloads Function in(s As String, ss As String ) As Boolean
+	Return s.Instr(ss) > 0
+End Function
+
+Overloads Function in(s As String, ByRef ar() As String ) As Boolean
 	For each ss As String in ar
 		If ss = s Then
 			Return TRUE 
@@ -10,7 +14,7 @@ Function inarr(s As String, ByRef ar() As String ) As BOOLEAN
 	Return FALSE
 End Function
 
-Function inlist(s As String, ByRef list As String Collection ) As BOOLEAN
+Overloads Function in(s As String, ByRef list As String Collection ) As Boolean
 	For each ss As String in list
 		If ss = s Then
 			Return TRUE 
@@ -20,7 +24,7 @@ Function inlist(s As String, ByRef list As String Collection ) As BOOLEAN
 	Return FALSE
 End Function
 
-Function indict(s As String, ByRef list As String Dictionary ) As BOOLEAN
+Overloads Function in(s As String, ByRef list As String Dictionary ) As Boolean
 	For each ,,ss As String in list
 		If ss = s Then
 			Return TRUE 
@@ -44,7 +48,7 @@ Sub Main
 	End If
 	
 	Dim s As String = "He"
-	If (s + "llo") InStr s + "llo KayaBASIC".Left(100) + Str(1000) + 65.Chr Then
+	If (s + "llo") In s + "llo KayaBASIC".Left(100) + Str(1000) + 65.Chr Then
 		Print "done instr"
 	Else
 		Print "Error instr"
@@ -59,21 +63,20 @@ Sub Main
 		list.add( "list" + Str(idx) )
 		dict( "dict" + Str(idx) ) = "dict" + Str(idx)
 	Next
-	
-	If  "array" + Str(1) InArr ar Then
+
+	If  "array" + Str(1) In ar Then
 		Print "done array"
 	Else
 		Print "Error InArr"
 	End If
 
-	
-	If  "list1" InList list Then
+	If  "list1" In list Then
 		Print "done list"
 	Else
 		Print "Error InList"
 	End If
 
-	If  "dict1" InDict dict Then
+	If  "dict1" In dict Then
 		Print "done dict"
 	Else
 		Print "Error InDict"
