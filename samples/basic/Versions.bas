@@ -1,12 +1,18 @@
 Option Explicit
 
 Sub Main
+        ' Only supports Not And Or
+        ' NOT support Version nest 
         Version Windows
                 Print "Windows"
         End Version
 
         Version macOS
                 Print "macOS"
+        End Version
+
+        Version Not macOS
+                Print "not macOS"
         End Version
 
         Version Linux
@@ -18,6 +24,6 @@ Sub Main
         End Version
 
         Version DEBUG
-                Print "this code only run if compiled with option -vDEBUG"
+                Print "this code can not run if compiled with option -r(Release mode)"
         End Version
 End Sub

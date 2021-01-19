@@ -599,17 +599,6 @@ wstringbuf
 streambuf
 wstreambuf
 
-
-<mutex>
-mutex
-recursive_mutex
-timed_mutex
-recursive_timed_mutex
-
-<thread>
-thread
-this_thread
-
 <iterator>
 advance
 distance
@@ -619,4 +608,25 @@ prev
 next
 
 
+[HEADER]
+<mutex>
+[METHODS]
+#ClassName.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+mutex.lock,0,0,0,void,					void lock();
+mutex.unlock,0,0,0,void,				void unlock();
+mutex.try_lock,0,0,0,bool,				bool try_lock();
+[INHERITS]
 
+
+[HEADER]
+<thread>
+[METHODS]
+#ClassName.MethodName, IsStatic[0/1], IsPtr[0/1], Parameters[0/count], Type[void/(long...)], Prototype
+thread.detach,0,0,0,void,				void detach();
+thread.get_id,0,0,0,id,					id get_id() const noexcept;
+thread.join,0,0,0,void,					void join();
+thread.joinable,0,0,0,bool,				bool joinable() const noexcept;
+this_thread.get_id,1,0,0,id,			thread::id get_id() noexcept;
+this_thread.yield,1,0,0,void			void yield() noexcept;
+this_thread.sleep_for,1,0,1,void		void sleep_for (const chrono::duration<Rep,Period>& rel_time);
+[INHERITS]
