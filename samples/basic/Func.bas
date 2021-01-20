@@ -104,7 +104,6 @@ Sub Main
 	Call testType( per )
 	Call testClass( cper )
 	
-	
 	Dim per2 As Person
 	Dim cper2 As CPerson
 		
@@ -122,14 +121,11 @@ Sub Main
 		Print s
 	Next
 
-	Dim table As String Dictionary = funcTable ' MUST dim a dictionary variable 
-	For Each k As String, v As String in table
+	For Each k As String, v As String in funcTable
 		Print "Key:", k, " Value:", v
 	Next
-	
 	
 	Dim ref As Integer ByRef = funcByRef
 	ref = 100
 	Print gi
-	
 End Sub

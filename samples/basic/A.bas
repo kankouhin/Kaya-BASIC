@@ -1,13 +1,34 @@
 Option Explicit
 
+Version Windows
+	Const BPP As String 		= "bpp"
+	Const NUL As String 		= "nul"
+	Const EXT As String		= "32_msw.exe"
+	Const DEL As String		= "del"
+End Version
+
+Version Linux
+	Const BPP As String 		= "bpp_lnx"
+	Const NUL As String	 	= "/dev/null"
+	Const EXT As String		= "64_lnx.exe"
+	Const DEL As String		= "rm"
+End Version
+
+Version macOS
+	Const BPP As String 		= "bpp_mac"
+	Const NUL As String 		= "/dev/null"
+	Const EXT As String		= "64_mac.exe"
+	Const DEL As String		= "rm"
+End Version
+
 Dim cmds As String
 
 Sub compileBas(path as string, fn as string, options as string)
 	If cmds <> "clean" Then
-		Call Shell( "cd " + path +" & bpp -r " + options + fn + " > nul" )
+		Call Shell( "cd " + path +" && " + BPP + " -r " + options + fn + " > " + NUL )
 	End If
 
-	If FileExists( path + "\\" + fn + "32_msw.exe" ) Then
+	If FileExists( path + "/" + fn + EXT ) Then
 		If fn.Len >= 8 Then
 			Print fn, "\t OK"
 		Else
@@ -15,7 +36,7 @@ Sub compileBas(path as string, fn as string, options as string)
 		End If
 
 		If cmds.Len > 0 Then
-			Call Shell( "cd " + path +" & del " + fn + "32_msw.exe" )
+			Call Shell( "cd " + path +" && " + DEL + " " + fn + EXT )
 		End If
 	Else
 		Print fn, "\t\t\t NG"
@@ -24,7 +45,7 @@ End Sub
 
 Sub compilePath(path as string, options as string)
 	If cmds <> "clean" Then
-		Call Shell( "cd " + path + " & del *.bpm" )
+		Call Shell( "cd " + path + " && " + DEL + " *.bpm" )
 	End If
 	
 	Dim ss As String =  Dir( path )
@@ -42,7 +63,7 @@ Sub compilePath(path as string, options as string)
 	CloseDir
 
 	If cmds.Len > 0 Then
-		Call Shell( "cd " + path +" & del *.bpm & del *.a & del *.cpp" )
+		Call Shell( "cd " + path +" && " + DEL + " *.bpm && " + DEL + " *.a && " + DEL + " *.cpp" )
 	End If
 End Sub
 
@@ -51,9 +72,19 @@ Sub Main
 		cmds = Command(1)
 	End If
 
-	Call compilePath("..\\wxGUI\\bppgui", " -w " )
-	Call compilePath("..\\coretests\\comole", " -w -c " )
-	Call compilePath("..\\coretests\\OOP", " -w " )
-	Call compilePath( "..\\adv", " -pro " )
-	Call compilePath( ".", " -pro " )
+	Version Windows
+		Call compilePath("..\\wxGUI\\bppgui", " -w " )
+		Call compilePath("..\\coretests\\comole", " -w -c " )
+		Call compilePath("..\\coretests\\OOP", " -w " )
+		Call compilePath( "..\\adv", " -pro " )
+		Call compilePath( ".", " -pro " )		
+	End Version
+
+	Version Not Windows
+		Call compilePath("../wxGUI/bppgui", " -w " )
+		Call compilePath("../coretests/OOP", " -w " )
+		Call compilePath( "../adv", " -pro " )
+		Call compilePath( ".", " -pro " )		
+	End Version	
+
 End Sub
