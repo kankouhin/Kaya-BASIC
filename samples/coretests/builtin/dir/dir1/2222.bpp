@@ -1,0 +1,58 @@
+SUB Main
+
+	DIM ss as string = " Hello world  "
+	print left(ss,5)
+	print right(ss,5)
+	print ltrim(ss)
+	print rtrim(ss)
+	
+	print str(val("2329.1232134"))
+	print padl(ss,20) + "aa"
+	print padr(ss,30) + "aa"
+	print mid(ss, 2,7)
+	
+	print str(Abs(-1100))
+	print str(Asc("A"))
+	
+	print str(Ceil(1.2323))
+	
+	print "dir"
+	ss =  Dir("*.*pp")
+	do while ss <> ""
+		print ss
+		ss = dir
+	loop
+	
+	print FileExists("buildin.bpp")
+	print Date
+	
+	print DirExists("C:\DataMigration\FreeBasic\bpp\samples\system\edd")
+	print Environ("MINGW")
+	
+	print Fix(12.67)
+	print FullDate
+	
+	print Hex(125)
+	
+	print IIf(1,"false","true")
+	print IIf(1,100,200)
+	
+	print InStr("abcdefg","e")
+	print InStrrev("abcdefg","e")
+	
+	Kill("Buildin3221.exe")
+	
+	print lcase("Hello World")
+	print Len("Hello World")
+	
+	'MkDir( "test" )
+	
+	print Reverse("Hello World")
+	
+	print RInStr("abcdefg","e")
+	
+	'Shell( "notepad.exe" )
+	
+	print Time
+	
+END SUB

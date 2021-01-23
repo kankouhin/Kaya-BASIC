@@ -1,4 +1,4 @@
-del *.bpm
 del *.a
-..\..\..\bin\bpp -w gui
+del *.bpm
+..\..\..\bin\bpp -w Gui
 pause

@@ -15,7 +15,7 @@ Sub CreateJSONArray(ByRef root As wxJSONValue, numItems As Integer  )
 		s.Printf( "item number %d", i )
 		root.Item(i).Item( "name" )  = s
 		root.Item(i).Item( "float" ) = i
-		root.Item(i).Item( "description" ) = wxS("this is a description of the item")
+		root.Item(i).Item( "description" ) = "this is a description of the item"
 	Next
 End Sub
 

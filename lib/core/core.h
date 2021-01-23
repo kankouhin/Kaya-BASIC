@@ -37,7 +37,6 @@
 using namespace std;
 
 
-#define BPP_FILEGETOBJECT(fn) ( (System::File*)System::FileGetObject(fn) )
 #define __BPPCALL
 
 #ifdef __BPPWIN__
@@ -45,7 +44,6 @@ using namespace std;
 #else
     #define __CALLBACK
 #endif // __BPPWIN__
-
 
 class Defer
 {
@@ -59,12 +57,15 @@ private:
 
 
 #define TypeName(v) typeid(v).name()
-#define bpp_ref shared_ptr
 
 
 namespace bpp
 {
-
+	namespace System {
+		void __BPPCALL FileOpen(string filename, ios_base::openmode mode, Integer fn);
+		void __BPPCALL FileClose(Integer fn);
+		fstream* __BPPCALL FileGetObject(Integer fn);
+	}
 class variant;
 
 void nullify(void*, int);

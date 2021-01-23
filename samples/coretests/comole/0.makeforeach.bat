@@ -1,2 +1,2 @@
-bpp -c -w foreach
+..\..\..\bin\bpp -c -w foreach
 pause

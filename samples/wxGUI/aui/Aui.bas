@@ -3,6 +3,8 @@ Option Explicit
 Dim f As wxFrame Ptr
 Dim mgr As wxAuiManager Ptr
 
+Option LD_FLAGS = " -lwxgtk31u_aui "
+
 Sub OnClose(ByRef ev As wxCloseEvent)
 	mgr.UnInit
 	wxDELETE(mgr)

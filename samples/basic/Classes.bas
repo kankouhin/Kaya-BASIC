@@ -83,6 +83,3 @@ Sub Main
     s.Draw
 
 End Sub
-
-
-

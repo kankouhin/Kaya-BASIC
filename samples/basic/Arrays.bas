@@ -12,7 +12,6 @@ Sub showArr(ar() As Integer)
 	Print s
 End Sub
 
-
 Sub Main
 	Dim s As String = "this subject has a submarine as a subsequence"
 	Dim ar() As String = s.Split(" ")
@@ -78,4 +77,5 @@ Sub Main
 	Call showArr( ar6 )
 	Print ar6(1,1), ",", ar6(1,2), ",", ar6(3,0), ",", ar6(3,2)
 	Call showArr( ar5 )
+	
 End Sub

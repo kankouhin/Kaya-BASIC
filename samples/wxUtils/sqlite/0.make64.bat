@@ -1,2 +1,2 @@
-bpp -w -m64 test
+..\..\..\bin\bpp -w -m64 test
 pause

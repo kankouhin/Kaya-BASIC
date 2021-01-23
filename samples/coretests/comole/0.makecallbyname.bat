@@ -1,2 +1,2 @@
-bpp -c -w callbyname
+..\..\..\bin\bpp -c -w callbyname
 pause

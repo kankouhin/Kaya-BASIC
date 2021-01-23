@@ -8,6 +8,12 @@ Sub Main
             Print age, " 0-18"
         Case 19 To 65
             Print age, " 19-65"
+
+            Select Case age
+                Case 10, 30, 40, 50
+                    Print age, " in (10, 30, 40, 50)"
+            End Select  
+                      
         Case 66 To 100
             Print age, " 66-100"
     End Select

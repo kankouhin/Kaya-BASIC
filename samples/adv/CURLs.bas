@@ -18,10 +18,10 @@ Dim buffer As String
 
 Function writer( data As char Ptr, size As size_t, nmemb As size_t, writerData As String Ptr ) As Integer
 	If writerData = NULL Then
-    	Return 0
+		Return 0
 	End If
-		
-	*writerData += data
+
+	#writerData->append(data, size*nmemb);
 
 	Return size * nmemb
 End Function

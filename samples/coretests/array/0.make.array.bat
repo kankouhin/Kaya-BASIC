@@ -1,3 +1,2 @@
-del *.bpm
-bpp Array
+..\..\..\bin\bpp -k Array
 pause

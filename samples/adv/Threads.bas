@@ -11,7 +11,7 @@ Sub print_block( n As Integer, c As String )
 	Next
 	
 	cout << "\n"
-	mtx.Unlock
+	mtx.Unlock()
 End Sub
 
 Sub Main

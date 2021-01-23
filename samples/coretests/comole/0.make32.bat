@@ -1,2 +1,2 @@
-bpp -c -w test
+..\..\..\bin\bpp -c -w -k -r test
 pause

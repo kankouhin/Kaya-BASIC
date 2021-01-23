@@ -31,6 +31,7 @@ Sub Main
 	Dim btnTest As New wxButton(p, 100, "Try Catch", wxPoint(100,20))
 	btnTest.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
     
+    f.SetIcon( wxIcon(sample_xpm) )
 	f.Show(TRUE)
 End Sub
 

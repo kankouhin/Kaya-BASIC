@@ -1,17 +1,17 @@
 Option Explicit
+' binary is default mode
 
 Sub Main
-
 	Dim ii As Integer
 	Open "filetest.txt" For Output As #1
 	
 	ii = 11
-	write #1, "write1", ii, "write2"
-	Print #1, "abcdefg"
-	Print #1, "hijklmn";
-	Print #1, "opqrstu"
+	Write #1, "Hello World", ii, "Hello KayaBASIC "
+	Print #1, "Line1"
+	Print #1, "Line2 part1";
+	Print #1, "Line2 part2"
 	Close #1
-	
+
 	Dim fn As Integer = FreeFile
 	Dim s1, s2 As String, ll As Integer
 	
@@ -34,8 +34,7 @@ Sub Main
 	
 	Close #fn
 	
-	Open "filetest.txt" For Append As #1
+	Open "filetest.txt" For Output Append As #1
 	Print #1, "append line"
 	Close #1
-	
 End Sub

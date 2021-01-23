@@ -76,8 +76,9 @@ Sub Main
 		Call compilePath("..\\wxGUI\\bppgui", " -w " )
 		Call compilePath("..\\coretests\\comole", " -w -c " )
 		Call compilePath("..\\coretests\\OOP", " -w " )
+		Call compilePath("..\\coretests\\fileio", " " )
 		Call compilePath( "..\\adv", " -pro " )
-		Call compilePath( ".", " -pro " )		
+		Call compilePath( ".", " -pro " )
 	End Version
 
 	Version Not Windows

@@ -4,10 +4,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "KayaBASIC Build",
+            "label": "KayaBASIC Build(DEBUG)",
             "type": "shell",
             "command": "bpp",
             "args": [
+                "-k",
+                "-g",
                 "-w",
                 "${fileBasenameNoExtension}"
             ],
@@ -16,6 +18,22 @@
                 "kind": "build",
                 "isDefault": true
             }
-        }
+        },
+        {
+            "label": "KayaBASIC Build(RELEASE)",
+            "type": "shell",
+            "command": "bpp",
+            "args": [
+                "-g",
+                "-r",
+                "-w",
+                "${fileBasenameNoExtension}"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }        
     ]
 }

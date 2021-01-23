@@ -1,3 +1,3 @@
 del *.bpm
-bpp -k -w -m64 gui
+..\..\..\bin\bpp -k -w -m64 gui
 pause

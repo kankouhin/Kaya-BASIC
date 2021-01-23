@@ -17,15 +17,15 @@ Sub LoadDataFromExcel
 	
 	For i As Integer = 1 To 4
 		Dim s As String = xls.Cells(1, i).Value
-		listctrl.InsertColumn( i - 1, s )
+		listctrl.InsertColumn( i - 1, s + "_HDR" )
 	Next
 	
 	For r As Integer = 2 To 5
 		Dim s As String = xls.Cells(r, 1).Value
-		listctrl.InsertItem( r - 2 , s )
+		listctrl.InsertItem( r - 2 , s + "_ITEM" )
 		For c As Integer = 2 To 4
 			s = xls.Cells(r, c).Value
-			listctrl.SetItem( r - 2, c - 1, s )
+			listctrl.SetItem( r - 2, c - 1, s + "_ITEM" )
 		Next
 	Next
 	
@@ -35,7 +35,7 @@ End Sub
 
 Sub Main
 	Dim strTitle As String = "listctrl"
-	f = New wxFrame( NULL, wxID_ANY, strTitle )
+	f = New wxFrame( Nothing, wxID_ANY, strTitle + " sample" )
 	listctrl = New wxListCtrl( f, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxLC_REPORT )
 	
 	Call LoadDataFromExcel

@@ -28,7 +28,7 @@ Sub Main
 	
 	Print "Ceil :", Str(Ceil(1.2323)), ";"
 	
-	showdir( "../../../samples")
+	showdir( "../")
 	
 	Print "FileExists :", FileExists("Buildin.bas")
 	Print "FileExists :", FileExists("Buildin.bpp")

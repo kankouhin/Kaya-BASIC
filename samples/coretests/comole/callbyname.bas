@@ -11,8 +11,7 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 	Xlb = xlapp.Workbooks.Add
 	Xls = Xlb.WorkSheets(1)
 	
-	Dim sName As String
-	sName = "Name"
+ 	Dim sName As String = "Name"
 
 	MsgBox CallByName(xls, "Name")
 	MsgBox CallByName(xls, sName)

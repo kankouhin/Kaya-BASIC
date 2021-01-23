@@ -54,7 +54,7 @@ Sub Main
 	
 	Const PI As Double = 3.1415926
 	For Dim i = 0 To 2*PI Step (2*PI)/12 ' support expressions
-		Print i
+		Print Cos(i), " ", Sin(i)
 	Next
 	
 	Dim st = (2*PI)/12

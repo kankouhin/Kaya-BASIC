@@ -1,2 +1,2 @@
-bpp -w -m64 gui
+..\..\..\bin\bpp -w -m64 gui
 pause

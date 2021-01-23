@@ -18,11 +18,19 @@ Sub Main
 	f = fopen ("stdios.txt","r")
 	
 	While Not feof(f)
-		Dim l[256] As Char = {0}
-		If fgets( l, 256, f ) <> NULL Then
-			puts ( l )	
+		Dim buf[256] As Char = {0}
+		If fgets( buf, 256, f ) <> NULL Then
+			puts ( buf )
+			
+			cout << buf[0] << buf[1] << endl
 		End If
 	Wend
+	
+	Dim buf[10][5][2] As char
+	buf[0][0][0] = 1
+	
+	Dim i As Integer = buf[0][0][0]
+	Dim v() As Integer Ptr
 	
 	fclose( f )
 End Sub

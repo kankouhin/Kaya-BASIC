@@ -28,57 +28,12 @@ Public Const Nothing As Integer = 0
 Public Const False 	As Integer	= 0
 Public Const True	As Integer	= 1
 
-Public Enum SeekOffset
-	soFromStart,
-	soFromBeginning = soFromStart,
-	soFromCurrent,
-	soFromEnd,
-End Enum
-
-Public Const fmOpenRead 		As String = "r"
-Public Const fmOpenReadWrite	As String = "rb+"
-Public Const fmCreateWrite		As String = "w"
-Public Const fmCreateReadWrite	As String = "wb+"
 
 Public Enum VariantType
 	vtNumber,
 	vtString
 End Enum
 
-
-Public CLASS GenericEvent EXTENDS Object
-	Public Sender As Object
-End CLASS
-
-Public CLASS Stream EXTENDS Object
-	Public Sub			Read(Var As ANY) GENERIC
-	Public Function		ReadBlock(Block As ANY, Size As Long) As Long
-	Public Function		ReadLine As String
-	Public Function		ReadObject As Object
-	Public Function		ReadString(Length As Long) As String
-	Public Function		Seek(Offset As Long, Base As SeekOffset = soFromStart) As Long
-	Public Sub			Write(Var As ANY) GENERIC
-	Public Function		WriteBlock(Block As ANY, Size As Long) As Long
-	Public Sub			WriteLine(Line As String)
-	Public Sub			WriteObject(Obj As Object)
-	Public Sub			WriteString(s As String)
-
-	Public Property		Eof As Boolean READONLY
-	Public Property		Position As Long
-	Public Property		Size As Long READONLY
-
-End CLASS
-
-Public CLASS File EXTENDS Stream
-	Public Sub		Close
-	Public Function	Open(FileName As String, Mode As String) As Boolean
-	Public Function	ReadBlock
-	Public Function	Seek
-	Public Function	WriteBlock
-	PROTECTED Sub	Initialize
-	PROTECTED Sub	Terminate
-	Private			CID As ANY
-End CLASS
 
 Public Command() As String
 

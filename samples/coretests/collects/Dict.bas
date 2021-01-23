@@ -20,7 +20,7 @@ Sub Main
 		Dim s As String
 		Line Input #1, s
 		
-		If Len(s) = 0 Then
+		If Len(Trim(s)) = 0 Then
 			Continue
 		End If
 		
@@ -33,7 +33,6 @@ Sub Main
 				w = w + c
 			Else
 				If Len(w) Then
-					Print w
 					Incr words(w)
 				End If
 				w = ""
@@ -41,11 +40,14 @@ Sub Main
 		Next
 		
 		If Len(w) Then
-			Print w
 			Incr words(w)
 		End If
 	Loop
 	Close #1
+	
+	
+	words("KayaBASIC") = 10
+	words("KayaBASIC")++
 	
 	Print "file statistics:"
 	Dim count As Integer, i As Integer = 0
@@ -62,8 +64,10 @@ Sub Main
 
 		If i Mod 20 = 0 Then
 			Print "--- press any key to continue ---"
-			Do: Loop Until InStat
+ 			Do : Loop Until InStat
 			InKey
 		End If
 	Next
+	
+	Print "Contains ", words.Contains("KayaBASIC")
 End Sub

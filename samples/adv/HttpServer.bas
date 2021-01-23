@@ -7,12 +7,14 @@ Option Explicit
 '    NOTE: because nothing(sub/function/const,etc...) defined like wxWidgets classes,
 '          you need write codes as same as c/c++: need () after sub name, and also Case-Sensitive.
 '
-Option CPP_FLAGS 	" -include windows.h -include httplib.h "
-Option LD_FLAGS 	" -lWs2_32 " ' link Ws2_32.lib for windows
+Version Windows
+	Option CPP_FLAGS 	" -include windows.h -include httplib.h "
+	Option LD_FLAGS 	" -lWs2_32 " ' link Ws2_32.lib for windows
+End Version
 
-' for macOS and Linux
-' delete LD_FLAGS and -include windows.h
-'   => only include httplib.h 
+Version Not Windows
+	Option CPP_FLAGS 	" -include httplib.h "
+End Version
 
 ' download link
 ' https://github.com/yhirose/cpp-httplib

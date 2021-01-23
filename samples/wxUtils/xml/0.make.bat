@@ -1,2 +1,2 @@
-..\..\..\bin\bpp -w gui
+..\..\..\bin\bpp -w -k gui
 pause

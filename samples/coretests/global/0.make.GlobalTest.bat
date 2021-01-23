@@ -1,4 +1,4 @@
 del *.bpm
 del *.a
-bpp GlobalTest
+..\..\..\bin\bpp -k GlobalTest
 pause

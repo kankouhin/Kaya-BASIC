@@ -1,2 +1,2 @@
-bpp buildin
+..\..\..\bin\bpp -k buildin
 pause

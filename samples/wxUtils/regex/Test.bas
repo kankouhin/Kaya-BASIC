@@ -5,10 +5,10 @@ Function getExpresion( texto As String, Exp As String ) As String
 	Dim result As String
 	Dim expresion As wxRegEx ( exp, wxRE_ADVANCED Or wxRE_ICASE )
 	
-	If  expresion.IsValid() Then      
+	If  expresion.IsValid() Then
 		If  expresion.Matches( texto ) Then	
 		    result = expresion.GetMatch( texto, 1 )
-		End If 
+		End If
 	End If 
 	
 	Return result

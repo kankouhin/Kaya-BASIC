@@ -6,7 +6,7 @@ Sub showList(list As Integer Collection)
 	For each it As Integer in list
 		s += it.Str + ", "
 	Next
-	
+
 	s = s >> 2
 	s += "}"
 	Print s

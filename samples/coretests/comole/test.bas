@@ -11,8 +11,8 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 	Xlb = xlapp.Workbooks.Add
 	Xls = Xlb.WorkSheets(1)
 
-	' test with
-	With Xls.Cells(1, 1)
+	
+	With Xls.Cells(1, 1) ' test with
 		.Value = "Name"
 		
 		With .Font
@@ -26,7 +26,7 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 		.Value = "Tets value 3"
 		
 		Dim v As String = "Test value 4"
-		.Value = v
+		.Value = v + " Hello "
 		MsgBox .Value
 	End With
 	

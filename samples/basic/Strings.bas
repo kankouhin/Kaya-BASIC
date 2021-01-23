@@ -31,6 +31,7 @@ Easy calls Windows COM like VB.
 	
 	Print "Hel".Instr(s)
 	Print "123wer".InstrAny(s)
+	Print "123wer".Instr(s)
 	
 	Print s.Mid(7)
 	Print s.Mid(8,4)

@@ -1,3 +1,3 @@
 del *.bpm
-bpp dict
+..\..\..\bin\bpp -k dict
 pause

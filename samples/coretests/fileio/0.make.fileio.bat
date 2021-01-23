@@ -1,2 +1,2 @@
-bpp fileio
+..\..\..\bin\bpp fileio
 pause
