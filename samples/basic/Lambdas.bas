@@ -33,7 +33,7 @@ Sub Main
 	
 	Set c.fn1 = test5
 	Set fn1 = test5
-	
+
 	fn1( 888 )
 	c.fn1( 666 )
 	Call test( fn1, 555 )

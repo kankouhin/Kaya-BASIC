@@ -61,5 +61,4 @@ Sub Main
 	For Dim i = 0 To 2*PI Step st 
 		Print i
 	Next
-	
 End Sub

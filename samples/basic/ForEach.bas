@@ -1,7 +1,6 @@
 Option Explicit
 
 Sub Main
-
 	'String
 	Dim eachs As String = "Hello KayaBASIC"
 	
@@ -11,7 +10,7 @@ Sub Main
 	
 	For Each idx As Integer, s As Char in eachs
 		Print idx , " : ", s
-	Next	
+	Next
 
 	'Array
 	Dim ar() As String
@@ -116,5 +115,4 @@ Sub Main
 	For Each ,, value in dict
 		Print value
 	Next
-	
 End Sub

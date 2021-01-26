@@ -15,7 +15,7 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "gdb.exe",
+            "miDebuggerPath": "C:/mingw-w64/i686-8.1.0-posix-sjlj-rt_v6-rev0/mingw32/bin/gdb.exe",
             "setupCommands": [
                 {
                     "description": "gdb",
