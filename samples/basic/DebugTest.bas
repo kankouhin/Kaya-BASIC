@@ -8,22 +8,52 @@ End Sub
 Sub Main
         Dim idx As Integer = 1
 
-        Do While idx < 10
+        Select Case idx
+                Case 2,3,4
+                        Print idx
+                Case Else
+
+                        If idx > 1 Then
+                                print idx
+                        Else
+                                print idx
+                        End If   
+        End Select
+
+        Do While idx < 5
                 ss += Str(idx)
                 idx++
         Loop
 
         Do
-                idx++
-                ss += Str(idx)
-        Loop While idx < 20
+                If idx < 10 Then
+                        For i As Integer = idx To idx
+                                ss += Str(idx)       
+                        Next
+                Else
+                        Exit Do
+                End If
+                idx++    
+        Loop
 
-        While idx < 30
+        Do
                 ss += Str(idx)
+                idx++
+        Loop While idx < 15
+
+        Do
+                ss += Str(idx)
+                idx++
+        Loop Until idx = 20  
+
+        While idx < 25
+                For i As Integer = idx To idx + 2
+                        ss += Str(idx)       
+                Next
                 idx++
         Wend
 
-        For idx = 30 To 40
+        For i As Integer = idx To idx + 5
                 ss += Str(idx)
         Next
 

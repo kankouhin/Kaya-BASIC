@@ -1,5 +1,0 @@
-Starup FBEdit and set the Kaya-BASIC compiler path to
-    Options menu -> Path Options -> Complier Path
-
-Notes:
-    Can only write codes and compile(F5), can NOT run and debug.
