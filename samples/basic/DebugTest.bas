@@ -1,18 +1,30 @@
+Option Explicit
+
+Using DebugLib
 
 Dim ss as String = "Hello KayaBASIC"
 
-Sub test
+Class TestClass
+        Public Sub Test
+End Class
+
+Sub TestClass.Test
+        Print "In Class Sub"
+End Sub
+
+Sub testFunc
         ss += "test"
 End Sub
 
 Sub Main
-        Dim idx As Integer = 1
+        Dim cls As New TestClass
+        cls.Test
 
+        Dim idx As Integer = 1
         Select Case idx
                 Case 2,3,4
                         Print idx
                 Case Else
-
                         If idx > 1 Then
                                 print idx
                         Else
@@ -33,7 +45,7 @@ Sub Main
                 Else
                         Exit Do
                 End If
-                idx++    
+                idx++
         Loop
 
         Do
@@ -57,7 +69,8 @@ Sub Main
                 ss += Str(idx)
         Next
 
-        Call test
+        Call testFunc
+        Call testFuncLib( ss )
 
         Dim s As String
         For Each s In ss
