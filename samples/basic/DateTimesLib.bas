@@ -9,7 +9,11 @@ Public Class DateTime
         Public Function Format(s As String) As String
 
         Public Function Operator += (days As Integer) As DateTime
-        Public Function Operator - (date As DateTime) As DateTime
+        Public Function Operator -= (days As Integer) As DateTime
+        Public Function Operator + (days As Integer) As DateTime
+
+        Public Overloads Function Operator - (date As DateTime) As DateTime
+        Public Overloads Function Operator - (days As Integer) As DateTime
 
         Public Property Year As Integer
         Public Property Month As Integer
@@ -20,8 +24,8 @@ Public Class DateTime
         Public Property Second As Integer
         Public Property Weekday As Integer ReadOnly
 
-        Public  timeStruct As tm
-
+        Public timeStruct As tm
+        
         Public Static dtSunday  As Integer = 0
         Public Static dtMonday  As Integer = 1
         Public Static dtTuesday As Integer = 2
@@ -91,6 +95,18 @@ Function DateTime.Operator +=
         Function = Me
 End Function
 
+Function DateTime.Operator -=
+        Me += -1 * days
+        Function = Me
+End Function
+
+Function DateTime.Operator +
+        Dim ret As New DateTime
+        ret.timeStruct = Me.timeStruct
+        ret += days
+        Function = ret
+End Function
+
 Function DateTime.Operator -
         Dim t1 As time_t = mktime( AddressOf timeStruct )
         Dim t2 As time_t = mktime( AddressOf date.timeStruct )
@@ -105,6 +121,13 @@ Function DateTime.Operator -
         ret.timeStruct.tm_year -= 1970
         ret.timeStruct.tm_mon -= 1
         ret.timeStruct.tm_mday -= 1
+        Function = ret
+End Function
+
+Function DateTime.Operator -
+        Dim ret As New DateTime
+        ret.timeStruct = Me.timeStruct
+        ret += -1 * days
         Function = ret
 End Function
 

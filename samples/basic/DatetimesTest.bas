@@ -17,6 +17,10 @@ Sub Main
         Dim i As Integer = 1
         dt += i
         printDate dt
+        printDate dt + 10 
+        printDate dt
+        printDate dt - 10
+        printDate dt
 
         dt.DateSerial( 2000, 2, 28 )
         printDate dt 
