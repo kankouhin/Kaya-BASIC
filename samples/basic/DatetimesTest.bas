@@ -19,10 +19,29 @@ Sub Main
         printDate dt
 
         dt.DateSerial( 2000, 2, 28 )
-        printDate dt  
+        printDate dt 
 
         dt += 1
-        printDate dt     
+        printDate dt
 
-        Print DateTime.kbMonday
+        Print dt.Format( "%Y-%m-%d" )
+
+        dt.DateValue("2021/02/28")
+        Print dt.Format( "%Y-%m-%d" ) 
+
+        dt.DateValue("2021/02/28 08:30")
+        Print dt.Format( "%Y-%m-%d %H:%M" ) 
+ 
+        dt.DateValue("2021/03/02 08:30:15")
+        Print dt.Format( "%Y-%m-%d %H:%M:%S" )
+        print dt.Weekday
+
+        dt.DateValue("2020/01/28 10:40")  
+        If dt.Weekday = DateTime.dtSunday Then
+                Print dt.Format( "%Y-%m-%d" ), " Is Sunday"
+        End If
+ 
+        Dim dt2 As DateTime = DateTime.Now
+        Dim dt3 As DateTime = dt2 - dt
+        Print "DateDiff:", dt3.Year, " ", dt3.Month, " ", dt3.Day, " ", dt3.Hour, " ", dt3.Minute, " ", dt3.Second
 End Sub
