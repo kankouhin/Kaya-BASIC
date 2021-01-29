@@ -1,7 +1,9 @@
 Option Explicit
 
+Using AnyCPP
+
 Version Windows
-	Option CPP_FLAGS 	" -include windows.h -include httplib.h "
+	Option CPP_FLAGS 	" -include winsock2.h -include windows.h -include httplib.h "
 	Option LD_FLAGS 	" -lWs2_32 " ' link Ws2_32.lib for windows
 End Version
 

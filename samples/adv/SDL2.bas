@@ -7,6 +7,9 @@ Option Explicit
 '    NOTE: because nothing(sub/function/const,etc...) defined like wxWidgets classes,
 '          you need write codes as same as c/c++: need () after sub name, and also Case-Sensitive.
 '
+Using StdCPP
+Using AnyCPP
+
 Option CPP_FLAGS 	" -include SDL2-2.0.12/i686-w64-mingw32/include/SDL2/SDL.h "
 Option LD_FLAGS		" -LC:/DataMigration/FreeBasic/KayaBASIC/include/SDL2-2.0.12/i686-w64-mingw32/Lib -lSDL2 -lwinmm -limm32 -lSetupapi "
 

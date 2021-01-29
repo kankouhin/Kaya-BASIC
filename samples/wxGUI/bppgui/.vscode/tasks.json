@@ -9,8 +9,6 @@
             "command": "bpp",
             "args": [
                 "-k",
-                "-g",
-                "-w",
                 "${fileBasenameNoExtension}"
             ],
             "problemMatcher": [],
@@ -18,22 +16,6 @@
                 "kind": "build",
                 "isDefault": true
             }
-        },
-        {
-            "label": "KayaBASIC Build(RELEASE)",
-            "type": "shell",
-            "command": "bpp",
-            "args": [
-                "-g",
-                "-r",
-                "-w",
-                "${fileBasenameNoExtension}"
-            ],
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        }        
+        }
     ]
 }

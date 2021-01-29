@@ -1,5 +1,6 @@
-'need compile with -pro option
 Option Explicit
+
+Using StdCPP
 
 Public Class DateTime
         Public Static Function Now As DateTime

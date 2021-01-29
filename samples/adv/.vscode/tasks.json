@@ -8,8 +8,6 @@
             "type": "shell",
             "command": "bpp",
             "args": [
-                "-pro",
-                "-k",
                 "${fileBasenameNoExtension}"
             ],
             "problemMatcher": [],

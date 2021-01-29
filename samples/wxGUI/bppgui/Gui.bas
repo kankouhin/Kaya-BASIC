@@ -1,4 +1,7 @@
 Option Explicit
+
+Using wxWidgets
+
 Dim f As wxFrame Ptr
 
 Dim txtSourcePath 	As wxTextCtrl Ptr

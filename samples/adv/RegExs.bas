@@ -1,6 +1,8 @@
 Option Explicit
 ' http://www.cplusplus.com/reference/regex/regex_search/
 
+Using StdCPP
+
 Sub Main
 	Dim s As String = "this subject has a submarine as a subsequence"
 	Dim m As SMatch

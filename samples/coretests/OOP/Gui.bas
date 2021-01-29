@@ -1,5 +1,6 @@
 Option Explicit
 
+Using wxWidgets
 Using ShapesLib
 
 Dim f As wxFrame Ptr

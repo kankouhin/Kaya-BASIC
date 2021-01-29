@@ -1,6 +1,8 @@
 Option Explicit
 ' http://www.cplusplus.com/reference/fstream/
 
+Using StdCPP
+
 Sub Main
 	' fstream
 	Dim ofs As OFStream

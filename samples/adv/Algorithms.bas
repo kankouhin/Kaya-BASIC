@@ -1,6 +1,8 @@
 Option Explicit
 ' http://www.cplusplus.com/reference/algorithm/
 
+Using StdCPP
+
 Sub showArr(ar() As Integer)
 	Dim s As String = "UBound:" + UBound(ar) + " {"
 	

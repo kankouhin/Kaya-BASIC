@@ -1,6 +1,8 @@
 Option Explicit
 ' http://www.cplusplus.com/reference/cmath/
 
+Using StdCPP
+
 Const PI As Double = 3.14159265
 
 Sub Main

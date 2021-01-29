@@ -1,6 +1,8 @@
 Option Explicit
 ' http://www.cplusplus.com/reference/climits/
 
+Using StdCPP
+
 Sub Main
 	Print CHAR_BIT
 	Print SCHAR_MIN

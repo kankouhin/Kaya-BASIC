@@ -516,5 +516,6 @@ inline CDispatchVariant conv(CDispatchVariant* ptr, string x)
 }
 
 
+typedef CDispatchVariant ComObject;
 
 } //namespace bpp

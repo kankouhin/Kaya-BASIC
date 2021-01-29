@@ -1,9 +1,11 @@
 Option Explicit
 ' http://www.cplusplus.com/reference/cstdio/
-' because FILE ,EOF and RENAME are defined in KayaBASIC, using the prefix c_[NAME]. 
+' because EOF and RENAME are defined in KayaBASIC, using the prefix c_[NAME]. 
+
+Using StdCPP
 
 Sub Main
-	Dim f As c_FILE Ptr
+	Dim f As FILE Ptr
 	
 	f = fopen ("myfile.txt","w")
 	If f <> NULL Then
@@ -25,12 +27,6 @@ Sub Main
 			cout << buf[0] << buf[1] << endl
 		End If
 	Wend
-	
-	Dim buf[10][5][2] As char
-	buf[0][0][0] = 1
-	
-	Dim i As Integer = buf[0][0][0]
-	Dim v() As Integer Ptr
 	
 	fclose( f )
 End Sub

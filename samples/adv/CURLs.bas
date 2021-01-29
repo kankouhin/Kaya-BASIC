@@ -10,6 +10,9 @@ Option Explicit
 Option CPP_FLAGS 	" -include curl/curl.h "
 Option LD_FLAGS		" -lcurl.dll " ' NOTE: the official static library for windows CAN NOT link.
 
+Using StdCPP
+Using AnyCPP
+
 ' download links(header files, libs, dlls)
 ' https://curl.haxx.se/windows/  [Windows 32 bit]
 

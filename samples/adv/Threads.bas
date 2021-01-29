@@ -1,6 +1,8 @@
 Option Explicit
 ' http://www.cplusplus.com/reference/mutex/mutex/
 
+Using StdCPP
+
 Dim mtx As Mutex
 
 Sub print_block( n As Integer, c As String )

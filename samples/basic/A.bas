@@ -1,4 +1,5 @@
 Option Explicit
+Option Release
 
 Version Windows
 	Const BPP As String 		= "bpp"
@@ -63,7 +64,7 @@ Sub compilePath(path as string, options as string)
 	CloseDir
 
 	If cmds.Len > 0 Then
-		Call Shell( "cd " + path +" && " + DEL + " *.bpm && " + DEL + " *.a && " + DEL + " *.cpp" )
+		Call Shell( "cd " + path +" && " + DEL + " *.bpm && " + DEL + " *.a && " + DEL + " *.cpp && " + DEL + " *.h" )
 	End If
 End Sub
 
@@ -73,12 +74,12 @@ Sub Main
 	End If
 
 	Version Windows
-		Call compilePath("..\\wxGUI\\bppgui", " -w " )
-		Call compilePath("..\\coretests\\comole", " -w -c " )
-		Call compilePath("..\\coretests\\OOP", " -w " )
+		Call compilePath("..\\wxGUI\\bppgui", " " )
+		Call compilePath("..\\coretests\\comole", " " )
+		Call compilePath("..\\coretests\\OOP", " " )
 		Call compilePath("..\\coretests\\fileio", " " )
-		Call compilePath( "..\\adv", " -pro " )
-		Call compilePath( ".", " -pro " )
+		Call compilePath( "..\\adv", " " )
+		Call compilePath( ".", " " )
 	End Version
 
 	Version Not Windows
