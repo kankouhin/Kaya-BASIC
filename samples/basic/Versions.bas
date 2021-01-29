@@ -3,7 +3,6 @@ Option Explicit
 Sub Main
         ' Only supports Not,And,Or
         ' NOT support Version nest
-        ' NOTE: Case-Sensitive
         Version Windows
                 Print "Windows"
         End Version
