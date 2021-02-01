@@ -1,5 +1,5 @@
-# Kaya-BASIC
-Multi-platform BASIC compiler, supports Windows, Linux and macOS.(Based on B++ complier)
+# KayaBASIC
+Multi-platform BASIC compiler, supports Windows, Linux and macOS.(Based on the B++ complier)
 
 # Discord server
  - https://discord.gg/UnhAc52
@@ -11,11 +11,14 @@ Multi-platform BASIC compiler, supports Windows, Linux and macOS.(Based on B++ c
  - Creates GUI(using wxWidgets), console or Shared Library/DLL applications.
  - Easy call Windows COM like VB/VBA.
  - Supports Lambda Expression.
+ - Supports Generic programming
+ - Supports Function/Sub overloads.
  - Supports Tuple, return multiple values from a function.
  - Supports Multi-Thread.
  - Supports RegEx Expression.
  - Supports C++ STL(Algorithms), fstream. stringstream, etc.
  - Supports C standard functions(math, stdio, etc).
+ - Supports Debug by VSCode + C/C++ extension.
 
  
 # Install(macOS.64bit, tested on 10.12 and 10.15)
