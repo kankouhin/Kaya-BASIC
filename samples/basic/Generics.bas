@@ -1,5 +1,8 @@
 Option Explicit
 
+Import GenericsLib
+Import Generics2Lib
+
 Class GenericClass<U>
         Public Sub normalSub
         Public Sub genericSub<T>(arg As T)
@@ -13,30 +16,6 @@ End Sub
 Sub GenericClass.genericSub
         Print "GenericClass.genericSub", arg, Me.Prop
 End Sub
-
-Function Max<T>(a As T, b As T) As T
-        If a < b Then
-                Function = b
-        Else
-                Function = a
-        End If
-End Function
-
-Function Min<T>(a As T, b As T) As T
-        If a < b Then
-                Function = a
-        Else
-                Function = b
-        End If
-End Function
-
-Function IIF<T>(condition as Boolean, a As T, b As T) As T
-        If condition Then
-                Function = a
-        Else
-                Function = b
-        End If
-End Function
 
 Sub Main
         Print Max(10,5)

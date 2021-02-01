@@ -1,5 +1,5 @@
 CPP_FLAGS		= -fPIC -std=c++14
-WX_CPP_FLAGS		= `wx-config --cppflags`
+WX_CPP_FLAGS	= `wx-config --cppflags`
 WX_LIBRARY 		= `wx-config --libs all`
 LIBRARY 		= -ldl
 
