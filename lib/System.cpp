@@ -1,4 +1,4 @@
-#include "../core/core.h"
+#include "core/core.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -351,7 +351,7 @@ string __BPPCALL InKey()
 #else
 	int ch = getchar();
 #endif
-	return string(ch,1);
+	return string(1,ch);
 }
 
 Long __BPPCALL InStr(variant vstart, string substr, string s)
