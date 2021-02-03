@@ -26,7 +26,7 @@ Dim cmds As String
 
 Sub compileBas(path as string, fn as string, options as string)
 	If cmds <> "clean" Then
-		Call Shell( "cd " + path +" && " + BPP + " -r " + options + fn + " > " + NUL )
+		Call Shell( "cd " + path +" && " + BPP + " " + options + fn + " > " + NUL )
 	End If
 
 	If FileExists( path + "/" + fn + EXT ) Then

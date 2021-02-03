@@ -1,5 +1,7 @@
 Option Explicit
 
+Option Preserve
+
 Using OverloadsLib
 
 Class OverloadClass
@@ -59,8 +61,8 @@ Sub Main
         Dim cls As New OverloadClass
         Dim clsLib As New OverloadClassLib
 
-        cls.overfunc(1,1)
         cls.overfunc
+        cls.overfunc(1,1)
         cls.overfunc(1)
         
         clsLib.overfunc(1,1)
