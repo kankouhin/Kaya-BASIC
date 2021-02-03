@@ -45,8 +45,8 @@ Multi-platform BASIC compiler, supports Windows, Linux and macOS.(Based on the B
  1. Download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
  2. Setup build environment.
      - $ sudo apt-get install libgtk-3-dev build-essential
+
  3. Compile and install wxWidgets[GUI development only]
-    - 
     - Compile wxWidgets
     
 	  - $ cd wxWidgets.3.1.x
