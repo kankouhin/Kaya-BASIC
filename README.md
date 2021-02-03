@@ -22,10 +22,10 @@ Multi-platform BASIC compiler, supports Windows, Linux and macOS.(Based on the B
 
  
 # Install(macOS.64bit, tested on 10.12 and 10.15)
- 1. download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
- 2. compile and install wxWidgets on macOS
-    - Setup build environment.
-         - $ xcode-select --install
+ 1. Download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
+ 2. Setup build environment.
+    - $ xcode-select --install
+ 3. Compile and install wxWidgets[GUI development only]
     - Compile wxWidgets
     
 	  - $ cd wxWidgets.3.1.x
@@ -37,15 +37,16 @@ Multi-platform BASIC compiler, supports Windows, Linux and macOS.(Based on the B
     - Install wxWidgets
          - $ sudo make install
 	 
-  3. chmod 777 [Kaya-BASIC]/bin/bpp_mac
+  4. chmod 777 [Kaya-BASIC]/bin/bpp_mac
   
-  4. try to build samples
+  5. try to build samples
  
 # Install(Ubuntu.64bit)
- 1. download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
- 2. compile and install wxWidgets on Ubuntu
-    - Setup build environment.
-         - $ sudo apt-get install libgtk-3-dev build-essential
+ 1. Download lastest wxWidgets source code (https://www.wxwidgets.org/downloads/  Source for Linux, macOS, etc )
+ 2. Setup build environment.
+     - $ sudo apt-get install libgtk-3-dev build-essential
+ 3. Compile and install wxWidgets[GUI development only]
+    - 
     - Compile wxWidgets
     
 	  - $ cd wxWidgets.3.1.x
@@ -56,21 +57,21 @@ Multi-platform BASIC compiler, supports Windows, Linux and macOS.(Based on the B
     - Install wxWidgets
          - $ sudo make install
 	 
-  3. chmod 777 [Kaya-BASIC]/bin/bpp_lnx
+  4. chmod 777 [Kaya-BASIC]/bin/bpp_lnx
   
-  4. try to build samples
+  5. try to build samples
 
 # Install(Windows)
- 1. download mingw-w64 8.1.0
+ 1. Download mingw-w64 8.1.0
     - 32bit: i686-8.1.0-posix-sjlj-rt_v6-rev0  (must sjlj, because wxWidgets development files complied by this.)
     - 64bit: x86_64-8.1.0-posix-seh-rt_v6-rev0 
- 2. download lastest wxWidgets(https://www.wxwidgets.org/downloads/  windows binaries ) Mingw-w64 8.1
+ 2. Download lastest wxWidgets(https://www.wxwidgets.org/downloads/  windows binaries ) Mingw-w64 8.1
      -  Header Files
      - 32-Bit (x86)
          - Development Files
      - 64-Bit (x86_64)
          - Development Files
-  3. modify the config[XX] file under Bin folder
+  3. Modify the config[XX] file under Bin folder
      - change the MINGW path and wxWidgets Include and Lib paths.
         - config[XX]_static. ★static link wxWidgets libs.
   4. Add belowing paths to PATH environment.
