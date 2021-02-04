@@ -25,8 +25,8 @@ Public Declare BUILTIN CLASS Object
 
 
 Public Const Nothing As Integer = 0
-Public Const False 	As Integer	= 0
-Public Const True	As Integer	= 1
+Public Const False 	As Boolean	= 0
+Public Const True	As Boolean	= 1
 
 
 Public Enum VariantType
