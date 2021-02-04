@@ -27,7 +27,7 @@ Sub Main
         Print Min(10,5)
         Print Min(10.0,5.3)
 
-        Print IIF(true, 1, 2), " ", IIF(false, 1, 2)
+        Print Iif(true, 1, 2), " ", Iif(false, 1, 2)
 
         Dim gc as new GenericClass<Integer>
         gc.Prop = 10
@@ -38,4 +38,5 @@ Sub Main
         gc.Prop = 20
 
         Print Min( gc, gc2 ) As GenericClass.Prop
+        Print Min( gc, gc2 ).Prop
 End Sub
