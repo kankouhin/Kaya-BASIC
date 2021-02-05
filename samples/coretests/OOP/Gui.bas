@@ -10,106 +10,98 @@ Sub OnButtonClick(ByRef ev As wxCommandEvent)
 
 	Select Case id
 		Case 100 'ClassForName
-	 		Dim s As Shape
-	 		
-	 		s = CreateObject("Shapes.Rect")
-	 		s.Height 	= 300.0
-	 		s.Width 	= 400.0
-	 		Call s.Draw
-	 		Msgbox s.Area
-	 		
-	 		s = CreateObject("Shapes.Triangle")
-	 		s.Height 	= 300.0
-	 		s.Width 	= 400.0
-	 		Call s.Draw
-	 		Msgbox s.Area 		
- 		
+			Dim s As Shape
+
+			s = CreateObject("ShapesLib.Rect")
+			s.Height 	= 300.0
+			s.Width 	= 400.0
+			Call s.Draw
+			Msgbox s.Area
+
+			s = CreateObject("ShapesLib.Triangle")
+			s.Height 	= 300.0
+			s.Width 	= 400.0
+			Call s.Draw
+			Msgbox s.Area 		
+
 		Case 200 'CallByName Get
-			
-	 		Dim s As Shape
-	 		
-	 		s = CreateObject("Shapes.Rect")
-	 		s.Height 	= 300.0
-	 		s.Width 	= 400.0
-	 		
-	 		Dim v As Single
-	 		Dim n As String = "Height"
-	 		CallByName( s, n, Get, v )
-	 		Msgbox v
-	 		
+
+			Dim s As Shape
+
+			s = CreateObject("ShapesLib.Rect")
+			s.Height 	= 300.0
+			s.Width 	= 400.0
+
+			Dim v As Single
+			Dim n As String = "Height"
+			CallByName( s, n, Get, v )
+			Msgbox v
+
 		Case 300 'CallByName Set
 
-	 		Dim s As Shape
-	 		
-	 		s = CreateObject("Shapes.Rect")
-	 		s.Width 	= 400.0
-	 		
-	 		Dim v As Single = 100
-	 		Dim n As String = "Height"
-	 		CallByName( s, n, Set, v )
-	 		s.Draw
-	 		
+			Dim s As Shape
+
+			s = CreateObject("ShapesLib.Rect")
+			s.Width 	= 400.0
+
+			Dim v As Single = 100
+			Dim n As String = "Height"
+			CallByName( s, n, Set, v )
+			s.Draw
+
 		Case 400 ' CallByName Call Sub
-			
-	 		Dim s As Shape
-	 		
-	 		s = CreateObject("Shapes.Rect")
-	 		s.Height 	= 200.0
-	 		s.Width 	= 800.0
-	 		
-	 		Dim n As String = "Draw"
-	 		CallByName( s, n, Call )
-	 		
+
+			Dim s As Shape
+
+			s = CreateObject("ShapesLib.Rect")
+			s.Height 	= 200.0
+			s.Width 	= 800.0
+
+			Dim n As String = "Draw"
+			CallByName( s, n, Call )
+
 		Case 500 'CallByName Call Function
-		
-	 		Dim s As Shape
-	 		
-	 		s = CreateObject("Shapes.Triangle")
-	 		s.Height 	= 200.0
-	 		s.Width 	= 600.0
-	 		
-	 		Dim v As Double
-	 		Dim n As String = "Area"
-	 		CallByName( s, n, Call, v)
-	 		
-	 		MsgBox v
-	 			
+
+			Dim s As Shape
+
+			s = CreateObject("ShapesLib.Triangle")
+			s.Height 	= 200.0
+			s.Width 	= 600.0
+
+			Dim v As Double
+			Dim n As String = "Area"
+			CallByName( s, n, Call, v)
+
+			MsgBox v
+
 		Case 600 ' CallByName Call Sub with params
-			
-	 		Dim s As Shape
-	 		
-	 		s = CreateObject("Shapes.Rect")
-	 		
-	 		'params type must same as sub declare
-	 		Dim w As Single = 3
-	 		Dim h As Single = 4
-	 		
-	 		Dim n As String = "setWidthAndHeight"
-	 		CallByName( s, n, Call )(w,h)
-	 		
-	 		s.Draw
-	 		
+
+			Dim s As Shape
+
+			s = CreateObject("ShapesLib.Rect")
+
+			Dim w As Single = 3
+			Dim h As Single = 4
+
+			Dim n As String = "setWidthAndHeight"
+			CallByName( s, n, Call )(w,h)
+
+			s.Draw
+
 		Case 700 ' CallByName Call Function with params
-			
-	 		Dim s As Shape
-	 		
-	 		s = CreateObject("Shapes.Rect")
-	 		
-	 		'return type, params type must same as function/sub
-	 		// return type,params type must same as function/Sub
-	 		/* 
-	 			return type,params type must same as function/Sub
-	 		*/
-	 		Dim v As Double
-	 		Dim w As Single = 30
-	 		Dim h As Single = 40
-	 		
-	 		Dim n As String = "getArea"
-	 		CallByName( s, n, Call, v )(w,h)
-	 		Msgbox v 		
-	 			 				
+
+			Dim s As Shape
+
+			s = CreateObject("ShapesLib.Rect")
+
+			Dim v As Double
+			Dim w As Single = 30
+			Dim h As Single = 40
+
+			Dim n As String = "getArea"
+			CallByName( s, n, Call, v )(w,h)
+			Msgbox v 					
 	End Select
-	
 End Sub
 
 Sub Main
@@ -123,13 +115,13 @@ Sub Main
 
 	Dim btn2 As New wxButton(p, 200, "CallByName Get", wxPoint(100,60))
 	btn2.Bind( wxEVT_BUTTON, Addressof OnButtonClick )
-	
+
 	Dim btn3 As New wxButton(p, 300, "CallByName Set", wxPoint(100,100))
 	btn3.Bind( wxEVT_BUTTON, Addressof OnButtonClick )	
-	
+
 	Dim btn4 As New wxButton(p, 400, "CallByName Call Sub", wxPoint(100,140))
 	btn4.Bind( wxEVT_BUTTON, Addressof OnButtonClick )	
-	
+
 	Dim btn5 As New wxButton(p, 500, "CallByName Call Function", wxPoint(100,180))
 	btn5.Bind( wxEVT_BUTTON, Addressof OnButtonClick )		
 
