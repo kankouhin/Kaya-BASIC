@@ -1,6 +1,6 @@
 Option Explicit
 
-Using System.Console
+Using System.Console '--> System/Console.bas
 
 Sub Main
         Dim s as string = "Hello KayaBASIC"
