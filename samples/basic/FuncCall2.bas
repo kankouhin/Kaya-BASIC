@@ -36,7 +36,6 @@ End Function
 
 Sub Main
 	' Call Function As A Keyword
-	
 	If Like( "abbbbc", "ab*c" ) Then
 		Print "done like1"
 	End If
