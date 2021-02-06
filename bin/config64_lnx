@@ -1,5 +1,5 @@
 CPP_FLAGS		= -fPIC
 WX_CPP_FLAGS		= `wx-config --cppflags`
-WX_LIBRARY 		= -lwxsqlite3_lnx31u64 -lwxJson_lnx31u64 `wx-config --libs all`
+WX_LIBRARY 		= `wx-config --libs all`
 LIBRARY 		= -ldl -pthread
 
