@@ -52,6 +52,24 @@ public:
 		ppDisp->Release();
 	}
 	
+	void GetObject(LPCOLESTR szProgId)
+	{
+		IDispatch *ppDisp;
+		CLSID clsid;
+		IUnknown * pUnk = NULL;
+
+		HRESULT hr = CLSIDFromProgID(szProgId, &clsid);
+		_com_util::CheckError(hr);
+		hr = ::GetActiveObject(clsid, NULL, &pUnk);
+		_com_util::CheckError(hr);
+
+		hr = pUnk->QueryInterface(IID_IDispatch, (LPVOID*)&ppDisp);
+		_com_util::CheckError(hr);
+
+		*this = ppDisp;
+		ppDisp->Release();
+	}
+	
 public:
 	template <class DispatchItem>
 	CDispatchVariant Get(DispatchItem property);
