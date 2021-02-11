@@ -34,7 +34,7 @@ Sub Main
         Dim label2 As QLabel Ptr = new QLabel("KayaBASIC")
 
         Dim button As QPushButton Ptr = new QPushButton("Get Excel Sheet name")
-        QObject.connect(button,  AddressOf QPushButton::clicked, AddressOf Button_OnClick )
+        QObject.connect(button,  AddressOf QPushButton.clicked, AddressOf Button_OnClick )
         
         Layout.addWidget(label1)
         Layout.addWidget(label2)
