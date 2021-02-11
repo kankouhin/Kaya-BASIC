@@ -70,11 +70,11 @@ int main(int argc, char* argv[])
 		abort_with_error("");
 	}
 	
+	auto ret = app.exec();
 	
-
 	#ifdef __BPPWIN__
 		CoUninitialize();
 	#endif
 	
-	return app.exec();
+	return ret;
 }

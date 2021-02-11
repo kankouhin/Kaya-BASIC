@@ -1,5 +1,7 @@
 Option Explicit
 
+Using wxWidgets
+
 Dim f As wxFrame Ptr
 Dim m_treeCtrl As wxTreeCtrl Ptr
 
