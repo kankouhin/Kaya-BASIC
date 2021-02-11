@@ -24,8 +24,6 @@
 //-----------------------------------------------------------------------------
 
 #include "comutil.h"
-#include "core.h"
-
 
 class CDispatchVariant : public _variant_t
 {

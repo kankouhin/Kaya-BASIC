@@ -4,15 +4,15 @@
 #include <string.h>
 #include <math.h>
 
-#ifdef __BPPWIN__
-#include <windows.h>
-#else
-#include <dlfcn.h>
-#endif
-
 #include <iostream>
 #include <vector>
 #include <map>
+
+#ifdef __BPPWIN__
+	#include <windows.h>
+#else
+	#include <dlfcn.h>
+#endif
 
 namespace bpp
 {

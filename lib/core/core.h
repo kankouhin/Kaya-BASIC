@@ -34,8 +34,16 @@
 
 #include <functional>
 
-using namespace std;
-
+using std::string;
+using std::function;
+using std::vector;
+using std::list;
+using std::unordered_map;
+using std::ios_base;
+using std::ios;
+using std::fstream;
+using std::initializer_list;
+using std::swap;
 
 #define __BPPCALL
 
@@ -60,7 +68,7 @@ private:
 
 
 namespace bpp
-{
+{		
 	namespace System {
 		void __BPPCALL FileOpen(string filename, ios_base::openmode mode, Integer fn);
 		void __BPPCALL FileClose(Integer fn);
@@ -953,12 +961,6 @@ string operator+ (T n, const string& s)
 }
 // Strings
 //===================================================================================================
-
-
-template <class T>
-inline void swap(T& a, T& b) { T c = a; a = b; b = c; }
-
-
 
 template<class T, class U>
 inline ref<T> conv(ref<T>* ptr, const ref<U>& x)
