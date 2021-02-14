@@ -7,11 +7,11 @@ Sub Main
                 Print "Windows"
         End Version
 
-	Version Windows And x64
+	Version Windows And 64Bit
                 Print "Windows.64bit"
         End Version
 
-	Version Windows And x32
+	Version Windows And 32Bit
                 Print "Windows.32bit"
         End Version
         
