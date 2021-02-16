@@ -33,6 +33,7 @@
 #include <chrono>
 
 #include <functional>
+#include <memory>
 
 using std::string;
 using std::function;

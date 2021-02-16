@@ -24,12 +24,12 @@
 //-----------------------------------------------------------------------------
 
 #include "comutil.h"
+#include "comsink.h"
 
 class CDispatchVariant : public _variant_t
 {
 public:
 	using _variant_t::_variant_t;
-	
 	CDispatchVariant(string strSrc) : _variant_t( strSrc.c_str() ) { }
 
 	void CreateObject(LPCOLESTR szProgId)
