@@ -21,10 +21,17 @@ const Worksheet_Change As Long = &H609
 const IID_WorkbookEvents As IID = {&H00024412, &H0000, &H0000, {&HC0, &H00, &H00, &H00, &H00, &H00, &H00, &H46}}
 const Workbook_SheetChange As Long = &H61C
 const Workbook_SheetSelectionChange As Long = &H616
+const Workbook_BeforeClose As Long = &H60A
 
 Dim f As wxFrame Ptr
 Dim app As ComObject
 Dim WithEvents wb, ws As ComObject
+
+Sub wb.Workbook_BeforeClose(Byref Cancel As Boolean)
+	If MsgBox("Do not close workbook?", wxYES_NO Or wxICON_INFORMATION) = wxYES Then
+		Cancel = True
+	End If
+End Sub
 
 Sub wb.Workbook_SheetSelectionChange(Sh As ComObject, Target As ComObject)
 	Dim s As String = Sh.Name
