@@ -4,7 +4,6 @@
 class CEventSink : public IDispatch
 {
 public:
-	STDMETHODIMP QueryInterface(REFIID riid, void **ppvObject);
 	STDMETHODIMP_(ULONG) AddRef();
 	STDMETHODIMP_(ULONG) Release();
 
@@ -34,19 +33,6 @@ private:
 CEventSink::CEventSink()
 {
 	m_cRef = 1;
-}
-
-STDMETHODIMP CEventSink::QueryInterface(REFIID riid, void **ppvObject)
-{
-	*ppvObject = NULL;
-	if (IsEqualIID(riid, IID_IUnknown) || IsEqualIID(riid, IID_IDispatch)) //|| IsEqualIID(riid, IID_IWorksheetEvents))
-		*ppvObject = static_cast<IDispatch *>(this);
-	else
-		return E_NOINTERFACE;
-
-	AddRef();
-
-	return S_OK;
 }
 
 STDMETHODIMP_(ULONG)
@@ -100,17 +86,28 @@ STDMETHODIMP CEventSink::GetIDsOfNames(REFIID riid, LPOLESTR *rgszNames, UINT cN
 #define DECLARE_COM_WITH_EVENTS(comobject) \
 	std::shared_ptr<CEventSink> comobject##ComEventHandler;
 
-#define DECLARE_COM_EVENT_SINK(comobject)                                                                                                                                          \
+#define DECLARE_COM_EVENT_SINK(comobject, IID_Events)                                                                                                                              \
 	class comobject##CComEventSink : public CEventSink                                                                                                                         \
 	{                                                                                                                                                                          \
 	public:                                                                                                                                                                    \
+		STDMETHODIMP QueryInterface(REFIID riid, void **ppvObject)                                                                                                         \
+		{                                                                                                                                                                  \
+			*ppvObject = NULL;                                                                                                                                         \
+			if (IsEqualIID(riid, IID_IUnknown) || IsEqualIID(riid, IID_IDispatch) || IsEqualIID(riid, IID_Events )) 					           \
+					*ppvObject = static_cast<IDispatch *>(this);                                                                                               \
+			else                                                                                                                                                       \
+				return E_NOINTERFACE;                                                                                                                              \
+                                                                                                                                                                                   \
+			AddRef();                                                                                                                                                  \
+                                                                                                                                                                                   \
+			return S_OK;                                                                                                                                               \
+		}                                                                                                                                                                  \
 		STDMETHODIMP Invoke(DISPID dispIdMember, REFIID riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pVarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr) \
 		{
 
-#define DECLARE_COM_EVENT_SINK_END \
-	return S_OK;               \
-	}                          \
-	}                          \
-	;
+#define DECLARE_COM_EVENT_SINK_END 	\
+			return S_OK;    \
+		}			\
+	};
 
 #endif
