@@ -44,8 +44,8 @@ class _bstr_t;
 class _variant_t;
 
 namespace _com_util {
-  inline void CheckError(HRESULT hr) throw() {
-    if(FAILED(hr)) { MessageBoxW(NULL, L"COM Error occured.", L"Error!",MB_ICONEXCLAMATION|MB_OK); }
+  inline void CheckError(HRESULT hr) {
+    if(FAILED(hr)) { throw std::string("COM Error occured."); }
   }
 }
 

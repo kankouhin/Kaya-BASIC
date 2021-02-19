@@ -38,13 +38,15 @@ public:
 		CLSID clsid;
 	
 		HRESULT hr = CLSIDFromProgID(szProgId, &clsid);
-		_com_util::CheckError(hr);
+		if(FAILED(hr))
+		 	throw string("CLSIDFromProgID Error occured.");
 		
 		hr = CoCreateInstance(
 		    		clsid, NULL,
 		    		CLSCTX_LOCAL_SERVER|CLSCTX_INPROC_SERVER,
 		    		IID_IDispatch, (LPVOID*)&ppDisp);
-		_com_util::CheckError(hr);
+		if(FAILED(hr))
+		 	throw string("CoCreateInstance Error occured.");
 		
 		*this = ppDisp;
 		ppDisp->Release();
@@ -57,12 +59,16 @@ public:
 		IUnknown * pUnk = NULL;
 
 		HRESULT hr = CLSIDFromProgID(szProgId, &clsid);
-		_com_util::CheckError(hr);
+		if(FAILED(hr))
+		 	throw string("CLSIDFromProgID Error occured.");
+			
 		hr = ::GetActiveObject(clsid, NULL, &pUnk);
-		_com_util::CheckError(hr);
+		if(FAILED(hr))
+		 	throw string("GetActiveObject Error occured.");
 
 		hr = pUnk->QueryInterface(IID_IDispatch, (LPVOID*)&ppDisp);
-		_com_util::CheckError(hr);
+		if(FAILED(hr))
+		 	throw string("QueryInterface Error occured.");
 
 		*this = ppDisp;
 		ppDisp->Release();
@@ -224,11 +230,13 @@ protected:
 		DISPID dispid;
 		HRESULT hr = disp->GetIDsOfNames(IID_NULL, const_cast<LPOLESTR*>(&dispatchItem), 1,
 			LOCALE_SYSTEM_DEFAULT, &dispid);
-		_com_util::CheckError(hr);
+		if(FAILED(hr))
+		 	throw string("GetIDsOfNames Error occured.");
 		
 		// call the DISPID overload of InvokeHelper()
 		hr = InvokeHelper(dispid, params, cParams, invokeType, result);
-		_com_util::CheckError(hr);
+		if(FAILED(hr))
+		 	throw string("InvokeHelper Error occured.");
 	}
 
 	// dispatchItem is an Ansi LPSTR  -- convert it to an LPOLESTR
@@ -254,7 +262,7 @@ protected:
 
 			wideName = new OLECHAR[cch]; // cch may be just a bit bigger than necessary
 			if (wideName == NULL)
-				_com_util::CheckError(0);
+				throw string("MultiByteToWideChar Error occured.");
 		}
 
 		wideName[0] = '\0';
