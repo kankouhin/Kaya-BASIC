@@ -8,12 +8,14 @@
 #endif
 
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QMessageBox>
 
 using namespace bpp;
 
 extern "C" void abort_with_error(const string& s)
 {
-	std::cout << "Error: " << s << std::endl;
+	string err = "Error: " + s + "\r\n";
+
 	while (true)
 	{
 		static bool first = true;
@@ -23,15 +25,23 @@ extern "C" void abort_with_error(const string& s)
 			break;
 		if (first)
 		{
-			std::cout << "    raised";
+			err = err + "    raised";
 			first = false;
 		}
 		else
-			std::cout << string(",\r\n    called");
-		std::cout << string(" by ") << func << string("() at line #") << line;
+			err = err + ",\r\n    called";
+
+        char buf[20] = {0};
+        sprintf(buf, "%d", line);
+		err = err + " by " + func + "() at line #" + buf;
 	}
+	err = err + "\r\n";
+
+	QMessageBox msgbox;
+	msgbox.setText(QString::fromStdString(err));
+	msgbox.setIcon(QMessageBox::Critical);
+	msgbox.exec();
 	
-	std::cout << string("\r\n");	
 	exit(0);
 }
 
