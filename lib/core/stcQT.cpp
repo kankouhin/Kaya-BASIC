@@ -7,7 +7,7 @@
 	#include <windows.h>
 #endif
 
-#include <QtWidgets/QApplication>
+#include <QtCore/QCoreApplication>
 
 using namespace bpp;
 
@@ -35,10 +35,8 @@ extern "C" void abort_with_error(const string& s)
 	exit(0);
 }
 
-namespace bpp {
-	namespace System {
-		extern bpp::array<string> Command;
-	}
+namespace bpp::System {
+	extern bpp::array<string> Command;
 }
 
 int main(int argc, char* argv[])
@@ -48,7 +46,7 @@ int main(int argc, char* argv[])
 	#endif
 	
 	//setlocale(LC_ALL, "");
-	QApplication app(argc, argv);
+	QCoreApplication app(argc, argv);
 	
 	bpp::System::Command.redim(0, argc -1 );
 	for ( int i = 0; i < argc; i++ ) {
@@ -61,7 +59,7 @@ int main(int argc, char* argv[])
 		Main();
 		__final_all();
 	}
-	catch (const string& s)
+	catch (string s)
 	{
 		abort_with_error(s);
 	}
@@ -70,11 +68,9 @@ int main(int argc, char* argv[])
 		abort_with_error("");
 	}
 	
-	auto ret = app.exec();
-	
 	#ifdef __BPPWIN__
 		CoUninitialize();
 	#endif
 	
-	return ret;
+	return 0;
 }

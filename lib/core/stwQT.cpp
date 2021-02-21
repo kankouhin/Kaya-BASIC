@@ -1,24 +1,19 @@
-
 #include "core.h"
 #include <stdlib.h>
 #include <locale.h>
-#include <stdio.h>
+#include <iostream>
 
 #ifdef __BPPWIN__
 	#include <windows.h>
 #endif
 
-#include <wx/wxprec.h>
-#ifndef WX_PRECOMP
-    #include <wx/wx.h>
-#endif
+#include <QtWidgets/QApplication>
 
 using namespace bpp;
 
 extern "C" void abort_with_error(const string& s)
 {
-	string err = "Error: " + s + "\r\n";
-
+	std::cout << "Error: " << s << std::endl;
 	while (true)
 	{
 		static bool first = true;
@@ -28,47 +23,34 @@ extern "C" void abort_with_error(const string& s)
 			break;
 		if (first)
 		{
-			err = err + "    raised";
+			std::cout << "    raised";
 			first = false;
 		}
 		else
-			err = err + ",\r\n    called";
-
-        char buf[20] = {0};
-        sprintf(buf, "%d", line);
-		err = err + " by " + func + "() at line #" + buf;
+			std::cout << string(",\r\n    called");
+		std::cout << string(" by ") << func << string("() at line #") << line;
 	}
-	err = err + "\r\n";
-
-	wxMessageBox( err );
+	
+	std::cout << string("\r\n");	
 	exit(0);
 }
 
-class BApp : public wxApp
-{
-public:
-    virtual bool OnInit();
-};
-
-wxIMPLEMENT_APP(BApp);
-
-
 namespace bpp::System {
-	extern bpp::array<string>  Command;
+	extern bpp::array<string> Command;
 }
 
-bool BApp::OnInit()
+int main(int argc, char* argv[])
 {
 	#ifdef __BPPWIN__
 		CoInitialize(NULL);
 	#endif
-
-	wxInitAllImageHandlers();
-	SetExitOnFrameDelete( TRUE );
-
-	bpp::System::Command.redim(0, argc - 1);
+	
+	//setlocale(LC_ALL, "");
+	QApplication app(argc, argv);
+	
+	bpp::System::Command.redim(0, argc -1 );
 	for ( int i = 0; i < argc; i++ ) {
-		bpp::System::Command(i) = argv[i].ToStdString().c_str();
+		bpp::System::Command(i) = argv[i];
 	}
 
 	try
@@ -85,10 +67,12 @@ bool BApp::OnInit()
 	{
 		abort_with_error("");
 	}
-
+	
+	auto ret = app.exec();
+	
 	#ifdef __BPPWIN__
 		CoUninitialize();
 	#endif
-
-	return true;
+	
+	return ret;
 }

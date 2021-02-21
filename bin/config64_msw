@@ -8,4 +8,4 @@ LIBRARY 		= -lpthread -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi
 QT_CPP_FLAGS		= -std=c++17 
 QT_INCLUDE		= -IC:/Qt/6.0.1/mingw81_64/include
 QT_LD_FLAGS		= -LC:/Qt/6.0.1/mingw81_64/lib
-QT_LIBRARY 		= -lQt6Core -lQt6Widgets
+QT_LIBRARY 		= -lQt6Core -lQt6Widgets -lQt6Sql

@@ -33,10 +33,8 @@ extern "C" void abort_with_error(const string& s)
 	exit(0);
 }
 
-namespace bpp {
-	namespace System {
-		extern bpp::array<string> Command;
-	}
+namespace bpp::System {
+	extern bpp::array<string> Command;
 }
 
 int main(int argc, char* argv[])
@@ -58,7 +56,7 @@ int main(int argc, char* argv[])
 		Main();
 		__final_all();
 	}
-	catch (const string& s)
+	catch (string s)
 	{
 		abort_with_error(s);
 	}
