@@ -13,35 +13,22 @@
     #include <wx/wx.h>
 #endif
 
-using namespace bpp;
-
 extern "C" void abort_with_error(const string& s)
 {
-	string err = "Error: " + s + "\r\n";
-
-	while (true)
-	{
-		static bool first = true;
-		int line = dbg_getline();
-		string func = dbg_getfunc();
-		if (!line)
-			break;
-		if (first)
-		{
-			err = err + "    raised";
-			first = false;
-		}
-		else
-			err = err + ",\r\n    called";
-
-        char buf[20] = {0};
-        sprintf(buf, "%d", line);
-		err = err + " by " + func + "() at line #" + buf;
-	}
-	err = err + "\r\n";
+	string err = "Error: " + s + "\n";
+	err += bpp::dbg_callstack();
 
 	wxMessageBox( err );
-	exit(0);
+	exit(-1);
+}
+
+void term_func()
+{
+	string err = "(terminate)Unknown error\n";
+	err += bpp::dbg_callstack();
+
+	wxMessageBox( err );
+	exit(-1);
 }
 
 class BApp : public wxApp
@@ -59,6 +46,8 @@ namespace bpp::System {
 
 bool BApp::OnInit()
 {
+	std::set_terminate( term_func );
+	
 	#ifdef __BPPWIN__
 		CoInitialize(NULL);
 	#endif
@@ -83,7 +72,7 @@ bool BApp::OnInit()
 	}
 	catch (...)
 	{
-		abort_with_error("");
+		abort_with_error("Unknown error");
 	}
 
 	#ifdef __BPPWIN__

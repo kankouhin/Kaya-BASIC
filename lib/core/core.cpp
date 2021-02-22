@@ -201,10 +201,6 @@ namespace bpp
 	#define LoadLibrary(x) dlopen(x, RTLD_LAZY)
 	#define GetProcAddress(x, y) dlsym(x, y)
 	#define FreeLibrary(x) dlclose(x)
-	DWORD GetCurrentThreadId()
-	{
-		return (DWORD)0;//std::this_thread::get_id();
-	}
 #endif
 	std::map<string, HINSTANCE> hlib;
 	void loadlib(const string &lib)
@@ -238,62 +234,72 @@ namespace bpp
 		return hdr;
 	}
 
-	static std::map<DWORD, std::vector<string>> dbg_funcs;
-	static std::map<DWORD, std::vector<int>> dbg_lines;
+	static std::map<std::thread::id, std::vector<string>> dbg_funcs;
+	static std::map<std::thread::id, std::vector<int>> dbg_lines;
 
 	void dbg_line(int n)
 	{
-		dbg_lines[GetCurrentThreadId()].back() = n;
+		dbg_lines[std::this_thread::get_id()].back() = n;
 	}
 
 	int dbg_getline()
 	{
-		DWORD id = GetCurrentThreadId();
-		if (dbg_lines[id].empty())
+		std::thread::id tid = std::this_thread::get_id();
+		if (dbg_lines[tid].empty())
 			return 0;
 
-		int result = dbg_lines[id].back();
-		dbg_lines[id].pop_back();
-
+		int result = dbg_lines[tid].back();
 		return result;
 	}
 
 	string dbg_getfunc()
 	{
-		DWORD id = GetCurrentThreadId();
-		if (dbg_funcs[id].empty())
+		std::thread::id tid = std::this_thread::get_id();
+		if (dbg_funcs[tid].empty())
 			return "nothing";
 
-		string result = dbg_funcs[id].back();
-		dbg_funcs[id].pop_back();
+		string result = dbg_funcs[tid].back();
 		return result;
 	}
 
 	void dbg_func(const string &s)
 	{
-		DWORD id = GetCurrentThreadId();
-		dbg_funcs[id].push_back(s);
-		dbg_lines[id].push_back(0);
+		std::thread::id tid = std::this_thread::get_id();
+		dbg_funcs[tid].push_back(s);
+		dbg_lines[tid].push_back(0);
 	}
 
 	void dbg_endfunc()
 	{
-		DWORD id = GetCurrentThreadId();
-		dbg_funcs[id].pop_back();
-		dbg_lines[id].pop_back();
+		std::thread::id tid = std::this_thread::get_id();
+		dbg_funcs[tid].pop_back();
+		dbg_lines[tid].pop_back();
 	}
-
-	int dbg_savefunc()
+	
+	string dbg_callstack()
 	{
-		return dbg_funcs[GetCurrentThreadId()].size();
-	}
+		string err;
+		std::thread::id tid = std::this_thread::get_id();
+		
+		int size = dbg_funcs[tid].size();
+		for ( int idx = size - 1; idx >= 0; idx-- )
+		{
+			int line = dbg_lines[tid][idx];
+			string func = dbg_funcs[tid][idx];
+			
+			if (idx == size - 1)
+			{
+				err = err + "    raised";
+			}
+			else
+				err = err + ",\r\n    called";
+			
+	        char buf[20] = {0};
+	        sprintf(buf, "%d", line);
+			err = err + " by " + func + "() at line #" + buf;
+		}
 
-	void dbg_unwind(int n)
-	{
-		DWORD id = GetCurrentThreadId();
-		//dbg_funcs[id].clear();
-		dbg_funcs[id].resize(n);
-		dbg_lines[id].resize(n);
-	}
+		return err;
+	}	
 
 } // namespace bpp

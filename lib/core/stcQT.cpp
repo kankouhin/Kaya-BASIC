@@ -9,30 +9,18 @@
 
 #include <QtCore/QCoreApplication>
 
-using namespace bpp;
-
 extern "C" void abort_with_error(const string& s)
 {
 	std::cout << "Error: " << s << std::endl;
-	while (true)
-	{
-		static bool first = true;
-		int line = dbg_getline();
-		string func = dbg_getfunc();
-		if (!line)
-			break;
-		if (first)
-		{
-			std::cout << "    raised";
-			first = false;
-		}
-		else
-			std::cout << string(",\r\n    called");
-		std::cout << string(" by ") << func << string("() at line #") << line;
-	}
-	
-	std::cout << string("\r\n");	
-	exit(0);
+	std::cout << bpp::dbg_callstack() << std::endl;
+	exit(-1);
+}
+
+void term_func()
+{
+	std::cout << "(terminate)Unknown error" << std::endl;
+	std::cout << bpp::dbg_callstack() << std::endl;
+	exit(-1);
 }
 
 namespace bpp::System {
@@ -41,6 +29,8 @@ namespace bpp::System {
 
 int main(int argc, char* argv[])
 {
+	std::set_terminate( term_func );
+	
 	#ifdef __BPPWIN__
 		CoInitialize(NULL);
 	#endif
@@ -65,7 +55,7 @@ int main(int argc, char* argv[])
 	}
 	catch (...)
 	{
-		abort_with_error("");
+		abort_with_error("Unknown error");
 	}
 	
 	#ifdef __BPPWIN__

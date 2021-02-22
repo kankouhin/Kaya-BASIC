@@ -10,40 +10,32 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QMessageBox>
 
-using namespace bpp;
-
 extern "C" void abort_with_error(const string& s)
 {
-	string err = "Error: " + s + "\r\n";
-
-	while (true)
-	{
-		static bool first = true;
-		int line = dbg_getline();
-		string func = dbg_getfunc();
-		if (!line)
-			break;
-		if (first)
-		{
-			err = err + "    raised";
-			first = false;
-		}
-		else
-			err = err + ",\r\n    called";
-
-        char buf[20] = {0};
-        sprintf(buf, "%d", line);
-		err = err + " by " + func + "() at line #" + buf;
-	}
-	err = err + "\r\n";
+	string err = "Error: " + s + "\n";
+	err += bpp::dbg_callstack();
 
 	QMessageBox msgbox;
 	msgbox.setText(QString::fromStdString(err));
 	msgbox.setIcon(QMessageBox::Critical);
 	msgbox.exec();
 	
-	exit(0);
+	exit(-1);
 }
+
+void term_func()
+{
+	string err = "(terminate)Unknown error\n";
+	err += bpp::dbg_callstack();
+
+	QMessageBox msgbox;
+	msgbox.setText(QString::fromStdString(err));
+	msgbox.setIcon(QMessageBox::Critical);
+	msgbox.exec();
+	
+	exit(-1);
+}
+
 
 namespace bpp::System {
 	extern bpp::array<string> Command;
@@ -57,7 +49,8 @@ int main(int argc, char* argv[])
 	
 	//setlocale(LC_ALL, "");
 	QApplication app(argc, argv);
-	
+	std::set_terminate( term_func );
+
 	bpp::System::Command.redim(0, argc -1 );
 	for ( int i = 0; i < argc; i++ ) {
 		bpp::System::Command(i) = argv[i];
@@ -75,9 +68,9 @@ int main(int argc, char* argv[])
 	}
 	catch (...)
 	{
-		abort_with_error("");
+		abort_with_error("Unknown error");
 	}
-	
+
 	auto ret = app.exec();
 	
 	#ifdef __BPPWIN__
