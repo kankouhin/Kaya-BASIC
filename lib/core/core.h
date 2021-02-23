@@ -91,6 +91,7 @@ void dbg_func(const string& s);
 void dbg_endfunc();
 int dbg_savefunc();
 void dbg_unwind(int n);
+string dbg_callstack();
 
 
 class object;

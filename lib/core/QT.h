@@ -23,23 +23,19 @@ namespace bpp
 			QCoreApplication::processEvents();
 		}
 
-		inline Integer MsgBox(string prompt, Integer button, string title)
+		inline Integer MsgBox(string prompt, Integer button, string title, Integer icon)
 		{
-			QString qprompt = QString::fromStdString(prompt);
-			QString qtitle = QString::fromStdString(title);
-			QMessageBox::StandardButton qbutton = (QMessageBox::StandardButton)button;
+			QString qtitle = QString::fromStdString( title );
+			QString qprompt = QString::fromStdString( prompt );
 			
-			if ( button & QMessageBox::Question )
-				return QMessageBox::question(NULL, qtitle, qprompt, qbutton);
-			else if ( button & QMessageBox::Information )
-				return QMessageBox::information(NULL, qtitle, qprompt, qbutton);
-			else if ( button & QMessageBox::Warning )
-				return QMessageBox::warning(NULL, qtitle, qprompt, qbutton);
-			else if ( button & QMessageBox::Critical )
-				return QMessageBox::critical(NULL, qtitle, qprompt, qbutton);
-			else
-				return QMessageBox::information(NULL, qtitle, qprompt, qbutton);
-			
+			if ( icon == QMessageBox::Information )
+				return QMessageBox::information(NULL, qtitle, qprompt, button, 0);
+			else if ( icon == QMessageBox::Question )
+				return QMessageBox::question(NULL, qtitle, qprompt, button, 0);
+			else if ( icon == QMessageBox::Warning )
+				return QMessageBox::warning(NULL, qtitle, qprompt, button, 0);
+			else if ( icon == QMessageBox::Critical )
+				return QMessageBox::critical(NULL, qtitle, qprompt, button, 0);
 		}
 	}
 }

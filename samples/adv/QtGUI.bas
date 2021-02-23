@@ -1,10 +1,11 @@
 Option Explicit
+Option Preserve
 Option Verbose
 Option PlatForm QT
 Option 64Bit On
 Option Console OFF
 
-Using QtWidgets.QApplication
+Using QtWidgets.QApplication 
 Using QtWidgets.QVBoxLayout
 Using QtWidgets.QLabel
 Using QtWidgets.QPushButton
@@ -18,15 +19,9 @@ Sub Button_OnClick
                 app.GetObject("Excel.Application")
 
                 Dim s As String = app.Workbooks(1).Worksheets(1).Name
-                Dim qs = QString.fromStdString(s)
-
-                Dim msgbox As QMessageBox
-                msgbox.setText("The Worksheet's name is " + qs)
-                Dim ret As Integer = msgbox.exec()
+                MsgBox "The Worksheet's name is " + s
         Catch msg As String
-                Dim msgbox As QMessageBox
-                msgbox.setText(QString.fromStdString(msg))
-                msgbox.exec()
+                MsgBox "Please open excel first: " + msg, ,"Error", QMessageBox.Critical
         End Try
 End Sub
 

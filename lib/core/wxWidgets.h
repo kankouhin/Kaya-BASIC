@@ -42,7 +42,7 @@ namespace bpp
 			wxYield();
 		}
 
-		inline Integer MsgBox(string prompt, Integer button, string title)
+		inline Integer MsgBox(string prompt, Integer button, string title, Integer icon)
 		{
 		    return wxMessageBox( prompt, title, button );
 		}
