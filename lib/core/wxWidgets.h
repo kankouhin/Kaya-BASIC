@@ -1,3 +1,5 @@
+#ifndef __PLATFORM_WX_H__
+#define __PLATFORM_WX_H__
 
 #include <wx/wxprec.h>
 #ifndef WX_PRECOMP
@@ -25,7 +27,7 @@ namespace bpp
 {
 	inline string conv(string* ptr, wxString x)
 	{
-	    return string( x.ToStdString() );
+	    return x.ToStdString();
 	}
 
 	inline wxString conv(wxString* ptr, string x)
@@ -46,3 +48,5 @@ namespace bpp
 		}
 	}
 }
+
+#endif

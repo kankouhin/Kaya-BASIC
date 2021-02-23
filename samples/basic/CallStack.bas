@@ -1,4 +1,5 @@
 Option Explicit
+Option Verbose
 Option CallStack On
 
 Sub callStack1
@@ -17,17 +18,17 @@ Sub callStack3
                 Print "callStack3"
                 Throw "callStack3 error1"
         Catch msg As String
-                Print Err.Line, " ",  Err.Function, " ",  msg
+                Print Err.Line, " : ", Err.Function, " : ",  msg
                 Print Err.CallStack
         End Try
-        
-        Throw 1024
 End Sub
 
 Sub callStack4
         Call callStack1
         Call callStack2
         Print "callStack4"
+        
+        Throw 1024
 End Sub
 
 Sub callStack5

@@ -1,14 +1,16 @@
 Option Explicit
+Option Release Off
+Option CallStack On
 
 Using wxWidgets
 
 Dim f As wxFrame Ptr
 
 Dim txtSourcePath 	As wxTextCtrl Ptr
-Dim txtLogs			As wxTextCtrl Ptr
+Dim txtLogs		As wxTextCtrl Ptr
 Dim btnBrowse 		As wxButton Ptr
 Dim btnCompile		As wxButton Ptr
-Dim btnExit			As wxButton Ptr
+Dim btnExit		As wxButton Ptr
 
 Dim chkStaticLink 	As wxCheckBox Ptr
 Dim chkLibrary 		As wxCheckBox Ptr
@@ -17,7 +19,7 @@ Dim chkOutputCPP	As wxCheckBox Ptr
 Dim chkComSupport	As wxCheckBox Ptr
 Dim chkDebugBPP		As wxCheckBox Ptr
 Dim chkCompress		As wxCheckBox Ptr
-Dim chkGUI			As wxCheckBox Ptr
+Dim chkGUI		As wxCheckBox Ptr
 
 Dim rdo32bit		As wxRadioButton Ptr
 Dim rdo64bit 		As wxRadioButton Ptr
@@ -43,7 +45,6 @@ Dim btnBrowse15		As wxButton Ptr
 Dim bppPath As String
 
 Sub saveOptions
-
 	Dim id As Integer
 	Open "config" For Output As #1
 	
@@ -64,7 +65,6 @@ Sub saveOptions
 End Sub
 
 Sub readOptions
-
 	If Not FileExists("config") Then
 		Exit Sub
 	End If
@@ -94,17 +94,16 @@ Sub OnExit(ByRef ev As wxCommandEvent)
 End Sub
 
 Sub OnCompile(ByRef ev As wxCommandEvent)
-
 	Dim org As String = wxGetCwd()
 	Call saveOptions
 	
  	Dim s As String = txtSourcePath.GetValue()
 
- 	Dim ipos As Integer = InStrRev(s, PathSep )
- 	Dim cwd As String 	= Left( s, ipos - 1 )
- 	Dim src As String 	= Mid( s, ipos + 1 )
+ 	Dim ipos As Integer = InStrRev(PathSep, s)
+ 	Dim cwd As String   = Left( s, ipos - 1 )
+ 	Dim src As String   = Mid( s, ipos + 1 )
  	
- 	src = Left( src, InStrRev(src, ".") - 1 )
+ 	src = Left( src, InStrRev(".", src) - 1 )
  	wxSetWorkingDirectory( cwd )
  	
  	Dim params As String
@@ -142,7 +141,6 @@ Sub OnCompile(ByRef ev As wxCommandEvent)
 		*txtLogs << e.Item( idx )
 		*txtLogs << wxString("\n")
 	Next
-	
 End Sub
 
 Sub OnDropFiles(ByRef ev As wxDropFilesEvent)
@@ -169,9 +167,9 @@ Sub OnBrowweForOptions(ByRef ev As wxCommandEvent)
 	
 	If id = (CTRLID_OPTIONS_TEXTBOX + 5) Then
 		Dim dlg As wxFileDialog(f, "Select Kaya-BASIC Complier", "", "", _
-                "Exe files (*.*)|*", _
-                wxFD_OPEN Or wxFD_FILE_MUST_EXIST)
-        
+		"Exe files (*.*)|*", _
+		wxFD_OPEN Or wxFD_FILE_MUST_EXIST)
+
 		If (dlg.ShowModal() <> wxID_CANCEL) Then
 			txt.SetValue( dlg.GetPath() )
 
@@ -180,25 +178,24 @@ Sub OnBrowweForOptions(ByRef ev As wxCommandEvent)
 		End If
 	ElseIf id = (CTRLID_OPTIONS_TEXTBOX + 6) Then
 		Dim dlg As wxFileDialog(f, "Select Kaya-BASIC file", "", "", _
-                "Kaya-BASIC files (*.bas)|*.bas", _
-                wxFD_OPEN Or wxFD_FILE_MUST_EXIST)
-        
-        If (dlg.ShowModal() <> wxID_CANCEL) Then
-        	txt.SetValue ( dlg.GetPath() )
-        End If        
+		"Kaya-BASIC files (*.bas)|*.bas", _
+		wxFD_OPEN Or wxFD_FILE_MUST_EXIST)
+
+		If (dlg.ShowModal() <> wxID_CANCEL) Then
+			txt.SetValue ( dlg.GetPath() )
+		End If        
 	Else
 		Dim dlg As wxDirDialog(f)
-        If (dlg.ShowModal() <> wxID_CANCEL) Then
-        	txt.SetValue ( dlg.GetPath() )
-        End If
+		If (dlg.ShowModal() <> wxID_CANCEL) Then
+			txt.SetValue ( dlg.GetPath() )
+		End If
 	End If
-	
 End Sub
 
 Sub Main
 
 	Dim title As String =  "Kaya-BASIC Compiler"
-	f = New wxFrame( NULL, wxID_ANY, title + " 0.3.5", wxDefaultPosition, wxDefaultSize, wxMINIMIZE_BOX Or wxCLOSE_BOX Or wxCAPTION Or wxCLIP_CHILDREN)
+	f = New wxFrame( NULL, wxID_ANY, title + " 0.6.5", wxDefaultPosition, wxDefaultSize, wxMINIMIZE_BOX Or wxCLOSE_BOX Or wxCAPTION Or wxCLIP_CHILDREN)
 	f.SetClientSize(wxSize(582,471))
 
 	Dim Panel1 As New wxPanel(f, wxID_ANY)
