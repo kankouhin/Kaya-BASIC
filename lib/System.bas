@@ -161,7 +161,7 @@ Public Declare Sub		Sleep(sec As Integer)
 
 'GUI---------------------------------------------------------------------------------------------------
 Public Declare Sub DoEvents
-Public Declare Function MsgBox(prompt As String, buttons As Integer = 4, title As String = "Information", icon As Integer = 1) As Integer ' icon for Qt only
+Public Declare Function MsgBox(prompt As String, buttons As Integer = 4, title As String = "Information", icon As Integer = 0) As Integer
 'GUI---------------------------------------------------------------------------------------------------
 
 

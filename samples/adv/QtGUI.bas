@@ -1,5 +1,4 @@
 Option Explicit
-Option Preserve
 Option Verbose
 Option PlatForm QT
 Option 64Bit On
