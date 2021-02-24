@@ -28,7 +28,7 @@ namespace bpp
 			QString qtitle = QString::fromStdString( title );
 			QString qprompt = QString::fromStdString( prompt );
 			
-			if ( icon == QMessageBox::Information || icon == 0)
+			if ( icon == QMessageBox::Information )
 				return QMessageBox::information(NULL, qtitle, qprompt, button, 0);
 			else if ( icon == QMessageBox::Question )
 				return QMessageBox::question(NULL, qtitle, qprompt, button, 0);
