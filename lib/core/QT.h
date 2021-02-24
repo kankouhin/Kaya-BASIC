@@ -36,6 +36,8 @@ namespace bpp
 				return QMessageBox::warning(NULL, qtitle, qprompt, button, 0);
 			else if ( icon == QMessageBox::Critical )
 				return QMessageBox::critical(NULL, qtitle, qprompt, button, 0);
+			else
+				return QMessageBox::information(NULL, qtitle, qprompt, button, 0);
 		}
 	}
 }
