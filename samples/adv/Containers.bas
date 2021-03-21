@@ -1,5 +1,4 @@
 Option Explicit
-Option Preserve
 
 Using StdCPP
 
@@ -18,6 +17,11 @@ End Class
 Sub Rect.Draw
         Print "Rect.Draw"
 End Sub
+
+Type Recordset
+        No As Integer
+        Name As String
+End Type
 
 Sub Main
         Dim vec As Vector<Integer> = {2, 16, 77, 34, 50}
@@ -43,6 +47,7 @@ Sub Main
                 Print it.first, " -> ", it.second
         Next
 
+
         Dim dic2 As Map<Integer, Shape>
         dic2[100] = new Shape
         dic2[200] = new Rect
@@ -50,5 +55,17 @@ Sub Main
         For Each it As Auto In dic2
                 Print it.first, " -> ";
                 it.second->Draw()
+        Next
+
+
+        Dim dic3 As Map<Integer, Recordset>
+        Dim rs1 As Recordset = {100, "ABC"}
+        Dim rs2 As Recordset = {200, "XYZ"}
+        
+        dic3[10] = rs1
+        dic3[20] = rs2
+
+        For Each it As Auto In dic3
+                Print it.first, " -> {", it.second.No, " , ", it.second.Name, "}" 
         Next
 End Sub
