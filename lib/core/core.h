@@ -142,7 +142,7 @@ public:
 	void operator= (ref<U> x)
 	{
 		release();
-		(void*)ptr = x.ptr;
+		ptr = (T*)x.ptr;
 		addref();
 #if defined(__BPP_DEBUG)
 		check_class();
