@@ -31,13 +31,13 @@ Sub Main
                 Print it
         Next
 
-
+        '==================================================================
         Dim lst As List<Integer> = {75, 23, 65, 42, 13}
         For Each it As Integer In lst
                 Print it
         Next
 
-
+        '==================================================================
         Dim dic As Map<Integer, Integer>
         dic[300] = 100
         dic[100] = 200
@@ -47,17 +47,18 @@ Sub Main
                 Print it.first, " -> ", it.second
         Next
 
-
+        '==================================================================
         Dim dic2 As Map<Integer, Shape>
         dic2[100] = new Shape
         dic2[200] = new Rect
 
         For Each it As Auto In dic2
                 Print it.first, " -> ";
-                it.second->Draw()
+                Dim s As Shape = it.second
+                s.Draw
         Next
 
-
+        '==================================================================
         Dim dic3 As Map<Integer, Recordset>
         Dim rs1 As Recordset = {100, "ABC"}
         Dim rs2 As Recordset = {200, "XYZ"}
