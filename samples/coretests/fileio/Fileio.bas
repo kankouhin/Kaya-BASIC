@@ -1,10 +1,18 @@
 Option Explicit
-' binary is default mode
+Option Preserve
+' FileMode
+' binary   : Operations are performed in binary mode rather than text.(default)
+' input    : File open for reading: the internal stream buffer supports input operations.
+' output   : File open for writing: the internal stream buffer supports output operations.
+' append   : All output operations happen at the end of the file, appending to its existing contents.
+' truncate : Any contents that existed in the file before it is open are discarded.
+' atend    : The output position starts at the end of the file.
+' text     : not binary mode
 
 Sub Main
 	Dim ii As Integer
-	Open "filetest.txt" For Output As #1
-	
+	Open "filetest.txt" For Output Text As #1
+
 	ii = 11
 	Write #1, "Hello World", ii, "Hello KayaBASIC "
 	Print #1, "Line1"
@@ -16,7 +24,7 @@ Sub Main
 	Dim s1, s2 As String, ll As Integer
 	
 	Print "fileno ", fn
-	Open "filetest.txt" For Input As #fn
+	Open "filetest.txt" For Input Text As #fn
 	
 	Input #fn, s1, ll, s2
 	Print "s1 ", s1
