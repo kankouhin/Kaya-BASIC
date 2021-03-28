@@ -1,4 +1,5 @@
 Option Explicit
+Option Verbose
 ' this sample shows how to use c/c++ library(SDL2)
 '
 ' 1. include header file
@@ -11,7 +12,7 @@ Using StdCPP
 Using AnyCPP
 
 Option CPP_FLAGS 	" -include SDL2-2.0.12/i686-w64-mingw32/include/SDL2/SDL.h "
-Option LD_FLAGS		" -LC:/DataMigration/FreeBasic/KayaBASIC/include/SDL2-2.0.12/i686-w64-mingw32/Lib -lSDL2 -lwinmm -limm32 -lSetupapi "
+Option LD_FLAGS		" -LC:/DataMigration/FreeBasic/KayaBASIC/include/SDL2-2.0.12/i686-w64-mingw32/Lib  -lmingw32 -lSDL2main -lSDL2 -lwinmm -limm32 -lSetupapi "
 
 ' download link
 ' https://www.libsdl.org/release/SDL2-devel-2.0.12-mingw.tar.gz
